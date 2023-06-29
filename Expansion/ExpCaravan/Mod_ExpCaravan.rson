@@ -1,0 +1,4691 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  -803,
+  "ViewPos.y":  -247,
+  "ScriptName":  "Mod_ExpCaravan",
+  "ScriptFileOut":  "H:\\Mod_ExpCaravan.scr",
+  "ScriptTextOut":  "H:\\Mod_ExpCaravan.txt",
+  "GraphPoint.Count":  173,
+  "GraphLink.Count":  151,
+  "GraphRectText.Count":  0,
+  "Variables.Count":  25,
+  "Stars.Count":  3,
+  "Planets.Count":  3,
+  "Ships.Count":  1,
+  "States.Count":  33,
+  "Groups.Count":  4,
+  "Places.Count":  5,
+  "Items.Count":  3,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  2,
+  "DialogMessages.Count":  1,
+  "DialogAnswers.Count":  1,
+  "Operations.Count":  28,
+  "Statements.Count":  64,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "fastexit",
+          "Pos.x":  90,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  113,
+          "Msg":  "Конец связи",
+          "AMsg.Num":  "0"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  90,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  118,
+          "Msg":  "<tstr>",
+          "DMsg.Num":  "0"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "Kor_d",
+          "Pos.x":  160,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  112        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "Prot_d",
+          "Pos.x":  20,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  114        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "PlayerGroup",
+          "Pos.x":  60,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  2,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  true,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "Korovan",
+          "Pos.x":  -70,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  7,
+          "Owner":  62,
+          "Group.Type":  16,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "Korovan_Prot",
+          "Pos.x":  -200,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  8,
+          "Owner":  62,
+          "Group.Type":  4,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "Pirates",
+          "Pos.x":  -50,
+          "Pos.y":  10,
+          "Parent":  -1,
+          "#":  89,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Items":      
+      [
+        {
+          "Type":  "TItem",
+          "Name":  "Cargo_1",
+          "Pos.x":  180,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  58,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        },
+        {
+          "Type":  "TItem",
+          "Name":  "Cargo_2",
+          "Pos.x":  180,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  59,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        },
+        {
+          "Type":  "TItem",
+          "Name":  "Cargo_3",
+          "Pos.x":  180,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  60,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  160,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  4,
+          "Total.Lines":  4,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "if(CurTurn()>820)",
+              "{",
+              "    if(CurTurn()-GLastTurnRun(GScriptName)>750)GRun();",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  200,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  12,
+          "Total.Lines":  589,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//Значения переменной vScst:",
+              "//vScst==-1 - скрипт готов к спавну каравана",
+              "//vScst==0 - спавнится караван",
+              "//vScst==1 - караван готов и вылетел",
+              "//vScst==2 - спавнятся нападающие на караван пираты",
+              "",
+              "//Скрипт уже проснулся, но караван пока не отправлен и не сформирован",
+              "if(vScst==-1)",
+              "{",
+              "    //Если игрок покинул свою стартовую систему, то переводим скрипт в состояние подготовки к запуску каравана",
+              "    if(ShipStar(Player())!=PlayerStar)vScst=0;",
+              "}",
+              "//Караван находится в пути",
+              "if(vScst>0)",
+              "{",
+              "    if(GroupCount(Korovan) || GroupCount(Korovan_Prot))",
+              "    {",
+              "        st_turn=1;",
+              "        //Очищаем массивы с кораблями каравана и атакующими его пиратами",
+              "        ArrayClear(groups);",
+              "        ArrayClear(attack);",
+              "        //Обнуляем маркера атаки игроком кораблей каравана (PK - Player Kill, хотя фактически учитывается даже просто факт нападения)",
+              "        PK=0;",
+              "        //И атаки игроком атакующих караван злоумышленников",
+              "        PK_pirates=0;",
+              "        for(i=GalaxyEvents()-1;i>=0;i=i-1)",
+              "        {",
+              "            //Перебираем все сегодняшние эвенты, в которых игрок, его транклюкатор или напарник, уничтожает или помогает в уничтожении корабля",
+              "            if(GalaxyEventDate(i)<CurTurn())break;",
+              "            if(GalaxyEventType(i)=='PlayerKillsShip' || GalaxyEventType(i)=='PlayerAssistKillsShip' || GalaxyEventType(i)=='PlayerTranclucatorKillsShip' || GalaxyEventType(i)=='PlayerTranclucatorAssistKillsShip' || GalaxyEventType(i)=='PlayerCompanionKillsShip' || GalaxyEventType(i)=='PlayerCompanionAssistKillsShip')",
+              "            {",
+              "                //Проверяем, не были ли уничтожены по воле игрока все или некоторые корабли каравана",
+              "                if(!PK)",
+              "                {",
+              "                    for(j=1;j<ArrayDim(groups_ID);j=j+1)",
+              "                    {",
+              "                        if(GalaxyEventData(i,2)!=groups_ID[j])continue;",
+              "                        //Если да, то отношения с текущим сектором (где находится игрок) резко портятся",
+              "                        PK=1;",
+              "                        ConChangeRelationToRanger(StarToCon(ShipStar(Player())),Player(),-91);",
+              "                        break;",
+              "                    }",
+              "                }",
+              "                //Проверяем, не были ли уничтожены по воле игрока все или некоторые атакующие караван пираты",
+              "                if(!PK_pirates && GroupCount(Pirates))",
+              "                {",
+              "                    for(j=1;j<ArrayDim(pirates_ID);j=j+1)",
+              "                    {",
+              "                        if(GalaxyEventData(i,2)!=pirates_ID[j])continue;",
+              "                        PK_pirates=1;",
+              "                        break;",
+              "                    }",
+              "                }",
+              "            }",
+              "        }",
+              "        //Заполняем массив с кораблями каравана, если они уцелели",
+              "        if(GroupCount(Korovan))ArrayAdd(groups,GroupToShip(Korovan));",
+              "        if(GroupCount(Korovan_Prot))",
+              "        {",
+              "            for(i=0;i<GroupCount(Korovan_Prot);i=i+1)ArrayAdd(groups,GroupShip(Korovan_Prot,i));",
+              "        }",
+              "        //Перебираем корабли в системе, где находится транспорт из каравана или (если транспорт погиб) его защитники",
+              "        if(GroupCount(Korovan))tdw=ShipStar(GroupToShip(Korovan));",
+              "        else tdw=ShipStar(GroupToShip(Korovan_Prot));",
+              "        for(i=0;i<StarShips(tdw);i=i+1)",
+              "        {",
+              "            tdw2=StarShips(tdw,i);",
+              "            if(tdw2==Player())continue;",
+              "            if(ShipTypeN(tdw2)==t_Kling)continue;",
+              "            if(ShipTypeN(tdw2)==t_Transport)continue;",
+              "            if(ShipTypeN(tdw2)==t_Warrior)continue;",
+              "            //Также исключаем корабли с кастомной фракцией",
+              "            if(ShipCustomFaction(tdw2)!='')continue;",
+              "            //Проверяем выбранную для атаки цель пиратских кораблей, рейнджеров или транклюкаторов",
+              "            tdw3=ShipGetBad(tdw2);",
+              "            if(!tdw3)continue;",
+              "            if(tdw3==Player())continue;",
+              "            //Если цель - корабли каравана, то заносим атакующего в массив нападающих",
+              "            if(ShipInCurScript(tdw3))ArrayAdd(attack,tdw2);",
+              "        }",
+              "        //Если корабли каравана игроком (или его бандой) не уничтожались, то проверяем, не атаковались ли они игроком в принципе",
+              "        if(!PK)",
+              "        {",
+              "            for(i=1;i<ArrayDim(groups);i=i+1)",
+              "            {",
+              "                if(!Hit(groups[i], 0))continue;",
+              "                //И если даже просто атаковались, то отношение с сектором всё равно падает",
+              "                PK=1;",
+              "                ConChangeRelationToRanger(StarToCon(ShipStar(Player())),Player(),-91);",
+              "                //На всякий случай гарантированно портим отношение с планетой отправки, а то вдруг она находится в другом секторе",
+              "                RelationToRanger(KorovanStart,Player(),0);",
+              "                break;",
+              "            }",
+              "        }",
+              "        //Если игрок таки уничтожал/атаковал корабли каравана, то записываем его в число нападающих",
+              "        if(PK)",
+              "        {",
+              "            ArrayAdd(attack,Player());",
+              "            //И увеличиваем отношение с Роджерией, что ведёт к улучшению отношения со всеми пиратскими планетами",
+              "            RelationToRanger(PlanetPirateClan(),Player(),RelationToRanger(PlanetPirateClan(),Player())+25);",
+              "            if(RelationToRanger(PlanetPirateClan(),Player())>100)RelationToRanger(PlanetPirateClan(),Player(),100);",
+              "        }",
+              "        //Если нападающие на караван игроком (или его бандой) не уничтожались, то проверяем, не атаковались ли они игроком в принципе",
+              "        if(!PK_pirates && GroupCount(Pirates))",
+              "        {",
+              "            for(i=0;i<GroupCount(Pirates);i=i+1)",
+              "            {",
+              "                if(!Hit(GroupShip(Pirates,i)))continue;",
+              "                PK_pirates=1;",
+              "                break;",
+              "            }",
+              "        }",
+              "        //Если игрок уничтожал/атаковал корабли нападающих, то отношение нападающих пиратов к игроку становится враждебным",
+              "        if(PK_pirates)SetRelationGroup(Pirates,PlayerGroup,8);",
+              "        //Если в списке нападающих имеется хоть один корабль",
+              "        if(ArrayDim(attack)>1)",
+              "        {",
+              "            //Определяем нападающего с минимальным количеством HP",
+              "            enRad=100000000;",
+              "            for(i=1;i<ArrayDim(attack);i=i+1)",
+              "            {",
+              "                if(Hitpoints(attack[i])>enRad)continue;",
+              "                enRad=Hitpoints(attack[i]);",
+              "                tdw=attack[i];",
+              "            }",
+              "            for(i=1;i<ArrayDim(groups);i=i+1)",
+              "            {",
+              "                //Он становится целью каждого корабля из состава каравана",
+              "                ShipSetBad(groups[i],tdw);",
+              "                //И сразу вручную переводим на него все их пушки, которые достают до него по радиусу",
+              "                for(j=1;j<=ShipCntWeapon(groups[i]);j=j+1)",
+              "                {",
+              "                    tdw2=ShipWeapon(groups[i],j);",
+              "                    if(GetEquipmentStats(tdw2,2)<=Dist(tdw,groups[i]))WeaponTarget(tdw2,tdw);",
+              "                }",
+              "            }",
+              "        }",
+              "        //Если игрок подобрал хоть один контейнер, пока транспорт или военные были ещё живы, то отношение с сектором портится",
+              "        if(ItemIn(Cargo_1,Player()) || ItemIn(Cargo_2,Player()) || ItemIn(Cargo_3,Player()))",
+              "        {",
+              "            ConChangeRelationToRanger(StarToCon(ShipStar(Player())),Player(),-91);",
+              "            //На всякий случай гарантированно портим отношение с планетой отправки, а то вдруг она находится в другом секторе",
+              "            RelationToRanger(KorovanStart,Player(),0);",
+              "        }",
+              "    }",
+              "    //Если транспорт или военные из состава каравана прибыли на нужную планету с грузом в трюме",
+              "    if(cargoDelivered)",
+              "    {",
+              "        tdw=KorovanPlanetFinish;",
+              "        Inventions_points=120*cargoDelivered;",
+              "        //Чем более продвинута экономика планеты, на которую прибыл караван, тем меньше штраф к полученным ею очкам исследования",
+              "        if(PlanetEco(tdw)==0)tint=33*cargoDelivered;//Аграрная",
+              "        else if(PlanetEco(tdw)==1)tint=22*cargoDelivered;//Смешанная",
+              "        else if(PlanetEco(tdw)==2)tint=11*cargoDelivered;//Индустриальная",
+              "        Inventions_points=Inventions_points-tint;",
+              "        //Чем более развита раса планеты, на которую прибыл караван, тем меньше штраф к полученным ею очкам исследования",
+              "        if(PlanetRace(tdw)==0)tint=33*cargoDelivered;",
+              "        else if(PlanetRace(tdw)==1)tint=26*cargoDelivered;",
+              "        else if(PlanetRace(tdw)==2)tint=20*cargoDelivered;",
+              "        else if(PlanetRace(tdw)==3)tint=12*cargoDelivered;",
+              "        else if(PlanetRace(tdw)==4)tint=6*cargoDelivered;",
+              "        Inventions_points=Inventions_points-tint;",
+              "        //Также штраф к полученным очкам тем ниже, чем меньше размер данной планеты",
+              "        Inventions_points=Inventions_points-round((0.33*cargoDelivered)*PlanetSize(tdw));",
+              "        //Минимальный порог буста составляет 30 очков при полной доставке всех трёх контейнеров",
+              "        if(Inventions_points<10*cargoDelivered)Inventions_points=10*cargoDelivered;",
+              "        PlanetBoostInventions(tdw,Inventions_points);",
+              "        cargoDelivered=0;",
+              "    }",
+              "    //Если никаких кораблей в группах данного скрипта не осталось, то выводим из него и игрока, завершаем текущее выполнение скрипта",
+              "    if(!GroupCount(Korovan) && !GroupCount(Korovan_Prot) && !GroupCount(Pirates))",
+              "    {",
+              "        if(ItemExist(Cargo_1))ReleaseItemFromScript(Cargo_1);",
+              "        if(ItemExist(Cargo_2))ReleaseItemFromScript(Cargo_2);",
+              "        if(ItemExist(Cargo_3))ReleaseItemFromScript(Cargo_3);",
+              "        ShipOut(Player());",
+              "    }",
+              "    //Под конец хода обнуляем проверочную переменную, не дающую военным попытаться выстрелить по одному контейнеру всей толпой (иначе крашнет)",
+              "    ShotAtCargo=0;",
+              "}",
+              "//Караван формируется на своей стартовой планете",
+              "if(vScst==0)",
+              "{",
+              "    //Готовим транспорт",
+              "    tdw=BuyTransport(KorovanStart,0,1000);",
+              "    ArrayAdd(groups_ID,Id(tdw));",
+              "    //Устанавливаем размер корпуса транспорта",
+              "    ItemSize(ShipItems(tdw,0),260*GalaxyTechLevel()+round(0.60*GalaxyDiffLevels())+Rnd(-27,53));",
+              "    HullHP(tdw,ItemSize(ShipItems(tdw,0)));",
+              "    Chameleon(tdw);",
+              "    tint=GalaxyTechLevel()+1;",
+              "    //Сразу создаём и помещаем в транспорт груз",
+              "    cargoSize1=27*GalaxyTechLevel()+round(0.10*GalaxyDiffLevels())+Rnd(-7,9);",
+              "    tdw2=CreateQuestItem('ExpCaravan_CargoBox',PlanetRace(KorovanStart));",
+              "    ItemSize(tdw2,cargoSize1);",
+              "    ItemCost(tdw2,ItemCost(tdw2)*3*(sqr(tint)*tint)/round(0.085*GalaxyDiffLevels(7)));",
+              "    LinkItemToScript(tdw2,Cargo_1);",
+              "    CanSellItem(Cargo_1,1);",
+              "    AddItemToShip(tdw,tdw2);",
+              "    cargoSize2=27*GalaxyTechLevel()+round(0.10*GalaxyDiffLevels())+Rnd(-7,9);",
+              "    tdw2=CreateQuestItem('ExpCaravan_CargoBox',PlanetRace(KorovanStart));",
+              "    ItemSize(tdw2,cargoSize2);",
+              "    ItemCost(tdw2,ItemCost(tdw2)*3*(sqr(tint)*tint)/round(0.085*GalaxyDiffLevels(7)));",
+              "    LinkItemToScript(tdw2,Cargo_2);",
+              "    CanSellItem(Cargo_2,1);",
+              "    AddItemToShip(tdw,tdw2);",
+              "    cargoSize3=27*GalaxyTechLevel()+round(0.10*GalaxyDiffLevels())+Rnd(-7,9);",
+              "    tdw2=CreateQuestItem('ExpCaravan_CargoBox',PlanetRace(KorovanStart));",
+              "    ItemSize(tdw2,cargoSize3);",
+              "    ItemCost(tdw2,ItemCost(tdw2)*3*(sqr(tint)*tint)/round(0.085*GalaxyDiffLevels(7)));",
+              "    LinkItemToScript(tdw2,Cargo_3);",
+              "    CanSellItem(Cargo_3,1);",
+              "    AddItemToShip(tdw,tdw2);",
+              "    tdw2=ShipItems(tdw,0);",
+              "    //Экипируем транспорт",
+              "    if(GetEquipmentStats(tdw2,5)<1)ShipSpecialBonuses(tdw,bonSlotDroid,1);",
+              "    if(GetEquipmentStats(tdw2,7)<1)ShipSpecialBonuses(tdw,bonSlotDef,1);",
+              "    ShipSpecialBonuses(tdw,bonSlotWeapon,2);",
+              "    ShipSpecialBonuses(tdw,bonSlotArt,2);",
+              "    //Определяем навыки манёвренности",
+              "    tint=GalaxyTechLevel()-1;",
+              "    if(tint>6)tint=6;",
+              "    if(!tint)tint=1;",
+              "    ShipSkill(tdw,1,tint);",
+              "    //И техники",
+              "    ShipSkill(tdw,2,tint-1);",
+              "    //Заставляем транспорт хорошенько закупиться",
+              "    ShipRefit(tdw);",
+              "    ShipRefit(tdw);",
+              "    ShipRefit(tdw);",
+              "    ShipRefit(tdw);",
+              "    //Гарантированно обеспечиваем транспорт ГЗП и дроидом, если сам он их так и не купил",
+              "    if(!ShipEqInSlot(tdw,t_DefGenerator))",
+              "    {",
+              "        if(ShipOwner(tdw)==0)tint=Rnd(30,50);",
+              "        else if(ShipOwner(tdw)==1)tint=Rnd(25,40);",
+              "        else if(ShipOwner(tdw)==2)tint=Rnd(25,35);",
+              "        else if(ShipOwner(tdw)==3)tint=Rnd(15,25);",
+              "        else if(ShipOwner(tdw)==4)tint=Rnd(20,30);",
+              "        tdw2=CreateEquipment(t_DefGenerator,tint,GalaxyTechLevel(),ShipOwner(tdw));",
+              "        AddItemToShip(tdw,tdw2);",
+              "        ItemIsInUse(tdw2,tdw,1);",
+              "    }",
+              "    if(!ShipEqInSlot(tdw,t_RepairRobot))",
+              "    {",
+              "        if(ShipOwner(tdw)==0)tint=Rnd(30,50);",
+              "        else if(ShipOwner(tdw)==1)tint=Rnd(25,40);",
+              "        else if(ShipOwner(tdw)==2)tint=Rnd(25,35);",
+              "        else if(ShipOwner(tdw)==3)tint=Rnd(15,25);",
+              "        else if(ShipOwner(tdw)==4)tint=Rnd(20,30);",
+              "        tdw2=CreateEquipment(t_RepairRobot,tint,GalaxyTechLevel(),ShipOwner(tdw));",
+              "        AddItemToShip(tdw,tdw2);",
+              "        ItemIsInUse(tdw2,tdw,1);",
+              "    }",
+              "    //Повышаем уровень отсосного оборудования транспорта до текущего ГТУ",
+              "    for(j=ShipItems(tdw);j>0;j=j-1)",
+              "    {",
+              "        tdw2=ShipItems(tdw,j);",
+              "        if(!ItemIsInUse(tdw2))continue;",
+              "        if(ItemType(tdw2)<t_FuelTanks || ItemType(tdw2)>t_DefGenerator)continue;",
+              "        if((GalaxyTechLevel()-ItemLevel(tdw2))>=2)",
+              "        {",
+              "            tdw3=CreateEquipment(ItemType(tdw2),ItemSize(tdw2)+Rnd(10,15),GalaxyTechLevel(),ItemOwner(tdw2));",
+              "            if(EqSpecial(tdw2)>-1)SpecialToEquipment(EqSpecial(tdw2),tdw3);",
+              "            if(EqModule(tdw2)>-1)ModuleToEquipment(EqModule(tdw2),tdw3);",
+              "            ItemLevel(tdw2,GalaxyTechLevel());",
+              "            ItemCost(tdw2,ItemCost(tdw3));",
+              "            if(Rnd(1,100)<=85)NoDropItem(tdw2,1);",
+              "            FreeItem(tdw3);",
+              "        }",
+              "    }",
+              "    ShipImproveItems(tdw,9);",
+              "    ShipRepairEq(tdw);",
+              "    //Выдаём транспорту аЭгис",
+              "    tdw2=CreateArt(t_ArtPDTurret,ShipOwner(tdw));",
+              "    if(Rnd(1,100)<=85)NoDropItem(tdw2,1);",
+              "    AddItemToShip(tdw,tdw2);",
+              "    ItemIsInUse(tdw2,tdw,1);",
+              "    //С 60% шансом выдаём один дополнительный артефакт на выбор:",
+              "    if(Rnd(1,100)<=60)",
+              "    {",
+              "        tint=Rnd(1,4);",
+              "        //Железные жупи",
+              "        if(tint==1)",
+              "        {",
+              "            tdw2=CreateArt(t_ArtefactHull,ShipOwner(tdw));",
+              "            if(Rnd(1,100)<=65)NoDropItem(tdw2,1);",
+              "            AddItemToShip(tdw,tdw2);",
+              "            ItemIsInUse(tdw2,tdw,1);",
+              "        }",
+              "        //Дроид младший",
+              "        else if(tint==2)",
+              "        {",
+              "            tdw2=CreateArt(t_ArtefactDroid,ShipOwner(tdw));",
+              "            if(Rnd(1,100)<=65)NoDropItem(tdw2,1);",
+              "            AddItemToShip(tdw,tdw2);",
+              "            ItemIsInUse(tdw2,tdw,1);",
+              "        }",
+              "        //Поляризатор",
+              "        else if(tint==3)",
+              "        {",
+              "            tdw2=CreateArt(t_ArtefactDef,ShipOwner(tdw));",
+              "            if(Rnd(1,100)<=65)NoDropItem(tdw2,1);",
+              "            AddItemToShip(tdw,tdw2);",
+              "            ItemIsInUse(tdw2,tdw,1);",
+              "        }",
+              "        //Или ракетанг",
+              "        else if(tint==4)",
+              "        {",
+              "            tdw2=CreateArt(t_ArtMissileDef,ShipOwner(tdw));",
+              "            if(Rnd(1,100)<=65)NoDropItem(tdw2,1);",
+              "            AddItemToShip(tdw,tdw2);",
+              "            ItemIsInUse(tdw2,tdw,1);",
+              "        }",
+              "    }",
+              "    //Устраняем возможный перевес транспорта, накидывая ему недостающее место",
+              "    ShipCalcParam(tdw);",
+              "    if(ShipFreeSpace(tdw)<0)",
+              "    {",
+              "        ItemSize(ShipItems(tdw,0),ItemSize(ShipItems(tdw,0))+abs(ShipFreeSpace(tdw))+Rnd(1,5));",
+              "        HullHP(tdw,ItemSize(ShipItems(tdw,0)));",
+              "    }",
+              "    ShipJoin(Korovan,tdw);",
+              "    //Готовим военных (6 штук)",
+              "    for(i=0;i<6;i=i+1)",
+              "    {",
+              "        tdw=BuyWarrior(KorovanStart,1000);",
+              "        ArrayAdd(groups_ID,Id(tdw));",
+              "        //Устанавливаем размер корпуса военного",
+              "        ItemSize(ShipItems(tdw,0),105*GalaxyTechLevel()+round(0.30*GalaxyDiffLevels())+Rnd(-39,69));",
+              "        if(ItemSize(ShipItems(tdw,0))<220)ItemSize(ShipItems(tdw,0),220+Rnd(-12,23));",
+              "        HullHP(tdw,ItemSize(ShipItems(tdw,0)));",
+              "        Chameleon(tdw);",
+              "        tdw2=ShipItems(tdw,0);",
+              "        if(GetEquipmentStats(tdw2,1)<5)ShipSpecialBonuses(tdw,bonSlotWeapon,5);",
+              "        if(GetEquipmentStats(tdw2,5)<1)ShipSpecialBonuses(tdw,bonSlotDroid,1);",
+              "        if(GetEquipmentStats(tdw2,6)<1)ShipSpecialBonuses(tdw,bonSlotHook,1);",
+              "        if(GetEquipmentStats(tdw2,7)<1)ShipSpecialBonuses(tdw,bonSlotDef,1);",
+              "        ShipSpecialBonuses(tdw,bonSlotArt,2);",
+              "        //Определяем навыки точности",
+              "        tint=GalaxyTechLevel()-1;",
+              "        tint=tint+Rnd(0,2);",
+              "        if(tint>6)tint=6;",
+              "        if(!tint)tint=1;",
+              "        ShipSkill(tdw,0,tint);",
+              "        //Манёвренности",
+              "        tint=GalaxyTechLevel()-1;",
+              "        tint=tint+Rnd(0,2);",
+              "        if(tint>6)tint=6;",
+              "        if(!tint)tint=1;",
+              "        ShipSkill(tdw,1,tint);",
+              "        //И техники",
+              "        tint=tint-Rnd(1,3);",
+              "        if(tint<=0)tint=1;",
+              "        ShipSkill(tdw,2,tint);",
+              "        //Заставляем военного хорошенько закупиться",
+              "        ShipRefit(tdw);",
+              "        ShipRefit(tdw);",
+              "        ShipRefit(tdw);",
+              "        ShipRefit(tdw);",
+              "        //Гарантированно обеспечиваем военных ГЗП, дроидом и захватом, если они сами так и не купили (дебилоиды)",
+              "        if(!ShipEqInSlot(tdw,t_DefGenerator))",
+              "        {",
+              "            if(ShipOwner(tdw)==0)tint=Rnd(30,50);",
+              "            else if(ShipOwner(tdw)==1)tint=Rnd(25,40);",
+              "            else if(ShipOwner(tdw)==2)tint=Rnd(25,35);",
+              "            else if(ShipOwner(tdw)==3)tint=Rnd(15,25);",
+              "            else if(ShipOwner(tdw)==4)tint=Rnd(20,30);",
+              "            tdw2=CreateEquipment(t_DefGenerator,tint,GalaxyTechLevel(),ShipOwner(tdw));",
+              "            AddItemToShip(tdw,tdw2);",
+              "            ItemIsInUse(tdw2,tdw,1);",
+              "        }",
+              "        if(!ShipEqInSlot(tdw,t_RepairRobot))",
+              "        {",
+              "            if(ShipOwner(tdw)==0)tint=Rnd(30,50);",
+              "            else if(ShipOwner(tdw)==1)tint=Rnd(25,40);",
+              "            else if(ShipOwner(tdw)==2)tint=Rnd(25,35);",
+              "            else if(ShipOwner(tdw)==3)tint=Rnd(15,25);",
+              "            else if(ShipOwner(tdw)==4)tint=Rnd(20,30);",
+              "            tdw2=CreateEquipment(t_RepairRobot,tint,GalaxyTechLevel(),ShipOwner(tdw));",
+              "            AddItemToShip(tdw,tdw2);",
+              "            ItemIsInUse(tdw2,tdw,1);",
+              "        }",
+              "        if(!ShipEqInSlot(tdw,t_CargoHook))",
+              "        {",
+              "            if(ShipOwner(tdw)==0)tint=Rnd(30,50);",
+              "            else if(ShipOwner(tdw)==1)tint=Rnd(25,40);",
+              "            else if(ShipOwner(tdw)==2)tint=Rnd(25,35);",
+              "            else if(ShipOwner(tdw)==3)tint=Rnd(15,25);",
+              "            else if(ShipOwner(tdw)==4)tint=Rnd(20,30);",
+              "            tdw2=CreateEquipment(t_CargoHook,tint,GalaxyTechLevel(),ShipOwner(tdw));",
+              "            AddItemToShip(tdw,tdw2);",
+              "            ItemIsInUse(tdw2,tdw,1);",
+              "        }",
+              "        //Выдаём военному аЭгис",
+              "        tdw2=CreateArt(t_ArtPDTurret,ShipOwner(tdw));",
+              "        if(Rnd(1,100)<=95)NoDropItem(tdw2,1);",
+              "        AddItemToShip(tdw,tdw2);",
+              "        ItemIsInUse(tdw2,tdw,1);",
+              "        //С 40% шансом выдаём один дополнительный артефакт на выбор:",
+              "        if(Rnd(1,100)<=40)",
+              "        {",
+              "            tint=Rnd(1,4);",
+              "            //Железные жупи",
+              "            if(tint==1)",
+              "            {",
+              "                tdw2=CreateArt(t_ArtefactHull,ShipOwner(tdw));",
+              "                if(Rnd(1,100)<=75)NoDropItem(tdw2,1);",
+              "                AddItemToShip(tdw,tdw2);",
+              "                ItemIsInUse(tdw2,tdw,1);",
+              "            }",
+              "            //Дроид младший",
+              "            else if(tint==2)",
+              "            {",
+              "                tdw2=CreateArt(t_ArtefactDroid,ShipOwner(tdw));",
+              "                if(Rnd(1,100)<=75)NoDropItem(tdw2,1);",
+              "                AddItemToShip(tdw,tdw2);",
+              "                ItemIsInUse(tdw2,tdw,1);",
+              "            }",
+              "            //Поляризатор",
+              "            else if(tint==3)",
+              "            {",
+              "                tdw2=CreateArt(t_ArtefactDef,ShipOwner(tdw));",
+              "                if(Rnd(1,100)<=75)NoDropItem(tdw2,1);",
+              "                AddItemToShip(tdw,tdw2);",
+              "                ItemIsInUse(tdw2,tdw,1);",
+              "            }",
+              "            //Или ракетанг",
+              "            else if(tint==4)",
+              "            {",
+              "                tdw2=CreateArt(t_ArtMissileDef,ShipOwner(tdw));",
+              "                if(Rnd(1,100)<=75)NoDropItem(tdw2,1);",
+              "                AddItemToShip(tdw,tdw2);",
+              "                ItemIsInUse(tdw2,tdw,1);",
+              "            }",
+              "        }",
+              "        //Повышаем уровень отсосного оборудования военного до текущего ГТУ",
+              "        for(j=ShipItems(tdw);j>0;j=j-1)",
+              "        {",
+              "            tdw2=ShipItems(tdw,j);",
+              "            if(!ItemIsInUse(tdw2))continue;",
+              "            if(ItemType(tdw2)<t_Engine || ItemType(tdw2)>t_DefGenerator)continue;",
+              "            if((GalaxyTechLevel()-ItemLevel(tdw2))>=2)",
+              "            {",
+              "                tdw3=CreateEquipment(ItemType(tdw2),ItemSize(tdw2)+Rnd(7,12),GalaxyTechLevel(),ItemOwner(tdw2));",
+              "                if(EqSpecial(tdw2)>-1)SpecialToEquipment(EqSpecial(tdw2),tdw3);",
+              "                if(EqModule(tdw2)>-1)ModuleToEquipment(EqModule(tdw2),tdw3);",
+              "                ItemLevel(tdw2,GalaxyTechLevel());",
+              "                ItemCost(tdw2,ItemCost(tdw3));",
+              "                if(Rnd(1,100)<=85)NoDropItem(tdw2,1);",
+              "                FreeItem(tdw3);",
+              "            }",
+              "        }",
+              "        //Поднимаем ранг военного до уровня не ниже капитана",
+              "        while(ShipRank(tdw)<3)",
+              "        {",
+              "            ShipRankPoints(tdw,ShipNextRankPoints(tdw));",
+              "            ShipRaiseRank(tdw);",
+              "        }",
+              "        //Производим улучшение оборудования военного в зависимости от его звания",
+              "        if(ShipRank(tdw)==3)tint=Rnd(9,10);",
+              "        else if(ShipRank(tdw)==4)tint=Rnd(10,12);",
+              "        else tint=14;",
+              "        ShipImproveItems(tdw,tint);",
+              "        ShipRepairEq(tdw);",
+              "        //Устраняем возможный перевес военного, накидывая ему недостающее место",
+              "        ShipCalcParam(tdw);",
+              "        if(ShipFreeSpace(tdw)<0)",
+              "        {",
+              "            ItemSize(ShipItems(tdw,0),ItemSize(ShipItems(tdw,0))+abs(ShipFreeSpace(tdw))+Rnd(1,5));",
+              "            HullHP(tdw,ItemSize(ShipItems(tdw,0)));",
+              "        }",
+              "        //Накидываем военному дополнительные невидимые бонусы",
+              "        ShipSpecialBonuses(tdw,bonHook,500);",
+              "        ShipSpecialBonuses(tdw,bonWEnergy,GalaxyTechLevel());",
+              "        ShipSpecialBonuses(tdw,bonWSplinter,GalaxyTechLevel());",
+              "        ShipSpecialBonuses(tdw,bonWMissile,GalaxyTechLevel());",
+              "        //Добавляем военным инфошку для возможности делать выстрел по выпавшим из транспорта контейнерам",
+              "        ShipAddCustomShipInfo(tdw,'ExpCaravan_WarriorShotInfos','NoShow',0);",
+              "        ShipJoin(Korovan_Prot,tdw);",
+              "    }",
+              "    //На всякий случай запрещаем военным стрельбу по контейнерам",
+              "    //Я рот ебал этого казино, но почему-то на первом ходу после спавна они думают, что контейнеры дропнуты в системе, хотя они в тот момент лежат в транспорте",
+              "    ShotAtCargo=7;",
+              "    //Выставляем маркер о готовности каравана к отправке",
+              "    vScst=1;",
+              "}",
+              "//Если караван уже находится в пути, то появляются нападающие на него пираты (от 10 до 15)",
+              "if(vScst==1) {",
+              "    if(GroupCount(Korovan)) {",
+              "        if(GroupIn(Korovan,KorovanStarFinish) && ShipInNormalSpace(GroupToShip(Korovan))) {",
+              "            planetRace=PlanetRace(KorovanPlanetFinish);",
+              "            planetOwner=PlanetOwner(KorovanPlanetFinish);",
+              "            for(i=0;i<Rnd(9,12);i=i+1) {",
+              "                //Временно меняем овнера планеты для спавна пиратов разной расы",
+              "                tint=Rnd(1,10);",
+              "                if(tint>=1 && tint<=3) {",
+              "                    PlanetOwner(KorovanPlanetFinish, PirateClan);",
+              "                    PlanetRace(KorovanPlanetFinish, Maloc);",
+              "                }",
+              "                else if(tint>=4 && tint<=6) {",
+              "                    PlanetOwner(KorovanPlanetFinish, PirateClan);",
+              "                    PlanetRace(KorovanPlanetFinish, Peleng);",
+              "                }",
+              "                else if(tint==7 || tint==8) {",
+              "                    PlanetOwner(KorovanPlanetFinish, PirateClan);",
+              "                    PlanetRace(KorovanPlanetFinish, People);",
+              "                }",
+              "                else if(tint==9) {",
+              "                    PlanetOwner(KorovanPlanetFinish, PirateClan);",
+              "                    PlanetRace(KorovanPlanetFinish, People);",
+              "                }",
+              "                else if(tint==10)",
+              "                {",
+              "                    PlanetOwner(KorovanPlanetFinish,PirateClan);",
+              "                    PlanetRace(KorovanPlanetFinish, Gaal);",
+              "                }",
+              "                tdw=BuyPirate(KorovanPlanetFinish,700);",
+              "                ArrayAdd(pirates_ID,Id(tdw));",
+              "                //Устанавливаем размер корпуса пирата",
+              "                ItemSize(ShipItems(tdw,0),80*GalaxyTechLevel()+round(0.30*GalaxyDiffLevels())+Rnd(-39,43));",
+              "                if(ItemSize(ShipItems(tdw,0))<220)ItemSize(ShipItems(tdw,0),220+Rnd(-17,19));",
+              "                HullHP(tdw,ItemSize(ShipItems(tdw,0)));",
+              "                Chameleon(tdw);",
+              "                //Гарантированно открываем пирату некоторые слоты",
+              "                if(GetEquipmentStats(ShipItems(tdw,0),1)<3)ShipSpecialBonuses(tdw,bonSlotWeapon,3-GetEquipmentStats(ShipItems(tdw,0),1));",
+              "                if(GetEquipmentStats(ShipItems(tdw,0),6)<1)ShipSpecialBonuses(tdw,bonSlotHook,1);",
+              "                //Определяем навыки точности",
+              "                tint=GalaxyTechLevel()-1;",
+              "                tint=tint+Rnd(0,2);",
+              "                if(tint>6)tint=6;",
+              "                if(!tint)tint=1;",
+              "                ShipSkill(tdw,0,tint);",
+              "                //И манёвренности",
+              "                tint=GalaxyTechLevel()-1;",
+              "                tint=tint+Rnd(0,2);",
+              "                if(tint>6)tint=6;",
+              "                if(!tint)tint=1;",
+              "                ShipSkill(tdw,1,tint);",
+              "                for(j=0; j<4; j=j+1) ShipRefit(tdw); //Заставляем пирата хорошенько закупиться",
+              "                if(!ShipEqInSlot(tdw,t_CargoHook)) {  //Если у пирата отсутствует захват, то добавляем ему его в обязательном порядке",
+              "                    tdw2=CreateEquipment(t_CargoHook ,Rnd(25,40) ,GalaxyTechLevel(), PirateClan);",
+              "                    AddItemToShip(tdw,tdw2);",
+              "                    ItemIsInUse(tdw2,tdw,1);",
+              "                }",
+              "                //Повышаем уровень самого отсосного оборудования пирата до текущего ГТУ",
+              "                for(j=ShipItems(tdw); j>0; j=j-1) {",
+              "                    tdw2=ShipItems(tdw,j);",
+              "                    if(!ItemIsInUse(tdw2)) continue;",
+              "                    if(ItemType(tdw2)<t_Engine || ItemType(tdw2)>t_DefGenerator) continue;",
+              "                    if((GalaxyTechLevel()-ItemLevel(tdw2))>=3) {",
+              "                        tdw3=CreateEquipment(ItemType(tdw2),ItemSize(tdw2)+Rnd(9,15),GalaxyTechLevel(),ItemOwner(tdw2));",
+              "                        if(EqSpecial(tdw2)>-1)SpecialToEquipment(EqSpecial(tdw2),tdw3);",
+              "                        if(EqModule(tdw2)>-1)ModuleToEquipment(EqModule(tdw2),tdw3);",
+              "                        ItemLevel(tdw2,GalaxyTechLevel());",
+              "                        ItemCost(tdw2,ItemCost(tdw3));",
+              "                        if(Rnd(1,100)<=85)NoDropItem(tdw2,1);",
+              "                        FreeItem(tdw3);",
+              "                    }",
+              "                }",
+              "                while(GetShipPirateRank(tdw)<2) RaisePirateRank(tdw); //Поднимаем ранг пирата до уровня не ниже рейдера",
+              "                //Производим улучшение оборудования пирата в зависимости от его звания",
+              "                if(GetShipPirateRank(tdw)==2) tint=Rnd(7,8);",
+              "                else if(GetShipPirateRank(tdw)==3) tint=Rnd(9,10);",
+              "                else if(GetShipPirateRank(tdw)==4) tint=Rnd(11,12);",
+              "                else tint=14;",
+              "                ShipImproveItems(tdw, tint);",
+              "                ShipCalcParam(tdw); //Устраняем возможный перевес пирата, накидывая ему недостающее место",
+              "                if(ShipFreeSpace(tdw)<0) {",
+              "                    ItemSize(ShipItems(tdw,0),ItemSize(ShipItems(tdw,0))+abs(ShipFreeSpace(tdw))+Rnd(1,5));",
+              "                    HullHP(tdw,ItemSize(ShipItems(tdw,0)));",
+              "                }",
+              "                //Накидываем пирату невидимые бонусы",
+              "                ShipSpecialBonuses(tdw,bonHook,500);",
+              "                ShipSpecialBonuses(tdw,bonWEnergy,ShipProtectability(GroupToShip(Korovan))/2);",
+              "                ShipSpecialBonuses(tdw,bonWSplinter,ShipProtectability(GroupToShip(Korovan))/2);",
+              "                ShipSpecialBonuses(tdw,bonSpeed,50*GalaxyTechLevel());",
+              "                ShipRepairEq(tdw);",
+              "                ShipJoin(Pirates,tdw);",
+              "                MakeShipEnterStar(tdw,KorovanStarFinish,PlayerStar,1);",
+              "            }",
+              "            //Возвращаем планете её настоящего владельца",
+              "            PlanetRace(KorovanPlanetFinish,planetRace);",
+              "            PlanetOwner(KorovanPlanetFinish,planetOwner);",
+              "            //Ставим маркер, что пираты готовы",
+              "            vScst=2;",
+              "        }",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -70,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  37,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipDestroy(CurShip);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -100,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  42,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipDestroy(CurShip);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -150,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  49,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(ItemIn(Cargo_1,CurShip))cargoDelivered=cargoDelivered+1;",
+              "if(ItemIn(Cargo_2,CurShip))cargoDelivered=cargoDelivered+1;",
+              "if(ItemIn(Cargo_3,CurShip))cargoDelivered=cargoDelivered+1;",
+              "ShipDestroy(CurShip);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  180,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  51,
+          "Total.Lines":  5,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "groups = newarray(1);",
+              "groups_ID = newarray(1);",
+              "pirates_ID = newarray(1);",
+              "tint = Rnd(1, 100);",
+              "if(GCntRun('Mod_ExpCaravan') && tint <= 50) vScst = -1;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  150,
+          "Pos.y":  -180,
+          "Parent":  -1,
+          "#":  108,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(ShipInHyperSpace(CurShip))ShipDestroy(CurShip);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -240,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  110,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(ItemIn(Cargo_1,CurShip))cargoDelivered=cargoDelivered+1;",
+              "if(ItemIn(Cargo_2,CurShip))cargoDelivered=cargoDelivered+1;",
+              "if(ItemIn(Cargo_3,CurShip))cargoDelivered=cargoDelivered+1;",
+              "ShipDestroy(CurShip);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  160,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  119,
+          "Total.Lines":  8,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "tdw=GetTalkShip();",
+              "if(ShipGetBad(tdw)!=Player())",
+              "{",
+              "    if(RelationToRanger(tdw,Player())>=75)tstr='</color>'+\"Здравствуй, <Player>! Искренне рад встретить тебя на этих бескрайних космических просторах.<br>К сожалению, сейчас совсем нет времени болтать, я очень сильно занят, но честно обещаю пропустить с тобой по кружечке \\\"Махпеллы\\\" как-нибудь в другой раз.\";",
+              "    else if(RelationToRanger(tdw,Player())>=10 && RelationToRanger(tdw,Player())<75)tstr='</color>'+\"А, это ты, <Player>. Извини, но болтать с тобой мне некогда, поговорим в другой раз.\";",
+              "    else tstr='</color>'+\"Да чтоб у тебя коммуникатор треснул! Проваливай с экрана, <Player>, мне сейчас ну вот совсем не до твоей мерзкой рожи!\";",
+              "}",
+              "else tstr='</color>'+\"Да чтоб у тебя коммуникатор треснул! Проваливай с экрана, <Player>, мне сейчас ну вот совсем не до твоей мерзкой рожи!\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  20,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  121,
+          "Total.Lines":  8,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "tdw=GetTalkShip();",
+              "if(ShipGetBad(tdw)!=Player())",
+              "{",
+              "    if(RelationToRanger(tdw,Player())>=75)tstr='</color>'+\"Здравия желаю, <Player>! Прошу меня простить, но прямо сейчас я нахожусь на задании и не могу отвлекаться.\";",
+              "    else if(RelationToRanger(tdw,Player())>=10 && RelationToRanger(tdw,Player())<75)tstr='</color>'+\"Эй, а ну не занимай эту частоту! Я выполняю важное задание и у меня сейчас нет времени с тобой трепаться.\";",
+              "    else tstr='</color>'+\"А, проклятый пират! Ну иди-ка сюда! Иди, и я по тебе так вдарю, что к клисанам в соседний рукав улетишь!!!\";",
+              "}",
+              "else tstr='</color>'+\"А, проклятый пират! Ну иди-ка сюда! Иди, и я по тебе так вдарю, что к клисанам в соседний рукав улетишь!!!\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -200,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  122,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//Транспорт крутиться на месте, ожидая военных",
+              "tfloat=pi*(ShipAngle(CurShip)+90.0)/Rnd(179,181);//Угол разворота",
+              "OrderMove(CurShip,cos(tfloat)*10.0+CoordX(CurShip),sin(tfloat)*10.0+CoordY(CurShip));",
+              "OrderLock(CurShip,1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -100,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  125,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "OrderLock(CurShip,0);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -400,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  128,
+          "Total.Lines":  43,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(!ItemIn(Cargo_1,PlayerStar))",
+              "{",
+              "    if(!ItemIn(Cargo_2,PlayerStar) && !ItemIn(Cargo_3,PlayerStar))",
+              "    {",
+              "        ChangeState('Home');",
+              "        exit;",
+              "    }",
+              "    else",
+              "    {",
+              "        if(ItemIn(Cargo_2,PlayerStar))ChangeState('TK_2');",
+              "        else if(ItemIn(Cargo_3,PlayerStar))ChangeState('TK_3');",
+              "        exit;",
+              "    }",
+              "}",
+              "//Военные сперва попытаются поднять выпавший контейнер, а в случае нехватки места просто уничтожат его",
+              "if(ShipFreeSpace(CurShip)>=cargoSize1)",
+              "{",
+              "    ChangeState('WarriorGrab1');",
+              "}",
+              "else",
+              "{",
+              "    j=0;",
+              "    for(i=0;i<GroupCount(Korovan_Prot);i=i+1)",
+              "    {",
+              "        tdw=GroupShip(Korovan_Prot,i);",
+              "        if(ShipFreeSpace(tdw)>=cargoSize1)break;",
+              "        if(i==GroupCount(Korovan_Prot)-1)j=1;",
+              "    }",
+              "    //Выдаём военному \"приказ\" выстрелить по контейнеру",
+              "    if(j)",
+              "    {",
+              "        if(!(ShotAtCargo & 1))",
+              "        {",
+              "            tdw=ScriptItemToItem(Cargo_1);",
+              "            if(tdw)",
+              "            {",
+              "                ShipCustomShipInfoData(CurShip,'ExpCaravan_WarriorShotInfos',1,Id(ScriptItemToItem(Cargo_1)));",
+              "                ShipCustomShipInfoData(CurShip,'ExpCaravan_WarriorShotInfos',2,1);",
+              "                ShotAtCargo=ShotAtCargo+1;",
+              "            }",
+              "        }",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -570,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  135,
+          "Total.Lines":  8,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "j=ShipFreeSpace(CurShip);",
+              "if(j>=cargoSize2 || j>=cargoSize3)",
+              "{",
+              "    if(ItemIn(Cargo_2,PlayerStar) && j>=cargoSize2)ChangeState('WarriorGrab2');",
+              "    else if(ItemIn(Cargo_3,PlayerStar) && j>=cargoSize3)ChangeState('WarriorGrab3');",
+              "    else ChangeState('Home');",
+              "}",
+              "else ChangeState('Home');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -400,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  136,
+          "Total.Lines":  43,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(!ItemIn(Cargo_2,PlayerStar))",
+              "{",
+              "    if(!ItemIn(Cargo_1,PlayerStar) && !ItemIn(Cargo_3,PlayerStar))",
+              "    {",
+              "        ChangeState('Home');",
+              "        exit;",
+              "    }",
+              "    else",
+              "    {",
+              "        if(ItemIn(Cargo_1,PlayerStar))ChangeState('TK_1');",
+              "        else if(ItemIn(Cargo_3,PlayerStar))ChangeState('TK_3');",
+              "        exit;",
+              "    }",
+              "}",
+              "//Военные сперва попытаются поднять выпавший контейнер, а в случае нехватки места просто уничтожат его",
+              "if(ShipFreeSpace(CurShip)>=cargoSize2)",
+              "{",
+              "    ChangeState('WarriorGrab2');",
+              "}",
+              "else",
+              "{",
+              "    j=0;",
+              "    for(i=0;i<GroupCount(Korovan_Prot);i=i+1)",
+              "    {",
+              "        tdw=GroupShip(Korovan_Prot,i);",
+              "        if(ShipFreeSpace(tdw)>=cargoSize2)break;",
+              "        if(i==GroupCount(Korovan_Prot)-1)j=1;",
+              "    }",
+              "    //Выдаём военному \"приказ\" выстрелить по контейнеру",
+              "    if(j)",
+              "    {",
+              "        if(!(ShotAtCargo & 2))",
+              "        {",
+              "            tdw=ScriptItemToItem(Cargo_2);",
+              "            if(tdw)",
+              "            {",
+              "                ShipCustomShipInfoData(CurShip,'ExpCaravan_WarriorShotInfos',1,Id(ScriptItemToItem(Cargo_2)));",
+              "                ShipCustomShipInfoData(CurShip,'ExpCaravan_WarriorShotInfos',2,2);",
+              "                ShotAtCargo=ShotAtCargo+2;",
+              "            }",
+              "        }",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -400,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  137,
+          "Total.Lines":  43,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(!ItemIn(Cargo_3,PlayerStar))",
+              "{",
+              "    if(!ItemIn(Cargo_1,PlayerStar) && !ItemIn(Cargo_2,PlayerStar))",
+              "    {",
+              "        ChangeState('Home');",
+              "        exit;",
+              "    }",
+              "    else",
+              "    {",
+              "        if(ItemIn(Cargo_1,PlayerStar))ChangeState('TK_1');",
+              "        else if(ItemIn(Cargo_2,PlayerStar))ChangeState('TK_2');",
+              "        exit;",
+              "    }",
+              "}",
+              "//Военные сперва попытаются поднять выпавший контейнер, а в случае нехватки места просто уничтожат его",
+              "if(ShipFreeSpace(CurShip)>=cargoSize3)",
+              "{",
+              "    ChangeState('WarriorGrab3');",
+              "}",
+              "else",
+              "{",
+              "    j=0;",
+              "    for(i=0;i<GroupCount(Korovan_Prot);i=i+1)",
+              "    {",
+              "        tdw=GroupShip(Korovan_Prot,i);",
+              "        if(ShipFreeSpace(tdw)>=cargoSize3)break;",
+              "        if(i==GroupCount(Korovan_Prot)-1)j=1;",
+              "    }",
+              "    //Выдаём военному \"приказ\" выстрелить по контейнеру",
+              "    if(j)",
+              "    {",
+              "        if(!(ShotAtCargo & 4))",
+              "        {",
+              "            tdw=ScriptItemToItem(Cargo_3);",
+              "            if(tdw)",
+              "            {",
+              "                ShipCustomShipInfoData(CurShip,'ExpCaravan_WarriorShotInfos',1,Id(ScriptItemToItem(Cargo_3)));",
+              "                ShipCustomShipInfoData(CurShip,'ExpCaravan_WarriorShotInfos',2,3);",
+              "                ShotAtCargo=ShotAtCargo+4;",
+              "            }",
+              "        }",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -400,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  138,
+          "Total.Lines":  43,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(!ItemIn(Cargo_1,KorovanStarFinish))",
+              "{",
+              "    if(!ItemIn(Cargo_2,KorovanStarFinish) && !ItemIn(Cargo_3,KorovanStarFinish))",
+              "    {",
+              "        ChangeState('Home_2');",
+              "        exit;",
+              "    }",
+              "    else",
+              "    {",
+              "        if(ItemIn(Cargo_2,KorovanStarFinish))ChangeState('TK_2_2');",
+              "        else if(ItemIn(Cargo_3,KorovanStarFinish))ChangeState('TK_3_2');",
+              "        exit;",
+              "    }",
+              "}",
+              "//Военные сперва попытаются поднять выпавший контейнер, а в случае нехватки места просто уничтожат его",
+              "if(ShipFreeSpace(CurShip)>=cargoSize1)",
+              "{",
+              "    ChangeState('WarriorGrab1_2');",
+              "}",
+              "else",
+              "{",
+              "    j=0;",
+              "    for(i=0;i<GroupCount(Korovan_Prot);i=i+1)",
+              "    {",
+              "        tdw=GroupShip(Korovan_Prot,i);",
+              "        if(ShipFreeSpace(tdw)>=cargoSize1)break;",
+              "        if(i==GroupCount(Korovan_Prot)-1)j=1;",
+              "    }",
+              "    //Выдаём военному \"приказ\" выстрелить по контейнеру",
+              "    if(j)",
+              "    {",
+              "        if(!(ShotAtCargo & 1))",
+              "        {",
+              "            tdw=ScriptItemToItem(Cargo_1);",
+              "            if(tdw)",
+              "            {",
+              "                ShipCustomShipInfoData(CurShip,'ExpCaravan_WarriorShotInfos',1,Id(ScriptItemToItem(Cargo_1)));",
+              "                ShipCustomShipInfoData(CurShip,'ExpCaravan_WarriorShotInfos',2,1);",
+              "                ShotAtCargo=ShotAtCargo+1;",
+              "            }",
+              "        }",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -400,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  139,
+          "Total.Lines":  43,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(!ItemIn(Cargo_2,KorovanStarFinish))",
+              "{",
+              "    if(!ItemIn(Cargo_1,KorovanStarFinish) && !ItemIn(Cargo_3,KorovanStarFinish))",
+              "    {",
+              "        ChangeState('Home_2');",
+              "        exit;",
+              "    }",
+              "    else",
+              "    {",
+              "        if(ItemIn(Cargo_1,KorovanStarFinish))ChangeState('TK_1_2');",
+              "        else if(ItemIn(Cargo_3,KorovanStarFinish))ChangeState('TK_3_2');",
+              "        exit;",
+              "    }",
+              "}",
+              "//Военные сперва попытаются поднять выпавший контейнер, а в случае нехватки места просто уничтожат его",
+              "if(ShipFreeSpace(CurShip)>=cargoSize2)",
+              "{",
+              "    ChangeState('WarriorGrab2_2');",
+              "}",
+              "else",
+              "{",
+              "    j=0;",
+              "    for(i=0;i<GroupCount(Korovan_Prot);i=i+1)",
+              "    {",
+              "        tdw=GroupShip(Korovan_Prot,i);",
+              "        if(ShipFreeSpace(tdw)>=cargoSize2)break;",
+              "        if(i==GroupCount(Korovan_Prot)-1)j=1;",
+              "    }",
+              "    //Выдаём военному \"приказ\" выстрелить по контейнеру",
+              "    if(j)",
+              "    {",
+              "        if(!(ShotAtCargo & 2))",
+              "        {",
+              "            tdw=ScriptItemToItem(Cargo_2);",
+              "            if(tdw)",
+              "            {",
+              "                ShipCustomShipInfoData(CurShip,'ExpCaravan_WarriorShotInfos',1,Id(ScriptItemToItem(Cargo_2)));",
+              "                ShipCustomShipInfoData(CurShip,'ExpCaravan_WarriorShotInfos',2,2);",
+              "                ShotAtCargo=ShotAtCargo+2;",
+              "            }",
+              "        }",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -400,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  140,
+          "Total.Lines":  43,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(!ItemIn(Cargo_3,KorovanStarFinish))",
+              "{",
+              "    if(!ItemIn(Cargo_1,KorovanStarFinish) && !ItemIn(Cargo_2,KorovanStarFinish))",
+              "    {",
+              "        ChangeState('Home_2');",
+              "        exit;",
+              "    }",
+              "    else",
+              "    {",
+              "        if(ItemIn(Cargo_1,KorovanStarFinish))ChangeState('TK_1_2');",
+              "        else if(ItemIn(Cargo_2,KorovanStarFinish))ChangeState('TK_2_2');",
+              "        exit;",
+              "    }",
+              "}",
+              "//Военные сперва попытаются поднять выпавший контейнер, а в случае нехватки места просто уничтожат его",
+              "if(ShipFreeSpace(CurShip)>=cargoSize3)",
+              "{",
+              "    ChangeState('WarriorGrab3_2');",
+              "}",
+              "else",
+              "{",
+              "    j=0;",
+              "    for(i=0;i<GroupCount(Korovan_Prot);i=i+1)",
+              "    {",
+              "        tdw=GroupShip(Korovan_Prot,i);",
+              "        if(ShipFreeSpace(tdw)>=cargoSize3)break;",
+              "        if(i==GroupCount(Korovan_Prot)-1)j=1;",
+              "    }",
+              "    //Выдаём военному \"приказ\" выстрелить по контейнеру",
+              "    if(j)",
+              "    {",
+              "        if(!(ShotAtCargo & 4))",
+              "        {",
+              "            tdw=ScriptItemToItem(Cargo_3);",
+              "            if(tdw)",
+              "            {",
+              "                ShipCustomShipInfoData(CurShip,'ExpCaravan_WarriorShotInfos',1,Id(ScriptItemToItem(Cargo_3)));",
+              "                ShipCustomShipInfoData(CurShip,'ExpCaravan_WarriorShotInfos',2,3);",
+              "                ShotAtCargo=ShotAtCargo+4;",
+              "            }",
+              "        }",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -570,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  147,
+          "Total.Lines":  8,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "j=ShipFreeSpace(CurShip);",
+              "if(j>=cargoSize2 || j>=cargoSize3)",
+              "{",
+              "    if(ItemIn(Cargo_2,KorovanStarFinish) && j>=cargoSize2)ChangeState('WarriorGrab2_2');",
+              "    else if(ItemIn(Cargo_3,KorovanStarFinish) && j>=cargoSize3)ChangeState('WarriorGrab3_2');",
+              "    else ChangeState('Home_2');",
+              "}",
+              "else ChangeState('Home_2');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  80,
+          "Pos.y":  -90,
+          "Parent":  -1,
+          "#":  151,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "j=ShipFreeSpace(CurShip);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -150,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  155,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ChangeState('ProtJumpHome');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -300,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  158,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ChangeState('Home');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -260,
+          "Pos.y":  -90,
+          "Parent":  -1,
+          "#":  160,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(StarOwner(PlayerStar)!=0)ShipDestroy(CurShip);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -270,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  164,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ChangeState('LandHome');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -240,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  165,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(StarOwner(PlayerStar)!=0)ShipDestroy(CurShip);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -270,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  168,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipDestroy(CurShip);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -200,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  170,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ChangeState('KorJumpHome');"          
+          ]        
+        }      
+      ],
+      "Places":      
+      [
+        {
+          "Type":  "TPlace",
+          "Name":  "ToFinishStar",
+          "Pos.x":  -30,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  20,
+          "Place.Type":  3,
+          "Angle":  "0",
+          "Dist":  "1",
+          "Radius":  50,
+          "Obj1":  6,
+          "Obj2":  -1        
+        },
+        {
+          "Type":  "TPlace",
+          "Name":  "Near_Kor",
+          "Pos.x":  -30,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  31,
+          "Place.Type":  5,
+          "Angle":  "0",
+          "Dist":  "0",
+          "Radius":  250,
+          "Obj1":  7,
+          "Obj2":  -1        
+        },
+        {
+          "Type":  "TPlace",
+          "Name":  "Near_C3",
+          "Pos.x":  100,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  61,
+          "Place.Type":  4,
+          "Angle":  "0",
+          "Dist":  "0.5",
+          "Radius":  100,
+          "Obj1":  60,
+          "Obj2":  -1        
+        },
+        {
+          "Type":  "TPlace",
+          "Name":  "Near_C2",
+          "Pos.x":  100,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  62,
+          "Place.Type":  4,
+          "Angle":  "0",
+          "Dist":  "0.5",
+          "Radius":  100,
+          "Obj1":  59,
+          "Obj2":  -1        
+        },
+        {
+          "Type":  "TPlace",
+          "Name":  "Near_C1",
+          "Pos.x":  100,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  63,
+          "Place.Type":  4,
+          "Angle":  "0",
+          "Dist":  "0.5",
+          "Radius":  100,
+          "Obj1":  58,
+          "Obj2":  -1        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "KorovanStart",
+          "Pos.x":  60,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  5,
+          "Race":  63,
+          "Owner":  63,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        },
+        {
+          "Type":  "TPlanet",
+          "Name":  "KorovanPlanetFinish",
+          "Pos.x":  60,
+          "Pos.y":  10,
+          "Parent":  -1,
+          "#":  9,
+          "Race":  63,
+          "Owner":  63,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        },
+        {
+          "Type":  "TPlanet",
+          "Name":  "PiratePlanet",
+          "Pos.x":  200,
+          "Pos.y":  10,
+          "Parent":  -1,
+          "#":  105,
+          "Race":  63,
+          "Owner":  129,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  90,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  0,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "PlayerStar",
+          "Pos.x":  60,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  1,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  true,
+          "NoComeKling":  true        
+        },
+        {
+          "Type":  "TStar",
+          "Name":  "KorovanStarFinish",
+          "Pos.x":  60,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  6,
+          "Constellation":  0,
+          "Priority":  1,
+          "NoKling":  true,
+          "NoComeKling":  true        
+        },
+        {
+          "Type":  "TStar",
+          "Name":  "PirateStar",
+          "Pos.x":  200,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  104,
+          "Constellation":  0,
+          "Priority":  2,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -170,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  17,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!GroupIn(Korovan_Prot,Near_Kor) && !GetShipPlanet(CurShip)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -100,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  18,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GroupCount(Korovan_Prot)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -170,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  21,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GroupIn(Korovan,ToFinishStar) && GroupIn(Korovan_Prot,Near_Kor)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -220,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  23,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "EndState"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -270,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  25,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GroupIn(Korovan,ToFinishStar) && GroupIn(Korovan_Prot,Near_Kor)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -370,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  27,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "EndState"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -120,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  30,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GroupIn(Korovan_Prot,Near_Kor)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -260,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  32,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GroupIn(Korovan,KorovanStarFinish) && ShipInNormalSpace(GroupToShip(Korovan))"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -70,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  34,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!GroupCount(Korovan_Prot) && st_turn!=0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -40,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  36,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "EndState"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -230,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  38,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GroupCount(Korovan)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -230,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  39,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!GroupCount(Korovan) && st_turn!=0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -120,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  41,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "EndState"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -300,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  43,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GroupCount(Korovan)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -230,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  44,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!GroupCount(Korovan)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -190,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  45,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GroupCount(Korovan)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -190,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  46,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GetShipPlanet(GroupToShip(Korovan))==KorovanPlanetFinish"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -190,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  48,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "EndState"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -200,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  50,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GroupCount(Korovan_Prot)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -330,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  64,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ItemIn(Cargo_3,PlayerStar)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -350,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  65,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ItemIn(Cargo_2,PlayerStar)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -370,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  66,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ItemIn(Cargo_1,PlayerStar)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -230,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  70,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemIn(Cargo_1,PlayerStar) && !ItemIn(Cargo_2,PlayerStar) && !ItemIn(Cargo_3,PlayerStar)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -370,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  71,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -270,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  72,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemIn(Cargo_3,PlayerStar)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -270,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  73,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemIn(Cargo_2,PlayerStar)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -270,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  74,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemIn(Cargo_1,PlayerStar)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -350,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  75,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -350,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  76,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -320,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  77,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ItemIn(Cargo_1,KorovanStarFinish)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -320,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  78,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ItemIn(Cargo_2,KorovanStarFinish)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -320,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  79,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ItemIn(Cargo_3,KorovanStarFinish)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -230,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  83,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemIn(Cargo_1,KorovanStarFinish)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -230,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  84,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemIn(Cargo_2,KorovanStarFinish)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -230,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  85,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemIn(Cargo_3,KorovanStarFinish)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -210,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  86,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemIn(Cargo_1,KorovanStarFinish) && !ItemIn(Cargo_2,KorovanStarFinish) && !ItemIn(Cargo_3,KorovanStarFinish)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -20,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  91,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GroupCount(Korovan)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  110,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  93,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!GroupCount(Korovan)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -50,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  94,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -30,
+          "Pos.y":  -140,
+          "Parent":  -1,
+          "#":  95,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ItemIn(Cargo_3,KorovanStarFinish) && j>=cargoSize3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -40,
+          "Pos.y":  -160,
+          "Parent":  -1,
+          "#":  96,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ItemIn(Cargo_2,KorovanStarFinish) && j>=cargoSize2"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -50,
+          "Pos.y":  -180,
+          "Parent":  -1,
+          "#":  97,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ItemIn(Cargo_1,KorovanStarFinish) && j>=cargoSize1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  80,
+          "Pos.y":  -140,
+          "Parent":  -1,
+          "#":  101,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemIn(Cargo_3,KorovanStarFinish)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  80,
+          "Pos.y":  -160,
+          "Parent":  -1,
+          "#":  102,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemIn(Cargo_2,KorovanStarFinish)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  80,
+          "Pos.y":  -180,
+          "Parent":  -1,
+          "#":  103,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemIn(Cargo_1,KorovanStarFinish)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  150,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  106,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "(!ItemIn(Cargo_1,KorovanStarFinish) && !ItemIn(Cargo_2,KorovanStarFinish) && !ItemIn(Cargo_3,KorovanStarFinish)) || (j<cargoSize1 && j<cargoSize2 && j<cargoSize3)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -50,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  109,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInNormalSpace(CurShip)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -240,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  111,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "EndState"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -100,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  124,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -540,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  132,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemIn(Cargo_1,PlayerStar)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -540,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  133,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemIn(Cargo_2,PlayerStar)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -540,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  134,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemIn(Cargo_3,PlayerStar)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -540,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  144,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemIn(Cargo_1,KorovanStarFinish)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -540,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  145,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemIn(Cargo_2,KorovanStarFinish)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -540,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  146,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemIn(Cargo_3,KorovanStarFinish)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -50,
+          "Pos.y":  -90,
+          "Parent":  -1,
+          "#":  152,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -170,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  154,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "StarOwner(KorovanStarFinish)!=0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -260,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  157,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "EndState"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -230,
+          "Pos.y":  -90,
+          "Parent":  -1,
+          "#":  159,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInHyperSpace(CurShip)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -200,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  162,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInHyperSpace(CurShip)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -240,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  163,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "EndState"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -240,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  167,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "EndState"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -220,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  169,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "StarOwner(KorovanStarFinish)!=0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -170,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  171,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInHyperSpace(GroupToShip(Korovan))"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "PlayerState",
+          "Pos.x":  60,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  3,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "To_Jump",
+          "Pos.x":  -70,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  10,
+          "Move":  1,
+          "MoveObj":  20,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Kor_d",
+          "OnActCode":  "Kor_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Flw_K",
+          "Pos.x":  -200,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  11,
+          "Move":  2,
+          "MoveObj":  7,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Wait",
+          "Pos.x":  -170,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  19,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Kor_d",
+          "OnActCode":  "Kor_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Jump",
+          "Pos.x":  -170,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  22,
+          "Move":  3,
+          "MoveObj":  6,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Kor_d",
+          "OnActCode":  "Kor_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Land",
+          "Pos.x":  -220,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  24,
+          "Move":  4,
+          "MoveObj":  9,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  89            
+            }          
+          ],
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Kor_d",
+          "OnActCode":  "Kor_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Jump_2",
+          "Pos.x":  -370,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  26,
+          "Move":  3,
+          "MoveObj":  6,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Flw_K_2",
+          "Pos.x":  -190,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  28,
+          "Move":  2,
+          "MoveObj":  7,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  89            
+            }          
+          ],
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Wait_2",
+          "Pos.x":  -370,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  33,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  89            
+            }          
+          ],
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Run",
+          "Pos.x":  -40,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  35,
+          "Move":  4,
+          "MoveObj":  5,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Kor_d",
+          "OnActCode":  "Kor_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Home",
+          "Pos.x":  -200,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  40,
+          "Move":  4,
+          "MoveObj":  5,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Home_2",
+          "Pos.x":  -190,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  47,
+          "Move":  4,
+          "MoveObj":  9,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  89            
+            }          
+          ],
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "TK_1",
+          "Pos.x":  -370,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  67,
+          "Move":  1,
+          "MoveObj":  63,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "TK_2",
+          "Pos.x":  -350,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  68,
+          "Move":  1,
+          "MoveObj":  62,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "TK_3",
+          "Pos.x":  -330,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  69,
+          "Move":  1,
+          "MoveObj":  61,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "TK_3_2",
+          "Pos.x":  -300,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  80,
+          "Move":  1,
+          "MoveObj":  61,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  89            
+            }          
+          ],
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "TK_2_2",
+          "Pos.x":  -300,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  81,
+          "Move":  1,
+          "MoveObj":  62,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  89            
+            }          
+          ],
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "TK_1_2",
+          "Pos.x":  -300,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  82,
+          "Move":  1,
+          "MoveObj":  63,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  89            
+            }          
+          ],
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Wait_3",
+          "Pos.x":  -50,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  90,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Pers_Kor",
+          "Pos.x":  80,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  92,
+          "Move":  2,
+          "MoveObj":  7,
+          "Attack.Count":  2,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  7,
+              "Target.1":  8            
+            }          
+          ],
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "TK_3_2_P",
+          "Pos.x":  0,
+          "Pos.y":  -140,
+          "Parent":  -1,
+          "#":  98,
+          "Move":  1,
+          "MoveObj":  61,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  8            
+            }          
+          ],
+          "TakeItem":  60,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "TK_2_2_P",
+          "Pos.x":  -10,
+          "Pos.y":  -160,
+          "Parent":  -1,
+          "#":  99,
+          "Move":  1,
+          "MoveObj":  62,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  8            
+            }          
+          ],
+          "TakeItem":  59,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "TK_1_2_P",
+          "Pos.x":  -20,
+          "Pos.y":  -180,
+          "Parent":  -1,
+          "#":  100,
+          "Move":  1,
+          "MoveObj":  63,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  8            
+            }          
+          ],
+          "TakeItem":  58,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "PirateEscape",
+          "Pos.x":  150,
+          "Pos.y":  -150,
+          "Parent":  -1,
+          "#":  107,
+          "Move":  3,
+          "MoveObj":  104,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  8            
+            }          
+          ],
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "WarriorGrab1",
+          "Pos.x":  -510,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  129,
+          "Move":  1,
+          "MoveObj":  63,
+          "Attack.Count":  0,
+          "TakeItem":  58,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "WarriorGrab2",
+          "Pos.x":  -510,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  130,
+          "Move":  1,
+          "MoveObj":  62,
+          "Attack.Count":  0,
+          "TakeItem":  59,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "WarriorGrab3",
+          "Pos.x":  -510,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  131,
+          "Move":  1,
+          "MoveObj":  61,
+          "Attack.Count":  0,
+          "TakeItem":  60,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "WarriorGrab1_2",
+          "Pos.x":  -510,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  141,
+          "Move":  1,
+          "MoveObj":  63,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  89            
+            }          
+          ],
+          "TakeItem":  58,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "WarriorGrab2_2",
+          "Pos.x":  -510,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  142,
+          "Move":  1,
+          "MoveObj":  62,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  89            
+            }          
+          ],
+          "TakeItem":  59,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "WarriorGrab3_2",
+          "Pos.x":  -510,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  143,
+          "Move":  1,
+          "MoveObj":  61,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  89            
+            }          
+          ],
+          "TakeItem":  60,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "ProtJumpHome",
+          "Pos.x":  -190,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  156,
+          "Move":  3,
+          "MoveObj":  1,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  89            
+            }          
+          ],
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Prot_d",
+          "OnActCode":  "Prot_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "KorJumpHome",
+          "Pos.x":  -170,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  161,
+          "Move":  3,
+          "MoveObj":  1,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  89            
+            }          
+          ],
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Kor_d",
+          "OnActCode":  "Kor_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "LandHome",
+          "Pos.x":  -170,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  166,
+          "Move":  4,
+          "MoveObj":  5,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Kor_d",
+          "OnActCode":  "Kor_d",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "tdw",
+          "Pos.x":  260,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  13,
+          "Var.Type":  "Dword",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tdw2",
+          "Pos.x":  260,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  14,
+          "Var.Type":  "Dword",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "i",
+          "Pos.x":  320,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  15,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "j",
+          "Pos.x":  360,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  16,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "vScst",
+          "Pos.x":  260,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  29,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "groups",
+          "Pos.x":  260,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  52,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "attack",
+          "Pos.x":  260,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  53,
+          "Var.Type":  "Array",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "enRad",
+          "Pos.x":  260,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  54,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "st_turn",
+          "Pos.x":  260,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  55,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tint",
+          "Pos.x":  260,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  56,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tdw3",
+          "Pos.x":  260,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  57,
+          "Var.Type":  "Dword",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "groups_ID",
+          "Pos.x":  320,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  87,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "PK",
+          "Pos.x":  320,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  88,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "Inventions_points",
+          "Pos.x":  320,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  115,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "pirates_ID",
+          "Pos.x":  320,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  116,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "PK_pirates",
+          "Pos.x":  320,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  117,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tstr",
+          "Pos.x":  260,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  120,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tfloat",
+          "Pos.x":  320,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  123,
+          "Var.Type":  "Float",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "planetOwner",
+          "Pos.x":  320,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  126,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "cargoSize1",
+          "Pos.x":  260,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  127,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "cargoSize2",
+          "Pos.x":  260,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  148,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "cargoSize3",
+          "Pos.x":  260,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  149,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "ShotAtCargo",
+          "Pos.x":  260,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  150,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "cargoDelivered",
+          "Pos.x":  260,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  153,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "planetRace",
+          "Pos.x":  320,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  172,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  2,
+      "End":  3,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  0,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TStarLink",
+      "Begin":  6,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  false,
+      "DistMin":  20,
+      "DistMax":  50,
+      "Hole":  false    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  5,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  6,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  11,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  18,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  18,
+      "End":  17,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  20,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  21,
+      "End":  22,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  25,
+      "End":  26,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  10,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  5,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  31,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  27,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  28,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  34,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  34,
+      "End":  35,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  35,
+      "End":  36,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  36,
+      "End":  37,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  23,
+      "End":  24,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  38,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  25,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  41,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  41,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  43,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  28,
+      "End":  45,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  45,
+      "End":  46,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  46,
+      "End":  47,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  48,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  48,
+      "End":  49,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  28,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  22,
+      "End":  34,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  22,
+      "End":  50,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  50,
+      "End":  23,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  26,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  61,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  62,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  66,
+      "End":  67,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  65,
+      "End":  68,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  64,
+      "End":  69,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  70,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  70,
+      "End":  40,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  63,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  71,
+      "End":  64,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  71,
+      "End":  65,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  71,
+      "End":  66,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  69,
+      "End":  72,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  68,
+      "End":  73,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  67,
+      "End":  74,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  74,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  73,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  72,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  44,
+      "End":  75,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  75,
+      "End":  76,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  76,
+      "End":  77,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  76,
+      "End":  78,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  76,
+      "End":  79,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  79,
+      "End":  80,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  78,
+      "End":  81,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  77,
+      "End":  82,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  82,
+      "End":  83,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  81,
+      "End":  84,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  80,
+      "End":  85,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  83,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  84,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  85,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  44,
+      "End":  86,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  86,
+      "End":  47,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  89,
+      "End":  9,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  89,
+      "End":  90,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  91,
+      "End":  92,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  94,
+      "End":  95,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  94,
+      "End":  96,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  94,
+      "End":  97,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  97,
+      "End":  100,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  96,
+      "End":  99,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  95,
+      "End":  98,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  98,
+      "End":  101,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  99,
+      "End":  102,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  100,
+      "End":  103,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TStarLink",
+      "Begin":  6,
+      "End":  104,
+      "Nom":  0,
+      "Arrow":  false,
+      "DistMin":  10,
+      "DistMax":  150,
+      "Hole":  false    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  105,
+      "End":  104,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  93,
+      "End":  106,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  107,
+      "End":  108,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  90,
+      "End":  109,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  109,
+      "End":  91,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  24,
+      "End":  111,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  111,
+      "End":  110,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  2,
+      "End":  5,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  118,
+      "End":  113,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  112,
+      "End":  119,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  119,
+      "End":  118,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  114,
+      "End":  121,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  121,
+      "End":  118,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  18,
+      "End":  124,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  124,
+      "End":  21,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  122,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  125,
+      "End":  10,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  125,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  17,
+      "End":  19,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  71,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  129,
+      "End":  132,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  130,
+      "End":  133,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  131,
+      "End":  134,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  132,
+      "End":  135,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  133,
+      "End":  135,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  134,
+      "End":  135,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  68,
+      "End":  136,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  69,
+      "End":  137,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  82,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  81,
+      "End":  139,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  80,
+      "End":  140,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  141,
+      "End":  144,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  142,
+      "End":  145,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  143,
+      "End":  146,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  144,
+      "End":  147,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  145,
+      "End":  147,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  146,
+      "End":  147,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  106,
+      "End":  107,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  67,
+      "End":  128,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  92,
+      "End":  151,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  151,
+      "End":  93,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  101,
+      "End":  151,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  102,
+      "End":  151,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  103,
+      "End":  151,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  93,
+      "End":  94,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  109,
+      "End":  152,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  152,
+      "End":  151,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  154,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  154,
+      "End":  155,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  156,
+      "End":  157,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  157,
+      "End":  158,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  156,
+      "End":  159,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  159,
+      "End":  160,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  161,
+      "End":  162,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  161,
+      "End":  163,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  162,
+      "End":  165,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  163,
+      "End":  164,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  166,
+      "End":  167,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  167,
+      "End":  168,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  24,
+      "End":  169,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  169,
+      "End":  170,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  26,
+      "End":  27,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  45,
+      "End":  171,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  171,
+      "End":  155,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  8,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "13",
+      "String":  "А, это ты, <Player>. Извини, но болтать с тобой мне некогда, поговорим в другой раз."    
+    },
+    {
+      "#":  "14",
+      "String":  "Здравствуй, <Player>! Искренне рад встретить тебя на этих бескрайних космических просторах.<br>К сожалению, сейчас совсем нет времени болтать, я очень сильно занят, но честно обещаю пропустить с тобой по кружечке \"Махпеллы\" как-нибудь в другой раз."    
+    },
+    {
+      "#":  "15",
+      "String":  "А, проклятый пират! Ну иди-ка сюда! Иди, и я по тебе так вдарю, что к клисанам в соседний рукав улетишь!!!"    
+    },
+    {
+      "#":  "16",
+      "String":  "Эй, а ну не занимай эту частоту! Я выполняю важное задание и у меня сейчас нет времени с тобой трепаться."    
+    },
+    {
+      "#":  "17",
+      "String":  "<0>"    
+    },
+    {
+      "#":  "19",
+      "String":  "Здравия желаю, <Player>! Прошу меня простить, но прямо сейчас я нахожусь на задании и не могу отвлекаться."    
+    },
+    {
+      "#":  "4",
+      "String":  "Конец связи"    
+    },
+    {
+      "#":  "5",
+      "String":  "Да чтоб у тебя коммуникатор треснул! Проваливай с экрана, <Player>, мне сейчас ну вот совсем не до твоей мерзкой рожи!"    
+    }  
+  ]
+}

@@ -1,0 +1,3758 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  -356,
+  "ViewPos.y":  -631,
+  "ScriptName":  "Mod_EvoArtDominator",
+  "ScriptFileOut":  "H:\\Mod_EvoArtDominator.scr",
+  "ScriptTextOut":  "H:\\Mod_EvoArtDominator.txt",
+  "GraphPoint.Count":  133,
+  "GraphLink.Count":  119,
+  "GraphRectText.Count":  9,
+  "Variables.Count":  15,
+  "Stars.Count":  1,
+  "Planets.Count":  1,
+  "Ships.Count":  1,
+  "States.Count":  1,
+  "Groups.Count":  1,
+  "Places.Count":  0,
+  "Items.Count":  0,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  4,
+  "DialogMessages.Count":  5,
+  "DialogAnswers.Count":  22,
+  "Operations.Count":  58,
+  "Statements.Count":  24,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  290,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  31,
+          "Msg":  "<input>",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  280,
+          "Pos.y":  -400,
+          "Parent":  -1,
+          "#":  39,
+          "Msg":  "<input>",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  280,
+          "Pos.y":  -370,
+          "Parent":  -1,
+          "#":  40,
+          "Msg":  "<input>",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  280,
+          "Pos.y":  -340,
+          "Parent":  -1,
+          "#":  41,
+          "Msg":  "<input>",
+          "AMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  280,
+          "Pos.y":  -310,
+          "Parent":  -1,
+          "#":  42,
+          "Msg":  "<input>",
+          "AMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  280,
+          "Pos.y":  -280,
+          "Parent":  -1,
+          "#":  43,
+          "Msg":  "<input>",
+          "AMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  520,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  69,
+          "Msg":  "",
+          "AMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  520,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  71,
+          "Msg":  "<input>",
+          "AMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  520,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  72,
+          "Msg":  "<input>",
+          "AMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  290,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  76,
+          "Msg":  "<input>",
+          "AMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  290,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  87,
+          "Msg":  "<input>",
+          "AMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  520,
+          "Pos.y":  -130,
+          "Parent":  -1,
+          "#":  89,
+          "Msg":  "<input>",
+          "AMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  770,
+          "Pos.y":  -130,
+          "Parent":  -1,
+          "#":  99,
+          "Msg":  "<input>",
+          "AMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  770,
+          "Pos.y":  -190,
+          "Parent":  -1,
+          "#":  100,
+          "Msg":  "<input>",
+          "AMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  770,
+          "Pos.y":  -250,
+          "Parent":  -1,
+          "#":  101,
+          "Msg":  "<input>",
+          "AMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  770,
+          "Pos.y":  -310,
+          "Parent":  -1,
+          "#":  102,
+          "Msg":  "<input>",
+          "AMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  520,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  110,
+          "Msg":  "<input>",
+          "AMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  770,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  111,
+          "Msg":  "<input>",
+          "AMsg.Num":  "17"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  1050,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  119,
+          "Msg":  "<input>",
+          "AMsg.Num":  "18"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  290,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  121,
+          "Msg":  "<input>",
+          "AMsg.Num":  "19"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  290,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  127,
+          "Msg":  "<input>",
+          "AMsg.Num":  "20"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "block",
+          "Pos.x":  290,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  131,
+          "Msg":  "<input>",
+          "AMsg.Num":  "21"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  170,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  30,
+          "Msg":  "<input>",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  390,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  61,
+          "Msg":  "<input>",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  390,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  78,
+          "Msg":  "<input>",
+          "DMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  92,
+          "Msg":  "<input>",
+          "DMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  960,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  117,
+          "Msg":  "<input>",
+          "DMsg.Num":  "4"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "ArtDominator",
+          "Pos.x":  30,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  28        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "Remains",
+          "Pos.x":  520,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  70        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "Moduls",
+          "Pos.x":  520,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  88        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "Arts",
+          "Pos.x":  770,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  112        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "GroupNew",
+          "Pos.x":  30,
+          "Pos.y":  -560,
+          "Parent":  -1,
+          "#":  3,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  true,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  30,
+          "Pos.y":  -490,
+          "Parent":  -1,
+          "#":  5,
+          "Total.Lines":  1,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "GRun()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  -670,
+          "Parent":  -1,
+          "#":  12,
+          "Total.Lines":  7,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "items=newarray(1);",
+              "RemainsCount=newarray(24);//количество доступных ошметков для изучения",
+              "RemainsGTL=newarray(24);//с какого ГТУ НБ сможет изучить ошмет",
+              "RemainsGDRP=newarray(24);//требуемый уровень исследования доминаторов",
+              "RemainsPercent=newarray(24);//процент изучения ошметка",
+              "SpeedResearch=newarray(24);//порог исследования",
+              "SpeedIndex=newarray(24);//скорость исследования"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  -640,
+          "Parent":  -1,
+          "#":  13,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "for (count=0; count<=23; count=count+1) RemainsCount[count]=0;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  -610,
+          "Parent":  -1,
+          "#":  14,
+          "Total.Lines":  24,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "RemainsGTL[0]=2;//Координатор - Remains_0",
+              "RemainsGTL[1]=3;//Стволовик - Remains_1",
+              "RemainsGTL[2]=3;//Турбийон - Remains_2",
+              "RemainsGTL[3]=2;//Спимер - Remains_3",
+              "RemainsGTL[4]=1;//Инбридон - Remains_4",
+              "RemainsGTL[5]=2;//Метаблок - Remains_5",
+              "RemainsGTL[6]=4;//Гробот - Remains_6",
+              "RemainsGTL[7]=4;//Энергопакет - Remains_7",
+              "RemainsGTL[8]=4;//Базовая конструкция - Remains_8",
+              "RemainsGTL[9]=3;//Стригер - Remains_9 (Блазер)",
+              "RemainsGTL[10]=2;//Деструктуризатор - Remains_10 (Блазер)",
+              "RemainsGTL[11]=1;//Аргент - Remains_11 (Блазер)",
+              "RemainsGTL[12]=4;//Релектор - Remains_12 (Блазер)",
+              "RemainsGTL[13]=3;//Рапторизатор - Remains_13 (Блазер)",
+              "RemainsGTL[14]=1;//Бином Т-21/4 - Remains_14 (Келлер)",
+              "RemainsGTL[15]=4;//Стабилитрон - Remains_15 (Келлер)",
+              "RemainsGTL[16]=3;//Дестабилизатор - Remains_16 (Келлер)",
+              "RemainsGTL[17]=2;//Спектрон - Remains_17 (Келлер)",
+              "RemainsGTL[18]=3;//Мимикрон - Remains_18 (Келлер)",
+              "RemainsGTL[19]=3;//Обогатитель - Remains_19 (Террон)",
+              "RemainsGTL[20]=3;//Репродуктор - Remains_20 (Террон)",
+              "RemainsGTL[21]=4;//Гнездотрон - Remains_21 (Террон)",
+              "RemainsGTL[22]=1;//Акселирин - Remains_22 (Террон)",
+              "RemainsGTL[23]=2;//Мичурер - Remains_23 (Террон)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  -580,
+          "Parent":  -1,
+          "#":  15,
+          "Total.Lines":  24,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "RemainsGDRP[0]=5;//Координатор - Remains_0",
+              "RemainsGDRP[1]=10;//Стволовик - Remains_1",
+              "RemainsGDRP[2]=15;//Турбийон - Remains_2",
+              "RemainsGDRP[3]=18;//Спимер - Remains_3",
+              "RemainsGDRP[4]=5;//Инбридон - Remains_4",
+              "RemainsGDRP[5]=20;//Метаблок - Remains_5",
+              "RemainsGDRP[6]=35;//Гробот - Remains_6",
+              "RemainsGDRP[7]=30;//Энергопакет - Remains_7",
+              "RemainsGDRP[8]=35;//Базовая конструкция - Remains_8",
+              "RemainsGDRP[9]=30;//Стригер - Remains_9 (Блазер)",
+              "RemainsGDRP[10]=40;//Деструктуризатор - Remains_10 (Блазер)",
+              "RemainsGDRP[11]=10;//Аргент - Remains_11 (Блазер)",
+              "RemainsGDRP[12]=45;//Релектор - Remains_12 (Блазер)",
+              "RemainsGDRP[13]=20;//Рапторизатор - Remains_13 (Блазер)",
+              "RemainsGDRP[14]=10;//Бином Т-21/4 - Remains_14 (Келлер)",
+              "RemainsGDRP[15]=45;//Стабилитрон - Remains_15 (Келлер)",
+              "RemainsGDRP[16]=30;//Дестабилизатор - Remains_16 (Келлер)",
+              "RemainsGDRP[17]=20;//Спектрон - Remains_17 (Келлер)",
+              "RemainsGDRP[18]=35;//Мимикрон - Remains_18 (Келлер)",
+              "RemainsGDRP[19]=30;//Обогатитель - Remains_19 (Террон)",
+              "RemainsGDRP[20]=40;//Репродуктор - Remains_20 (Террон)",
+              "RemainsGDRP[21]=45;//Гнездотрон - Remains_21 (Террон)",
+              "RemainsGDRP[22]=10;//Акселирин - Remains_22 (Террон)",
+              "RemainsGDRP[23]=20;//Мичурер - Remains_23 (Террон)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  -550,
+          "Parent":  -1,
+          "#":  16,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "for (count=0; count<=23; count=count+1) RemainsPercent[count]=0;",
+              "//RemainsPercent[4]=70;//Инбридон"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  -520,
+          "Parent":  -1,
+          "#":  17,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "for (count=0; count<=23; count=count+1) SpeedResearch[count]=0;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  -490,
+          "Parent":  -1,
+          "#":  22,
+          "Total.Lines":  24,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "SpeedIndex[0]=30;//Координатор - Remains_0",
+              "SpeedIndex[1]=35;//Стволовик - Remains_1",
+              "SpeedIndex[2]=30;//Турбийон - Remains_2",
+              "SpeedIndex[3]=35;//Спимер - Remains_3",
+              "SpeedIndex[4]=45;//Инбридон - Remains_4",
+              "SpeedIndex[5]=30;//Метаблок - Remains_5",
+              "SpeedIndex[6]=35;//Гробот - Remains_6",
+              "SpeedIndex[7]=35;//Энергопакет - Remains_7",
+              "SpeedIndex[8]=30;//Базовая конструкция - Remains_8",
+              "SpeedIndex[9]=30;//Стригер - Remains_9 (Блазер)",
+              "SpeedIndex[10]=35;//Деструктуризатор - Remains_10 (Блазер)",
+              "SpeedIndex[11]=30;//Аргент - Remains_11 (Блазер)",
+              "SpeedIndex[12]=35;//Релектор - Remains_12 (Блазер)",
+              "SpeedIndex[13]=30;//Рапторизатор - Remains_13 (Блазер)",
+              "SpeedIndex[14]=30;//Бином Т-21/4 - Remains_14 (Келлер)",
+              "SpeedIndex[15]=30;//Стабилитрон - Remains_15 (Келлер)",
+              "SpeedIndex[16]=35;//Дестабилизатор - Remains_16 (Келлер)",
+              "SpeedIndex[17]=35;//Спектрон - Remains_17 (Келлер)",
+              "SpeedIndex[18]=30;//Мимикрон - Remains_18 (Келлер)",
+              "SpeedIndex[19]=35;//Обогатитель - Remains_19 (Террон)",
+              "SpeedIndex[20]=30;//Репродуктор - Remains_20 (Террон)",
+              "SpeedIndex[21]=35;//Гнездотрон - Remains_21 (Террон)",
+              "SpeedIndex[22]=30;//Акселирин - Remains_22 (Террон)",
+              "SpeedIndex[23]=30;//Мичурер - Remains_23 (Террон)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  440,
+          "Pos.y":  -490,
+          "Parent":  -1,
+          "#":  23,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if (BlockExist('FormRuins.SB.Scn2'))AddDialogInject('ArtDominator','',CT('FormRuins.SB.Scn2.PlayerAsk'),1);//--Получение нового артефакта--}",
+              "else SFT('Warning Mod_ArtDominator: Не найден раздел ...SB.Scn2, выдача артов невозможна');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  280,
+          "Pos.y":  -450,
+          "Parent":  -1,
+          "#":  27,
+          "Total.Lines":  8,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "for (count=0; count<=2; count=count+1){",
+              "    if (GalaxyDominatorResearchPercent(count)<100) GalaxyDominatorResearchPercent(count,Rnd(GalaxyDominatorResearchPercent(count),60));",
+              "    GalaxyDominatorResearchMaterial(count,Rnd(GalaxyDominatorResearchPercent(count),110));",
+              "}",
+              "for (count=0; count<=23; count=count+1) {",
+              "    RemainsCount[count]=Rnd(10,30);",
+              "}",
+              "ShipMoney(Player(),ShipMoney(Player())+100000);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  120,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  29,
+          "Total.Lines":  110,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//заполняем массив ошметками",
+              "ArrayClear(items);",
+              "for (count=0; count<ShipItems(Player()); count=count+1){",
+              "    cur_item=ShipItems(Player(),count);",
+              "    if (ItemType(cur_item)==t_UselessItem && ItemOwner(cur_item)==Kling){",
+              "        for (variable=0; variable<=23; variable=variable+1){",
+              "            if (findsubstr(Name(cur_item),CT('UselessItems.Remains_'+variable+'.Name'))==0 && RemainsPercent[variable]<100){",
+              "                if (RemainsCount[variable]<2+(70+30*(GalaxyDiffLevels(2)/50-1))*(100-RemainsPercent[variable])/(25*(SpeedIndex[variable]+1000/GalaxyDiffLevels(7)))){",
+              "                    ArrayAdd(items,cur_item);//Remains_variable",
+              "                    break;",
+              "                }",
+              "            }",
+              "        }",
+              "    }",
+              "}",
+              "variable=0;//SFT('ArrayDim(RemainsCount) = '+ArrayDim(RemainsCount));",
+              "//проверяем, изучен ли какой-нибудь ошметок",
+              "for (count=1; count<=ArrayDim(RemainsCount); count=count+1){",
+              "    if (RemainsCount[count-1]==-1){",
+              "        variable=count;",
+              "        RemainsCount[count-1]=0;",
+              "        break;",
+              "    }",
+              "}",
+              "//if (!(ArrayDim(items)-1)) SFT('Условие выполнилось !(ArrayDim(items)-1)');",
+              "//if (!variable) SFT('Условие выполнилось !variable');",
+              "if (variable>0){//ошметок изучен",
+              "    input='<clrEnd>'+CT('FormRuins.SB.Scn2.SBModulInfo0')+' '+CT('UselessItems.Remains_'+(variable-1)+'.Name');//исследуемый модуль:",
+              "    input=input+\"<br>\"+CT('Artefacts.CustomArtefacts.ArtDominator-'+(variable-1)+'.Description');",
+              "    input=input+\"<br>\"+CT('FormRuins.SB.Scn2.SBModulInfo');",
+              "    input=input+\"<br>\"+CT('FormRuins.SB.Scn2.SBArtPrize');",
+              "    input=input+\"<br>\"+CT('FormRuins.SB.Scn2.SBModulInfo');",
+              "    cost=CT('Artefacts.CustomArtefacts.ArtDominator-'+(variable-1)+'.Cost');",
+              "    cost=cost*Rnd(2500,3500)*(900+GalaxyDiffLevels(1))/10000;",
+              "    size=CT('UselessItems.Remains_'+(variable-1)+'.Size');//SFT('Базовый вес ошметка = '+size);",
+              "    count=CT('Artefacts.CustomArtefacts.ArtDominator-'+(variable-1)+'.Size+');//базовая прибавка веса арта //SFT('Базовая прибавка веса арта = '+count);",
+              "    size=size+count;//SFT('Сумма весов = '+size); //SFT('Вес от сложности = '+size*(70+3*GalaxyDiffLevels(4)/10)/100);",
+              "    size=Rnd(3,7)+size*(70+3*GalaxyDiffLevels(4)/10)/100;//в зависимости от сложности оборудования //SFT('Итоговый вес с рандомом = '+size);",
+              "    cur_art=CreateCustomArt('ArtDominator-'+(variable-1),size,cost,Kling);",
+              "    if (variable-1>=0 && variable-1<=8) ItemSubrace(cur_art,Rnd(0,2));",
+              "    if (variable-1>8 && variable-1<=13) ItemSubrace(cur_art,0);",
+              "    if (variable-1>13 && variable-1<=18) ItemSubrace(cur_art,1);",
+              "    if (variable-1>18 && variable-1<=23) ItemSubrace(cur_art,2);",
+              "    AddItemToShip(Player(),cur_art);//добавляем арт",
+              "    Sound('Sound.Buy');",
+              "    cost=0;",
+              "    size=1;",
+              "    cur_item=CT('Artefacts.CustomArtefacts.'+EquipmentImageName(cur_art)+'.Equipments');",
+              "    for (count=t_FuelTanks; count<t_FuelTanks+7; count=count+1){",
+              "        size=size*2;",
+              "        if ((cur_item & size/2)==size/2){",
+              "            if (count==t_FuelTanks){",
+              "                if (max(GalaxyTechLevel()-2,1)==1) cost=cost+150;//220",
+              "                if (max(GalaxyTechLevel()-2,1)==2) cost=cost+500;//900",
+              "                if (max(GalaxyTechLevel()-2,1)==3) cost=cost+1250;//2020",
+              "                if (max(GalaxyTechLevel()-2,1)==4) cost=cost+2000;//3600",
+              "                if (max(GalaxyTechLevel()-2,1)==5) cost=cost+3000;//5620",
+              "                if (max(GalaxyTechLevel()-2,1)>=6) cost=cost+5000;//8100",
+              "            }",
+              "            else{",
+              "                if (max(GalaxyTechLevel()-2,1)==1) cost=cost+500;//1000",
+              "                if (max(GalaxyTechLevel()-2,1)==2) cost=cost+2000;//4000",
+              "                if (max(GalaxyTechLevel()-2,1)==3) cost=cost+4500;//9000",
+              "                if (max(GalaxyTechLevel()-2,1)==4) cost=cost+8000;//16000",
+              "                if (max(GalaxyTechLevel()-2,1)==5) cost=cost+12500;//25000",
+              "                if (max(GalaxyTechLevel()-2,1)>=6) cost=cost+18000;//36000",
+              "            }",
+              "        }",
+              "    }",
+              "    input=input+\"<br>\"+CT('FormRuins.SB.Scn2.SBFullSet')+' <color=255,240,100>'+cost+'</color> cr.'+\"<br>\";",
+              "    input=input+CT('FormRuins.SB.Scn2.SBModulInfo');",
+              "    input=input+\"<br>\"+CT('FormRuins.SB.Scn2.SBPrize')+' '+CT('Artefacts.CustomArtefacts.ArtDominator-'+(variable-1)+'.Name');//Награда:",
+              "    input=input+' (<color=255,240,100>'+ItemSize(cur_art)+'</color> ';",
+              "    input=input+CT('FormRuins.SB.Scn2.ItemSubrace'+ItemSubrace(cur_art));",
+              "}",
+              "else {//нет изученных ошметков variable=0",
+              "    input='<clrEnd>'+CT('FormRuins.SB.Scn2.SBAnswer');//стандартное приветствие",
+              "    input=input+\"<br>\";",
+              "    input=input+CT('FormRuins.SB.Scn2.SBSectionInfo');//Перечень исследуемых модулей доминаторов:",
+              "    for (count=0; count<=23; count=count+1){",
+              "        variable=variable+1;//для вывода пронумерованного списка",
+              "        input=input+variable+') '+CT('UselessItems.Remains_'+count+'.Name')+' ';//вывод названия ошметка",
+              "        if (RemainsPercent[count]==0 && SpeedResearch[count]==0) input=input+'<clr>'+CT('FormRuins.SB.Scn2.Status_3')+'<clrEnd>';//(не изучен)",
+              "        else {",
+              "            if (RemainsPercent[count]==100) input=input+'<clr>'+CT('FormRuins.SB.Scn2.Status_1')+'<clrEnd>';//(изучен)",
+              "            else {",
+              "                input=input+'<color=255,240,100>('+RemainsPercent[count]+'</color>%, ';//вывод процента изучения",
+              "                if (RemainsCount[count]==0) input=input+'<clr>'+CT('FormRuins.SB.Scn2.Status_4')+'<clrEnd>';//(приостановлено) требуется материал для исследований.",
+              "                else {",
+              "                    if (RemainsPercent[count]>=100/max(RemainsGTL[count]-GalaxyTechLevel()+1,1)){",
+              "                        input=input+'<clr>'+CT('FormRuins.SB.Scn2.Status_4')+'<clrEnd>';//(приостановлено) необходимо новое технологическое оборудование для изучения.",
+              "                    }",
+              "                    else {",
+              "                        if (count>=0 && count<=8) size=GalaxyDominatorResearchPercent();",
+              "                        if (count>8 && count<=13) size=GalaxyDominatorResearchPercent(0);",
+              "                        if (count>13 && count<=18) size=GalaxyDominatorResearchPercent(1);",
+              "                        if (count>18 && count<=23) size=GalaxyDominatorResearchPercent(2);",
+              "                        size=int((1.0*RemainsGDRP[count])/max(size,1)+0.9999);",
+              "                        size=min(5+100/max(size,1),100);",
+              "                        if (RemainsPercent[count]>=size) input=input+'<clr>'+CT('FormRuins.SB.Scn2.Status_4')+'<clrEnd>';//(приостановлено) необходимы оперативные данные из отделов антидоминаторских исследований.",
+              "                        else input=input+'<clr>'+CT('FormRuins.SB.Scn2.Status_2')+'<clrEnd>';//(изучается)",
+              "                    }",
+              "                }",
+              "            }",
+              "        }",
+              "        input=input+\"<br>\";",
+              "    }",
+              "    input=input+CT('FormRuins.SB.Scn2.SBSectionInfoEnd');",
+              "    variable=0;",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  -280,
+          "Parent":  -1,
+          "#":  33,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+'Корабль для битья (тест)';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  -310,
+          "Parent":  -1,
+          "#":  34,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+'Транк (тест)';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  -340,
+          "Parent":  -1,
+          "#":  35,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+'Оборудка террона и арты (тест)';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  -370,
+          "Parent":  -1,
+          "#":  36,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+'Оборудка келлера и арты (тест)';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  -400,
+          "Parent":  -1,
+          "#":  37,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+'Оборудка блазера и арты (тест)';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  38,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+CT('FormRuins.SB.Scn2.PlayerPassArts');//Сдать модули на исследование"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  -400,
+          "Parent":  -1,
+          "#":  52,
+          "Total.Lines":  52,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ItemSize(ShipItems(Player(),0),2000);",
+              "HullHP(Player(),ItemSize(ShipItems(Player(),0)));",
+              "ShipSpecialBonuses(Player(),bonSlotWeapon,2);",
+              "ShipSpecialBonuses(Player(),bonSlotArt,1);",
+              "//удаляем установленную оборудку",
+              "for (count=t_FuelTanks; count<t_FuelTanks+7; count=count+1){",
+              "    cur_item=ShipEqInSlot(Player(),count);",
+              "    ItemIsInUse(cur_item,Player(),0);",
+              "    GetItemFromShip(Player(),FindItemInShip(Player(),cur_item));",
+              "    FreeItem(cur_item);",
+              "}",
+              "//устанавливаем домикооборудку",
+              "for (count=t_FuelTanks; count<t_FuelTanks+7; count=count+1){",
+              "    if (count==t_FuelTanks){",
+              "        cur_item=CreateEquipment(t_FuelTanks,18,5,Kling);",
+              "        ContainerFuel(cur_item,ContainerFuel(cur_item)/2);",
+              "    }",
+              "    if (count==t_Engine){",
+              "        cur_item=CreateEquipment(t_Engine,18,6,Kling);",
+              "        EnginePower(cur_item,0);//двигатель перегрет",
+              "    }",
+              "    if (count==t_Radar)        cur_item=CreateEquipment(t_Radar,14,5,Kling);",
+              "    if (count==t_Scaner)       cur_item=CreateEquipment(t_Scaner,14,4,Kling);",
+              "    if (count==t_RepairRobot)  cur_item=CreateEquipment(t_RepairRobot,18,3,Kling);",
+              "    if (count==t_CargoHook)    cur_item=CreateEquipment(t_CargoHook,18,2,Kling);",
+              "    if (count==t_DefGenerator) cur_item=CreateEquipment(t_DefGenerator,18,1,Kling);",
+              "    ItemSubrace(cur_item,0);//Блазер",
+              "    ItemDurability(cur_item,Rnd(40,90));",
+              "    AddItemToShip(Player(),cur_item);",
+              "    ItemIsInUse(cur_item,Player(),1);",
+              "}",
+              "//устанавливаем домикопушки",
+              "for (count=1; count<=4; count=count+1){",
+              "    if (count==1){",
+              "        cur_item=ShipEqInSlot(Player(),t_Weapon1,count);",
+              "        ItemIsInUse(cur_item,Player(),0);",
+              "        GetItemFromShip(Player(),FindItemInShip(Player(),cur_item));",
+              "        FreeItem(cur_item);",
+              "    }",
+              "    if (count==1 || count==2) cur_item=CreateEquipment(t_Weapon8,14,1,Kling);",
+              "    if (count==3 || count==4){",
+              "        cur_item=CreateEquipment(t_Weapon4,9,1,Kling);",
+              "        MissilesToRearm(cur_item,2-WeaponAmmunition(cur_item));",
+              "    }",
+              "    ItemSubrace(cur_item,0);//Блазер",
+              "    ItemDurability(cur_item,Rnd(40,90));",
+              "    AddItemToShip(Player(),cur_item);",
+              "    ItemIsInUse(cur_item,Player(),1);",
+              "}",
+              "cur_item=CreateNodes(200,0);",
+              "SFT('Добавили оборудку блазера');",
+              "AddItemToShip(Player(),cur_item);//добавляем 200 шт. нодов"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  -370,
+          "Parent":  -1,
+          "#":  53,
+          "Total.Lines":  44,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ItemSize(ShipItems(Player(),0),2000);",
+              "HullHP(Player(),ItemSize(ShipItems(Player(),0)));",
+              "ShipSpecialBonuses(Player(),bonSlotWeapon,2);",
+              "ShipSpecialBonuses(Player(),bonSlotArt,1);",
+              "//удаляем установленную оборудку",
+              "for (count=t_FuelTanks; count<t_FuelTanks+7; count=count+1){",
+              "    cur_item=ShipEqInSlot(Player(),count);",
+              "    ItemIsInUse(cur_item,Player(),0);",
+              "    GetItemFromShip(Player(),FindItemInShip(Player(),cur_item));",
+              "    FreeItem(cur_item);",
+              "}",
+              "//устанавливаем домикооборудку",
+              "for (count=t_FuelTanks; count<t_FuelTanks+7; count=count+1){",
+              "    if (count==t_FuelTanks){",
+              "        cur_item=CreateEquipment(t_FuelTanks,18,6,Kling);",
+              "    }",
+              "    if (count==t_Engine){",
+              "        cur_item=CreateEquipment(t_Engine,18,7,Kling);",
+              "    }",
+              "    if (count==t_Radar)        cur_item=CreateEquipment(t_Radar,14,1,Kling);",
+              "    if (count==t_Scaner)       cur_item=CreateEquipment(t_Scaner,14,1,Kling);",
+              "    if (count==t_RepairRobot)  cur_item=CreateEquipment(t_RepairRobot,18,1,Kling);",
+              "    if (count==t_CargoHook)    cur_item=CreateEquipment(t_CargoHook,18,1,Kling);",
+              "    if (count==t_DefGenerator) cur_item=CreateEquipment(t_DefGenerator,18,1,Kling);",
+              "    ItemSubrace(cur_item,1);//Келлер",
+              "    AddItemToShip(Player(),cur_item);",
+              "    ItemIsInUse(cur_item,Player(),1);",
+              "}",
+              "//устанавливаем пушки",
+              "for (count=1; count<=4; count=count+1){",
+              "    if (count==1){",
+              "        cur_item=ShipEqInSlot(Player(),t_Weapon1,count);",
+              "        ItemIsInUse(cur_item,Player(),0);",
+              "        GetItemFromShip(Player(),FindItemInShip(Player(),cur_item));",
+              "        FreeItem(cur_item);",
+              "    }",
+              "    cur_item=CreateEquipment(t_Weapon8,14,1,Kling);",
+              "    ItemSubrace(cur_item,1);//Келлер",
+              "    AddItemToShip(Player(),cur_item);",
+              "    ItemIsInUse(cur_item,Player(),1);",
+              "}",
+              "cur_item=CreateNodes(200,1);",
+              "AddItemToShip(Player(),cur_item);//добавляем 200 шт. нодов",
+              "SFT('Добавили оборудку келлера');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  -340,
+          "Parent":  -1,
+          "#":  54,
+          "Total.Lines":  40,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ItemSize(ShipItems(Player(),0),2000);",
+              "HullHP(Player(),ItemSize(ShipItems(Player(),0))*5/10);",
+              "ShipSpecialBonuses(Player(),bonSlotWeapon,2);",
+              "ShipSpecialBonuses(Player(),bonSlotArt,1);",
+              "//удаляем установленную оборудку",
+              "for (count=t_FuelTanks; count<t_FuelTanks+7; count=count+1){",
+              "    cur_item=ShipEqInSlot(Player(),count);",
+              "    ItemIsInUse(cur_item,Player(),0);",
+              "    GetItemFromShip(Player(),FindItemInShip(Player(),cur_item));",
+              "    FreeItem(cur_item);",
+              "}",
+              "//устанавливаем домикооборудку",
+              "for (count=t_FuelTanks; count<t_FuelTanks+7; count=count+1){",
+              "    if (count==t_FuelTanks)    cur_item=CreateEquipment(t_FuelTanks,18,1,Kling);",
+              "    if (count==t_Engine)       cur_item=CreateEquipment(t_Engine,18,5,Kling);",
+              "    if (count==t_Radar)        cur_item=CreateEquipment(t_Radar,14,1,Kling);",
+              "    if (count==t_Scaner)       cur_item=CreateEquipment(t_Scaner,14,1,Kling);",
+              "    if (count==t_RepairRobot)  cur_item=CreateEquipment(t_RepairRobot,18,1,Kling);",
+              "    if (count==t_CargoHook)    cur_item=CreateEquipment(t_CargoHook,18,1,Kling);",
+              "    if (count==t_DefGenerator) cur_item=CreateEquipment(t_DefGenerator,18,1,Kling);",
+              "    ItemSubrace(cur_item,2);//Террон",
+              "    AddItemToShip(Player(),cur_item);",
+              "    ItemIsInUse(cur_item,Player(),1);",
+              "}",
+              "//устанавливаем пушки",
+              "for (count=1; count<=5; count=count+1){",
+              "    if (count==1){",
+              "        cur_item=ShipEqInSlot(Player(),t_Weapon1,count);",
+              "        ItemIsInUse(cur_item,Player(),0);",
+              "        GetItemFromShip(Player(),FindItemInShip(Player(),cur_item));",
+              "        FreeItem(cur_item);",
+              "    }",
+              "    cur_item=CreateEquipment(t_Weapon7,20,1,Kling);",
+              "    ItemSubrace(cur_item,2);//Террон",
+              "    AddItemToShip(Player(),cur_item);",
+              "    ItemIsInUse(cur_item,Player(),1);",
+              "}",
+              "cur_item=CreateNodes(200,1);",
+              "AddItemToShip(Player(),cur_item);//добавляем 200 шт. нодов",
+              "SFT('Добавили оборудку террона');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  -310,
+          "Parent":  -1,
+          "#":  55,
+          "Total.Lines":  39,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "cur_art=CreateArt(t_ArtefactTranclucator,People);",
+              "AddItemToShip(Player(),cur_art);",
+              "variable=ArtTranclucatorToShip(cur_art);",
+              "ShipSpecialBonuses(variable,bonSlotRadar,1);",
+              "ShipSpecialBonuses(variable,bonSlotScaner,1);",
+              "ItemSize(ShipItems(variable,0),2000);",
+              "//удаляем установленную оборудку",
+              "for (count=t_FuelTanks; count<t_FuelTanks+7; count=count+1){//count<t_Radar+7;",
+              "    cur_item=ShipEqInSlot(variable,count);",
+              "    ItemIsInUse(cur_item,variable,0);",
+              "    GetItemFromShip(variable,FindItemInShip(variable,cur_item));",
+              "    FreeItem(cur_item);",
+              "}",
+              "//устанавливаем домикооборудку",
+              "for (count=t_FuelTanks; count<t_FuelTanks+7; count=count+1){",
+              "    if (count==t_FuelTanks)    cur_item=CreateEquipment(t_FuelTanks,18,1,Kling);",
+              "    if (count==t_Engine)       cur_item=CreateEquipment(t_Engine,18,5,Kling);",
+              "    if (count==t_Radar)        cur_item=CreateEquipment(t_Radar,14,1,Kling);",
+              "    if (count==t_Scaner)       cur_item=CreateEquipment(t_Scaner,14,1,Kling);",
+              "    if (count==t_RepairRobot)  cur_item=CreateEquipment(t_RepairRobot,18,1,Kling);",
+              "    if (count==t_CargoHook)    cur_item=CreateEquipment(t_CargoHook,18,1,Kling);",
+              "    if (count==t_DefGenerator) cur_item=CreateEquipment(t_DefGenerator,18,1,Kling);",
+              "    ItemSubrace(cur_item,0);",
+              "    AddItemToShip(variable,cur_item);",
+              "    ItemIsInUse(cur_item,variable,1);",
+              "}",
+              "//устанавливаем пушки",
+              "for (count=1; count<=5; count=count+1){",
+              "    if (count==1){",
+              "        cur_item=ShipEqInSlot(variable,t_Weapon1,count);",
+              "        ItemIsInUse(cur_item,variable,0);",
+              "        GetItemFromShip(variable,FindItemInShip(variable,cur_item));",
+              "        FreeItem(cur_item);",
+              "    }",
+              "    if (count>=2) cur_item=CreateEquipment(t_Weapon8,14,1,Kling);",
+              "    ItemSubrace(cur_item,0);",
+              "    AddItemToShip(variable,cur_item);",
+              "    ItemIsInUse(cur_item,variable,1);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  -280,
+          "Parent":  -1,
+          "#":  56,
+          "Total.Lines":  44,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "variable=BuyRanger(StarPlanets(ShipStar(Player()),1));//BuyRanger - спавнит рейнджера (1-планета для спавна, опционально 2-множитель капитала);",
+              "TransferShip(variable,StarRuins(ShipStar(Player()),'RC'));//SFT('Корабль рейнджера',variable);",
+              "ShipSpecialBonuses(variable,bonSlotRadar,1);",
+              "ShipSpecialBonuses(variable,bonSlotScaner,1);",
+              "ShipSpecialBonuses(variable,bonSlotWeapon,2);",
+              "ItemSize(ShipItems(variable,0),2000);",
+              "HullHP(variable,ItemSize(ShipItems(variable,0)));",
+              "//удаляем установленную оборудку",
+              "for (count=t_FuelTanks; count<t_Radar+7; count=count+1){",
+              "    cur_item=ShipEqInSlot(variable,count);",
+              "    ItemIsInUse(cur_item,variable,0);",
+              "    GetItemFromShip(variable,FindItemInShip(variable,cur_item));",
+              "    FreeItem(cur_item);",
+              "}",
+              "//устанавливаем домикооборудку",
+              "for (count=t_FuelTanks; count<t_FuelTanks+7; count=count+1){",
+              "    if (count==t_FuelTanks)    cur_item=CreateEquipment(t_FuelTanks,18,1,Kling);",
+              "    if (count==t_Engine)       cur_item=CreateEquipment(t_Engine,18,5,Kling);",
+              "    if (count==t_Radar)        cur_item=CreateEquipment(t_Radar,14,1,Kling);",
+              "    if (count==t_Scaner)       cur_item=CreateEquipment(t_Scaner,14,1,Kling);",
+              "    if (count==t_RepairRobot)  cur_item=CreateEquipment(t_RepairRobot,18,1,Kling);",
+              "    if (count==t_CargoHook)    cur_item=CreateEquipment(t_CargoHook,18,1,Kling);",
+              "    if (count==t_DefGenerator) cur_item=CreateEquipment(t_DefGenerator,18,1,Kling);",
+              "    ItemSubrace(cur_item,0);",
+              "    AddItemToShip(variable,cur_item);",
+              "    ItemIsInUse(cur_item,variable,1);",
+              "}",
+              "//устанавливаем пушки",
+              "for (count=1; count<=5; count=count+1){",
+              "    if (count==1){",
+              "        cur_item=ShipEqInSlot(variable,t_Weapon1,count);",
+              "        ItemIsInUse(cur_item,variable,0);",
+              "        GetItemFromShip(variable,FindItemInShip(variable,cur_item));",
+              "        FreeItem(cur_item);",
+              "        cur_item=CreateEquipment(t_Weapon16,25,4,Kling);//добавляем эсодафер",
+              "    }",
+              "    if (count==2) cur_item=CreateEquipment(t_Weapon16,25,4,Kling);",
+              "    if (count>=3) cur_item=CreateEquipment(t_Weapon16,25,4,Kling);",
+              "    ItemSubrace(cur_item,0);",
+              "    AddItemToShip(variable,cur_item);",
+              "    ItemIsInUse(cur_item,variable,1);",
+              "}",
+              "RelationToRanger(variable,Player(),0);",
+              "ShipOrder(variable,0);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  400,
+          "Pos.y":  -400,
+          "Parent":  -1,
+          "#":  57,
+          "Total.Lines":  36,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//устанавливаем арты",
+              "for (count=0; count<=13; count=count+1){",
+              "    if (count<=8) variable=count;",
+              "    else variable=count;",
+              "    size=CT('UselessItems.Remains_'+variable+'.Size');//тут должен быть вес ошметка",
+              "    cost=CT('Artefacts.CustomArtefacts.ArtDominator-'+variable+'.Size+');//базовая прибавка веса арта",
+              "    size=size+cost;",
+              "    size=Rnd(0,2)+size*(70+3*GalaxyDiffLevels(4)/10)/100;",
+              "//    SFT('вес итого по формуле (0..2)+(вес.ошмет+вес.прибавл)*(70+3*слож.обор/10)/100 = '+size);",
+              "    cost=CT('Artefacts.CustomArtefacts.ArtDominator-'+variable+'.Cost');",
+              "    cost=cost*Rnd(1500,2500)*(900+GalaxyDiffLevels(1))/10000;",
+              "    cur_art=CreateCustomArt('ArtDominator-'+variable,size,cost,Kling);",
+              "    ItemSubrace(cur_art,0);//Блазер",
+              "    ItemDurability(cur_art,2);//износ = 2%",
+              "    AddItemToShip(Player(),cur_art);",
+              "    if (count>=9 && count<13) ItemIsInUse(cur_art,Player(),1);",
+              "    if (variable==6){//Гробот",
+              "        CustomArtData(cur_art,1,35);//материя арта (от 0 до 100) устновлен на 50 ед.",
+              "        CustomArtData(cur_art,2,7*GalaxyDiffLevels()-4);//уровень арта (опыт) установлен на 5й",
+              "    }",
+              "    if (variable==7){//Энергопакет",
+              "        CustomArtData(cur_art,1,990);//энергия арта (от 0 до 1000) устновлен на 50%",
+              "        CustomArtData(cur_art,2,GalaxyDiffLevels()/2);//уровень арта (опыт) установлен на 3й",
+              "    }",
+              "    if (variable==8){//Базовая конструкция",
+              "        CustomArtData(cur_art,1,990);//энергия арта (от 0 до 1000) устновлен на 80%",
+              "        //CustomArtData(cur_art,2,GalaxyDiffLevels()/2);//уровень арта (опыт) установлен на 3й",
+              "    }",
+              "}",
+              "Sound('Sound.Buy');",
+              "//------Арт для сравнения-----",
+              "cur_art=CreateArt(t_ArtefactScaner,Kling);",
+              "ItemDurability(cur_art,2);//износ = 2%",
+              "AddItemToShip(Player(),cur_art);",
+              "ItemIsInUse(cur_art,Player(),1);",
+              "SFT('Добавили арты блазера');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  400,
+          "Pos.y":  -370,
+          "Parent":  -1,
+          "#":  58,
+          "Total.Lines":  41,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//устанавливаем арты",
+              "for (count=0; count<=13; count=count+1){",
+              "    if (count<=8) variable=count;",
+              "    else variable=count+5;",
+              "    size=CT('UselessItems.Remains_'+variable+'.Size');//тут должен быть вес ошметка //cost=CT('Artefacts.CustomArtefacts.ArtDominator-'+variable+'.Cost');",
+              "    cost=CT('Artefacts.CustomArtefacts.ArtDominator-'+variable+'.Size+');//базовая прибавка веса арта //cost=cost*Rnd(1500,2500)*(900+GalaxyDiffLevels(1))/10000;",
+              "    size=size+cost;//count=CT('Artefacts.CustomArtefacts.ArtDominator-'+variable+'.Size');//базовый размер арта",
+              "    size=Rnd(0,2)+size*(70+3*GalaxyDiffLevels(4)/10)/100;//size=ItemSize(cur_item);",
+              "    cost=CT('Artefacts.CustomArtefacts.ArtDominator-'+variable+'.Cost');",
+              "    cost=cost*Rnd(1500,2500)*(900+GalaxyDiffLevels(1))/10000;",
+              "    cur_art=CreateCustomArt('ArtDominator-'+variable,size,cost,Kling);",
+              "    ItemSubrace(cur_art,1);//Келлер",
+              "    ItemDurability(cur_art,2);//износ = 2%",
+              "    AddItemToShip(Player(),cur_art);",
+              "    if (variable==6){//Гробот",
+              "        CustomArtData(cur_art,1,35);//материя арта (от 0 до 100) устновлен на 50 ед.",
+              "        CustomArtData(cur_art,2,7*GalaxyDiffLevels()-4);//уровень арта (опыт) установлен на 5й",
+              "    }",
+              "    if (variable==7){//Энергопакет",
+              "        CustomArtData(cur_art,1,500);//энергия арта (от 0 до 1000) устновлен на 50%",
+              "        CustomArtData(cur_art,2,GalaxyDiffLevels()/2);//уровень арта (опыт) установлен на 3й",
+              "    }",
+              "    if (variable==8){//Базовая конструкция",
+              "        CustomArtData(cur_art,1,800);//энергия арта (от 0 до 1000) устновлен на 80%",
+              "        //CustomArtData(cur_art,2,GalaxyDiffLevels()/2);//уровень арта (опыт) установлен на 3й",
+              "    }",
+              "    if (variable==14) ItemIsInUse(cur_art,Player(),1);//Бином",
+              "    if (variable==16) ItemIsInUse(cur_art,Player(),1);//Дестабилизатор",
+              "    if (variable==17) ItemIsInUse(cur_art,Player(),1);//Спектрон",
+              "    if (variable==18) ItemIsInUse(cur_art,Player(),1);//Мимикрон",
+              "SFT(EquipmentImageName(cur_art));",
+              "}",
+              "Sound('Sound.Buy');",
+              "//------Арт для сравнения-----",
+              "cur_art=CreateArt(t_ArtefactHull,Kling);",
+              "ItemDurability(cur_art,2);//износ = 2%",
+              "AddItemToShip(Player(),cur_art);",
+              "cur_art=CreateArt(t_ArtefactDef,Kling);",
+              "ItemDurability(cur_art,2);//износ = 2%",
+              "AddItemToShip(Player(),cur_art);",
+              "SFT('Добавили арты келлера');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  400,
+          "Pos.y":  -340,
+          "Parent":  -1,
+          "#":  59,
+          "Total.Lines":  41,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//устанавливаем арты",
+              "for (count=0; count<=13; count=count+1){",
+              "    if (count<=8) variable=count;",
+              "    else variable=count+10;",
+              "    size=CT('UselessItems.Remains_'+variable+'.Size');//тут должен быть вес ошметка",
+              "    cost=CT('Artefacts.CustomArtefacts.ArtDominator-'+variable+'.Size+');//базовая прибавка веса арта",
+              "    size=size+cost;",
+              "    size=Rnd(0,2)+size*(70+3*GalaxyDiffLevels(4)/10)/100;//SFT('вес итого по формуле (0..2)+(вес.ошмет+вес.прибавл)*(70+3*слож.обор/10)/100 = '+size);",
+              "    cost=CT('Artefacts.CustomArtefacts.ArtDominator-'+variable+'.Cost');",
+              "    cost=cost*Rnd(1500,2500)*(900+GalaxyDiffLevels(1))/10000;",
+              "    cur_art=CreateCustomArt('ArtDominator-'+variable,size,cost,Kling);",
+              "    ItemSubrace(cur_art,2);//Террон",
+              "    ItemDurability(cur_art,2);//износ = 2%",
+              "    AddItemToShip(Player(),cur_art);",
+              "    if (variable==19) ItemIsInUse(cur_art,Player(),1);",
+              "    if (variable==20) ItemIsInUse(cur_art,Player(),1);",
+              "    if (variable==22) ItemIsInUse(cur_art,Player(),1);",
+              "    if (variable==23) ItemIsInUse(cur_art,Player(),1);",
+              "    if (variable==6){//Гробот",
+              "        CustomArtData(cur_art,1,35);//материя арта (от 0 до 100) устновлен на 50 ед.",
+              "        CustomArtData(cur_art,2,7*GalaxyDiffLevels()-4);//уровень арта (опыт) установлен на 5й",
+              "    }",
+              "    if (variable==7){//Энергопакет",
+              "        CustomArtData(cur_art,1,800);//энергия арта (от 0 до 1000) устновлен на 80%",
+              "        CustomArtData(cur_art,2,GalaxyDiffLevels()/2);//уровень арта (опыт) установлен на 3й",
+              "    }",
+              "    if (variable==8){//Базовая конструкция",
+              "        CustomArtData(cur_art,1,800);//энергия арта (от 0 до 1000) устновлен на 80%",
+              "        //CustomArtData(cur_art,2,GalaxyDiffLevels()/2);//уровень арта (опыт) установлен на 3й",
+              "    }",
+              "    if (variable==19){//Обогатитель",
+              "        CustomArtData(cur_art,1,800);//энергия арта (от 0 до 1000) устновлен на 80%",
+              "    }",
+              "}",
+              "Sound('Sound.Buy');",
+              "//------Арт для сравнения-----",
+              "cur_art=CreateArt(t_ArtefactAntigrav,Kling);",
+              "ItemSubrace(cur_art,2);//Террон",
+              "ItemDurability(cur_art,2);//износ = 2%",
+              "AddItemToShip(Player(),cur_art);",
+              "SFT('Добавили арты террона');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  60,
+          "Total.Lines":  25,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//создание массива ошметков для сдачи",
+              "ArrayClear(items);",
+              "input='<clrEnd>'+CT('FormRuins.SB.Scn2.SBSeeItems');//...вот список того, что нам не помешало бы иметь:",
+              "for (count=0; count<ShipItems(Player()); count=count+1){",
+              "    cur_item=ShipItems(Player(),count);",
+              "    if (ItemType(cur_item)==t_UselessItem && ItemOwner(cur_item)==Kling){",
+              "        for (variable=0; variable<=23; variable=variable+1){",
+              "            if (findsubstr(Name(cur_item),CT('UselessItems.Remains_'+variable+'.Name'))==0 && RemainsPercent[variable]<100){",
+              "                if (RemainsCount[variable]<2+(70+30*(GalaxyDiffLevels(2)/50-1))*(100-RemainsPercent[variable])/(25*(SpeedIndex[variable]+1000/GalaxyDiffLevels(7)))){",
+              "                    ArrayAdd(items,cur_item);//Remains_variable",
+              "                    break;",
+              "                }",
+              "            }",
+              "        }",
+              "    }",
+              "}",
+              "variable=0;",
+              "for (count=1; count<ArrayDim(items); count=count+1){",
+              "    cur_item=items[count];",
+              "    variable=variable+1;//для вывода пронумерованного списка",
+              "    input=input+variable+') '+DeleteTags(ItemFullName(cur_item))+' (<color=255,240,100>'+ItemSize(cur_item)+'</color> '+CT('FormRuins.SB.Scn2.ItemSubrace'+ItemSubrace(cur_item))+\"<br>\";",
+              "//может тут серию и вес выводить?",
+              "}",
+              "if ((ArrayDim(items)-1)) input=input+CT('FormRuins.SB.Scn2.SBSeeItemsHaveItems');//Какие из этих предметов вы намерены безвозмездно передать нашему отделу?",
+              "else input=input+CT('FormRuins.SB.Scn2.SBSeeItemsNotHaveItems');//Извините, но мы не нашли никаких доминаторских модулей, которые можно было бы исследовать."          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  66,
+          "Total.Lines":  12,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//сдача ошметков на исследование поштучно",
+              "for (count=1; count<ArrayDim(items); count=count+1){",
+              "    cur_item=items[count];",
+              "    for (variable=0; variable<=23; variable=variable+1){",
+              "        if (findsubstr(Name(cur_item),CT('UselessItems.Remains_'+variable+'.Name'))==0){",
+              "            if (RemainsCount[variable]<2+(70+30*(GalaxyDiffLevels(2)/50-1))*(100-RemainsPercent[variable])/(25*(SpeedIndex[variable]+1000/GalaxyDiffLevels(7)))){",
+              "                input='</color>'+DeleteTags(ItemFullName(cur_item))+' (<color=255,240,100>'+ItemSize(cur_item)+'</color> '+CT('FormRuins.SB.Scn2.ItemSubrace'+ItemSubrace(cur_item));",
+              "                InjectAnswer('Remains',input,cur_item);",
+              "            }",
+              "        }",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  67,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+CT('FormRuins.SB.Scn2.PlayerSaleAllArts');//Сдать все модули"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  68,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+CT('FormRuins.SB.Scn2.PlayerSaleNoArts');//не могу дать модули"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  73,
+          "Total.Lines":  11,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "cur_item=GAnswerData;",
+              "for (variable=0; variable<=23; variable=variable+1){",
+              "    if (findsubstr(Name(cur_item),CT('UselessItems.Remains_'+variable+'.Name'))==0){",
+              "        RemainsCount[variable]=RemainsCount[variable]+1;//сдали ошметок",
+              "        GetItemFromShip(Player(),FindItemInShip(Player(),cur_item));",
+              "        FreeItem(cur_item);",
+              "        ArrayDelete(items,ArrayFind(items,cur_item));",
+              "        break;",
+              "    }",
+              "}",
+              "Sound('Sound.Buy');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  74,
+          "Total.Lines":  15,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "for (count=1; count<ArrayDim(items); count=count+1){",
+              "    cur_item=items[count];",
+              "    for (variable=0; variable<=23; variable=variable+1){",
+              "        if (findsubstr(Name(cur_item),CT('UselessItems.Remains_'+variable+'.Name'))==0){",
+              "            if (RemainsCount[variable]<2+(70+30*(GalaxyDiffLevels(2)/50-1))*(100-RemainsPercent[variable])/(25*(SpeedIndex[variable]+1000/GalaxyDiffLevels(7)))){",
+              "                RemainsCount[variable]=RemainsCount[variable]+1;",
+              "                GetItemFromShip(Player(),FindItemInShip(Player(),cur_item));",
+              "                FreeItem(cur_item);",
+              "            }",
+              "            break;",
+              "        }",
+              "    }",
+              "}",
+              "ArrayClear(items);",
+              "Sound('Sound.Buy');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  75,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+CT('FormRuins.SB.Scn2.PlayerToArts');//Преобразовать модули"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  77,
+          "Total.Lines":  44,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='<clrEnd>'+CT('FormRuins.SB.Scn2.SBSectionInfo');//Мы ведем работу над изучением следующих модулей доминаторов:",
+              "if (GArtDominatorTest){",
+              "    input=input+'Общий процент изучения доминаторов '+GalaxyDominatorResearchPercent()+\"<br>\";",
+              "    input=input+'Процент изучения блазера '+GalaxyDominatorResearchPercent(0)+\"<br>\";",
+              "    input=input+'Процент изучения келлера '+GalaxyDominatorResearchPercent(1)+\"<br>\";",
+              "    input=input+'Процент изучения террона '+GalaxyDominatorResearchPercent(2)+\"<br>\";",
+              "    input=input+'Текущий ГТУ '+GalaxyTechLevel()+\"<br>\";",
+              "}",
+              "variable=0;",
+              "for (count=0; count<=23; count=count+1){",
+              "    variable=variable+1;//для вывода пронумерованного списка",
+              "    input=input+variable+') '+CT('UselessItems.Remains_'+count+'.Name')+' ';//вывод названия ошметка",
+              "    if (RemainsPercent[count]==0 && SpeedResearch[count]==0) input=input+'<clr>'+CT('FormRuins.SB.Scn2.Status_3')+'<clrEnd>';//(не изучен)",
+              "    else {",
+              "        if (RemainsPercent[count]==100) input=input+'<clr>'+CT('FormRuins.SB.Scn2.Status_1')+'<clrEnd>';//(изучен)",
+              "        else {",
+              "            input=input+'<color=255,240,100>('+RemainsPercent[count]+'</color>%, ';//вывод процента изучения",
+              "            if (RemainsCount[count]==0) input=input+'<clr>'+CT('FormRuins.SB.Scn2.Status_4')+'<clrEnd>';//(приостановлено) требуется материал для исследований.",
+              "            else {",
+              "                if (RemainsPercent[count]>=100/max(RemainsGTL[count]-GalaxyTechLevel()+1,1)){",
+              "                    input=input+'<clr>'+CT('FormRuins.SB.Scn2.Status_4')+'<clrEnd>';//(приостановлено) необходимо новое технологическое оборудование для изучения.",
+              "                }",
+              "                else {",
+              "                    if (count>=0 && count<=8) size=GalaxyDominatorResearchPercent();",
+              "                    if (count>8 && count<=13) size=GalaxyDominatorResearchPercent(0);",
+              "                    if (count>13 && count<=18) size=GalaxyDominatorResearchPercent(1);",
+              "                    if (count>18 && count<=23) size=GalaxyDominatorResearchPercent(2);",
+              "                    size=int((1.0*RemainsGDRP[count])/max(size,1)+0.9999);",
+              "                    size=min(5+100/max(size,1),100);",
+              "                    if (RemainsPercent[count]>=size) input=input+'<clr>'+CT('FormRuins.SB.Scn2.Status_4')+'<clrEnd>';//(приостановлено) необходимы оперативные данные из отделов антидоминаторских исследований.",
+              "                    else input=input+'<clr>'+CT('FormRuins.SB.Scn2.Status_2')+'<clrEnd>';//(изучается)",
+              "                }",
+              "            }",
+              "        }",
+              "    }",
+              "    if (GArtDominatorTest){",
+              "        input=input+' кол:<color=255,240,100>'+RemainsCount[count]+'</color>';",
+              "//        input=input+' %:<color=255,240,100>'+RemainsPercent[count]+'</color>';",
+              "        input=input+' ГТУ:<color=255,240,100>'+RemainsGTL[count]+'</color>';",
+              "        input=input+' GDRP:<color=255,240,100>'+RemainsGDRP[count]+'</color>';",
+              "    }",
+              "    input=input+\"<br>\";",
+              "}",
+              "//input=input+CT('FormRuins.SB.Scn2.SBSectionInfoEnd');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  -130,
+          "Parent":  -1,
+          "#":  81,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+'1 день изучения (тест)';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  440,
+          "Pos.y":  -180,
+          "Parent":  -1,
+          "#":  82,
+          "Total.Lines":  41,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//или скорость иследования",
+              "//дни исслед-я=variable*(100-RemainsPercent[count])/(SpeedIndex[count]+500/GalaxyDiffLevels(7));",
+              "variable=70+30*(GalaxyDiffLevels(2)/50-1);//ученые",
+              "size=(GalaxyDominatorResearchMaterial(0)+GalaxyDominatorResearchMaterial(1)+GalaxyDominatorResearchMaterial(2)+50)/3;//загруженность ученых",
+              "cost=0;",
+              "SFT('GalaxyDominatorResearchMaterial(0) = '+GalaxyDominatorResearchMaterial(0));",
+              "SFT('GalaxyDominatorResearchMaterial(1) = '+GalaxyDominatorResearchMaterial(1));",
+              "SFT('GalaxyDominatorResearchMaterial(2) = '+GalaxyDominatorResearchMaterial(2));",
+              "SFT('min(size,200)/100 = '+min(size,200)/100);",
+              "SFT('Ученые исследуют (д.б. не более 5 раз)');",
+              "SFT('Кол-во раз = '+(5-min(size,200)/100));",
+              "for (cur_item=0; cur_item<=5-min(size,200)/100; cur_item=cur_item+1){",
+              "    for (count=0; count<=23; count=count+1){",
+              "        if (count>=0 && count<=8) size=GalaxyDominatorResearchPercent();",
+              "        if (count>8 && count<=13) size=GalaxyDominatorResearchPercent(0);",
+              "        if (count>13 && count<=18) size=GalaxyDominatorResearchPercent(1);",
+              "        if (count>18 && count<=23) size=GalaxyDominatorResearchPercent(2);",
+              "        size=int((1.0*RemainsGDRP[count])/max(size,1)+0.9999);",
+              "        size=min(5+100/max(size,1),100);",
+              "        if (RemainsPercent[count]<100/(max(RemainsGTL[count]-GalaxyTechLevel()+1,1)) && RemainsPercent[count]<size && RemainsCount[count]>0){",
+              "            SpeedResearch[count]=SpeedResearch[count]+SpeedIndex[count]+500/GalaxyDiffLevels(7);//скорость исследования ошметов",
+              "            if (Rnd(0,100)<=4) RemainsCount[count]=RemainsCount[count]-1;//variable/30 от умности ученых еще должно зависеть (32 у дом исслед)",
+              "            if (SpeedResearch[count]>=variable){",
+              "                RemainsPercent[count]=RemainsPercent[count]+1;",
+              "                if (RemainsPercent[count]==100){",
+              "                    input='<color=255,240,100>'+CT('UselessItems.Remains_'+count+'.Name')+'</color> ';",
+              "                    Ether(0,'',input+CT('FormRuins.SB.Scn2.EtherExamine'));//звук выводить?",
+              "                    RemainsCount[count]=-1;",
+              "                    SpeedResearch[count]=0;",
+              "                    continue;",
+              "                }",
+              "                SpeedResearch[count]=SpeedResearch[count]-variable;",
+              "            }",
+              "            SFT('cur_item = '+cur_item+' count = '+count);",
+              "            cost=cost+1;",
+              "            SFT('cost = '+cost);",
+              "            if (cost>=5-min((GalaxyDominatorResearchMaterial(0)+GalaxyDominatorResearchMaterial(1)+GalaxyDominatorResearchMaterial(2)+50)/3,200)/100) break;",
+              "        }",
+              "    }",
+              "    if (cost>=5-min((GalaxyDominatorResearchMaterial(0)+GalaxyDominatorResearchMaterial(1)+GalaxyDominatorResearchMaterial(2)+50)/3,200)/100) break;",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  83,
+          "Total.Lines":  3,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "for (count=0; count<=23; count=count+1){",
+              "    InjectAnswer('Moduls','</color>'+CT('UselessItems.Remains_'+count+'.Name'),count);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  86,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+CT('FormRuins.SB.Scn2.PlayerSectionBack');//назад"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  90,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "variable=GAnswerData;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  91,
+          "Total.Lines":  60,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='<clrEnd>'+CT('FormRuins.SB.Scn2.SBModulInfo0')+' '+CT('UselessItems.Remains_'+variable+'.Name');//исследуемый модуль:",
+              "if (RemainsPercent[variable]==100) input=input+\"<br>\"+CT('Artefacts.CustomArtefacts.ArtDominator-'+variable+'.DescriptionLow');",
+              "else input=input+\"<br>\"+CT('UselessItems.Remains_'+variable+'.Text');//описание модуля",
+              "input=input+\"<br>\"+CT('FormRuins.SB.Scn2.SBModulInfo');//(черта)",
+              "if (RemainsPercent[variable]<100) input=input+\"<br>\"+CT('FormRuins.SB.Scn2.SBModulInfo1')+' <color=255,240,100>'+RemainsCount[variable]+'</color> '+CT('FormRuins.SB.Scn2.SBModulInfo1_');//Колличество материала:",
+              "input=input+\"<br>\"+CT('FormRuins.SB.Scn2.SBModulInfo2')+' <color=255,240,100>'+RemainsPercent[variable]+'</color>%';//Процент исследования:",
+              "input=input+\"<br>\"+CT('FormRuins.SB.Scn2.SBModulInfo');//(черта)",
+              "if (RemainsPercent[variable]==0 && SpeedResearch[variable]==0) input=input+\"<br>\"+CT('FormRuins.SB.Scn2.SBModulNo');//К исследованиям не приступали.",
+              "else {",
+              "    if (RemainsPercent[variable]==100) input=input+\"<br>\"+CT('FormRuins.SB.Scn2.SBModulEnd');//Исследования успешно завершены.",
+              "    else {",
+              "        if (RemainsCount[variable]==0) input=input+\"<br>\"+CT('FormRuins.SB.Scn2.SBModulMaterial');//Исследования приостановлены, требуется материал для исследований.",
+              "        else {",
+              "            if (RemainsPercent[variable]>=100/max(RemainsGTL[variable]-GalaxyTechLevel()+1,1)){",
+              "                input=input+\"<br>\"+CT('FormRuins.SB.Scn2.SBModulGTL');//Исследования приостановлены, необходимо новое технологическое оборудование для изучения.",
+              "            }",
+              "            else {",
+              "                if (variable>=0 && variable<=8) size=GalaxyDominatorResearchPercent();",
+              "                if (variable>8 && variable<=13) size=GalaxyDominatorResearchPercent(0);",
+              "                if (variable>13 && variable<=18) size=GalaxyDominatorResearchPercent(1);",
+              "                if (variable>18 && variable<=23) size=GalaxyDominatorResearchPercent(2);",
+              "                size=int((1.0*RemainsGDRP[variable])/max(size,1)+0.9999);",
+              "                size=min(5+100/max(size,1),100);",
+              "                if (RemainsPercent[variable]>=size) input=input+\"<br>\"+CT('FormRuins.SB.Scn2.SBModulGDRP');//Исследования приостановлены, необходимы оперативные данные из отделов антидоминаторских исследований.",
+              "                else input=input+\"<br>\"+CT('FormRuins.SB.Scn2.SBModulOk');//Исследования ведутся.",
+              "            }",
+              "        }",
+              "    }",
+              "}",
+              "//возможность изготовления опытного образца",
+              "//доделать, это еще не все",
+              "//",
+              "//RemainsCount=newarray(24);//количество доступных ошметков для изучения",
+              "//RemainsGTL=newarray(24);//с какого ГТУ НБ сможет изучить ошмет",
+              "//RemainsGDRP=newarray(24);//требуемый уровень исследования доминаторов",
+              "//RemainsPercent=newarray(24);//процент изучения ошметка",
+              "//SpeedResearch=newarray(24);//порог исследования",
+              "//SpeedIndex=newarray(24);//скорость исследования",
+              "//дни исслед-я=variable*(100-RemainsPercent[count])/(SpeedIndex[count]+500/GalaxyDiffLevels(7));",
+              "if (GArtDominatorTest){",
+              "    if (variable>=0 && variable<=8) input=input+\"<br>\"+'Общий процент изучения доминаторов <color=255,240,100>'+GalaxyDominatorResearchPercent()+'</color>'+\"<br>\";",
+              "    if (variable>8 && variable<=13) input=input+\"<br>\"+'Процент изучения блазера <color=255,240,100>'+GalaxyDominatorResearchPercent(0)+'</color>'+\"<br>\";",
+              "    if (variable>13 && variable<=18) input=input+\"<br>\"+'Процент изучения келлера <color=255,240,100>'+GalaxyDominatorResearchPercent(1)+'</color>'+\"<br>\";",
+              "    if (variable>18 && variable<=23) input=input+\"<br>\"+'Процент изучения террона <color=255,240,100>'+GalaxyDominatorResearchPercent(2)+'</color>'+\"<br>\";",
+              "    input=input+'GDRP ошмет: <color=255,240,100>'+RemainsGDRP[variable]+'</color>'+\"<br>\";",
+              "    input=input+'GDRP порог: <color=255,240,100>'+size+'</color>'+\"<br>\";",
+              "    input=input+'ГТУ текущ: <color=255,240,100>'+GalaxyTechLevel()+'</color>'+\"<br>\";",
+              "    input=input+'ГТУ ошмет: <color=255,240,100>'+RemainsGTL[variable]+'</color>'+\"<br>\";",
+              "    input=input+'ГТУ порог: <color=255,240,100>'+(100/max(RemainsGTL[variable]-GalaxyTechLevel()+1,1))+'</color>%'+\"<br>\";",
+              "    input=input+'порог исследования: <color=255,240,100>'+SpeedResearch[variable]+'</color>'+\"<br>\";",
+              "    input=input+'скорость исследования: <color=255,240,100>'+SpeedIndex[variable]+'</color>'+\"<br>\";",
+              "    input=input+'ученые: <color=255,240,100>'+(70+30*(GalaxyDiffLevels(2)/50-1))+'</color>';",
+              "}",
+              "//input=input+variable+') '+DeleteTags(ItemFullName(cur_item))+' за <clr>'+ItemCost(cur_item)+'<clrEnd> cr.'+\"<br>\";",
+              "cost=(0.8*GalaxyMoney(2,ShipOwner(GetShipRuins(Player())))+1000)/100;//стоимость преобразования ошметка в арт",
+              "cost=cost*100;",
+              "if (RemainsPercent[variable]==100){",
+              "    input=input+\"<br>\"+CT('FormRuins.SB.Scn2.SBRemainsToArt');",
+              "    input=input+\"<br>\"+CT('FormRuins.SB.Scn2.SBNeedCost')+' <clr>'+cost+'<clrEnd> cr.';",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  -130,
+          "Parent":  -1,
+          "#":  95,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+'получить арт (тест)';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  -190,
+          "Parent":  -1,
+          "#":  96,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+'получить ошмет (тест)';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  -250,
+          "Parent":  -1,
+          "#":  97,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+'+1 к ошмткам для изучения (тест)';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  -310,
+          "Parent":  -1,
+          "#":  98,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+'1 день изучения (тест)';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  -160,
+          "Parent":  -1,
+          "#":  103,
+          "Total.Lines":  18,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "size=CT('UselessItems.Remains_'+variable+'.Size');//тут должен быть вес ошметка",
+              "//SFT('вес ошметка = '+size);",
+              "cost=CT('Artefacts.CustomArtefacts.ArtDominator-'+variable+'.Size+');//базовая прибавка веса арта",
+              "//SFT('прибавка веса арта = '+cost);",
+              "size=size+cost;",
+              "//SFT('вес сумма = '+size);",
+              "size=Rnd(0,2)+size*(70+3*GalaxyDiffLevels(4)/10)/100;",
+              "//SFT('вес итого по формуле (0..2)+(вес.ошмет+вес.прибавл)*(70+3*слож.обор/10)/100 = '+size);",
+              "cost=CT('Artefacts.CustomArtefacts.ArtDominator-'+variable+'.Cost');",
+              "cost=cost*Rnd(2500,3500)*(900+GalaxyDiffLevels(1))/10000;",
+              "cur_art=CreateCustomArt('ArtDominator-'+variable,size,cost,Kling);",
+              "if (variable>=0 && variable<=8) ItemSubrace(cur_art,Rnd(0,2));",
+              "if (variable>8 && variable<=13) ItemSubrace(cur_art,0);",
+              "if (variable>13 && variable<=18) ItemSubrace(cur_art,1);",
+              "if (variable>18 && variable<=23) ItemSubrace(cur_art,2);",
+              "AddItemToShip(Player(),cur_art);",
+              "ItemDurability(cur_art,99);",
+              "Sound('Sound.Buy');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  -220,
+          "Parent":  -1,
+          "#":  104,
+          "Total.Lines":  7,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "cur_item=CreateQuestItem('Remains_'+variable);",
+              "ItemOwner(cur_item,Kling);",
+              "if (variable>=0 && variable<=8) ItemSubrace(cur_item,Rnd(0,2));",
+              "if (variable>8 && variable<=13) ItemSubrace(cur_item,0);",
+              "if (variable>13 && variable<=18) ItemSubrace(cur_item,1);",
+              "if (variable>18 && variable<=23) ItemSubrace(cur_item,2);",
+              "AddItemToShip(Player(),cur_item);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  -280,
+          "Parent":  -1,
+          "#":  105,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "RemainsCount[variable]=RemainsCount[variable]+1;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  -340,
+          "Parent":  -1,
+          "#":  106,
+          "Total.Lines":  21,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "count=70+30*(GalaxyDiffLevels(2)/50-1);//ученые",
+              "if (variable>=0 && variable<=8) size=GalaxyDominatorResearchPercent();",
+              "if (variable>8 && variable<=13) size=GalaxyDominatorResearchPercent(0);",
+              "if (variable>13 && variable<=18) size=GalaxyDominatorResearchPercent(1);",
+              "if (variable>18 && variable<=23) size=GalaxyDominatorResearchPercent(2);",
+              "size=int((1.0*RemainsGDRP[variable])/max(size,1)+0.9999);",
+              "size=min(5+100/max(size,1),100);",
+              "if (RemainsPercent[variable]<100/(max(RemainsGTL[variable]-GalaxyTechLevel()+1,1)) && RemainsPercent[variable]<size && RemainsCount[variable]>0){",
+              "    SpeedResearch[variable]=SpeedResearch[variable]+SpeedIndex[variable]+500/GalaxyDiffLevels(7);//скорость исследования ошметов",
+              "    if (Rnd(0,100)<=10) RemainsCount[variable]=RemainsCount[variable]-1;//уменьшение материала",
+              "    if (SpeedResearch[variable]>=count){",
+              "        RemainsPercent[variable]=RemainsPercent[variable]+1;",
+              "        if (RemainsPercent[variable]==100){",
+              "            input='<color=255,240,100>'+CT('UselessItems.Remains_'+variable+'.Name')+'</color> ';",
+              "            Ether(0,'',input+CT('FormRuins.SB.Scn2.EtherExamine'));//звук выводить?",
+              "            RemainsCount[variable]=-1;",
+              "            SpeedResearch[variable]=0;",
+              "        }",
+              "        SpeedResearch[variable]=SpeedResearch[variable]-count;",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  107,
+          "Total.Lines":  15,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ArrayClear(items);",
+              "for (count=0; count<ShipItems(Player()); count=count+1){",
+              "    cur_item=ShipItems(Player(),count);",
+              "    if (ItemType(cur_item)==t_UselessItem && ItemOwner(cur_item)==Kling){",
+              "        if (findsubstr(Name(cur_item),CT('UselessItems.Remains_'+variable+'.Name'))==0) ArrayAdd(items,cur_item);//Remains_variable",
+              "    }",
+              "}",
+              "for (count=1; count<ArrayDim(items); count=count+1){",
+              "    cur_item=items[count];",
+              "    input=' (<color=255,240,100>'+ItemSize(cur_item)+'</color> ';",
+              "    input=input+CT('FormRuins.SB.Scn2.ItemSubrace'+ItemSubrace(cur_item));",
+              "//AddDialogBlock();",
+              "//if (ShipMoney(Player())<100000) AddDialogBlock('Координатор',1);",
+              "    InjectAnswer('Arts','</color>'+CT('UselessItems.Remains_'+variable+'.Name')+input,cur_item);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  108,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+CT('FormRuins.SB.Scn2.PlayerSectionBack');//назад"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  109,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+CT('FormRuins.SB.Scn2.PlayerNo');//Покинуть отдел исследования"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  -90,
+          "Parent":  -1,
+          "#":  115,
+          "Total.Lines":  22,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "cur_item=GAnswerData;",
+              "cost=CT('Artefacts.CustomArtefacts.ArtDominator-'+variable+'.Cost');",
+              "cost=cost*Rnd(2500,3500)*(900+GalaxyDiffLevels(1))/10000;",
+              "size=ItemSize(cur_item);//CT('UselessItems.Remains_'+variable+'.Size');//тут должен быть вес ошметка//SFT('вес ошметка = '+size);",
+              "count=CT('Artefacts.CustomArtefacts.ArtDominator-'+variable+'.Size+');//базовая прибавка веса арта//SFT('прибавка веса арта = '+count);",
+              "size=size+count;//SFT('вес сумма = '+size);",
+              "size=Rnd(0,2)+size*(70+3*GalaxyDiffLevels(4)/10)/100;",
+              "//SFT('вес итого по формуле (0..2)+(вес.ошмет+вес.прибавл)*(70+3*слож.обор/10)/100 = '+size);",
+              "//count=CT('Artefacts.CustomArtefacts.ArtDominator-'+variable+'.Size');//базовый размер арта",
+              "//size=CT('UselessItems.Remains_'+variable+'.Size');//тут должен быть вес ошметка",
+              "//size=ItemSize(cur_item);",
+              "//Итоговый размер ошметка получается как Size+(0..Size)*(0.5..3).",
+              "//Здесь Size - то, что в датнике прописано, 0..Size - рандом, 0.5..3 - в зависимости от ГТУ (0.5 на ГТУ 4 и ниже, 3 на ГТУ 8).",
+              "//if (size<count-1) size=count+(GalaxyDiffLevels(4)/40)-1;//зависит от сложности оборудования",
+              "//else size=size+Rnd(2,6)+(GalaxyDiffLevels(4)/40);",
+              "cur_art=CreateCustomArt('ArtDominator-'+variable,size,cost,Kling);",
+              "ItemSubrace(cur_art,ItemSubrace(cur_item));//раса должна быть как у ошметка",
+              "AddItemToShip(Player(),cur_art);//добавляем арт",
+              "GetItemFromShip(Player(),FindItemInShip(Player(),cur_item));//изымаем ошмет",
+              "FreeItem(cur_item);//удаляем ошмет",
+              "Sound('Sound.Buy');",
+              "ShipMoney(Player(),ShipMoney(Player())-cost);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  910,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  116,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='<clrEnd>'+CT('FormRuins.SB.Scn2.SBNeedCostArt');",
+              "//<Player> у вас не достаточно денежных средств для изготовления опытного образца."          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1000,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  118,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+CT('FormRuins.SB.Scn2.PlayerBuyArtNo');//Хорошо, приду в другой раз"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  120,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+CT('FormRuins.SB.Scn2.PlayerNo');//Покинуть отдел исследования"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  20,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  123,
+          "Total.Lines":  29,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//Проверка наличия НБ или их полного уничтожения",
+              "size=1;",
+              "for(count=GalaxyEvents()-1; count>=0; count=count-1){",
+              "    if (GalaxyEventDate(count)<CurTurn()) break;//если стали смотреть события других дней",
+              "    if (GalaxyEventType(count)=='RuinsDestroyed'){",
+              "        if (GalaxyEventData(count,0)==t_SB){//уничтожена 'SB'",
+              "            for (variable=0; variable<GalaxyStars(); variable=variable+1){",
+              "                if (StarOwner(GalaxyStar(variable))!=0) continue;//система не принадлежит коалиции",
+              "                if (StarRuins(GalaxyStar(variable),'SB')>0){",
+              "                    size=1;",
+              "                    exit;//не все научные базы уничтожены",
+              "                }",
+              "                else size=0;",
+              "            }",
+              "        }",
+              "    }",
+              "}",
+              "if (size==0){",
+              "    input=CT('FormRuins.SB.Scn2.EtherSBDestroyed');",
+              "    Ether(0,'',input);",
+              "    for (count=0; count<=2; count=count+1){",
+              "        if (GalaxyDominatorResearchPercent(count)<100) GalaxyDominatorResearchPercent(count,Rnd(GalaxyDominatorResearchPercent(count)/2,GalaxyDominatorResearchPercent(count)));",
+              "    }",
+              "    for (count=0; count<=23; count=count+1){",
+              "        if (RemainsCount[count]>0) RemainsCount[count]=0;//сданные ошметки",
+              "        if (RemainsPercent[count]<100) RemainsPercent[count]=Rnd(RemainsPercent[count]/3,RemainsPercent[count]);//процент изучения ошметка",
+              "        SpeedResearch[count]=0;//порог исследования",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  70,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  124,
+          "Total.Lines":  32,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//Изучение ошметка",
+              "variable=70+30*(GalaxyDiffLevels(2)/50-1);//ученые",
+              "size=(GalaxyDominatorResearchMaterial(0)+GalaxyDominatorResearchMaterial(1)+GalaxyDominatorResearchMaterial(2)+50)/3;//загруженность ученых",
+              "cost=0;//к-во изучений (не более 5)",
+              "for (cur_item=0; cur_item<=5-min(size,200)/100; cur_item=cur_item+1){",
+              "    for (count=0; count<=23; count=count+1){",
+              "        if (count>=0 && count<=8) size=GalaxyDominatorResearchPercent();",
+              "        if (count>8 && count<=13) size=GalaxyDominatorResearchPercent(0);",
+              "        if (count>13 && count<=18) size=GalaxyDominatorResearchPercent(1);",
+              "        if (count>18 && count<=23) size=GalaxyDominatorResearchPercent(2);",
+              "        size=int((1.0*RemainsGDRP[count])/max(size,1)+0.9999);",
+              "        size=min(5+100/max(size,1),100);",
+              "        if (RemainsPercent[count]<100/(max(RemainsGTL[count]-GalaxyTechLevel()+1,1)) && RemainsPercent[count]<size && RemainsCount[count]>0){",
+              "            SpeedResearch[count]=SpeedResearch[count]+SpeedIndex[count]+1000/GalaxyDiffLevels(7);//скорость исследования ошметов",
+              "            if (Rnd(0,100)<=4) RemainsCount[count]=RemainsCount[count]-1;//уменьшение материала  variable/30 от умности ученых еще должно зависеть (32 у дом исслед)",
+              "            if (SpeedResearch[count]>=variable){",
+              "                RemainsPercent[count]=RemainsPercent[count]+1;",
+              "                if (RemainsPercent[count]==100){",
+              "                    input='<color=255,240,100>'+CT('UselessItems.Remains_'+count+'.Name')+'</color> ';",
+              "                    Ether(0,'',input+CT('FormRuins.SB.Scn2.EtherExamine'));//звук выводить?",
+              "                    RemainsCount[count]=-1;",
+              "                    SpeedResearch[count]=0;",
+              "                    continue;",
+              "                }",
+              "                SpeedResearch[count]=SpeedResearch[count]-variable;",
+              "            }",
+              "            cost=cost+1;",
+              "            if (cost>=5-min((GalaxyDominatorResearchMaterial(0)+GalaxyDominatorResearchMaterial(1)+GalaxyDominatorResearchMaterial(2)+50)/3,200)/100) break;",
+              "        }",
+              "    }",
+              "    if (cost>=5-min((GalaxyDominatorResearchMaterial(0)+GalaxyDominatorResearchMaterial(1)+GalaxyDominatorResearchMaterial(2)+50)/3,200)/100) break;",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  126,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "input='</color>'+CT('FormRuins.SB.Scn2.FullSetSubrace'+ItemSubrace(cur_art));//Покупаю полный комплект оборудки"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  128,
+          "Total.Lines":  58,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "size=1;",
+              "variable=CT('Artefacts.CustomArtefacts.'+EquipmentImageName(cur_art)+'.Equipments');",
+              "for (count=t_FuelTanks; count<t_FuelTanks+7; count=count+1){",
+              "    size=size*2;",
+              "    if ((variable & size/2)==size/2){",
+              "        if (count==t_FuelTanks){",
+              "            cur_item=CreateEquipment(t_FuelTanks,20,max(GalaxyTechLevel()-2,1),Kling);",
+              "            SetEquipmentStats(cur_item,50*GetEquipmentStats(cur_item,0)/100,0);//Топливо*[0.50]",
+              "            ContainerFuel(cur_item,GetEquipmentStats(cur_item,0));//топлива больше чем емкость бака?",
+              "            ItemCost(cur_item,ItemCost(cur_item)/2);",
+              "            ItemSize(cur_item,Rnd(ItemSize(cur_item)/2,ItemSize(cur_item)));",
+              "        }",
+              "        if (count==t_Engine){",
+              "            cur_item=CreateEquipment(t_Engine,18,max(GalaxyTechLevel()-2,1),Kling);",
+              "            SetEquipmentStats(cur_item,80*GetEquipmentStats(cur_item,0)/100,0);//Скорость*[0.8]",
+              "            SetEquipmentStats(cur_item,60*GetEquipmentStats(cur_item,1)/100,1);//Прыжок*[0.6] двигатель (0-скорость, 1-дальность прыжка)",
+              "            ItemCost(cur_item,ItemCost(cur_item)/2);",
+              "            ItemSize(cur_item,Rnd(ItemSize(cur_item)/2,ItemSize(cur_item)));",
+              "        }",
+              "        if (count==t_Radar){",
+              "            cur_item=CreateEquipment(t_Radar,15,max(GalaxyTechLevel()-2,1),Kling);",
+              "            SetEquipmentStats(cur_item,20*GetEquipmentStats(cur_item,0)/100,0);//Радиус*[0.20]",
+              "            ItemCost(cur_item,ItemCost(cur_item)/2);",
+              "            ItemSize(cur_item,Rnd(ItemSize(cur_item)/2,ItemSize(cur_item)));",
+              "        }",
+              "        if (count==t_Scaner){",
+              "            cur_item=CreateEquipment(t_Scaner,15,max(GalaxyTechLevel()-2,1),Kling);",
+              "            SetEquipmentStats(cur_item,60*GetEquipmentStats(cur_item,0)/100,0);//Сканер*[0.60]",
+              "            ItemCost(cur_item,ItemCost(cur_item)/2);",
+              "            ItemSize(cur_item,Rnd(ItemSize(cur_item)/2,ItemSize(cur_item)));",
+              "        }",
+              "        if (count==t_RepairRobot){",
+              "            cur_item=CreateEquipment(t_RepairRobot,20,max(GalaxyTechLevel()-2,1),Kling);",
+              "            SetEquipmentStats(cur_item,70*GetEquipmentStats(cur_item,0)/100,0);//Дроид*[0.7]",
+              "            ItemCost(cur_item,ItemCost(cur_item)/2);",
+              "            ItemSize(cur_item,Rnd(ItemSize(cur_item)/2,ItemSize(cur_item)));",
+              "        }",
+              "        if (count==t_CargoHook){",
+              "            cur_item=CreateEquipment(t_CargoHook,20,max(GalaxyTechLevel()-2,1),Kling);",
+              "            SetEquipmentStats(cur_item,80*GetEquipmentStats(cur_item,0)/100,0);//Мощность*[0.8]",
+              "            SetEquipmentStats(cur_item,60*GetEquipmentStats(cur_item,1)/100,1);//Дальность*[0.6]захват (0-мощность, 1-дальность)",
+              "            ItemCost(cur_item,ItemCost(cur_item)/2);",
+              "            ItemSize(cur_item,Rnd(ItemSize(cur_item)/2,ItemSize(cur_item)));",
+              "        }",
+              "        if (count==t_DefGenerator){",
+              "            cur_item=CreateEquipment(t_DefGenerator,20,max(GalaxyTechLevel()-2,1),Kling);",
+              "            SetEquipmentStats(cur_item,70*GetEquipmentStats(cur_item,0)/100,0);//Защита*[0.7]",
+              "            ItemCost(cur_item,ItemCost(cur_item)/2);",
+              "            ItemSize(cur_item,Rnd(ItemSize(cur_item)/2,ItemSize(cur_item)));",
+              "        }",
+              "        ItemSubrace(cur_item,ItemSubrace(cur_art));//Оборудование серии выданного арта",
+              "        ItemDurability(cur_item,Rnd(30,90));",
+              "        AddItemToShip(Player(),cur_item);",
+              "        ItemIsInUse(cur_item,Player(),1);",
+              "    }",
+              "}",
+              "ShipMoney(Player(),ShipMoney(Player())-cost);//извлечение денег",
+              "Sound('Sound.Buy');"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "PlanetNew",
+          "Pos.x":  30,
+          "Pos.y":  -600,
+          "Parent":  -1,
+          "#":  1,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  30,
+          "Pos.y":  -670,
+          "Parent":  -1,
+          "#":  2,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "StarNew",
+          "Pos.x":  30,
+          "Pos.y":  -640,
+          "Parent":  -1,
+          "#":  0,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  440,
+          "Pos.y":  -670,
+          "Parent":  -1,
+          "#":  18,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "GetShipRuins(Player())>0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  440,
+          "Pos.y":  -610,
+          "Parent":  -1,
+          "#":  19,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!PlayerBridge()"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  440,
+          "Pos.y":  -550,
+          "Parent":  -1,
+          "#":  20,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipType(GetShipRuins(Player()))=='SB'"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  490,
+          "Pos.y":  -450,
+          "Parent":  -1,
+          "#":  24,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GArtDominatorTest"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  440,
+          "Pos.y":  -450,
+          "Parent":  -1,
+          "#":  25,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipType(GetShipRuins(Player()))=='RC'"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  -450,
+          "Parent":  -1,
+          "#":  26,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GArtDominatorTest"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  170,
+          "Pos.y":  -340,
+          "Parent":  -1,
+          "#":  32,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GArtDominatorTest"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  440,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  62,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!(ArrayDim(items)-1)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  440,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  63,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  440,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  64,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "(ArrayDim(items)-1)>1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  440,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  65,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "(ArrayDim(items)-1)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  440,
+          "Pos.y":  -130,
+          "Parent":  -1,
+          "#":  79,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GArtDominatorTest"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  440,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  80,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  200,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  84,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "(ArrayDim(items)-1)>0 && !variable"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  200,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  85,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!variable"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  690,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  93,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "RemainsPercent[variable]==100"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  -340,
+          "Parent":  -1,
+          "#":  94,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GArtDominatorTest"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  870,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  113,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player())>=cost"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  870,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  114,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player())<cost"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  200,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  122,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  200,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  125,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "variable"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  129,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player())>=cost"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  130,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player())<cost"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  690,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  132,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "StateNew",
+          "Pos.x":  30,
+          "Pos.y":  -520,
+          "Parent":  -1,
+          "#":  4,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "items",
+          "Pos.x":  120,
+          "Pos.y":  -670,
+          "Parent":  -1,
+          "#":  6,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "RemainsCount",
+          "Pos.x":  120,
+          "Pos.y":  -640,
+          "Parent":  -1,
+          "#":  7,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "RemainsGTL",
+          "Pos.x":  120,
+          "Pos.y":  -610,
+          "Parent":  -1,
+          "#":  8,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "RemainsGDRP",
+          "Pos.x":  120,
+          "Pos.y":  -580,
+          "Parent":  -1,
+          "#":  9,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "RemainsPercent",
+          "Pos.x":  120,
+          "Pos.y":  -550,
+          "Parent":  -1,
+          "#":  10,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "SpeedResearch",
+          "Pos.x":  120,
+          "Pos.y":  -520,
+          "Parent":  -1,
+          "#":  11,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "SpeedIndex",
+          "Pos.x":  120,
+          "Pos.y":  -490,
+          "Parent":  -1,
+          "#":  21,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "GArtDominatorTest",
+          "Pos.x":  120,
+          "Pos.y":  -450,
+          "Parent":  -1,
+          "#":  44,
+          "Var.Type":  "Dword",
+          "Init":  "0",
+          "Global":  true        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "input",
+          "Pos.x":  40,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  45,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "count",
+          "Pos.x":  40,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  46,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "cur_art",
+          "Pos.x":  40,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  47,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "cur_item",
+          "Pos.x":  40,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  48,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "variable",
+          "Pos.x":  40,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  49,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "size",
+          "Pos.x":  40,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  50,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "cost",
+          "Pos.x":  40,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  51,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  2,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  1,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  4,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  12,
+      "End":  13,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  13,
+      "End":  14,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  15,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  15,
+      "End":  16,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  16,
+      "End":  17,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  17,
+      "End":  22,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  18,
+      "End":  19,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  20,
+      "End":  23,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  24,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  24,
+      "End":  25,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  25,
+      "End":  23,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  22,
+      "End":  26,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  26,
+      "End":  27,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  28,
+      "End":  29,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  29,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  37,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  36,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  35,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  34,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  36,
+      "End":  40,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  35,
+      "End":  41,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  34,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  52,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  53,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  41,
+      "End":  54,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  42,
+      "End":  55,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  56,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  57,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  53,
+      "End":  58,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  54,
+      "End":  59,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  43,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  31,
+      "End":  60,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  70,
+      "End":  73,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  73,
+      "End":  60,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  60,
+      "End":  61,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  61,
+      "End":  62,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  61,
+      "End":  63,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  61,
+      "End":  64,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  61,
+      "End":  65,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  63,
+      "End":  66,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  64,
+      "End":  67,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  65,
+      "End":  68,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  62,
+      "End":  69,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  67,
+      "End":  71,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  68,
+      "End":  72,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  71,
+      "End":  74,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  84,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  84,
+      "End":  38,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  85,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  85,
+      "End":  75,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  75,
+      "End":  76,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  78,
+      "End":  79,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  78,
+      "End":  80,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  80,
+      "End":  83,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  80,
+      "End":  86,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  86,
+      "End":  87,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  79,
+      "End":  81,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  82,
+      "End":  77,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  87,
+      "End":  29,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  81,
+      "End":  89,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  89,
+      "End":  82,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  88,
+      "End":  90,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  90,
+      "End":  91,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  91,
+      "End":  92,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  92,
+      "End":  93,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  92,
+      "End":  94,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  93,
+      "End":  107,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  108,
+      "End":  110,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  109,
+      "End":  111,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  110,
+      "End":  77,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  120,
+      "End":  121,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  112,
+      "End":  113,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  112,
+      "End":  114,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  114,
+      "End":  116,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  116,
+      "End":  117,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  117,
+      "End":  118,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  118,
+      "End":  119,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  113,
+      "End":  115,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  115,
+      "End":  91,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  94,
+      "End":  95,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  94,
+      "End":  96,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  94,
+      "End":  97,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  94,
+      "End":  98,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  95,
+      "End":  99,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  96,
+      "End":  100,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  97,
+      "End":  101,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  98,
+      "End":  102,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  99,
+      "End":  103,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  100,
+      "End":  104,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  101,
+      "End":  105,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  102,
+      "End":  106,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  106,
+      "End":  91,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  105,
+      "End":  91,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  104,
+      "End":  91,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  103,
+      "End":  91,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  76,
+      "End":  77,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  77,
+      "End":  78,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  122,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  122,
+      "End":  120,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  123,
+      "End":  124,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  125,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  125,
+      "End":  126,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  127,
+      "End":  128,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  126,
+      "End":  129,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  126,
+      "End":  130,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  130,
+      "End":  131,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  129,
+      "End":  127,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  92,
+      "End":  132,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  132,
+      "End":  108,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  132,
+      "End":  109,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "Rect.Text":  
+  [
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  0,
+      "Rect.Top":  -101,
+      "Rect.Right":  1111,
+      "Rect.Bottom":  251,
+      "FStyle":  1,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  0,
+      "AlignY":  1,
+      "AlignRect":  false,
+      "Text":  "Получение артов доминаторов",
+      "Color":  0,
+      "Font":  "Arial",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  109,
+      "Rect.Top":  -653,
+      "Rect.Right":  398,
+      "Rect.Bottom":  -625,
+      "FStyle":  1,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  1,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "к-о ошметков для изучения",
+      "Color":  0,
+      "Font":  "Arial",
+      "FontSize":  8,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  109,
+      "Rect.Top":  -624,
+      "Rect.Right":  398,
+      "Rect.Bottom":  -596,
+      "FStyle":  1,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  1,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "с какого ГТУ НБ сможет\r\nизучить ошмет",
+      "Color":  0,
+      "Font":  "Arial",
+      "FontSize":  8,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  108,
+      "Rect.Top":  -594,
+      "Rect.Right":  397,
+      "Rect.Bottom":  -566,
+      "FStyle":  1,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  1,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "требуемый уровень\r\nисследования доминаторов",
+      "Color":  0,
+      "Font":  "Arial",
+      "FontSize":  8,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  110,
+      "Rect.Top":  -563,
+      "Rect.Right":  397,
+      "Rect.Bottom":  -537,
+      "FStyle":  1,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  1,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "%  изучения ошметка ",
+      "Color":  0,
+      "Font":  "Arial",
+      "FontSize":  8,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  109,
+      "Rect.Top":  -534,
+      "Rect.Right":  397,
+      "Rect.Bottom":  -505,
+      "FStyle":  1,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  1,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "порог исследования ",
+      "Color":  0,
+      "Font":  "Arial",
+      "FontSize":  8,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  109,
+      "Rect.Top":  -502,
+      "Rect.Right":  398,
+      "Rect.Bottom":  -475,
+      "FStyle":  1,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  1,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "скорость исследования ",
+      "Color":  0,
+      "Font":  "Arial",
+      "FontSize":  8,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  97,
+      "Rect.Top":  -473,
+      "Rect.Right":  808,
+      "Rect.Bottom":  -100,
+      "FStyle":  0,
+      "FColor":  12472832,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  0,
+      "AlignY":  1,
+      "AlignRect":  false,
+      "Text":  "Для теста",
+      "Color":  16777215,
+      "Font":  "Arial",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  250,
+      "Rect.Top":  -754,
+      "Rect.Right":  511,
+      "Rect.Bottom":  -705,
+      "FStyle":  0,
+      "FColor":  6236133,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  0,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "Version 1.1.2",
+      "Color":  16777215,
+      "Font":  "Arial",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  2,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "0",
+      "String":  "<br>"    
+    },
+    {
+      "#":  "1",
+      "String":  "<0>"    
+    }  
+  ]
+}

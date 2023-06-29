@@ -1,0 +1,346 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  -273,
+  "ViewPos.y":  -37,
+  "ScriptName":  "Mod_ShuQuest",
+  "ScriptFileOut":  "H:\\Mod_ShuQuest.scr",
+  "ScriptTextOut":  "H:\\Mod_ShuQuest.txt",
+  "GraphPoint.Count":  14,
+  "GraphLink.Count":  5,
+  "GraphRectText.Count":  0,
+  "Variables.Count":  6,
+  "Stars.Count":  1,
+  "Planets.Count":  1,
+  "Ships.Count":  1,
+  "States.Count":  1,
+  "Groups.Count":  1,
+  "Places.Count":  0,
+  "Items.Count":  0,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  0,
+  "DialogMessages.Count":  0,
+  "DialogAnswers.Count":  0,
+  "Operations.Count":  2,
+  "Statements.Count":  1,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "PlayerGroup",
+          "Pos.x":  500,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  11,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  true,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  390,
+          "Parent":  -1,
+          "#":  5,
+          "Total.Lines":  1,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "GRun();"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  520,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  13,
+          "Total.Lines":  40,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if (QuestsStatusByNom('PlanetQuest',46)==2 && plan!=-5)",
+              "{",
+              "plan=GetShipPlanet(Player());",
+              "PlanetRace(plan,2);",
+              "if (StarOwner(PlanetToStar(plan))==0) PlanetOwner(plan,2);",
+              "if (StarOwner(PlanetToStar(plan))==1)",
+              "{",
+              "ExtremalTakeOff();",
+              "PlanetOwner(plan,Kling);",
+              "}",
+              "if (StarOwner(PlanetToStar(plan))==2) PlanetOwner(plan,PirateClan);",
+              "PlanetEco(plan,1);",
+              "PlanetGov(plan,GQuestVarExt_gov); //Устанавливаем планете строй, выбранный игроком в квесте",
+              "PlanetPopulation(plan,GQuestVarExt_popul); //(Население планеты зависит от ее населения в квесте, не 1 в 1, конечно)",
+              "PlanetBoostInventions(plan,GQuestVarExt_tech/4.5*GalaxyTechLevel()); //Накидываем планете очков развития по сложной формуле (в нее входит кол-во заводов, ресурсов, население)",
+              "plan=-5;",
+              "",
+              "//В зависимости от выбранного типа планеты генерируем несколько двое пиратов, военных или торговцев",
+              "if (GQuestVarExt_type==1)",
+              "{",
+              "voyaka=BuyWarrior(plan,Rnd(120,220));",
+              "ShipRefit(voyaka);",
+              "voyaka=BuyWarrior(plan,Rnd(70,170));",
+              "ShipRefit(voyaka);",
+              "}",
+              "if (GQuestVarExt_type==2)",
+              "{",
+              "voyaka=BuyTransport(plan,0,Rnd(120,220));",
+              "ShipRefit(voyaka);",
+              "voyaka=BuyTransport(plan,1,Rnd(70,170));",
+              "ShipRefit(voyaka);",
+              "}",
+              "if (GQuestVarExt_type==3)",
+              "{",
+              "voyaka=BuyPirate(plan,Rnd(120,220));",
+              "ShipRefit(voyaka);",
+              "voyaka=BuyPirate(plan,Rnd(70,170));",
+              "ShipRefit(voyaka);",
+              "}",
+              "}"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "InitPlanet",
+          "Pos.x":  500,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  9,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  390,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  10,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "InitStar",
+          "Pos.x":  390,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  8,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  520,
+          "Pos.y":  390,
+          "Parent":  -1,
+          "#":  4,
+          "Total.Lines":  1,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "QuestsStatusByNom('PlanetQuest',46)==1"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "PlayerState",
+          "Pos.x":  500,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  12,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "GQuestVarExt_popul",
+          "Pos.x":  310,
+          "Pos.y":  390,
+          "Parent":  -1,
+          "#":  0,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  true        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "GQuestVarExt_tech",
+          "Pos.x":  310,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  1,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  true        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "GQuestVarExt_gov",
+          "Pos.x":  310,
+          "Pos.y":  450,
+          "Parent":  -1,
+          "#":  2,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  true        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "GQuestVarExt_type",
+          "Pos.x":  310,
+          "Pos.y":  480,
+          "Parent":  -1,
+          "#":  3,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  true        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "plan",
+          "Pos.x":  310,
+          "Pos.y":  510,
+          "Parent":  -1,
+          "#":  6,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "voyaka",
+          "Pos.x":  310,
+          "Pos.y":  540,
+          "Parent":  -1,
+          "#":  7,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  4,
+      "End":  5,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  8,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  8,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  9,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  12,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  0,
+  "BlockPar.EC":  
+  [
+  
+  ]
+}
