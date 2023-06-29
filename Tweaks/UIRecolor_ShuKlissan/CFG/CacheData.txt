@@ -1,0 +1,5 @@
+Bm ~{
+    FormGameSet2 ~{
+        2LevelDown=DATA\Mods\ShusRangers\ShuKlissan\DATA\FormGameSet2\2LevelDown.gi
+    }
+}

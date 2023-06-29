@@ -1,0 +1,587 @@
+Data ^{
+    Race ^{
+        Emblem ^{
+            2PirateClanPirateClan=Alpha,Bm.Race.Emblem.2PirateClanPirateClan
+        }
+    }
+    SE ^{
+        Ship ^{
+            Akrin ^{
+                RangerP ^{
+                    1ImageP=GI,Bm.ShipP.2PirateClanR
+                    2ImageP=GI,Bm.ShipP.2PirateClanR
+                    Anim ^{
+                        0=1,[70,0-99]
+                        Normal=2,[70,0-99]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-49]
+                    }
+                    Image=Bm.Ship.PirateClanR
+                    ImageMap=Bm.Ship.SpecialMap
+                    ImageS=Bm.Ship.PirateClanRs
+                    PanelPartnerImage=RangerPirate
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=47,96
+                    Tail2=78,96
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_ExpTraitors=1,Script.Mod_ExpTraitors
+    }
+}
+ML ^{
+    Galaxy ^{
+        Panel ^{
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurn_Block ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Block
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Hangar ^{
+        Panel ^{
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurn_Block ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Block
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Rating ^{
+        Panel ^{
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurn_Block ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Block
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+        }
+    }
+    RuinsTalk ^{
+        Panel ^{
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurn_Block ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Block
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+            Panel ^{
+                GraphButton ^{
+                }
+                RuinsTalkShopInfoButBlock ^{
+                    GraphButton ^{
+                        Active=False
+                        Help=Help.ButShop
+                        ImageDown=GI,Bm.PanelMain2.2ShopD
+                        ImageNormal=GI,Bm.PanelMain2.2ShopN
+                        ImageNormalA=GI,Bm.PanelMain2.2ShopA
+                        Kind=Normal
+                        KindHit=Graph
+                        Name=PR_ShopBlock
+                        OnPressCode ^{
+                            01=if(ShipType(GetShipRuins(Player()))=='RC')MessageBox(Format(CT('Script.Mod_ExpTraitors.RC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            02=if(ShipType(GetShipRuins(Player()))=='WB')MessageBox(Format(CT('Script.Mod_ExpTraitors.WB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            03=if(ShipType(GetShipRuins(Player()))=='SB')MessageBox(Format(CT('Script.Mod_ExpTraitors.SB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            04=if(ShipType(GetShipRuins(Player()))=='BK')MessageBox(Format(CT('Script.Mod_ExpTraitors.BK_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            05=if(ShipType(GetShipRuins(Player()))=='TC')MessageBox(Format(CT('Script.Mod_ExpTraitors.TC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            06=if(ShipType(GetShipRuins(Player()))=='PB')MessageBox(Format(CT('Script.Mod_ExpTraitors.PB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            07=if(ShipType(GetShipRuins(Player()))=='CB')MessageBox(Format(CT('Script.Mod_ExpTraitors.CB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                        }
+                        Pos=596,695,8
+                        Size=41,33
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ^{
+                        Active=False
+                        Help=Help.ButGoods
+                        ImageDown=GI,Bm.PanelMain2.2GoodsD
+                        ImageNormal=GI,Bm.PanelMain2.2GoodsN
+                        ImageNormalA=GI,Bm.PanelMain2.2GoodsA
+                        Kind=Normal
+                        KindHit=Graph
+                        Name=PR_GoodsBlock
+                        OnPressCode ^{
+                            01=if(ShipType(GetShipRuins(Player()))=='RC')MessageBox(Format(CT('Script.Mod_ExpTraitors.RC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            02=if(ShipType(GetShipRuins(Player()))=='WB')MessageBox(Format(CT('Script.Mod_ExpTraitors.WB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            03=if(ShipType(GetShipRuins(Player()))=='SB')MessageBox(Format(CT('Script.Mod_ExpTraitors.SB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            04=if(ShipType(GetShipRuins(Player()))=='BK')MessageBox(Format(CT('Script.Mod_ExpTraitors.BK_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            05=if(ShipType(GetShipRuins(Player()))=='TC')MessageBox(Format(CT('Script.Mod_ExpTraitors.TC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            06=if(ShipType(GetShipRuins(Player()))=='PB')MessageBox(Format(CT('Script.Mod_ExpTraitors.PB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            07=if(ShipType(GetShipRuins(Player()))=='CB')MessageBox(Format(CT('Script.Mod_ExpTraitors.CB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                        }
+                        Pos=552,695,8
+                        Size=40,33
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ^{
+                        Active=False
+                        Help=Help.ButInfo
+                        ImageDown=GI,Bm.PanelMain2.2InfoD
+                        ImageNormal=GI,Bm.PanelMain2.2InfoN
+                        ImageNormalA=GI,Bm.PanelMain2.2InfoA
+                        Kind=Normal
+                        KindHit=Graph
+                        Name=PR_InfoBlock
+                        OnPressCode ^{
+                            01=if(ShipType(GetShipRuins(Player()))=='RC')MessageBox(Format(CT('Script.Mod_ExpTraitors.RC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            02=if(ShipType(GetShipRuins(Player()))=='WB')MessageBox(Format(CT('Script.Mod_ExpTraitors.WB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            03=if(ShipType(GetShipRuins(Player()))=='SB')MessageBox(Format(CT('Script.Mod_ExpTraitors.SB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            04=if(ShipType(GetShipRuins(Player()))=='BK')MessageBox(Format(CT('Script.Mod_ExpTraitors.BK_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            05=if(ShipType(GetShipRuins(Player()))=='TC')MessageBox(Format(CT('Script.Mod_ExpTraitors.TC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            06=if(ShipType(GetShipRuins(Player()))=='PB')MessageBox(Format(CT('Script.Mod_ExpTraitors.PB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            07=if(ShipType(GetShipRuins(Player()))=='CB')MessageBox(Format(CT('Script.Mod_ExpTraitors.CB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                        }
+                        Pos=640,695,8
+                        Size=43,33
+                        Style=Style.GB.SoundNormal
+                    }
+                }
+            }
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+            }
+        }
+    }
+    Ship ^{
+        Panel ^{
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurn_Block ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Block
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    Panel ^{
+                        GraphButton ^{
+                        }
+                        GraphButton ^{
+                        }
+                        GraphButton ^{
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Name=
+                        }
+                        LoadRocketsInSlotsButBlock ^{
+                            GraphButton ^{
+                                Active=False
+                                Help=FormShip.HelpLoadRocketsInSlots
+                                ImageDown=GI,Bm.FormShip2.LoadRocketsInSlotsD
+                                ImageNormal=GI,Bm.FormShip2.LoadRocketsInSlotsN
+                                ImageNormalA=GI,Bm.FormShip2.LoadRocketsInSlotsA
+                                Kind=Normal
+                                KindHit=Rect
+                                Name=LoadRocketsInSlotsBlock
+                                OnPressCode ^{
+                                    01=InterfaceState('Ship','LoadRocketsInSlotsFaceClick',1);
+                                    02=InterfaceState('Ship','LoadRocketsInSlotsBlock',0);
+                                    03=if(ShipType(GetShipRuins(Player()))=='RC')MessageBox(Format(CT('Script.Mod_ExpTraitors.RC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    04=if(ShipType(GetShipRuins(Player()))=='WB')MessageBox(Format(CT('Script.Mod_ExpTraitors.WB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    05=if(ShipType(GetShipRuins(Player()))=='SB')MessageBox(Format(CT('Script.Mod_ExpTraitors.SB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    06=if(ShipType(GetShipRuins(Player()))=='BK')MessageBox(Format(CT('Script.Mod_ExpTraitors.BK_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    07=if(ShipType(GetShipRuins(Player()))=='TC')MessageBox(Format(CT('Script.Mod_ExpTraitors.TC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    08=if(ShipType(GetShipRuins(Player()))=='PB')MessageBox(Format(CT('Script.Mod_ExpTraitors.PB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    09=if(ShipType(GetShipRuins(Player()))=='CB')MessageBox(Format(CT('Script.Mod_ExpTraitors.CB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    10=InterfaceState('Ship','LoadRocketsInSlotsFaceClick',-1);
+                                    11=InterfaceState('Ship','LoadRocketsInSlotsBlock',1);
+                                }
+                                Pos=21,108,1
+                                Size=55,31
+                                Style=Style.GB.SoundNormal
+                            }
+                            Image ^{
+                                Active=False
+                                Image=GI,Bm.FormShip2.LoadRocketsInSlotsD
+                                Name=LoadRocketsInSlotsFaceClick
+                                Pos=20,108,0.5
+                                Size=55,31
+                            }
+                        }
+                        LoadRocketsInSlotsButFile ^{
+                            Panel ^{
+                                GraphButton ^{
+                                    Help=FormShip.HelpLoadRocketsInSlots
+                                    ImageDown=GI,Bm.FormShip2.LoadRocketsInSlotsD
+                                    ImageNormal=GI,Bm.FormShip2.LoadRocketsInSlotsN
+                                    ImageNormalA=GI,Bm.FormShip2.LoadRocketsInSlotsA
+                                    Kind=Normal
+                                    KindHit=Rect
+                                    Name=LoadRocketsInSlots
+                                    Size=55,31
+                                    Style=Style.GB.SoundNormal
+                                }
+                                Name=LoadRocketsInSlotsBut
+                                Pos=21,108,1
+                                Size=55,31
+                            }
+                        }
+                    }
+                }
+                Panel ^{
+                    Panel ^{
+                    }
+                    Panel ^{
+                    }
+                    Panel ^{
+                        GraphButton ^{
+                        }
+                        GraphButton ^{
+                        }
+                        GraphButton ^{
+                        }
+                        GraphButton ^{
+                        }
+                        ServHoldButBlock ^{
+                            GraphButton ^{
+                                Active=False
+                                Help=FormShip.HelpLoadRocketsInHold
+                                ImageDown=GI,Bm.FormShip2.LoadRocketsInHoldD
+                                ImageNormal=GI,Bm.FormShip2.LoadRocketsInHoldN
+                                ImageNormalA=GI,Bm.FormShip2.LoadRocketsInHoldA
+                                Kind=Normal
+                                KindHit=Rect
+                                Name=LoadRocketsInHoldBlock
+                                OnPressCode ^{
+                                    01=InterfaceState('Ship','LoadRocketsInHoldFaceClick',1);
+                                    02=InterfaceState('Ship','LoadRocketsInHoldBlock',0);
+                                    03=if(ShipType(GetShipRuins(Player()))=='RC')MessageBox(Format(CT('Script.Mod_ExpTraitors.RC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    04=if(ShipType(GetShipRuins(Player()))=='WB')MessageBox(Format(CT('Script.Mod_ExpTraitors.WB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    05=if(ShipType(GetShipRuins(Player()))=='SB')MessageBox(Format(CT('Script.Mod_ExpTraitors.SB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    06=if(ShipType(GetShipRuins(Player()))=='BK')MessageBox(Format(CT('Script.Mod_ExpTraitors.BK_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    07=if(ShipType(GetShipRuins(Player()))=='TC')MessageBox(Format(CT('Script.Mod_ExpTraitors.TC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    08=if(ShipType(GetShipRuins(Player()))=='PB')MessageBox(Format(CT('Script.Mod_ExpTraitors.PB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    09=if(ShipType(GetShipRuins(Player()))=='CB')MessageBox(Format(CT('Script.Mod_ExpTraitors.CB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    10=InterfaceState('Ship','LoadRocketsInHoldFaceClick',-1);
+                                    11=InterfaceState('Ship','LoadRocketsInHoldBlock',1);
+                                }
+                                Pos=81,526,-1
+                                Size=40,20
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                Active=False
+                                Help=FormShip.HelpSellAllFromHold
+                                ImageDown=GI,Bm.FormShip2.SellAllFromHoldD
+                                ImageNormal=GI,Bm.FormShip2.SellAllFromHoldN
+                                ImageNormalA=GI,Bm.FormShip2.SellAllFromHoldA
+                                Kind=Normal
+                                KindHit=Rect
+                                Name=SellAllFromHoldBlock
+                                OnPressCode ^{
+                                    01=InterfaceState('Ship','SellAllFromHoldFaceClick',1);
+                                    02=InterfaceState('Ship','SellAllFromHoldBlock',0);
+                                    03=if(ShipType(GetShipRuins(Player()))=='RC')MessageBox(Format(CT('Script.Mod_ExpTraitors.RC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    04=if(ShipType(GetShipRuins(Player()))=='WB')MessageBox(Format(CT('Script.Mod_ExpTraitors.WB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    05=if(ShipType(GetShipRuins(Player()))=='SB')MessageBox(Format(CT('Script.Mod_ExpTraitors.SB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    06=if(ShipType(GetShipRuins(Player()))=='BK')MessageBox(Format(CT('Script.Mod_ExpTraitors.BK_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    07=if(ShipType(GetShipRuins(Player()))=='TC')MessageBox(Format(CT('Script.Mod_ExpTraitors.TC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    08=if(ShipType(GetShipRuins(Player()))=='PB')MessageBox(Format(CT('Script.Mod_ExpTraitors.PB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    09=if(ShipType(GetShipRuins(Player()))=='CB')MessageBox(Format(CT('Script.Mod_ExpTraitors.CB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    10=InterfaceState('Ship','SellAllFromHoldFaceClick',-1);
+                                    11=InterfaceState('Ship','SellAllFromHoldBlock',1);
+                                }
+                                Pos=123,526,-1
+                                Size=40,20
+                                Style=Style.GB.SoundNormal
+                            }
+                            Image ^{
+                                Active=False
+                                Image=GI,Bm.FormShip2.LoadRocketsInHoldD
+                                Name=LoadRocketsInHoldFaceClick
+                                Pos=81,526,-1.5
+                                Size=40,20
+                            }
+                            Image ^{
+                                Active=False
+                                Image=GI,Bm.FormShip2.SellAllFromHoldD
+                                Name=SellAllFromHoldFaceClick
+                                Pos=123,526,-1.5
+                                Size=40,20
+                            }
+                        }
+                    }
+                }
+            }
+            Panel ^{
+                GraphButton ^{
+                }
+                GraphButton ^{
+                }
+                GraphButton ^{
+                }
+                GraphButton ^{
+                    OnMouseEnterCode ^{
+                        01=if(!UICheckElement('Ship','SC_RepareFull_But','IsDisable'))
+                        02 ^{
+                            01=Sound('Sound.ButtonEnter');
+                            02=if(InterfaceState('Ship','SC_RepareFull_ButBlock')==1)InterfaceState('Ship','SC_RepareFull_ButFace',1);
+                        }
+                    }
+                    OnMouseLeaveCode ^{
+                        01=if(!UICheckElement('Ship','SC_RepareFull_But','IsDisable'))
+                        02 ^{
+                            01=Sound('Sound.ButtonLeave');
+                            02=if(InterfaceState('Ship','SC_RepareFull_ButBlock')==1)InterfaceState('Ship','SC_RepareFull_ButFace',-1);
+                        }
+                    }
+                    Style=Style.GB.KnockKnock
+                }
+                Panel ^{
+                    Panel ^{
+                        GraphButton ^{
+                        }
+                        GraphButton ^{
+                        }
+                        GraphButton ^{
+                        }
+                        GraphButton ^{
+                        }
+                        GraphButton ^{
+                        }
+                        SellAllFromStorageButBlock ^{
+                            GraphButton ^{
+                                Active=False
+                                Help=FormShip.HelpSellAllFromStorage
+                                ImageDown=GI,Bm.FormShip2.SellAllFromStorageD
+                                ImageNormal=GI,Bm.FormShip2.SellAllFromStorageN
+                                ImageNormalA=GI,Bm.FormShip2.SellAllFromStorageA
+                                Kind=Disable
+                                KindHit=Rect
+                                Name=SellAllFromStorageBlock
+                                OnPressCode ^{
+                                    01=InterfaceState('Ship','SellAllFromStorageFaceClick',1);
+                                    02=InterfaceState('Ship','SellAllFromStorageBlock',0);
+                                    03=if(ShipType(GetShipRuins(Player()))=='RC')MessageBox(Format(CT('Script.Mod_ExpTraitors.RC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    04=if(ShipType(GetShipRuins(Player()))=='WB')MessageBox(Format(CT('Script.Mod_ExpTraitors.WB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    05=if(ShipType(GetShipRuins(Player()))=='SB')MessageBox(Format(CT('Script.Mod_ExpTraitors.SB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    06=if(ShipType(GetShipRuins(Player()))=='BK')MessageBox(Format(CT('Script.Mod_ExpTraitors.BK_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    07=if(ShipType(GetShipRuins(Player()))=='TC')MessageBox(Format(CT('Script.Mod_ExpTraitors.TC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    08=if(ShipType(GetShipRuins(Player()))=='PB')MessageBox(Format(CT('Script.Mod_ExpTraitors.PB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    09=if(ShipType(GetShipRuins(Player()))=='CB')MessageBox(Format(CT('Script.Mod_ExpTraitors.CB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    10=InterfaceState('Ship','SellAllFromStorageFaceClick',-1);
+                                    11=InterfaceState('Ship','SellAllFromStorageBlock',1);
+                                }
+                                Pos=60,9,3
+                                Size=41,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            Image ^{
+                                Active=False
+                                Image=GI,Bm.FormShip2.SellAllFromStorageD
+                                Name=SellAllFromStorageFaceClick
+                                Pos=60,9,2.5
+                                Size=41,24
+                            }
+                        }
+                    }
+                }
+                RepSlotButBlock ^{
+                    GraphButton ^{
+                        Active=False
+                        ImageDown=GI,Bm.FormShip2.2SC_Slot1N
+                        ImageNormal=GI,Bm.FormShip2.2SC_Slot1N
+                        ImageNormalA=GI,Bm.FormShip2.2SC_Slot1A
+                        Kind=Normal
+                        KindHit=Rect
+                        Name=SC_Slot1_ButBlock
+                        OnPressCode ^{
+                            01=if(UICheckElement('Ship','SC_Slot1_Anim','CurFrame')>0)
+                            02 ^{
+                                01=if(ShipType(GetShipRuins(Player()))=='RC')MessageBox(Format(CT('Script.Mod_ExpTraitors.RC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                02=if(ShipType(GetShipRuins(Player()))=='WB')MessageBox(Format(CT('Script.Mod_ExpTraitors.WB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                03=if(ShipType(GetShipRuins(Player()))=='SB')MessageBox(Format(CT('Script.Mod_ExpTraitors.SB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                04=if(ShipType(GetShipRuins(Player()))=='BK')MessageBox(Format(CT('Script.Mod_ExpTraitors.BK_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                05=if(ShipType(GetShipRuins(Player()))=='TC')MessageBox(Format(CT('Script.Mod_ExpTraitors.TC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                06=if(ShipType(GetShipRuins(Player()))=='PB')MessageBox(Format(CT('Script.Mod_ExpTraitors.PB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                07=if(ShipType(GetShipRuins(Player()))=='CB')MessageBox(Format(CT('Script.Mod_ExpTraitors.CB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            }
+                        }
+                        Pos=10,154,7.5
+                        Size=145,42
+                    }
+                    GraphButton ^{
+                        Active=False
+                        ImageDown=GI,Bm.FormShip2.2SC_Slot3N
+                        ImageNormal=GI,Bm.FormShip2.2SC_Slot3N
+                        ImageNormalA=GI,Bm.FormShip2.2SC_Slot3A
+                        Kind=Normal
+                        KindHit=Rect
+                        Name=SC_Slot3_ButBlock
+                        OnPressCode ^{
+                            01=if(UICheckElement('Ship','SC_Slot3_Anim','CurFrame')>0)
+                            02 ^{
+                                01=if(ItemType(FormShipCurItem())==t_FuelTanks || ItemType(FormShipCurItem())==t_Cistern)ButtonClick('Ship','SC_Slot3_But');
+                                02=else
+                                03 ^{
+                                    01=if(ShipType(GetShipRuins(Player()))=='RC')MessageBox(Format(CT('Script.Mod_ExpTraitors.RC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    02=if(ShipType(GetShipRuins(Player()))=='WB')MessageBox(Format(CT('Script.Mod_ExpTraitors.WB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    03=if(ShipType(GetShipRuins(Player()))=='SB')MessageBox(Format(CT('Script.Mod_ExpTraitors.SB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    04=if(ShipType(GetShipRuins(Player()))=='BK')MessageBox(Format(CT('Script.Mod_ExpTraitors.BK_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    05=if(ShipType(GetShipRuins(Player()))=='TC')MessageBox(Format(CT('Script.Mod_ExpTraitors.TC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    06=if(ShipType(GetShipRuins(Player()))=='PB')MessageBox(Format(CT('Script.Mod_ExpTraitors.PB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                    07=if(ShipType(GetShipRuins(Player()))=='CB')MessageBox(Format(CT('Script.Mod_ExpTraitors.CB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                }
+                            }
+                        }
+                        Pos=10,207,8
+                        Size=145,42
+                    }
+                    GraphButton ^{
+                        Active=False
+                        ImageDown=GI,Bm.FormShip2.2SC_Slot2N
+                        ImageNormal=GI,Bm.FormShip2.2SC_Slot2N
+                        ImageNormalA=GI,Bm.FormShip2.2SC_Slot2A
+                        Kind=Normal
+                        KindHit=Rect
+                        Name=SC_Slot2_ButBlock
+                        OnPressCode ^{
+                            01=if(UICheckElement('Ship','SC_Slot2_Anim','CurFrame')>0)
+                            02 ^{
+                                01=if(ShipType(GetShipRuins(Player()))=='RC')MessageBox(Format(CT('Script.Mod_ExpTraitors.RC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                02=if(ShipType(GetShipRuins(Player()))=='WB')MessageBox(Format(CT('Script.Mod_ExpTraitors.WB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                03=if(ShipType(GetShipRuins(Player()))=='SB')MessageBox(Format(CT('Script.Mod_ExpTraitors.SB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                04=if(ShipType(GetShipRuins(Player()))=='BK')MessageBox(Format(CT('Script.Mod_ExpTraitors.BK_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                05=if(ShipType(GetShipRuins(Player()))=='TC')MessageBox(Format(CT('Script.Mod_ExpTraitors.TC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                06=if(ShipType(GetShipRuins(Player()))=='PB')MessageBox(Format(CT('Script.Mod_ExpTraitors.PB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                07=if(ShipType(GetShipRuins(Player()))=='CB')MessageBox(Format(CT('Script.Mod_ExpTraitors.CB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            }
+                        }
+                        Pos=10,260,8
+                        Size=145,42
+                    }
+                    GraphButton ^{
+                        Active=False
+                        Name=SC_RepareFull_ButBlock
+                        OnPressCode ^{
+                            01=if(!UICheckElement('Ship','SC_RepareFull_But','IsDisable'))
+                            02 ^{
+                                01=InterfaceState('Ship','SC_RepareFull_ButFaceClick',1);
+                                02=Sound('Sound.ButtonClick');
+                                03=if(ShipType(GetShipRuins(Player()))=='RC')MessageBox(Format(CT('Script.Mod_ExpTraitors.RC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                04=if(ShipType(GetShipRuins(Player()))=='WB')MessageBox(Format(CT('Script.Mod_ExpTraitors.WB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                05=if(ShipType(GetShipRuins(Player()))=='SB')MessageBox(Format(CT('Script.Mod_ExpTraitors.SB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                06=if(ShipType(GetShipRuins(Player()))=='BK')MessageBox(Format(CT('Script.Mod_ExpTraitors.BK_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                07=if(ShipType(GetShipRuins(Player()))=='TC')MessageBox(Format(CT('Script.Mod_ExpTraitors.TC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                08=if(ShipType(GetShipRuins(Player()))=='PB')MessageBox(Format(CT('Script.Mod_ExpTraitors.PB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                09=if(ShipType(GetShipRuins(Player()))=='CB')MessageBox(Format(CT('Script.Mod_ExpTraitors.CB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                                10=InterfaceState('Ship','SC_RepareFull_ButFaceClick',-1);
+                            }
+                        }
+                        Pos=122,119,2
+                        Size=22,18
+                    }
+                    Image ^{
+                        Active=False
+                        Image=GI,Bm.FormShip2.2SC_RepareD
+                        Name=SC_RepareFull_ButFaceClick
+                        Pos=122,119,2.4
+                        Size=22,18
+                    }
+                    Image ^{
+                        Active=False
+                        Image=GI,Bm.FormShip2.2SC_RepareA
+                        Name=SC_RepareFull_ButFace
+                        Pos=122,119,2.5
+                        Size=22,18
+                    }
+                }
+            }
+            Panel ^{
+                LoadRocketsInSlotsButHitBox ^{
+                    Panel ^{
+                        Active=False
+                        Name=LoadRocketsInSlotsButHitBox
+                        Pos=209,145
+                        PosAutoCorrection=True
+                        PosAutoCorrectionXCoef=0.5
+                        PosAutoCorrectionYCoef=0.5
+                        Size=56,31
+                    }
+                }
+            }
+        }
+    }
+    Style ^{
+        GB ^{
+            KnockKnock ^{
+                SoundClick=Sound.ButtonClick
+            }
+        }
+    }
+}

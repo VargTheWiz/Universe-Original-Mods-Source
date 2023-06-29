@@ -1,0 +1,6 @@
+ShipType ^{
+    TypeName ^{
+        Khan=Khan
+        Thug=Cutthroat
+    }
+}

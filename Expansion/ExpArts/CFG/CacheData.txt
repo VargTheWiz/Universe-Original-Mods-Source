@@ -1,0 +1,64 @@
+Bm ~{
+    ArtEffect ~{
+        RNDart_02=Mods\Expansion\ExpArts\DATA\ArtEffect\RNDart_02_effect.gai
+        RNDbomb_01=Mods\Expansion\ExpArts\DATA\ArtEffect\RNDbomb_01_effect.gai
+        RNDbomb_01Fast=Mods\Expansion\ExpArts\DATA\ArtEffect\RNDbomb_01_FastEffect.gai
+        RNDbomb_01Slow=Mods\Expansion\ExpArts\DATA\ArtEffect\RNDbomb_01_SlowEffect.gai
+        RNDbomb_02=Mods\Expansion\ExpArts\DATA\ArtEffect\RNDbomb_02_effect.gai
+        RNDbomb_03=Mods\Expansion\ExpArts\DATA\ArtEffect\RNDbomb_03_effect.gai
+    }
+    Container ~{
+        2Bomb=Mods\Expansion\ExpArts\DATA\Items\Quark_bomb.gai
+        2RNDbomb_1=Mods\Expansion\ExpArts\DATA\Items\Quark_bomb.gai
+        2RNDbomb_2=Mods\Expansion\ExpArts\DATA\Items\Stun_bomb.gai
+        2RNDbomb_3=Mods\Expansion\ExpArts\DATA\Items\EMP_bomb.gai
+        2RNDmoditem_15=Mods\Expansion\ExpArts\DATA\Items\Smuggler's_Compartment.gai
+    }
+    FormCount2 ~{
+        2KindEmpty=Mods\Expansion\ExpArts\DATA\NumberBox\2KindEmpty.gi
+    }
+    Items ~{
+        2ArtBomb_ab=Mods\Expansion\ExpArts\DATA\Items\Quark_bomb_ab.gi
+        2ArtBomb_s=Mods\Expansion\ExpArts\DATA\Items\Quark_bomb.gi
+        2EMP_bomb_ab=Mods\Expansion\ExpArts\DATA\Items\EMP_bomb.gi
+        2EMP_bomb_s=Mods\Expansion\ExpArts\DATA\Items\EMP_bomb.gi
+        2Null-generator_ab=Mods\Expansion\ExpArts\DATA\Items\Null-generator.gi
+        2Null-generator_s=Mods\Expansion\ExpArts\DATA\Items\Null-generator.gi
+        2RNDart_01_ab=Mods\Expansion\ExpArts\DATA\Items\Techdisruptor.gi
+        2RNDart_01_s=Mods\Expansion\ExpArts\DATA\Items\Techdisruptor.gi
+        2RNDart_02_ab=Mods\Expansion\ExpArts\DATA\Items\Reflector.gi
+        2RNDart_02_s=Mods\Expansion\ExpArts\DATA\Items\Reflector.gi
+        2RNDart_03_ab=Mods\Expansion\ExpArts\DATA\Items\Husker_PROx64.gi
+        2RNDart_03_s=Mods\Expansion\ExpArts\DATA\Items\Husker_PROx64.gi
+        2RNDart_04_ab=Mods\Expansion\ExpArts\DATA\Items\Booster.gi
+        2RNDart_04_s=Mods\Expansion\ExpArts\DATA\Items\Booster.gi
+        2Stun_bomb_ab=Mods\Expansion\ExpArts\DATA\Items\Stun_bomb.gi
+        2Stun_bomb_s=Mods\Expansion\ExpArts\DATA\Items\Stun_bomb.gi
+    }
+    ItemsUseless ~{
+        2RNDbomb_1_s=Mods\Expansion\ExpArts\DATA\Items\Quark_bomb.gi
+        2RNDbomb_2_s=Mods\Expansion\ExpArts\DATA\Items\Stun_bomb.gi
+        2RNDbomb_3_s=Mods\Expansion\ExpArts\DATA\Items\EMP_bomb.gi
+        2RNDbombbox_s=Mods\Expansion\ExpArts\DATA\Items\Container_with_Bombs.gi
+        2RNDmodbox_s=Mods\Expansion\ExpArts\DATA\Items\Container_with_Artisanal_Modification.gi
+        2RNDmoditem_10_s=Mods\Expansion\ExpArts\DATA\Items\Processors_Extreme.gi
+        2RNDmoditem_11_s=Mods\Expansion\ExpArts\DATA\Items\Security_Replacement.gi
+        2RNDmoditem_12_s=Mods\Expansion\ExpArts\DATA\Items\Hacked_Injector.gi
+        2RNDmoditem_13_s=Mods\Expansion\ExpArts\DATA\Items\Reinforced_Servo_Drives.gi
+        2RNDmoditem_14_s=Mods\Expansion\ExpArts\DATA\Items\Fragilium_Parts.gi
+        2RNDmoditem_15_s=Mods\Expansion\ExpArts\DATA\Items\Smuggler's_Compartment.gi
+        2RNDmoditem_1_s=Mods\Expansion\ExpArts\DATA\Items\Decelerator.gi
+        2RNDmoditem_2_s=Mods\Expansion\ExpArts\DATA\Items\Null-generator.gi
+        2RNDmoditem_3_s=Mods\Expansion\ExpArts\DATA\Items\Acidius.gi
+        2RNDmoditem_4_s=Mods\Expansion\ExpArts\DATA\Items\Till_Capacitors.gi
+        2RNDmoditem_5_s=Mods\Expansion\ExpArts\DATA\Items\Weakened_Limiters.gi
+        2RNDmoditem_6_s=Mods\Expansion\ExpArts\DATA\Items\Additional_Stowage.gi
+        2RNDmoditem_7_s=Mods\Expansion\ExpArts\DATA\Items\Field_Density_Amplifier.gi
+        2RNDmoditem_8_s=Mods\Expansion\ExpArts\DATA\Items\Meon_Chips.gi
+        2RNDmoditem_9_s=Mods\Expansion\ExpArts\DATA\Items\Circuit_Amplifier.gi
+        2RNDtimer_s=Mods\Expansion\ExpArts\DATA\Items\Bomb_Timer.gi
+    }
+}
+Script ~{
+    Mod_ExpArts=Mods\Expansion\ExpArts\DATA\Script\Mod_ExpArts.scr
+}

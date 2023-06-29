@@ -1,0 +1,9 @@
+Bm ~{
+    ItemsUseless ~{
+        2OperatedProbe_c=DATA\ItemsUseless\2OperatedProbe.gai
+        2OperatedProbe_s=DATA\ItemsUseless\2OperatedProbe.gi
+    }
+}
+Script ~{
+    Mod_SR1PelengZond=Mods\OtherMods\SR1PelengZond\DATA\Script\Mod_SR1PelengZond.scr
+}

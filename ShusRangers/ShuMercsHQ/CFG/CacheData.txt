@@ -1,0 +1,43 @@
+Bm ~{
+    Icons ~{
+        ReserveMerc=Mods\ShusRangers\ShuMercsHQ\DATA\Icons\ReserveMerc.gi
+    }
+    Items ~{
+        2WGluonEmittera=Mods\ShusRangers\ShuMercsHQ\DATA\Items\GluonEmitter_anim.gai
+        2WGluonEmitteri=Mods\ShusRangers\ShuMercsHQ\DATA\Items\GluonEmitter_pic.gi
+        2WGluonEmitters=Mods\ShusRangers\ShuMercsHQ\DATA\Items\GluonEmitter_small.gi
+        2WGluonTormentora=Mods\ShusRangers\ShuMercsHQ\DATA\Items\GluonTormentor_anim.gai
+        2WGluonTormentori=Mods\ShusRangers\ShuMercsHQ\DATA\Items\GluonTormentor_pic.gi
+        2WGluonTormentors=Mods\ShusRangers\ShuMercsHQ\DATA\Items\GluonTormentor_small.gi
+        2WGluonTorpedoLaunchera=Mods\ShusRangers\ShuMercsHQ\DATA\Items\GluonTorpedoLauncher_anim.gai
+        2WGluonTorpedoLauncheri=Mods\ShusRangers\ShuMercsHQ\DATA\Items\GluonTorpedoLauncher_pic.gi
+        2WGluonTorpedoLaunchers=Mods\ShusRangers\ShuMercsHQ\DATA\Items\GluonTorpedoLauncher_small.gi
+    }
+    Missile ~{
+        wEMP_torpedo=Mods\ShusRangers\ShuMercsHQ\DATA\Missile\EMP_torpedo.hai
+        wEMP_torpedo_2i=Mods\ShusRangers\ShuMercsHQ\DATA\Missile\EMP_torpedo.gi
+        wGluonTorpedoLauncher=Mods\ShusRangers\ShuMercsHQ\DATA\Missile\GluonTorpedo.hai
+        wGluonTorpedoLauncher_2i=Mods\ShusRangers\ShuMercsHQ\DATA\Missile\GluonTorpedo.gi
+    }
+    Ruins ~{
+        PlayerMB_level1=Mods\ShusRangers\ShuMercsHQ\DATA\Ruins\PlayerMB_level1.gi
+        PlayerMB_level1_anim=Mods\ShusRangers\ShuMercsHQ\DATA\Ruins\PlayerMB_level1.gai
+        PlayerMB_level2=Mods\ShusRangers\ShuMercsHQ\DATA\Ruins\PlayerMB_level2.gi
+        PlayerMB_level2_anim=Mods\ShusRangers\ShuMercsHQ\DATA\Ruins\PlayerMB_level2.gai
+        PlayerMB_level3=Mods\ShusRangers\ShuMercsHQ\DATA\Ruins\PlayerMB_level3.gi
+        PlayerMB_level3_anim=Mods\ShusRangers\ShuMercsHQ\DATA\Ruins\PlayerMB_level3.gai
+        PlayerMB_level4=Mods\ShusRangers\ShuMercsHQ\DATA\Ruins\PlayerMB_level4.gi
+        PlayerMB_level4_anim=Mods\ShusRangers\ShuMercsHQ\DATA\Ruins\PlayerMB_level4.gai
+        PlayerMB_level5=Mods\ShusRangers\ShuMercsHQ\DATA\Ruins\PlayerMB_level5.gi
+        PlayerMB_level5_anim=Mods\ShusRangers\ShuMercsHQ\DATA\Ruins\PlayerMB_level5.gai
+        PlayerMB_map=Mods\ShusRangers\ShuMercsHQ\DATA\Ruins\PlayerMB_map.png
+    }
+}
+Sound ~{
+    GluonEmitterShot=Mods\ShusRangers\ShuMercsHQ\DATA\Sound\GluonEmitterShot.wav
+    GluonTormentorShot=Mods\ShusRangers\ShuMercsHQ\DATA\Sound\GluonTormentorShot.wav
+    GluonTorpedoLauncherShot=Mods\ShusRangers\ShuMercsHQ\DATA\Sound\GluonTorpedoLauncherShot.wav
+}
+Script ~{
+    Mod_ShuMercsHQ=Mods\ShusRangers\ShuMercsHQ\DATA\Script\Mod_ShuMercsHQ.scr
+}

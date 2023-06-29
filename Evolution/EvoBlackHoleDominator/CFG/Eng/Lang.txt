@@ -1,0 +1,19 @@
+GalaxyNews ^{
+    DominatorBlackHole ^{
+        Create=According to scientists' forecasts, in the near future in system #Star1# will appear a black hole. We think that it will lead into the system #Star2#, controlled by "keller"-series dominators. The last fact worries government, so they established surveillance or the enter into the hole.
+        Create1=Recently in the system #Star1# has been appeared a black hole. Scientists established, that it leads into the system, controlled by dominators. So, we do not recommend to exploring of this black hole.
+        Create2=A new wormhole has opened in the system #Star1#. Scientist are still arguing about it's origins. The most skeptical ones think that it's just the way for dominator to intervene into Coalition's system, so they warn explorers, which want to research this hole by themselves.
+        Create3=A new hole opened in the system #Star1# recently. Hyper-jumps into the system #Star1# are too rare, so it's not just the product of civilians and warrior's hyper-jumps. Some scientists think that it's intrigues of Keller.
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            DomInfoBH ^{
+                Description=This info saves descriptions of black holes' events
+                Icon=0
+                Name=Target
+            }
+        }
+    }
+}

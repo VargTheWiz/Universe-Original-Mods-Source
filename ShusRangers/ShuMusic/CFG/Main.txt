@@ -1,0 +1,38 @@
+Music ^{
+    Battle ^{
+        ShuMusic1=Mods\ShusRangers\ShuMusic\DATA\Music\Craftor-artifical_tactics.dat
+    }
+    Nation ^{
+        FeiPirate ^{
+            ShuMusic1=Mods\ShusRangers\ShuMusic\DATA\Music\Craftor-dangerous_space.dat
+            ShuMusic1=Mods\ShusRangers\ShuMusic\DATA\Music\Galacys-fei.dat
+        }
+        GaalPirate ^{
+            ShuMusic1=Mods\ShusRangers\ShuMusic\DATA\Music\Craftor-march_of_renegades.dat
+            ShuMusic1=Mods\ShusRangers\ShuMusic\DATA\Music\Galacys-gaal.dat
+        }
+        MalocPirate ^{
+            ShuMusic1=Mods\ShusRangers\ShuMusic\DATA\Music\Craftor-hero_bambayka.dat
+            ShuMusic1=Mods\ShusRangers\ShuMusic\DATA\Music\Galacys-maloc.dat
+        }
+        None ^{
+            ShuMusic1=Mods\ShusRangers\ShuMusic\DATA\Music\Craftor-nocturne.dat
+        }
+        PelengPirate ^{
+            ShuMusic1=Mods\ShusRangers\ShuMusic\DATA\Music\Craftor-space_pirate.dat
+            ShuMusic1=Mods\ShusRangers\ShuMusic\DATA\Music\Galacys-peleng.dat
+        }
+        PeoplePirate ^{
+            ShuMusic1=Mods\ShusRangers\ShuMusic\DATA\Music\Craftor-space_gangsters.dat
+            ShuMusic1=Mods\ShusRangers\ShuMusic\DATA\Music\Galacys-people.dat
+        }
+    }
+    PB ^{
+        ShuMusic1=Mods\ShusRangers\ShuMusic\DATA\Music\Craftor-space_gangsters.dat
+    }
+    StarMap ^{
+        ShuMusic1=Mods\ShusRangers\ShuMusic\DATA\Music\Craftor-cosmic_romance.dat
+        ShuMusic1=Mods\ShusRangers\ShuMusic\DATA\Music\Craftor-cosmic_wind.dat
+        ShuMusic1=Mods\ShusRangers\ShuMusic\DATA\Music\Craftor-Space flight.dat
+    }
+}

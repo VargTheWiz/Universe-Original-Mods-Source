@@ -1,0 +1,73 @@
+Bm ~{
+    Container ~{
+        2Bomb=Mods\Expansion\ExpPhysGun\DATA\Items\Quark_bomb.gai
+    }
+    Items ~{
+        2ArtBomb_ab=Mods\Expansion\ExpPhysGun\DATA\Items\Quark_bomb_ab.gi
+        2ArtBomb_s=Mods\Expansion\ExpPhysGun\DATA\Items\Quark_bomb.gi
+        2WPhysGuna=Mods\Expansion\ExpPhysGun\DATA\Items\PhysGun_a.gai
+        2WPhysGuni=Mods\Expansion\ExpPhysGun\DATA\Items\PhysGun_i.gi
+        2WPhysGuns=Mods\Expansion\ExpPhysGun\DATA\Items\PhysGun_s.gi
+    }
+    ItemsUseless ~{
+        2BrokenPhysGun_s=Mods\Expansion\ExpPhysGun\DATA\ItemsUseless\BrokenPhysGun.gi
+    }
+    Missile ~{
+        wMissile_Asteroid_blue=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Asteroid_blue.hai
+        wMissile_Asteroid_blue_2i=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Asteroid_blue_s.gi
+        wMissile_Asteroid_green=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Asteroid_green.hai
+        wMissile_Asteroid_green_2i=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Asteroid_green_s.gi
+        wMissile_Asteroid_red=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Asteroid_red.hai
+        wMissile_Asteroid_red_2i=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Asteroid_red_s.gi
+        wMissile_Asteroid_violet=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Asteroid_violet.hai
+        wMissile_Asteroid_violet_2i=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Asteroid_violet_s.gi
+        wMissile_Asteroid_white=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Asteroid_white.hai
+        wMissile_Asteroid_white=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Asteroid_white.hai
+        wMissile_Asteroid_white_2i=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Asteroid_white_s.gi
+        wMissile_Asteroid_white_2i=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Asteroid_white_s.gi
+        wMissile_Asteroid_yellow=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Asteroid_yellow.hai
+        wMissile_Asteroid_yellow_2i=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Asteroid_yellow_s.gi
+        wMissile_Average_item=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Average_item.hai
+        wMissile_Average_item_2i=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Average_item_s.gi
+        wMissile_Big_item=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Big_item.hai
+        wMissile_Big_item_2i=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Big_item_s.gi
+        wMissile_Discharged_EMP_bomb=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_EMP_bomb.hai
+        wMissile_Discharged_EMP_bomb_2i=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_EMP_bomb_s.gi
+        wMissile_Discharged_Stun_bomb=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Stun_bomb.hai
+        wMissile_Discharged_Stun_bomb_2i=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Stun_bomb_s.gi
+        wMissile_EMP_bomb=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_EMP_bomb.hai
+        wMissile_EMP_bomb_2i=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_EMP_bomb_s.gi
+        wMissile_Fuel_tank=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Fuel_tank.hai
+        wMissile_Fuel_tank_2i=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Fuel_tank_s.gi
+        wMissile_Maloq_stool=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Maloq_stool.gi
+        wMissile_Maloq_stool_2i=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Maloq_stool_s.gi
+        wMissile_Quark_bomb=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Quark_bomb.hai
+        wMissile_Quark_bomb_2i=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Quark_bomb_s.gi
+        wMissile_Small_item=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Small_item.hai
+        wMissile_Small_item_2i=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Small_item_s.gi
+        wMissile_Stun_bomb=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Stun_bomb.hai
+        wMissile_Stun_bomb_2i=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Stun_bomb_s.gi
+        wMissile_Urine_tank=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Urine_tank.gi
+        wMissile_Urine_tank_2i=Mods\Expansion\ExpPhysGun\DATA\Missile\Missile_Urine_tank_s.gi
+    }
+    MsgPlayer ~{
+        2Galaxy_AlertA=Mods\Expansion\ExpPhysGun\DATA\Msg\GalaxyAlert_A.gi
+        2Galaxy_AlertD=Mods\Expansion\ExpPhysGun\DATA\Msg\GalaxyAlert_D.gi
+        2Galaxy_AlertN=Mods\Expansion\ExpPhysGun\DATA\Msg\GalaxyAlert_N.gi
+    }
+    Ship ~{
+        KillerAsteroid=Mods\Expansion\ExpPhysGun\DATA\Ship\KillerAsteroid.hai
+        KillerAsteroid_s=Mods\Expansion\ExpPhysGun\DATA\Ship\KillerAsteroid_s.hai
+    }
+    ShipP ~{
+        KillerAsteroid=Mods\Expansion\ExpPhysGun\DATA\ShipP\KillerAsteroid.gi
+        KillerAsteroid_map=Mods\Expansion\ExpPhysGun\DATA\ShipP\KillerAsteroid_map.png
+    }
+}
+Sound ~{
+    shotPhysGun=sound\shot\shot03.wav
+}
+Script ~{
+    Mod_ExpPhysGun=Mods\Expansion\ExpPhysGun\DATA\Script\Mod_ExpPhysGun.scr
+    Mod_ExpPhysGun_AfterQuestDone=Mods\Expansion\ExpPhysGun\DATA\Script\Mod_ExpPhysGun_AfterQuestDone.scr
+}

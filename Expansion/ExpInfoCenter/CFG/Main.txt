@@ -1,0 +1,129 @@
+Data ^{
+    Script ^{
+        Mod_ExpInfoCenter=1,Script.Mod_ExpInfoCenter
+    }
+}
+ML ^{
+    Info ^{
+        Panel ^{
+            GraphBuf ^{
+                Name=BGBuf
+                Pos=0,0,9
+                Size=1920,1080
+            }
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    CustomReplaceButtons ^{
+                        GraphButton ^{
+                            Active=False
+                            Help=Help.ButShip
+                            ImageDisable=GI,Bm.PanelMain2.2ShipH
+                            ImageDown=GI,Bm.PanelMain2.2ShipD
+                            ImageNormal=GI,Bm.PanelMain2.2ShipN
+                            ImageNormalA=GI,Bm.PanelMain2.2ShipA
+                            Kind=Disable
+                            KindHit=Graph
+                            Name=PM_Ship_Replace
+                            OnPressCode ^{
+                                01=RunChildForm('Ship');
+                            }
+                            Pos=755,9,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=46,33
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=Help.ButRating
+                            ImageDisable=GI,Bm.PanelMain2.2RatingH
+                            ImageDown=GI,Bm.PanelMain2.2RatingD
+                            ImageNormal=GI,Bm.PanelMain2.2RatingN
+                            ImageNormalA=GI,Bm.PanelMain2.2RatingA
+                            Kind=Disable
+                            KindHit=Graph
+                            Name=PM_Quest_Replace
+                            OnPressCode ^{
+                                01=RunChildForm('Rating');
+                            }
+                            Pos=799,9,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=47,33
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=Help.ButGalaxy
+                            ImageDisable=GI,Bm.PanelMain2.2GalH
+                            ImageDown=GI,Bm.PanelMain2.2GalD
+                            ImageNormal=GI,Bm.PanelMain2.2GalN
+                            ImageNormalA=GI,Bm.PanelMain2.2GalA
+                            Kind=Disable
+                            KindHit=Graph
+                            Name=PM_Gal_Replace
+                            OnPressCode ^{
+                                01=RunChildForm('Galaxy',1);
+                            }
+                            Pos=843,9,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=49,33
+                            Style=Style.GB.SoundNormal
+                        }
+                    }
+                }
+            }
+        }
+    }
+    StarMap ^{
+        Panel ^{
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    GraphButton ^{
+                        Pos=329,16,8
+                    }
+                    GraphButton ^{
+                        Pos=329,16,8
+                    }
+                    GraphButton ^{
+                        Pos=359,14,8
+                    }
+                    GraphButton ^{
+                        Pos=447,14,8
+                    }
+                    GraphButton ^{
+                        Pos=491,14,8
+                    }
+                    GraphButton ^{
+                        Help=Help.ButInfoSpace
+                        ImageDown=GI,Bm.PanelMain2.2Info_SM_D
+                        ImageNormal=GI,Bm.PanelMain2.2Info_SM_N
+                        ImageNormalA=GI,Bm.PanelMain2.2Info_SM_A
+                        Kind=Normal
+                        KindHit=Graph
+                        MouseBlocking=True
+                        Name=SM_Info
+                        OnPressCode ^{
+                            01=InterfacePos('Info','PanelRuins',0,1000,0);
+                            02=RunChildForm('Info');
+                            03=FormChange('StarMap');
+                        }
+                        Pos=403,14,8
+                        Size=46,31
+                        Style=Style.GB.SoundNormal
+                    }
+                    Image ^{
+                        Size=230,51
+                    }
+                    Pos=-319,297,ButtonNav
+                    Size=545,63
+                }
+            }
+        }
+    }
+}

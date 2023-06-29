@@ -1,0 +1,775 @@
+MicroModuls ^{
+    ExpTraitors_RangerPirateHull ^{
+        Cost=90
+        CustomTag=ExpTraitors_RangerPirateHull
+        Equipments=Hull
+        FragilityEnergy=91
+        FragilityMissile=91
+        FragilitySplinter=91
+        ImitatedHullType=Ranger,Pirate
+        KindGraph=RangerP
+        LockedAcryn=3
+        Name=</color><Type> hull traitor
+        NonSearchable=2
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=10
+        Ruins=PB,CB
+        Special=1
+        bonSlotArt=-1
+        bonSlotWeapon=-2
+    }
+}
+FormRuins ^{
+    PB ^{
+        RankPoints ^{
+            RankPoints=<clr><clrEnd>
+            RankPoints=<clr>Robbing:<clrEnd>
+            RankPoints=Civil ship: <td=246><clr>1<clrEnd> points
+            RankPoints=Ranger: <td=246><clr>2<clrEnd> points
+            RankPoints=<clr><clrEnd>
+            RankPoints=<clr>Liquidating of Coalition ships:<clrEnd>
+            RankPoints=Warrior: <td=236><clr>16<clrEnd> points
+            RankPoints=Flagship: <td=236><clr>60<clrEnd> points
+            RankPoints=Non-pirate ranger: <td=236><clr>24<clrEnd> points
+            RankPoints=Civil ship: <td=246><clr>8<clrEnd> points
+            RankPoints=Military base: <td=236><clr>32<clrEnd> points
+            RankPoints=Ranger center: <td=236><clr>32<clrEnd> points
+            RankPoints=Business center: <td=236><clr>24<clrEnd> points
+            RankPoints=Research station: <td=236><clr>24<clrEnd> points
+            RankPoints=<clr><clrEnd>
+            RankPoints=<clr>Liquidating of dominator ships:<clrEnd>
+            RankPoints=Klig: <td=246><clr>1<clrEnd> points
+            RankPoints=Shtip: <td=246><clr>1<clrEnd> points
+            RankPoints=Menok: <td=246><clr>2<clrEnd> points
+            RankPoints=Smersh: <td=246><clr>4<clrEnd> points
+            RankPoints=Urgant: <td=246><clr>8<clrEnd> points
+            RankPoints=Equantor: <td=236><clr>16<clrEnd> points
+            RankPoints=Bertor: <td=236><clr>24<clrEnd> points
+            RankPoints=<clr><clrEnd>
+            RankPoints=Claiming a system for pirate clan valued at <clr>16<clrEnd> points.
+            RankPoints=Income from smuggling is also considered separately. Every <clr>3000<clrEnd> cr. of net profit earns <clr>1<clrEnd> pirate rating point.
+            RankPoints=<clr><clrEnd>
+            RankPoints=Oh, and if you take exception to giving any help to the Coalition, let me explain it to you that any action taken against the dominators counts towards battle experience in your rating, and not because we owe anyone anything. Got it?
+            RankPoints=
+        }
+    }
+}
+Script ^{
+    Mod_ExpTraitors ^{
+        100=It's a pity, but you were drawn into these troubles only by yourself. If the price of repairing your reputation does not suit you, then we recommend that you conduct an independent and honest "work on the bugs", after which we will be happy to resume our fruitful cooperation.<br>Until then, I have to demand that you leave this technology center.
+        102=Hip hip hooray! Long live our great leader!<br>We humbly announce that taxes from the <color=255,240,100>Nifigats</color> system in the amount of <0> cr. have just been transferred to your personal account.
+        103=Well, in that case, we have nothing more to talk about. Leave this station and find a way to fix your reputation in a more revealing way.
+        16=Return credit <0> cr.
+        18=Excellent, <Player>! You are certainly an honest ranger.<br>Unfortunately, further cooperation is out of the question at the moment, but we sincerely wish you good luck in your difficult... business. The exit is over there.
+        21=Mercenary center
+        22=Neurolink
+        23=Inhibutor
+        24=</color>gaal
+        25=</color>faey
+        26=</color>human
+        27=</color>peleng
+        28=</color>maloq
+        29=<Player>, and you did not confuse anything by chance? I'd better stomp out of here before the bros find out about you! We have accidents here, you know, happen to those who refuse to recognize the authority of the clan.
+        3=I'm leaving
+        31=What?!! Damn pirate, who even allowed you to drive a ship into our docks!?<br>Well, quickly turn your ship around and get out of here before I order you to be sent to a martial court!!!
+        33=Ranger <Player>, your behavior has been deemed unacceptable and your presence on our station objectionable.<br>Please leave science base <0>, and refrain from further visits until you have regained your reputation as a trustworthy humanoid.
+        34=Sorry, <Player>, but it's not in our best interest to openly deal with criminals. It's bad for reputation, you know.<br>Of course, you still have credit debt, and therefore we will kindly allow you to pay it off, but immediately after - we urge you to proceed to the exit.
+        36=Sorry, <Player>, but it's not in our best interest to openly deal with criminals. It's bad for reputation, you know.<br>Come back when you're a law abiding ranger, but in the meantime, we urge you to leave our business center.
+        44=Don't hesitate, <Player>! From now on, you are again on the white list and are free to conduct any activity not prohibited by law.<br>By the way, your money is just enough for us to carry out scheduled maintenance of the station, so, on behalf of all employees dissatisfied with broken air conditioners, let me express special, personal gratitude to you.
+        47=I'm glad we were able to find common ground, <Player>. All restrictions on your activities at our base have been completely lifted.<br>We very much hope that you will refrain from such a blatant violation of social norms in the future.
+        52=It's time to melt the ice in our relationship. Say exactly what you want!
+        53=Leave the business center
+        54=Okay, in that case, I hope these <0> cr. will serve the prosperity of the ranger movement!
+        57=Okay, in that case, I hope these <0> cr. will contribute to the speedy resumption of our friendly relations!
+        58=Yes, that would suit me just fine. I transfer <0> cr. to your account right now.
+        60=Next
+        62=Ranger <Player>, our network of centers is extremely disappointed with your behavior. You are a disgrace not only to yourself, but to the very noble name of the ranger!<br>Unless you change your behavior for the better, we are determined not to tolerate your presence here. Leave this station immediately. Otherwise, we will be forced to use force!
+        63=Well, as a pledge for your future corrections, we could accept a modest contribution of <0> cr.<br>These funds will be used to encourage the activities of other Rangers, which will help to at least partially atone for your guilt to your colleagues.
+        66=Contribution accepted, but have no illusions, <Player>. Money is only a symbolic payment.<br>The real correction is waiting for you in the future. Go ahead and prove to the Galaxy that we were right by giving you this ranger badge.
+        68=I'm afraid that such a contribution is too big for me
+        71=Better watch your own skull get too big! And then my brothers and I can fix it.
+        74=Well, it's a pity, but there's no other way we can contribute to your correction. We wish you good luck in your search for redemption somewhere else.<br>Now, if you don't mind, we urge you to proceed in the direction of the exit.
+        75=Well, your sins against a reasonable and responsible form of behavior are undeniable, and we can do nothing about it. However, as partial compensation for the harm you caused, we could charge you a fine of <0> cr., which would be put to good use immediately.<br>Would such a compromise suit you?
+        77=Listen, well, maybe we can somehow agree on a brotherly way, huh?
+        78=Yeah, that means how to bring down the guys in lawlessness, so you are the first, but how to answer for actions, like this: "Well, please, well, like a brother, nya-nya-nya..." - so what?!<br> I'll tell you what, <Player> - you're a lousy <0>. Lousy and pathetic. I would throw up at your feet, but after yesterday's booze there is nothing more. However, even for such personalities as you, the brotherhood does not refuse need. Not for free though.<br>In short, the amount of <1> cr. transfer to the common fund - and for the time being we will close our eyes to this rot of yours.
+        79=I confess - I'm a trembling creature! Here are your <0> cr., and I won’t offend bros anymore
+        80=Okay, already gone
+        81=Okay, so be it - have fun, ragged! At least boys will feast properly at your expense.<br>So what did you want at the base? Speak - now no one will bite, hehe.
+        83=Okay, in that case, I hope these <0> cr. worthily serve the cause of peace and prosperity of your corrupt ass! You're a fucking accountant!
+        84=In that case, I'm afraid I can't help you.<br>Please proceed to the exit, and try not to slam the Gaaldock Marblewood door too hard along the way. The door, by the way, was bought with a donation from one of your predecessors, who is currently roaming the universe in a brand new ship purchased with a loan from US.<br>Just think about it, Ranger <Player>.
+        86=Well, what do you think yourself, being in the office of the manager of one of the galactic business centers?<br>I'll give you a hint - this is a number, and this number, as it happens, is a multiple of <0>. Equally, to be completely accurate. I'm still a businessman, not a robber.
+        89=You're not very good at business negotiations, are you? Okay, I accept your modest charitable donation for the maintenance of our, let's say... aquariums with the endangered species of the Rakhish quaglyash.<br>Well, now for the next week you are included in the list of our voluntary sponsors, which means you have the right to priority service regardless on your current reputation.<br>So how can I help you, dear sponsor?
+        91=Well, okay, I didn’t really want to!
+        93=Wow, just look! This is what an interesting ranger here brought to us by a stellar wind!<br>What, <Player>, have you been blacklisted? Yes, I see that I got it - do not deny it. So what, so right away you decided to drop the anchor "on your native shores"? Thought the bros would help? That bros are always welcome to bros?<br>So know that we are not bros anymore, you understand!!? Get out of here, you rat-faced nit, before you are shoved into the garbage lock with my own boots!!!
+        94=Ranger <Player>, you are a highly unwanted guest on our station. Your entire reputation literally screams that it is more expensive to do business with you.<br>Guided by these considerations, we are forced to ask you to leave our small docks. Right now!
+        97=Well, I think for a reasonable price we could temporarily turn a blind eye to your obvious unreliability.<br>Let's say <0> cr. Deal?
+        BK_Block=<Player>, you are an unwanted guest at BaseName Business Center. Check with the station manager to sort things out.
+        CB_Block=<Player>, you are an unwanted guest on the BaseName dominion. You are strongly advised to leave the station until the reputation in the eyes of its captain is corrected.
+        PB_Block=<Player>, you are an unwanted guest at BaseName pirate base. Drop in to the captain of the station to sort things out.
+        RC_Block=<Player>, you are an unwanted guest at BaseName Ranger Center. Check with the station manager to sort things out.
+        SB_Block=<Player>, you are an unwanted guest at BaseName Science Base. Check with the station manager to sort things out.
+        TC_Block=<Player>, you are an unwanted guest at the BaseName Technology Center. Check with the station manager to sort things out.
+        WB_Block=<Player>, you are an unwanted guest at BaseName military base. You are strongly advised to leave the station until the reputation in the eyes of its captain is corrected.
+    }
+    PC_part0 ^{
+        111=WHAT? It seemed to me that you had already made up your mind... Okay, think about it. Security, escort my interlocutor to the exit. Try not to drop it along the way. We may still need it.
+        112=What did you want? A box of wine and fireworks in your honor? Sorry, bro, they didn't deliver. Fly back in a week...<br>In our business, you are nobody! The usual green beginner, whose lips have not dried up yet! A typical rookie who deserves neither trust nor respect. Do you want to change it? Then show me what you can do. Prove that you really are a true pirate, and not a pathetic parody of a noble corsair. Increase your pirate rating!
+        115=Then you are accepted! Congratulations on joining the family! You are given the honorary starting rank <clr>rookie<clrEnd>. A small <clr>gift<clrEnd> on this occasion is already waiting for you in the storage.
+        119=Here is our price list:<br><0>
+        24=Then get out of here before the hunting season opens!
+        26=Then beat it and quit wasting my time!
+        33=I'm more of a cunning prey than a foolish predator
+        36=Probably not
+        37=I'm absolutely certain, and I will not regret my decision.
+        38=I need some time to think.
+        39=Is that all?
+        40=How do I increase my pirate rating?
+        41=Got it. I'll get right on it.
+        43=Alrighty then, you're in. Congratulations! You've been assigned the honorary base rank of noob. A small gift has been delivered to your storage to mark the occasion. Do you know what to do next?
+        44=Then get out of here, sissy! Acting all tough like a pirate...
+        46=If you want to earn the respect of our community, you need to prove yourself and boost your reputation.  And that means furthering the cause of our brotherhood and increasing your rating. If you do that, everybody's gonna know your name before long.
+        47=Yes, I'm sure!
+        50=Consider me gone.
+        51=I know. Can I go now?
+        52=I don't know
+        70=What's the special offer?
+        73=Why aren't you on the list? The tech department must have screwed something up again. Oh well, we can fix it.  So lookit, <0>, here's your completed application to join the pirate brotherhood. When you're ready, simply put an X or a checkmark on the bottom, and we're golden.
+        74=Yo, what the hell are you doing here? Oh, it's you, brah? Welcome to our pirate...
+        75=See ya
+        81=You're smarter than you look. That's a good thing. Our special offer isn't for cowards or cattle-like conformists. If you want our offer, you've got to be brave and courageous, strong of body and spirit, skilled with various weapon types, an excellent pilot, capable of following orders but also taking the lead at any moment, if necessary. And finally, the right candidate cannot have any mental issues. Morons have extremely limited prospects for career growth at our enterprise. <br>Now be honest with us both -- do you meet these rigid standards?
+        84=Oh! There's been a misunderstanding, chief... I changed my mind.
+    }
+    PC_part1 ^{
+        123=Well, extortionists! Okay, here's your money.
+        125=Uh huh, thanks
+        49=I agree
+        68=No, I'll get down to business
+        86=It's clear
+        87=You won't have to wait long
+        90=See you again!
+    }
+}
+ShipCharacter ^{
+    00=0,	100,	0,	Bandit
+    01=25,	75,	0,	Gangster
+    02=50,	50,	0,	Marauder
+    03=75,	25,	0,	Shareholder
+    04=100,	0,	0,	Magnate
+    05=0,	75,	25,	Thug
+    06=25,	50,	25,	Raider
+    07=50,	25,	25,	Trader
+    08=75,	0,	25,	Merchant
+    09=0,	50,	50,	Mercenary
+    10=20,	30,	50,	Mercenary
+    11=50,	0,	50,	Mercenary
+    12=0,	25,	75,	Warrior
+    13=25,	0,	75,	Warrior
+    14=0,	0,	100,	Hero
+}
+ShipCharacterRangerPirate ^{
+    00=0, 100, 0, Pirate
+    01=25, 75, 0, Privateer
+    02=50, 50, 0, Freebooter
+    03=75, 25, 0, Distributor
+    04=100, 0, 0, Mediator
+    05=0, 75, 25, Extortionist
+    06=25, 50, 25, Raider
+    07=50, 25, 25, Knacker
+    08=75, 0, 25, Knacker
+    09=0, 50, 50, Robber
+    10=20, 30, 50,Robber
+    11=50, 0, 50, Robber
+    12=0, 25, 75, Corsair
+    13=25, 0, 75, Corsair
+    14=0, 0, 100, Legionnaire
+}
+ShipCharacterRangerPiratePlayer ^{
+    00=0, 100, 0, Pirate
+    01=25, 75, 0, Privateer
+    02=50, 50, 0, Freebooter
+    03=75, 25, 0, Distributor
+    04=100, 0, 0, Mediator
+    05=0, 75, 25, Extortionist
+    06=25, 50, 25, Raider
+    07=50, 25, 25, Knacker
+    08=75, 0, 25, Knacker
+    09=0, 50, 50, Robber
+    10=20, 30, 50, Robber
+    11=50, 0, 50, Robber
+    12=0, 25, 75, Corsair
+    13=25, 0, 75, Corsair
+    14=0, 0, 100, Legionnaire
+}
+ShipGreetings ^{
+    Standart ^{
+        RangerPirateWar=12345
+    }
+}
+ShipType ^{
+    Fei ^{
+        RangerPirate=Traitor
+        RangerPiratePlayer=Phantom
+    }
+    Gaal ^{
+        RangerPirate=Traitor
+        RangerPiratePlayer=Renegal
+    }
+    Maloc ^{
+        RangerPirate=Traitor
+        RangerPiratePlayer=Bambai
+    }
+    Peleng ^{
+        RangerPirate=Traitor
+        RangerPiratePlayer=Lyakusha
+    }
+    People ^{
+        RangerPirate=Traitor
+        RangerPiratePlayer=Corsair
+    }
+    TypeName ^{
+        RangerPirate=Traitor
+        RangerPiratePlayer=Traitor
+    }
+}
+Talk ^{
+    PirateClan ^{
+        Attack ^{
+            RangerFear=I still love my life! Look for some cannon fodder on another frequency.
+            RangerFear1=Nope, buddy! If they kill me, then who will fluff my elderly mother's pillow?
+            RangerFear2=If you want to look for adventures in your center of gravity, then personally I don’t like it very much.
+            RangerFear3=May you go into the wormhole with your attacks! I lost at level 98 because of you!
+            RangerFear4=I don’t want to fight with anyone, but I’m ready to be a second.
+            RangerHaveBusiness=It's very unfortunate that you've turned now. I'm busy just up to the throat.
+            RangerHaveBusiness1=I now have enough of my own affairs, turn to someone else.
+            RangerHaveBusiness2=No time to be distracted, absolutely no time to be distracted! Not up to you, buddy.
+            RangerHaveBusiness3=At another time, I would have helped you, but for now I have much higher priority tasks.
+            RangerHaveBusiness4=Well, you chose the timing perfectly, of course. I don't have time to solve your problems right now, my friend.
+            RangerItsMyTranc=Or maybe you want more red wine, and red-haired Makhpella? Get off my tranclucator quickly, or next time my guns will talk to you!
+            RangerItsYourTranc=Are you, <Player>, sick? And you seem to be healthy...<br>In general, deal with these tranclucators yourself, I will not participate in this circus.
+            RangerOk=Good idea! I have long wanted to properly kick the nozzles of this upstart!
+            RangerOk1=And really, why don't I remember those old days? There is life in the old dog yet!
+            RangerOk2=I was just thinking that there was no one to test a new gun on, how are you with your proposal! I'm in!
+            RangerOk3=I agree, his rusty vessel only spoils the beautiful landscape. All energy to the guns!
+            RangerOk4=I remember that the captain of this ship somehow owed me a large sum... Indeed, I have something to discuss with him.
+            RangerSend=Can you help in the battle with <Target>? Together we will take this ship for parts!
+            RangerSend1=You have a unique chance to warm up your cannons! Let's show <Target> who should be respected in this system!
+            RangerSend2=Bored already without some active action, I suppose? Join my attack on <Target>, otherwise you have some kind of sad face.
+            RangerSend3=Here <Target> called you a very bad word through a closed channel! I'm already flying to teach him a lesson for your offended honor, and you let's recharge and follow me!
+            RangerSend4=I'm flying to sort things out with <Target>. Are you with me?
+            RangerSuspect=Come on, you, I can see in your eyes that you will let me down at the most crucial moment.
+            RangerSuspect1=No, I don't trust you one bit. You don't even have to rely on my help.
+            RangerSuspect2=Look at yourself in the mirror! On the forehead is written: "I can not be trusted!"
+            RangerSuspect3=You are some kind of suspicious person and I am not going to have any joint business with you.
+            RangerSuspect4=Necessarily! But first, give me at least three reasons why I should trust you.
+            RangerWeFriends=I had no quarrel with the captain of this ship.
+            RangerWeFriends1=What do you suggest? We served together in the fleet! Yes, and I do not advise you to quarrel with him: you will be healthier.
+            RangerWeFriends2=Here I am not your assistant: I sincerely value good relations with this pilot.
+            RangerWeFriends3=No, he's my friend! We've gone through so much in the vastness of space.
+            RangerWeFriends4=Are you suggesting that I attack a friend? No, quit.
+            RangerWeFriendsTranc=How could this innocent robot harm you at all? My answer is a categorical no.
+            RangerWeFriendsTranc1=Well, no, I do not intend to spoil someone else's property! If you have any problems with the owner of this tranclucator, say so.
+            RangerWeFriendsTranc2=I once had a clockwork robot toy as a child, and this tranclucator reminds me very much of it. I don't want to ruin my childhood memories.
+        }
+        Goods ^{
+            RangerLongDistance=Wow! I almost choked on my sandwich with laughter! You would have flown even farther and threatened from there!
+            RangerLongDistance1=My friend, this news may shock you, but even if your radar got to me, it’s still far from a fact that the guns will get it.
+            RangerLongDistance2=Buddy, you made my day! Well, do you really think that everyone is as naive as you? You would have caught up with me first, and then pestered me with all sorts of nonsense.
+            RangerLongDistance3=Do you only have the courage to bark from a distance? Demand cargo from your grandmother!
+            RangerLongDistance4=Is it just me or are you really stoned? Ask at least your on-board computer what chances you have of catching up with me.
+            RangerNo=Wake up first, otherwise you are talking some nonsense here.
+            RangerNo1=Come on, take cargo from me. Or are you just so formidable on the communicator?
+            RangerNo2=Cargo, you say? So be it, I’m ready to drop the sealed bag with the contents of the toilet especially for you. Or are you talking about something else?
+            RangerNo3=I would teach you a lesson, but I will regret space ecology. Well, then a lot of wreckage will remain from your ship...
+            RangerNo4=I will not give you the cargo in principle. You just hang in there.
+            RangerOk=You win. Stop firing, I'll drop cargo now.
+            RangerOk1=Why not? No, it’s not because of you that I’m throwing away part of the cargo, it’s just that there really isn’t enough space on the ship.
+            RangerOk2=I'll throw away cargo, but I remember you well! Better not get in my eyes again.
+            RangerOk3=I worked hard from morning to night for this cargo, not at all in order to then give it to an asshole like you. So be it, hold on, but this is the last time!
+            RangerOk4=Still, guns are the most weighty argument in a civilized dispute. Do not shoot, now you will have the cargo.
+        }
+        Money ^{
+            RangerLongDistance=What? Money? Well, of course, I like nothing better then just transfer my money to the first inappropriate person I meet, who is broadcasting on the air from the other end of the system. If suddenly you didn't got it, which I won’t be surprised at, then this is sarcasm.
+            RangerLongDistance1=Where do you get these from? Do you want my money? You can't even catch up with me!
+            RangerLongDistance2=And if I suddenly refuse, will you get very angry with me and won't catch up?<br>Oh no, don't do it! Please!
+            RangerLongDistance3=What's the point of paying you if from this distance you pose no threat to me at all?
+            RangerLongDistance4=I get scared for our pirate business when I meet people like you. Before you extort, at least fly closer to the victim! Everything has to be taught to the youth of today...
+            RangerLongDistance5=Haha! I suppose your impudence is directly proportional to the distance between us?
+            RangerLongDistance6=How daring you are! Send me your photo, as soon as I land on the nearest planet, I will definitely sell it to journalists. Just imagine: the report "Moron of the Year"! So I see: "he robs ships from gigantic distances!" Hey, what's wrong with you? Come on, buddy, this is a joke.
+            RangerLongDistance7=Only if you catch up with me and give me a good reason to pay you. Oh yeah, it doesn't work for you. Well, then no.
+            RangerLongDistance8=I wouldn't be able to transfer money to you at such a great distance with all my desire, so I'm sorry. No, I'm not laughing - it's such interference.
+            RangerNo=I'm already transferring. How did it not come? Well... I'm out of business here. Yep.
+            RangerNo1=You would fly, you half-educated robber! Now I will inform my sidekick, so he will correct your nozzles!
+            RangerNo2=Brother, you have confused something: I'm not an ATM for you, so move your engine somewhere to gobsaurus' den, huh?
+            RangerNo3=I honestly stole my money and I won’t give it to you!
+            RangerNo4=What? It seemed to me, or did you really want to demand money from me now?<br>Come on, get the hell out of here while I'm still kind!
+            RangerNo5=This is not my money, but that transport worker over there, so demand it from him.
+            RangerNo6=No no no! I'm still paying off the mortgage. You want to plunge me into poverty, don't you?
+            RangerNo7=But then I won't have enough to feed my parrot! Do you really want poor bird to starve?<br>How cruel you are.
+            RangerOk=Okay, okay, you can put your guns away, here's the money. Not mine, I can think that I have not lost anything!
+            RangerOk1=So I saved them, saved up, robbed, traded smuggling, didn’t sleep at night, ate badly! And then you showed up! Well, you're not ashamed, are you? Okay, hold on...
+            RangerOk2=Well, we'll have to give away the stash... So, now it's enough! Take it, just stay away!
+            RangerOk3=Maloq hard red mixed with green surprise! Well, you are addictive! That's enough, take it, well done, you cool.
+            RangerOk4=Easy come, easy go. I'll fly, I'll try to catch up with that transporter again...
+            RangerOk5=My grandmother told me: "Don't fly, grandson, at night!" I didn't listen to her...
+            RangerOk6=But I really wanted to buy that gun... Every day I went, admired the shop window... Okay, I have to pay, take it...
+            RangerOk7=But it's true: everyone in the galaxy should share and everyone will be fine! Today I am for you, tomorrow you are for me!
+            RangerSumIsVeryBig=Are you laughing at me? How can I have such money?!
+            RangerSumIsVeryBig1=What are you talking about? I have never even held such an amount in my hands!
+            RangerSumIsVeryBig2=Buddy, please don't hit me! Well, I don't have that amount!
+            RangerSumIsVeryBig3=I'm afraid I don't have that much money. Maybe we can agree on a smaller amount?
+            RangerSumIsVeryBig4=Oh, you flattered me... If I had that amount of money, I would, perhaps, not hang out in cold space, but would now be resting somewhere on Mauna Roa...
+        }
+        Partner ^{
+            FinancesCheck=What is your financial situation?
+            FinancesConfirmed=Understood
+            FinancesGotGift=Thank you, now I have <Money> cr.
+            FinancesOfferGift=Give money to a partner
+            FinancesReport=<Player>, I have <Money> cr.
+            FinancesSendGift=Take <Money> cr.
+            FinancesWaitForGift=So, <Player>, how much money are you willing to give me?
+        }
+        PreserveItems ^{
+            RangerNo=Buddy, didn't I tell you that I'm from the ecologist group? No, I am totally against cluttering outer space.
+            RangerOk=What, leave the trash alone? And where do you only come from like that... Okay, shtip with you, I don’t need this rubbish.
+        }
+        Protect ^{
+            RangerNo=Who are you for me to listen to you? No, <Target> won't get rid of me that easily, and now you're next in line yourself.
+            RangerNo1=I have my own showdowns with the pilot of the vessel <Target>, which I strongly advise you not to get into.
+            RangerNo2=Wouldn't you, unfortunate peacemaker, fly somewhere to Makhpella for a cup of tea?
+            RangerNo3=Do you hear, <Target>? If this consoles you before your death, then at least someone here stood up for you!
+            RangerNo4=Your efforts are in vain. The vessel <Target> will be destroyed very, very soon. Just deal with it.
+            RangerNo5=Hey, <Target>, should I let you go? No? OK. Did you hear, <Player>? This transport worker himself really wants me to rob him, do not deprive him of such joy.
+            RangerOk=Well, that's why you got in! I almost knocked him out! So be it, today is that scoundrel's lucky day.
+            RangerOk1=Well, since you're asking... You're a tough guy, I'm not going to mess with you.
+            RangerOk2=<Target>, get out of here before I change my mind! Now I'll have to look for someone else to test the new cannon on...
+            RangerOk3=I just got angry, and here you are with your peacekeeping! Okay, let him live.
+            RangerOk4=Well, <Player>, it's not good to break off the fun like that... Today you protect every oncoming transport worker, and what's next? Will you save every boar-splash? Okay, I don't want to deal with animal rights... <Target>, fly, I let you go.
+        }
+        Truce ^{
+            RangerNo=It is at such moments that you begin to feel sorry for the victim of your own robbery! Maybe let you go to the business center for a loan?
+            RangerNo1=Hmm... You should at least shoot minerals, galactic pauper!
+            RangerNo2=This money will not even compensate me for the fact that I was forced to see your face on the display.
+            RangerNo3=Do you want to pity me? I feel like giving you a loan, only so that you can offer a not so meager amount!
+            RangerNo4=Wow! Yes, I spend more for one visit to the bar! So, by the way, what are the prices there now... Oh, Guidnet says that the price of rum has risen... Do you hear me, don't you dare leave me without rum!
+            RangerNo5=How did it happen? I'm trying here, carefully sawing the ship for you, and you offer me so little! You don't appreciate my work!
+            RangerOk=It's good that the galaxy is full of suckers like you! Otherwise, I would have to find a job.
+            RangerOk1=Congratulations, you just bought yourself a one-time ticket to fly through the system! Would you like to purchase a subscription for the whole year?
+            RangerOk2=That would be right away. Otherwise, I usually have to chase ships, spend fuel...
+            RangerOk3=Another time I would have shaken you out more, but I'm in a really good mood today. Or is it because of the liquor? Ah, it doesn't matter.
+            RangerOk4=Don't worry, all proceeds will go exclusively to the benefit of our noble clan!
+            RangerSend=Dude, you got it all wrong! I'm not a training asteroid! Take these <Money> cr., just stop wrecking my ship!
+            RangerSend1=That's enough, that's enough, you're cooler than me, cooler than everyone here, I agree! I transfer <Money> cr. to your account, I saved them for a very long time, just let me fly away!
+            RangerSend2=I thought about it, and came to the conclusion that these <Money> cr. I don't need at all. Maybe you will take them for yourself, and we will scatter peacefully?
+            RangerSend3=I admit, I somewhat overestimated my strength and underestimated yours. I offer you <Money> cr. For you to finally leave me alone.
+            RangerSend4=Buddy, you really deserve this money! I offer you a tempting sum in <Money> cr., after which I calmly fly away. Is it coming?
+        }
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            ExpTraitors_ParrotChange ^{
+                Description=Invisible info box for shifting a parrot
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=dword bird=0;
+                    02=int birdId=ShipCustomShipInfoData(0,CurInfo(),1);
+                    03=for(int i=1;i<ShipItems(Player());i=i+1)
+                    04 ^{
+                        01=dword item=ShipItems(Player(),i);
+                        02=if(Id(item)==birdId)
+                        03 ^{
+                            01=bird=item;
+                            02=break;
+                        }
+                    }
+                    05=if(ScriptItemActionType(t_OnReEnteringForm))
+                    06 ^{
+                        01=if(!bird)
+                        02 ^{
+                            01=bird=FormShipCurItem();
+                            02=if(!bird)bird=IdToItem(birdId);
+                            03=if(UselessItemData(bird,3)==-1)
+                            04 ^{
+                                01=ShipSpecialBonuses(Player(),bonSkill5,ShipSpecialBonuses(Player(),bonSkill5)-UselessItemData(bird,2));
+                                02=UselessItemData(bird,3,-2);
+                            }
+                            05=ShipDeleteCustomShipInfo(Player(),CurInfo());
+                        }
+                    }
+                    07=else
+                    08 ^{
+                        01=if(!bird)
+                        02 ^{
+                            01=bird=IdToItem(birdId);
+                            02=if(UselessItemData(bird,3)==-1)
+                            03 ^{
+                                01=ShipSpecialBonuses(Player(),bonSkill5,ShipSpecialBonuses(Player(),bonSkill5)-UselessItemData(bird,2));
+                                02=UselessItemData(bird,3,-2);
+                            }
+                            04=ShipDeleteCustomShipInfo(Player(),CurInfo());
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnEnteringForm,t_OnReEnteringForm
+            }
+            ExpTraitors_RuinsBlock ^{
+                Description=Invisible info box to block stations. Removed immediately upon takeoff from a station that has a bad attitude towards the player.
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=if(ScriptItemActionType(t_OnStep, 0))
+                    02 ^{
+                        01=if(ShipOrder(ScriptItemActShip()) == 5 || RelationToRanger(GetShipRuins(ScriptItemActShip()), ScriptItemActShip()) > 29)
+                        02 ^{
+                            01=InterfaceState('Ship','LoadRocketsInSlotsBut',-1);
+                            02=InterfaceState('Ship','LoadRocketsInSlotsBlock',-1);
+                            03=InterfaceState('Ship','LoadRocketsInSlotsButHitBox',-1);
+                            04=InterfaceState('Ship','LoadRocketsInHold',-1);
+                            05=InterfaceState('Ship','LoadRocketsInHoldBlock',-1);
+                            06=InterfaceState('Ship','SellAllFromHold',-1);
+                            07=InterfaceState('Ship','SellAllFromHoldBlock',-1);
+                            08=InterfaceState('Ship','SC_Slot1_But',-1);
+                            09=InterfaceState('Ship','SC_Slot1_ButBlock',-1);
+                            10=InterfaceState('Ship','SC_Slot3_But',-1);
+                            11=InterfaceState('Ship','SC_Slot3_ButBlock',-1);
+                            12=InterfaceState('Ship','SC_Slot2_But',-1);
+                            13=InterfaceState('Ship','SC_Slot2_ButBlock',-1);
+                            14=InterfaceState('Ship','SC_RepareFull_But',-1);
+                            15=InterfaceState('Ship','SC_RepareFull_ButBlock',-1);
+                            16=InterfaceState('Ship','SellAllFromStorage',-1);
+                            17=InterfaceState('Ship','SellAllFromStorageBlock',-1);
+                            18=InterfaceState('RuinsTalk','PR_Shop',-1);
+                            19=InterfaceState('RuinsTalk','PR_ShopBlock',-1);
+                            20=InterfaceState('RuinsTalk','PR_Goods',-1);
+                            21=InterfaceState('RuinsTalk','PR_GoodsBlock',-1);
+                            22=InterfaceState('RuinsTalk','PR_Info',-1);
+                            23=InterfaceState('RuinsTalk','PR_InfoBlock',-1);
+                            24=InterfaceState('RuinsTalk','PM_EndTurn',-1);
+                            25=InterfaceState('RuinsTalk','RT_EndTurn_Block',-1);
+                            26=InterfaceState('RuinsTalk','AstAddRuins',-1);
+                            27=ShipDeleteCustomShipInfo(ScriptItemActShip(),'ExpTraitors_RuinsBlock');
+                        }
+                    }
+                    03=else if(ScriptItemActionType(t_OnEnteringForm) || ScriptItemActionType(t_OnReEnteringForm))
+                    04 ^{
+                        01=if(CurrentForm() == 'Ship')
+                        02 ^{
+                            01=InterfaceState('Ship', 'LoadRocketsInSlotsBut', 0);
+                            02=for(int i = 1; i <= ShipCntWeapon(ScriptItemActShip()); i = i + 1)
+                            03 ^{
+                                01=if(MissilesToRearm(ShipWeapon(ScriptItemActShip(), i)))
+                                02 ^{
+                                    01=InterfaceState('Ship', 'LoadRocketsInSlotsBlock', 1);
+                                    02=InterfaceState('Ship', 'LoadRocketsInSlotsButHitBox', 1);
+                                    03=break;
+                                }
+                                03=else
+                                04 ^{
+                                    01=InterfaceState('Ship', 'LoadRocketsInSlotsBlock', 0);
+                                    02=InterfaceState('Ship', 'LoadRocketsInSlotsButHitBox', 0);
+                                }
+                            }
+                            04=InterfaceState('Ship', 'LoadRocketsInHold', 0);
+                            05=InterfaceState('Ship', 'LoadRocketsInHoldBlock', 1);
+                            06=InterfaceState('Ship', 'SellAllFromHold', 0);
+                            07=InterfaceState('Ship', 'SellAllFromHoldBlock', 1);
+                            08=InterfaceState('Ship', 'SC_Slot1_But', 0);
+                            09=InterfaceState('Ship', 'SC_Slot1_ButBlock', 1);
+                            10=InterfaceState('Ship', 'SC_Slot3_But', 0);
+                            11=InterfaceState('Ship', 'SC_Slot3_ButBlock', 1);
+                            12=InterfaceState('Ship', 'SC_Slot2_But', 0);
+                            13=InterfaceState('Ship', 'SC_Slot2_ButBlock', 1);
+                            14=InterfaceState('Ship', 'SC_RepareFull_ButBlock', 1);
+                            15=InterfaceState('Ship', 'SellAllFromStorage', 0);
+                            16=InterfaceState('Ship', 'SellAllFromStorageBlock', 1);
+                            17=InterfaceState('Ship', 'PM_EndTurn', 0);
+                            18=InterfaceState('Ship', 'RT_EndTurn_Block', 1);
+                        }
+                        03=else if(CurrentForm() == 'Rating')
+                        04 ^{
+                            01=InterfaceState('Rating', 'PM_EndTurn', 0);
+                            02=InterfaceState('Rating', 'RT_EndTurn_Block', 1);
+                        }
+                        05=else if(CurrentForm() == 'Galaxy')
+                        06 ^{
+                            01=InterfaceState('Galaxy', 'PM_EndTurn', 0);
+                            02=InterfaceState('Galaxy', 'RT_EndTurn_Block', 1);
+                        }
+                        07=else if(CurrentForm() == 'Hangar')
+                        08 ^{
+                            01=InterfaceState('Hangar', 'PM_EndTurn', 0);
+                            02=InterfaceState('Hangar', 'RT_EndTurn_Block', 1);
+                        }
+                        09=else if(CurrentForm() == 'GoodsShop')
+                        10 ^{
+                            01=str type = ShipType(GetShipRuins(Player()));
+                            02=if(type == 'RC') MessageBox(Format(CT('Script.Mod_ExpTraitors.RC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            03=else if(type == 'WB') MessageBox(Format(CT('Script.Mod_ExpTraitors.WB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            04=else if(type == 'SB') MessageBox(Format(CT('Script.Mod_ExpTraitors.SB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            05=else if(type == 'BK') MessageBox(Format(CT('Script.Mod_ExpTraitors.BK_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            06=else if(type == 'TC') MessageBox(Format(CT('Script.Mod_ExpTraitors.TC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            07=else if(type == 'PB') MessageBox(Format(CT('Script.Mod_ExpTraitors.PB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            08=else if(type == 'CB') MessageBox(Format(CT('Script.Mod_ExpTraitors.CB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            09=FormChange('RuinsTalk');
+                        }
+                        11=else if(CurrentForm() == 'EquipmentShop')
+                        12 ^{
+                            01=type = ShipType(GetShipRuins(Player()));
+                            02=if(type == 'RC') MessageBox(Format(CT('Script.Mod_ExpTraitors.RC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            03=else if(type == 'WB') MessageBox(Format(CT('Script.Mod_ExpTraitors.WB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            04=else if(type == 'SB') MessageBox(Format(CT('Script.Mod_ExpTraitors.SB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            05=else if(type == 'BK') MessageBox(Format(CT('Script.Mod_ExpTraitors.BK_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            06=else if(type == 'TC') MessageBox(Format(CT('Script.Mod_ExpTraitors.TC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            07=else if(type == 'PB') MessageBox(Format(CT('Script.Mod_ExpTraitors.PB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            08=else if(type == 'CB') MessageBox(Format(CT('Script.Mod_ExpTraitors.CB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            09=FormChange('RuinsTalk');
+                        }
+                        13=else if(CurrentForm() == 'Info')
+                        14 ^{
+                            01=type = ShipType(GetShipRuins(Player()));
+                            02=if(type == 'RC') MessageBox(Format(CT('Script.Mod_ExpTraitors.RC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            03=else if(type == 'WB') MessageBox(Format(CT('Script.Mod_ExpTraitors.WB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            04=else if(type == 'SB') MessageBox(Format(CT('Script.Mod_ExpTraitors.SB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            05=else if(type == 'BK') MessageBox(Format(CT('Script.Mod_ExpTraitors.BK_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            06=else if(type == 'TC') MessageBox(Format(CT('Script.Mod_ExpTraitors.TC_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            07=else if(type == 'PB') MessageBox(Format(CT('Script.Mod_ExpTraitors.PB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            08=else if(type == 'CB') MessageBox(Format(CT('Script.Mod_ExpTraitors.CB_Block'),'BaseName',ShipName(GetShipRuins(Player()))),10);
+                            09=FormChange('RuinsTalk');
+                        }
+                        15=else if(CurrentForm() == 'RuinsTalk')
+                        16 ^{
+                            01=InterfaceState('RuinsTalk', 'PM_EndTurn', 0);
+                            02=InterfaceState('RuinsTalk', 'RT_EndTurn_Block', 1);
+                        }
+                    }
+                    05=else if(ScriptItemActionType(t_OnLeavingForm))
+                    06 ^{
+                        01=if(CurrentForm() == 'Ship')
+                        02 ^{
+                            01=InterfaceState('RuinsTalk','PR_Shop',-1);
+                            02=InterfaceState('RuinsTalk','PR_ShopBlock',-1);
+                            03=InterfaceState('RuinsTalk','PR_Goods',-1);
+                            04=InterfaceState('RuinsTalk','PR_GoodsBlock',-1);
+                            05=InterfaceState('RuinsTalk','PR_Info',-1);
+                            06=InterfaceState('RuinsTalk','PR_InfoBlock',-1);
+                            07=InterfaceState('Ship','LoadRocketsInSlotsBut',-1);
+                            08=InterfaceState('Ship','LoadRocketsInSlotsBlock',-1);
+                            09=InterfaceState('Ship','LoadRocketsInSlotsButHitBox',-1);
+                            10=InterfaceState('Ship','LoadRocketsInHold',-1);
+                            11=InterfaceState('Ship','LoadRocketsInHoldBlock',-1);
+                            12=InterfaceState('Ship','SellAllFromHold',-1);
+                            13=InterfaceState('Ship','SellAllFromHoldBlock',-1);
+                            14=InterfaceState('Ship','SC_Slot1_But',-1);
+                            15=InterfaceState('Ship','SC_Slot1_ButBlock',-1);
+                            16=InterfaceState('Ship','SC_Slot3_But',-1);
+                            17=InterfaceState('Ship','SC_Slot3_ButBlock',-1);
+                            18=InterfaceState('Ship','SC_Slot2_But',-1);
+                            19=InterfaceState('Ship','SC_Slot2_ButBlock',-1);
+                            20=InterfaceState('Ship','SC_RepareFull_ButBlock',-1);
+                            21=InterfaceState('Ship','SC_RepareFull_But',-1);
+                            22=InterfaceState('Ship','SC_RepareFull_ButBlock',-1);
+                            23=InterfaceState('Ship','SellAllFromStorage',-1);
+                            24=InterfaceState('Ship','SellAllFromStorageBlock',-1);
+                            25=InterfaceState('Ship','PM_EndTurn',-1);
+                            26=InterfaceState('Ship','RT_EndTurn_Block',0);
+                            27=InterfaceState('RuinsTalk','PM_EndTurn',0);
+                            28=InterfaceState('RuinsTalk','RT_EndTurn_Block',1);
+                        }
+                        03=else if(CurrentForm() == 'Rating')
+                        04 ^{
+                            01=InterfaceState('Rating','PM_EndTurn',-1);
+                            02=InterfaceState('Rating','RT_EndTurn_Block',0);
+                            03=InterfaceState('RuinsTalk','PM_EndTurn',0);
+                            04=InterfaceState('RuinsTalk','RT_EndTurn_Block',1);
+                        }
+                        05=else if(CurrentForm() == 'Galaxy')
+                        06 ^{
+                            01=InterfaceState('Galaxy','PM_EndTurn',-1);
+                            02=InterfaceState('Galaxy','RT_EndTurn_Block',0);
+                            03=InterfaceState('RuinsTalk','PM_EndTurn',0);
+                            04=InterfaceState('RuinsTalk','RT_EndTurn_Block',1);
+                        }
+                        07=else if(CurrentForm() == 'Hangar')
+                        08 ^{
+                            01=InterfaceState('Hangar','PM_EndTurn',-1);
+                            02=InterfaceState('Hangar','RT_EndTurn_Block',0);
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnStep,t_OnEnteringForm,t_OnReEnteringForm,t_OnLeavingForm
+                OnActStepTypes=0
+            }
+        }
+    }
+}
+UselessItems ^{
+    ExpTraitors_PirateParrot ^{
+        Cost=Average
+        Name=Talking parrot
+        OnActCode ^{
+            01=dword bird = CurItem();
+            02=if(UselessItemData(bird, 3) == -3) exit;
+            03=if(ScriptItemActionType(t_OnStep, 0))
+            04 ^{
+                01=if(FindItemInShip(Player(), bird) == -1)
+                02 ^{
+                    01=if(UselessItemData(bird, 3) == -1)
+                    02 ^{
+                        01=ShipSpecialBonuses(Player(), bonSkill5, ShipSpecialBonuses(Player(), bonSkill5) - UselessItemData(bird, 2));
+                        02=UselessItemData(bird, 3, -2);
+                    }
+                }
+                03=else
+                04 ^{
+                    01=if(UselessItemData(bird, 3) == -2)
+                    02 ^{
+                        01=ShipSpecialBonuses(Player(), bonSkill5, ShipSpecialBonuses(Player(), bonSkill5) + UselessItemData(bird, 2));
+                        02=UselessItemData(bird, 3, -1);
+                    }
+                    03=UselessItemData(bird, 1, UselessItemData(bird, 1) + 1);
+                }
+            }
+            05=if(ScriptItemActionType(t_OnStep, 11))
+            06 ^{
+                01=if(substr(Name(bird), 0, 3) == '<M>')
+                02 ^{
+                    01=SetName(bird, substr(Name(bird), 3));
+                }
+            }
+            07=else if(ScriptItemActionType(t_OnReEnteringForm))
+            08 ^{
+                01=if(UselessItemData(bird, 3) == -2)
+                02 ^{
+                    01=ShipSpecialBonuses(Player(), bonSkill5, ShipSpecialBonuses(Player(), bonSkill5) + UselessItemData(bird, 2));
+                    02=UselessItemData(bird, 3, -1);
+                }
+                03=if(ShipFindCustomShipInfoByType(Player(), 'ExpTraitors_ParrotChange') == -1) ShipAddCustomShipInfo(Player(), 'ExpTraitors_ParrotChange', 'NoShow', Id(bird));
+            }
+            09=else if(ScriptItemActionType(t_OnEnteringForm))
+            10 ^{
+                01=if(CurrentForm() == 'Ship')
+                02 ^{
+                    01=if(FormCurShip() == Player())
+                    02 ^{
+                        01=if(UselessItemData(bird, 3) == -2)
+                        02 ^{
+                            01=ShipSpecialBonuses(Player(), bonSkill5, ShipSpecialBonuses(Player(), bonSkill5) + UselessItemData(bird, 2));
+                            02=UselessItemData(bird, 3, -1);
+                        }
+                        03=if(UselessItemData(bird, 2) == 1)
+                        04 ^{
+                            01=if(UselessItemData(bird, 1) >= 2555)
+                            02 ^{
+                                01=if(UselessItemData(bird, 3) == -1) ShipSpecialBonuses(Player(), bonSkill5, ShipSpecialBonuses(Player(), bonSkill5) - UselessItemData(bird, 2));
+                                02=UselessItemData(bird, 2, 2);
+                                03=ShipSpecialBonuses(Player(), bonSkill5, ShipSpecialBonuses(Player(), bonSkill5) + 2);
+                                04=MessageBox(Format(CT('UselessItems.ExpTraitors_PirateParrot.ParrotLoyalty1'), '<Name>', Name(bird)));
+                                05=UselessItemText(bird, CT('UselessItems.ExpTraitors_PirateParrot.ParrotLoyaltyText1'));
+                            }
+                        }
+                        05=else if(UselessItemData(bird, 2) == 2)
+                        06 ^{
+                            01=if(UselessItemData(bird, 1) >= 7665)
+                            02 ^{
+                                01=if(UselessItemData(bird, 3) == -1) ShipSpecialBonuses(Player(), bonSkill5, ShipSpecialBonuses(Player(), bonSkill5) - UselessItemData(bird, 2));
+                                02=UselessItemData(bird, 2, 3);
+                                03=ShipSpecialBonuses(Player(), bonSkill5, ShipSpecialBonuses(Player(), bonSkill5) + 3);
+                                04=MessageBox(Format(CT('UselessItems.ExpTraitors_PirateParrot.ParrotLoyalty2'), '<Name>', Name(bird)));
+                                05=UselessItemText(bird, CT('UselessItems.ExpTraitors_PirateParrot.ParrotLoyaltyText2'));
+                            }
+                        }
+                    }
+                }
+            }
+            11=else if(ScriptItemActionType(t_OnItemDestroy))
+            12 ^{
+                01=if(UselessItemData(bird, 3) == -1)
+                02 ^{
+                    01=ShipSpecialBonuses(Player(), bonSkill5, ShipSpecialBonuses(Player(), bonSkill5) - UselessItemData(bird, 2));
+                    02=UselessItemData(bird, 3, -2);
+                }
+                03=if(CurrentForm() == 'Ship')
+                04 ^{
+                    01=if(UselessItemData(bird, 3) != -3)
+                    02 ^{
+                        01=int sellCheck = 0;
+                        02=for(int i = GalaxyEvents() - 1; i >= 0; i = i - 1)
+                        03 ^{
+                            01=if(GalaxyEventDate(i) < CurTurn()) break;
+                            02=if(GalaxyEventType(i) == 'PlayerSellsEquipment')
+                            03 ^{
+                                01=if(GalaxyEventData(i, 3) == Id(bird))
+                                02 ^{
+                                    01=sellCheck = 1;
+                                    02=break;
+                                }
+                            }
+                        }
+                        04=if(!sellCheck) Sound('Sound.ParrotPhrase2');
+                        05=else Sound('Sound.ParrotPhrase6');
+                    }
+                }
+            }
+            13=else if(ScriptItemActionType(t_OnDropItemFixed) || ScriptItemActionType(t_OnDropItem))
+            14 ^{
+                01=if(ScriptItemActObject1() == bird)
+                02 ^{
+                    01=if(UselessItemData(bird, 3) == -1)
+                    02 ^{
+                        01=ShipSpecialBonuses(Player(), bonSkill5, ShipSpecialBonuses(Player(), bonSkill5) - UselessItemData(bird, 2));
+                    }
+                    03=Sound('Sound.ParrotPhrase2');
+                    04=UselessItemData(bird, 3, -3);
+                    05=CoordX(bird, 0);
+                    06=CoordY(bird, 0);
+                }
+                03=else if(rnd(100) + 1 <= 4) Sound('Sound.ParrotPhrase1');
+                04=else if(rnd(100) + 1 <= 4) Sound('Sound.ParrotPhrase4');
+            }
+            15=else if(ScriptItemActionType(t_OnItemEquip) || ScriptItemActionType(t_OnItemDeEquip))
+            16 ^{
+                01=if(rnd(100) + 1 <= 4) Sound('Sound.ParrotPhrase3');
+            }
+            17=else if(ScriptItemActionType(t_OnShowingItemInfo))
+            18 ^{
+                01=if(rnd(100) + 1 <= 4) Sound('Sound.ParrotPhrase5');
+            }
+            19=else if(ScriptItemActionType(t_OnPlayerChangeHull))
+            20 ^{
+                01=if(rnd(100) + 1 <= 6) Sound('Sound.ParrotPhrase6');
+            }
+            21=else
+            22 ^{
+                01=if(rnd(1000) + 1 <= 45)
+                02 ^{
+                    01=if(substr(Name(bird), 0, 3) != '<M>')
+                    02 ^{
+                        01=Sound('Sound.ParrotPhrase' + (rnd(6) + 1));
+                        02=SetName(bird, '<M' + '>' + Name(bird));
+                    }
+                }
+            }
+        }
+        OnActCodeTypes=t_OnStep,t_OnEnteringForm,t_OnReEnteringForm,t_OnWeaponShot,t_OnMissileShot,t_OnGettingWeaponHit,t_OnGettingMissileHit,t_OnDealingDamage,t_OnTakingDamage,t_OnItemPickUp,t_OnDropItemFixed,t_OnDropItem,t_OnPlayerChangeHull,t_OnItemEquip,t_OnItemDeEquip,t_OnShowingItemInfo,t_OnItemDestroy
+        OnActStepTypes=0,11
+        OnUseCode ^{
+            01=if(Name(CurItem()) == 'Talking parrot')
+            02 ^{
+                01=str TempName = TextBox('Choose a name for your pet:', '', 50);
+                02=if(TempName == '') exit;
+                03=else SetName(CurItem(), TempName);
+            }
+            03=else Sound('Sound.ParrotPhrase' + (rnd(6) + 1));
+        }
+        Owner=PirateClan
+        ParrotLoyalty1=Years have passed, and <Name> still shares this steel skyboat with you. Your attachment to a chatty friend has increased significantly.
+        ParrotLoyalty2=After a myriad of space battles and adventures together, your level of affection for your feathered friend has increased exponentially. Feeling your love, <Name> tries his best to return the same to you.
+        ParrotLoyaltyText1=The feathered comrade, waving his wing, talks the heresy all over the ship.
+        ParrotLoyaltyText2=You gently pat your pet by the blue tuft. It's still great to have a living being with you in this cold and gloomy void of space.
+        Size=1
+        Text=A motley talking bird from the planet <color=255,240,100>Earth</color>. Adds <color=255,240,100>fifty</color> coolness points to its owner in the eyes of any space pirate.
+    }
+}

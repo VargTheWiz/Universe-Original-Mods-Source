@@ -1,0 +1,8 @@
+Data ^{
+    Script ^{
+        Mod_ShuRangersAcryns=1,Script.Mod_ShuRangersAcryns
+    }
+    ScriptLibs ^{
+        Mod_ShuRangersAcryns=UtilityFunctions
+    }
+}

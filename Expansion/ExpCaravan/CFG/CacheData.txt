@@ -1,0 +1,9 @@
+Bm ~{
+    ItemsUseless ~{
+        2ExpCaravan_CargoBox_s=Mods\Expansion\ExpCaravan\DATA\ItemsUseless\Cargo.gi
+    }
+}
+Script ~{
+    Mod_ExpCaravan=Mods\Expansion\ExpCaravan\DATA\Script\Mod_ExpCaravan.scr
+    Mod_ExpCaravan_PB=Mods\Expansion\ExpCaravan\DATA\Script\Mod_ExpCaravan_PB.scr
+}

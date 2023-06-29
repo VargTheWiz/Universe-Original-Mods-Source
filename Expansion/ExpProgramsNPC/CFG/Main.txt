@@ -1,0 +1,8 @@
+Data ^{
+    Script ^{
+        Mod_ExpProgramsNPC=1,Script.Mod_ExpProgramsNPC
+    }
+    ScriptLibs ^{
+        Mod_ExpProgramsNPC=UtilityFunctions
+    }
+}

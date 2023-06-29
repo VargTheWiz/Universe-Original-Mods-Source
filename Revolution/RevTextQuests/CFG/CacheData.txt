@@ -1,0 +1,7 @@
+Bm ~{
+    PQI ~{
+        Massacri_00=Mods\Revolution\RevTextQuests\DATA\PQI\Massacri_00.jpg
+        Massacri_01=Mods\Revolution\RevTextQuests\DATA\PQI\Massacri_01.jpg
+        Massacri_02=Mods\Revolution\RevTextQuests\DATA\PQI\Massacri_02.jpg
+    }
+}

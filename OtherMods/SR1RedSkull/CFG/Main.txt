@@ -1,0 +1,7 @@
+Data ~{
+    Script ^{
+        Mod_SR1RedSkullPart1=1,Script.Mod_SR1RedSkullPart1
+        Mod_SR1RedSkullPart2=1,Script.Mod_SR1RedSkullPart2
+        Mod_SR1RedSkullPart3=1,Script.Mod_SR1RedSkullPart3
+    }
+}

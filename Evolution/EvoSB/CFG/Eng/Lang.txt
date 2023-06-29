@@ -1,0 +1,301 @@
+FormRuins ^{
+    SB ^{
+        Improvement ^{
+            PlayerSend=Mod_enhancement_SB_DialogBlock
+        }
+        Satellite ^{
+            PlayerGotIt=Thank you, now I understand
+            PlayerInstruction=Probe Operation Training
+            PlayerNo=I will buy another time
+            PlayerOk=I will pay *SatMoney* cr. for *SatName*
+            PlayerSend=Mod_probes_SB_DialogBlock
+            SBAfterNo=Some other time, of course. In the meantime, maybe you need to upgrade some of your equipment?
+            SBAfterOk=You've made a wise purchase. We've delivered <SatName> to your ship.<br>Now you have to find an unpopulated planet, land there and plant the probe. You can then go about your business. The probe may take many months to survey a planet -- a process that can be expedited by putting several probes on the orbit.
+            SBInfo=Research probes are widely used to survey unpopulated planets. Please refer to our briefing for the specifics. Now, let's get straight to the point.
+            SBInfo1=In an exclusive, limited-time offer, rangers can purchase <SatName> from us.
+            SBInfo2=Description: *SatText*
+            SBInfo3=Cost: *SatMoney* cr.
+            SBInfo4=Weight: *SatSize*
+            SBInfo5=Number of probes: *SatCurCount*
+            SBInfo6=Technical control skill: *SatMayCount*
+            SBInfoAfterInstruction=Well, now that you have become more aware of the researcher's work, would you like to purchase a probe from us in order to quickly begin an exciting search?
+            SBInfoNo=In general: We are forced to deny your request. Please complete our probe control training.
+            SBInfoOk=In general: We are ready to sell you the probe.
+            SBInstruction1=<clr>General:<clrEnd> Research probes have been used for many centuries to survey the surfaces of unpopulated and undeveloped planets. Each probe is designed to work with specific terrain types, which determines its speed and efficiency. A probe's output is typically measured in millions of square kilometers relative to oceanic surface, land and mountainous terrain it can cover per day.
+            SBInstruction2=<clr>Probe control:<clrEnd> When surveying unpopulated planets, several probes can be controlled at a time. The exact number hinges on the operator's technical control. Research stations are prohibited from selling probes to those who haven't yet learned all the elements of operating such valuable equipment. This decree is grounded in concern for the native life forms and integrity of their natural development. We mustn't allow heaps of garbage flying on the orbit of undeveloped planets.
+            SBInstruction3=<clr>Operating instructions:<clrEnd> After landing on an unpopulated planet, open your explorer's map, take a probe and select its flight trajectory from the available options on the map. Take note of the number of days left until the survey is complete. Planting several probes will allow you to survey the planet faster. Pay close attention to the probe's specs. For example, if the probe cannot survey oceans, it makes no sense planting it on an oceanic planet. Your probes' activity will be updated regularly on the information panel. You can fly about your business, leaving the probes to do their work and send updates on the discovered goods and equipment. Upon returning to the planet, you can pick up the discovered objects, remove the probes from orbit and fly some place else.
+            SBInstruction4=<clr>Rights to research:<clrEnd> All the objects found by your probes are yours by law. Our probes are programmed to survey for objects created by highly developed civilizations. Please note that we cannot prevent unsanctioned landings and crashes which may lead to contamination of the environment. Some of the unpopulated planets are home to undeveloped life forms. They have a future of their own to discover, and it is your duty to clean up their planets' surface from the products of our civilizations. A misplaced barrel of fuel mustn't become the cause of another species' demise!
+            SBInstruction5=We strongly recommend that you save this information, <Player>.
+        }
+    }
+}
+Items ^{
+    Satellite ^{
+        0 ^{
+            0=1
+            1=1
+            2=1
+            Cost=Small
+            Name=Operon
+            Size=10
+            Speed=1,1,1
+            Text=A high-orbit <color=255,239,99>D</color> class satellite. Performs surface reconnaissance of any type of uncomplicated terrain.<br>Mid reliability.
+            Text=Water: <Water> / Plains: <Land> / Mountains: <Hill>
+            TextDialog=A high-orbit <clr>D<clrEnd> class satellite. Performs surface reconnaissance of any type of uncomplicated terrain. Mid reliability
+            TextDialog=Water: *Water* / Plains: *Land* / Mountains: *Hill*
+            Wear=Average
+        }
+        1 ^{
+            0=0
+            1=2
+            2=0
+            Cost=Small
+            Name=Cerind
+            Size=7
+            Speed=0,2,0
+            Text=A low-orbit <color=255,239,99>D</color> class satellite. Carries out monitoring on plains. Long service period guaranteed.
+            Text=Water: <Water> / Plains: <Land> / Mountains: <Hill>
+            TextDialog=A low-orbit <clr>D<clrEnd> class satellite. Carries out monitoring on plains. Long service period guaranteed.
+            TextDialog=Water: *Water* / Plains: *Land* / Mountains: *Hill*
+            Wear=Small
+        }
+        2 ^{
+            0=0
+            1=2
+            2=2
+            Cost=Average
+            Name=Tecton
+            Size=15
+            Speed=0,2,2
+            Text=A high-orbit <color=255,239,99>C</color> class satellite. Carries out monitoring on plains and mountains. Mid reliability
+            Text=Water: <Water> / Plains: <Land> / Mountains: <Hill>
+            TextDialog=A high-orbit <clr>C<clrEnd> class satellite. Carries out monitoring on plains and mountains. Mid reliability
+            TextDialog=Water: *Water* / Plains: *Land* / Mountains: *Hill*
+            Wear=Average
+        }
+        3 ^{
+            0=3
+            1=1
+            2=0
+            Cost=Average
+            Name=Shacklas
+            Size=10
+            Speed=3,1,0
+            Text=A low-orbit <color=255,239,99>C</color> class satellite. Excellent at scanning sea depths and adjoining lands. Requires constant maintenance.
+            Text=Water: <Water> / Plains: <Land> / Mountains: <Hill>
+            TextDialog=A low-orbit <clr>C<clrEnd> class satellite. Excellent at scanning sea depths and adjoining lands. Requires constant maintenance.
+            TextDialog=Water: *Water* / Plains: *Land* / Mountains: *Hill*
+            Wear=Huge
+        }
+        4 ^{
+            0=2
+            1=2
+            2=2
+            Cost=Big
+            Name=Neutra
+            Size=15
+            Speed=2,2,2
+            Text=A spy<color=255,239,99>B</color> class satellite. Used by special services. Efficient at scanning all types of terrain, but has low reliability.
+            Text=Water: <Water> / Plains: <Land> / Mountains: <Hill>
+            TextDialog=A spy<clr>B<clrEnd> class satellite. Used by special services. Efficient at scanning all types of terrain, but has low reliability.
+            TextDialog=Water: *Water* / Plains: *Land* / Mountains: *Hill*
+            Wear=Big
+        }
+        5 ^{
+            0=1
+            1=1
+            2=4
+            Cost=Big
+            Name=Oculus
+            Size=25
+            Speed=1,1,4
+            Text=A low-orbit <color=255,239,99>B</color> class satellite. Excellent at scanning mountains and adjoining territory. Virtually everlasting.
+            Text=Water: <Water> / Plains: <Land> / Mountains: <Hill>
+            TextDialog=A low-orbit <clr>B<clrEnd> class satellite. Excellent at scanning mountains and adjoining territory. Virtually everlasting.
+            TextDialog=Water: *Water* / Plains: *Land* / Mountains: *Hill*
+            Wear=Mini
+        }
+        6 ^{
+            0=5
+            1=2
+            2=1
+            Cost=Huge
+            Name=Aquamator
+            Size=15
+            Speed=5,2,1
+            Text=A low-orbit <color=255,239,99>A</color> class satellite. Makes periodic dives to carefully study the liquid or gaseous environment of the planet. Reliability is expected to be low.
+            Text=Water: <Water> / Plains: <Land> / Mountains: <Hill>
+            TextDialog=A low-orbit <clr>A<clrEnd> class satellite. Makes periodic dives to carefully study the liquid or gaseous environment of the planet. Reliability is expected to be low.
+            TextDialog=Water: *Water* / Plains: *Land* / Mountains: *Hill*
+            Wear=Big
+        }
+        7 ^{
+            0=2
+            1=3
+            2=3
+            Cost=Huge
+            Name=Optirall
+            Size=30
+            Speed=2,3,3
+            Text=A military<color=255,239,99>A</color> class satellite.<br>Almost equally effective in reconnaissance of any type of terrain. Reliability is high.
+            Text=Water: <Water> / Plains: <Land> / Mountains: <Hill>
+            TextDialog=A military<clr>A<clrEnd>. Almost equally effective in reconnaissance of any type of terrain. Reliability is high.
+            TextDialog=Water: *Water* / Plains: *Land* / Mountains: *Hill*
+            Wear=Small
+        }
+        Broken=(repairs required)
+        BrokenInUse=Incoming signal from planet <Planet>. Recon probe <Name> has malfunctioned and requires repair.
+        IdleInfo=- <Name> (weight <Size>) is idle on planet <Planet>
+        Name=Probe
+        Work=(monitoring planet)
+        WorkEnd=(idle)
+    }
+}
+MicroModuls ^{
+    EvoSB_AcrynSeed ^{
+        CustomTag=EvoSB_AcrynSeed
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ~{
+            RuinsProbeInStock ^{
+                Description=Info box for storing and auto-updating the probe available at the station
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=if(ScriptItemActionType(t_OnStep,11))
+                    02 ^{
+                        01=if(Rnd(1,17)==9)
+                        02 ^{
+                            01=dword info=CurInfo();
+                            02=int level;
+                            03=if(Rnd(1,1000)<=(45*GalaxyTechLevel()))level=GalaxyTechLevel()-1;
+                            04=else level=Rnd(1,GalaxyTechLevel())-1;
+                            05=dword cur_item=CreateZond(level,Rnd(0,4));
+                            06=int cost=-1;
+                            07=for(int i=0;i<=2;i=i+1)
+                            08 ^{
+                                01=if(GetEquipmentStats(cur_item,i)!=CT('Items.Satellite.'+level+'.'+i))
+                                02 ^{
+                                    01=cost=i;
+                                    02=break;
+                                }
+                            }
+                            09=ShipCustomShipInfoData(0,info,1,ItemSize(cur_item));
+                            10=ShipCustomShipInfoData(0,info,2,ItemCost(cur_item));
+                            11=ShipCustomShipInfoData(0,info,3,ItemOwner(cur_item));
+                            12=ShipCustomShipInfoTextData(0,info,1,Name(cur_item));
+                            13=ShipCustomShipInfoTextData(0,info,2,level);
+                            14=ShipCustomShipInfoTextData(0,info,3,cost);
+                            15=FreeItem(cur_item);
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnStep
+                OnActStepTypes=11
+            }
+        }
+    }
+}
+Script ^{
+    Mod_EvoSB ^{
+        100=We can try changing the base attributes of any standard equipment, resulting in an upgraded item. However, there is a risk that complicating the item's construction will make it less reliable, making repairs more difficult. To prevent this from happening, we can only upgrade each separate item once. No secondary upgrades will be available. Suffice it to say, <Player>, you should upgrade your ship wisely, sparing no money for proper specialists.
+        104=<color=255,240,100>Message from the Galactic Committee for the Study of Uninhabited Planets:</color><br>Dear <Player>, we are pleased to announce that according to our data, you have made a complete exploring of at least <0> uninhabited planets. Undoubtedly, your experience as a researcher has significantly increased during this time, and therefore we are expanding the maximum limit of probes under your control to <1>.<br>We hope for your further contribution to science and ecology, and also wish you success in this noble cause.
+        105=in your tranclucator, we have not found
+        106=on a rebel ship, we have not found
+        107=on your partner's ship, we have not found
+        108=on a mercenary ship, we have not found
+        109=on the ship of the special agent, we have not found
+        110=on your ship, we have not found
+        111=for
+        112=pp.
+        115=nd.
+        116=In addition, they will need nodes.
+        120=Well, that means no upgrades. Thanks for your cooperation, ranger <Player>.
+        121=Let's make a list of all the possible upgrades for your ship...<br>...<br>Sorrt, but <0> upgradable equipment.
+        123=As you wish. We will be glad if you decide to improve something else.
+        125=Alrighty, our interns are done poking around your <ShortName>. It looks good at a glance, but we'll let you be the judge of that, <Player>. Go on and check it out. Anything else you wanted to upgrade?
+        128=Interns it is!
+        132=The selected equipment has several specs. Our specialists can focus on any one of them so as to get optimal results from the upgrade. Which spec do you want us to focus on?
+        133=Let's make a list of all the possible upgrades for your ship:<br><0><br><1><2><br>So, what would you like to upgrade from this list?
+        137=I want to improve my equipment.
+        140=Sorry to hear that, <Player>. But we hope you will still change your mind, because it is extremely useful to improve equipment.
+        143=No, i changed my mind
+        150=Maybe I'll choose something else
+        154=Let's make a list of equipment with installed micromodules :<br><0><br><1><2><br>From which of them exactly you want to extract the micromodule, <Player>?
+        155=We can involve our best specialists in the extraction operation, but their services are not cheap. If your finances do not pull them, then ordinary specialists will work. Well, for a small amount, only interns will work.<br>Between an item like <1> and our crews' commissions, the prices break down as follows:<br><2><br>Top technicians - <3> cr. and <4> <5><br>Regular crew - <6> cr. and <7> <8><br>Interns - <9> cr. and <10> <11><br><12><br><13>Whom will you entrust this work to, <Player>?
+        156=Well, that means no extraction. Thanks for your cooperation, ranger <Player>.
+        157=We can get our best technicians to experiment on your equipment, but they don't come cheap. If you cannot afford them, we will use our regular crews instead. And if you can't afford those either, we'll have to give the job to the interns.<br>Between an item like  <0> and our crews' commissions, the prices break down as follows:<br><1><br>Top technicians - <2> cr.<br>Regular crews - <3> cr.<br>Interns - <4> cr.<br><5><br>So, whom will you entrust this work to, <Player>?
+        166=Yes, I'll take my chances
+        167=Alrighty, our interns are done poking around your <ShortName>. It looks good at a glance, but we'll let you be the judge of that, <Player>. Go on and check it out.
+        168=Excellent, the work is completed and your account has already been debited. We don't waste any time!
+        169=Excellent, the work is completed and your account has already been debited. We don't waste any time! Is there anything else you wish to upgrade?
+        172=I'll pay for the best you've got
+        173=specialists
+        174=Let the regular crews extract it
+        175=I trust interns!
+        176=interns
+        178=Well, whatever you want. We would love for you to decide to extract something else.
+        182=interns
+        183=specialists
+        187=No, I don't want
+        188=Well, what micromodules can you extract?
+        190=I'd better choose another subject
+        191=No, I do not intend to make such a choice.
+        195=Let's make a list of your appropriate equipment...<br>...<br>Sorry, <Player>, but neither on your ship nor in the storage, we have not found equipment with a micromodule suitable for extraction.
+        197=Extracting a micromodule from equipment is a very complicated technical procedure, the consequences of which cannot be predicted in advance. Of course, our specialists are capable of this, but you should understand that it will not be cheap, and the probability of success <clr>is not guaranteed<clrEnd>. The slightest mistake in the calculations can lead to irreversible damage to the module, and sometimes the entire device in which it was installed.<br>That is why we recommend that you do not skimp and order the extraction of micromodules only from our best specialists. After all, the more experienced the experts, the higher their chances of success.
+        200=Nobody, your prices are outrageous!
+        201=I need to extract the micromodule
+        202=We can involve our best specialists in the extraction operation, but their services are not cheap. If your finances do not pull them, then ordinary specialists will work. Well, for a small amount, only interns will work. <br>Between an item like <0> with <1> micromodule and our crews' commissions, the prices break down as follows:<br><2><br>Top technicians - <3> cr.<br>Regular crew - <4> cr.<br>Interns - <5> cr.<br><6><br>Whom will you entrust this work to, <Player>?
+        203=(first you need to move it to the station storage)
+        205=I don't even know how to tell you, but... We lost them. Fully. Your <0> and micromodule <1> are corrupted forever.<br>My sincere condolences, <Player>, but you yourself signed a contract that clearly spelled out all the possible risks and a complete waiver of claims in case of failure in the execution of the order. Believe me, I'm really sorry.<2>
+        208=Great, our best specialists have already worked on the specified equipment. It has gotten much better!
+        209=Great, our best specialists have already worked on the specified equipment. It has gotten much better!<br>Is there anything else you wish to upgrade? For good money, we are ready to work at least all day.
+        211=Would you like to try your luck in extracting another module?
+        217=Well, it's up to you. But if you suddenly change your mind - we are always here.
+        218=(in use)
+        220=I understand that the news is sad, but maybe you still want to try your luck in extracting another module?
+        221=Naturally, <Player>. This is your complete right.
+        224=I didn't want to extract any micromodule
+        226=Well, in that case, you should know that during the extraction process, <0> will have almost no margin for error. All actions must be performed very quickly and accurately, and in order to reduce the risk of losing both the micromodule and the item, we determine in advance what our experts should focus on preserving in case of sudden complications.<br>So, the probability of saving <1> in case of problems is <2><clr>%<clrEnd>, and saving the micromodule <3> will only be possible with a <4><clr>%<clrEnd> chance. You must choose <Player>, and I strongly recommend that you use this choice responsibly.
+        232=Better save <0>, it's more useful
+        233=Micromodule <0> has been successfully removed and delivered to your ship. Unfortunately, as a result of complications that arose during the operation, <1> was lost forever.<br>But do not be upset, <Player>. You had to make a difficult decision, but the result was somewhat positive.<2>
+        234=Well, whatever you want. We are always happy to see happy smiles on the faces of our customers.
+        235=And although the time is extremely inopportune, but on duty I am obliged to ask this question. Would you like to try your luck with extracting another module?
+        236=Huge success! The extraction operation went flawlessly - <0> and micromodule <1> were successfully separated from each other. I must admit that, despite all our experience and professionalism, it is extremely rare to pull off such a thing. Congratulations again!<2>
+        237=Would you like to try your luck again in extraction?
+        238=In this case, <0> will be much more valuable to me
+        240=Micromodule <0> was removed, but that's where the good news ends.<br>We managed to save your <1> from irreversible damage, but as a result of complications that arose during the operation, it still received serious damage, surviving only by some miracle unknown to science. As for the micromodule, our <2> failed to save it. Condolences.<3>
+        241=Plus, they will need <clr>protoplasm<clrEnd>.
+        242=Remember that getting the job done requires <clr>nodes<clrEnd> for us right here. We can take them from your cargo bay, or at the storage, but not from your node-account.
+        44=<0>
+        45=<br>
+        47=Improve equipment <0>
+        48=Improve equipment of bro <0>
+        51=Improve my equipment
+        53=Jump
+        54=Range
+        55=Speed
+        56=Power
+        57=Damage
+        63=Let the regular crews handle it
+        69=Yes, of course
+        70=Nope, that doesn't work for me
+        71=I've changed my mind, forget it
+        72=This is an extortion, I'm not gonna pay!
+        74=Focus on <0>
+        75=No, thank you
+        78=I'll pay for the best you've got
+        79=Which items can you upgrade?
+        94=I am interested in research probes
+        96=Improve equipment of rebel <0>
+        97=Improve equipment of mercenary <0>
+        98=Improve equipment of special agent <0>
+        99=Improve equipment of ranger <0>
+    }
+}

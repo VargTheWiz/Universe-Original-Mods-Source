@@ -1,0 +1,13 @@
+Bm ~{
+    FormCount2 ~{
+        2KindEmpty=Mods\Expansion\ExpPanelPlus\DATA\NumberBox\2KindEmpty.gi
+    }
+    FormShip2 ~{
+        UseTransmittersA=Mods\Expansion\ExpPanelPlus\DATA\Button\UseTransmittersA.gi
+        UseTransmittersD=Mods\Expansion\ExpPanelPlus\DATA\Button\UseTransmittersD.gi
+        UseTransmittersN=Mods\Expansion\ExpPanelPlus\DATA\Button\UseTransmittersN.gi
+    }
+}
+Script ~{
+    Mod_ExpPanelPlus=Mods\Expansion\ExpPanelPlus\DATA\Script\Mod_ExpPanelPlus.scr
+}

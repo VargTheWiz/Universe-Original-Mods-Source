@@ -1,0 +1,70 @@
+Music ^{
+    All ^{
+        1=Music\special\hymn.dat
+        1=Music\fly\longway.dat
+        1=Music\fly\Beyond_reach.dat
+    }
+    ArcadeBattle ^{
+        10=Music\fly\Awakening.dat
+        2=Music\battle\Boy1.dat
+    }
+    Base ^{
+        1=Music\special\hymn.dat
+        10=Music\special\SpaceIsCalling.dat
+        20=Music\special\SpaceIsCalling.dat
+        3=Music\fly\HyperDream2.dat
+    }
+    Battle ^{
+        1=Music\battle\fight2.dat
+        1=Music\battle\Boy1.dat
+    }
+    CB ^{
+        1=Music\special\SpaceIsCalling.dat
+        10=Music\special\SpaceIsCalling.dat
+    }
+    Nation ^{
+        FeiPirate ^{
+            1=Music\planet\fei1.dat
+        }
+        GaalPirate ^{
+            1=Music\planet\gaal.dat
+        }
+        MalocPirate ^{
+            1=Music\planet\malloc4.dat
+        }
+        PelengPirate ^{
+            1=Music\planet\weapon.dat
+        }
+        PeoplePirate ^{
+            1=Music\planet\people.dat
+        }
+    }
+    Quest ^{
+        1=Music\quests\gladiator.dat
+        1=Music\special\SilentFlower.dat
+        1=Music\special\SpaceIsCalling.dat
+        1=Music\fly\starflight.dat
+        1=Music\special\outroden.dat
+    }
+    Robot ^{
+        1=Music\fly\Beyond_reach.dat
+        1=Music\planet\bunker.dat
+        1=Music\planet\RobotForce.dat
+    }
+    Song ^{
+        3=Music\special\song.dat
+        5=Music\special\song.dat
+    }
+    StarMap ^{
+        1=Music\fly\longway.dat
+        1=Music\fly\Surf.dat
+        1=Music\fly\Theo-Inside.dat
+        1=Music\fly\Awakening.dat
+        1=Music\fly\fly3.dat
+        1=Music\fly\trash.dat
+        1=Music\fly\fly12.dat
+        1=Music\fly\Beyond_reach.dat
+        1=Music\fly\HyperDream2.dat
+        1=Music\fly\starflight.dat
+    }
+}

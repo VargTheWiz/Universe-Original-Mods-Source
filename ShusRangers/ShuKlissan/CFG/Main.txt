@@ -1,0 +1,1989 @@
+Data ^{
+    Race ^{
+        Color ^{
+            Klissan=93,182,93
+        }
+        Emblem ^{
+            2Klissan=Alpha,Bm.Race.Emblem.2Klissan
+            2Nones=Alpha,Bm.Race.Emblem.2Nones
+        }
+    }
+    SE ^{
+        Item ^{
+            Klissan0 ^{
+                2Image=Bm.Container.k20
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Klissan1 ^{
+                2Image=Bm.Container.k25
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Klissan2 ^{
+                2Image=Bm.Container.k32
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Klissan3 ^{
+                2Image=Bm.Container.k38
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Klissan4 ^{
+                2Image=Bm.Container.k38
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            KlissanRemains1 ^{
+                2Image=Bm.Container.KlissanRemains1
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            KlissanRemains2 ^{
+                2Image=Bm.Container.KlissanRemains2
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            KlissanRemains3 ^{
+                2Image=Bm.Container.KlissanRemains3
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            KlissanRemains4 ^{
+                2Image=Bm.Container.KlissanRemains4
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            KlissanRemains5 ^{
+                2Image=Bm.Container.KlissanRemains5
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            KlissanRemains6 ^{
+                2Image=Bm.Container.KlissanRemains6
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            KlissanRemains7 ^{
+                2Image=Bm.Container.KlissanRemains7
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            KlissanRemains8 ^{
+                2Image=Bm.Container.KlissanRemains8
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm0_0 ^{
+                2Image=Bm.Items.2kProtoplasm0_0_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm0_1 ^{
+                2Image=Bm.Items.2kProtoplasm0_1_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm0_2 ^{
+                2Image=Bm.Items.2kProtoplasm0_2_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm0_3 ^{
+                2Image=Bm.Items.2kProtoplasm0_3_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm0_4 ^{
+                2Image=Bm.Items.2kProtoplasm0_4_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm1_0 ^{
+                2Image=Bm.Items.2kProtoplasm1_0_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm1_1 ^{
+                2Image=Bm.Items.2kProtoplasm1_1_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm1_2 ^{
+                2Image=Bm.Items.2kProtoplasm1_2_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm1_3 ^{
+                2Image=Bm.Items.2kProtoplasm1_3_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm1_4 ^{
+                2Image=Bm.Items.2kProtoplasm1_4_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm2_0 ^{
+                2Image=Bm.Items.2kProtoplasm2_0_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm2_1 ^{
+                2Image=Bm.Items.2kProtoplasm2_1_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm2_2 ^{
+                2Image=Bm.Items.2kProtoplasm2_2_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm2_3 ^{
+                2Image=Bm.Items.2kProtoplasm2_3_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm2_4 ^{
+                2Image=Bm.Items.2kProtoplasm2_4_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm3_0 ^{
+                2Image=Bm.Items.2kProtoplasm3_0_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm3_1 ^{
+                2Image=Bm.Items.2kProtoplasm3_1_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm3_2 ^{
+                2Image=Bm.Items.2kProtoplasm3_2_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm3_3 ^{
+                2Image=Bm.Items.2kProtoplasm3_3_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm3_4 ^{
+                2Image=Bm.Items.2kProtoplasm3_4_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm4_0 ^{
+                2Image=Bm.Items.2kProtoplasm4_0_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm4_1 ^{
+                2Image=Bm.Items.2kProtoplasm4_1_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm4_2 ^{
+                2Image=Bm.Items.2kProtoplasm4_2_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm4_3 ^{
+                2Image=Bm.Items.2kProtoplasm4_3_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            kProtoplasm4_4 ^{
+                2Image=Bm.Items.2kProtoplasm4_4_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            mm_Spore ^{
+                1Image=Bm.Container.KlissanSpore
+                2Image=Bm.Container.KlissanSpore
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+        }
+        Missile ^{
+            wklissan_protomissile ^{
+                PosZ=Missile
+            }
+        }
+        Ruins ^{
+            Handler ^{
+                Image=Bm.Ruins.Handler
+                ImageI=GI,Bm.Ruins.Handleri
+                ImageMap=GI,Bm.Ruins.MapHandler
+                PosZ=Ruins
+            }
+            KB ^{
+                Image=Bm.Ruins.KB
+                ImageI=GI,Bm.Ruins.KBi
+                ImageMap=GI,Bm.Ruins.MapKB
+                PosZ=Ruins
+            }
+            Machpella ^{
+                Image=Bm.Ruins.Machpella
+                ImageI=GI,Bm.Ruins.Machpellai
+                ImageMap=GI,Bm.Ruins.MapMachpella
+                PosZ=Ruins
+            }
+        }
+        Ship ^{
+            Akrin ^{
+                FeiGuard ^{
+                    2ImageP=GI,Bm.ShipP.FeiGuard
+                    Anim ^{
+                        Normal=2,[120,0-16]
+                    }
+                    AnimS ^{
+                        Normal=2,[120,0-16]
+                    }
+                    Image=Bm.Ship.FeiGuard
+                    ImageMap=Bm.Ship.SpecialMap
+                    ImageS=Bm.Ship.FeiGuard
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=65,76
+                    SmeImageMap=2,2
+                    StateTime=2000
+                }
+                Klissan1 ^{
+                    2ImageP=GI,Bm.ShipP.Klissan1
+                    Anim ^{
+                        0=1,[130,33-49]
+                        0=1,[130,33-34][132,35-35][133,36-36][134,37-37][135,38-38][136,39-39][137,40-40][138,41-42][139,43-43][140,44-44][139,45-45][137,46-46][135,47-47][133,48-48][130,49-49]
+                        Normal=2,[120,0-32]
+                    }
+                    AnimS ^{
+                        Normal=2,[120,0-32]
+                    }
+                    Image=Bm.Ship.Klissan1
+                    ImageMap=Bm.Ship.KlissanMap
+                    ImageS=Bm.Ship.Klissan1
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=65,76
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=32,103
+                    Tail2=95,103
+                }
+                Klissan2 ^{
+                    2ImageP=GI,Bm.ShipP.Klissan2
+                    Anim ^{
+                        0=2,[100,33-65]
+                        Normal=3,[120,0-32]
+                    }
+                    AnimS ^{
+                        Normal=3,[120,0-32]
+                    }
+                    Image=Bm.Ship.Klissan2
+                    ImageMap=Bm.Ship.KlissanMap
+                    ImageS=Bm.Ship.Klissan2
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=65,76
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=36,115
+                    Tail2=93,115
+                }
+                Klissan3 ^{
+                    2ImageP=GI,Bm.ShipP.Klissan3
+                    Anim ^{
+                        0=1,[75,33-73]
+                        Normal=5,[120,0-32]
+                    }
+                    AnimS ^{
+                        Normal=5,[75,0-32]
+                    }
+                    Image=Bm.Ship.Klissan3
+                    ImageMap=Bm.Ship.KlissanMap
+                    ImageS=Bm.Ship.Klissan3
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=65,76
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=38,97
+                    Tail2=88,97
+                }
+                Klissan4 ^{
+                    2ImageP=GI,Bm.ShipP.Klissan4
+                    Anim ^{
+                        0=3,[120,32-48]
+                        1=2,[120,49-65]
+                        Normal=5,[120,0-31]
+                    }
+                    AnimS ^{
+                        Normal=5,[120,0-31]
+                    }
+                    Image=Bm.Ship.Klissan4
+                    ImageMap=Bm.Ship.KlissanMap
+                    ImageS=Bm.Ship.Klissan4
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=65,76
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=62,111
+                }
+                Klissan5 ^{
+                    2ImageP=GI,Bm.ShipP.Klissan5
+                    Anim ^{
+                        0=4,[100,33-48]
+                        1=10,[80,49-81]
+                        Normal=5,[100,0-32]
+                    }
+                    AnimS ^{
+                        Normal=5,[100,0-32]
+                    }
+                    Image=Bm.Ship.Klissan5
+                    ImageMap=Bm.Ship.KlissanMap
+                    ImageS=Bm.Ship.Klissan5
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=65,76
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=64,98
+                }
+                Klissan6 ^{
+                    2ImageP=GI,Bm.ShipP.Klissan1
+                    Anim ^{
+                        0=1,[130,33-49]
+                        0=1,[130,33-34][132,35-35][133,36-36][134,37-37][135,38-38][136,39-39][137,40-40][138,41-42][139,43-43][140,44-44][139,45-45][137,46-46][135,47-47][133,48-48][130,49-49]
+                        Normal=2,[120,0-32]
+                    }
+                    AnimS ^{
+                        Normal=2,[120,0-32]
+                    }
+                    Image=Bm.Ship.Klissan1
+                    ImageMap=Bm.Ship.KlissanMap
+                    ImageS=Bm.Ship.Klissan1
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=65,76
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=32,103
+                    Tail2=95,103
+                }
+            }
+            X ^{
+                0 ^{
+                    2ImageP=GI,Bm.ShipP.x0
+                    Anim ^{
+                        0=1,[50,32-63]
+                        Normal=1,[50,0-31]
+                    }
+                    AnimS ^{
+                        Normal=1,[50,0-31]
+                    }
+                    Image=Bm.Ship.x0
+                    ImageMap=Bm.Ship.FeiMap
+                    ImageS=Bm.Ship.x0s
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,43
+                    SmeImageMap=2,2
+                    StateTime=2000
+                }
+                1 ^{
+                    2ImageP=GI,Bm.ShipP.x1
+                    Anim ^{
+                        0=1,[50,33-65]
+                        Normal=1,[50,0-32]
+                    }
+                    AnimS ^{
+                        Normal=1,[50,0-32]
+                    }
+                    Image=Bm.Ship.x1
+                    ImageMap=Bm.Ship.FeiMap
+                    ImageS=Bm.Ship.x1s
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                }
+                2 ^{
+                    2ImageP=GI,Bm.ShipP.x2
+                    Anim ^{
+                        0=1,[50,30-62]
+                        Normal=1,[50,0-29]
+                    }
+                    AnimS ^{
+                        Normal=1,[50,0-29]
+                    }
+                    Image=Bm.Ship.x2
+                    ImageMap=Bm.Ship.FeiMap
+                    ImageS=Bm.Ship.x2s
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                }
+            }
+        }
+        Sound ^{
+            Loop ^{
+                Ruins ^{
+                    Handler ^{
+                        10=3000,Sound.LoopRuins03
+                    }
+                    KB ^{
+                        10=3000,Sound.LoopRuins03
+                    }
+                    Machpella ^{
+                        10=3000,Sound.LoopRuins03
+                    }
+                }
+            }
+            Rnd ^{
+                Ruins ^{
+                    Handler ^{
+                    }
+                    KB ^{
+                    }
+                    Machpella ^{
+                    }
+                }
+            }
+        }
+        Weapon ^{
+            10 ^{
+                Palettes ^{
+                    4 ^{
+                        Color0=0.25,1.0,0.1
+                        SoundShot=Sound.Laser
+                    }
+                }
+            }
+            11 ^{
+                Palettes ^{
+                    4 ^{
+                        Color0=0.1,1.0,0.1
+                        Color1=0.1,0.8,0.1
+                        Color2=0.0,1.0,0.3
+                        Color3=0.1,1.0,0.1
+                        Color4=0.0,1.0,0.0
+                        Color5=0.3,1.0,0.0
+                        SoundShot=Sound.Narguner
+                    }
+                }
+            }
+            13 ^{
+                Palettes ^{
+                    4 ^{
+                        GAI=Bm.Weapon.Hellwave
+                        SoundShot=Sound.Hellwave
+                    }
+                    44 ^{
+                        GAI=Bm.Weapon.Hellwave2
+                        SoundShot=Sound.Hellwave2
+                    }
+                    5 ^{
+                        GAI=Bm.Weapon.Cluster
+                        SoundShot=Sound.Cluster
+                    }
+                    7 ^{
+                        GAI=Bm.Weapon.Shield
+                        SoundShot=Sound.Shield
+                    }
+                }
+            }
+            15 ^{
+                Palettes ^{
+                    4 ^{
+                        Color0=0.0,1.0,0.0
+                        Color1=0.2,1.0,0.2
+                        Color2=0.1,0.9,0.1
+                        SoundShot=Sound.Splitter
+                    }
+                }
+            }
+            16 ^{
+                Palettes ^{
+                    4 ^{
+                        Color0=0.3,0.8,0.0
+                        Color1=0.0,0.8,0.3
+                        GAI=Bm.Weapon.W17
+                        SoundShot=Sound.Capacer
+                    }
+                }
+            }
+            5 ^{
+                Palettes ^{
+                    4 ^{
+                        Color0=0.3,1.0,0.3
+                        Color1=0.0,1.0,0.0
+                        Color2=0.2,0.9,0.0
+                        SoundShot=Sound.Emitter
+                    }
+                }
+            }
+            6 ^{
+                Palettes ^{
+                    4 ^{
+                        Color0=0.0,1.0,0.0
+                        Color1=0.1,0.9,0.2
+                    }
+                }
+            }
+            7 ^{
+                Palettes ^{
+                    4 ^{
+                        Color0=0.0,1.0,0.0
+                        Color1=0.2,0.8,0.2
+                        Color2=0.4,0.6,0.4
+                        Color3=0.5,0.4,0.5
+                        Color4=0.15,0.8,0.15
+                        Color5=0.1,0.9,0.1
+                        Color6=0.5,0.9,0.3
+                        Color7=0.7,0.75,0.45
+                        SoundShot=Sound.Stunner
+                    }
+                }
+            }
+            8 ^{
+                Palettes ^{
+                    6 ^{
+                        Color0=0.95,0.83,0.5
+                        GAI=Bm.Weapon.Nihiler
+                        SoundShot=Sound.Nihiler
+                    }
+                    7 ^{
+                        Color0=0.95,0.83,0.5
+                        GAI=Bm.Weapon.Kvink
+                        SoundShot=Sound.Kvink
+                    }
+                }
+            }
+            9 ^{
+                Palettes ^{
+                    10 ^{
+                        Color0=0.2,1.0,0.2
+                        Color1=0.2,0.7,0.2
+                        Color2=0.4,0.4,0.4
+                        Color3=0.3,0.7,0.2
+                        GAI=Bm.Weapon.Antimatter
+                        SoundShot=Sound.Antimatter
+                    }
+                }
+            }
+            AuraEffect ^{
+                Palettes ^{
+                    5 ^{
+                        GAI=Bm.Weapon.Cluster
+                    }
+                }
+            }
+            MissileHit ^{
+                Palettes ^{
+                    9 ^{
+                        GAI=Bm.Weapon.Protomissile
+                    }
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_ShuKlissan=1,Script.Mod_ShuKlissan
+    }
+    ScriptLibs ^{
+        Mod_ShuKlissan=UtilityFunctions
+    }
+}
+ML ^{
+    GameEnd ^{
+        Panel ^{
+            GraphButton ^{
+                Help=FormGameEnd.Ok
+                ImageDown=GI,Bm.FormEnd2.2ExitD
+                ImageNormal=GI,Bm.FormEnd2.2ExitN
+                ImageNormalA=GI,Bm.FormEnd2.2ExitA
+                Kind=Normal
+                KindHit=Rect
+                Name=Ok
+                Pos=950,703,2
+                Size=48,49
+            }
+            GraphButton ^{
+                Help=FormGameEnd.Load
+                ImageDown=GI,Bm.FormEnd2.2OpenD
+                ImageNormal=GI,Bm.FormEnd2.2OpenN
+                ImageNormalA=GI,Bm.FormEnd2.2OpenA
+                Kind=Normal
+                KindHit=Rect
+                Name=Load
+                Pos=874,701,2
+                Size=48,50
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.2bg
+                Name=ImageFon1
+                Pos=0,0,1000
+                Size=4200,1600
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.2bg
+                Name=ImageFon2
+                Pos=4200,0,1001
+                Size=4200,1600
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.PanelTop
+                Name=ImageTop
+                Pos=0,0,999
+                Size=1024,23
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.PanelBottom
+                Name=ImageBottom
+                Pos=0,684,999
+                Size=1024,84
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Screen
+                Name=ImageScreen
+                Pos=0,-131,998
+                Size=427,997
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.2Maloc
+                Name=Maloc
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.2Peleng
+                Name=Peleng
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.2Fei
+                Name=Fei
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.2Gaal
+                Name=Gaal
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.PirateClan
+                Name=PirateWin
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final1Maloc
+                Name=PirateWin1Maloc
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final1Peleng
+                Name=PirateWin1Peleng
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final1People
+                Name=PirateWin1People
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final1Fei
+                Name=PirateWin1Fei
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final1Gaal
+                Name=PirateWin1Gaal
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final2
+                Name=PirateWin2
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final3Maloc
+                Name=PirateWin3Maloc
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final3Peleng
+                Name=PirateWin3Peleng
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final3People
+                Name=PirateWin3People
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final3Fei
+                Name=PirateWin3Fei
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final3Gaal
+                Name=PirateWin3Gaal
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final4Maloc
+                Name=PirateWin4Maloc
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final4Peleng
+                Name=PirateWin4Peleng
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final4People
+                Name=PirateWin4People
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final4Fei
+                Name=PirateWin4Fei
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final4Gaal
+                Name=PirateWin4Gaal
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final5Maloc
+                Name=PirateWin5Maloc
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final5Peleng
+                Name=PirateWin5Peleng
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final5People
+                Name=PirateWin5People
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final5Fei
+                Name=PirateWin5Fei
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final5Gaal
+                Name=PirateWin5Gaal
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final6
+                Name=PirateWin6
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final7
+                Name=PirateWin7
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final8
+                Name=PirateWin8
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final5Maloc
+                Name=CustomEnd8
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final5Peleng
+                Name=CustomEnd9
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final5People
+                Name=CustomEnd10
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final5Fei
+                Name=CustomEnd11
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final5Gaal
+                Name=CustomEnd12
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final7
+                Name=CustomEnd13
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final3Gaal
+                Name=CustomEnd7
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final3Fei
+                Name=CustomEnd6
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final3People
+                Name=CustomEnd5
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final3Peleng
+                Name=CustomEnd4
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final3Maloc
+                Name=CustomEnd3
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final2
+                Name=CustomEnd2
+                Pos=0,59,9
+                Size=414,629
+            }
+            Image ^{
+                Image=GI,Bm.FormEnd2.Final6
+                Name=CustomEnd1
+                Pos=0,59,9
+                Size=414,629
+            }
+            Label ^{
+                AlignX=Right
+                AlignY=CenterEx
+                Font=Font.2Ranger
+                Name=LabelHelp
+                Pos=297,717,2
+                Size=516,25
+                TextColor=78,141,161
+                WordWrap=True
+            }
+            Name=MainPanel
+            Panel ^{
+                GraphBuf ^{
+                    Name=GBText
+                    Pos=0,0,5
+                    Size=552,10
+                }
+                Name=PanelText
+                Pos=450,23,5
+                Size=550,661
+            }
+            Pos=0,0
+            Size=1024,768
+        }
+    }
+    GameSettings ^{
+        Border=0,0,1024,768
+        Panel ^{
+            Name=MainPanel
+            Panel ^{
+            }
+            Panel ^{
+                GraphButton ^{
+                    Kind=Normal
+                    KindHit=Rect
+                    Name=Level1
+                    OnPressCode ^{
+                        01=unknown SetParFromTxt=ImportedFunction('UtilityFunctions','SetParFromTxt');
+                        02=unknown GetParFromTxt=ImportedFunction('UtilityFunctions','GetParFromTxt');
+                        03=SetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel', '' + 1);
+                        04=InterfaceImage('GameSettings','Level1_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                        05=InterfaceState('GameSettings','Level1_Klissan_Graph',1);
+                        06=InterfaceText('GameSettings','KlissanChoosedButton',1);
+                        07=InterfaceState('GameSettings','Level2_Klissan_Graph',0);
+                        08=InterfaceState('GameSettings','Level3_Klissan_Graph',0);
+                        09=InterfaceState('GameSettings','Level4_Klissan_Graph',0);
+                        10=InterfaceText('GameSettings','KlissanButtonsState',4);
+                        11=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=0,255,0>'+CT('FormGameSet2.Common.NameGroupKlissanEasy')+'</color>');
+                        12=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=254,255,255>'+CT('FormGameSet2.Common.NameGroupKlissanNormal')+'</color>');
+                        13=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,240,100>'+CT('FormGameSet2.Common.NameGroupKlissanHard')+'</color>');
+                        14=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                    }
+                    Pos=54,48,4.5
+                    Size=88,23
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Name=Level2
+                    OnPressCode ^{
+                        01=unknown SetParFromTxt=ImportedFunction('UtilityFunctions','SetParFromTxt');
+                        02=unknown GetParFromTxt=ImportedFunction('UtilityFunctions','GetParFromTxt');
+                        03=SetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel', '' + 2);
+                        04=InterfaceImage('GameSettings','Level2_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                        05=InterfaceState('GameSettings','Level2_Klissan_Graph',1);
+                        06=InterfaceText('GameSettings','KlissanChoosedButton',2);
+                        07=InterfaceState('GameSettings','Level1_Klissan_Graph',0);
+                        08=InterfaceState('GameSettings','Level3_Klissan_Graph',0);
+                        09=InterfaceState('GameSettings','Level4_Klissan_Graph',0);
+                        10=InterfaceText('GameSettings','KlissanButtonsState',4);
+                        11=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=0,255,0>'+CT('FormGameSet2.Common.NameGroupKlissanEasy')+'</color>');
+                        12=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=254,255,255>'+CT('FormGameSet2.Common.NameGroupKlissanNormal')+'</color>');
+                        13=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,240,100>'+CT('FormGameSet2.Common.NameGroupKlissanHard')+'</color>');
+                        14=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                    }
+                }
+                GraphButton ^{
+                    Name=Level3
+                    OnPressCode ^{
+                        01=unknown SetParFromTxt=ImportedFunction('UtilityFunctions','SetParFromTxt');
+                        02=unknown GetParFromTxt=ImportedFunction('UtilityFunctions','GetParFromTxt');
+                        03=SetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel', '' + 3);
+                        04=InterfaceImage('GameSettings','Level3_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                        05=InterfaceState('GameSettings','Level3_Klissan_Graph',1);
+                        06=InterfaceText('GameSettings','KlissanChoosedButton',3);
+                        07=InterfaceState('GameSettings','Level1_Klissan_Graph',0);
+                        08=InterfaceState('GameSettings','Level2_Klissan_Graph',0);
+                        09=InterfaceState('GameSettings','Level4_Klissan_Graph',0);
+                        10=InterfaceText('GameSettings','KlissanButtonsState',4);
+                        11=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=0,255,0>'+CT('FormGameSet2.Common.NameGroupKlissanEasy')+'</color>');
+                        12=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=254,255,255>'+CT('FormGameSet2.Common.NameGroupKlissanNormal')+'</color>');
+                        13=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,240,100>'+CT('FormGameSet2.Common.NameGroupKlissanHard')+'</color>');
+                        14=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                    }
+                }
+                GraphButton ^{
+                    Name=Level4
+                    OnPressCode ^{
+                        01=unknown SetParFromTxt=ImportedFunction('UtilityFunctions','SetParFromTxt');
+                        02=unknown GetParFromTxt=ImportedFunction('UtilityFunctions','GetParFromTxt');
+                        03=SetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel', '' + 4);
+                        04=InterfaceImage('GameSettings','Level4_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                        05=InterfaceText('GameSettings','KlissanChoosedButton',4);
+                        06=InterfaceState('GameSettings','Level4_Klissan_Graph',1);
+                        07=InterfaceState('GameSettings','Level1_Klissan_Graph',0);
+                        08=InterfaceState('GameSettings','Level2_Klissan_Graph',0);
+                        09=InterfaceState('GameSettings','Level3_Klissan_Graph',0);
+                        10=InterfaceText('GameSettings','KlissanButtonsState',4);
+                        11=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=0,255,0>'+CT('FormGameSet2.Common.NameGroupKlissanEasy')+'</color>');
+                        12=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=254,255,255>'+CT('FormGameSet2.Common.NameGroupKlissanNormal')+'</color>');
+                        13=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,240,100>'+CT('FormGameSet2.Common.NameGroupKlissanHard')+'</color>');
+                        14=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                    }
+                }
+                Image ^{
+                }
+                Label ^{
+                }
+                Label ^{
+                }
+                Label ^{
+                }
+                Label ^{
+                }
+                Label ^{
+                }
+                Name=PanelLevels
+                Panel ^{
+                    Panel ^{
+                        GraphButton ^{
+                            Name=LevelUser
+                            Pos=311,546,50
+                        }
+                        GraphButton ^{
+                            Name=LevelOpen
+                            OnMouseEnterCode ^{
+                                01=if(InterfaceText('GameSettings','KlissanButtonsState')=='')
+                                02 ^{
+                                    01=unknown IsShiftCtrlPressed=ImportedFunction('UtilityFunctions','IsShiftCtrlPressed');
+                                    02=unknown PortionInDiapason=ImportedFunction('UtilityFunctions','PortionInDiapason');
+                                    03=unknown GetParFromTxt=ImportedFunction('UtilityFunctions','GetParFromTxt');
+                                    04=int klissan_diff=GetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel');
+                                    05=if(klissan_diff)
+                                    06 ^{
+                                        01=if(klissan_diff<=4)
+                                        02 ^{
+                                            01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=0,255,0>'+CT('FormGameSet2.Common.NameGroupKlissanEasy')+'</color>');
+                                            02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=254,255,255>'+CT('FormGameSet2.Common.NameGroupKlissanNormal')+'</color>');
+                                            03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,240,100>'+CT('FormGameSet2.Common.NameGroupKlissanHard')+'</color>');
+                                            04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                            05=InterfaceText('GameSettings','KlissanButtonsState',4);
+                                            06=InterfaceImage('GameSettings','Level'+klissan_diff+'_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                            07=InterfaceState('GameSettings','Level'+klissan_diff+'_Klissan_Graph',1);
+                                            08=InterfaceText('GameSettings','KlissanChoosedButton',klissan_diff);
+                                        }
+                                        03=else if(klissan_diff==5)
+                                        04 ^{
+                                            01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=254,255,255>'+CT('FormGameSet2.Common.NameGroupKlissanNormal')+'</color>');
+                                            02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,240,100>'+CT('FormGameSet2.Common.NameGroupKlissanHard')+'</color>');
+                                            03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                            04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,138,0>'+'250%'+'</color>');
+                                            05=InterfaceText('GameSettings','KlissanButtonsState',klissan_diff);
+                                            06=InterfaceImage('GameSettings','Level4_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                            07=InterfaceState('GameSettings','Level4_Klissan_Graph',1);
+                                            08=InterfaceText('GameSettings','KlissanChoosedButton',4);
+                                        }
+                                        05=else if(klissan_diff==6)
+                                        06 ^{
+                                            01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=255,240,100>'+CT('FormGameSet2.Common.NameGroupKlissanHard')+'</color>');
+                                            02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                            03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,138,0>250%</color>');
+                                            04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,111,0>300%</color>');
+                                            05=InterfaceText('GameSettings','KlissanButtonsState',klissan_diff);
+                                            06=InterfaceImage('GameSettings','Level4_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                            07=InterfaceState('GameSettings','Level4_Klissan_Graph',1);
+                                            08=InterfaceText('GameSettings','KlissanChoosedButton',4);
+                                        }
+                                        07=else if(klissan_diff==7)
+                                        08 ^{
+                                            01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                            02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,138,0>250%</color>');
+                                            03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,111,0>300%</color>');
+                                            04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,83,0>350%</color>');
+                                            05=InterfaceText('GameSettings','KlissanButtonsState',klissan_diff);
+                                            06=InterfaceImage('GameSettings','Level4_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                            07=InterfaceState('GameSettings','Level4_Klissan_Graph',1);
+                                            08=InterfaceText('GameSettings','KlissanChoosedButton',4);
+                                        }
+                                        09=else
+                                        10 ^{
+                                            01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=255,'+round(PortionInDiapason(50*(klissan_diff-3),200,500,166,0))+',0>'+(50*(klissan_diff-3))+'%</color>');
+                                            02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,'+round(PortionInDiapason(50*(klissan_diff-2),200,500,166,0))+',0>'+(50*(klissan_diff-2))+'%</color>');
+                                            03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,'+round(PortionInDiapason(50*(klissan_diff-1),200,500,166,0))+',0>'+(50*(klissan_diff-1))+'%</color>');
+                                            04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,'+round(PortionInDiapason(50*klissan_diff,200,500,166,0))+',0>'+(50*klissan_diff)+'%</color>');
+                                            05=InterfaceText('GameSettings','KlissanButtonsState',klissan_diff);
+                                            06=InterfaceImage('GameSettings','Level4_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                            07=InterfaceState('GameSettings','Level4_Klissan_Graph',1);
+                                            08=InterfaceText('GameSettings','KlissanChoosedButton',4);
+                                        }
+                                    }
+                                    07=else
+                                    08 ^{
+                                        01=InterfaceText('GameSettings','KlissanButtonsState',4);
+                                        02=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=0,255,0>'+CT('FormGameSet2.Common.NameGroupKlissanEasy')+'</color>');
+                                        03=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=254,255,255>'+CT('FormGameSet2.Common.NameGroupKlissanNormal')+'</color>');
+                                        04=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,240,100>'+CT('FormGameSet2.Common.NameGroupKlissanHard')+'</color>');
+                                        05=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                        06=InterfaceImage('GameSettings','Level1_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                        07=InterfaceState('GameSettings','Level1_Klissan_Graph',1);
+                                        08=InterfaceText('GameSettings','KlissanChoosedButton',1);
+                                    }
+                                }
+                            }
+                            Pos=203,545,50
+                        }
+                        GraphButton ^{
+                            Name=LevelClose
+                            Pos=203,537,50
+                        }
+                        GraphButton ^{
+                            Pos=53,58,5
+                        }
+                        GraphButton ^{
+                            Pos=146,58,5
+                        }
+                        GraphButton ^{
+                            Pos=239,58,5
+                        }
+                        GraphButton ^{
+                            Pos=332,58,5
+                        }
+                        GraphButton ^{
+                            Pos=53,166,5
+                        }
+                        GraphButton ^{
+                            Pos=146,166,5
+                        }
+                        GraphButton ^{
+                            Pos=239,166,5
+                        }
+                        GraphButton ^{
+                            Pos=332,166,5
+                        }
+                        GraphButton ^{
+                            Pos=53,220,5
+                        }
+                        GraphButton ^{
+                            Pos=146,220,5
+                        }
+                        GraphButton ^{
+                            Pos=239,220,5
+                        }
+                        GraphButton ^{
+                            Pos=332,220,5
+                        }
+                        GraphButton ^{
+                            Pos=53,274,5
+                        }
+                        GraphButton ^{
+                            Pos=146,274,5
+                        }
+                        GraphButton ^{
+                            Pos=239,274,5
+                        }
+                        GraphButton ^{
+                            Pos=332,274,5
+                        }
+                        GraphButton ^{
+                            Pos=53,328,5
+                        }
+                        GraphButton ^{
+                            Pos=146,328,5
+                        }
+                        GraphButton ^{
+                            Pos=239,328,5
+                        }
+                        GraphButton ^{
+                            Pos=332,328,5
+                        }
+                        GraphButton ^{
+                            Pos=53,382,5
+                        }
+                        GraphButton ^{
+                            Pos=146,382,5
+                        }
+                        GraphButton ^{
+                            Pos=239,382,5
+                        }
+                        GraphButton ^{
+                            Pos=332,382,5
+                        }
+                        GraphButton ^{
+                            Pos=53,436,5
+                        }
+                        GraphButton ^{
+                            Pos=146,436,5
+                        }
+                        GraphButton ^{
+                            Pos=239,436,5
+                        }
+                        GraphButton ^{
+                            Pos=332,436,5
+                        }
+                        GraphButton ^{
+                            Pos=53,490,5
+                        }
+                        GraphButton ^{
+                            Pos=146,490,5
+                        }
+                        GraphButton ^{
+                            Pos=239,490,5
+                        }
+                        GraphButton ^{
+                            Pos=332,490,5
+                        }
+                        GraphButton ^{
+                            Caption=FormGameSet2.Extended.Button
+                            CaptionColorDown=248,164,0
+                            CaptionColorDownA=248,164,0
+                            CaptionColorNormal=88,229,255
+                            CaptionColorNormalA=248,236,96
+                            CaptionSme=0,-5,0,-5
+                            Font=Font.2Ranger
+                            Help=FormGameSet2.Extended.HelpButton
+                            ImageDown=GI,Bm.FormGameSet2.ButExtD
+                            ImageNormal=GI,Bm.FormGameSet2.ButExtN
+                            ImageNormalA=GI,Bm.FormGameSet2.ButExtN
+                            Kind=Fix
+                            KindHit=Rect
+                            Name=ButExtended
+                            Pos=134,594,101
+                            Size=205,33
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Help=FormGameSet2.Common.HelpGroupKlissanEasy
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=Level1_Klissan
+                            OnMouseEnterCode ^{
+                                01=if(InterfaceText('GameSettings','KlissanChoosedButton')!=1)
+                                02 ^{
+                                    01=InterfaceImage('GameSettings','Level1_Klissan_Graph','GI,Bm.FormGameSet2.2LevelA');
+                                    02=InterfaceState('GameSettings','Level1_Klissan_Graph',1);
+                                }
+                            }
+                            OnMouseLeaveCode ^{
+                                01=if(InterfaceText('GameSettings','KlissanChoosedButton')!=1)InterfaceState('GameSettings','Level1_Klissan_Graph',0);
+                            }
+                            OnPressCode ^{
+                                01=if(InterfaceText('GameSettings','KlissanChoosedButton')!=1)Sound('Sound.ButtonClick');
+                                02=unknown IsShiftCtrlPressed=ImportedFunction('UtilityFunctions','IsShiftCtrlPressed');
+                                03=unknown PortionInDiapason=ImportedFunction('UtilityFunctions','PortionInDiapason');
+                                04=unknown SetParFromTxt=ImportedFunction('UtilityFunctions','SetParFromTxt');
+                                05=unknown GetParFromTxt=ImportedFunction('UtilityFunctions','GetParFromTxt');
+                                06=int choosed_button=InterfaceText('GameSettings','KlissanButtonsState');
+                                07=choosed_button=choosed_button-3;
+                                08=if(!IsShiftCtrlPressed())
+                                09 ^{
+                                    01=SetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel', '' + choosed_button);
+                                    02=InterfaceImage('GameSettings','Level1_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                    03=InterfaceText('GameSettings','KlissanChoosedButton',1);
+                                    04=InterfaceState('GameSettings','Level2_Klissan_Graph',0);
+                                    05=InterfaceState('GameSettings','Level3_Klissan_Graph',0);
+                                    06=InterfaceState('GameSettings','Level4_Klissan_Graph',0);
+                                }
+                                10=else
+                                11 ^{
+                                    01=if(choosed_button>1)
+                                    02 ^{
+                                        01=choosed_button=choosed_button-1;
+                                        02=SetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel', '' + choosed_button);
+                                        03=InterfaceText('GameSettings','KlissanButtonsState',choosed_button+3);
+                                        04=if(choosed_button<5)
+                                        05 ^{
+                                            01=if(choosed_button==4)
+                                            02 ^{
+                                                01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                                02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,138,0>250%</color>');
+                                                03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,111,0>300%</color>');
+                                                04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,83,0>350%</color>');
+                                            }
+                                            03=else if(choosed_button==3)
+                                            04 ^{
+                                                01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=255,240,100>'+CT('FormGameSet2.Common.NameGroupKlissanHard')+'</color>');
+                                                02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                                03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,138,0>250%</color>');
+                                                04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,111,0>300%</color>');
+                                            }
+                                            05=else if(choosed_button==2)
+                                            06 ^{
+                                                01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=254,255,255>'+CT('FormGameSet2.Common.NameGroupKlissanNormal')+'</color>');
+                                                02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,240,100>'+CT('FormGameSet2.Common.NameGroupKlissanHard')+'</color>');
+                                                03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                                04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,138,0>'+'250%'+'</color>');
+                                            }
+                                            07=else
+                                            08 ^{
+                                                01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=0,255,0>'+CT('FormGameSet2.Common.NameGroupKlissanEasy')+'</color>');
+                                                02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=254,255,255>'+CT('FormGameSet2.Common.NameGroupKlissanNormal')+'</color>');
+                                                03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,240,100>'+CT('FormGameSet2.Common.NameGroupKlissanHard')+'</color>');
+                                                04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                            }
+                                        }
+                                        06=else
+                                        07 ^{
+                                            01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=255,'+round(PortionInDiapason(50*choosed_button,200,500,166,0))+',0>'+(50*choosed_button)+'%</color>');
+                                            02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,'+round(PortionInDiapason(50*(choosed_button+1),200,500,166,0))+',0>'+(50*(choosed_button+1))+'%</color>');
+                                            03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,'+round(PortionInDiapason(50*(choosed_button+2),200,500,166,0))+',0>'+(50*(choosed_button+2))+'%</color>');
+                                            04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,'+round(PortionInDiapason(50*(choosed_button+3),200,500,166,0))+',0>'+(50*(choosed_button+3))+'%</color>');
+                                        }
+                                        08=InterfaceImage('GameSettings','Level1_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                        09=InterfaceText('GameSettings','KlissanChoosedButton',1);
+                                        10=InterfaceState('GameSettings','Level2_Klissan_Graph',0);
+                                        11=InterfaceState('GameSettings','Level3_Klissan_Graph',0);
+                                        12=InterfaceState('GameSettings','Level4_Klissan_Graph',0);
+                                    }
+                                    03=else
+                                    04 ^{
+                                        01=SetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel', '' + choosed_button);
+                                        02=InterfaceImage('GameSettings','Level1_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                        03=InterfaceText('GameSettings','KlissanChoosedButton',1);
+                                        04=InterfaceState('GameSettings','Level2_Klissan_Graph',0);
+                                        05=InterfaceState('GameSettings','Level3_Klissan_Graph',0);
+                                        06=InterfaceState('GameSettings','Level4_Klissan_Graph',0);
+                                    }
+                                }
+                            }
+                            Pos=53,112,5
+                            Size=88,23
+                            Style=Style.GB.NoClick
+                        }
+                        GraphButton ^{
+                            Help=FormGameSet2.Common.HelpGroupKlissanNormal
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=Level2_Klissan
+                            OnMouseEnterCode ^{
+                                01=if(InterfaceText('GameSettings','KlissanChoosedButton')!=2)
+                                02 ^{
+                                    01=InterfaceImage('GameSettings','Level2_Klissan_Graph','GI,Bm.FormGameSet2.2LevelA');
+                                    02=InterfaceState('GameSettings','Level2_Klissan_Graph',1);
+                                }
+                            }
+                            OnMouseLeaveCode ^{
+                                01=if(InterfaceText('GameSettings','KlissanChoosedButton')!=2)InterfaceState('GameSettings','Level2_Klissan_Graph',0);
+                            }
+                            OnPressCode ^{
+                                01=if(InterfaceText('GameSettings','KlissanChoosedButton')!=2)Sound('Sound.ButtonClick');
+                                02=unknown IsShiftCtrlPressed=ImportedFunction('UtilityFunctions','IsShiftCtrlPressed');
+                                03=unknown PortionInDiapason=ImportedFunction('UtilityFunctions','PortionInDiapason');
+                                04=unknown SetParFromTxt=ImportedFunction('UtilityFunctions','SetParFromTxt');
+                                05=unknown GetParFromTxt=ImportedFunction('UtilityFunctions','GetParFromTxt');
+                                06=int choosed_button=InterfaceText('GameSettings','KlissanButtonsState');
+                                07=choosed_button=choosed_button-2;
+                                08=SetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel', '' + choosed_button);
+                                09=InterfaceImage('GameSettings','Level2_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                10=InterfaceText('GameSettings','KlissanChoosedButton',2);
+                                11=InterfaceState('GameSettings','Level1_Klissan_Graph',0);
+                                12=InterfaceState('GameSettings','Level3_Klissan_Graph',0);
+                                13=InterfaceState('GameSettings','Level4_Klissan_Graph',0);
+                            }
+                            Pos=146,112,5
+                            Size=88,23
+                            Style=Style.GB.NoClick
+                        }
+                        GraphButton ^{
+                            Help=FormGameSet2.Common.HelpGroupKlissanHard
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=Level3_Klissan
+                            OnMouseEnterCode ^{
+                                01=if(InterfaceText('GameSettings','KlissanChoosedButton')!=3)
+                                02 ^{
+                                    01=InterfaceImage('GameSettings','Level3_Klissan_Graph','GI,Bm.FormGameSet2.2LevelA');
+                                    02=InterfaceState('GameSettings','Level3_Klissan_Graph',1);
+                                }
+                            }
+                            OnMouseLeaveCode ^{
+                                01=if(InterfaceText('GameSettings','KlissanChoosedButton')!=3)InterfaceState('GameSettings','Level3_Klissan_Graph',0);
+                            }
+                            OnPressCode ^{
+                                01=if(InterfaceText('GameSettings','KlissanChoosedButton')!=3)Sound('Sound.ButtonClick');
+                                02=unknown IsShiftCtrlPressed=ImportedFunction('UtilityFunctions','IsShiftCtrlPressed');
+                                03=unknown PortionInDiapason=ImportedFunction('UtilityFunctions','PortionInDiapason');
+                                04=unknown SetParFromTxt=ImportedFunction('UtilityFunctions','SetParFromTxt');
+                                05=unknown GetParFromTxt=ImportedFunction('UtilityFunctions','GetParFromTxt');
+                                06=int choosed_button=InterfaceText('GameSettings','KlissanButtonsState');
+                                07=choosed_button=choosed_button-1;
+                                08=SetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel', '' + choosed_button);
+                                09=InterfaceImage('GameSettings','Level3_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                10=InterfaceText('GameSettings','KlissanChoosedButton',3);
+                                11=InterfaceState('GameSettings','Level1_Klissan_Graph',0);
+                                12=InterfaceState('GameSettings','Level2_Klissan_Graph',0);
+                                13=InterfaceState('GameSettings','Level4_Klissan_Graph',0);
+                            }
+                            Pos=239,112,5
+                            Size=88,23
+                            Style=Style.GB.NoClick
+                        }
+                        GraphButton ^{
+                            Help=FormGameSet2.Common.HelpGroupKlissanExpert
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=Level4_Klissan
+                            OnMouseEnterCode ^{
+                                01=if(InterfaceText('GameSettings','KlissanChoosedButton')!=4)
+                                02 ^{
+                                    01=InterfaceImage('GameSettings','Level4_Klissan_Graph','GI,Bm.FormGameSet2.2LevelA');
+                                    02=InterfaceState('GameSettings','Level4_Klissan_Graph',1);
+                                }
+                            }
+                            OnMouseLeaveCode ^{
+                                01=if(InterfaceText('GameSettings','KlissanChoosedButton')!=4)InterfaceState('GameSettings','Level4_Klissan_Graph',0);
+                            }
+                            OnPressCode ^{
+                                01=if(InterfaceText('GameSettings','KlissanChoosedButton')!=4)Sound('Sound.ButtonClick');
+                                02=unknown IsShiftCtrlPressed=ImportedFunction('UtilityFunctions','IsShiftCtrlPressed');
+                                03=unknown PortionInDiapason=ImportedFunction('UtilityFunctions','PortionInDiapason');
+                                04=unknown SetParFromTxt=ImportedFunction('UtilityFunctions','SetParFromTxt');
+                                05=unknown GetParFromTxt=ImportedFunction('UtilityFunctions','GetParFromTxt');
+                                06=int choosed_button=InterfaceText('GameSettings','KlissanButtonsState');
+                                07=if(!IsShiftCtrlPressed())
+                                08 ^{
+                                    01=SetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel', '' + choosed_button);
+                                    02=InterfaceImage('GameSettings','Level4_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                    03=InterfaceText('GameSettings','KlissanChoosedButton',4);
+                                    04=InterfaceState('GameSettings','Level1_Klissan_Graph',0);
+                                    05=InterfaceState('GameSettings','Level2_Klissan_Graph',0);
+                                    06=InterfaceState('GameSettings','Level3_Klissan_Graph',0);
+                                }
+                                09=else
+                                10 ^{
+                                    01=if(choosed_button<10)
+                                    02 ^{
+                                        01=choosed_button=choosed_button+1;
+                                        02=SetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel', '' + choosed_button);
+                                        03=InterfaceText('GameSettings','KlissanButtonsState',choosed_button);
+                                        04=if(choosed_button<8)
+                                        05 ^{
+                                            01=if(choosed_button==5)
+                                            02 ^{
+                                                01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=254,255,255>'+CT('FormGameSet2.Common.NameGroupKlissanNormal')+'</color>');
+                                                02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,240,100>'+CT('FormGameSet2.Common.NameGroupKlissanHard')+'</color>');
+                                                03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                                04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,138,0>'+'250%'+'</color>');
+                                            }
+                                            03=else if(choosed_button==6)
+                                            04 ^{
+                                                01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=255,240,100>'+CT('FormGameSet2.Common.NameGroupKlissanHard')+'</color>');
+                                                02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                                03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,138,0>250%</color>');
+                                                04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,111,0>300%</color>');
+                                            }
+                                            05=else
+                                            06 ^{
+                                                01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                                02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,138,0>250%</color>');
+                                                03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,111,0>300%</color>');
+                                                04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,83,0>350%</color>');
+                                            }
+                                        }
+                                        06=else
+                                        07 ^{
+                                            01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=255,'+round(PortionInDiapason(50*(choosed_button-3),200,500,166,0))+',0>'+(50*(choosed_button-3))+'%</color>');
+                                            02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,'+round(PortionInDiapason(50*(choosed_button-2),200,500,166,0))+',0>'+(50*(choosed_button-2))+'%</color>');
+                                            03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,'+round(PortionInDiapason(50*(choosed_button-1),200,500,166,0))+',0>'+(50*(choosed_button-1))+'%</color>');
+                                            04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,'+round(PortionInDiapason(50*choosed_button,200,500,166,0))+',0>'+(50*choosed_button)+'%</color>');
+                                        }
+                                        08=InterfaceImage('GameSettings','Level4_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                        09=InterfaceText('GameSettings','KlissanChoosedButton',4);
+                                        10=InterfaceState('GameSettings','Level1_Klissan_Graph',0);
+                                        11=InterfaceState('GameSettings','Level2_Klissan_Graph',0);
+                                        12=InterfaceState('GameSettings','Level3_Klissan_Graph',0);
+                                    }
+                                    03=else
+                                    04 ^{
+                                        01=SetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel', '' + choosed_button);
+                                        02=InterfaceImage('GameSettings','Level4_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                        03=InterfaceText('GameSettings','KlissanChoosedButton',4);
+                                        04=InterfaceState('GameSettings','Level1_Klissan_Graph',0);
+                                        05=InterfaceState('GameSettings','Level2_Klissan_Graph',0);
+                                        06=InterfaceState('GameSettings','Level3_Klissan_Graph',0);
+                                    }
+                                }
+                            }
+                            Pos=332,112,5
+                            Size=88,23
+                            Style=Style.GB.NoClick
+                        }
+                        GraphButton ^{
+                            Kind=Normal
+                            KindHit=Graph
+                            Name=KeyArrowLeft
+                            OnPressCode ^{
+                                01=unknown IsShiftCtrlPressed=ImportedFunction('UtilityFunctions','IsShiftCtrlPressed');
+                                02=if(IsShiftCtrlPressed())
+                                03 ^{
+                                    01=unknown PortionInDiapason=ImportedFunction('UtilityFunctions','PortionInDiapason');
+                                    02=unknown SetParFromTxt=ImportedFunction('UtilityFunctions','SetParFromTxt');
+                                    03=unknown GetParFromTxt=ImportedFunction('UtilityFunctions','GetParFromTxt');
+                                    04=int choosed_button=GetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel');
+                                    05=if(choosed_button>1)
+                                    06 ^{
+                                        01=choosed_button=choosed_button-1;
+                                        02=SetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel', '' + choosed_button);
+                                        03=if(choosed_button<=7)
+                                        04 ^{
+                                            01=if(choosed_button==7)
+                                            02 ^{
+                                                01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                                02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,138,0>250%</color>');
+                                                03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,111,0>300%</color>');
+                                                04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,83,0>350%</color>');
+                                            }
+                                            03=else if(choosed_button==6)
+                                            04 ^{
+                                                01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=255,240,100>'+CT('FormGameSet2.Common.NameGroupKlissanHard')+'</color>');
+                                                02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                                03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,138,0>250%</color>');
+                                                04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,111,0>300%</color>');
+                                            }
+                                            05=else if(choosed_button==5)
+                                            06 ^{
+                                                01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=254,255,255>'+CT('FormGameSet2.Common.NameGroupKlissanNormal')+'</color>');
+                                                02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,240,100>'+CT('FormGameSet2.Common.NameGroupKlissanHard')+'</color>');
+                                                03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                                04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,138,0>'+'250%'+'</color>');
+                                            }
+                                            07=else
+                                            08 ^{
+                                                01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=0,255,0>'+CT('FormGameSet2.Common.NameGroupKlissanEasy')+'</color>');
+                                                02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=254,255,255>'+CT('FormGameSet2.Common.NameGroupKlissanNormal')+'</color>');
+                                                03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,240,100>'+CT('FormGameSet2.Common.NameGroupKlissanHard')+'</color>');
+                                                04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                            }
+                                        }
+                                        05=else
+                                        06 ^{
+                                            01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=255,'+round(PortionInDiapason(50*(choosed_button-3),200,500,166,0))+',0>'+(50*(choosed_button-3))+'%</color>');
+                                            02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,'+round(PortionInDiapason(50*(choosed_button-2),200,500,166,0))+',0>'+(50*(choosed_button-2))+'%</color>');
+                                            03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,'+round(PortionInDiapason(50*(choosed_button-1),200,500,166,0))+',0>'+(50*(choosed_button-1))+'%</color>');
+                                            04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,'+round(PortionInDiapason(50*choosed_button,200,500,166,0))+',0>'+(50*choosed_button)+'%</color>');
+                                        }
+                                        07=InterfaceState('GameSettings','Level1_Klissan_Graph',0);
+                                        08=InterfaceState('GameSettings','Level2_Klissan_Graph',0);
+                                        09=InterfaceState('GameSettings','Level3_Klissan_Graph',0);
+                                        10=InterfaceState('GameSettings','Level4_Klissan_Graph',0);
+                                        11=if(choosed_button<4)
+                                        12 ^{
+                                            01=InterfaceImage('GameSettings','Level'+choosed_button+'_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                            02=InterfaceText('GameSettings','KlissanChoosedButton',choosed_button);
+                                            03=InterfaceText('GameSettings','KlissanButtonsState',4);
+                                            04=InterfaceState('GameSettings','Level'+choosed_button+'_Klissan_Graph',1);
+                                        }
+                                        13=else
+                                        14 ^{
+                                            01=InterfaceImage('GameSettings','Level4_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                            02=InterfaceText('GameSettings','KlissanChoosedButton',4);
+                                            03=InterfaceText('GameSettings','KlissanButtonsState',choosed_button);
+                                            04=InterfaceState('GameSettings','Level4_Klissan_Graph',1);
+                                        }
+                                    }
+                                    07=else
+                                    08 ^{
+                                        01=SetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel', '' + 1);
+                                        02=InterfaceImage('GameSettings','Level1_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                        03=InterfaceText('GameSettings','KlissanChoosedButton',1);
+                                        04=InterfaceText('GameSettings','KlissanButtonsState',4);
+                                        05=InterfaceState('GameSettings','Level1_Klissan_Graph',1);
+                                        06=InterfaceState('GameSettings','Level2_Klissan_Graph',0);
+                                        07=InterfaceState('GameSettings','Level3_Klissan_Graph',0);
+                                        08=InterfaceState('GameSettings','Level4_Klissan_Graph',0);
+                                    }
+                                }
+                            }
+                            Pos=0,0,100
+                            Size=1,1
+                        }
+                        GraphButton ^{
+                            Kind=Normal
+                            KindHit=Graph
+                            Name=KeyArrowRight
+                            OnPressCode ^{
+                                01=unknown IsShiftCtrlPressed=ImportedFunction('UtilityFunctions','IsShiftCtrlPressed');
+                                02=if(IsShiftCtrlPressed())
+                                03 ^{
+                                    01=unknown PortionInDiapason=ImportedFunction('UtilityFunctions','PortionInDiapason');
+                                    02=unknown SetParFromTxt=ImportedFunction('UtilityFunctions','SetParFromTxt');
+                                    03=unknown GetParFromTxt=ImportedFunction('UtilityFunctions','GetParFromTxt');
+                                    04=int choosed_button=GetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel');
+                                    05=if(choosed_button<10)
+                                    06 ^{
+                                        01=choosed_button=choosed_button+1;
+                                        02=SetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel', '' + choosed_button);
+                                        04=if(choosed_button<8)
+                                        05 ^{
+                                            01=if(choosed_button==5)
+                                            02 ^{
+                                                01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=254,255,255>'+CT('FormGameSet2.Common.NameGroupKlissanNormal')+'</color>');
+                                                02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,240,100>'+CT('FormGameSet2.Common.NameGroupKlissanHard')+'</color>');
+                                                03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                                04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,138,0>'+'250%'+'</color>');
+                                            }
+                                            03=else if(choosed_button==6)
+                                            04 ^{
+                                                01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=255,240,100>'+CT('FormGameSet2.Common.NameGroupKlissanHard')+'</color>');
+                                                02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                                03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,138,0>250%</color>');
+                                                04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,111,0>300%</color>');
+                                            }
+                                            05=else if(choosed_button>4)
+                                            06 ^{
+                                                01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=255,166,0>'+CT('FormGameSet2.Common.NameGroupKlissanExpert')+'</color>');
+                                                02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,138,0>250%</color>');
+                                                03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,111,0>300%</color>');
+                                                04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,83,0>350%</color>');
+                                            }
+                                        }
+                                        06=else
+                                        07 ^{
+                                            01=InterfaceText('GameSettings','NameGroupKlissanLevel1','<color=255,'+round(PortionInDiapason(50*(choosed_button-3),200,500,166,0))+',0>'+(50*(choosed_button-3))+'%</color>');
+                                            02=InterfaceText('GameSettings','NameGroupKlissanLevel2','<color=255,'+round(PortionInDiapason(50*(choosed_button-2),200,500,166,0))+',0>'+(50*(choosed_button-2))+'%</color>');
+                                            03=InterfaceText('GameSettings','NameGroupKlissanLevel3','<color=255,'+round(PortionInDiapason(50*(choosed_button-1),200,500,166,0))+',0>'+(50*(choosed_button-1))+'%</color>');
+                                            04=InterfaceText('GameSettings','NameGroupKlissanLevel4','<color=255,'+round(PortionInDiapason(50*choosed_button,200,500,166,0))+',0>'+(50*choosed_button)+'%</color>');
+                                        }
+                                        08=InterfaceState('GameSettings','Level1_Klissan_Graph',0);
+                                        09=InterfaceState('GameSettings','Level2_Klissan_Graph',0);
+                                        10=InterfaceState('GameSettings','Level3_Klissan_Graph',0);
+                                        11=InterfaceState('GameSettings','Level4_Klissan_Graph',0);
+                                        12=if(choosed_button>=4)
+                                        13 ^{
+                                            01=InterfaceImage('GameSettings','Level4_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                            02=InterfaceText('GameSettings','KlissanChoosedButton',4);
+                                            03=InterfaceText('GameSettings','KlissanButtonsState',choosed_button);
+                                            04=InterfaceState('GameSettings','Level4_Klissan_Graph',1);
+                                        }
+                                        14=else
+                                        15 ^{
+                                            01=InterfaceImage('GameSettings','Level'+choosed_button+'_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                            02=InterfaceText('GameSettings','KlissanChoosedButton',4);
+                                            03=InterfaceText('GameSettings','KlissanButtonsState',4);
+                                            04=InterfaceState('GameSettings','Level'+choosed_button+'_Klissan_Graph',1);
+                                        }
+                                    }
+                                    07=else
+                                    08 ^{
+                                        01=SetParFromTxt('SpaceRangersHD\ModsCFG.txt', 'KlissanDiffLevel', '' + 10);
+                                        02=InterfaceImage('GameSettings','Level4_Klissan_Graph','GI,Bm.FormGameSet2.2LevelD');
+                                        03=InterfaceText('GameSettings','KlissanChoosedButton',4);
+                                        04=InterfaceText('GameSettings','KlissanButtonsState',choosed_button);
+                                        05=InterfaceState('GameSettings','Level1_Klissan_Graph',0);
+                                        06=InterfaceState('GameSettings','Level2_Klissan_Graph',0);
+                                        07=InterfaceState('GameSettings','Level3_Klissan_Graph',0);
+                                        08=InterfaceState('GameSettings','Level4_Klissan_Graph',1);
+                                    }
+                                }
+                            }
+                            Pos=1,0,100
+                            Size=1,1
+                        }
+                        Image ^{
+                            Image=GI,Bm.FormGameSet2.2LevelDown
+                            Pos=0,0,100
+                            Size=474,600
+                        }
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.FormGameSet2.2LevelA
+                            Name=Level1_Klissan_Graph
+                            Pos=53,112,5.5
+                            Size=88,23
+                        }
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.FormGameSet2.2LevelA
+                            Name=Level2_Klissan_Graph
+                            Pos=146,112,5.5
+                            Size=88,23
+                        }
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.FormGameSet2.2LevelA
+                            Name=Level3_Klissan_Graph
+                            Pos=239,112,5.5
+                            Size=88,23
+                        }
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.FormGameSet2.2LevelA
+                            Name=Level4_Klissan_Graph
+                            Pos=332,112,5.5
+                            Size=88,23
+                        }
+                        Label ^{
+                            Pos=306,547,4
+                            Text=FormGameSet2.Common.LevelUser
+                        }
+                        Label ^{
+                            Name=LevelProc
+                            Pos=62,546,4
+                        }
+                        Label ^{
+                            Pos=172,34,4
+                        }
+                        Label ^{
+                            Pos=172,143,4
+                        }
+                        Label ^{
+                            Pos=172,197,4
+                        }
+                        Label ^{
+                            Pos=172,251,4
+                        }
+                        Label ^{
+                            Pos=172,305,4
+                        }
+                        Label ^{
+                            Pos=172,359,4
+                        }
+                        Label ^{
+                            Pos=172,413,4
+                        }
+                        Label ^{
+                            Pos=172,467,4
+                        }
+                        Label ^{
+                            Pos=48,58,4
+                        }
+                        Label ^{
+                            Pos=140,58,4
+                        }
+                        Label ^{
+                            Pos=234,58,4
+                        }
+                        Label ^{
+                            Pos=328,58,4
+                        }
+                        Label ^{
+                            Pos=48,166,4
+                        }
+                        Label ^{
+                            Pos=140,166,4
+                        }
+                        Label ^{
+                            Pos=234,166,4
+                        }
+                        Label ^{
+                            Pos=328,166,4
+                        }
+                        Label ^{
+                            Pos=48,220,4
+                        }
+                        Label ^{
+                            Pos=140,220,4
+                        }
+                        Label ^{
+                            Pos=234,220,4
+                        }
+                        Label ^{
+                            Pos=328,220,4
+                        }
+                        Label ^{
+                            Pos=48,274,4
+                        }
+                        Label ^{
+                            Pos=140,274,4
+                        }
+                        Label ^{
+                            Pos=234,274,4
+                        }
+                        Label ^{
+                            Pos=328,274,4
+                        }
+                        Label ^{
+                            Pos=48,328,4
+                        }
+                        Label ^{
+                            Pos=140,328,4
+                        }
+                        Label ^{
+                            Pos=234,328,4
+                        }
+                        Label ^{
+                            Pos=328,328,4
+                        }
+                        Label ^{
+                            Pos=48,382,4
+                        }
+                        Label ^{
+                            Pos=140,382,4
+                        }
+                        Label ^{
+                            Pos=234,382,4
+                        }
+                        Label ^{
+                            Pos=328,382,4
+                        }
+                        Label ^{
+                            Pos=48,436,4
+                        }
+                        Label ^{
+                            Pos=140,436,4
+                        }
+                        Label ^{
+                            Pos=234,436,4
+                        }
+                        Label ^{
+                            Pos=328,436,4
+                        }
+                        Label ^{
+                            Pos=48,490,4
+                        }
+                        Label ^{
+                            Pos=140,490,4
+                        }
+                        Label ^{
+                            Pos=234,490,4
+                        }
+                        Label ^{
+                            Pos=328,490,4
+                        }
+                        Label ^{
+                            AlignX=Center
+                            AlignY=Center
+                            Font=Font.2Ranger
+                            Pos=172,88,4
+                            Size=132,20
+                            Text=FormGameSet2.Common.LevelGroupKlissan
+                            TextColor=97,149,168
+                        }
+                        Label ^{
+                            AlignX=Center
+                            AlignY=Center
+                            Font=Font.2Ranger
+                            Name=NameGroupKlissanLevel1
+                            Pos=48,112,4
+                            Size=100,20
+                            Text=FormGameSet2.Common.NameGroupKlissanEasy
+                            TextColor=0,255,0
+                        }
+                        Label ^{
+                            AlignX=Center
+                            AlignY=Center
+                            Font=Font.2Ranger
+                            Name=NameGroupKlissanLevel2
+                            Pos=140,112,4
+                            Size=100,20
+                            Text=FormGameSet2.Common.NameGroupKlissanNormal
+                            TextColor=254,255,255
+                        }
+                        Label ^{
+                            AlignX=Center
+                            AlignY=Center
+                            Font=Font.2Ranger
+                            Name=NameGroupKlissanLevel3
+                            Pos=234,112,4
+                            Size=100,20
+                            Text=FormGameSet2.Common.NameGroupKlissanHard
+                            TextColor=255,240,100
+                        }
+                        Label ^{
+                            AlignX=Center
+                            AlignY=Center
+                            Font=Font.2Ranger
+                            Name=NameGroupKlissanLevel4
+                            Pos=328,112,4
+                            Size=100,20
+                            Text=FormGameSet2.Common.NameGroupKlissanExpert
+                            TextColor=255,166,0
+                        }
+                        Label ^{
+                            Active=False
+                            Name=KlissanChoosedButton
+                            Pos=0,0,0
+                            Size=0,0
+                        }
+                        Label ^{
+                            Active=False
+                            Name=KlissanButtonsState
+                            Pos=0,0,0
+                            Size=0,0
+                        }
+                        MouseBlocking=True
+                        Name=PanelLevel
+                        Pos=0,-503,10
+                        Size=474,627
+                    }
+                    Pos=0,60,20
+                    Size=474,627
+                }
+                Pos=533,44,1
+                Size=474,687
+            }
+        }
+    }
+    RuinsTalk ^{
+        Panel ^{
+            ShuKlissan ^{
+                Panel ^{
+                    Active=False
+                    GAI ^{
+                        Active=False
+                        AlignX=Center
+                        AlignY=Center
+                        Frame=[75,0-99]
+                        Image=Bm.Gov.2FeiAnim0a
+                        ImageFirst=Bm.Gov.2FeiAnim0i
+                        Name=Panel_Anim0
+                        PBuf=True
+                        Pos=611,74,-2
+                        Size=289,694
+                    }
+                    GAI ^{
+                        Active=False
+                        AlignX=Center
+                        AlignY=Center
+                        Frame=[75,0-99]
+                        Image=Bm.Gov.2FeiAnim1a
+                        ImageFirst=Bm.Gov.2FeiAnim1i
+                        Name=Panel_Anim1
+                        PBuf=True
+                        Pos=541,67,-2
+                        Size=418,701
+                    }
+                    GAI ^{
+                        Active=False
+                        AlignX=Center
+                        AlignY=Center
+                        Frame=[75,0-99]
+                        Image=Bm.GovHD.FeiAnim0a
+                        ImageFirst=Bm.GovHD.FeiAnim0i
+                        Name=PanelHD_Anim0
+                        PBuf=True
+                        Pos=0,-140,-2
+                        Size=522,876
+                    }
+                    GAI ^{
+                        Active=False
+                        AlignX=Center
+                        AlignY=Center
+                        Frame=[75,0-99]
+                        Image=Bm.GovHD.FeiAnim1a
+                        ImageFirst=Bm.GovHD.FeiAnim1i
+                        Name=PanelHD_Anim1
+                        PBuf=True
+                        Pos=0,-140,-2
+                        Size=522,876
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormRuins.2SBtable
+                        Name=Table
+                        Pos=0,0,-3
+                        Size=582,466
+                    }
+                    Name=PanelHandler
+                    Pos=0,0,800
+                    Size=1024,768
+                }
+            }
+        }
+    }
+    Style ^{
+        GB ^{
+            NoClick ^{
+                SoundEnter=Sound.ButtonEnter
+                SoundLeave=Sound.ButtonLeave
+            }
+        }
+    }
+}

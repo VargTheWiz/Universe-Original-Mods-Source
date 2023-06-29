@@ -1,0 +1,15 @@
+Bm ~{
+    ItemsUseless ~{
+        2RevDiggersFakeSatellite0_s=Mods\Revolution\RevDiggers\DATA\ItemsUseless\2FakeSatellite0.gi
+        2RevDiggersFakeSatellite1_s=Mods\Revolution\RevDiggers\DATA\ItemsUseless\2FakeSatellite1.gi
+        2RevDiggersFakeSatellite2_s=Mods\Revolution\RevDiggers\DATA\ItemsUseless\2FakeSatellite2.gi
+        2RevDiggersFakeSatellite3_s=Mods\Revolution\RevDiggers\DATA\ItemsUseless\2FakeSatellite3.gi
+        2RevDiggersFakeSatellite4_s=Mods\Revolution\RevDiggers\DATA\ItemsUseless\2FakeSatellite4.gi
+        2RevDiggersFakeSatellite5_s=Mods\Revolution\RevDiggers\DATA\ItemsUseless\2FakeSatellite5.gi
+        2RevDiggersFakeSatellite6_s=Mods\Revolution\RevDiggers\DATA\ItemsUseless\2FakeSatellite6.gi
+        2RevDiggersFakeSatellite7_s=Mods\Revolution\RevDiggers\DATA\ItemsUseless\2FakeSatellite7.gi
+    }
+}
+Script ~{
+    Mod_RevDiggers=Mods\Revolution\RevDiggers\DATA\Script\Mod_RevDiggers.scr
+}

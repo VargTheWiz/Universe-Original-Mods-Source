@@ -1,0 +1,61 @@
+Data ^{
+    SE ^{
+        Missile ^{
+            wDom_rocket ^{
+                PosZ=Missile
+            }
+        }
+        Weapon ^{
+            0 ^{
+                Palettes ^{
+                    5 ^{
+                        Color0=0.0,1.0,1.0
+                        Color1=0.0,1.0,1.0
+                        Color2=0.0,1.0,1.0
+                    }
+                    6 ^{
+                        Color0=1.0,0.0,0.0
+                        Color1=1.0,0.0,0.0
+                        Color2=1.0,0.0,0.0
+                    }
+                }
+            }
+            16 ^{
+                Palettes ^{
+                    10 ^{
+                        Color0=0.8,0.8,0.9
+                        Color1=0.7,0.7,1.0
+                        Color2=0.6,0.6,1.0
+                        Color3=0.7,0.7,0.9
+                        GAI=Bm.Weapon.Dom_light
+                        SoundShot=Sound.Dom_light
+                    }
+                }
+            }
+            2 ^{
+                Palettes ^{
+                    6 ^{
+                        Color0=0.0,1.0,1.0
+                        Color1=0.0,1.0,1.0
+                        Color2=0.0,1.0,1.0
+                        Color3=0.0,1.0,1.0
+                        Color4=0.0,1.0,1.0
+                        Color5=0.0,1.0,1.0
+                    }
+                }
+            }
+            8 ^{
+                Palettes ^{
+                    40 ^{
+                        Color0=0.95,0.83,0.5
+                        GAI=Bm.Weapon.Minishot
+                        SoundShot=Sound.Dom_minigun
+                    }
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_ShuDomiksPlus=1,Script.Mod_ShuDomiksPlus
+    }
+}

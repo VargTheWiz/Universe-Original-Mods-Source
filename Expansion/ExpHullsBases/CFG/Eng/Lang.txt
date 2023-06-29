@@ -1,0 +1,600 @@
+MicroModuls ^{
+    ExpHullsBases_GSOM ^{
+        Cost=125
+        CustomTag=ExpHullsBases_GSOM
+        Equipments=Hull
+        LockedAcryn=3
+        Name=GSOM-1 hull
+        NonSearchable=1
+        Priority=50
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Modified station hull. The structure of this hull is used as a huge generator of singular matter deflection (abbreviated as MDF), designed to increase protection by spot distorting matter where enemy projectiles hit. The generator also creates a negative vacuum in the path of the station's guns, thereby increasing their firepower. In order to supply the device with energy, it was necessary to completely rebuild the communications system and occupy the capture compartment with an additional energy core.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Shield generator: <bonDef>%
+        bonDef=7
+        bonSlotArt=-2
+        bonSlotForsage=-1
+        bonSlotHook=-1
+        bonWEnergy=20
+        bonWSplinter=20
+    }
+    ExpHullsBases_Hurricane ^{
+        Cost=125
+        CustomTag=ExpHullsBases_Hurricane
+        Equipments=Hull
+        LockedAcryn=3
+        Name=Hurricane hull
+        NonSearchable=1
+        Priority=50
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Modified station hull. The latest guidance system replaces the standard radar and corrects the work of the guns, also helping the gunners to focus fire. This significantly increases the range and accuracy of the station weapons.</color>
+        Text=<clr><clrEnd>
+        Text=Attack skill: <bonSkill1>
+        Text=Firing range: <bonWRadius>
+        bonSkill1=2
+        bonSlotArt=-2
+        bonSlotForsage=-1
+        bonSlotRadar=-1
+        bonWRadius=60
+    }
+    ExpHullsBases_Polyxen ^{
+        Cost=60
+        CountMicroModuls=600
+        CustomTag=ExpHullsBases_Polyxen
+        Equipments=Hull
+        LockedAcryn=3
+        Name=Polyxenate hull
+        NonSearchable=1
+        Priority=50
+        Size=90
+        Special=1
+        Text=<color=248,252,248>Modified station hull. Metal in the armor and supporting structures has been replaced by polyxenate, a strong and inexpensive polymer that requires much less effort and financial cost to maintain.</color>
+        Text=<clr><clrEnd>
+        Text=Droid effectiveness: <bonDroid>
+        bonDroid=10
+        bonSlotForsage=-1
+    }
+}
+FormInfo ^{
+    br=<br>
+}
+Script ^{
+    Mod_ExpHullsBases ^{
+        1000=We can send the station to the current position of one of the <clr>local planets<clrEnd> or set the coordinates to your own<clr>ship<clrEnd>'s location as the jump endpoint.
+        1001=I want to take advantage of your portal generator
+        1003=Roger that, <Player>, <0> goes into <color=0,50,200>forced retreat</color> mode. Now when we receive <color=0,50,200>moderate damage</color> we will attempt to make the jump to the nearest enemy-free system.
+        1004=Roger that, <Player>, <0> goes into <color=0,50,200>forced retreat</color> mode. Now when we receive <color=0,50,200>average damage</color> we will try to make a jump to the nearest enemy-free system.
+        1005=Roger that, <Player>, <0> goes into <color=0,50,200>forced retreat</color> mode. Now when we receive <color=0,50,200>serious damage</color> we will try to make a jump to the nearest enemy-free system.
+        1006=Roger that, <Player>, <0> goes into <color=0,50,200>strong defense</color> mode. In the event of an enemy attack, we will hold out until the end.
+        1007=Sorry, but our generator is in the process of charging. The next jump will be possible in <0> days at the earliest.
+        1011=Your communicator connected to the <0> communication channel, and soon the worried face of the manager appeared on the monitor:<br><br>The system <1> is under attack, <Player>, so I don't have time for idle talk right now. Tell me the purpose of your call, but only quickly and to the point.
+        1014=We will be sincerely happy to fulfill your wish. So, how exactly do you want to use our generator?
+        1015=I'm sorry, <Player> but there is no way we can leave the system at such a busy time, when hundreds or even thousands of wounded may need our urgent care. It would be contrary to the basic principles of <clr>medical ethics<clrEnd>.
+        1016=More recently, scientists have invented a new defense technology that uses the principle of directional singular deviations of matter. The increase in protection comes at the expense of pointwise distortion of matter in places where enemy shells hit and warping of space in the path of one's own shots.<br>A massive generator is built into the case, using its parts to form an active field. However, such a device requires so much power that it only makes sense to install it on autonomous space stations.<br><br><0> weapons damage: <clr>+20<clrEnd><br>Fragmentation weapons damage: <clr>+20<clrEnd><br>Shield generator: <clr>+7<clrEnd>%<br>Hull cost: <clr>+25%<clrEnd><br><1><br>Installation cost: <2> cr.<br><br>The generator will be delivered and installed immediately after ordering. However, no other special improvement can be made after that. <3>
+        1017=It is no secret that the materials commonly used in the construction of spacecraft and stations are extremely expensive and uneconomical. In addition, damaged armor plates often have to be replaced as a whole, because they simply splinter and fall to pieces.<br>Our engineers have had an idea for a long time: replace all the armor of the station with polyxenate armor. Polyxenate is a state-of-the-art composite plastic that is as strong as the ship's armor at ultra-low temperatures, but at the same time extremely easy to maintain on a daily basis.<br>We can dismantle the current armor and sell it off to partially cover costs. <0><br><br>Hull cost: <clr>-50%<clrEnd><br>Droid effectiveness: <clr>+10<clrEnd><br><1><br>Installation cost: <2> cr.<br><br>The new armor will be delivered and assembled immediately after ordering. However, no other special improvement can be made after that. <3>
+        1018=Chai, we'll get some money from the communal fund to pay for repairs.
+        1019=Chai, the Supreme Lyakushas will not leave our base unrepaired.
+        1020=You're really out of your mind, aren't you? You're gonna make the brothers very unhappy...<br>Well, if you've made up your mind, then go ahead and move. <0>
+        1022=I'm sorry, but the engine room band told me that our engine power is not enough to make a hyperjump.<br>If you want, go poke around in the motor. Maybe you can squeeze a few extra parsecs out of it.
+        1024=I'm sorry, but the engine room abnd told me that our engine is not powerful enough to move this thing.<br>If you want, go poke around in the motor. Maybe you can squeeze a few extra "knots" out of it.
+        1025=At the moment you are <clr>very close to the star<clrEnd>, <Player>. I'm afraid that such close proximity to a solar rays could pose a serious threat to the integrity of our station's hull.<br>You must specify other coordinates to make the jump.
+        1026=You are <clr>too far<clrEnd> from the center of the system, <Player>. From that distance, our station will not be able to perform its basic duties effectively, not to mention the inevitable problems with food logistics.<br>You must specify other coordinates to make the jump.
+        1027=Energy weapons damage: <color=255,240,100>+</color><0><br>Radar range: <color=255,240,100>+</color><1><br>Scanner power: <color=255,240,100>+</color><2><br>Gripper power: <color=255,240,100>+</color><3><br>Gripper range: <color=255,240,100>+</color><4><br>Gripper speed: <color=255,240,100>+</color><5><br>Shield generator: <color=255,240,100>+</color><6>%
+        1028=Great, <Player>! We'll start installing and setting up the generator right away.<br>...<br>It's done! The generator is installed and has already started charging, and our station will soon be able to cross space faster than the fastest space ships.<br>You're a wonderful sponsor, <Player> - the entire staff is thrilled with the possibilities! Be sure to come back in <0> days to give your own orders for the first hyperspace jump.
+        1029=<br>Hmm, didn't you ever notice before that the light bulb over there was too bright? The electrician must have mixed up the wattage again, so we should ask him to replace it.
+        1031=<clr>Cheaper<clrEnd> station maintenance
+        1032=Tell me about the <clr>Hurricane<clrEnd> project
+        1033=Tell me about the <clr>GSOM<clrEnd> project
+        1034=<br>
+        1036=possible
+        1037=poss.
+        1038=<br><br><clr>Portal generator:<clrEnd><br>Jumping range: <0><br>Will be ready for use in: <1>
+        1039=Polyxenate
+        1040=GSOM-1
+        1041=Hurricane
+        1042=Days before scheduled repairs: <0>
+        1043=Scheduled repair: <0> units
+        1044=Oh, absolutely, <Player> - you can!<br>Since the main problem of the generator is the high consumption of onboard power, we could install an <clr>additional power core<clrEnd> on the station.<br>A better power supply would not only reduce the time to charge the generator, but also increase the maximum range of the jump, and at the same time strengthen the work of all energy-dependent subsystems of the station. Unfortunately, a full power core takes up quite a bit of space, so we would have to occupy one <clr>weapon<clrEnd> or one <clr>artifact<clrEnd> compartment to install it.<br>What do you think? Is it worth it?<br><br><0> <clr>+12<clrEnd><br>Generator charging time: <clr>-10<clrEnd> days<br><1> weapons damage: <clr>+7<clrEnd><br>Radar range: <clr>+250<clrEnd><br>Scanner power: <clr>+5<clrEnd><br>Gripper power: <clr>+25<clrEnd><br>Gripper range: <clr>+25<clrEnd><br>Gripper speed: <clr>+3<clrEnd><br>Shield generator: <clr>+5<clrEnd>%<br><2><br>Installation cost: <3> cr.
+        1045=Tell me about the <color=0,50,200>GSOM</color> project
+        1046=Contact <color=0,50,200>Pirate Base</color> <0>
+        1047=pirate base <0>
+        1048=Pirate base <0>
+        1049=Sorry, <Player>, but your chosen location is too close to another station. This creates a risk of collision for both incoming and outgoing ships. Choose another destination.
+        1050=As far as we know, another station is already jumping on the coordinates you gave us. Such a maneuver could result in a collision. Choose another destination.
+        1051=Keep in mind that we <clr>cannot go to systems that have been captured by the enemy or are in danger of being captured<clrEnd>. After all, our station is not a military facility and will only take part in hostilities as a last resort.<br>Also, we cannot jump into a system that already has <0> or already has <clr>more than three<clr> other space stations. Such actions are regarded by the Galactic Council as a waste of strategic resources and are punished to the fullest extent of wartime law.
+        1052=Keep in mind that <clr>we cannot go to systems already captured by the enemy<clrEnd>. However, there may be a <clr>large number of wounded in systems that are still at the risk of being captured<clrEnd> (indicated in red in the list) that require urgent medical assistance, and we cannot ignore this in any way.<br><clr>We cannot jump into a system<clrEnd> that already has <0> or has more than three other space stations present. Such actions are considered by the Galactic Council as a misallocation of strategic resources and are punished by all the strictness of military law.
+        164=Increase the structure by <0> units for <1> cr.
+        166=Increase armor by <0> units for <1> cr.
+        179=Excellent!
+        198=I agree, here's the money
+        201=Start installing the polyxenate armor
+        213=I am discontinuing my sponsorship of this station
+        214=It's a pity, but it's up to you. Sign here and here, and our further development will be handled by the galactic council. In any case, thank you for your cooperation!
+        216=I've changed my mind
+        275=Stop moving
+        294=Set a new course
+        301=Let's go!
+        314=End of transmission
+        321=Roger that
+        365=Shame on you, <Player>! You have been so honored, but here you stand before me and without the slightest shadow of respect declare that you are no longer willing to invest in strengthening the defense of our home galaxy! Or are you a traitor? What do you mean, no?<br>In short, put your pathetic signature right here and get the hell out of my sight! From now on, the modernization of our great base is in the safe hands of the Galactic Council.
+        375=Thank you for the information
+        377=Perhaps another time
+        404=Great! Our autogen and sledgehammer masters have already procured everything they need and are getting to work. The new compartment and the accompanying communications system will be up and running soon.<br>Before you know it, it'll be done!
+        407=Way to go, <Player>! Our autogen and sledgehammer masters have already procured everything they need and are getting to work. The new compartment and accompanying communications system will be up and running soon.<br>Before you know it, it'll be done!
+        416=What do you think?
+        427=<0>
+        442=Not interested
+        443=energy
+        444=energy
+        451=What do you think?
+        456=This is an experimental ultra-precision guidance system designed specifically for installation on coalition space bases. It replaces conventional radar and significantly improves the accuracy of all on-board weapons:<br><br>Weapons range: <clr>+60<clrEnd><br>Attack skill: <clr>+2<clrEnd><br>Hull cost: <clr>+25%<clrEnd><br><0><br>Installation cost: <1> cr.<br><br>The systems will be delivered and installed immediately after ordering. However, no other special upgrades can be made after that. <2>
+        463=<clr>Hurricane<clrEnd> has been successfully installed and calibrated, and the gunners are already taking an express training course to work with the new neural interface.<br>Very soon our base will be able to show off the longest-range cannons in endless space, and it's all thanks to you, <Player>.
+        464=You will cover the rest.
+        468=Well, welcome to a military base with plastic armor!<br>Cheer up, fighter, upgrading the base is much cheaper now, and repairs from your own pocket won't bite so hard on the wallet from now on.
+        470=The rest will be covered from your pocket.
+        472=Well done, <Player>! Under the safe shelter of the new armor, our guys will be able to hold off the aggressor on the approaches to the base even longer, even if they end up having to give their lives for it!<br>By the way, the new armor is already being welded to the frame. Go take a look for yourself, if you want.
+        473=A complete hull upgrade for <0> cr.
+        475=Thanks to your money, our base finally got a much-needed upgrade. With such an awesome hull, we should be able to turn into a real linkor! Just kidding - there's no way a base can become a linkor, but you're still very nice, <Player>.<br>By the way, check the list of available improvements, there might be something new.
+        476=Proceed with the installation
+        478=I need a detailed report on the status of the station
+        479=I wish to improve the hull of your station
+        484=Thanks to your money, the base has undergone a total renovation. The station is as shiny as new!<br>Check the available improvements, it's probably already possible to bolt something interesting to it.
+        487=Thank you for your cooperation, <Player>, the staff will now have <clr>20<clrEnd> more seconds to get to the escape pods when the system is attacked by the Dominators.
+        490=Well, welcome to a space station with a plastic armor!<br>Do not worry - improving such a station can be much cheaper, and repair from your own funds will now be not so expensive.
+        491=<clr>Hurricane<clrEnd> has been successfully installed and calibrated, and the gunners are already taking an express training course to work with the new neural interface.<br>Very soon our station will be able to show off the longest-range guns in endless space, and it's all thanks to you, <Player>.
+        492=Guess which ear I'm buzzing in? In both, you say? Oh, man! That's the sound of a working <clr>GSOM<clrEnd>!<br>Now our base is a really tough nut to crack and will be able to give a decent response to any enemy!
+        493=Well, try to guess which ear I'm buzzing in? In both, you say? Oh, man! That's the sound of a working <clr>GSOM<clrEnd>!<br>Now our base is a really tough nut to crack and will be able to give a decent response to any enemy!
+        510=Take a course for the planet <0>
+        512=Change the order
+        513=Roger that, over and out
+        514=Abort, over and out
+        515=What?! Leave this system and fly to another? But we can't leave billions of inhabitants unprotected! Come on, <Player>, let's show those bastards how wrong they were to come here!
+        524=Choose a system within sector <0>.
+        528=Target, system <0>, confirmed. Military base <1> is ready to hyperjump on your order.
+        530=Your communicator connected to the <0> military base's communication channel, and soon the captain's serious face appeared on the monitor:<br><br>Military base <1> on the line. What do you need, Ranger?
+        532=Your communicator connected to the communication channel of the military base <0>, and soon the stern face of the captain appeared on the monitor:<br><br>Well, well, well, whose ugly face appeared on my screen? <Player>, what you did - you did for nothing, you pathetic brat! By the way, they've already flown out after you, and all the station's guns are pointed at you right now. And don't even try to speak about your rights! We won't let you live to see a tribunal anyway.
+        533=Your communicator connected to the communication channel of the military base <0>, and soon a perplexed face of the captain appeared on the monitor:<br><br>Why the hell is a connection from a pirate ship allowed? Disconnect. Immediately!
+        536=What?! <Player>, such questions are the competence of senior officers, and besides, you don't look like an experienced leader or a brilliant strategist. Or do you want to compromise the defenses of our sector?<br>Better get back to your ranger duties. March! March on!
+        547=There is already another military base in the <0> system and the presence of multiple military bases in one system is not approved.
+        548=Full throttle!
+        553=I want to change the location of your base
+        555=day
+        556=days
+        574=restart~Abort, keep moving
+        575=restart~Abort, over and out
+        576=restart~Cancel the change of location
+        578=Yes sir!
+        579=restart~Roger that, over and out
+        580=restart~Yes, it is impressive!
+        581=Cancel the change of location
+        582=Make the jump to another system
+        587=At the moment the base <0> is in stationary mode and we have not received any other orders from the Galactic Council. Nevertheless, the command respects your merits and combat experience, so you can choose where the station will fly to in the near future.<br>We are ready to execute the order.
+        596=Our base is now preparing to strike at an enemy invaded system. This task has been set by the Galactic Council and is of the highest priority, so all flights are temporarily prohibited.<br>By the way, if you want, you can join the operation. We could use an extra pair of hands and guns.
+        600=To the hangar
+        601=Your communicator connected to the communication channel of the military base <0>, and soon the tense face of the captain appeared on the monitor:<br><br>What the hell do you want, <Player>?! Can't you see we're fighting? Quick, cut the damn communications and help us destroy the enemy!
+        602=Stop talking! We're in enemy territory. Take off immediately and help our guys destroy the enemy!
+        603=Contact <color=0,50,200>military base</color> <0>
+        604=Our base can make a tactical flight and take a new position within the <0> system. We can also activate the long range hyperdrive to instantly move to another star.<br>Just don't forget that the first priority of the base <1> is the defense of the sector <2>, which means that it is impossible to jump beyond it.
+        605=restart~Copy that
+        608=Flight within the system
+        612=Abort, keep going
+        619=As you should know, our base's hyperdrives are very different in power from those on normal ships. Interstellar travel overloads are much higher than allowed, so all personnel and passengers must be kept in special cryo-chambers, and all transported ships must be protected by a stasis field.<br>We weren't planning on hyperjumping anytime soon, so we can't take any extra passengers with us.<br>Contact us from the bridge of your ship, right after takeoff, and give the order to make the jump from there.
+        620=Starting the main engines in 3... 2.. 1.. Go... Whoa! That's quite a shake! So, Ranger, are you feeling the power of the Interstellar Coalition?<br>Five seconds, flight normal... If we don't encounter any surprises on the way, we'll be there in <0> <1>.
+        622=Jump into the <0> system
+        629=To relocate within the system, you must specify a new station location. We can set a course to the current coordinates of one of the <clr>planets<clrEnd> or to the coordinates of your own <clr>ship<clrEnd>.
+        634=I confirm the change of course
+        642=System <0> is under enemy control, and our base cannot take part in an offensive operation without a corresponding order from the Galactic Council.<br>Choose a system under the control of Coalition forces.
+        643=Choose a different system
+        647=Awaiting confirmation of course change order.
+        648=I'm waiting for confirmation of the relocation order.
+        654=Manage base movement
+        656=To relocate within the system, you must specify a new station location. Since you yourself are here right now, you can't set your ship as a destination, so you'll have to choose from a list of coordinates of local <clr>planets<clrEnd>.
+        659=I also remind you that right now our base is relocating within the <0> system. We are moving at the speed of <2> and should reach our destination in <2> <3>.
+        660=At this moment the base <0> is relocating within the <1> system. We are moving at the speed of <2> and should reach our destination in <3> <4>.<br>You can cancel the order or adjust the current course as you see fit.
+        666=Set a course for <color=0,50,200>my ship's current location</color>
+        670=The new location is <clr>too close to the star<clrEnd>, it is impossible to relocate.<br>Provide different coordinates, <Player>. It's not in our immediate plans to barbecue our own ass.
+        671=The new location is <clr>too far away from the star<clrEnd>, it is impossible to relocate.<br>Provide different coordinates, <Player>. Being on the edge of the system, we simply can't defend it in the event of an enemy attack.
+        672=The number of space stations in the <0> system is currently sufficient to not worry about its defense capability.<br>We believe that flying there would be an irrational strategic decision.
+        673=Crew, get ready for hyperjump!<br>Ranger <Player> - keep your distance and watch. It's a rare sight to see!
+        674=Your communicator connected to the communication channel of the military base <0>, and soon the serious face of the captain appeared on the monitor:<br><br>The military base <1> is preparing for hyperjump, so we can't take unauthorized ships on board. Keep your distance!
+        677=The course to the current coordinates of the planet <0> is set.<br><br>Distance to target: <1> million km.<br>Base speed: <2><br>Calculated travel time: <3> <4><br><br><5>
+        678=The course to the current coordinates of <clr>your ship<clrEnd> is set.<br><br>Distance to target: <0> million km.<br>Base speed: <1><br>Estimated travel time: <2> <3><br><br><4>
+        679=Orders accepted, changing course.<br>...<br>The course has been successfully corrected.<br>But why don't you adjust it a little less often, huh? Because after the sharp turns I get complaints from the kitchen about broken plates.
+        683=Stop order accepted - stop the machine! I said stop the machine! Stop, stop, stop!!!<br>...<br>Ugh, they're recruiting military personnel!<br>Well, the stopping maneuver, so to speak, is complete, the military base <0> goes into stationary mode.
+        692=Of course, all this is very interesting, but why then this generator is called "portal" and not, for example, "bubble"?
+        712=The capabilities of our portal generator have increased significantly, and the staff will be happy that we will save some power for the ship's compartments.
+        725=Max. jump range:
+        726=Maximum jump range:
+        731=Tell me about the <color=0,50,200>Portal generator</color> project
+        733=Well, that sounds kind of cool - start assembling!
+        742=</color> days.
+        744=Is there any way I can <color=0,50,200>improve</color> your <color=0,50,200>portal generator</color>?
+        748=Oh, it's quite a remarkable device! But to describe it in an accessible way, I will have to delve a little deeper into galactic history.<br>You see, the ancient Gaalian ship blueprints from the time of the Galactic expansion, which were stolen by Rachehan, were discovered and put to use again by the current leaders of the pirate clan. As a result, even before the Dominators' sudden aggression had begun, the pirates had a crude but highly effective device capable of almost instantaneously moving large spacecraft or even entire space stations through space! Unlike bulky military hyperdrives capable of overloading any unprotected organism on board, the portal generator is based on the creation of so-called "bubbles" of warped space.<br>Naturally, the Galactic Council could not simply leave such technology in the hands of the enemy, thereby giving him a serious military advantage, and therefore, as soon as information about the pirate development reached the highest ranks, the ban on the reproduction of hyperspace bubble technology was urgently lifted, and the best minds of the Coalition began to work.<br>In the end, even despite the fact that the ancient technology was extremely complex and the knowledge of their structure partially lost, the problem, the solution of which pirate technicians were struggling for years, our scientists have solved in a few months of not particularly strenuous work. True, unlike those used by the Gaalians in the days of galactic expansion, the bubbles created by the portal generator are quite unstable and therefore cannot maintain a sufficiently reliable structure to move for too long. But, as tests have shown, even a short time spent in the bubble to any space object is quite enough for almost instantaneous movement at a very considerable distance. The most significant disadvantage of the portal generator is that each such movement requires a serious expenditure of energy, and this, in turn, creates significant difficulties with the installation of portal generators on small and medium-sized ships. Incidentally, it was precisely because of this disadvantage that the pirates eventually had to turn their dominions into huge space power plants. And yet, even with all the disadvantages and limitations, the very ability to instantly move such massive objects over such great distances is a true miracle of technology, isn't it, <Player>?<br>Well, now you just have to say yes, and we will immediately begin installing the latest <clr>portal generator<clrEnd> on our station!<br><br><0> <clr>12<clrEnd> parsecs<br>Generator charging time: <clr>45<clrEnd> days<br><1><br>Installation cost: <2> cr.
+        749=Yes, in fact, your question itself already partially contains the answer. The developers just thought that the name of such a serious device should not be associated with children's toys or foam generators for baths. Just try to pronounce it aloud - <clr>Bubble Machine<clrEnd>! Yeah, that's what makes it fun!<br>Well, on the other hand, <clr>portals<clrEnd> are also a crucial part of the success of this generator. After all, it is not enough just to create a hyperspace bubble, it is also necessary to move the ship there. It is through such portals that the ship enters the created bubble. One portal on the entrance, the other on the exit.<br>By the way, the principle of action of these portals is probably familiar to you if you have ever visited the so-called "black holes". In fact, they are not any holes, but, in fact, the same portals to hyperspace bubbles, which are also sometimes incorrectly called "hyperspace clots". Such "clots" differ from the bubbles we create only in the fact that they have a natural origin and much more solid size, and are not subject to external control and therefore throw the ships caught inside not in a predetermined point, but at some random one.<br>Well, I think that's enough of your free lectures for today. Will you sponsor the installation of the portal generator or not?<br><br><0> <clr>12<clrEnd> parsecs<br>Generator charging time: <clr>45<clrEnd> days<br><1><br>Installation cost: <2> cr.
+        757=pc.
+        759=On this station was
+        762=Ready to jump to:
+        765=Ready
+        772=This station was fitted with an <color=255,240,100>additional power core</color> that greatly improved operation of the portal generator and all power-dependent subsystems:<br><clr><clrEnd><br>
+        774=is fitted with <color=255,240,100>portal generator</color>, which allows it to make hyperspace jumps:
+        777=This station has <0> <color=255,240,100>additional power cores</color> installed, greatly improving the operation of the portal generator and all power-dependent subsystems:<br><clr><clrEnd><br>
+        780=Well, that sounds reasonable - the mechanics have already gotten to work.<br>...<br>The new power core has been successfully installed and incorporated into the station's power supply system.<0>
+        781=<br>Oh, by the way, wouldn't you like to buy sudden lightning strike insurance? Would you? Cause we've had a lot of accidents lately. It's a very electrifying environment, you know...
+        783=This is the third, by the way.<br>Allow me to shake your generous hand on this occasion... Ouch!!! Why are you beating me like that!? Are you wearing nothing but fur coats on your ship? And it's called a ranger.
+        787=I guess you can still use your cannons - install the power core <0>
+        788=I believe that the ability to retreat quickly is much more important to you than firepower - set the power core <0>
+        789=to the artifact compartment
+        790=into the gun compartment
+        794=Can I further <color=0,50,200>improve</color> your <color=0,50,200>portal generator</color>?
+        797=Contact <color=0,50,200>technology center</color> <0>
+        798=Contact <color=0,50,200>business center</color> <0>
+        799=Contact <color=0,50,200>medical center</color> <0>
+        800=Contact <color=0,50,200>ranger center</color> <0>
+        801=Contact <color=0,50,200>research center</color> <0>
+        807=I see
+        813=The station is in <color=0,50,200>forced retreat</color> mode and will try to leave the system if it receives more than <color=0,50,200><0>%</color> damage to its hull structure.
+        817=Let the station retreat after receiving more than <color=0,50,200>25%</color> hull damage
+        818=Let the station retreat after receiving more than <color=0,50,200>50%</color> hull damage
+        819=Let the station retreat after receiving more than <color=0,50,200>75%</color> hull damage
+        820=Not one step back! Let the station fight to the last man!
+        822=Great!
+        831=The station is in <color=0,50,200>defensive mode</color> and will resist all attacks until the very end.
+        834=Next
+        836=You know what, I've changed my mind about making that jump
+        843=I'm ready, open the portal
+        844=No, cancel the jump, I changed my mind
+        848=Terminate the sponsorship (down payment will be lost)
+        850=Send me into the <color=0,50,200><0></color> system
+        851=another <color=0,50,200>technology center</color>
+        852=another <color=0,50,200>business center</color>
+        854=another <color=0,50,200>ranger center</color>
+        855=another <color=0,50,200>research station</color>
+        858=Very well, <Player>, and where do you want to send us?<br><0>
+        859=one <color=0,50,200>medical center</color>
+        860=Don't worry, <Player>, no one is forcing you to do this. Come back any time you feel like it.
+        861=Cancel the distant jump, I've changed my mind
+        863=Sorry, there are no systems available for jump within the range of our portal generator.
+        865=Well, that's right, <Player>, but I would like to remind you that this inconsistency in wishes just cost us an hour of operation of the entire flight center.
+        869=I confirm the jump, go ahead
+        870=Cancel the move, deflate the bubble
+        878=technology center <0>
+        879=business center <0>
+        880=medical center <0>
+        881=ranger center <0>
+        882=research station <0>
+        888=Go to the current coordinates <color=0,50,200>my ship</color>
+        889=Go to the current coordinates of the planet
+        897=Back
+        901=Would you like to use our portal generator in some other way?
+        902=Perhaps you would like to use our portal generator in some other way?
+        903=I've changed my mind, you don't need to change location now
+        904=ready
+        905=ready
+        906=planets <0>
+        907=of your ship
+        909=As you say, <Player>. Bubble to send to the system <0> successfully formed, <1> going to the opening of the portal.<br>We will wait for the final confirmation and proceed to make the jump.
+        910=As you say, <Player>. Bubble to send to the system <0> successfully formed, <1> going to the opening of the portal.<br>Confirm your commitment to the jump and we'll get started.
+        914=technology center <0>
+        915=business center <0>
+        916=medical center <0>
+        917=ranger center <0>
+        918=research station <0>
+        922=Your communicator connected to the <0> communication channel, and soon the grim face of the manager appeared on the monitor:<br><br>We want nothing to do with bandits and terrorists, <Player>! Do not approach our station with a single shot, or you will be quickly and unequivocally destroyed!
+        926=Perhaps you don't need a behavioral change just yet
+        927=
+        932=I want to <color=0,50,200>change the station's behavior</color> in case of an enemy attack
+        933=I want you to <color=0,50,200>send me</color> to another system
+        934=Your station must make a <color=0,50,200>distant jump</color> to another system
+        935=Your station must make a <color=0,50,200>short jump</color> within the current system
+        937=I guess not, I've changed my mind
+        942=You're right, I'd rather set the coordinates <color=0,50,200>to my ship</color> (in the hangar)
+        943=As you say, <Player>, so we'll stay in the old place for now.
+        945=We can send a station to the current position of one of the <clr>local planets<clrEnd>, and if you were to contact us from space, you could give us the exact coordinates of the location of <clr>your own ship<clrEnd>.
+        947=Technology Center <0>
+        948=Business Center <0>
+        949=Medical Center <0>
+        950=Ranger Center <0>
+        951=Research Station <0>
+        952=As you say, <Player>. The <0> coordinates are set and the hyperspace bubble is successfully formed. <1> to the opening of the portal.<br>We wait for the final confirmation and proceed to make the jump.
+        956=Go to the system <0>
+        957=Go to the system
+        961=Confirmation received, beginning hyperspace jump.<br>Opening the portal in: 3... 2... 1...
+        966=Okay, <Player>, our station stays in the <0> system for now. Let me know if you change your mind again.
+        971=Greetings, Ranger <Player>. Please be reminded that <0> is currently making a hyperspace jump to system <1>. For your own safety, all departures from the station are strictly forbidden until the jump is completed.<br>According to the navigators' calculations, we will be out of the hyperspace bubble in <2> days, after which you can leave us safely. Until then, I suggest you pass the time in our relaxation compartment or visit the observation deck, where you can enjoy an absolutely stunning view of hyperspace beauty.
+        972=Relax and enjoy your flight
+        973=Sorry
+        974=Jump!
+        975=Roger, <Player>, let's cancel the bubble.<br>I really hope that next time you won't waste our time.
+        976=Of course, <Player>. Current mode: <0><br>What mode of behavior do you want to set instead?
+        983=The jump is not necessary, I only want to <color=0,50,200> change the behavior</color> of the station in the event of an attack by the enemy
+        987=Well, suit yourself. Perhaps you'd like to use our portal generator in some other way?
+        988=Of course, <Player>, you just need to specify the new coordinates.<br><0><br>So, where should we move our base?
+        993=Of course, <Player>, after all, it is thanks to you that we have this wonderful device. We can jump your ship to any system within range of our portal generator (<0> parsecs).<br>Please note that unlike the cheesy pirate stuff, which selects available systems based on the hardly predictable principle of <clr>quantum indeterminacy<clrEnd>, our generators are carefully tuned and calibrated before each long-range leap. The probability of failure followed by splitting into atoms is a negligible <clr>0.3%<clrEnd>, which in practice you can safely ignore. You're a brave ranger, aren't you <Player>?<br>Here is a complete list of systems available to jump to:
+        994=The Hyperportal has been successfully opened and will remain active for several minutes. Hurry to the hangar, <Player> your ship will be moved to the bubble right on takeoff.
+        995=No, that's all for now, thank you.
+        996=Your communicator connected to the <0> communication channel, and soon the calm face of the manager appeared on the monitor:<br><br>Good morning, <Player>. How can our humble station help you?
+        999=Your communicator connected to the <0> communication channel, and soon an annoyed manager's face appeared on the monitor:<br><br><Player>, you must be well aware of our attitude toward you. If not, here's a hint: it's pretty far stretched from the concept of the word "kindness".<br>Be so kind to release the communication channel, and refrain from calling again in the future until you have changed your behavior for the better.
+        DialogsBK ^{
+            GreetingImprove=Improving a space station is not an inexpensive enterprise, so the Galactic Council limits itself to relatively inexpensive basic projects and subsequently conducts only rare planned renovations. You say you're willing to invest personal funds? That's admirable!
+            GreetingImprove=Here is an engineering summary of the current technical condition of our station:
+            GreetingImprove=<clr><clrEnd>
+            GreetingImprove=<HullReport>
+            GreetingImprove=<clr><clrEnd>
+            GreetingImprove=By the way, you <Player>, as a sponsor, can directly participate in the planning and optimization of work, if, of course, you know the technology, or advise where we can buy cheaper materials.
+            GreetingImprove=The list of available station improvements is shown below.
+            GreetingNotImprove=Of course, Ranger <Player>, here is an engineering summary of the current technical condition of our station:
+            GreetingNotImprove=<clr><clrEnd>
+            GreetingNotImprove=<HullReport>
+            GreetingNotImprove=<clr><clrEnd>
+            GreetingNotImprove=I hope this data can help you in your difficult and responsible business.
+        }
+        DialogsCB ^{
+            GreetingImprove=We have enough money to maintain this station and make routine repairs if things get too worn out, as well as the occasional addition of something new. Your investment will help our cause a lot. I'm sure the boys will appreciate what you're doing, if you're up to it.
+            GreetingImprove=Here's a report on the state of the hull of our base:
+            GreetingImprove=<clr><clrEnd>
+            GreetingImprove=<HullReport>
+            GreetingImprove=<clr><clrEnd>
+            GreetingImprove=By the way, <Player>, since you paid us fairly, you can tell the workers what to do, if you know what they're doing. At the same time, you can tell us where we can get the materials for future upgrades.
+            GreetingImprove=The list of available station improvements is shown below.
+            GreetingNotImprove=Well, <Player>, here's a report on the state of the hull of our base:
+            GreetingNotImprove=<clr><clrEnd>
+            GreetingNotImprove=<HullReport>
+            GreetingNotImprove=<clr><clrEnd>
+            GreetingNotImprove=I hope you can figure it out.
+        }
+        DialogsMC ^{
+            GreetingImprove=Improving a space station is not an inexpensive enterprise, so the Galactic Council limits itself to relatively inexpensive basic projects and subsequently conducts only rare planned renovations. You say you're willing to invest personal funds? That's admirable!
+            GreetingImprove=Here is an engineering summary of the current technical condition of our station:
+            GreetingImprove=<clr><clrEnd>
+            GreetingImprove=<HullReport>
+            GreetingImprove=<clr><clrEnd>
+            GreetingImprove=By the way, you <Player>, as a sponsor, can directly participate in the planning and optimization of work, if, of course, you know the technology, or advise where we can buy cheaper materials.
+            GreetingImprove=The list of available station improvements is shown below.
+            GreetingNotImprove=Of course, Ranger <Player>, here is an engineering summary of the current technical condition of our station:
+            GreetingNotImprove=<clr><clrEnd>
+            GreetingNotImprove=<HullReport>
+            GreetingNotImprove=<clr><clrEnd>
+            GreetingNotImprove=I hope this data can help you in your difficult and responsible business.
+        }
+        DialogsPB ^{
+            GreetingImprove=We have enough money to maintain this station and make routine repairs if things get too worn out, as well as the occasional addition of something new. Your investment will help our cause a lot. I'm sure the boys will appreciate what you're doing, if you're up to it.
+            GreetingImprove=Here's a report on the state of the hull of our base:
+            GreetingImprove=<clr><clrEnd>
+            GreetingImprove=<HullReport>
+            GreetingImprove=<clr><clrEnd>
+            GreetingImprove=By the way, <Player>, since you paid us fairly, you can tell the workers what to do, if you know what they're doing. At the same time, you can tell us where we can get the materials for future upgrades.
+            GreetingImprove=The list of available station improvements is shown below.
+            GreetingNotImprove=Well, <Player>, here's a report on the state of the hull of our base:
+            GreetingNotImprove=<clr><clrEnd>
+            GreetingNotImprove=<HullReport>
+            GreetingNotImprove=<clr><clrEnd>
+            GreetingNotImprove=I hope you can figure it out.
+        }
+        DialogsPlayerMB ^{
+        }
+        DialogsRC ^{
+            GreetingImprove=Improving a space station is not an inexpensive enterprise, so the Galactic Council limits itself to relatively inexpensive basic projects and subsequently conducts only rare planned renovations. You say you're willing to invest personal funds? That's admirable!
+            GreetingImprove=Here is an engineering summary of the current technical condition of our station:
+            GreetingImprove=<clr><clrEnd>
+            GreetingImprove=<HullReport>
+            GreetingImprove=<clr><clrEnd>
+            GreetingImprove=By the way, you <Player>, as a sponsor, can directly participate in the planning and optimization of work, if, of course, you know the technology, or advise where we can buy cheaper materials.
+            GreetingImprove=The list of available station improvements is shown below.
+            GreetingNotImprove=Of course, Ranger <Player>, here is an engineering summary of the current technical condition of our station:
+            GreetingNotImprove=<clr><clrEnd>
+            GreetingNotImprove=<HullReport>
+            GreetingNotImprove=<clr><clrEnd>
+            GreetingNotImprove=I hope this data can help you in your difficult and responsible business.
+        }
+        DialogsSB ^{
+            GreetingImprove=Improving a space station is not an inexpensive enterprise, so the Galactic Council limits itself to relatively inexpensive basic projects and subsequently conducts only rare planned renovations. You say you're willing to invest personal funds? That's admirable!
+            GreetingImprove=Here is an engineering summary of the current technical condition of our station:
+            GreetingImprove=<clr><clrEnd>
+            GreetingImprove=<HullReport>
+            GreetingImprove=<clr><clrEnd>
+            GreetingImprove=By the way, you <Player>, as a sponsor, can directly participate in the planning and optimization of work, if, of course, you know the technology, or advise where we can buy cheaper materials.
+            GreetingImprove=The list of available station improvements is shown below.
+            GreetingNotImprove=Of course, Ranger <Player>, here is an engineering summary of the current technical condition of our station:
+            GreetingNotImprove=<clr><clrEnd>
+            GreetingNotImprove=<HullReport>
+            GreetingNotImprove=<clr><clrEnd>
+            GreetingNotImprove=I hope this data can help you in your difficult and responsible business.
+        }
+        DialogsTC ^{
+            GreetingImprove=Improving a space station is not an inexpensive enterprise, so the Galactic Council limits itself to relatively inexpensive basic projects and subsequently conducts only rare planned renovations. You say you're willing to invest personal funds? That's admirable!
+            GreetingImprove=Here is an engineering summary of the current technical condition of our station:
+            GreetingImprove=<clr><clrEnd>
+            GreetingImprove=<HullReport>
+            GreetingImprove=<clr><clrEnd>
+            GreetingImprove=By the way, you <Player>, as a sponsor, can directly participate in the planning and optimization of work, if, of course, you know the technology, or advise where we can buy cheaper materials.
+            GreetingImprove=The list of available station improvements is shown below.
+            GreetingNotImprove=Of course, Ranger <Player>, here is an engineering summary of the current technical condition of our station:
+            GreetingNotImprove=<clr><clrEnd>
+            GreetingNotImprove=<HullReport>
+            GreetingNotImprove=<clr><clrEnd>
+            GreetingNotImprove=I hope this data can help you in your difficult and responsible business.
+        }
+        DialogsWB ^{
+            GreetingImprove=Just keep in mind that upgrading our base will cost you a small fortune, but with a great result! There's no way those bureaucratic men in the ministries will add a single extra credit to our maintenance bill. Thank goodness we have such brave and generous guys like you, <Player>.
+            GreetingImprove=Here's a detailed report on the current state of our base hull:
+            GreetingImprove=<clr><clrEnd>
+            GreetingImprove=<HullReport>
+            GreetingImprove=<clr><clrEnd>
+            GreetingImprove=And you should also know that if the money is yours, as a sponsor you can take part in the strategic planning of future upgrades as much as you can. Share, so to speak, technical experience.
+            GreetingImprove=A list of potential improvements can be found below.
+            GreetingNotImprove=Well, here's an engineering report on the current state of our base hull:
+            GreetingNotImprove=<clr><clrEnd>
+            GreetingNotImprove=<HullReport>
+            GreetingNotImprove=<clr><clrEnd>
+            GreetingNotImprove=Separately, I hope I do not need to remind you that the disclosure of such information is punishable by a tribunal to the fullest extent?
+        }
+        RuinHullReport=Type: <HullName>
+        RuinHullReport=Structure: <CurrentHitPoints>/<FullHitPoints> pt.<ScheduledRepair>
+        RuinHullReport=Max <4> structure: <MaxHitPoints> pt.
+        RuinHullReport=Current armor: <CurrentArmor> + (<AdditionalArmor>) pt.
+        RuinHullReport=Max possible armor: <MaxArmor> pt.
+        RuinHullReport=Hull cost: <HullCost> cr.<AddText>
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            ExpHullsBases_TeleportCoords ^{
+                Description=Coordinates of teleporting inside system station
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=if(ShipOrder(ScriptItemActShip()) != 7) ShipDeleteCustomShipInfo(ScriptItemActShip(), CurInfo());
+                }
+                OnActCodeTypes=t_OnStep
+                OnActStepTypes=11
+            }
+            Extra_Powercores ^{
+                Description=
+                Icon=619
+                Name=Auxiliary power supply
+            }
+            Teleport_Generator ^{
+                Description=
+                Icon=888
+                Name=Portal generator
+                OnActCode ^{
+                    01=if(ScriptItemActionType(t_OnStep,1))
+                    02 ^{
+                        01=if(ShipCustomShipInfoTextData(0,CurInfo(),3)=='InHyper')
+                        02 ^{
+                            01=if(!ShipInHyperSpace(ScriptItemActShip()))
+                            02 ^{
+                                01=ShipCustomShipInfoTextData(0,CurInfo(),3,'');
+                                02=if(ScriptItemActShip()==GetShipRuins(Player()))
+                                03 ^{
+                                    01=Sound('Sound.PG_Activation');
+                                    02=Sound('Sound.PG_Deactivation');
+                                    03=ShipCustomShipInfoData(0,CurInfo(),3,ShipCustomShipInfoData(0,CurInfo(),3)+1);
+                                }
+                            }
+                        }
+                    }
+                    03=if(ScriptItemActionType(t_OnStep,11))
+                    04 ^{
+                        01=if(ShipCustomShipInfoData(0,CurInfo(),3))
+                        02 ^{
+                            01=if(!ShipInHyperSpace(ScriptItemActShip()))
+                            02 ^{
+                                01=ShipCustomShipInfoData(0,CurInfo(),3,ShipCustomShipInfoData(0,CurInfo(),3)-1);
+                                02=if(ShipCustomShipInfoData(0,CurInfo(),3))ShipCustomShipInfoTextData(0,CurInfo(),1,''+ShipCustomShipInfoData(0,CurInfo(),3)+CT('Script.Mod_ExpHullsBases.742'));
+                                03=else ShipCustomShipInfoTextData(0,CurInfo(),1,CT('Script.Mod_ExpHullsBases.765'));
+                            }
+                        }
+                        03=else ShipCustomShipInfoTextData(0,CurInfo(),1,CT('Script.Mod_ExpHullsBases.765'));
+                    }
+                    05=if(ScriptItemActionType(t_OnTakingDamageEn) || ScriptItemActionType(t_OnTakingDamageSp) || ScriptItemActionType(t_OnTakingDamageMi))
+                    06 ^{
+                        01=if(!ShipCustomShipInfoData(0,CurInfo(),3))
+                        02 ^{
+                            01=if(ShipCustomShipInfoTextData(0,CurInfo(),2)!='')
+                            02 ^{
+                                01=int targetDam=0+ShipCustomShipInfoTextData(0,CurInfo(),2);
+                                02=if(HullDamage(ScriptItemActShip())>targetDam)
+                                03 ^{
+                                    01=int j=1;
+                                    02=int jumpStar=0;
+                                    03=dword curStar=ShipStar(ScriptItemActShip());
+                                    04=while(jumpStar==0 && j<GalaxyStars())
+                                    05 ^{
+                                        01=jumpStar=StarNearbyStars(curStar,j);
+                                        02=if(StarNearbyStarsDist(curStar,j)<=ShipCustomShipInfoData(0,CurInfo(),1))
+                                        03 ^{
+                                            01=j=j+1;
+                                            02=if(StarOwner(jumpStar)!=0)
+                                            03 ^{
+                                                01=jumpStar=0;
+                                                02=continue;
+                                            }
+                                            04=if(StarCustomFaction(jumpStar)!='')
+                                            05 ^{
+                                                01=jumpStar=0;
+                                                02=continue;
+                                            }
+                                            06=if(StarRuins(jumpStar,ShipType(ScriptItemActShip())))
+                                            07 ^{
+                                                01=jumpStar=0;
+                                                02=continue;
+                                            }
+                                            08=if(StarRuins(jumpStar)>=5)
+                                            09 ^{
+                                                01=jumpStar=0;
+                                                02=continue;
+                                            }
+                                        }
+                                        04=else jumpStar=-1;
+                                    }
+                                    06=if(jumpStar>-1)
+                                    07 ^{
+                                        01=if(ShipInScript(ScriptItemActShip()))ShipOut(ScriptItemActShip());
+                                        02=ShipCustomShipInfoTextData(0,CurInfo(),3,'InHyper');
+                                        03=ShipCustomShipInfoData(0,CurInfo(),3,ShipCustomShipInfoData(0,CurInfo(),2));
+                                        04=ShipCustomShipInfoTextData(0,CurInfo(),1,''+ShipCustomShipInfoData(0,CurInfo(),3)+CT('Script.Mod_ExpHullsBases.742'));
+                                        05=OrderTeleport(ScriptItemActShip(),jumpStar,CoordX(ScriptItemActShip()),CoordY(ScriptItemActShip()));
+                                        06=ShipOrderData1(ScriptItemActShip(),(StarNearbyStarsDist(curStar,j)/10)+1);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnTakingDamageEn,t_OnTakingDamageSp,t_OnTakingDamageMi,t_OnStep
+                OnActStepTypes=1,11
+            }
+            WB_move ^{
+                Description=Infobox for the WB movement
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=dword cur_ruin=ScriptItemActShip();
+                    02=if(ScriptItemActionType(t_OnStep,0))
+                    03 ^{
+                        01=if(ShipSpeed(cur_ruin)<=0)
+                        02 ^{
+                            01=OrderNone(cur_ruin);
+                            02=OrderLock(cur_ruin,0);
+                            03=ShipDeleteCustomShipInfo(cur_ruin,'WB_move');
+                            04=if(GetShipRuins(Player())==cur_ruin)
+                            05 ^{
+                                01=InterfaceState('RuinsTalk','StarFieldWB',-1);
+                                02=Sound('Sound.ForsageOff');
+                            }
+                        }
+                    }
+                    04=else if(ScriptItemActionType(t_OnStep,11))
+                    05 ^{
+                        01=dword infos=CurInfo();
+                        02=if((CoordX(cur_ruin)==ShipCustomShipInfoData(0,infos,1) || CoordX(cur_ruin)==ShipCustomShipInfoData(0,infos,1)+1 || CoordX(cur_ruin)==ShipCustomShipInfoData(0,infos,1)-1) && (CoordY(cur_ruin)==ShipCustomShipInfoData(0,infos,2) || CoordY(cur_ruin)==ShipCustomShipInfoData(0,infos,2)+1 || CoordY(cur_ruin)==ShipCustomShipInfoData(0,infos,2)-1))
+                        03 ^{
+                            01=OrderNone(cur_ruin);
+                            02=OrderLock(cur_ruin,0);
+                            03=ShipDeleteCustomShipInfo(cur_ruin,'WB_move');
+                        }
+                    }
+                    06=else if(ScriptItemActionType(t_OnReEnteringForm))
+                    07 ^{
+                        01=if(ShipSpeed(cur_ruin)<=0)
+                        02 ^{
+                            01=OrderNone(cur_ruin);
+                            02=OrderLock(cur_ruin,0);
+                            03=ShipDeleteCustomShipInfo(cur_ruin,'WB_move');
+                            04=InterfaceState('RuinsTalk','StarFieldWB',-1);
+                            05=Sound('Sound.ForsageOff');
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnStep,t_OnReEnteringForm
+                OnActStepTypes=0,11
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+Data ^{
+    SE ^{
+        Ship ^{
+            Akrin ^{
+                G3 ^{
+                    2ImageP=GI,Bm.ShipP.G3
+                    Anim ^{
+                        0=1,[35,100-199]
+                        Normal=2,[35,0-99]
+                    }
+                    AnimS ^{
+                        Normal=2,[35,0-99]
+                    }
+                    Image=Bm.Ship.G3
+                    ImageMap=Bm.Ship.SpecialMap
+                    ImageS=Bm.Ship.G3s
+                    PanelPartnerImage=G3
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=48,108
+                    Tail2=58,108
+                    Tail3=71,108
+                    Tail4=81,108
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_ShuMiniBoss=1,Script.Mod_ShuMiniBoss
+        ShuMiniBoss_PiratesHunt=1,Script.ShuMiniBoss_PiratesHunt
+        ShuMiniBoss_WarriorsHunt=1,Script.ShuMiniBoss_WarriorsHunt
+        spawntransport=1,Script.spawntransport
+    }
+}

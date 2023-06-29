@@ -1,0 +1,56 @@
+Bm ~{
+    PUMaps ~{
+        120_1=Mods\Evolution\EvoPlanets\DATA\PUMaps\120_1.jpg
+        120_2=Mods\Evolution\EvoPlanets\DATA\PUMaps\120_2.jpg
+        140_1=Mods\Evolution\EvoPlanets\DATA\PUMaps\140_1.jpg
+        140_2=Mods\Evolution\EvoPlanets\DATA\PUMaps\140_2.jpg
+        140_3=Mods\Evolution\EvoPlanets\DATA\PUMaps\140_3.jpg
+        160_1=Mods\Evolution\EvoPlanets\DATA\PUMaps\160_1.jpg
+        160_2=Mods\Evolution\EvoPlanets\DATA\PUMaps\160_2.jpg
+        160_3=Mods\Evolution\EvoPlanets\DATA\PUMaps\160_3.jpg
+        160_4=Mods\Evolution\EvoPlanets\DATA\PUMaps\160_4.jpg
+        180_1=Mods\Evolution\EvoPlanets\DATA\PUMaps\180_1.jpg
+        180_2=Mods\Evolution\EvoPlanets\DATA\PUMaps\180_2.jpg
+        200_1=Mods\Evolution\EvoPlanets\DATA\PUMaps\200_1.jpg
+        200_2=Mods\Evolution\EvoPlanets\DATA\PUMaps\200_2.jpg
+        200_3=Mods\Evolution\EvoPlanets\DATA\PUMaps\200_3.jpg
+    }
+    Planet2 ~{
+        T ~{
+            120 ~{
+                120_1=Mods\Evolution\EvoPlanets\DATA\Planet2\120\120_1.psd
+                120_2=Mods\Evolution\EvoPlanets\DATA\Planet2\120\120_2.psd
+            }
+            140 ~{
+                140_1=Mods\Evolution\EvoPlanets\DATA\Planet2\140\140_1.psd
+                140_2=Mods\Evolution\EvoPlanets\DATA\Planet2\140\140_2.psd
+                140_3=Mods\Evolution\EvoPlanets\DATA\Planet2\140\140_3.psd
+            }
+            160 ~{
+                160_1=Mods\Evolution\EvoPlanets\DATA\Planet2\160\160_1.psd
+                160_2=Mods\Evolution\EvoPlanets\DATA\Planet2\160\160_2.psd
+                160_3=Mods\Evolution\EvoPlanets\DATA\Planet2\160\160_3.psd
+                160_4=Mods\Evolution\EvoPlanets\DATA\Planet2\160\160_4.psd
+            }
+            180 ~{
+                180_1=Mods\Evolution\EvoPlanets\DATA\Planet2\180\180_1.psd
+                180_2=Mods\Evolution\EvoPlanets\DATA\Planet2\180\180_2.psd
+            }
+            200 ~{
+                200_1=Mods\Evolution\EvoPlanets\DATA\Planet2\200\200_1.psd
+                200_2=Mods\Evolution\EvoPlanets\DATA\Planet2\200\200_2.psd
+                200_3=Mods\Evolution\EvoPlanets\DATA\Planet2\200\200_3.psd
+            }
+        }
+    }
+    PlanetBG ~{
+        ep01=Mods\Evolution\EvoPlanets\DATA\PlanetBG\1024-768-ocean.gi
+        ep02=Mods\Evolution\EvoPlanets\DATA\PlanetBG\1024-768-cloud.gi
+        ep03=Mods\Evolution\EvoPlanets\DATA\PlanetBG\1024-768-nebula.gi
+        ep04=Mods\Evolution\EvoPlanets\DATA\PlanetBG\1024-768-cliff.gi
+        ep05=Mods\Evolution\EvoPlanets\DATA\PlanetBG\1024-768-red-planet.gi
+        ep06=Mods\Evolution\EvoPlanets\DATA\PlanetBG\1024-768-violet-planet.gi
+        ep07=Mods\Evolution\EvoPlanets\DATA\PlanetBG\1024-768-desert.gi
+        ep08=Mods\Evolution\EvoPlanets\DATA\PlanetBG\1024-768-snow.gi
+    }
+}

@@ -1,0 +1,56 @@
+Script ~{
+    Mod_ExpAutoSearch=Mods\Expansion\ExpAutoSearch\DATA\Script\Mod_ExpAutoSearch.scr
+}
+Bm ~{
+    FormAutoSearch ~{
+        ButtonsBG=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\ButtonsBG.gi
+        ConfirmA=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\ConfirmA.gi
+        ConfirmD=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\ConfirmD.gi
+        ConfirmH=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\ConfirmH.gi
+        ConfirmN=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\ConfirmN.gi
+        DeleteA=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\DeleteA.gi
+        DeleteD=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\DeleteD.gi
+        DeleteN=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\DeleteN.gi
+        DroidsBG=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\DroidsBG.gi
+        EditBG=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\EditBG.gi
+        EditBG_Hulls=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\EditBG_Hulls.gi
+        EditBorder=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\EditBorder.gi
+        EditBorder_Hulls=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\EditBorder_Hulls.gi
+        EnginesBG=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\EnginesBG.gi
+        FindPrice_AutoSearch=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\FindPrice_AutoSearch.gi
+        FuelTanksBG=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\FuelTanksBG.gi
+        GrippersBG=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\GrippersBG.gi
+        HullsBG=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\HullsBG.gi
+        MainBG=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\MainBG.gi
+        RadarsBG=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\RadarsBG.gi
+        ScannersBG=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\ScannersBG.gi
+        Search_Icon=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\Search_Icon.gi
+        ShieldGeneratorsBG=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\ShieldGeneratorsBG.gi
+        UpperButtonsBG=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\UpperButtonsBG.gi
+        WeaponsBG=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\WeaponsBG.gi
+    }
+    FormCount2 ~{
+        2KindDays=Mods\Expansion\ExpAutoSearch\DATA\NumberBox\2KindDays.gi
+        2KindEmpty=Mods\Expansion\ExpAutoSearch\DATA\NumberBox\2KindEmpty.gi
+    }
+    FormInfo3 ~{
+        2BRaceFei_Disabled=Mods\Expansion\ExpAutoSearch\DATA\FormInfo3\2BRaceFei_Disabled.gi
+        2BRaceGaal_Disabled=Mods\Expansion\ExpAutoSearch\DATA\FormInfo3\2BRaceGaal_Disabled.gi
+        2BRaceMaloc_Disabled=Mods\Expansion\ExpAutoSearch\DATA\FormInfo3\2BRaceMaloc_Disabled.gi
+        2BRacePeleng_Disabled=Mods\Expansion\ExpAutoSearch\DATA\FormInfo3\2BRacePeleng_Disabled.gi
+        2BRacePeople_Disabled=Mods\Expansion\ExpAutoSearch\DATA\FormInfo3\2BRacePeople_Disabled.gi
+        2BRacePirateC=Mods\Expansion\ExpAutoSearch\DATA\FormInfo3\2BRacePirateC.gi
+        2BRacePirateD=Mods\Expansion\ExpAutoSearch\DATA\FormInfo3\2BRacePirateD.gi
+        2BRacePirate_Disabled=Mods\Expansion\ExpAutoSearch\DATA\FormInfo3\2BRacePirate_Disabled.gi
+        2MCheckD_Disabled=Mods\Expansion\ExpAutoSearch\DATA\FormInfo3\2MCheckD_Disabled.gi
+        2MCheckN_Disabled=Mods\Expansion\ExpAutoSearch\DATA\FormInfo3\2MCheckN_Disabled.gi
+    }
+    MsgPlayer ~{
+        2AutoSearchA=Mods\Expansion\ExpAutoSearch\DATA\Msg\AutoSearchA.gi
+        2AutoSearchD=Mods\Expansion\ExpAutoSearch\DATA\Msg\AutoSearchD.gi
+        2AutoSearchN=Mods\Expansion\ExpAutoSearch\DATA\Msg\AutoSearchN.gi
+    }
+}
+Font ~{
+    Ranger_12=Mods\Expansion\ExpAutoSearch\DATA\FormAutoSearch\Font_Ranger_12.aft
+}

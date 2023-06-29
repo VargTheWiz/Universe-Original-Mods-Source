@@ -1,0 +1,19 @@
+FormMain ^{
+    About=About authors
+    Demo=Demonstration
+    Exit=Exit
+    Help=Achievements
+    LAB=<color=255,202,21>Arcade fights</color>
+    LMods=<color=255,202,21>Modifications</color>
+    LQuest=<color=255,202,21>Text quests</color>
+    LRobot=<color=255,202,21>Planetary battles</color>
+    Load=Load
+    MsgExit=Exit the game?
+    New=New game
+    Options=Settings
+    Score=Records
+    SubName=Dominators: Reboot
+    Version=<color=129,170,188>(C) 2013-2022 1С-Софтклаб. Add-on developed by СНК-Games. Version <Value>.</color>
+    Version2=<color=129,170,188>(C) 2013-2022 1С-Софтклаб.</color>
+    Version2=<color=129,170,188>Add-on developed by СНК-Games. Version <Value>.</color>
+}

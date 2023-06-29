@@ -1,0 +1,521 @@
+ML ^{
+    PlanetQuest ^{
+        Border=0,0,1024,768
+        Panel ^{
+            BGTextPanels ^{
+                Panel ^{
+                    Image ^{
+                        Image=GI,Bm.FormPQuest2.BGStyle1
+                        Name=BGUpperTextImage
+                        Pos=0,0,0
+                        Size=1435,1200
+                    }
+                    Name=BGUpperTextPanel
+                    Pos=0,0,0
+                    Size=578,435
+                }
+                Panel ^{
+                    Image ^{
+                        Image=GI,Bm.FormPQuest2.BGStyle1
+                        Name=BGLowerTextImage
+                        Pos=0,0,0
+                        Size=1435,1200
+                    }
+                    Name=BGLowerTextPanel
+                    Pos=0,0,0
+                    Size=578,300
+                }
+            }
+            BG_Peleng ^{
+                Image ^{
+                    Active=True
+                    Image=GI,Bm.FormPQuest2.2BG_Peleng_768p
+                    Name=BG_Peleng
+                    Pos=600,532,9.8
+                    PosAutoCorrection=True
+                    PosAutoCorrectionXCoef=1.0
+                    Size=282,332
+                }
+            }
+            Frame ^{
+            }
+            GraphBuf ^{
+            }
+            GraphButton ^{
+                Help=FormPQuest.HelpAnimTextOn
+                ImageDown=GI,Bm.FormPQuest2.2AnimOnD
+                ImageNormal=GI,Bm.FormPQuest2.2AnimOnN
+                ImageNormalA=GI,Bm.FormPQuest2.2AnimOnA
+                Kind=Normal
+                KindHit=Rect
+                Name=AnimTextOn
+                Pos=479,741,2
+                Size=28,17
+            }
+            GraphButton ^{
+                Help=FormPQuest.HelpAnimTextOff
+                ImageDown=GI,Bm.FormPQuest2.2AnimOffD
+                ImageNormal=GI,Bm.FormPQuest2.2AnimOffN
+                ImageNormalA=GI,Bm.FormPQuest2.2AnimOffA
+                Kind=Normal
+                KindHit=Rect
+                Name=AnimTextOff
+                Pos=479,741,2
+                Size=28,17
+            }
+            GraphButton ^{
+                Help=FormPQuest.HelpStyle1
+                ImageDisable=GI,Bm.FormPQuest2.2Skin1D
+                ImageDown=GI,Bm.FormPQuest2.2Skin1D
+                ImageNormal=GI,Bm.FormPQuest2.2Skin1N
+                ImageNormalA=GI,Bm.FormPQuest2.2Skin1A
+                Kind=Disable
+                KindHit=Rect
+                Name=Style1
+                OnPressCode ^{
+                    01=int resX = GetGameOptions('ResolutionX');
+                    02=int resY = GetGameOptions('ResolutionY');
+                    03=int offset = min(39, resX - 1024);
+                    04=if(resX > 1024)
+                    05 ^{
+                        01=int ctrl_posY = UICheckElement('PlanetQuest', 'ControlPixel', 'PosY');
+                        02=InterfacePos('PlanetQuest', 'BGUpperTextPanel', (40 + offset), 0, 9.5);
+                        03=int sizeX = resX - (40 + offset) - 408;
+                        04=InterfaceSize('PlanetQuest', 'BGUpperTextPanel', sizeX, ctrl_posY);
+                        05=InterfacePos('PlanetQuest', 'BGUpperTextImage', sizeX - 1435, 0, 0);
+                        06=int sizeY = resY - ctrl_posY - 32;
+                        07=InterfaceSize('PlanetQuest', 'BGLowerTextPanel', sizeX, sizeY);
+                        08=InterfacePos('PlanetQuest', 'BGLowerTextPanel', (40 + offset), resY - sizeY, 9.5);
+                        09=InterfacePos('PlanetQuest', 'BGLowerTextImage', sizeX - 1435, sizeY - resY, 0);
+                    }
+                    06=else
+                    07 ^{
+                        01=InterfacePos('PlanetQuest', 'BGUpperTextPanel', (40 + offset), 0, 9.5);
+                        02=InterfacePos('PlanetQuest', 'BGUpperTextImage', -859, 0, 0);
+                        03=InterfacePos('PlanetQuest', 'BGLowerTextPanel', (40 + offset), 468, 9.5);
+                        04=InterfacePos('PlanetQuest', 'BGLowerTextImage', -859, -468, 0);
+                    }
+                    08=int BGstyle = 1 + GetGameOptions('PQuestStyle');
+                    09=InterfaceImage('PlanetQuest', 'BGUpperTextImage', 'GI,Bm.FormPQuest2.BGStyle' + BGstyle);
+                    10=InterfaceImage('PlanetQuest', 'BGLowerTextImage', 'GI,Bm.FormPQuest2.BGStyle' + BGstyle);
+                    11=if(resY > 864) InterfaceState('PlanetQuest', 'BG_Peleng', 0);
+                    12=else
+                    13 ^{
+                        01=if(resY <= 720)
+                        02 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_720p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                        03=else if(resY <= 768)
+                        04 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_768p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                        05=else if(resY <= 800)
+                        06 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_800p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                        07=else
+                        08 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_864p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                    }
+                }
+                Pos=511,742,2
+                Size=15,15
+            }
+            GraphButton ^{
+                Help=FormPQuest.HelpStyle2
+                ImageDisable=GI,Bm.FormPQuest2.2Skin2D
+                ImageDown=GI,Bm.FormPQuest2.2Skin2D
+                ImageNormal=GI,Bm.FormPQuest2.2Skin2N
+                ImageNormalA=GI,Bm.FormPQuest2.2Skin2A
+                Kind=Disable
+                KindHit=Rect
+                Name=Style2
+                OnPressCode ^{
+                    01=int resX = GetGameOptions('ResolutionX');
+                    02=int resY = GetGameOptions('ResolutionY');
+                    03=int offset = min(39, resX - 1024);
+                    04=if(resX > 1024)
+                    05 ^{
+                        01=int ctrl_posY = UICheckElement('PlanetQuest', 'ControlPixel', 'PosY');
+                        02=InterfacePos('PlanetQuest', 'BGUpperTextPanel', (40 + offset), 0, 9.5);
+                        03=int sizeX = resX - (40 + offset) - 408;
+                        04=InterfaceSize('PlanetQuest', 'BGUpperTextPanel', sizeX, ctrl_posY);
+                        05=InterfacePos('PlanetQuest', 'BGUpperTextImage', sizeX - 1435, 0, 0);
+                        06=int sizeY = resY - ctrl_posY - 32;
+                        07=InterfaceSize('PlanetQuest', 'BGLowerTextPanel', sizeX, sizeY);
+                        08=InterfacePos('PlanetQuest', 'BGLowerTextPanel', (40 + offset), resY - sizeY, 9.5);
+                        09=InterfacePos('PlanetQuest', 'BGLowerTextImage', sizeX - 1435, sizeY - resY, 0);
+                    }
+                    06=else
+                    07 ^{
+                        01=InterfacePos('PlanetQuest', 'BGUpperTextPanel', (40 + offset), 0, 9.5);
+                        02=InterfacePos('PlanetQuest', 'BGUpperTextImage', -859, 0, 0);
+                        03=InterfacePos('PlanetQuest', 'BGLowerTextPanel', (40 + offset), 468, 9.5);
+                        04=InterfacePos('PlanetQuest', 'BGLowerTextImage', -859, -468, 0);
+                    }
+                    08=int BGstyle = 1 + GetGameOptions('PQuestStyle');
+                    09=InterfaceImage('PlanetQuest', 'BGUpperTextImage', 'GI,Bm.FormPQuest2.BGStyle' + BGstyle);
+                    10=InterfaceImage('PlanetQuest', 'BGLowerTextImage', 'GI,Bm.FormPQuest2.BGStyle' + BGstyle);
+                    11=if(resY > 864) InterfaceState('PlanetQuest', 'BG_Peleng', 0);
+                    12=else
+                    13 ^{
+                        01=if(resY <= 720)
+                        02 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_720p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                        03=else if(resY <= 768)
+                        04 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_768p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                        05=else if(resY <= 800)
+                        06 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_800p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                        07=else
+                        08 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_864p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                    }
+                }
+                Pos=529,742,2
+                Size=15,15
+            }
+            GraphButton ^{
+                Help=FormPQuest.HelpStyle3
+                ImageDisable=GI,Bm.FormPQuest2.2Skin3D
+                ImageDown=GI,Bm.FormPQuest2.2Skin3D
+                ImageNormal=GI,Bm.FormPQuest2.2Skin3N
+                ImageNormalA=GI,Bm.FormPQuest2.2Skin3A
+                Kind=Disable
+                KindHit=Rect
+                Name=Style3
+                OnPressCode ^{
+                    01=int resX = GetGameOptions('ResolutionX');
+                    02=int resY = GetGameOptions('ResolutionY');
+                    03=int offset = min(39, resX - 1024);
+                    04=if(resX > 1024)
+                    05 ^{
+                        01=int ctrl_posY = UICheckElement('PlanetQuest', 'ControlPixel', 'PosY');
+                        02=InterfacePos('PlanetQuest', 'BGUpperTextPanel', (40 + offset), 0, 9.5);
+                        03=int sizeX = resX - (40 + offset) - 408;
+                        04=InterfaceSize('PlanetQuest', 'BGUpperTextPanel', sizeX, ctrl_posY);
+                        05=InterfacePos('PlanetQuest', 'BGUpperTextImage', sizeX - 1435, 0, 0);
+                        06=int sizeY = resY - ctrl_posY - 32;
+                        07=InterfaceSize('PlanetQuest', 'BGLowerTextPanel', sizeX, sizeY);
+                        08=InterfacePos('PlanetQuest', 'BGLowerTextPanel', (40 + offset), resY - sizeY, 9.5);
+                        09=InterfacePos('PlanetQuest', 'BGLowerTextImage', sizeX - 1435, sizeY - resY, 0);
+                    }
+                    06=else
+                    07 ^{
+                        01=InterfacePos('PlanetQuest', 'BGUpperTextPanel', (40 + offset), 0, 9.5);
+                        02=InterfacePos('PlanetQuest', 'BGUpperTextImage', -859, 0, 0);
+                        03=InterfacePos('PlanetQuest', 'BGLowerTextPanel', (40 + offset), 468, 9.5);
+                        04=InterfacePos('PlanetQuest', 'BGLowerTextImage', -859, -468, 0);
+                    }
+                    08=int BGstyle = 1 + GetGameOptions('PQuestStyle');
+                    09=InterfaceImage('PlanetQuest', 'BGUpperTextImage', 'GI,Bm.FormPQuest2.BGStyle' + BGstyle);
+                    10=InterfaceImage('PlanetQuest', 'BGLowerTextImage', 'GI,Bm.FormPQuest2.BGStyle' + BGstyle);
+                    11=if(resY > 864) InterfaceState('PlanetQuest', 'BG_Peleng', 0);
+                    12=else
+                    13 ^{
+                        01=if(resY <= 720)
+                        02 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_720p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                        03=else if(resY <= 768)
+                        04 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_768p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                        05=else if(resY <= 800)
+                        06 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_800p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                        07=else
+                        08 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_864p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                    }
+                }
+                Pos=547,742,2
+                Size=15,15
+            }
+            GraphButton ^{
+                Help=FormPQuest.HelpStyle4
+                ImageDisable=GI,Bm.FormPQuest2.2Skin4D
+                ImageDown=GI,Bm.FormPQuest2.2Skin4D
+                ImageNormal=GI,Bm.FormPQuest2.2Skin4N
+                ImageNormalA=GI,Bm.FormPQuest2.2Skin4A
+                Kind=Disable
+                KindHit=Rect
+                Name=Style4
+                OnPressCode ^{
+                    01=int resX = GetGameOptions('ResolutionX');
+                    02=int resY = GetGameOptions('ResolutionY');
+                    03=int offset = min(39, resX - 1024);
+                    04=if(resX > 1024)
+                    05 ^{
+                        01=int ctrl_posY = UICheckElement('PlanetQuest', 'ControlPixel', 'PosY');
+                        02=InterfacePos('PlanetQuest', 'BGUpperTextPanel', (40 + offset), 0, 9.5);
+                        03=int sizeX = resX - (40 + offset) - 408;
+                        04=InterfaceSize('PlanetQuest', 'BGUpperTextPanel', sizeX, ctrl_posY);
+                        05=InterfacePos('PlanetQuest', 'BGUpperTextImage', sizeX - 1435, 0, 0);
+                        06=int sizeY = resY - ctrl_posY - 32;
+                        07=InterfaceSize('PlanetQuest', 'BGLowerTextPanel', sizeX, sizeY);
+                        08=InterfacePos('PlanetQuest', 'BGLowerTextPanel', (40 + offset), resY - sizeY, 9.5);
+                        09=InterfacePos('PlanetQuest', 'BGLowerTextImage', sizeX - 1435, sizeY - resY, 0);
+                    }
+                    06=else
+                    07 ^{
+                        01=InterfacePos('PlanetQuest', 'BGUpperTextPanel', (40 + offset), 0, 9.5);
+                        02=InterfacePos('PlanetQuest', 'BGUpperTextImage', -859, 0, 0);
+                        03=InterfacePos('PlanetQuest', 'BGLowerTextPanel', (40 + offset), 468, 9.5);
+                        04=InterfacePos('PlanetQuest', 'BGLowerTextImage', -859, -468, 0);
+                    }
+                    08=int BGstyle = 1 + GetGameOptions('PQuestStyle');
+                    09=InterfaceImage('PlanetQuest', 'BGUpperTextImage', 'GI,Bm.FormPQuest2.BGStyle' + BGstyle);
+                    10=InterfaceImage('PlanetQuest', 'BGLowerTextImage', 'GI,Bm.FormPQuest2.BGStyle' + BGstyle);
+                    11=if(resY > 864) InterfaceState('PlanetQuest', 'BG_Peleng', 0);
+                    12=else
+                    13 ^{
+                        01=if(resY <= 720)
+                        02 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_720p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                        03=else if(resY <= 768)
+                        04 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_768p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                        05=else if(resY <= 800)
+                        06 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_800p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                        07=else
+                        08 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_864p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                    }
+                }
+                Pos=565,742,2
+                Size=15,15
+            }
+            GraphButton ^{
+                Name=ButtonExit
+            }
+            GraphButton ^{
+                Help=FormPQuest.HelpStyle5
+                ImageDisable=GI,Bm.FormPQuest2.2Skin5D
+                ImageDown=GI,Bm.FormPQuest2.2Skin5D
+                ImageNormal=GI,Bm.FormPQuest2.2Skin5N
+                ImageNormalA=GI,Bm.FormPQuest2.2Skin5A
+                Kind=Disable
+                KindHit=Rect
+                Name=Style5
+                OnPressCode ^{
+                    01=int resX = GetGameOptions('ResolutionX');
+                    02=int resY = GetGameOptions('ResolutionY');
+                    03=int offset = min(39, resX - 1024);
+                    04=if(resX > 1024)
+                    05 ^{
+                        01=int ctrl_posY = UICheckElement('PlanetQuest', 'ControlPixel', 'PosY');
+                        02=InterfacePos('PlanetQuest', 'BGUpperTextPanel', (40 + offset), 0, 9.5);
+                        03=int sizeX = resX - (40 + offset) - 408;
+                        04=InterfaceSize('PlanetQuest', 'BGUpperTextPanel', sizeX, ctrl_posY);
+                        05=InterfacePos('PlanetQuest', 'BGUpperTextImage', sizeX - 1435, 0, 0);
+                        06=int sizeY = resY - ctrl_posY - 32;
+                        07=InterfaceSize('PlanetQuest', 'BGLowerTextPanel', sizeX, sizeY);
+                        08=InterfacePos('PlanetQuest', 'BGLowerTextPanel', (40 + offset), resY - sizeY, 9.5);
+                        09=InterfacePos('PlanetQuest', 'BGLowerTextImage', sizeX - 1435, sizeY - resY, 0);
+                    }
+                    06=else
+                    07 ^{
+                        01=InterfacePos('PlanetQuest', 'BGUpperTextPanel', (40 + offset), 0, 9.5);
+                        02=InterfacePos('PlanetQuest', 'BGUpperTextImage', -859, 0, 0);
+                        03=InterfacePos('PlanetQuest', 'BGLowerTextPanel', (40 + offset), 468, 9.5);
+                        04=InterfacePos('PlanetQuest', 'BGLowerTextImage', -859, -468, 0);
+                    }
+                    08=int BGstyle = 1 + GetGameOptions('PQuestStyle');
+                    09=InterfaceImage('PlanetQuest', 'BGUpperTextImage', 'GI,Bm.FormPQuest2.BGStyle' + BGstyle);
+                    10=InterfaceImage('PlanetQuest', 'BGLowerTextImage', 'GI,Bm.FormPQuest2.BGStyle' + BGstyle);
+                    11=if(resY > 864) InterfaceState('PlanetQuest', 'BG_Peleng', 0);
+                    12=else
+                    13 ^{
+                        01=if(resY <= 720)
+                        02 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_720p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                        03=else if(resY <= 768)
+                        04 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_768p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                        05=else if(resY <= 800)
+                        06 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_800p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                        07=else
+                        08 ^{
+                            01=InterfaceImage('PlanetQuest', 'BG_Peleng', 'GI,Bm.FormPQuest2.2BG_Peleng_864p');
+                            02=InterfaceState('PlanetQuest', 'BG_Peleng', 1);
+                        }
+                    }
+                }
+                Pos=583,742,2
+                PosAutoCorrection=True
+                PosAutoCorrectionXCoef=0.5
+                PosAutoCorrectionYCoef=0.5
+                Size=15,15
+            }
+            Image ^{
+                Image=GI,Bm.FormPQuest2.2S1
+                Name=BGStyle
+                Pos=38,7,9
+                Size=579,707
+            }
+            Image ^{
+                Image=GI,Bm.FormPQuest2.2BG
+                Name=BGImage
+                Pos=0,0,9.9
+                Size=1920,1200
+            }
+            Image ^{
+                Image=GI,Bm.FormPQuest2.2Panel
+                Name=PanelImage
+                Pos=-39,0,7
+                Size=1063,768
+            }
+            Image ^{
+                Image=GI,Bm.FormPQuest2.ControlPixel
+                Name=ControlPixel
+                Pos=0,436,100
+                PosAutoCorrection=True
+                PosAutoCorrectionYCoef=0.5
+                Size=1,1
+            }
+        }
+    }
+    Style ^{
+        QTextColor ^{
+            Grey1=120,120,120
+            Grey2=120,120,120
+            Grey3=120,120,120
+            Grey4=120,120,120
+            Grey5=120,120,120
+            Sel1=255,240,100
+            Sel2=255,240,100
+            Sel3=0,4,173
+            Sel4=0,4,173
+            Sel5=0,4,173
+            Text1=212,208,180
+            Text2=212,208,180
+            Text3=0,0,0
+            Text4=0,0,0
+            Text5=0,0,0
+        }
+        ScrollBar ^{
+            2PQS1 ^{
+                ImageBottomA=GI,Bm.FormPQuest2.2S1BBottomA
+                ImageBottomD=GI,Bm.FormPQuest2.2S1BBottomD
+                ImageBottomN=GI,Bm.FormPQuest2.2S1BBottomN
+                ImageCenterA=GI,Bm.FormPQuest2.2S1BCenterA
+                ImageCenterD=GI,Bm.FormPQuest2.2S1BCenterD
+                ImageCenterN=GI,Bm.FormPQuest2.2S1BCenterN
+                ImageDownA=GI,Bm.FormPQuest2.2S1BDownA
+                ImageDownD=GI,Bm.FormPQuest2.2S1BDownD
+                ImageDownN=GI,Bm.FormPQuest2.2S1BDownN
+                ImageTopA=GI,Bm.FormPQuest2.2S1BTopA
+                ImageTopD=GI,Bm.FormPQuest2.2S1BTopD
+                ImageTopN=GI,Bm.FormPQuest2.2S1BTopN
+                ImageUpA=GI,Bm.FormPQuest2.2S1BUpA
+                ImageUpD=GI,Bm.FormPQuest2.2S1BUpD
+                ImageUpN=GI,Bm.FormPQuest2.2S1BUpN
+            }
+            2PQS2 ^{
+                ImageBottomA=GI,Bm.FormPQuest2.2S2BBottomA
+                ImageBottomD=GI,Bm.FormPQuest2.2S2BBottomD
+                ImageBottomN=GI,Bm.FormPQuest2.2S2BBottomN
+                ImageCenterA=GI,Bm.FormPQuest2.2S2BCenterA
+                ImageCenterD=GI,Bm.FormPQuest2.2S2BCenterD
+                ImageCenterN=GI,Bm.FormPQuest2.2S2BCenterN
+                ImageDownA=GI,Bm.FormPQuest2.2S2BDownA
+                ImageDownD=GI,Bm.FormPQuest2.2S2BDownD
+                ImageDownN=GI,Bm.FormPQuest2.2S2BDownN
+                ImageTopA=GI,Bm.FormPQuest2.2S2BTopA
+                ImageTopD=GI,Bm.FormPQuest2.2S2BTopD
+                ImageTopN=GI,Bm.FormPQuest2.2S2BTopN
+                ImageUpA=GI,Bm.FormPQuest2.2S2BUpA
+                ImageUpD=GI,Bm.FormPQuest2.2S2BUpD
+                ImageUpN=GI,Bm.FormPQuest2.2S2BUpN
+            }
+            2PQS3 ^{
+                ImageBottomA=GI,Bm.FormPQuest2.2S3BBottomA
+                ImageBottomD=GI,Bm.FormPQuest2.2S3BBottomD
+                ImageBottomN=GI,Bm.FormPQuest2.2S3BBottomN
+                ImageCenterA=GI,Bm.FormPQuest2.2S3BCenterA
+                ImageCenterD=GI,Bm.FormPQuest2.2S3BCenterD
+                ImageCenterN=GI,Bm.FormPQuest2.2S3BCenterN
+                ImageDownA=GI,Bm.FormPQuest2.2S3BDownA
+                ImageDownD=GI,Bm.FormPQuest2.2S3BDownD
+                ImageDownN=GI,Bm.FormPQuest2.2S3BDownN
+                ImageTopA=GI,Bm.FormPQuest2.2S3BTopA
+                ImageTopD=GI,Bm.FormPQuest2.2S3BTopD
+                ImageTopN=GI,Bm.FormPQuest2.2S3BTopN
+                ImageUpA=GI,Bm.FormPQuest2.2S3BUpA
+                ImageUpD=GI,Bm.FormPQuest2.2S3BUpD
+                ImageUpN=GI,Bm.FormPQuest2.2S3BUpN
+            }
+            2PQS4 ^{
+                ImageBottomA=GI,Bm.FormPQuest2.YellowScrollBarBottom_A
+                ImageBottomD=GI,Bm.FormPQuest2.YellowScrollBarBottom_D
+                ImageBottomN=GI,Bm.FormPQuest2.YellowScrollBarBottom_N
+                ImageCenterA=GI,Bm.FormPQuest2.YellowScrollBarCenter_A
+                ImageCenterD=GI,Bm.FormPQuest2.YellowScrollBarCenter_D
+                ImageCenterN=GI,Bm.FormPQuest2.YellowScrollBarCenter_N
+                ImageDownA=GI,Bm.FormPQuest2.YellowScrollButtonDown_A
+                ImageDownD=GI,Bm.FormPQuest2.YellowScrollButtonDown_D
+                ImageDownN=GI,Bm.FormPQuest2.YellowScrollButtonDown_N
+                ImageTopA=GI,Bm.FormPQuest2.YellowScrollBarTop_A
+                ImageTopD=GI,Bm.FormPQuest2.YellowScrollBarTop_D
+                ImageTopN=GI,Bm.FormPQuest2.YellowScrollBarTop_N
+                ImageUpA=GI,Bm.FormPQuest2.YellowScrollButtonUp_A
+                ImageUpD=GI,Bm.FormPQuest2.YellowScrollButtonUp_D
+                ImageUpN=GI,Bm.FormPQuest2.YellowScrollButtonUp_N
+            }
+            2PQS5 ^{
+                ImageBottomA=GI,Bm.FormPQuest2.2S4BBottomA
+                ImageBottomD=GI,Bm.FormPQuest2.2S4BBottomD
+                ImageBottomN=GI,Bm.FormPQuest2.2S4BBottomN
+                ImageCenterA=GI,Bm.FormPQuest2.2S4BCenterA
+                ImageCenterD=GI,Bm.FormPQuest2.2S4BCenterD
+                ImageCenterN=GI,Bm.FormPQuest2.2S4BCenterN
+                ImageDownA=GI,Bm.FormPQuest2.2S4BDownA
+                ImageDownD=GI,Bm.FormPQuest2.2S4BDownD
+                ImageDownN=GI,Bm.FormPQuest2.2S4BDownN
+                ImageTopA=GI,Bm.FormPQuest2.2S4BTopA
+                ImageTopD=GI,Bm.FormPQuest2.2S4BTopD
+                ImageTopN=GI,Bm.FormPQuest2.2S4BTopN
+                ImageUpA=GI,Bm.FormPQuest2.2S4BUpA
+                ImageUpD=GI,Bm.FormPQuest2.2S4BUpD
+                ImageUpN=GI,Bm.FormPQuest2.2S4BUpN
+            }
+        }
+    }
+}

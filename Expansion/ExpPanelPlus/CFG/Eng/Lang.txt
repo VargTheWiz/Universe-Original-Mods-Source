@@ -1,0 +1,127 @@
+FormShip ^{
+    UseTransmitters=Transfactorial beacons activation
+}
+Main ^{
+    Mod_ExpPanelPlus ^{
+        OnPressQuestionMany=You are about to activate <br><0> transfactorial <1> in system <2>. The total charge strength will be <3> units. Would you like to continue?
+        OnPressQuestionOne=You are about to activate a transfactorial beacon on system <0>. The charge energy is <1> units. Would you like to continue?
+        OnUseTrans=Notification sent about the presence of unidentified material in the <0> system. A research team will arrive in <color=0,50,200>10</color> days.
+        Quant2-4=</color>beacons
+        Quant5+=</color>beacons
+        QuestionHowMany=How many beacons do you want to activate?
+        RUN=.. Fly, you fools!
+        TooMuch=.. God be with you.
+    }
+}
+Artefacts ^{
+    ArtTransmitter ^{
+        OnUseCode ^{
+            0=OnUseCodeTransmitter();
+            01=if(ShipInNormalSpace(Player()) && CurrentForm() == 'Ship')
+            02 ^{
+                01=if(FormCurShip() == Player())
+                02 ^{
+                    01=ArrayClear(ReadyTrans);
+                    02=dword TCount = 0;
+                    03=for(int j = 0; j < ShipArts(Player()); j = j + 1)
+                    04 ^{
+                        01=if(ItemType(ShipArts(Player(), j)) == t_ArtefactTransmitter)
+                        02 ^{
+                            01=if(ItemCharge(ShipArts(Player(), j)) >= 100)
+                            02 ^{
+                                01=ArrayAdd(ReadyTrans, ShipArts(Player(), j));
+                                02=InterfaceState('Ship', 'UseTransmitters', 1);
+                                03=InterfaceState('Ship', 'UseTransmittersButtonHitBox', 1);
+                                04=TCount = TCount + 1;
+                            }
+                        }
+                    }
+                    05=if(!TCount)
+                    06 ^{
+                        01=InterfaceState('Ship', 'UseTransmitters', 0);
+                        02=InterfaceState('Ship', 'UseTransmittersButtonHitBox', 0);
+                    }
+                }
+            }
+        }
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ~{
+            UT_HideInfo ^{
+                Description=
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=if(ScriptItemActionType(t_OnEnteringForm))
+                    02 ^{
+                        01=if(ShipInNormalSpace(Player()) && CurrentForm() == 'Ship')
+                        02 ^{
+                            01=if(FormCurShip() == Player())
+                            02 ^{
+                                01=ArrayClear(ReadyTrans);
+                                02=for(int i = 0; i < ShipArts(Player()); i = i + 1)
+                                03 ^{
+                                    01=if(ItemType(ShipArts(Player(), i)) == t_ArtefactTransmitter)
+                                    02 ^{
+                                        01=if(ItemCharge(ShipArts(Player(), i)) >= 100)
+                                        02 ^{
+                                            01=ArrayAdd(ReadyTrans, ShipArts(Player(), i));
+                                            02=InterfaceState('Ship', 'UseTransmitters', 1);
+                                            03=InterfaceState('Ship', 'UseTransmittersButtonHitBox', 1);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    03=else if(ScriptItemActionType(t_OnLeavingForm))
+                    04 ^{
+                        01=if(ShipInNormalSpace(Player()) && CurrentForm() == 'Ship')
+                        02 ^{
+                            01=if(FormCurShip() == Player())
+                            02 ^{
+                                01=InterfaceState('Ship', 'UseTransmitters', -1);
+                                02=InterfaceState('Ship', 'UseTransmittersButtonHitBox', -1);
+                            }
+                        }
+                    }
+                    05=else
+                    06 ^{
+                        01=if(ShipInNormalSpace(Player()) && CurrentForm() == 'Ship')
+                        02 ^{
+                            01=if(FormCurShip() == Player())
+                            02 ^{
+                                01=if(ItemType(ScriptItemActObject1()) == t_ArtefactTransmitter)
+                                02 ^{
+                                    01=ArrayClear(ReadyTrans);
+                                    02=dword TCount = 0;
+                                    03=for(int j = 0; j < ShipArts(Player()); j = j + 1)
+                                    04 ^{
+                                        01=if(ItemType(ShipArts(Player(), j)) == t_ArtefactTransmitter)
+                                        02 ^{
+                                            01=if(ItemCharge(ShipArts(Player(), j)) >= 100)
+                                            02 ^{
+                                                01=ArrayAdd(ReadyTrans, ShipArts(Player(), j));
+                                                02=InterfaceState('Ship', 'UseTransmitters', 1);
+                                                03=InterfaceState('Ship', 'UseTransmittersButtonHitBox', 1);
+                                                04=TCount = TCount + 1;
+                                            }
+                                        }
+                                    }
+                                    05=if(!TCount)
+                                    06 ^{
+                                        01=InterfaceState('Ship', 'UseTransmitters', 0);
+                                        02=InterfaceState('Ship', 'UseTransmittersButtonHitBox', 0);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnEnteringForm,t_OnLeavingForm,t_OnDropItem,t_OnDropItemFixed
+            }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+Quest ~{
+    DefShip ^{
+        Count=0
+    }
+}

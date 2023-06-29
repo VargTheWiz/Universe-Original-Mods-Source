@@ -1,0 +1,33 @@
+Bm ~{
+    ItemsUseless ~{
+        2Usl_100_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL100.gi
+        2Usl_101_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL101.gi
+        2Usl_102_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL102.gi
+        2Usl_103_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL103.gi
+        2Usl_104_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL104.gi
+        2Usl_76_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL76.gi
+        2Usl_77_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL77.gi
+        2Usl_78_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL78.gi
+        2Usl_79_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL79.gi
+        2Usl_80_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL80.gi
+        2Usl_81_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL81.gi
+        2Usl_82_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL82.gi
+        2Usl_83_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL83.gi
+        2Usl_84_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL84.gi
+        2Usl_85_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL85.gi
+        2Usl_86_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL86.gi
+        2Usl_87_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL87.gi
+        2Usl_88_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL88.gi
+        2Usl_89_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL89.gi
+        2Usl_90_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL90.gi
+        2Usl_91_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL91.gi
+        2Usl_92_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL92.gi
+        2Usl_93_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL93.gi
+        2Usl_94_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL94.gi
+        2Usl_95_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL95.gi
+        2Usl_96_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL96.gi
+        2Usl_97_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL97.gi
+        2Usl_98_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL98.gi
+        2Usl_99_s=Mods\OtherMods\SR1GovernmentQuests\DATA\ItemsUseless\2USL99.gi
+    }
+}

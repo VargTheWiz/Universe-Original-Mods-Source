@@ -1,0 +1,5 @@
+Quest ~{
+    KillShip ^{
+        Count=0
+    }
+}

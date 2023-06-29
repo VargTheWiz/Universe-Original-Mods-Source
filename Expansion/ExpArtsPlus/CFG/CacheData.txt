@@ -1,0 +1,12 @@
+Bm ~{
+    Items ~{
+        2ArtFuel_AddOns=data\Items\2ArtFuel.gi
+        2ArtMissileDef_AddOns=data\Items\2ArtMissileDef.gi
+        2ArtMissileDef_Modified_ab=data\Items\2ArtMissileDef_ab.gi
+        2ArtMissileDef_Modified_s=data\Items\2ArtMissileDef.gi
+        2ArtNano_AddOns=data\Items\2ArtNano.gi
+    }
+}
+Sound ~{
+    Mod_Switch=Mods\Expansion\ExpArtsPlus\DATA\Sounds\Switch.wav
+}

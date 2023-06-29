@@ -1,0 +1,7 @@
+Bm ~{
+    Items ~{
+        2DefGeneratorAstera=Mods\ShusRangers\ShuAsteroids\DATA\Items\2DefGeneratorAstera.gai
+        2DefGeneratorAsteri=Mods\ShusRangers\ShuAsteroids\DATA\Items\2DefGeneratorAsteri.gi
+        2DefGeneratorAsters=Mods\ShusRangers\ShuAsteroids\DATA\Items\2DefGeneratorAsters.gi
+    }
+}

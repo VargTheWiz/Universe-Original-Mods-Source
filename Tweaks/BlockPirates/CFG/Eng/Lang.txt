@@ -1,0 +1,46 @@
+PirateClanOff=1
+FormIntroduction ^{
+    Text=<clr><clrEnd>    Volunteers! You have made the right choice by joining the glorious ranger ranks! The military may take pride in their fancy uniforms, but in the Klissan War three hundred years ago, as they suffered one defeat after another, it was the rangers who solved the mystery of Makhpella and put an end to the most terrible war in the history of this sector of the Galaxy! The rangers are no cannon fodder, capable only of obeying orders; every ranger is his own general and supply battalion!
+    Text= <br>    Admittedly, over the centuries many have forgotten the rangers' noble history and customs. But there's no better time to remind them! As you know, six years ago the Coalition of intelligent races has encountered a new enemy -- an enemy no less dangerous than the klissan. They are called the dominators and represent a new form of cyberlife. As of yet, we do not know why they have begun attacking us, both on our planets and in space. Most dominator robots have only a semblance of intelligence, so it stands to reason they are controlled by brain centers. Initially it was believed that they had only one such center, but this presumption proved a costly mistake for the Coalition fleet at the Battle of Gralgar! Now we know that there is a minimum of three such centers, each controlling its own series of dominators. We were able to learn the origin of these robots and some things about their inner workings, but this information is classified. Perhaps you will be granted access to it at a later date. Besides, now is not the time for lectures -- the dominators have already captured tons of planets, and our fleet is still struggling to recover from the Gralgar massacre!
+    Text= <br>   Besides, now is not the time for lectures -- the dominators have already captured tons of planets, and our fleet is still struggling to recover from the Gralgar massacre! This means that space rangers have once again become our last hope for survival. And now the only thing keeping you from eternal glory is a medical examination. But between you and me, due to the desperate situation on both fronts, the doctors were given a secret directive to give all candidates a clean bill of health! Dismissed, soldier!
+}
+FormRuins ^{
+    RC ^{
+        PirateClan ^{
+            PlayerSend=How can I help Coalition in defeating dominators?
+            RCAnswer=First you must understand, that help is defeating or even damaging of any dominator. You have full independence; you can trade, help warriors or complete planetary governments' missions. Choose your way yourself, but we will help you to overcome bureaucratic delays. Our answer - actual target for as is collecting information about dominator bosses and reasons of their behavuior. Any information will be useful, so collect all loot from steel enemies and give it to our scientists. Developing of principle of dominators' thinking will help us in the matter of ending war. But, if you'll annihilate their centers, it will be even better... We think.
+        }
+    }
+}
+Script ~{
+    MS_Begin ^{
+        80=Our situation is becoming increasingly difficult with each passing day. There are alarmists among us who claim that we are losing this war, which makes your patriotism and will to victory all the more inspiring!
+    }
+    MS_SB1 ^{
+        0=Ah, <Player>. It's the same old story -- first you enlist, then you start wondering who it is we're fighting?
+        1=But none of that matters... What matters is that you're trying to use brute force where it's better to sit and think hard on the matter...
+        11=Very well, tell me.
+        12=Get information about dominators at the <0> research station.
+        19=Our network of stations has spread across the entire Galaxy over the last three centuries. The most brilliant minds of the Interstellar Coalition are here, laboring to crack the great mysteries of the Universe. At present we are highly concerned with the military advances of the dominators, and we're looking for technologies to stop them.<br>We have orders from the Interstellar Coalition Council to help the rangers as best we can. We are ready to repair and upgrade your ship at the lowest possible prices.
+        2=Sure, thinking is what we do... Very well, here's your orientation. By the way, what is your clearance level? Oh, right, you're a rookie, which means it's basic. Dominators are a new non-organic life-form. As with the klissan, they comprise interchangeable micromodules, capable of forming various configurations. After all, the klissan "protoplasm" isn't actually a protoplasm, but a myriad of microcrystals... It's the same with the dominators, only their modules are larger and less mobile, while each one is capable of handling a greater variety of functions. The earthlings called these modules "nodes," and if used correctly they could be used to upgrade our own technologies. Your rank and file dominators are only pseudo-intelligent, but the coordination and success with which they fight suggest there's a brain center somewhere controlling them. It was initially theorized that there was one such center and that it was located on Gralgar, but that was a mistake which cost us dearly...
+        21=Very funny. That stuff I knew since I was five.<br>
+        22=There's no time to think! Dominators and pirates are attacking us across all known space!<br>
+        23=They have. I know how to earn a living. But what can you tell me about pirates?
+        25=Pirates are these nasty looking humanoids, often wearing patches over one eye or missing a limb. Beards are always in fashion, and they fly under the Jolly Roger flag -- an image of a skull and bones.<br>
+        26=Now we know there are at least three such centers, each of which is controlling its own dominator series. The centers were codenamed Blazer, Keller and Terron. Their series are called accordingly, minus the capitalization. All three are hostile toward us, though we still do not know why. There are also differences between them, however. Blazeroids are the most aggressive and wield the most powerful and varied weaponry. According to our intelligence, Blazer himself is based somewhere in space and does not land on planets. Kelleroids are the most progressive technologically. Their use of hyperspace, for instance, is especially masterful. It appears that they're utilizing the "bubbles" method that had been once used by gaals and Makhpella. We believe that Keller himself resides in one such bubble and never actually appears in regular space. And then there's Terron, of whom we know very little. He appears to be based somewhere very remote, and we only ever meet the front lines of his army. The information we've managed to extract from captured terronoids suggests he may be based on the surface of a planet somewhere. If only we knew what he was up to... But then, any new information we get is very important for us. Deliver your trophies to research stations and we will supply you with our new technologies.
+        27=This is all the information allowed by your clearance. Information about the origins of the dominators is classified and strictly guarded by the war ministry. Privates have no right to it. You may return once you've gained a new military rank. And to do that you first need to upgrade your ship, buy an engine and a few good shooters. Did they teach you trade yet?
+        28=O`key, excuse me, I just tried to defuse the situation - everyone are so nervous around. There's not much to say about pirates. They're trying to make their own unique acrin equipment, of course, illegal, and with low quality. There are rumors, that they have projects of new generation's acrin super-weapons, that will defeat Coalition, but we didn't seen or heard about weapon with such an effect, so...<br>It's nothing more to say about them, our specialization is dominators. Now you know all, what you need, so you can start your ranger career. Earn money, defeat dominators, achieve war ranks. And know we can tell you about our Science Bases' network.
+        6=Rangers are not part of the regular army.
+        8=There must have been two of them, then?!
+        9=Understood. Do we know where the dominators come from?
+    }
+}
+FormGameSet2 ^{
+    Common ^{
+        HelpGroup1Easy=Dominators are weaker than Coalitions.
+        HelpGroup1Expert=Dominators are extremely stronger than Coalition.
+        HelpGroup1Hard=Dominators are stronger than Coalition.
+        HelpGroup1Normal=Coalition and dominators have equal power.
+        LevelGroup1=Dominators.
+    }
+}

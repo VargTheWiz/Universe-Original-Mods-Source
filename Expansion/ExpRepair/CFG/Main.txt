@@ -1,0 +1,126 @@
+Data ^{
+    Script ^{
+        Mod_ExpRepair=1,Script.Mod_ExpRepair
+    }
+}
+ML ^{
+    Ship ^{
+        Panel ^{
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+                GraphButton ^{
+                    Active=False
+                    Name=SC_Slot1_But
+                }
+                GraphButton ^{
+                }
+                GraphButton ^{
+                }
+                GraphButton ^{
+                }
+                RepSlotButChange ^{
+                    GraphButton ^{
+                        Active=True
+                        ImageDown=GI,Bm.FormShip2.2SC_Slot1N
+                        ImageNormal=GI,Bm.FormShip2.2SC_Slot1N
+                        ImageNormalA=GI,Bm.FormShip2.2SC_Slot1A
+                        Kind=Normal
+                        KindHit=Rect
+                        Name=SC_Slot1_ButChange
+                        OnPressCode ^{
+                            01=if(UICheckElement('Ship','SC_Slot1_Anim','CurFrame'))
+                            02 ^{
+                                01=dword item;
+                                02=int type;
+                                03=if(GetShipPlanet(Player()))
+                                04 ^{
+                                    01=if(PlanetOwner(GetShipPlanet(Player()))==7)
+                                    02 ^{
+                                        01=item=FormShipCurItem();
+                                        02=type=ItemType(item);
+                                        03=if((type>=8 && type<=21) || (type>=25 && type<=33) || (type>=39 && type<=40) || (type>=61 && type<=63) || type==67)
+                                        04 ^{
+                                            01=if(type==67)
+                                            02 ^{
+                                                01=if(GetCustomWeaponData(CustomWeaponType(item),'Availability')=='NotSoldAndNodeRepair')
+                                                02 ^{
+                                                    01=if(GetShipPlanet(Player())!=PlanetPirateClan())MessageBox(CT('FormShip.PiratePlanetRepairBlock'));
+                                                    02=else MessageBox(CT('FormShip.CBRepairBlock'));
+                                                }
+                                                03=else ButtonClick('Ship','SC_Slot1_But');
+                                            }
+                                            03=else
+                                            04 ^{
+                                                01=if(GetShipPlanet(Player())!=PlanetPirateClan())MessageBox(CT('FormShip.PiratePlanetRepairBlock'));
+                                                02=else MessageBox(CT('FormShip.CBRepairBlock'));
+                                            }
+                                        }
+                                        05=else ButtonClick('Ship','SC_Slot1_But');
+                                    }
+                                    03=else ButtonClick('Ship','SC_Slot1_But');
+                                    04=exit;
+                                }
+                                05=if(GetShipRuins(Player()))
+                                06 ^{
+                                    01=if(ShipType(GetShipRuins(Player()))=='WB')
+                                    02 ^{
+                                        01=item=FormShipCurItem();
+                                        02=type=ItemType(item);
+                                        03=if((type>=8 && type<=21) || (type>=25 && type<=33) || (type>=39 && type<=40) || (type>=61 && type<=63) || type==67)
+                                        04 ^{
+                                            01=if(type==67)
+                                            02 ^{
+                                                01=if(GetCustomWeaponData(CustomWeaponType(item),'Availability')=='NotSoldAndNodeRepair')MessageBox(CT('FormShip.WBRepairBlock'));
+                                                02=else ButtonClick('Ship','SC_Slot1_But');
+                                            }
+                                            03=else MessageBox(CT('FormShip.WBRepairBlock'));
+                                        }
+                                        05=else ButtonClick('Ship','SC_Slot1_But');
+                                    }
+                                    03=else if(ShipType(GetShipRuins(Player()))=='CB')
+                                    04 ^{
+                                        01=item=FormShipCurItem();
+                                        02=type=ItemType(item);
+                                        03=if((type>=8 && type<=21) || (type>=25 && type<=33) || (type>=39 && type<=40) || (type>=61 && type<=63) || type==67)
+                                        04 ^{
+                                            01=if(type==67)
+                                            02 ^{
+                                                01=if(GetCustomWeaponData(CustomWeaponType(item),'Availability')=='NotSoldAndNodeRepair')MessageBox(CT('FormShip.CBRepairBlock'));
+                                                02=else ButtonClick('Ship','SC_Slot1_But');
+                                            }
+                                            03=else MessageBox(CT('FormShip.CBRepairBlock'));
+                                        }
+                                        05=else ButtonClick('Ship','SC_Slot1_But');
+                                    }
+                                    05=else if(ShipType(GetShipRuins(Player()))=='TC')
+                                    06 ^{
+                                        01=item=FormShipCurItem();
+                                        02=type=ItemType(item);
+                                        03=if((type>=8 && type<=21) || (type>=25 && type<=33) || (type>=39 && type<=40) || (type>=61 && type<=63) || type==67)
+                                        04 ^{
+                                            01=if(type==67)
+                                            02 ^{
+                                                01=if(GetCustomWeaponData(CustomWeaponType(item),'Availability')=='NotSoldAndNodeRepair')MessageBox(CT('FormShip.TCRepairBlock'));
+                                                02=else ButtonClick('Ship','SC_Slot1_But');
+                                            }
+                                            03=else MessageBox(CT('FormShip.TCRepairBlock'));
+                                        }
+                                        05=else ButtonClick('Ship','SC_Slot1_But');
+                                    }
+                                    07=else ButtonClick('Ship','SC_Slot1_But');
+                                    08=exit;
+                                }
+                                07=ButtonClick('Ship','SC_Slot1_But');
+                            }
+                        }
+                        Pos=10,154,8
+                        Size=145,42
+                    }
+                }
+            }
+        }
+    }
+}

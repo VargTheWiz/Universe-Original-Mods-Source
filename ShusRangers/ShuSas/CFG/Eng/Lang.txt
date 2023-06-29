@@ -1,0 +1,14 @@
+Script ^{
+    Mod_ShuSas ~{
+        0=Ranger <0>, answer urgently, it is a matter of the utmost importance!
+        1=Come on, help out, it's not time to talk!
+        12=Several years ago the system <0> was invaded by the dominators. The small military force was unprepared for a full-scale invasion, so the invaders caused quite a massacre in the system. We had no chance to repel the attack or at least retreat to a neighboring system, so I ordered the surviving defenders to land on an uninhabited planet. For years we hid here and monitored the radar readings, hoping that the Coalition Fleet would recover from its defeat at Gralgar and go on a counteroffensive. And it would seem that when the equipment was worn out by time, supplies were nearly exhausted, and the hope in our hearts was replaced by despair, our sensors picked up the signature of a hyperjump into the system. We can no longer hide on this cursed planet, so we ask you to help us free the system!
+        4=So, have you changed your mind?
+        5=Ranger <0> on the line, over
+        7=I will help you!
+        8=Pretend the connection doesn't work
+        9=Sorry, it's not for me
+        10=Okay, I'll help you
+        11=No
+    }
+}

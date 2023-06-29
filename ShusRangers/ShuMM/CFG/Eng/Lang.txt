@@ -1,0 +1,2724 @@
+Items ^{
+    Weapon ^{
+        CustomWeapon ^{
+            MissileLauncherTorpedo ~{
+                BaseGun=Torpedo_Tube
+                MinDamage=22
+                MaxDamage=26
+                DamageSet=Missile
+                ShotType=Torpedo
+                Speed=5
+                AverageRadius=700
+                SecondaryDamageRadius=60
+                MissileRadius=900
+                MissileMinSpeed=450
+                MissileMaxSpeed=750
+                MissileChanceToBeHit=33
+                mWeaponDamage=1.00,1.10,1.25,1.50,1.80,2.20,2.60,3.00
+                ShotsPerTurn=1
+                ArcadeType=Missile_Launcher
+                TechLevel=4
+                MiningFactor=6
+                kCost=4.0
+                AverageSize=20
+                InventTechLevel=Missile_Launcher
+                StoreAvailability=NotSold
+                ShotEffectPath=Weapon.15
+                ShotEffectPalette=3
+                SplashEffectPath=Weapon.AuraEffect
+                MissileExplosionEffectPath=Weapon.MissileHit
+            }
+            ShuMM ~{
+                1=MissileLauncherTorpedo
+                Count=1
+            }
+            StatsVersion ^{
+                ShuMM=16.08.21
+            }
+        }
+        Missile ^{
+            MissileLauncherTorpedo ^{
+                Name=Torpedo
+                Text=Homing Torpedo
+            }
+        }
+        Name ~{
+            MissileLauncherTorpedo=Missile Launcher
+        }
+        OriginalWeaponType ~{
+            Industrial_Laser=1
+            Fragmentation_Cannon=2
+            Flux=3
+            Missile_Launcher=4
+            Treton=5
+            Wave_Phaser=6
+            Flow_Blaster=7
+            Electronic_Cutter=8
+            Multiresonator=9
+            Atomic_Vision=10
+            Disintegrator=11
+            Turbogravitron=12
+            IMHO-9000=13
+            Vertix=14
+            Torpedo_Tube=15
+            Esodapher=16
+            Caphasitor=17
+            Lirecron=18
+        }
+        Text ^{
+            MissileLauncherTorpedo=Torpedoes rigged with plasma ionizer which activates in explosion upon reaching choosen enemy ship. Deal <MinDamage>-<MaxDamage><Bonus> damage at huge range to the target and nearest ships.<br>Quantity: <Count>/<MaxCount>.
+        }
+    }
+}
+MicroModuls ^{
+    498 ^{
+        Cost=200
+        CustomTag=AkrinAmplifier
+        Equipments=FuelTank,Engine,Radar,Scaner,Droid,Hook,DefGenerator
+        Name=Acrynator
+        Priority=0
+        Size=200
+        Special=1
+        Text=A one-of-a-kind handmade level one micromodule. The only copy of the latest experimental model from the Coalition engineers in the field of acrynic technologies. More than twices all the special effects of <clr>acrynic<clrEnd> equipment and neutralizes all of its negative effects. Size and costs of the equipment are doubling. Cannot be installed on a hull due to a conflict with outdated connectors.
+        Text=<clr><clrEnd>
+        Text=Acryn bonus: <clr>+150%<clrEnd>
+        Text=Acryn penalty: <clr>-100%<clrEnd>
+        Text=Size: <clr>+100%<clrEnd>
+        Text=Cost: <clr>+100%<clrEnd>
+        bonExtraAkrinEff=150
+        bonExtraAkrinPenalty=-99.99
+    }
+    ShuMM_AcrynExtra ^{
+        Cost=125
+        Equipments=FuelTank,Engine,Radar,Scaner,Droid,Hook,DefGenerator
+        Name=Acryn-extra
+        Owner=Any
+        Priority=75
+        Text=Level three micromodule. Removes system restrictions from <clr>acrynic<clrEnd> equipment, increasing bonus effects. Cost is also increased.
+        Text=Acryne bonus: <clr>+25%<clrEnd>
+        Text=Cost: <clr>+25%<clrEnd>
+        bonExtraAkrinEff=25
+    }
+    ShuMM_ArmoriteDroid1 ^{
+        AcrynLevel=1
+        AcrynSerie=Armorite Droid I-III
+        Cost=150
+        Equipments=Droid
+        Fragility=83
+        KindGraph=ArmoriteDroid
+        LevelsCount=3
+        Name=Armorite Droid I
+        Owner=Maloc,Peleng,People
+        Priority=10
+        Ruins=WB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_ArmoriteDroid1
+        SerieLevel2=ShuMM_ArmoriteDroid2
+        SerieLevel3=ShuMM_ArmoriteDroid3
+        Size=113
+        Special=1
+        Text=<color=248,252,248>Developed specifically for militaryies droid. Has minimalistic design and with repairing duties does special mechanical treatment of ship's skin, increasing it's defensive quality. On weapon placements such treatment lets guns shoot further, but for a small price of firepower.</color>
+        Text=<clr><clrEnd>
+        Text=Firing range: <bonWRadius>
+        Text=Hull armor: <bonHull>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        bonHull=1
+        bonWEnergy=-3
+        bonWRadius=10
+        bonWSplinter=-4
+    }
+    ShuMM_ArmoriteDroid2 ^{
+        AcrynLevel=2
+        AcrynSerie=Armorite Droid I-III
+        Cost=200
+        Equipments=Droid
+        Fragility=90
+        KindGraph=ArmoriteDroid
+        LevelsCount=3
+        Name=Armorite Droid II
+        Owner=Maloc,Peleng,People
+        Priority=30
+        Ruins=WB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_ArmoriteDroid1
+        SerieLevel2=ShuMM_ArmoriteDroid2
+        SerieLevel3=ShuMM_ArmoriteDroid3
+        Size=128
+        Special=1
+        Text=<color=248,252,248>Developed specifically for militaryies droid. Has minimalistic design and with repairing duties does special mechanical treatment of ship's skin, increasing it's defensive quality. On weapon placements such treatment lets guns shoot further, but for a small price of firepower.</color>
+        Text=<clr><clrEnd>
+        Text=Firing range: <bonWRadius>
+        Text=Hull armor: <bonHull>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        bonHull=2
+        bonWEnergy=-5
+        bonWRadius=15
+        bonWSplinter=-7
+    }
+    ShuMM_ArmoriteDroid3 ^{
+        AcrynLevel=3
+        AcrynSerie=Armorite Droid I-III
+        Cost=250
+        Equipments=Droid
+        Fragility=90
+        KindGraph=ArmoriteDroid
+        LevelsCount=3
+        Name=Armorite Droid III
+        Owner=Maloc,Peleng,People
+        Priority=50
+        Ruins=WB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_ArmoriteDroid1
+        SerieLevel2=ShuMM_ArmoriteDroid2
+        SerieLevel3=ShuMM_ArmoriteDroid3
+        Size=131
+        Special=1
+        Text=<color=248,252,248>Developed specifically for militaryies droid. Has minimalistic design and with repairing duties does special mechanical treatment of ship's skin, increasing it's defensive quality. On weapon placements such treatment lets guns shoot further, but for a small price of firepower.</color>
+        Text=<clr><clrEnd>
+        Text=Firing range: <bonWRadius>
+        Text=Hull armor: <bonHull>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        bonHull=3
+        bonWEnergy=-8
+        bonWRadius=20
+        bonWSplinter=-11
+    }
+    ShuMM_AuxiliarySubreactor5 ^{
+        BlockImp=1
+        BlockMM=1
+        Cost=250
+        CustomTag=AuxiliarySubreactor5
+        Equipments=DefGenerator
+        Fragility=100
+        KindGraph=AuxiliarySubreactor
+        LockedAcryn=3
+        Name=</color>Thermoquant Subreactor
+        NonSearchable=1
+        Owner=Nothing
+        Priority=60
+        Ruins=Nothing
+        Size=200
+        Special=1
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Firing range: <bonWRadius>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=Gripper power: <bonHook>
+        Text=Gripper range: <bonHookRadius>
+        TextReplace=<color=248,252,248>Compact thermoquant subreactor that generates energy which can be easily used to empower any energy-intensive devices. Despite being compact still has huge gabarites for spaceships and requires <color=255,240,100>whole shied generator comparatment</color> without providing any defense whatsoever.</color>
+        bonDef=-500000000
+        bonHook=50
+        bonHookRadius=20
+        bonRadar=300
+        bonScan=6
+        bonWEnergy=15
+        bonWRadius=30
+    }
+    ShuMM_AuxiliarySubreactor6 ^{
+        BlockImp=1
+        BlockMM=1
+        Cost=250
+        CustomTag=AuxiliarySubreactor6
+        Equipments=DefGenerator
+        Fragility=100
+        KindGraph=AuxiliarySubreactor
+        LockedAcryn=3
+        Name=</color>Exoseparatoral Subreactor
+        NonSearchable=1
+        Owner=Nothing
+        Priority=70
+        Ruins=Nothing
+        Size=200
+        Special=1
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Firing range: <bonWRadius>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=Gripper power: <bonHook>
+        Text=Gripper range: <bonHookRadius>
+        TextReplace=<color=248,252,248>Compact exoseparatoral subreactor that generates energy which can be easily used to empower any energy-intensive devices. Despite being compact still has huge gabarites for spaceships and requires <color=255,240,100>whole shied generator comparatment</color> without providing any defense whatsoever.</color>
+        bonDef=-500000000
+        bonHook=60
+        bonHookRadius=25
+        bonRadar=400
+        bonScan=7
+        bonWEnergy=17
+        bonWRadius=35
+    }
+    ShuMM_AuxiliarySubreactor7 ^{
+        BlockImp=1
+        BlockMM=1
+        Cost=250
+        CustomTag=AuxiliarySubreactor7
+        Equipments=DefGenerator
+        Fragility=100
+        KindGraph=AuxiliarySubreactor
+        LockedAcryn=3
+        Name=</color>Plasmorine Subreactor
+        NonSearchable=1
+        Owner=Nothing
+        Priority=80
+        Ruins=Nothing
+        Size=200
+        Special=1
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Firing range: <bonWRadius>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=Gripper power: <bonHook>
+        Text=Gripper range: <bonHookRadius>
+        TextReplace=<color=248,252,248>Compact plasmorine subreactor that generates energy which can be easily used to empower any energy-intensive devices. Despite being compact still has huge gabarites for spaceships and requires <color=255,240,100>whole shied generator comparatment</color> without providing any defense whatsoever.</color>
+        bonDef=-500000000
+        bonHook=60
+        bonHookRadius=27
+        bonRadar=500
+        bonScan=8
+        bonWEnergy=20
+        bonWRadius=40
+    }
+    ShuMM_AuxiliarySubreactor8 ^{
+        BlockImp=1
+        BlockMM=1
+        Cost=250
+        CustomTag=AuxiliarySubreactor8
+        Equipments=DefGenerator
+        Fragility=100
+        KindGraph=AuxiliarySubreactor
+        LockedAcryn=3
+        Name=</color>Quadroadronal Subreactor
+        NonSearchable=1
+        Owner=Nothing
+        Priority=90
+        Ruins=Nothing
+        Size=200
+        Special=1
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Firing range: <bonWRadius>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=Gripper power: <bonHook>
+        Text=Gripper range: <bonHookRadius>
+        TextReplace=<color=248,252,248>Compact quadroadronal subreactor that generates energy which can be easily used to empower any energy-intensive devices. Despite being compact still has huge gabarites for spaceships and requires <color=255,240,100>whole shied generator comparatment</color> without providing any defense whatsoever.</color>
+        bonDef=-500000000
+        bonHook=75
+        bonHookRadius=30
+        bonRadar=500
+        bonScan=8
+        bonWEnergy=24
+        bonWRadius=45
+    }
+    ShuMM_Berserker ^{
+        Equipments=Hull
+        Fragility=120
+        Name=Berserker
+        Owner=Maloc,Peleng,People,Fei
+        Priority=60
+        Text=Level two micromodule. Replaces part of ship's armor with two weapon placements. After <clr>gaalian<clrEnd> pacifists protests unusable in hulls of their race.
+        bonSlotWeapon=2
+    }
+    ShuMM_BiogeneticDroid1 ^{
+        AcrynLevel=1
+        BioEquip=1
+        Cost=150
+        Equipments=Droid
+        Fragility=270
+        KindGraph=BiogeneticDroid
+        LevelsCount=3
+        Name=Biogenetic Droid I
+        Owner=PirateClan
+        Priority=10
+        Ruins=PB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_BiogeneticDroid1
+        SerieLevel2=ShuMM_BiogeneticDroid2
+        SerieLevel3=ShuMM_BiogeneticDroid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A one-of-a-kind instance when living organisms perform the duties of standard equipment. The worms emanate special brainwaves that boost the functionality of the navigation systems. Unfortunately, their slime excretions were harmful for ship's electronics and <color=255,240,100>pirate</color> scientist were really dissatisfied with that. In the end, the slime goo was no more, for a price of bad health for the worms.</color>
+        Text=<clr><clrEnd>
+        Text=Jumping range: <bonJump>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        bonJump=2
+        bonRadar=200
+        bonScan=1
+    }
+    ShuMM_BiogeneticDroid2 ^{
+        AcrynLevel=2
+        BioEquip=1
+        Cost=200
+        Equipments=Droid
+        Fragility=370
+        KindGraph=BiogeneticDroid
+        LevelsCount=3
+        Name=Biogenetic Droid II
+        Owner=PirateClan
+        Priority=30
+        Ruins=PB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_BiogeneticDroid1
+        SerieLevel2=ShuMM_BiogeneticDroid2
+        SerieLevel3=ShuMM_BiogeneticDroid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A one-of-a-kind instance when living organisms perform the duties of standard equipment. The worms emanate special brainwaves that boost the functionality of the navigation systems. Unfortunately, their slime excretions were harmful for ship's electronics and <color=255,240,100>pirate</color> scientist were really dissatisfied with that. In the end, the slime goo was no more, for a price of bad health for the worms.</color>
+        Text=<clr><clrEnd>
+        Text=Jumping range: <bonJump>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        bonJump=3
+        bonRadar=250
+        bonScan=2
+    }
+    ShuMM_BiogeneticDroid3 ^{
+        AcrynLevel=3
+        BioEquip=1
+        Cost=250
+        Equipments=Droid
+        Fragility=450
+        KindGraph=BiogeneticDroid
+        LevelsCount=3
+        Name=Biogenetic Droid III
+        Owner=PirateClan
+        Priority=50
+        Ruins=PB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_BiogeneticDroid1
+        SerieLevel2=ShuMM_BiogeneticDroid2
+        SerieLevel3=ShuMM_BiogeneticDroid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A one-of-a-kind instance when living organisms perform the duties of standard equipment. The worms emanate special brainwaves that boost the functionality of the navigation systems. Unfortunately, their slime excretions were harmful for ship's electronics and <color=255,240,100>pirate</color> scientist were really dissatisfied with that. In the end, the slime goo was no more, for a price of bad health for the worms.</color>
+        Text=<clr><clrEnd>
+        Text=Jumping range: <bonJump>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        bonJump=4
+        bonRadar=300
+        bonScan=3
+    }
+    ShuMM_BipolarRadar1 ^{
+        AcrynLevel=1
+        AcrynSerie=Bipolar Radar I-III
+        Cost=150
+        Equipments=Radar
+        Fragility=100
+        KindGraph=BipolarRadar
+        LevelsCount=3
+        Name=Bipolar Radar I
+        Owner=People,Fei
+        Priority=10
+        Ruins=TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_BipolarRadar1
+        SerieLevel2=ShuMM_BipolarRadar2
+        SerieLevel3=ShuMM_BipolarRadar3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Developed by <color=255,240,100>feyans</color> and <color=255,240,100>humans</color> equipment created for repopulisation of theorem about on-ship energy streams. Part of the radar power redirected to shield generator empowerment, which clearly demonstrates the <color=255,240,100>Boho-Gvan</color> princeple of universal conversion in case of modern technologies.</color>
+        Text=<clr><clrEnd>
+        Text=Shield generator: <bonDef>%
+        Text=Radar range: <bonRadar>
+        bonDef=2
+        bonRadar=-150
+    }
+    ShuMM_BipolarRadar2 ^{
+        AcrynLevel=2
+        AcrynSerie=Bipolar Radar I-III
+        Cost=200
+        Equipments=Radar
+        Fragility=100
+        KindGraph=BipolarRadar
+        LevelsCount=3
+        Name=Bipolar Radar II
+        Owner=People,Fei
+        Priority=30
+        Ruins=TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_BipolarRadar1
+        SerieLevel2=ShuMM_BipolarRadar2
+        SerieLevel3=ShuMM_BipolarRadar3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Developed by <color=255,240,100>feyans</color> and <color=255,240,100>humans</color> equipment created for repopulisation of theorem about on-ship energy streams. Part of the radar power redirected to shield generator empowerment, which clearly demonstrates the <color=255,240,100>Boho-Gvan</color> princeple of universal conversion in case of modern technologies.</color>
+        Text=<clr><clrEnd>
+        Text=Shield generator: <bonDef>%
+        Text=Radar range: <bonRadar>
+        bonDef=3
+        bonRadar=-200
+    }
+    ShuMM_BipolarRadar3 ^{
+        AcrynLevel=3
+        AcrynSerie=Bipolar Radar I-III
+        Cost=250
+        Equipments=Radar
+        Fragility=100
+        KindGraph=BipolarRadar
+        LevelsCount=3
+        Name=Bipolar Radar III
+        Owner=People,Fei
+        Priority=50
+        Ruins=TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_BipolarRadar1
+        SerieLevel2=ShuMM_BipolarRadar2
+        SerieLevel3=ShuMM_BipolarRadar3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Developed by <color=255,240,100>feyans</color> and <color=255,240,100>humans</color> equipment created for repopulisation of theorem about on-ship energy streams. Part of the radar power redirected to shield generator empowerment, which clearly demonstrates the <color=255,240,100>Boho-Gvan</color> princeple of universal conversion in case of modern technologies.</color>
+        Text=<clr><clrEnd>
+        Text=Shield generator: <bonDef>%
+        Text=Radar range: <bonRadar>
+        bonDef=4
+        bonRadar=-250
+    }
+    ShuMM_BlockerV217 ^{
+        Cost=200
+        Equipments=DefGenerator
+        Name=Blocker v2.1.7
+        Owner=Terron
+        Priority=30
+        RacialRestriction=1
+        Size=350
+        Text=Connects to <clr>terronoid<clrEnd> defense shield generator four huge batteries that in time of the battle increase generator power to it's utmost limit.
+        Text=<clr><clrEnd>
+        Text=Shield generator: <bonDef>%
+        Text=Cost: <clr>+100%<clrEnd>
+        Text=Size: <clr>+250%<clrEnd>
+        bonDef=12
+    }
+    ShuMM_CellRadar1 ^{
+        AcrynLevel=1
+        AcrynSerie=Cell Radar I-III
+        Cost=150
+        Equipments=Radar
+        Fragility=150
+        KindGraph=CellRadar
+        LevelsCount=3
+        Name=Cell Radar I
+        Owner=PirateClan
+        Priority=10
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_CellRadar1
+        SerieLevel2=ShuMM_CellRadar2
+        SerieLevel3=ShuMM_CellRadar3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Radar series that was developed by <color=255,240,100>pirate clan</color> in their attemps to liquidate technical gap from Coalition. Despite desperate attempts by pirate craftsmen to provide sufficient reliability for unstable cellular chips, the durability of such radars is still impractically low.</color>
+        Text=<clr><clrEnd>
+        Text=Radar range: <bonRadar>
+        bonRadar=400
+    }
+    ShuMM_CellRadar2 ^{
+        AcrynLevel=2
+        AcrynSerie=Cell Radar I-III
+        Cost=200
+        Equipments=Radar
+        Fragility=175
+        KindGraph=CellRadar
+        LevelsCount=3
+        Name=Cell Radar II
+        Owner=PirateClan
+        Priority=30
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_CellRadar1
+        SerieLevel2=ShuMM_CellRadar2
+        SerieLevel3=ShuMM_CellRadar3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Radar series that was developed by <color=255,240,100>pirate clan</color> in their attemps to liquidate technical gap from Coalition. Despite desperate attempts by pirate craftsmen to provide sufficient reliability for unstable cellular chips, the durability of such radars is still impractically low.</color>
+        Text=<clr><clrEnd>
+        Text=Radar range: <bonRadar>
+        bonRadar=600
+    }
+    ShuMM_CellRadar3 ^{
+        AcrynLevel=3
+        AcrynSerie=Cell Radar I-III
+        Cost=250
+        Equipments=Radar
+        Fragility=200
+        KindGraph=CellRadar
+        LevelsCount=3
+        Name=Cell Radar III
+        Owner=PirateClan
+        Priority=50
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_CellRadar1
+        SerieLevel2=ShuMM_CellRadar2
+        SerieLevel3=ShuMM_CellRadar3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Radar series that was developed by <color=255,240,100>pirate clan</color> in their attemps to liquidate technical gap from Coalition. Despite desperate attempts by pirate craftsmen to provide sufficient reliability for unstable cellular chips, the durability of such radars is still impractically low.</color>
+        Text=<clr><clrEnd>
+        Text=Radar range: <bonRadar>
+        bonRadar=800
+    }
+    ShuMM_CyberneticHook1 ^{
+        AcrynLevel=1
+        AcrynSerie=Cybernetic Gripper I-III
+        Cost=150
+        Equipments=Hook
+        Fragility=125
+        KindGraph=CyberneticHook
+        LevelsCount=3
+        Name=Cybernetic Gripper I
+        Owner=People,Fei
+        Priority=10
+        Ruins=TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_CyberneticHook1
+        SerieLevel2=ShuMM_CyberneticHook2
+        SerieLevel3=ShuMM_CyberneticHook3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A unique collaborative effort between <color=255,240,100>humans</color> and <color=255,240,100>feyans</color>. This "gripper" is essentially a <color=255,240,100>repair droid</color>, concurrently engaged in collecting items lying around the ship. Increased number of duties expectedly did not help the repair droid, and under the fire of enemy guns this hard worker falls much more often, but in battle the owner of this device can count on the help of two metal keepers at once.</color>
+        Text=<clr><clrEnd>
+        Text=Droid effectiveness: <bonDroid>
+        Text=Gripper power: <bonHook>
+        Text=Gripper range: <bonHookRadius>
+        Text=Gripper speed: <bonHookMinSpeed>
+        bonDroid=16
+        bonHook=-20
+        bonHookMaxSpeed=-1
+        bonHookMinSpeed=-1
+        bonHookRadius=-10
+    }
+    ShuMM_CyberneticHook2 ^{
+        AcrynLevel=2
+        AcrynSerie=Cybernetic Gripper I-III
+        Cost=200
+        Equipments=Hook
+        Fragility=125
+        KindGraph=CyberneticHook
+        LevelsCount=3
+        Name=Cybernetic Gripper II
+        Owner=People,Fei
+        Priority=30
+        Ruins=TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_CyberneticHook1
+        SerieLevel2=ShuMM_CyberneticHook2
+        SerieLevel3=ShuMM_CyberneticHook3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A unique collaborative effort between <color=255,240,100>humans</color> and <color=255,240,100>feyans</color>. This "gripper" is essentially a <color=255,240,100>repair droid</color>, concurrently engaged in collecting items lying around the ship. Increased number of duties expectedly did not help the repair droid, and under the fire of enemy guns this hard worker falls much more often, but in battle the owner of this device can count on the help of two metal keepers at once.</color>
+        Text=<clr><clrEnd>
+        Text=Droid effectiveness: <bonDroid>
+        Text=Gripper power: <bonHook>
+        Text=Gripper range: <bonHookRadius>
+        Text=Gripper speed: <bonHookMinSpeed>
+        bonDroid=24
+        bonHook=-25
+        bonHookMaxSpeed=-2
+        bonHookMinSpeed=-2
+        bonHookRadius=-15
+    }
+    ShuMM_CyberneticHook3 ^{
+        AcrynLevel=3
+        AcrynSerie=Cybernetic Gripper I-III
+        Cost=250
+        Equipments=Hook
+        Fragility=125
+        KindGraph=CyberneticHook
+        LevelsCount=3
+        Name=Cybernetic Gripper III
+        Owner=People,Fei
+        Priority=50
+        Ruins=TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_CyberneticHook1
+        SerieLevel2=ShuMM_CyberneticHook2
+        SerieLevel3=ShuMM_CyberneticHook3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A unique collaborative effort between <color=255,240,100>humans</color> and <color=255,240,100>feyans</color>. This "gripper" is essentially a <color=255,240,100>repair droid</color>, concurrently engaged in collecting items lying around the ship. Increased number of duties expectedly did not help the repair droid, and under the fire of enemy guns this hard worker falls much more often, but in battle the owner of this device can count on the help of two metal keepers at once.</color>
+        Text=<clr><clrEnd>
+        Text=Droid effectiveness: <bonDroid>
+        Text=Gripper power: <bonHook>
+        Text=Gripper range: <bonHookRadius>
+        Text=Gripper speed: <bonHookMinSpeed>
+        bonDroid=32
+        bonHook=-30
+        bonHookMaxSpeed=-3
+        bonHookMinSpeed=-3
+        bonHookRadius=-20
+    }
+    ShuMM_Downgrade ^{
+        Cost=60
+        Equipments=FuelTank,Engine,Radar,Scaner,Droid,Hook,DefGenerator
+        Fragility=150
+        Name=Downgrade
+        Owner=Fei,Gaal
+        Priority=70
+        Size=75
+        Text=Level three micromodule. Replaces most of expensive and heavy parts on  <clr>feyan<clrEnd> and <clr>gaalian<clrEnd> equipment with their smaller but lowquality peleng analogues, at the same time completely removing decorative nonfuntional elements. Cannot be used on weapons and hulls.
+        Text=<clr><clrEnd>
+        Text=Cost: <clr>-40%<clrEnd>
+        Text=Size: <clr>-25%<clrEnd>
+        Text=Reliability: <clr>-33%<clrEnd>
+    }
+    ShuMM_DuplexScaner1 ^{
+        AcrynLevel=1
+        AcrynSerie=Duplex Scanner I-III
+        Cost=150
+        Equipments=Scaner
+        Fragility=150
+        KindGraph=DuplexScaner
+        LevelsCount=3
+        Name=Duplex Scanner I
+        Owner=PirateClan
+        Priority=10
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_DuplexScaner1
+        SerieLevel2=ShuMM_DuplexScaner2
+        SerieLevel3=ShuMM_DuplexScaner3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A series of scanners developed by the <color=255,240,100>pirate clan</color> in an attempt to close the technical gap with the latest coalition developments in the field. Despite desperate attempts by pirate craftsmen to ensure sufficient survivability of the lightly fused duplex circuits, the durability of these scanners is still impractically low.</color>
+        Text=<clr><clrEnd>
+        Text=Scanner power: <bonScan>%
+        bonScan=4
+    }
+    ShuMM_DuplexScaner2 ^{
+        AcrynLevel=2
+        AcrynSerie=Duplex Scanner I-III
+        Cost=200
+        Equipments=Scaner
+        Fragility=175
+        KindGraph=DuplexScaner
+        LevelsCount=3
+        Name=Duplex Scanner II
+        Owner=PirateClan
+        Priority=30
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_DuplexScaner1
+        SerieLevel2=ShuMM_DuplexScaner2
+        SerieLevel3=ShuMM_DuplexScaner3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A series of scanners developed by the <color=255,240,100>pirate clan</color> in an attempt to close the technical gap with the latest coalition developments in the field. Despite desperate attempts by pirate craftsmen to ensure sufficient survivability of the lightly fused duplex circuits, the durability of these scanners is still impractically low.</color>
+        Text=<clr><clrEnd>
+        Text=Scanner power: <bonScan>%
+        bonScan=6
+    }
+    ShuMM_DuplexScaner3 ^{
+        AcrynLevel=3
+        AcrynSerie=Duplex Scanner I-III
+        Cost=250
+        Equipments=Scaner
+        Fragility=200
+        KindGraph=DuplexScaner
+        LevelsCount=3
+        Name=Duplex Scanner III
+        Owner=PirateClan
+        Priority=50
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_DuplexScaner1
+        SerieLevel2=ShuMM_DuplexScaner2
+        SerieLevel3=ShuMM_DuplexScaner3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A series of scanners developed by the <color=255,240,100>pirate clan</color> in an attempt to close the technical gap with the latest coalition developments in the field. Despite desperate attempts by pirate craftsmen to ensure sufficient survivability of the lightly fused duplex circuits, the durability of these scanners is still impractically low.</color>
+        Text=<clr><clrEnd>
+        Text=Scanner power: <bonScan>%
+        bonScan=8
+    }
+    ShuMM_EMGenerator ^{
+        Equipments=WEnergy
+        Name=EM-generator
+        Owner=Fei
+        Priority=50
+        Text=Level two micromodule. Mounts on <clr>energy<clrEnd> weapon of <clr>feyan<clrEnd> production compact electromagnet pulse generator, which leads to malfunctions in the enemy's equipment in battle.
+        Text=<clr><clrEnd>
+        Text=Additonal effect: <clr>EM-interference<clrEnd>
+        WeaponMods=Magnetic
+    }
+    ShuMM_ElectrogenicHook1 ^{
+        AcrynLevel=1
+        AcrynSerie=Electrogenic Gripper I-III
+        Cost=150
+        Equipments=Hook
+        Fragility=150
+        KindGraph=ElectrogenicHook
+        LevelsCount=3
+        Name=Electrogenic Gripper I
+        Owner=PirateClan
+        Priority=10
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_ElectrogenicHook1
+        SerieLevel2=ShuMM_ElectrogenicHook2
+        SerieLevel3=ShuMM_ElectrogenicHook3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A series of grippers developed by the <color=255,240,100>pirate clan</color> in an attempt to close the technical gap with the latest coalition developments in the field. Despite desperate attempts by pirate craftsmen to provide sufficient wear resistance to the fragile electrogenic drives, the reliability of these grippers is still impractically low.</color>
+        Text=<clr><clrEnd>
+        Text=Gripper power: <bonHook>
+        Text=Gripper speed: <bonHookMaxSpeed>
+        bonHook=16
+        bonHookMaxSpeed=1
+        bonHookMinSpeed=1
+    }
+    ShuMM_ElectrogenicHook2 ^{
+        AcrynLevel=2
+        AcrynSerie=Electrogenic Gripper I-III
+        Cost=200
+        Equipments=Hook
+        Fragility=175
+        KindGraph=ElectrogenicHook
+        LevelsCount=3
+        Name=Electrogenic Gripper II
+        Owner=PirateClan
+        Priority=30
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_ElectrogenicHook1
+        SerieLevel2=ShuMM_ElectrogenicHook2
+        SerieLevel3=ShuMM_ElectrogenicHook3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A series of grippers developed by the <color=255,240,100>pirate clan</color> in an attempt to close the technical gap with the latest coalition developments in the field. Despite desperate attempts by pirate craftsmen to provide sufficient wear resistance to the fragile electrogenic drives, the reliability of these grippers is still impractically low.</color>
+        Text=<clr><clrEnd>
+        Text=Gripper power: <bonHook>
+        Text=Gripper speed: <bonHookMaxSpeed>
+        bonHook=32
+        bonHookMaxSpeed=1
+        bonHookMinSpeed=1
+    }
+    ShuMM_ElectrogenicHook3 ^{
+        AcrynLevel=3
+        AcrynSerie=Electrogenic Gripper I-III
+        Cost=250
+        Equipments=Hook
+        Fragility=200
+        KindGraph=ElectrogenicHook
+        LevelsCount=3
+        Name=Electrogenic Gripper III
+        Owner=PirateClan
+        Priority=50
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_ElectrogenicHook1
+        SerieLevel2=ShuMM_ElectrogenicHook2
+        SerieLevel3=ShuMM_ElectrogenicHook3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A series of grippers developed by the <color=255,240,100>pirate clan</color> in an attempt to close the technical gap with the latest coalition developments in the field. Despite desperate attempts by pirate craftsmen to provide sufficient wear resistance to the fragile electrogenic drives, the reliability of these grippers is still impractically low.</color>
+        Text=<clr><clrEnd>
+        Text=Gripper power: <bonHook>
+        Text=Gripper speed: <bonHookMaxSpeed>
+        bonHook=48
+        bonHookMaxSpeed=1
+        bonHookMinSpeed=1
+    }
+    ShuMM_Elephant ^{
+        Equipments=Hull
+        Fragility=130
+        Name=Elephantam
+        Owner=Peleng,People
+        Priority=42
+        Size=135
+        Text=Level two micromodule. Increases distance between atoms in material of the hull, making it bigger. Obvious negative effect is armor qualtiy decrease, caused by weakening of atomaic bonds. Compatible with <clr>human<clrEnd> and <clr>peleng<clrEnd> hulls.
+        Text=<clr><clrEnd>
+        Text=Size: <clr>+35%<clrEnd>
+        Text=Hull armor: <bonHull>
+        Text=Damage susceptibility: <clr>+30%<clrEnd>
+        bonHull=-2
+    }
+    ShuMM_EnergenicEngine1 ^{
+        AcrynLevel=1
+        AcrynSerie=Energenic Engine I-III
+        Cost=150
+        Equipments=Engine
+        Fragility=100
+        KindGraph=EnergenicEngine
+        LevelsCount=3
+        Name=Energenic Engine I
+        Owner=Maloc,Peleng,PirateClan
+        Priority=10
+        Ruins=WB,PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_EnergenicEngine1
+        SerieLevel2=ShuMM_EnergenicEngine2
+        SerieLevel3=ShuMM_EnergenicEngine3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>An ambiguous device of <color=255,240,100>pirate</color> "craftsmens". Part of the energy of the maneuvering nozzles of this engine was redirected into the marching channel, which led to an increase in speed, but also significantly reduced the maneuverability of the ship. Bigger part of Coalition races were squeamish about this "development", but the <color=255,240,100>Maloqs</color> and <color=255,240,100>Pelenges</color> were quite happy with the idea.</color>
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Mobility skill: <bonSkill2>
+        bonSkill2=-2
+        bonSpeed=100
+    }
+    ShuMM_EnergenicEngine2 ^{
+        AcrynLevel=2
+        AcrynSerie=Energenic Engine I-III
+        Cost=200
+        Equipments=Engine
+        Fragility=125
+        KindGraph=EnergenicEngine
+        LevelsCount=3
+        Name=Energenic Engine II
+        Owner=Maloc,Peleng,PirateClan
+        Priority=30
+        Ruins=WB,PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_EnergenicEngine1
+        SerieLevel2=ShuMM_EnergenicEngine2
+        SerieLevel3=ShuMM_EnergenicEngine3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>An ambiguous device of <color=255,240,100>pirate</color> "craftsmens". Part of the energy of the maneuvering nozzles of this engine was redirected into the marching channel, which led to an increase in speed, but also significantly reduced the maneuverability of the ship. Bigger part of Coalition races were squeamish about this "development", but the <color=255,240,100>Maloqs</color> and <color=255,240,100>Pelenges</color> were quite happy with the idea.</color>
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Mobility skill: <bonSkill2>
+        bonSkill2=-2
+        bonSpeed=125
+    }
+    ShuMM_EnergenicEngine3 ^{
+        AcrynLevel=3
+        AcrynSerie=Energenic Engine I-III
+        Cost=250
+        Equipments=Engine
+        Fragility=125
+        KindGraph=EnergenicEngine
+        LevelsCount=3
+        Name=Energenic Engine III
+        Owner=Maloc,Peleng,PirateClan
+        Priority=50
+        Ruins=WB,PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_EnergenicEngine1
+        SerieLevel2=ShuMM_EnergenicEngine2
+        SerieLevel3=ShuMM_EnergenicEngine3
+        Size=105
+        Special=1
+        Text=<color=248,252,248>An ambiguous device of <color=255,240,100>pirate</color> "craftsmens". Part of the energy of the maneuvering nozzles of this engine was redirected into the marching channel, which led to an increase in speed, but also significantly reduced the maneuverability of the ship. Bigger part of Coalition races were squeamish about this "development", but the <color=255,240,100>Maloqs</color> and <color=255,240,100>Pelenges</color> were quite happy with the idea.</color>
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Mobility skill: <bonSkill2>
+        bonSkill2=-2
+        bonSpeed=150
+    }
+    ShuMM_EvaluationScaner1 ^{
+        AcrynLevel=1
+        AcrynSerie=Evaluation Scanner I-III
+        Cost=150
+        Equipments=Scaner
+        KindGraph=14
+        LevelsCount=3
+        Name=Evaluation Scanner I
+        Priority=10
+        Ruins=BK
+        SerieLevel1=ShuMM_EvaluationScaner1
+        SerieLevel2=ShuMM_EvaluationScaner2
+        SerieLevel3=ShuMM_EvaluationScaner3
+        Special=1
+        Text=<color=248,252,248>The tool of a true <clr>businessman<clrEnd>. The special evaluation modules allow you to scan various goods and identify their defects, and the bundled application notifies the owner about the latest trends on the galactic exchange. Unfortunately, the software seriously loads the processor, so the overall performance of the scanner suffers.</color>
+        Text=<clr><clrEnd>
+        Text=Commerce skill: <bonSkill4>
+        Text=Scanner power: <bonScan>%
+        bonScan=-8
+        bonSkill4=2
+    }
+    ShuMM_EvaluationScaner2 ^{
+        AcrynLevel=2
+        AcrynSerie=Evaluation Scanner I-III
+        Cost=200
+        Equipments=Scaner
+        KindGraph=14
+        LevelsCount=3
+        Name=Evaluation Scanner II
+        Priority=30
+        Ruins=BK
+        SerieLevel1=ShuMM_EvaluationScaner1
+        SerieLevel2=ShuMM_EvaluationScaner2
+        SerieLevel3=ShuMM_EvaluationScaner3
+        Special=1
+        Text=<color=248,252,248>The tool of a true <clr>businessman<clrEnd>. The special evaluation modules allow you to scan various goods and identify their defects, and the bundled application notifies the owner about the latest trends on the galactic exchange. Unfortunately, the software seriously loads the processor, so the overall performance of the scanner suffers.</color>
+        Text=<clr><clrEnd>
+        Text=Commerce skill: <bonSkill4>
+        Text=Scanner power: <bonScan>%
+        bonScan=-5
+        bonSkill4=2
+    }
+    ShuMM_EvaluationScaner3 ^{
+        AcrynLevel=3
+        AcrynSerie=Evaluation Scanner I-III
+        Cost=250
+        Equipments=Scaner
+        KindGraph=14
+        LevelsCount=3
+        Name=Evaluation Scanner III
+        Priority=50
+        Ruins=BK
+        SerieLevel1=ShuMM_EvaluationScaner1
+        SerieLevel2=ShuMM_EvaluationScaner2
+        SerieLevel3=ShuMM_EvaluationScaner3
+        Special=1
+        Text=<color=248,252,248>The tool of a true <clr>businessman<clrEnd>. The special evaluation modules allow you to scan various goods and identify their defects, and the bundled application notifies the owner about the latest trends on the galactic exchange. Unfortunately, the software seriously loads the processor, so the overall performance of the scanner suffers.</color>
+        Text=<clr><clrEnd>
+        Text=Commerce skill: <bonSkill4>
+        Text=Scanner power: <bonScan>%
+        bonScan=-3
+        bonSkill4=2
+    }
+    ShuMM_ExtremeFly ^{
+        Equipments=Engine
+        Fragility=250
+        Name=Extreme-Fly
+        Owner=PirateClan
+        Priority=15
+        RacialRestriction=1
+        Text=Level one micromodule. Removes speed restrictions from <clr>pirate<clrEnd>-made engines, icreasing their propulsive properties, but also accelerating wear greatly.
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Reliability: <clr>-60%<clrEnd>
+        bonSpeed=225
+    }
+    ShuMM_ExtremumEnergy ^{
+        Cost=200
+        Equipments=W01,W03,W05,W06,W08,W10,W11,W12,W17,sub_gun,grav_beam,splash_faser,gaal_vision,slow_gun,sphere_gun,pulse_gun,pulse_gun2,maloc_laser,maloc_laser2,photon_gun,photon_gun2,photon_gun3
+        Fragility=170
+        Name=Extremum
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=10
+        Ruins=PB,CB
+        Size=150
+        Special=1
+        Text=<color=248,252,248>This weapon is equipped with a powerful power unit capable of <clr>maximizing the damage dealt<clrEnd>, regardless of the pilot's accuracy skill. The modified unit is extremely unstable and also occupies a large volume, which leads to fast overheating and rapid deterioration of the weapon. But even despite such an extensive set of problems, <clr>pirate<clrEnd> engineers still went into mass production, hoping to fix the key flaws soon after winning the Civil War.</color>
+        WeaponMods=NoDelta
+    }
+    ShuMM_ExtremumSplinter ^{
+        Cost=200
+        Equipments=W02,W07,W09,frag_gun,laser_gun
+        Fragility=170
+        Name=Extremum
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=10
+        Ruins=PB,CB
+        Size=150
+        Special=1
+        Text=<color=248,252,248>This weapon is equipped with a powerful homing AI unit capable of <clr>maximizing the damage dealt<clrEnd>, regardless of the pilot's accuracy skill. The modified unit is extremely unstable and also occupies a large volume, which leads to fast overheating and rapid deterioration of the weapon. But even despite such an extensive set of problems, <clr>pirate<clrEnd> engineers still went into mass production, hoping to fix the key flaws soon after winning the Civil War.</color>
+        WeaponMods=NoDelta
+    }
+    ShuMM_FragUp ^{
+        Cost=135
+        Equipments=WSplinter
+        Name=Frag-Up
+        Owner=Maloc,Peleng,NonKling
+        Priority=50
+        Size=80
+        Text=Level two micromodule. Replaces original <clr>fragmentation<clrEnd> ammo delivery system with more compact and effective but a bit costly analogue. Fit only in old <clr>peleng<clrEnd> and <clr>maloq<clrEnd> cannons. For some unknown reason conflicts with dominator software.
+        Text=<clr><clrEnd>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Firing range: <bonWRadius>
+        Text=Size: <clr>-20%<clrEnd>
+        Text=Cost: <clr>+35%<clrEnd>
+        bonWRadius=20
+        bonWSplinter=14
+    }
+    ShuMM_FuravanHull1 ^{
+        AcrynLevel=1
+        AcrynSerie=Fooravean I-IV
+        Cost=200
+        CustomTag=rng_f_1
+        Equipments=Hull
+        ForCharacterTypes=Trader
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=90
+        FragilityMissile=90
+        FragilitySplinter=90
+        KindGraph=Furavan
+        LevelsCount=4
+        Name=Fooravean Hull I
+        Owner=Fei
+        Priority=10
+        RacialRestriction=1
+        Ruins=BK,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_FuravanHull1
+        SerieLevel2=ShuMM_FuravanHull2
+        SerieLevel3=ShuMM_FuravanHull3
+        SerieLevel4=ShuMM_FuravanHull4
+        Size=100
+        Special=1
+        Text=<color=248,252,248>An expensive <clr>Feyan<clrEnd> project, created as part of a competition to design the best diplomatic hull "of all time". The ship boasts an incredibly luxurious interior, for the sake of which even the optimal placement of the gun compartments was sacrificed. At the same time, exodynamic condensers cleverly camouflaged beneath the decorative exterior contours constantly store and redirect additional flows of stellar energy to the engine's acceleration circuit. However, in the pursuit of giving the case an elegant appearance, the <clr>feyans<clrEnd> have completely forgotten about providing the capacitors with convenient microcontrol systems. In other words, all the high-tech frills of the Fooravean are simply too complicated to be understood and controlled by anyone other than members of the Feyan race.</color>
+        Text=<clr><clrEnd>
+        Text=Charisma skill: <bonSkill5>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=(only for <clr>feyans<clrEnd>)
+        bonJump=6
+        bonMass=-10
+        bonSkill5=2
+        bonSlotArt=-1
+        bonSlotHook=-1
+        bonSlotWeapon=-2
+        bonSpeed=100
+        bonWEnergy=-4
+        bonWMissile=-6
+        bonWSplinter=-6
+    }
+    ShuMM_FuravanHull2 ^{
+        AcrynLevel=2
+        AcrynSerie=Fooravean I-IV
+        Cost=300
+        CustomTag=rng_f_2
+        Equipments=Hull
+        ForCharacterTypes=Trader
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=95
+        FragilityMissile=95
+        FragilitySplinter=95
+        KindGraph=Furavan
+        LevelsCount=4
+        Name=Fooravean Hull II
+        Owner=Fei
+        Priority=30
+        RacialRestriction=1
+        Ruins=BK,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_FuravanHull1
+        SerieLevel2=ShuMM_FuravanHull2
+        SerieLevel3=ShuMM_FuravanHull3
+        SerieLevel4=ShuMM_FuravanHull4
+        Size=100
+        Special=1
+        Text=<color=248,252,248>An expensive <clr>Feyan<clrEnd> project, created as part of a competition to design the best diplomatic hull "of all time". The ship boasts an incredibly luxurious interior, for the sake of which even the optimal placement of the gun compartments was sacrificed. At the same time, exodynamic condensers cleverly camouflaged beneath the decorative exterior contours constantly store and redirect additional flows of stellar energy to the engine's acceleration circuit. However, in the pursuit of giving the case an elegant appearance, the <clr>feyans<clrEnd> have completely forgotten about providing the capacitors with convenient microcontrol systems. In other words, all the high-tech frills of the Fooravean are simply too complicated to be understood and controlled by anyone other than members of the Feyan race.</color>
+        Text=<clr><clrEnd>
+        Text=Charisma skill: <bonSkill5>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=(only for <clr>feyans<clrEnd>)
+        bonJump=8
+        bonMass=-15
+        bonSkill5=2
+        bonSlotHook=-1
+        bonSlotWeapon=-2
+        bonSpeed=150
+        bonWEnergy=-6
+        bonWMissile=-8
+        bonWSplinter=-8
+    }
+    ShuMM_FuravanHull3 ^{
+        AcrynLevel=3
+        AcrynSerie=Fooravean I-IV
+        Cost=400
+        CustomTag=rng_f_3
+        Equipments=Hull
+        ForCharacterTypes=Trader
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=105
+        FragilityMissile=105
+        FragilitySplinter=105
+        KindGraph=Furavan
+        LevelsCount=4
+        Name=Fooravean Hull III
+        Owner=Fei
+        Priority=50
+        RacialRestriction=1
+        Ruins=BK,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_FuravanHull1
+        SerieLevel2=ShuMM_FuravanHull2
+        SerieLevel3=ShuMM_FuravanHull3
+        SerieLevel4=ShuMM_FuravanHull4
+        Size=100
+        Special=1
+        Text=<color=248,252,248>An expensive <clr>Feyan<clrEnd> project, created as part of a competition to design the best diplomatic hull "of all time". The ship boasts an incredibly luxurious interior, for the sake of which even the optimal placement of the gun compartments was sacrificed. At the same time, exodynamic condensers cleverly camouflaged beneath the decorative exterior contours constantly store and redirect additional flows of stellar energy to the engine's acceleration circuit. However, in the pursuit of giving the case an elegant appearance, the <clr>feyans<clrEnd> have completely forgotten about providing the capacitors with convenient microcontrol systems. In other words, all the high-tech frills of the Fooravean are simply too complicated to be understood and controlled by anyone other than members of the Feyan race.</color>
+        Text=<clr><clrEnd>
+        Text=Charisma skill: <bonSkill5>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=(only for <clr>feyans<clrEnd>)
+        bonJump=10
+        bonMass=-20
+        bonSkill5=2
+        bonSlotHook=-1
+        bonSlotWeapon=-1
+        bonSpeed=200
+        bonWEnergy=-10
+        bonWMissile=-12
+        bonWSplinter=-12
+    }
+    ShuMM_FuravanHull4 ^{
+        AcrynLevel=4
+        AcrynSerie=Fooravean I-IV
+        Cost=500
+        CustomTag=rng_f_4
+        Equipments=Hull
+        ForCharacterTypes=Trader
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=95
+        FragilityMissile=95
+        FragilitySplinter=95
+        KindGraph=Furavan
+        LevelsCount=4
+        Name=Fooravean Hull IV
+        Owner=Fei
+        Priority=70
+        RacialRestriction=1
+        Ruins=BK,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_FuravanHull1
+        SerieLevel2=ShuMM_FuravanHull2
+        SerieLevel3=ShuMM_FuravanHull3
+        SerieLevel4=ShuMM_FuravanHull4
+        Size=100
+        Special=1
+        Text=<color=248,252,248>An expensive <clr>Feyan<clrEnd> project, created as part of a competition to design the best diplomatic hull "of all time". The ship boasts an incredibly luxurious interior, for the sake of which even the optimal placement of the gun compartments was sacrificed. At the same time, exodynamic condensers cleverly camouflaged beneath the decorative exterior contours constantly store and redirect additional flows of stellar energy to the engine's acceleration circuit. However, in the pursuit of giving the case an elegant appearance, the <clr>feyans<clrEnd> have completely forgotten about providing the capacitors with convenient microcontrol systems. In other words, all the high-tech frills of the Fooravean are simply too complicated to be understood and controlled by anyone other than members of the Feyan race.</color>
+        Text=<clr><clrEnd>
+        Text=Charisma skill: <bonSkill5>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=(only for <clr>feyans<clrEnd>)
+        bonJump=8
+        bonMass=-15
+        bonSkill5=2
+        bonSpeed=150
+        bonWEnergy=-8
+        bonWMissile=-10
+        bonWSplinter=-10
+    }
+    ShuMM_Khataber ^{
+        Cost=85
+        Equipments=FuelTank,Engine,Radar,Scaner,Droid,Hook,DefGenerator
+        Fragility=85
+        Name=Khataber
+        Owner=PirateClan
+        Priority=80
+        RacialRestriction=1
+        Size=90
+        Text=Level three micromodule. Patches unlicenzed software in <clr>pirate<clrEnd> devices to the latest version, fixes damages files in register if there's any, and clears the cache. Those, on first glance, trivial procedures provide the device with a better quality of work and facilitate the repair process.
+        Text=<clr><clrEnd>
+        Text=Reliability: <clr>+17%<clrEnd>
+        Text=Cost: <clr>-15%<clrEnd>
+        Text=Size: <clr>-10%<clrEnd>
+    }
+    ShuMM_Limitizer ^{
+        Cost=150
+        Equipments=WEnergy
+        Name=Limitizer
+        Owner=Blazer
+        Priority=25
+        RacialRestriction=1
+        Text=Level one micromodule. Connects to <clr>energy<clrEnd> weapons of <clr>blazer<clrEnd> series an advanced guidance system that fires in fully autonomous mode. The system draws power from the gun's capacitors to operate correctly.
+        Text=<clr><clrEnd>
+        Text=Removes damage delta
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Firing range: <bonWRadius>
+        Text=Cost: <clr>+50%<clrEnd>
+        WeaponMods=NoDelta
+        bonWEnergy=-7
+        bonWRadius=-15
+    }
+    ShuMM_MicrogenicDefGenerator1 ^{
+        AcrynLevel=1
+        AcrynSerie=Microgenic Shield Generator I-III
+        Cost=150
+        Equipments=DefGenerator
+        Fragility=130
+        KindGraph=MicrogenicDefGenerator
+        LevelsCount=3
+        Name=Microgenic Shield Generator I
+        Owner=Fei,Gaal
+        Priority=10
+        Ruins=TC,RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_MicrogenicDefGenerator1
+        SerieLevel2=ShuMM_MicrogenicDefGenerator2
+        SerieLevel3=ShuMM_MicrogenicDefGenerator3
+        Size=80
+        Special=1
+        Text=<color=248,252,248>This line of equipment was developed by <color=255,240,100>Feyan scientists</color> in close cooperation with the best <color=255,240,100>Gaalian</color> masters of Iike-Baana. It is thoroughly unknown whether it was advanced Fey microengineering or the subtle spiritual organization of the Gaal intellect that made the project a success, but in the end <color=255,240,100>size</color> and <color=255,240,100>mass</color> of such devices were reduced many times. Some independent experts, however, believe that if the spiritual organization of the Gaalians had not been so thin, the undesirable reduction in the reliability of microgenar designs would have been avoided, but their criticism was not paid due attention to amid the general triumph.</color>
+        Text=<clr><clrEnd>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        bonMass=-4
+    }
+    ShuMM_MicrogenicDefGenerator2 ^{
+        AcrynLevel=2
+        AcrynSerie=Microgenic Shield Generator I-III
+        Cost=200
+        Equipments=DefGenerator
+        Fragility=130
+        KindGraph=MicrogenicDefGenerator
+        LevelsCount=3
+        Name=Microgenic Shield Generator II
+        Owner=Fei,Gaal
+        Priority=30
+        Ruins=TC,RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_MicrogenicDefGenerator1
+        SerieLevel2=ShuMM_MicrogenicDefGenerator2
+        SerieLevel3=ShuMM_MicrogenicDefGenerator3
+        Size=75
+        Special=1
+        Text=<color=248,252,248>This line of equipment was developed by <color=255,240,100>Feyan scientists</color> in close cooperation with the best <color=255,240,100>Gaalian</color> masters of Iike-Baana. It is thoroughly unknown whether it was advanced Fey microengineering or the subtle spiritual organization of the Gaal intellect that made the project a success, but in the end <color=255,240,100>size</color> and <color=255,240,100>mass</color> of such devices were reduced many times. Some independent experts, however, believe that if the spiritual organization of the Gaalians had not been so thin, the undesirable reduction in the reliability of microgenar designs would have been avoided, but their criticism was not paid due attention to amid the general triumph.</color>
+        Text=<clr><clrEnd>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        bonMass=-6
+    }
+    ShuMM_MicrogenicDefGenerator3 ^{
+        AcrynLevel=3
+        AcrynSerie=Microgenic Shield Generator I-III
+        Cost=250
+        Equipments=DefGenerator
+        Fragility=130
+        KindGraph=MicrogenicDefGenerator
+        LevelsCount=3
+        Name=Microgenic Shield Generator III
+        Owner=Fei,Gaal
+        Priority=50
+        Ruins=TC,RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_MicrogenicDefGenerator1
+        SerieLevel2=ShuMM_MicrogenicDefGenerator2
+        SerieLevel3=ShuMM_MicrogenicDefGenerator3
+        Size=70
+        Special=1
+        Text=<color=248,252,248>This line of equipment was developed by <color=255,240,100>Feyan scientists</color> in close cooperation with the best <color=255,240,100>Gaalian</color> masters of Iike-Baana. It is thoroughly unknown whether it was advanced Fey microengineering or the subtle spiritual organization of the Gaal intellect that made the project a success, but in the end <color=255,240,100>size</color> and <color=255,240,100>mass</color> of such devices were reduced many times. Some independent experts, however, believe that if the spiritual organization of the Gaalians had not been so thin, the undesirable reduction in the reliability of microgenar designs would have been avoided, but their criticism was not paid due attention to amid the general triumph.</color>
+        Text=<clr><clrEnd>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        bonMass=-8
+    }
+    ShuMM_MicrogenicDroid1 ^{
+        AcrynLevel=1
+        AcrynSerie=Microgenic Droid I-III
+        Cost=150
+        Equipments=Droid
+        Fragility=130
+        KindGraph=MicrogenicDroid
+        LevelsCount=3
+        Name=Microgenic Droid I
+        Owner=Fei,Gaal
+        Priority=10
+        Ruins=TC,RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_MicrogenicDroid1
+        SerieLevel2=ShuMM_MicrogenicDroid2
+        SerieLevel3=ShuMM_MicrogenicDroid3
+        Size=80
+        Special=1
+        Text=<color=248,252,248>This line of equipment was developed by <color=255,240,100>Feyan scientists</color> in close cooperation with the best <color=255,240,100>Gaalian</color> masters of Iike-Baana. It is thoroughly unknown whether it was advanced Fey microengineering or the subtle spiritual organization of the Gaal intellect that made the project a success, but in the end <color=255,240,100>size</color> and <color=255,240,100>mass</color> of such devices were reduced many times. Some independent experts, however, believe that if the spiritual organization of the Gaalians had not been so thin, the undesirable reduction in the reliability of microgenar designs would have been avoided, but their criticism was not paid due attention to amid the general triumph.</color>
+        Text=<clr><clrEnd>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        bonMass=-4
+    }
+    ShuMM_MicrogenicDroid2 ^{
+        AcrynLevel=2
+        AcrynSerie=Microgenic Droid I-III
+        Cost=200
+        Equipments=Droid
+        Fragility=130
+        KindGraph=MicrogenicDroid
+        LevelsCount=3
+        Name=Microgenic Droid II
+        Owner=Fei,Gaal
+        Priority=30
+        Ruins=TC,RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_MicrogenicDroid1
+        SerieLevel2=ShuMM_MicrogenicDroid2
+        SerieLevel3=ShuMM_MicrogenicDroid3
+        Size=75
+        Special=1
+        Text=<color=248,252,248>This line of equipment was developed by <color=255,240,100>Feyan scientists</color> in close cooperation with the best <color=255,240,100>Gaalian</color> masters of Iike-Baana. It is thoroughly unknown whether it was advanced Fey microengineering or the subtle spiritual organization of the Gaal intellect that made the project a success, but in the end <color=255,240,100>size</color> and <color=255,240,100>mass</color> of such devices were reduced many times. Some independent experts, however, believe that if the spiritual organization of the Gaalians had not been so thin, the undesirable reduction in the reliability of microgenar designs would have been avoided, but their criticism was not paid due attention to amid the general triumph.</color>
+        Text=<clr><clrEnd>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        bonMass=-6
+    }
+    ShuMM_MicrogenicDroid3 ^{
+        AcrynLevel=3
+        AcrynSerie=Microgenic Droid I-III
+        Cost=250
+        Equipments=Droid
+        Fragility=130
+        KindGraph=MicrogenicDroid
+        LevelsCount=3
+        Name=Microgenic Droid III
+        Owner=Fei,Gaal
+        Priority=50
+        Ruins=TC,RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_MicrogenicDroid1
+        SerieLevel2=ShuMM_MicrogenicDroid2
+        SerieLevel3=ShuMM_MicrogenicDroid3
+        Size=70
+        Special=1
+        Text=<color=248,252,248>This line of equipment was developed by <color=255,240,100>Feyan scientists</color> in close cooperation with the best <color=255,240,100>Gaalian</color> masters of Iike-Baana. It is thoroughly unknown whether it was advanced Fey microengineering or the subtle spiritual organization of the Gaal intellect that made the project a success, but in the end <color=255,240,100>size</color> and <color=255,240,100>mass</color> of such devices were reduced many times. Some independent experts, however, believe that if the spiritual organization of the Gaalians had not been so thin, the undesirable reduction in the reliability of microgenar designs would have been avoided, but their criticism was not paid due attention to amid the general triumph.</color>
+        Text=<clr><clrEnd>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        bonMass=-8
+    }
+    ShuMM_MicrogenicEngine1 ^{
+        AcrynLevel=1
+        AcrynSerie=Microgenic Engine I-III
+        Cost=150
+        Equipments=Engine
+        Fragility=130
+        KindGraph=MicrogenicEngine
+        LevelsCount=3
+        Name=Microgenic Engine I
+        Owner=Fei,Gaal
+        Priority=10
+        Ruins=TC,RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_MicrogenicEngine1
+        SerieLevel2=ShuMM_MicrogenicEngine2
+        SerieLevel3=ShuMM_MicrogenicEngine3
+        Size=80
+        Special=1
+        Text=<color=248,252,248>This line of equipment was developed by <color=255,240,100>Feyan scientists</color> in close cooperation with the best <color=255,240,100>Gaalian</color> masters of Iike-Baana. It is thoroughly unknown whether it was advanced Fey microengineering or the subtle spiritual organization of the Gaal intellect that made the project a success, but in the end <color=255,240,100>size</color> and <color=255,240,100>mass</color> of such devices were reduced many times. Some independent experts, however, believe that if the spiritual organization of the Gaalians had not been so thin, the undesirable reduction in the reliability of microgenar designs would have been avoided, but their criticism was not paid due attention to amid the general triumph.</color>
+        Text=<clr><clrEnd>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        bonMass=-4
+    }
+    ShuMM_MicrogenicEngine2 ^{
+        AcrynLevel=2
+        AcrynSerie=Microgenic Engine I-III
+        Cost=200
+        Equipments=Engine
+        Fragility=130
+        KindGraph=MicrogenicEngine
+        LevelsCount=3
+        Name=Microgenic Engine II
+        Owner=Fei,Gaal
+        Priority=30
+        Ruins=TC,RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_MicrogenicEngine1
+        SerieLevel2=ShuMM_MicrogenicEngine2
+        SerieLevel3=ShuMM_MicrogenicEngine3
+        Size=75
+        Special=1
+        Text=<color=248,252,248>This line of equipment was developed by <color=255,240,100>Feyan scientists</color> in close cooperation with the best <color=255,240,100>Gaalian</color> masters of Iike-Baana. It is thoroughly unknown whether it was advanced Fey microengineering or the subtle spiritual organization of the Gaal intellect that made the project a success, but in the end <color=255,240,100>size</color> and <color=255,240,100>mass</color> of such devices were reduced many times. Some independent experts, however, believe that if the spiritual organization of the Gaalians had not been so thin, the undesirable reduction in the reliability of microgenar designs would have been avoided, but their criticism was not paid due attention to amid the general triumph.</color>
+        Text=<clr><clrEnd>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        bonMass=-6
+    }
+    ShuMM_MicrogenicEngine3 ^{
+        AcrynLevel=3
+        AcrynSerie=Microgenic Engine I-III
+        Cost=250
+        Equipments=Engine
+        Fragility=130
+        KindGraph=MicrogenicEngine
+        LevelsCount=3
+        Name=Microgenic Engine III
+        Owner=Fei,Gaal
+        Priority=50
+        Ruins=TC,RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_MicrogenicEngine1
+        SerieLevel2=ShuMM_MicrogenicEngine2
+        SerieLevel3=ShuMM_MicrogenicEngine3
+        Size=70
+        Special=1
+        Text=<color=248,252,248>This line of equipment was developed by <color=255,240,100>Feyan scientists</color> in close cooperation with the best <color=255,240,100>Gaalian</color> masters of Iike-Baana. It is thoroughly unknown whether it was advanced Fey microengineering or the subtle spiritual organization of the Gaal intellect that made the project a success, but in the end <color=255,240,100>size</color> and <color=255,240,100>mass</color> of such devices were reduced many times. Some independent experts, however, believe that if the spiritual organization of the Gaalians had not been so thin, the undesirable reduction in the reliability of microgenar designs would have been avoided, but their criticism was not paid due attention to amid the general triumph.</color>
+        Text=<clr><clrEnd>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        bonMass=-8
+    }
+    ShuMM_MicrogenicHook1 ^{
+        AcrynLevel=1
+        AcrynSerie=Microgenic Gripper I-III
+        Cost=150
+        Equipments=Hook
+        Fragility=130
+        KindGraph=MicrogenicHook
+        LevelsCount=3
+        Name=Microgenic Gripper I
+        Owner=Fei,Gaal
+        Priority=10
+        Ruins=TC,RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_MicrogenicHook1
+        SerieLevel2=ShuMM_MicrogenicHook2
+        SerieLevel3=ShuMM_MicrogenicHook3
+        Size=80
+        Special=1
+        Text=<color=248,252,248>This line of equipment was developed by <color=255,240,100>Feyan scientists</color> in close cooperation with the best <color=255,240,100>Gaalian</color> masters of Iike-Baana. It is thoroughly unknown whether it was advanced Fey microengineering or the subtle spiritual organization of the Gaal intellect that made the project a success, but in the end <color=255,240,100>size</color> and <color=255,240,100>mass</color> of such devices were reduced many times. Some independent experts, however, believe that if the spiritual organization of the Gaalians had not been so thin, the undesirable reduction in the reliability of microgenar designs would have been avoided, but their criticism was not paid due attention to amid the general triumph.</color>
+        Text=<clr><clrEnd>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        bonMass=-4
+    }
+    ShuMM_MicrogenicHook2 ^{
+        AcrynLevel=2
+        AcrynSerie=Microgenic Gripper I-III
+        Cost=200
+        Equipments=Hook
+        Fragility=130
+        KindGraph=MicrogenicHook
+        LevelsCount=3
+        Name=Microgenic Gripper II
+        Owner=Fei,Gaal
+        Priority=30
+        Ruins=TC,RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_MicrogenicHook1
+        SerieLevel2=ShuMM_MicrogenicHook2
+        SerieLevel3=ShuMM_MicrogenicHook3
+        Size=75
+        Special=1
+        Text=<color=248,252,248>This line of equipment was developed by <color=255,240,100>Feyan scientists</color> in close cooperation with the best <color=255,240,100>Gaalian</color> masters of Iike-Baana. It is thoroughly unknown whether it was advanced Fey microengineering or the subtle spiritual organization of the Gaal intellect that made the project a success, but in the end <color=255,240,100>size</color> and <color=255,240,100>mass</color> of such devices were reduced many times. Some independent experts, however, believe that if the spiritual organization of the Gaalians had not been so thin, the undesirable reduction in the reliability of microgenar designs would have been avoided, but their criticism was not paid due attention to amid the general triumph.</color>
+        Text=<clr><clrEnd>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        bonMass=-6
+    }
+    ShuMM_MicrogenicHook3 ^{
+        AcrynLevel=3
+        AcrynSerie=Microgenic Gripper I-III
+        Cost=250
+        Equipments=Hook
+        Fragility=130
+        KindGraph=MicrogenicHook
+        LevelsCount=3
+        Name=Microgenic Gripper III
+        Owner=Fei,Gaal
+        Priority=50
+        Ruins=TC,RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_MicrogenicHook1
+        SerieLevel2=ShuMM_MicrogenicHook2
+        SerieLevel3=ShuMM_MicrogenicHook3
+        Size=70
+        Special=1
+        Text=<color=248,252,248>This line of equipment was developed by <color=255,240,100>Feyan scientists</color> in close cooperation with the best <color=255,240,100>Gaalian</color> masters of Iike-Baana. It is thoroughly unknown whether it was advanced Fey microengineering or the subtle spiritual organization of the Gaal intellect that made the project a success, but in the end <color=255,240,100>size</color> and <color=255,240,100>mass</color> of such devices were reduced many times. Some independent experts, however, believe that if the spiritual organization of the Gaalians had not been so thin, the undesirable reduction in the reliability of microgenar designs would have been avoided, but their criticism was not paid due attention to amid the general triumph.</color>
+        Text=<clr><clrEnd>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        bonMass=-8
+    }
+    ShuMM_MicrogenicRadar1 ^{
+        AcrynLevel=1
+        AcrynSerie=Microgenic Radar I-III
+        Cost=150
+        Equipments=Radar
+        Fragility=130
+        KindGraph=MicrogenicRadar
+        LevelsCount=3
+        Name=Microgenic Radar I
+        Owner=Fei,Gaal
+        Priority=10
+        Ruins=TC,RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_MicrogenicRadar1
+        SerieLevel2=ShuMM_MicrogenicRadar2
+        SerieLevel3=ShuMM_MicrogenicRadar3
+        Size=80
+        Special=1
+        Text=<color=248,252,248>This line of equipment was developed by <color=255,240,100>Feyan scientists</color> in close cooperation with the best <color=255,240,100>Gaalian</color> masters of Iike-Baana. It is thoroughly unknown whether it was advanced Fey microengineering or the subtle spiritual organization of the Gaal intellect that made the project a success, but in the end <color=255,240,100>size</color> and <color=255,240,100>mass</color> of such devices were reduced many times. Some independent experts, however, believe that if the spiritual organization of the Gaalians had not been so thin, the undesirable reduction in the reliability of microgenar designs would have been avoided, but their criticism was not paid due attention to amid the general triumph.</color>
+        Text=<clr><clrEnd>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        bonMass=-4
+    }
+    ShuMM_MicrogenicRadar2 ^{
+        AcrynLevel=2
+        AcrynSerie=Microgenic Radar I-III
+        Cost=200
+        Equipments=Radar
+        Fragility=130
+        KindGraph=MicrogenicRadar
+        LevelsCount=3
+        Name=Microgenic Radar II
+        Owner=Fei,Gaal
+        Priority=30
+        Ruins=TC,RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_MicrogenicRadar1
+        SerieLevel2=ShuMM_MicrogenicRadar2
+        SerieLevel3=ShuMM_MicrogenicRadar3
+        Size=75
+        Special=1
+        Text=<color=248,252,248>This line of equipment was developed by <color=255,240,100>Feyan scientists</color> in close cooperation with the best <color=255,240,100>Gaalian</color> masters of Iike-Baana. It is thoroughly unknown whether it was advanced Fey microengineering or the subtle spiritual organization of the Gaal intellect that made the project a success, but in the end <color=255,240,100>size</color> and <color=255,240,100>mass</color> of such devices were reduced many times. Some independent experts, however, believe that if the spiritual organization of the Gaalians had not been so thin, the undesirable reduction in the reliability of microgenar designs would have been avoided, but their criticism was not paid due attention to amid the general triumph.</color>
+        Text=<clr><clrEnd>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        bonMass=-6
+    }
+    ShuMM_MicrogenicRadar3 ^{
+        AcrynLevel=3
+        AcrynSerie=Microgenic Radar I-III
+        Cost=250
+        Equipments=Radar
+        Fragility=130
+        KindGraph=MicrogenicRadar
+        LevelsCount=3
+        Name=Microgenic Radar III
+        Owner=Fei,Gaal
+        Priority=50
+        Ruins=TC,RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_MicrogenicRadar1
+        SerieLevel2=ShuMM_MicrogenicRadar2
+        SerieLevel3=ShuMM_MicrogenicRadar3
+        Size=70
+        Special=1
+        Text=<color=248,252,248>This line of equipment was developed by <color=255,240,100>Feyan scientists</color> in close cooperation with the best <color=255,240,100>Gaalian</color> masters of Iike-Baana. It is thoroughly unknown whether it was advanced Fey microengineering or the subtle spiritual organization of the Gaal intellect that made the project a success, but in the end <color=255,240,100>size</color> and <color=255,240,100>mass</color> of such devices were reduced many times. Some independent experts, however, believe that if the spiritual organization of the Gaalians had not been so thin, the undesirable reduction in the reliability of microgenar designs would have been avoided, but their criticism was not paid due attention to amid the general triumph.</color>
+        Text=<clr><clrEnd>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        bonMass=-8
+    }
+    ShuMM_MicrogenicScaner1 ^{
+        AcrynLevel=1
+        AcrynSerie=Microgenic Scanner I-III
+        Cost=150
+        Equipments=Scaner
+        Fragility=130
+        KindGraph=MicrogenicScaner
+        LevelsCount=3
+        Name=Microgenic Scanner I
+        Owner=Fei,Gaal
+        Priority=10
+        Ruins=TC,RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_MicrogenicScaner1
+        SerieLevel2=ShuMM_MicrogenicScaner2
+        SerieLevel3=ShuMM_MicrogenicScaner3
+        Size=80
+        Special=1
+        Text=<color=248,252,248>This line of equipment was developed by <color=255,240,100>Feyan scientists</color> in close cooperation with the best <color=255,240,100>Gaalian</color> masters of Iike-Baana. It is thoroughly unknown whether it was advanced Fey microengineering or the subtle spiritual organization of the Gaal intellect that made the project a success, but in the end <color=255,240,100>size</color> and <color=255,240,100>mass</color> of such devices were reduced many times. Some independent experts, however, believe that if the spiritual organization of the Gaalians had not been so thin, the undesirable reduction in the reliability of microgenar designs would have been avoided, but their criticism was not paid due attention to amid the general triumph.</color>
+        Text=<clr><clrEnd>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        bonMass=-4
+    }
+    ShuMM_MicrogenicScaner2 ^{
+        AcrynLevel=2
+        AcrynSerie=Microgenic Scanner I-III
+        Cost=200
+        Equipments=Scaner
+        Fragility=130
+        KindGraph=MicrogenicScaner
+        LevelsCount=3
+        Name=Microgenic Scanner II
+        Owner=Fei,Gaal
+        Priority=30
+        Ruins=TC,RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_MicrogenicScaner1
+        SerieLevel2=ShuMM_MicrogenicScaner2
+        SerieLevel3=ShuMM_MicrogenicScaner3
+        Size=75
+        Special=1
+        Text=<color=248,252,248>This line of equipment was developed by <color=255,240,100>Feyan scientists</color> in close cooperation with the best <color=255,240,100>Gaalian</color> masters of Iike-Baana. It is thoroughly unknown whether it was advanced Fey microengineering or the subtle spiritual organization of the Gaal intellect that made the project a success, but in the end <color=255,240,100>size</color> and <color=255,240,100>mass</color> of such devices were reduced many times. Some independent experts, however, believe that if the spiritual organization of the Gaalians had not been so thin, the undesirable reduction in the reliability of microgenar designs would have been avoided, but their criticism was not paid due attention to amid the general triumph.</color>
+        Text=<clr><clrEnd>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        bonMass=-6
+    }
+    ShuMM_MicrogenicScaner3 ^{
+        AcrynLevel=3
+        AcrynSerie=Microgenic Scanner I-III
+        Cost=250
+        Equipments=Scaner
+        Fragility=130
+        KindGraph=MicrogenicScaner
+        LevelsCount=3
+        Name=Microgenic Scanner III
+        Owner=Fei,Gaal
+        Priority=50
+        Ruins=TC,RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_MicrogenicScaner1
+        SerieLevel2=ShuMM_MicrogenicScaner2
+        SerieLevel3=ShuMM_MicrogenicScaner3
+        Size=70
+        Special=1
+        Text=<color=248,252,248>This line of equipment was developed by <color=255,240,100>Feyan scientists</color> in close cooperation with the best <color=255,240,100>Gaalian</color> masters of Iike-Baana. It is thoroughly unknown whether it was advanced Fey microengineering or the subtle spiritual organization of the Gaal intellect that made the project a success, but in the end <color=255,240,100>size</color> and <color=255,240,100>mass</color> of such devices were reduced many times. Some independent experts, however, believe that if the spiritual organization of the Gaalians had not been so thin, the undesirable reduction in the reliability of microgenar designs would have been avoided, but their criticism was not paid due attention to amid the general triumph.</color>
+        Text=<clr><clrEnd>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        bonMass=-8
+    }
+    ShuMM_PhaseEngine1 ^{
+        AcrynLevel=1
+        AcrynSerie=Phase Engine I-III
+        Cost=150
+        Equipments=Engine
+        Fragility=150
+        KindGraph=PhaseEngine
+        LevelsCount=3
+        Name=Phase Engine I
+        Owner=PirateClan
+        Priority=10
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_PhaseEngine1
+        SerieLevel2=ShuMM_PhaseEngine2
+        SerieLevel3=ShuMM_PhaseEngine3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A series of engines developed by the <color=255,240,100>pirate clan</color> in an attempt to close the technical gap with the latest coalition developments in the field. Despite desperate efforts by the pirate masters to provide sufficient stability to the power-consuming phase boosters, the durability of such engines is still impractically low.</color>
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        bonJump=2
+        bonSpeed=30
+    }
+    ShuMM_PhaseEngine2 ^{
+        AcrynLevel=2
+        AcrynSerie=Phase Engine I-III
+        Cost=200
+        Equipments=Engine
+        Fragility=175
+        KindGraph=PhaseEngine
+        LevelsCount=3
+        Name=Phase Engine II
+        Owner=PirateClan
+        Priority=30
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_PhaseEngine1
+        SerieLevel2=ShuMM_PhaseEngine2
+        SerieLevel3=ShuMM_PhaseEngine3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A series of engines developed by the <color=255,240,100>pirate clan</color> in an attempt to close the technical gap with the latest coalition developments in the field. Despite desperate efforts by the pirate masters to provide sufficient stability to the power-consuming phase boosters, the durability of such engines is still impractically low.</color>
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        bonJump=3
+        bonSpeed=45
+    }
+    ShuMM_PhaseEngine3 ^{
+        AcrynLevel=3
+        AcrynSerie=Phase Engine I-III
+        Cost=250
+        Equipments=Engine
+        Fragility=200
+        KindGraph=PhaseEngine
+        LevelsCount=3
+        Name=Phase Engine III
+        Owner=PirateClan
+        Priority=50
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_PhaseEngine1
+        SerieLevel2=ShuMM_PhaseEngine2
+        SerieLevel3=ShuMM_PhaseEngine3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A series of engines developed by the <color=255,240,100>pirate clan</color> in an attempt to close the technical gap with the latest coalition developments in the field. Despite desperate efforts by the pirate masters to provide sufficient stability to the power-consuming phase boosters, the durability of such engines is still impractically low.</color>
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        bonJump=4
+        bonSpeed=60
+    }
+    ShuMM_PickuupHull1 ^{
+        AcrynLevel=1
+        AcrynSerie=Pickuhup I-IV
+        Cost=200
+        CustomTag=rng_gl_1
+        Equipments=Hull
+        ForCharacterTypes=Trader
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=115
+        FragilityMissile=115
+        FragilitySplinter=115
+        KindGraph=Pickuup
+        LevelsCount=4
+        Name=Pickuhup Hull I
+        Owner=Gaal
+        Priority=10
+        RacialRestriction=1
+        Ruins=BK,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_PickuupHull1
+        SerieLevel2=ShuMM_PickuupHull2
+        SerieLevel3=ShuMM_PickuupHull3
+        SerieLevel4=ShuMM_PickuupHull4
+        Size=150
+        Special=1
+        Text=<color=248,252,248>A massive cargo hull for sedate merchants who understand that all the fuss of mundane space only distracts us from our higher, unified purpose. Contains on board a Naar-Van Harmonizing Psi Amplifier capable of literally "harmonizing" the energy currents around the outer shell, which has a beneficial effect on the operation of all related equipment and long-range communications. Unfortunately, such a psi-amplifier requires a significant source of psionic energy, which, according to modern <clr>Gaalian<clrEnd> science, can only be the mind of an adult <clr>Gaalian<clrEnd>. In addition, the hull contains state-of-the-art systems for climate control, gravity stabilization, emergency damping, spiritual normalization and complete interior sterilization, which are extremely beneficial for cargo preservation, but also make the ship very cumbersome and vulnerable to enemy fire.</color>
+        Text=<clr><clrEnd>
+        Text=Commerce skill: <bonSkill4>
+        Text=Radar range: <bonRadar>
+        Text=Droid effectiveness: <bonDroid>
+        Text=Shield generator: <bonDef>%
+        Text=Attack skill: <bonSkill1>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        Text=(only for <clr>gaals<clrEnd>)
+        bonDef=6
+        bonDroid=10
+        bonMass=15
+        bonRadar=600
+        bonSkill1=-1
+        bonSkill4=2
+        bonSlotArt=-2
+        bonSlotForsage=-1
+        bonSlotWeapon=-3
+    }
+    ShuMM_PickuupHull2 ^{
+        AcrynLevel=2
+        AcrynSerie=Pickuhup I-IV
+        Cost=300
+        CustomTag=rng_gl_2
+        Equipments=Hull
+        ForCharacterTypes=Trader
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=120
+        FragilityMissile=120
+        FragilitySplinter=120
+        KindGraph=Pickuup
+        LevelsCount=4
+        Name=Pickuhup Hull II
+        Owner=Gaal
+        Priority=30
+        RacialRestriction=1
+        Ruins=BK,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_PickuupHull1
+        SerieLevel2=ShuMM_PickuupHull2
+        SerieLevel3=ShuMM_PickuupHull3
+        SerieLevel4=ShuMM_PickuupHull4
+        Size=143
+        Special=1
+        Text=<color=248,252,248>A massive cargo hull for sedate merchants who understand that all the fuss of mundane space only distracts us from our higher, unified purpose. Contains on board a Naar-Van Harmonizing Psi Amplifier capable of literally "harmonizing" the energy currents around the outer shell, which has a beneficial effect on the operation of all related equipment and long-range communications. Unfortunately, such a psi-amplifier requires a significant source of psionic energy, which, according to modern <clr>Gaalian<clrEnd> science, can only be the mind of an adult <clr>Gaalian<clrEnd>. In addition, the hull contains state-of-the-art systems for climate control, gravity stabilization, emergency damping, spiritual normalization and complete interior sterilization, which are extremely beneficial for cargo preservation, but also make the ship very cumbersome and vulnerable to enemy fire.</color>
+        Text=<clr><clrEnd>
+        Text=Commerce skill: <bonSkill4>
+        Text=Radar range: <bonRadar>
+        Text=Droid effectiveness: <bonDroid>
+        Text=Shield generator: <bonDef>%
+        Text=Attack skill: <bonSkill1>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        Text=(only for <clr>gaals<clrEnd>)
+        bonDef=7
+        bonDroid=15
+        bonMass=20
+        bonRadar=700
+        bonSkill1=-1
+        bonSkill4=2
+        bonSlotArt=-1
+        bonSlotForsage=-1
+        bonSlotWeapon=-3
+    }
+    ShuMM_PickuupHull3 ^{
+        AcrynLevel=3
+        AcrynSerie=Pickuhup I-IV
+        Cost=400
+        CustomTag=rng_gl_3
+        Equipments=Hull
+        ForCharacterTypes=Trader
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=125
+        FragilityMissile=125
+        FragilitySplinter=125
+        KindGraph=Pickuup
+        LevelsCount=4
+        Name=Pickuhup Hull III
+        Owner=Gaal
+        Priority=50
+        RacialRestriction=1
+        Ruins=BK,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_PickuupHull1
+        SerieLevel2=ShuMM_PickuupHull2
+        SerieLevel3=ShuMM_PickuupHull3
+        SerieLevel4=ShuMM_PickuupHull4
+        Size=127
+        Special=1
+        Text=<color=248,252,248>A massive cargo hull for sedate merchants who understand that all the fuss of mundane space only distracts us from our higher, unified purpose. Contains on board a Naar-Van Harmonizing Psi Amplifier capable of literally "harmonizing" the energy currents around the outer shell, which has a beneficial effect on the operation of all related equipment and long-range communications. Unfortunately, such a psi-amplifier requires a significant source of psionic energy, which, according to modern <clr>Gaalian<clrEnd> science, can only be the mind of an adult <clr>Gaalian<clrEnd>. In addition, the hull contains state-of-the-art systems for climate control, gravity stabilization, emergency damping, spiritual normalization and complete interior sterilization, which are extremely beneficial for cargo preservation, but also make the ship very cumbersome and vulnerable to enemy fire.</color>
+        Text=<clr><clrEnd>
+        Text=Commerce skill: <bonSkill4>
+        Text=Radar range: <bonRadar>
+        Text=Droid effectiveness: <bonDroid>
+        Text=Shield generator: <bonDef>%
+        Text=Attack skill: <bonSkill1>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        Text=(only for <clr>gaals<clrEnd>)
+        bonDef=8
+        bonDroid=20
+        bonMass=25
+        bonRadar=800
+        bonSkill1=-1
+        bonSkill4=2
+        bonSlotArt=-1
+        bonSlotForsage=-1
+        bonSlotWeapon=-2
+    }
+    ShuMM_PickuupHull4 ^{
+        AcrynLevel=4
+        AcrynSerie=Pickuhup I-IV
+        Cost=500
+        CustomTag=rng_gl_4
+        Equipments=Hull
+        ForCharacterTypes=Trader
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=125
+        FragilityMissile=125
+        FragilitySplinter=125
+        KindGraph=Pickuup
+        LevelsCount=4
+        Name=Pickuhup Hull IV
+        Owner=Gaal
+        Priority=70
+        RacialRestriction=1
+        Ruins=BK,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_PickuupHull1
+        SerieLevel2=ShuMM_PickuupHull2
+        SerieLevel3=ShuMM_PickuupHull3
+        SerieLevel4=ShuMM_PickuupHull4
+        Size=127
+        Special=1
+        Text=<color=248,252,248>A massive cargo hull for sedate merchants who understand that all the fuss of mundane space only distracts us from our higher, unified purpose. Contains on board a Naar-Van Harmonizing Psi Amplifier capable of literally "harmonizing" the energy currents around the outer shell, which has a beneficial effect on the operation of all related equipment and long-range communications. Unfortunately, such a psi-amplifier requires a significant source of psionic energy, which, according to modern <clr>Gaalian<clrEnd> science, can only be the mind of an adult <clr>Gaalian<clrEnd>. In addition, the hull contains state-of-the-art systems for climate control, gravity stabilization, emergency damping, spiritual normalization and complete interior sterilization, which are extremely beneficial for cargo preservation, but also make the ship very cumbersome and vulnerable to enemy fire.</color>
+        Text=<clr><clrEnd>
+        Text=Commerce skill: <bonSkill4>
+        Text=Radar range: <bonRadar>
+        Text=Droid effectiveness: <bonDroid>
+        Text=Shield generator: <bonDef>%
+        Text=Attack skill: <bonSkill1>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        Text=(only for <clr>gaals<clrEnd>)
+        bonDef=6
+        bonDroid=12
+        bonMass=20
+        bonRadar=650
+        bonSkill1=-1
+        bonSkill4=2
+    }
+    ShuMM_PneumaticDroid1 ^{
+        AcrynLevel=1
+        AcrynSerie=Pneumatic Droid I-III
+        Cost=150
+        Equipments=Droid
+        Fragility=150
+        KindGraph=PneumaticDroid
+        LevelsCount=3
+        Name=Pneumatic Droid I
+        Owner=PirateClan
+        Priority=10
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_PneumaticDroid1
+        SerieLevel2=ShuMM_PneumaticDroid2
+        SerieLevel3=ShuMM_PneumaticDroid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A series of droids designed by the <color=255,240,100>pirate clan</color> in an attempt to close the technical gap with the latest Coalition developments in the field. Despite desperate efforts of pirate craftsmen to provide sufficient durability for boosted pneumatic drives, the durability of such droids is still impractically low.</color>
+        Text=<clr><clrEnd>
+        Text=Droid effectiveness: <bonDroid>
+        bonDroid=10
+    }
+    ShuMM_PneumaticDroid2 ^{
+        AcrynLevel=2
+        AcrynSerie=Pneumatic Droid I-III
+        Cost=200
+        Equipments=Droid
+        Fragility=175
+        KindGraph=PneumaticDroid
+        LevelsCount=3
+        Name=Pneumatic Droid II
+        Owner=PirateClan
+        Priority=30
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_PneumaticDroid1
+        SerieLevel2=ShuMM_PneumaticDroid2
+        SerieLevel3=ShuMM_PneumaticDroid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A series of droids designed by the <color=255,240,100>pirate clan</color> in an attempt to close the technical gap with the latest Coalition developments in the field. Despite desperate efforts of pirate craftsmen to provide sufficient durability for boosted pneumatic drives, the durability of such droids is still impractically low.</color>
+        Text=<clr><clrEnd>
+        Text=Droid effectiveness: <bonDroid>
+        bonDroid=15
+    }
+    ShuMM_PneumaticDroid3 ^{
+        AcrynLevel=3
+        AcrynSerie=Pneumatic Droid I-III
+        Cost=250
+        Equipments=Droid
+        Fragility=200
+        KindGraph=PneumaticDroid
+        LevelsCount=3
+        Name=Pneumatic Droid III
+        Owner=PirateClan
+        Priority=50
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_PneumaticDroid1
+        SerieLevel2=ShuMM_PneumaticDroid2
+        SerieLevel3=ShuMM_PneumaticDroid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A series of droids designed by the <color=255,240,100>pirate clan</color> in an attempt to close the technical gap with the latest Coalition developments in the field. Despite desperate efforts of pirate craftsmen to provide sufficient durability for boosted pneumatic drives, the durability of such droids is still impractically low.</color>
+        Text=<clr><clrEnd>
+        Text=Droid effectiveness: <bonDroid>
+        bonDroid=20
+    }
+    ShuMM_ProudwingHull1 ^{
+        AcrynLevel=1
+        AcrynSerie=Proudwing I-IV
+        Cost=200
+        CustomTag=rng_ppl_1
+        Equipments=Hull
+        ForCharacterTypes=Warrior
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=105
+        FragilityMissile=75
+        FragilitySplinter=110
+        KindGraph=Proudwing
+        LevelsCount=4
+        Name=Proudwing Hull I
+        Owner=People
+        Priority=10
+        RacialRestriction=1
+        Ruins=RC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_ProudwingHull1
+        SerieLevel2=ShuMM_ProudwingHull2
+        SerieLevel3=ShuMM_ProudwingHull3
+        SerieLevel4=ShuMM_ProudwingHull4
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Special development by <clr>human<clrEnd> scientists, conceived as a lightweight but powerful long-range interceptor. The armor reduction made the hull lighter, and its neurometric missile guidance and interception system made it possible to achieve impressive control of this type of weapon. Unfortunately, in an effort to get the ship into mass production as quickly as possible, the engineers did not have time to adapt the system for control by any sentient humanoid, so only <clr>humans<clrEnd> can effectively use its combat capabilities.</color>
+        Text=<clr><clrEnd>
+        Text=Attack skill: <bonSkill1>
+        Text=Missile speed: <bonMissileSpeed>
+        Text=Firing range: <bonWRadius>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        Text=(only for <clr>humans<clrEnd>)
+        bonMass=-15
+        bonMissileSpeed=150
+        bonSkill1=1
+        bonSlotArt=-3
+        bonSlotDef=-1
+        bonSlotWeapon=-2
+        bonWRadius=40
+    }
+    ShuMM_ProudwingHull2 ^{
+        AcrynLevel=2
+        AcrynSerie=Proudwing I-IV
+        Cost=300
+        CustomTag=rng_ppl_2
+        Equipments=Hull
+        ForCharacterTypes=Warrior
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=120
+        FragilityMissile=75
+        FragilitySplinter=125
+        KindGraph=Proudwing
+        LevelsCount=4
+        Name=Proudwing Hull II
+        Owner=People
+        Priority=30
+        RacialRestriction=1
+        Ruins=RC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_ProudwingHull1
+        SerieLevel2=ShuMM_ProudwingHull2
+        SerieLevel3=ShuMM_ProudwingHull3
+        SerieLevel4=ShuMM_ProudwingHull4
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Special development by <clr>human<clrEnd> scientists, conceived as a lightweight but powerful long-range interceptor. The armor reduction made the hull lighter, and its neurometric missile guidance and interception system made it possible to achieve impressive control of this type of weapon. Unfortunately, in an effort to get the ship into mass production as quickly as possible, the engineers did not have time to adapt the system for control by any sentient humanoid, so only <clr>humans<clrEnd> can effectively use its combat capabilities.</color>
+        Text=<clr><clrEnd>
+        Text=Attack skill: <bonSkill1>
+        Text=Missile speed: <bonMissileSpeed>
+        Text=Firing range: <bonWRadius>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        Text=(only for <clr>humans<clrEnd>)
+        bonMass=-20
+        bonMissileSpeed=200
+        bonSkill1=1
+        bonSlotArt=-3
+        bonSlotDef=-1
+        bonSlotWeapon=-1
+        bonWRadius=45
+    }
+    ShuMM_ProudwingHull3 ^{
+        AcrynLevel=3
+        AcrynSerie=Proudwing I-IV
+        Cost=400
+        CustomTag=rng_ppl_3
+        Equipments=Hull
+        ForCharacterTypes=Warrior
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=125
+        FragilityMissile=82
+        FragilitySplinter=125
+        KindGraph=Proudwing
+        LevelsCount=4
+        Name=Proudwing Hull III
+        Owner=People
+        Priority=50
+        RacialRestriction=1
+        Ruins=RC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_ProudwingHull1
+        SerieLevel2=ShuMM_ProudwingHull2
+        SerieLevel3=ShuMM_ProudwingHull3
+        SerieLevel4=ShuMM_ProudwingHull4
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Special development by <clr>human<clrEnd> scientists, conceived as a lightweight but powerful long-range interceptor. The armor reduction made the hull lighter, and its neurometric missile guidance and interception system made it possible to achieve impressive control of this type of weapon. Unfortunately, in an effort to get the ship into mass production as quickly as possible, the engineers did not have time to adapt the system for control by any sentient humanoid, so only <clr>humans<clrEnd> can effectively use its combat capabilities.</color>
+        Text=<clr><clrEnd>
+        Text=Attack skill: <bonSkill1>
+        Text=Missile speed: <bonMissileSpeed>
+        Text=Firing range: <bonWRadius>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        Text=(only for <clr>humans<clrEnd>)
+        bonMass=-25
+        bonMissileSpeed=250
+        bonSkill1=1
+        bonSlotArt=-2
+        bonSlotDef=-1
+        bonSlotWeapon=-1
+        bonWRadius=50
+    }
+    ShuMM_ProudwingHull4 ^{
+        AcrynLevel=4
+        AcrynSerie=Proudwing I-IV
+        Cost=500
+        CustomTag=rng_ppl_4
+        Equipments=Hull
+        ForCharacterTypes=Warrior
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=120
+        FragilityMissile=82
+        FragilitySplinter=125
+        KindGraph=Proudwing
+        LevelsCount=4
+        Name=Proudwing Hull IV
+        Owner=People
+        Priority=70
+        RacialRestriction=1
+        Ruins=RC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_ProudwingHull1
+        SerieLevel2=ShuMM_ProudwingHull2
+        SerieLevel3=ShuMM_ProudwingHull3
+        SerieLevel4=ShuMM_ProudwingHull4
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Special development by <clr>human<clrEnd> scientists, conceived as a lightweight but powerful long-range interceptor. The armor reduction made the hull lighter, and its neurometric missile guidance and interception system made it possible to achieve impressive control of this type of weapon. Unfortunately, in an effort to get the ship into mass production as quickly as possible, the engineers did not have time to adapt the system for control by any sentient humanoid, so only <clr>humans<clrEnd> can effectively use its combat capabilities.</color>
+        Text=<clr><clrEnd>
+        Text=Attack skill: <bonSkill1>
+        Text=Missile speed: <bonMissileSpeed>
+        Text=Firing range: <bonWRadius>
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        Text=(only for <clr>humans<clrEnd>)
+        bonMass=-15
+        bonMissileSpeed=200
+        bonSkill1=1
+        bonWRadius=35
+    }
+    ShuMM_RattletropHull1 ^{
+        AcrynLevel=1
+        AcrynSerie=Dryndulet I-IV
+        Cost=200
+        CustomTag=rng_m_1
+        Equipments=Hull
+        ForCharacterTypes=Warrior,Pirate
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=105
+        FragilityMissile=120
+        FragilitySplinter=90
+        KindGraph=Rattletrop
+        LevelsCount=4
+        Name=Dryndulet Hull I
+        Owner=Maloc
+        Priority=10
+        RacialRestriction=1
+        Ruins=WB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_RattletropHull1
+        SerieLevel2=ShuMM_RattletropHull2
+        SerieLevel3=ShuMM_RattletropHull3
+        SerieLevel4=ShuMM_RattletropHull4
+        Size=100
+        Special=1
+        Text=<color=248,252,248>This hull is equipped with the most robust and convenient for any <clr>maloq<clrEnd> control levers. Due to the lack of space in the cockpit, and problems with the automatic ammunition feeding system, the redskins made the rational decision to place all the gun compartments within direct reach of the pilot's stool. The Maloqs, with their predilection for militarism, were happy to reload all fragmentation and missile cannons by hand, which had a direct effect on the combat characteristics of the Dryndulet. The other races, however, were not to their liking or even their ability, but this only further enraged the hunchbacked zvezdonauts.</color>
+        Text=<clr><clrEnd>
+        Text=Technology skill: <bonSkill3>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Firing range: <bonWRadius>
+        Text=Engine speed: <bonSpeed>
+        Text=Shield generator: <bonDef>%
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Missile speed: <bonMissileSpeed>
+        Text=(only for <clr>maloqs<clrEnd>)
+        bonDef=3
+        bonMissileSpeed=-200
+        bonSkill3=2
+        bonSkill4=-1
+        bonSkill5=-1
+        bonSlotArt=-4
+        bonSlotForsage=-1
+        bonSpeed=40
+        bonWEnergy=-6
+        bonWRadius=30
+        bonWSplinter=12
+    }
+    ShuMM_RattletropHull2 ^{
+        AcrynLevel=2
+        AcrynSerie=Dryndulet I-IV
+        Cost=300
+        CustomTag=rng_m_2
+        Equipments=Hull
+        ForCharacterTypes=Warrior,Pirate
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=110
+        FragilityMissile=125
+        FragilitySplinter=90
+        KindGraph=Rattletrop
+        LevelsCount=4
+        Name=Dryndulet Hull II
+        Owner=Maloc
+        Priority=30
+        RacialRestriction=1
+        Ruins=WB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_RattletropHull1
+        SerieLevel2=ShuMM_RattletropHull2
+        SerieLevel3=ShuMM_RattletropHull3
+        SerieLevel4=ShuMM_RattletropHull4
+        Size=100
+        Special=1
+        Text=<color=248,252,248>This hull is equipped with the most robust and convenient for any <clr>maloq<clrEnd> control levers. Due to the lack of space in the cockpit, and problems with the automatic ammunition feeding system, the redskins made the rational decision to place all the gun compartments within direct reach of the pilot's stool. The Maloqs, with their predilection for militarism, were happy to reload all fragmentation and missile cannons by hand, which had a direct effect on the combat characteristics of the Dryndulet. The other races, however, were not to their liking or even their ability, but this only further enraged the hunchbacked zvezdonauts.</color>
+        Text=<clr><clrEnd>
+        Text=Technology skill: <bonSkill3>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Firing range: <bonWRadius>
+        Text=Engine speed: <bonSpeed>
+        Text=Shield generator: <bonDef>%
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Missile speed: <bonMissileSpeed>
+        Text=(only for <clr>maloqs<clrEnd>)
+        bonDef=4
+        bonMissileSpeed=-300
+        bonSkill3=2
+        bonSkill4=-1
+        bonSkill5=-1
+        bonSlotArt=-3
+        bonSlotForsage=-1
+        bonSpeed=50
+        bonWEnergy=-10
+        bonWRadius=35
+        bonWSplinter=16
+    }
+    ShuMM_RattletropHull3 ^{
+        AcrynLevel=3
+        AcrynSerie=Dryndulet I-IV
+        Cost=400
+        CustomTag=rng_m_3
+        Equipments=Hull
+        ForCharacterTypes=Warrior,Pirate
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=110
+        FragilityMissile=125
+        FragilitySplinter=90
+        KindGraph=Rattletrop
+        LevelsCount=4
+        Name=Dryndulet Hull III
+        Owner=Maloc
+        Priority=50
+        RacialRestriction=1
+        Ruins=WB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_RattletropHull1
+        SerieLevel2=ShuMM_RattletropHull2
+        SerieLevel3=ShuMM_RattletropHull3
+        SerieLevel4=ShuMM_RattletropHull4
+        Size=100
+        Special=1
+        Text=<color=248,252,248>This hull is equipped with the most robust and convenient for any <clr>maloq<clrEnd> control levers. Due to the lack of space in the cockpit, and problems with the automatic ammunition feeding system, the redskins made the rational decision to place all the gun compartments within direct reach of the pilot's stool. The Maloqs, with their predilection for militarism, were happy to reload all fragmentation and missile cannons by hand, which had a direct effect on the combat characteristics of the Dryndulet. The other races, however, were not to their liking or even their ability, but this only further enraged the hunchbacked zvezdonauts.</color>
+        Text=<clr><clrEnd>
+        Text=Technology skill: <bonSkill3>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Firing range: <bonWRadius>
+        Text=Engine speed: <bonSpeed>
+        Text=Shield generator: <bonDef>%
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Missile speed: <bonMissileSpeed>
+        Text=(only for <clr>maloqs<clrEnd>)
+        bonDef=5
+        bonMissileSpeed=-400
+        bonSkill3=2
+        bonSkill4=-1
+        bonSkill5=-1
+        bonSlotArt=-2
+        bonSlotForsage=-1
+        bonSpeed=60
+        bonWEnergy=-14
+        bonWRadius=40
+        bonWSplinter=20
+    }
+    ShuMM_RattletropHull4 ^{
+        AcrynLevel=4
+        AcrynSerie=Dryndulet I-IV
+        Cost=500
+        CustomTag=rng_m_4
+        Equipments=Hull
+        ForCharacterTypes=Warrior,Pirate
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=110
+        FragilityMissile=125
+        FragilitySplinter=90
+        KindGraph=Rattletrop
+        LevelsCount=4
+        Name=Dryndulet Hull IV
+        Owner=Maloc
+        Priority=70
+        RacialRestriction=1
+        Ruins=WB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_RattletropHull1
+        SerieLevel2=ShuMM_RattletropHull2
+        SerieLevel3=ShuMM_RattletropHull3
+        SerieLevel4=ShuMM_RattletropHull4
+        Size=100
+        Special=1
+        Text=<color=248,252,248>This hull is equipped with the most robust and convenient for any <clr>maloq<clrEnd> control levers. Due to the lack of space in the cockpit, and problems with the automatic ammunition feeding system, the redskins made the rational decision to place all the gun compartments within direct reach of the pilot's stool. The Maloqs, with their predilection for militarism, were happy to reload all fragmentation and missile cannons by hand, which had a direct effect on the combat characteristics of the Dryndulet. The other races, however, were not to their liking or even their ability, but this only further enraged the hunchbacked zvezdonauts.</color>
+        Text=<clr><clrEnd>
+        Text=Technology skill: <bonSkill3>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Firing range: <bonWRadius>
+        Text=Engine speed: <bonSpeed>
+        Text=Shield generator: <bonDef>%
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Missile speed: <bonMissileSpeed>
+        Text=(only for <clr>maloqs<clrEnd>)
+        bonDef=4
+        bonMissileSpeed=-400
+        bonSkill3=2
+        bonSkill4=-1
+        bonSkill5=-1
+        bonSpeed=40
+        bonWEnergy=-12
+        bonWRadius=35
+        bonWSplinter=18
+    }
+    ShuMM_ScanBot1 ^{
+        AcrynLevel=1
+        AcrynSerie=ScanBot I-III
+        Cost=150
+        Equipments=Scaner
+        Fragility=90
+        KindGraph=ScanBot
+        LevelsCount=3
+        Name=ScanBot R1
+        Owner=People,Fei
+        Priority=10
+        Ruins=TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_ScanBot1
+        SerieLevel2=ShuMM_ScanBot2
+        SerieLevel3=ShuMM_ScanBot3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A unique joint development of <color=255,240,100>humans</color> and <color=255,240,100>feyans</color>. ScanBot is a half-intelligent robotic scanner that searches for and diagnoses technical problems on the host ship in addition to its main task. The latter, however, does not affect the efficiency of scanning all other ships.</color>
+        Text=<clr><clrEnd>
+        Text=Technology skill: <bonSkill3>
+        Text=Scanner power: <bonScan>%
+        bonScan=-2
+        bonSkill3=1
+    }
+    ShuMM_ScanBot2 ^{
+        AcrynLevel=2
+        AcrynSerie=ScanBot I-III
+        Cost=200
+        Equipments=Scaner
+        Fragility=90
+        KindGraph=ScanBot
+        LevelsCount=3
+        Name=ScanBot R2
+        Owner=People,Fei
+        Priority=30
+        Ruins=TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_ScanBot1
+        SerieLevel2=ShuMM_ScanBot2
+        SerieLevel3=ShuMM_ScanBot3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A unique joint development of <color=255,240,100>humans</color> and <color=255,240,100>feyans</color>. ScanBot is a half-intelligent robotic scanner that searches for and diagnoses technical problems on the host ship in addition to its main task. The latter, however, does not affect the efficiency of scanning all other ships.</color>
+        Text=<clr><clrEnd>
+        Text=Technology skill: <bonSkill3>
+        Text=Scanner power: <bonScan>%
+        bonScan=-6
+        bonSkill3=2
+    }
+    ShuMM_ScanBot3 ^{
+        AcrynLevel=3
+        AcrynSerie=ScanBot I-III
+        Cost=250
+        Equipments=Scaner
+        Fragility=90
+        KindGraph=ScanBot
+        LevelsCount=3
+        Name=ScanBot R3
+        Owner=People,Fei
+        Priority=50
+        Ruins=TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_ScanBot1
+        SerieLevel2=ShuMM_ScanBot2
+        SerieLevel3=ShuMM_ScanBot3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A unique joint development of <color=255,240,100>humans</color> and <color=255,240,100>feyans</color>. ScanBot is a half-intelligent robotic scanner that searches for and diagnoses technical problems on the host ship in addition to its main task. The latter, however, does not affect the efficiency of scanning all other ships.</color>
+        Text=<clr><clrEnd>
+        Text=Technology skill: <bonSkill3>
+        Text=Scanner power: <bonScan>%
+        bonScan=-10
+        bonSkill3=3
+    }
+    ShuMM_ShmyakushHull1 ^{
+        AcrynLevel=1
+        AcrynSerie=Shquash I-IV
+        Cost=200
+        CustomTag=rng_pel_1
+        Equipments=Hull
+        ForCharacterTypes=Warrior,Pirate
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=75
+        FragilityMissile=80
+        FragilitySplinter=70
+        KindGraph=Shmyakush
+        LevelsCount=4
+        Name=Shquash Hull I
+        Owner=Peleng
+        Priority=10
+        RacialRestriction=1
+        Ruins=PB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_ShmyakushHull1
+        SerieLevel2=ShuMM_ShmyakushHull2
+        SerieLevel3=ShuMM_ShmyakushHull3
+        SerieLevel4=ShuMM_ShmyakushHull4
+        Size=85
+        Special=1
+        Text=<color=248,252,248>A swift and mobile <clr>peleng<clrEnd> interceptor, ideal for lightning raids behind enemy lines. Improved power onboard systems provided impressive gains in several key areas, but the magnetic interference caused by the ship's experimental reactor had a negative impact on navigation and missile guidance systems. Additionally, always worried about their own personal safety <clr>pelengs<clrEnd> decided to add armor plates at the expense of internal volume, allowing only slick, multi-armed pilots to effectively operate the controls in the ship's small cockpit.</color>
+        Text=<clr><clrEnd>
+        Text=Mobility skill: <bonSkill2>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Hull armor: <bonHull>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Missile speed: <bonMissileSpeed>
+        Text=Firing range: <bonWRadius>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=(only for <clr>pelengs<clrEnd>)
+        bonHull=2
+        bonJump=7
+        bonMissileSpeed=-500
+        bonRadar=-500
+        bonScan=-3
+        bonSkill2=1
+        bonSlotArt=-2
+        bonSlotWeapon=-2
+        bonSpeed=150
+        bonWEnergy=8
+        bonWMissile=-14
+        bonWRadius=-20
+        bonWSplinter=12
+    }
+    ShuMM_ShmyakushHull2 ^{
+        AcrynLevel=2
+        AcrynSerie=Shquash I-IV
+        Cost=300
+        CustomTag=rng_pel_2
+        Equipments=Hull
+        ForCharacterTypes=Warrior,Pirate
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=75
+        FragilityMissile=80
+        FragilitySplinter=70
+        KindGraph=Shmyakush
+        LevelsCount=4
+        Name=Shquash Hull II
+        Owner=Peleng
+        Priority=30
+        RacialRestriction=1
+        Ruins=PB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_ShmyakushHull1
+        SerieLevel2=ShuMM_ShmyakushHull2
+        SerieLevel3=ShuMM_ShmyakushHull3
+        SerieLevel4=ShuMM_ShmyakushHull4
+        Size=80
+        Special=1
+        Text=<color=248,252,248>A swift and mobile <clr>peleng<clrEnd> interceptor, ideal for lightning raids behind enemy lines. Improved power onboard systems provided impressive gains in several key areas, but the magnetic interference caused by the ship's experimental reactor had a negative impact on navigation and missile guidance systems. Additionally, always worried about their own personal safety <clr>pelengs<clrEnd> decided to add armor plates at the expense of internal volume, allowing only slick, multi-armed pilots to effectively operate the controls in the ship's small cockpit.</color>
+        Text=<clr><clrEnd>
+        Text=Mobility skill: <bonSkill2>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Hull armor: <bonHull>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Missile speed: <bonMissileSpeed>
+        Text=Firing range: <bonWRadius>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=(only for <clr>pelengs<clrEnd>)
+        bonHull=3
+        bonJump=9
+        bonMissileSpeed=-600
+        bonRadar=-750
+        bonScan=-5
+        bonSkill2=1
+        bonSlotArt=-2
+        bonSlotWeapon=-1
+        bonSpeed=200
+        bonWEnergy=12
+        bonWMissile=-20
+        bonWRadius=-25
+        bonWSplinter=16
+    }
+    ShuMM_ShmyakushHull3 ^{
+        AcrynLevel=3
+        AcrynSerie=Shquash I-IV
+        Cost=400
+        CustomTag=rng_pel_3
+        Equipments=Hull
+        ForCharacterTypes=Warrior,Pirate
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=75
+        FragilityMissile=80
+        FragilitySplinter=70
+        KindGraph=Shmyakush
+        LevelsCount=4
+        Name=Shquash Hull III
+        Owner=Peleng
+        Priority=50
+        RacialRestriction=1
+        Ruins=PB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_ShmyakushHull1
+        SerieLevel2=ShuMM_ShmyakushHull2
+        SerieLevel3=ShuMM_ShmyakushHull3
+        SerieLevel4=ShuMM_ShmyakushHull4
+        Size=80
+        Special=1
+        Text=<color=248,252,248>A swift and mobile <clr>peleng<clrEnd> interceptor, ideal for lightning raids behind enemy lines. Improved power onboard systems provided impressive gains in several key areas, but the magnetic interference caused by the ship's experimental reactor had a negative impact on navigation and missile guidance systems. Additionally, always worried about their own personal safety <clr>pelengs<clrEnd> decided to add armor plates at the expense of internal volume, allowing only slick, multi-armed pilots to effectively operate the controls in the ship's small cockpit.</color>
+        Text=<clr><clrEnd>
+        Text=Mobility skill: <bonSkill2>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Hull armor: <bonHull>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Missile speed: <bonMissileSpeed>
+        Text=Firing range: <bonWRadius>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=(only for <clr>pelengs<clrEnd>)
+        bonHull=4
+        bonJump=11
+        bonMissileSpeed=-750
+        bonRadar=-1000
+        bonScan=-7
+        bonSkill2=1
+        bonSlotArt=-2
+        bonSpeed=250
+        bonWEnergy=14
+        bonWMissile=-24
+        bonWRadius=-35
+        bonWSplinter=20
+    }
+    ShuMM_ShmyakushHull4 ^{
+        AcrynLevel=4
+        AcrynSerie=Shquash I-IV
+        Cost=500
+        CustomTag=rng_pel_4
+        Equipments=Hull
+        ForCharacterTypes=Warrior,Pirate
+        ForNPCTypes=Ranger,RangerExplorer
+        FragilityEnergy=75
+        FragilityMissile=80
+        FragilitySplinter=70
+        KindGraph=Shmyakush
+        LevelsCount=4
+        Name=Shquash Hull IV
+        Owner=Peleng
+        Priority=70
+        RacialRestriction=1
+        Ruins=PB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_ShmyakushHull1
+        SerieLevel2=ShuMM_ShmyakushHull2
+        SerieLevel3=ShuMM_ShmyakushHull3
+        SerieLevel4=ShuMM_ShmyakushHull4
+        Size=80
+        Special=1
+        Text=<color=248,252,248>A swift and mobile <clr>peleng<clrEnd> interceptor, ideal for lightning raids behind enemy lines. Improved power onboard systems provided impressive gains in several key areas, but the magnetic interference caused by the ship's experimental reactor had a negative impact on navigation and missile guidance systems. Additionally, always worried about their own personal safety <clr>pelengs<clrEnd> decided to add armor plates at the expense of internal volume, allowing only slick, multi-armed pilots to effectively operate the controls in the ship's small cockpit.</color>
+        Text=<clr><clrEnd>
+        Text=Mobility skill: <bonSkill2>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Hull armor: <bonHull>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Missile speed: <bonMissileSpeed>
+        Text=Firing range: <bonWRadius>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=(only for <clr>pelengs<clrEnd>)
+        bonHull=3
+        bonJump=9
+        bonMissileSpeed=-600
+        bonRadar=-750
+        bonScan=-5
+        bonSkill2=1
+        bonSpeed=200
+        bonWEnergy=12
+        bonWMissile=-20
+        bonWRadius=-25
+        bonWSplinter=16
+    }
+    ShuMM_StationyDefGenerator1 ^{
+        AcrynLevel=1
+        AcrynSerie=Stationic Shield Generator I-III
+        Cost=150
+        Equipments=DefGenerator
+        Fragility=150
+        KindGraph=StationyDefGenerator
+        LevelsCount=3
+        Name=Stationic Shield Generator I
+        Owner=PirateClan
+        Priority=10
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_StationyDefGenerator1
+        SerieLevel2=ShuMM_StationyDefGenerator2
+        SerieLevel3=ShuMM_StationyDefGenerator3
+        Size=118
+        Special=1
+        Text=<color=248,252,248>A series of shield generators developed by the <color=255,240,100>pirate clan</color> in an attempt to close the technical gap with the latest coalition developments in the field. Despite desperate efforts of pirate masters to provide sufficient stability to power-consuming static emitters, the durability of such generators is still at an impractically low level.</color>
+        Text=<clr><clrEnd>
+        Text=Shield generator: <bonDef>%
+        bonDef=3
+    }
+    ShuMM_StationyDefGenerator2 ^{
+        AcrynLevel=2
+        AcrynSerie=Stationic Shield Generator I-III
+        Cost=200
+        Equipments=DefGenerator
+        Fragility=175
+        KindGraph=StationyDefGenerator
+        LevelsCount=3
+        Name=Stationic Shield Generator II
+        Owner=PirateClan
+        Priority=30
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_StationyDefGenerator1
+        SerieLevel2=ShuMM_StationyDefGenerator2
+        SerieLevel3=ShuMM_StationyDefGenerator3
+        Size=111
+        Special=1
+        Text=<color=248,252,248>A series of shield generators developed by the <color=255,240,100>pirate clan</color> in an attempt to close the technical gap with the latest coalition developments in the field. Despite desperate efforts of pirate masters to provide sufficient stability to power-consuming static emitters, the durability of such generators is still at an impractically low level.</color>
+        Text=<clr><clrEnd>
+        Text=Shield generator: <bonDef>%
+        bonDef=4
+    }
+    ShuMM_StationyDefGenerator3 ^{
+        AcrynLevel=3
+        AcrynSerie=Stationic Shield Generator I-III
+        Cost=250
+        Equipments=DefGenerator
+        Fragility=200
+        KindGraph=StationyDefGenerator
+        LevelsCount=3
+        Name=Stationic Shield Generator III
+        Owner=PirateClan
+        Priority=50
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=ShuMM_StationyDefGenerator1
+        SerieLevel2=ShuMM_StationyDefGenerator2
+        SerieLevel3=ShuMM_StationyDefGenerator3
+        Size=105
+        Special=1
+        Text=<color=248,252,248>A series of shield generators developed by the <color=255,240,100>pirate clan</color> in an attempt to close the technical gap with the latest coalition developments in the field. Despite desperate efforts of pirate masters to provide sufficient stability to power-consuming static emitters, the durability of such generators is still at an impractically low level.</color>
+        Text=<clr><clrEnd>
+        Text=Shield generator: <bonDef>%
+        bonDef=5
+    }
+    ShuMM_TEDB ^{
+        Equipments=Engine
+        Fragility=66
+        Name=TEDB
+        Owner=People
+        Priority=55
+        Size=120
+        Text=Level two micromodule. Installs into human-made engine optmizator "TEDB" (what can be transcribed from archaic human language as "The quieter the ride, the farther you'll travel"), which redirect energy from acceleration contour to hyperjump actuator. The latter leads to an increase in jump range and reliability to the detriment of maximum flight speed.
+        Text=<clr><clrEnd>
+        Text=Jumping range: <bonJump>
+        Text=Reliability: <clr>+50%<clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Size: <clr>+20%<clrEnd>
+        bonJump=8
+        bonSpeed=-75
+    }
+    ShuMM_TauhitHull ^{
+        Cost=600
+        Equipments=Hull
+        FragilityEnergy=100
+        FragilityMissile=100
+        FragilitySplinter=100
+        KindGraph=Tauhit
+        LockedAcryn=3
+        Name=Tauhito Hull
+        NonSearchable=1
+        Owner=People
+        Priority=10
+        Size=100
+        Special=1
+        Text=<color=248,252,248>An ancient development of the Coalition, which passed only to the descendants of its test participants as a legacy, but lacked any special properties, until a disc with data about the original project was found by a certain ranger. The hull was recreated by specialists from the Ranger Center Network, as close to the original design as possible - the onboard computer introduces the pilot into cyberspace, astonishingly increasing his speed and reaction, as well as maximizing scanner and radar performance. The price to pay is a partially lost connection to reality, leading to a reduction in the pilot's social abilities.</color>
+        Text=<clr><clrEnd>
+        Text=Attack skill: <bonSkill1>
+        Text=Mobility skill: <bonSkill2>
+        Text=Firing range: <bonWRadius>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        Text=Charisma skill: <bonSkill5>
+        Text=Leadership skill: <bonSkill6>
+        bonMass=-10
+        bonRadar=800
+        bonScan=8
+        bonSkill1=1
+        bonSkill2=1
+        bonSkill5=-1
+        bonSkill6=-1
+        bonSlotWeapon=-2
+        bonWRadius=25
+    }
+    ShuMM_Torpedo ^{
+        ActualEquipType=t_CustomWeapon,MissileLauncherTorpedo
+        Cost=500
+        Equipments=MissileLauncherTorpedo
+        Fragility=100
+        ImitatedEquipType=t_Weapon4
+        Name="Torpedo"
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=10
+        Size=225
+        Special=1
+        Text=<color=248,252,248>Missile launchers with this modification represent a quite successfull attempt of Coalition's scientists to recreate fearful Torpedo Tube of the dominators. Launching mechanism was reconfigured for just one, but strong torpedo, which is weaker than the dominator implemention but still somewhat comparable.</color>
+    }
+    ShuMM_Upgrade ^{
+        Cost=175
+        Equipments=Engine,Radar,Scaner,Droid,Hook,DefGenerator
+        Fragility=66
+        Name=Upgrade
+        Owner=Keller
+        Priority=45
+        RacialRestriction=1
+        Text=Level two micromodule. Updates the <clr>kelleroid<clrEnd> firmware, improving its reliability and basic performance. Not applicable to hull, fuel tank and weapon systems.
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=Droid effectiveness: <bonDroid>
+        Text=Gripper power: <bonHook>
+        Text=Gripper range:<bonHookRadius>
+        Text=Shield generator: <bonDef>%
+        Text=Reliability: <clr>+50%<clrEnd>
+        Text=Cost: <clr>+75%<clrEnd>
+        bonDef=5
+        bonDroid=18
+        bonHook=30
+        bonHookRadius=15
+        bonJump=4
+        bonRadar=750
+        bonScan=7
+        bonSpeed=50
+    }
+}
+Rebellion ^{
+    IsAcryn=True
+}
+Script ^{
+    Mod_ShuMM ^{
+        10=Give me <0> cr.
+        11=Thanks!
+        12=Of course yes!
+        13=No thanks, I'll refrain
+        14=I'll wait restlessly
+        16=I can see you, <Player>, have returned for the hull. Perfect. Look at the summary of the hull specifications:<br>------------------<br><0><br>So what, do you want to get the hull of <1> size for <2> cr.?
+        17=Great! It can take us quite a while to thoroughly study the drive and assemble the hull. Give us about <clr>a couple of months<clrEnd> for such a large work.
+        2=I'd like to buy a secret hull
+        3=I have found a curious disk on an uninhabitable planet..
+        4=Let's take a look on it... Outstanding! According to the date, it is a pre-Klissan development! Extremely intriguing. Well-well, where was that ancient CD-ROM...<br><br><Player>, you've just discovered the missing Tauhito blueprints! Some of the technologies are missing too or not used now, but with these blueprints we could manage to rebuild Tauhito and sell you one of the examples, but you can also choose a money reward instead of it, <0> cr. exactly. What do you think, ranger?
+        6=<0> cr. reward has been already transfered to you account.
+        9=I wouldn't say no to a unique hull.
+    }
+}
+UselessItems ^{
+    Old_Disk ^{
+        Cost=Huge
+        Name=DS-174/2 Disk
+        Owner=People
+        Size=1
+        Text=Human-marked disk with a ranger emblem on it. Should be delivered to the nearest Ranger Center.
+    }
+}

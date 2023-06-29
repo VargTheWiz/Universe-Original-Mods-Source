@@ -1,0 +1,24 @@
+MicroModuls ^{
+    EvoGkvan_GkvanHull ^{
+        Cost=400
+        CustomTag=EvoGkvan_GkvanHull
+        Equipments=Hull
+        ForCharacterTypes=Trader,Pirate
+        ForNPCTypes=Ranger,RangerExplorer
+        Fragility=100
+        KindGraph=Gkvan
+        Name=Hull "Gkvan"
+        OnPlanets=1
+        Owner=Maloc
+        Priority=50
+        RacialRestriction=1
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Recreated from blueprint of unknown race from other galaxy arm, this hull was only until recently hidden in secret Maloqs research facility. Bioscanner constantly works on pilot's place and blocks additonal speed functionality if non-<clr>maloq<clrEnd> pilot presented.</color>
+        Text=Engine speed: <bonSpeed>
+        Text=(only for <clr>maloqs<clrEnd>)
+        bonSlotArt=-3
+        bonSlotWeapon=-2
+        bonSpeed=300
+    }
+}

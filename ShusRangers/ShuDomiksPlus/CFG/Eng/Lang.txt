@@ -1,0 +1,240 @@
+ShuDomiks ^{
+    ShuDomiksPlus=1
+}
+Items ^{
+    Weapon ^{
+        CustomWeapon ^{
+            Dom_burst ~{
+                BaseGun=Industrial_Laser
+                MinDamage=14
+                MaxDamage=70
+                DamageSet=Splinter,Destruct,Acid
+                ShotType=Normal
+                Speed=60
+                AverageRadius=220
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.20,1.30,1.40,1.60,1.90,2.30
+                ShotsPerTurn=1
+                ArcadeType=Atomic_Vision
+                MiningFactor=1
+                kCost=32
+                AverageSize=40
+                TechLevel=1
+                InventTechLevel=Wave_Phaser
+                StoreAvailability=NotSold
+                ShotEffectPath=Weapon.2
+                ShotEffectPalette=6
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            Dom_dual_laser ~{
+                BaseGun=Industrial_Laser
+                MinDamage=12
+                MaxDamage=34
+                DamageSet=Energy
+                ShotType=Normal
+                Speed=60
+                AverageRadius=320
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.20,1.30,1.40,1.60,1.90,2.30
+                ShotsPerTurn=2
+                ArcadeType=Flow_Blaster
+                MiningFactor=1
+                kCost=26
+                AverageSize=40
+                TechLevel=3
+                InventTechLevel=Treton
+                StoreAvailability=NotSold
+                ShotEffectPath=Weapon.0
+                ShotEffectPalette=6
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            Dom_laser ~{
+                BaseGun=Industrial_Laser
+                MinDamage=20
+                MaxDamage=35
+                DamageSet=Energy,Magnetic
+                ShotType=Normal
+                Speed=60
+                AverageRadius=260
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.20,1.30,1.40,1.60,1.90,2.30
+                ShotsPerTurn=1
+                ArcadeType=Industrial_Laser
+                MiningFactor=1
+                kCost=15
+                AverageSize=30
+                TechLevel=2
+                InventTechLevel=Missile_Launcher
+                StoreAvailability=NotSold
+                ShotEffectPath=Weapon.0
+                ShotEffectPalette=5
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            Dom_light ~{
+                BaseGun=Industrial_Laser
+                MinDamage=3
+                MaxDamage=45
+                DamageSet=Energy,Decelerate,Destruct,Shock,Magnetic,DecelerateA,DecelerateAEx,Undefendable,DropCargo,ReduceEngine,BlockWeapon,BlockDroid
+                ShotType=Normal
+                Speed=99
+                AverageRadius=310
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.20,1.30,1.40,1.60,1.90,2.30
+                ShotsPerTurn=1
+                ArcadeType=Caphasitor
+                MiningFactor=2
+                kCost=65
+                AverageSize=120
+                TechLevel=8
+                StoreAvailability=NotSoldAndNodeRepair
+                ShotEffectPath=Weapon.16
+                ShotEffectPalette=10
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            Dom_minigun ~{
+                BaseGun=Flow_Blaster
+                MinDamage=5
+                MaxDamage=6
+                DamageSet=Splinter,Decelerate,Undefendable,BonusToDamaged
+                ShotType=Normal
+                Speed=40
+                AverageRadius=265
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.15,1.20,1.25,1.30,1.50,1.70
+                ShotsPerTurn=15
+                ArcadeType=Wave_Phaser
+                MiningFactor=2
+                kCost=70
+                AverageSize=60
+                TechLevel=8
+                InventTechLevel=Flow_Blaster
+                StoreAvailability=NotSold
+                ShotEffectPath=Weapon.8
+                ShotEffectPalette=40
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            Dom_rocket ~{
+                BaseGun=Industrial_Laser
+                MinDamage=20
+                MaxDamage=20
+                DamageSet=Missile,Magnetic
+                ShotType=Missile2
+                Speed=40
+                AverageRadius=1000
+                SecondaryDamageRadius=0
+                MissileRadius=1000
+                MissileMinSpeed=700
+                MissileMaxSpeed=1200
+                MissileChanceToBeHit=6
+                mWeaponDamage=1.00,1.10,1.20,1.30,1.40,1.60,1.90,2.30
+                ShotsPerTurn=2
+                ArcadeType=Missile_Launcher
+                MiningFactor=2
+                kCost=21
+                AverageSize=50
+                TechLevel=1
+                InventTechLevel=Industrial_Laser
+                StoreAvailability=NotSoldAndNodeRepair
+                ShotEffectPath=Weapon.4
+                ShotEffectPalette=1
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=Weapon.MissileHit
+            }
+            ShuDomiksPlus ~{
+                1=Dom_laser
+                2=Dom_dual_laser
+                3=Dom_burst
+                4=Dom_rocket
+                5=Dom_light
+                6=Dom_minigun
+                Count=6
+            }
+            StatsVersion ^{
+                ShuDomiksPlus=28.07.2020
+            }
+        }
+        Missile ^{
+            Dom_minigun ^{
+                Name=???
+                Text=Error: String not found
+            }
+            Dom_rocket ^{
+                Name=Mini-torpedo
+                Text=Small version of torpedo
+            }
+        }
+        Name ^{
+            Dom_burst=Magnetical Separator
+            Dom_dual_laser=Dual Turbolaser
+            Dom_laser=Pulse Blaster
+            Dom_light=Energetic Discharger
+            Dom_minigun=Minigun
+            Dom_rocket=Revolver Torpedo Tube
+        }
+        OriginalWeaponType ~{
+            Industrial_Laser=1
+            Fragmentation_Cannon=2
+            Flux=3
+            Missile_Launcher=4
+            Treton=5
+            Wave_Phaser=6
+            Flow_Blaster=7
+            Electronic_Cutter=8
+            Multiresonator=9
+            Atomic_Vision=10
+            Disintegrator=11
+            Turbogravitron=12
+            IMHO-9000=13
+            Vertix=14
+            Torpedo_Tube=15
+            Esodapher=16
+            Caphasitor=17
+            Lirecron=18
+        }
+        Text ^{
+            Dom_burst=For creating this weapon the dominators used their developed to perfection technology of materials separation, which operating principle is based on differences in material's magnetic properties. Shots a beam that has a super-powerful magnetic field which separates the composite alloys of the ship's hull and internal equipment. Although the technologies used in this sample are quite primitive by nowadays standards, the dominators have managed to push them to a fundamentally new level of efficiency.<br> Deals <MinDamage>-<MaxDamage><Bonus> damage at a distance of <Radius>.
+            Dom_dual_laser=The turbolaser is actually a dominator heavy laser weapon, but unlike its light coalition analogues, it uses a high-power super-dense beam of energy to hit the target. Turbolaser guns are equipped with capacious capacitors that allow you to store and instantly give away a much larger amount of energy than the storage in conventional laser guns, which encourages the use of multiple barrels. Unfortunately, it is simply impossible to replicate such a technology at the current level of the coalition industry.<br>Fires two shots at <MinDamage>-<MaxDamage><Bonus> damage at a distance of <Radius>.
+            Dom_laser=The pulse blaster is a peak of dominators development of energy weapons, which, unlike their coalition progenitors, uses not only the wave nature of light, but also the properties of its particles, as well as some little-studied areas of quantum physics. As a result, the impact of the beam of such weapon on the hull disrupts the operation of computer equipment, which can lead to temporary failure of some ship systems. The coalition has yet to master the technologies used in this weapon. <br>Deals <MinDamage>-<MaxDamage><Bonus> damage at a distance of <Radius>.
+            Dom_light=Discrharger is one of the most powerful types of dominator weapon designed for damaging single targets. The weapon fires with a superpowerful charge which ignores target's defense and destabilizes the ship's most importants systems, such as engine, droid, shield generator and weapons, and also ionizes hull armor. Principle of work of this device is completely unknown, except the fact that it uses energopacks, which can be replaced with nodes. <br>Deals <MinDamage>-<MaxDamage><Bonus> undeflectable damage within a radius of <Radius>.
+            Dom_minigun=Dominator reincarnation of obsolescent weapon series. An archaic mechanism, equipped with a mobile node converter, fires a volley of medium-caliber projectiles. Some of the projectiles exploding, releasing groups of nanites destroying target's armor, ignoring it completely with 33% chance per shot and dealing bonus damage to already injured targets. Converter's technology is unknown and usage on non-dominator ships limited with inner storage. <br>Performs fifteen shots dealing <color=255,240,100>4</color>-<color=255,240,100>5</color> damage each within a radius not exceeding <Radius>. <br><color=255,240,100>Works in overdrive mode on non-dominator ships.</color>
+            Dom_rocket=Weapon principle with multiple revolving barrels is obviously obsolete, and only dominators could manage to compact a highy-reliable missile-launching mechanism in revolving scheme that much. Revolver missile delivery system together with an automatized ammunition production system makes this kind of weapon extremely effective on the battlefield, but this have become possible only because of dominator ships construction. Perhaps the Coalition could replicate such construction some years later.<br>Fires with four mini-torpedoes, dealing <CntAttacks>x(<MinDamage>-<MaxDamage>)<Bonus> damage.<br> Ammo: <Count>/<MaxCount>
+        }
+    }
+}
+ActCodeBlocksList ^{
+    ShuDomiksPlus_MinigunShot ^{
+        00=[t_OnWeaponShot|]
+        01=dword target = ScriptItemActObject1();
+        02=if(ObjectType(target) > 5) exit;
+        03=dword ship = ScriptItemActShip();
+        04=int dmg = Rnd(4, 5);
+        05=if(ArtefactTypeInUse(ship, t_ArtSplinter)) dmg = dmg + 1;
+        06=if(ShipOwner(target) != Kling) dmg = dmg * 2;
+        07=ScriptItemActParam(dmg);
+    }
+}

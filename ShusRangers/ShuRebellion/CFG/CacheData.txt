@@ -1,0 +1,65 @@
+Bm ~{
+    FormRewards ~{
+        2_49=Mods\ShusRangers\ShuRebellion\DATA\FormRewards\2\48.gi
+    }
+    Items ~{
+        2Hull_RebelFei_s=Mods\ShusRangers\ShuRebellion\DATA\Items\Hull\2RebelFeis.gi
+        2Hull_RebelGaal_s=Mods\ShusRangers\ShuRebellion\DATA\Items\Hull\2RebelGaals.gi
+        2Hull_RebelMaloc_s=Mods\ShusRangers\ShuRebellion\DATA\Items\Hull\2RebelMalocs.gi
+        2Hull_RebelPeleng_s=Mods\ShusRangers\ShuRebellion\DATA\Items\Hull\2RebelPelengs.gi
+        2Hull_RebelPeople_s=Mods\ShusRangers\ShuRebellion\DATA\Items\Hull\2RebelPeoples.gi
+    }
+    ItemsUseless ~{
+        2Gatrix_s=data\ItemsUseless\2usl21.gi
+    }
+    PanelSpace2 ~{
+        2RebelFeiA=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelFeiA.gi
+        2RebelFeiD=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelFeiD.gi
+        2RebelFeiH=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelFeiH.gi
+        2RebelFeiN=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelFeiN.gi
+        2RebelGaalA=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelGaalA.gi
+        2RebelGaalD=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelGaalD.gi
+        2RebelGaalH=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelGaalH.gi
+        2RebelGaalN=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelGaalN.gi
+        2RebelMalocA=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelMalocA.gi
+        2RebelMalocD=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelMalocD.gi
+        2RebelMalocH=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelMalocH.gi
+        2RebelMalocN=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelMalocN.gi
+        2RebelPelengA=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelPelengA.gi
+        2RebelPelengD=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelPelengD.gi
+        2RebelPelengH=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelPelengH.gi
+        2RebelPelengN=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelPelengN.gi
+        2RebelPeopleA=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelPeopleA.gi
+        2RebelPeopleD=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelPeopleD.gi
+        2RebelPeopleH=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelPeopleH.gi
+        2RebelPeopleN=Mods\ShusRangers\ShuRebellion\DATA\PanelSpace2\RebelPeopleN.gi
+    }
+    Ruins ~{
+        Flagship=Mods\ShusRangers\ShuRebellion\DATA\Ruins\Flagship.gai
+        FlagshipMap=Mods\ShusRangers\ShuRebellion\DATA\Ruins\FlagshipMap.gi
+        Flagshipi=data\ShipP\2PeopleBW.gi
+    }
+    Ship ~{
+        RebelFei=Mods\ShusRangers\ShuRebellion\DATA\Ship\RebelFei.hai
+        RebelFeis=Mods\ShusRangers\ShuRebellion\DATA\Ship\RebelFeis.hai
+        RebelGaal=Mods\ShusRangers\ShuRebellion\DATA\Ship\RebelGaal.hai
+        RebelGaals=Mods\ShusRangers\ShuRebellion\DATA\Ship\RebelGaals.hai
+        RebelMaloc=Mods\ShusRangers\ShuRebellion\DATA\Ship\RebelMaloc.hai
+        RebelMalocs=Mods\ShusRangers\ShuRebellion\DATA\Ship\RebelMalocs.hai
+        RebelMap=Mods\ShusRangers\ShuRebellion\DATA\Ship\MapRebel.png
+        RebelPeleng=Mods\ShusRangers\ShuRebellion\DATA\Ship\RebelPeleng.hai
+        RebelPelengs=Mods\ShusRangers\ShuRebellion\DATA\Ship\RebelPelengs.hai
+        RebelPeople=Mods\ShusRangers\ShuRebellion\DATA\Ship\RebelPeople.hai
+        RebelPeoples=Mods\ShusRangers\ShuRebellion\DATA\Ship\RebelPeoples.hai
+    }
+    ShipP ~{
+        2RebelFei=Mods\ShusRangers\ShuRebellion\DATA\ShipP\RebelFei.gi
+        2RebelGaal=Mods\ShusRangers\ShuRebellion\DATA\ShipP\RebelGaal.gi
+        2RebelMaloc=Mods\ShusRangers\ShuRebellion\DATA\ShipP\RebelMaloc.gi
+        2RebelPeleng=Mods\ShusRangers\ShuRebellion\DATA\ShipP\RebelPeleng.gi
+        2RebelPeople=Mods\ShusRangers\ShuRebellion\DATA\ShipP\RebelPeople.gi
+    }
+}
+Script ~{
+    Mod_ShuRebellion=Mods\ShusRangers\ShuRebellion\DATA\Script\Mod_ShuRebellion.scr
+}

@@ -1,0 +1,1606 @@
+FormInfo ^{
+    AutoSearchAcryn=Acryn:
+    AutoSearchAcrynAny=Not important
+    AutoSearchAcrynLevel=Acryn level:
+    AutoSearchAcrynLevelNone=---
+    AutoSearchAcrynNone=Without acryn
+    AutoSearchConfirm=Make a request
+    AutoSearchCustomisation=AUTO SEARCH SETTINGS
+    AutoSearchDelete=Delete Request
+    AutoSearchHowOften=How often should this request be made?
+    AutoSearchWeaponAcryn=Modification:
+    AutoSearchWeaponAcrynAny=Not important
+    AutoSearchWeaponAcrynLevel=Modification level:
+    AutoSearchWeaponAcrynNone=Without modification
+    CostShort=Cost:
+    DamageSusceptibility=Damage susceptibility E/S/M:
+    DoubleQuote="
+    Equipment ^{
+        EnergyType=Energy
+        Fuel=Capacity: <val>
+        MaxAmmo=Ammunition: #MaxCount#
+        MissileType=Missile
+        QualityGrade0=Unexcelled
+        QualityGrade1=Very high
+        QualityGrade2=High
+        QualityGrade3=Average
+        QualityGrade4=Low
+        QualityGrade5=Very Low
+        QualityGrade6=Awful
+        Reliability=Reliability: <val>
+        SplinterType=Fragmentation
+        SusceptibilitySearch=Durability:  E:#1#%  S:#2#%  M:#3#%
+    }
+    M04Power=Power:
+    M05Power=Effectiveness:
+    M07Block=Shield strength:
+    M11Def=Armor:
+    M11Size=Capacity:
+    WordDroidLowercase=droid
+    WordEngineLowercase=engine
+    WordFuelTankLowercase=fuel tank
+    WordGripperLowercase=gripper
+    WordHullCapital=Hull
+    WordHullLowercase=hull
+    WordRadarLowercase=radar
+    WordScannerLowercase=scanner
+    WordShieldGeneratorLowercase=shield generator
+}
+Script ^{
+    Mod_ExpAutoSearch ^{
+        0=<br>
+        2=<0>
+        ChangeExistedRequest=Edit an existing request
+        ChangeRequestConfirm=Are you sure you want to re-formulate the search request for #0# cr?
+        ChooseAcryn=Choose acryn:
+        ChooseModification=Choose modification:
+        ChooseWeaponName=Select the desired weapon:
+        CreateNewRequest=Make a new request
+        DeleteRequestConfirm=Are you sure you want to delete this request?
+        DialogHeaderWithExpBK=In addition, as part of the cooperation program with a single galactic <clr>Info Center<clrEnd>, here you can submit an automatic search request that will help save you time in finding the necessary on-board equipment.
+        DialogHeaderWithNoExpBK=As part of the cooperation program with a single galactic Info Center, here you can submit an automatic search request that will help save you time in finding the necessary on-board equipment.
+        Droids=droid
+        Engines=engine
+        FuelTanks=fuel tank
+        GetBack=Back
+        GreetingsNewRequestText=New search request successfully <clr>created<clrEnd>. Would you like to do anything else?
+        GreetingsText=Creating an automatic search request is a great way to save you the time and effort of finding the equipment you need through a single galactic <clr>Info Center<clrEnd>. Just enter your desired request parameters and our automatic sub-quantum servers will gladly do all the work for you!<br><clr><clrEnd><br>You can submit up to #0# search queries at the same time, each of which can be displayed on your notification bar up to #1# successful search results. Each search request will automatically search at intervals you specify until you <clr>remove<clrEnd> or <clr>re-registrate<clrEnd> it to search for another item. Also keep in mind that the first search after registration or re-registration a request will take place the next day after confirming the operation.<br><clr><clrEnd><br>The cost of registration or re-registration a search request at the moment is #2# cr., and the cost of directly performing a search for this request is #3# cr.
+        Grippers=gripper
+        HullTypeHasNotChosen=To create a search query, you must specify at least one suitable hull type.
+        Hulls=hull
+        MainDialogInject=My search requests
+        NewRequestConfirm=Are you sure you want to make a new search query for #0# cr?
+        NoBKLeft=All business centers have been destroyed. Your <color=255,240,100>search requests</color> are temporarily frozen.
+        NoMoneyForRequest=Dear customer, your account does not have enough funds to pay the cost of the scheduled autosearch request. The standard cost of this operation is #0# cr.
+        NoSuccessfulResults=Dear customer, No results were found for your search #0#. However, do not be upset, next time you will certainly be lucky.
+        NotEnoughMoneyToChangeRequest=Sorry, but you don't have enough funds in your account for re-registration of your search request.
+        NotEnoughMoneyToNewRequest=Sorry, but you don't have enough funds in your account to make your search request.
+        RaceHasNotChosen=To make a search request, you must specify at least one suitable manufacturer race.
+        Radars=radar
+        RequestAnswer=Search request #0#<br><clr> <clrEnd><clr> <clrEnd><clr> <clrEnd><clr> <clrEnd>(every #1# days)
+        RequestChangeList=Select the query you would like to <clr>view<clrEnd>, <clr>edit<clrEnd>, or <clr>delete<clrEnd>.
+        RequestWasChanged=Selected search request was successfully <clr>changed<clrEnd>. Would you like to do something else?
+        RequestWasDeleted=The selected search request was successfully <clr>deleted<clrEnd>. Would you like to do something else?
+        Scanners=scanner
+        ShieldGenerators=shield generator
+        TheShop=Shop:
+        WeaponTypeHasNotChosen=To make a search request, you must specify at least one suitable type of weapon.
+        Weapons=weaponry
+        function_AcrynListForAutoSearch ^{
+            01=int i;
+            02=arraychange(GAcrynListTempArr, 2);
+            03=if(type == 'WeaponNames')
+            04 ^{
+                01=GAcrynListTempArr[1] = 'WeaponNames';
+                02=ArrayAdd(GAcrynListTempArr, 0);
+                03=int c = 0;
+                04=int GTL = GalaxyTechLevel() + 1;
+                05=if(GTL > 8) GTL = 8;
+                06=for(i = 1; i <= 18; i = i + 1)
+                07 ^{
+                    01=if(i <= 12 || i >= 16)
+                    02 ^{
+                        01=if(GTL >= GetCustomWeaponData((t_Weapon1 - 1) + i, 'TechLevel'))
+                        02 ^{
+                            01=ArrayAdd(GAcrynListTempArr, i);
+                            02=c = c + 1;
+                        }
+                    }
+                }
+                08=GAcrynListTempArr[2] = c;
+                09=for(i = 0; i < CustomWeaponTypes(); i = i + 1)
+                10 ^{
+                    01=str CWtype = CustomWeaponTypes(i);
+                    02=if(GTL >= GetCustomWeaponData(CWtype, 'TechLevel'))
+                    03 ^{
+                        01=if(GetCustomWeaponData(CWtype, 'Availability') != 'NotSold' && GetCustomWeaponData(CWtype, 'Availability') != 'NotSoldAndNodeRepair')ArrayAdd(GAcrynListTempArr, CWtype);
+                    }
+                }
+            }
+            05=else if((type >= t_Hull && type <= t_CustomWeapon) || type == -1)
+            06 ^{
+                01=ArrayAdd(GAcrynListTempArr, -2);
+                02=ArrayAdd(GAcrynListTempArr, -1);
+                03=if(type != -1)
+                04 ^{
+                    01=str add_type;
+                    02=if(type == t_Hull)
+                    03 ^{
+                        01=GAcrynListTempArr[1] = type;
+                        02=type = 'Hull';
+                        03=add_type = 't_Hull';
+                    }
+                    04=else if(type >= t_Weapon1 && type <= t_Weapon18)
+                    05 ^{
+                        01=GAcrynListTempArr[1] = type;
+                        02=if(type <= t_Weapon9)
+                        03 ^{
+                            01=add_type = 't_Weapon' + (-t_Weapon1 + 1 + type);
+                            02=type = 'W0' + (-t_Weapon1 + 1 + type);
+                        }
+                        04=else
+                        05 ^{
+                            01=add_type = 't_Weapon' + (-t_Weapon1 + 1 + type);
+                            02=type = 'W' + (-t_Weapon1 + 1 + type);
+                        }
+                    }
+                    06=else if(type == t_CustomWeapon)
+                    07 ^{
+                        01=GAcrynListTempArr[1] = custom_type;
+                        02=type = custom_type;
+                        03=add_type = 't_CustomWeapon';
+                    }
+                    08=else if(type == t_Engine)
+                    09 ^{
+                        01=GAcrynListTempArr[1] = type;
+                        02=type = 'Engine';
+                        03=add_type = 't_Engine';
+                    }
+                    10=else if(type == t_FuelTanks)
+                    11 ^{
+                        01=GAcrynListTempArr[1] = type;
+                        02=type = 'FuelTank';
+                        03=add_type = 't_FuelTanks';
+                    }
+                    12=else if(type == t_Radar)
+                    13 ^{
+                        01=GAcrynListTempArr[1] = type;
+                        02=type = 'Radar';
+                        03=add_type = 't_Radar';
+                    }
+                    14=else if(type == t_Scaner)
+                    15 ^{
+                        01=GAcrynListTempArr[1] = type;
+                        02=type = 'Scaner';
+                        03=add_type = 't_Scaner';
+                    }
+                    16=else if(type == t_RepairRobot)
+                    17 ^{
+                        01=GAcrynListTempArr[1] = type;
+                        02=type = 'Droid';
+                        03=add_type = 't_RepairRobot';
+                    }
+                    18=else if(type == t_CargoHook)
+                    19 ^{
+                        01=GAcrynListTempArr[1] = type;
+                        02=type = 'Hook';
+                        03=add_type = 't_CargoHook';
+                    }
+                    20=else if(type == t_DefGenerator)
+                    21 ^{
+                        01=GAcrynListTempArr[1] = type;
+                        02=type = 'DefGenerator';
+                        03=add_type = 't_DefGenerator';
+                    }
+                    22=str series_in_list = '#';
+                    23=for(i = 0; i < BonusCount(); i = i + 1)
+                    24 ^{
+                        01=str numInCfg = BonusNumInCfg(i);
+                        02=if(!BonusIsSpecial(i)) continue;
+                        03=if(CT('MicroModuls.' + numInCfg + '.NonSearchable')) continue;
+                        04=str equipOn = CT('MicroModuls.' + numInCfg + '.Equipments');
+                        05=if(findsubstr(equipOn, type) == -1)
+                        06 ^{
+                            01=if(equipOn != 'Any' && equipOn != '')
+                            02 ^{
+                                01=str imit_type = CT('MicroModuls.' + numInCfg + '.ImitatedEquipType');
+                                02=if(imit_type == '') continue;
+                                03=if(findsubstr(imit_type, add_type)) continue;
+                                04=if(add_type == 't_CustomWeapon')
+                                05 ^{
+                                    01=unknown GetParFromString = ImportedFunction('UtilityFunctions', 'GetParFromString');
+                                    02=if(GetParFromString(imit_type, ',', 1, 1) != type) continue;
+                                }
+                            }
+                        }
+                        07=str serie_name = CT('MicroModuls.' + numInCfg + '.AcrynSerie');
+                        08=if(serie_name == '')
+                        09 ^{
+                            01=if(GalaxyTechLevel() < 8.0 * (0.01 * CT('MicroModuls.' + numInCfg + '.Priority'))) continue;
+                            02=ArrayAdd(GAcrynListTempArr, numInCfg);
+                        }
+                        10=else
+                        11 ^{
+                            01=if(findsubstr(series_in_list, '#' + serie_name + '#') > -1) continue;
+                            02=series_in_list = series_in_list + serie_name + '#';
+                            03=numInCfg = CT('MicroModuls.' + numInCfg + '.SerieLevel1');
+                            04=if(GalaxyTechLevel() < 8.0 * (0.01 * CT('MicroModuls.' + numInCfg + '.Priority'))) continue;
+                            05=ArrayAdd(GAcrynListTempArr, numInCfg);
+                        }
+                    }
+                }
+                05=else GAcrynListTempArr[1] = type;
+            }
+        }
+        function_RaceSetDefine ^{
+            01=int race_set = 0;
+            02=if(race_str == 'Any' || race_str == '')
+            03 ^{
+                01=race_set = 255;
+                02=exit;
+            }
+            04=int check_comma;
+            05=str t_str;
+            06=int end_while = 0;
+            07=while(!end_while)
+            08 ^{
+                01=check_comma = findsubstr(race_str, ',');
+                02=if(check_comma > -1)
+                03 ^{
+                    01=t_str = substr(race_str, 0, check_comma);
+                    02=if(t_str == 'Maloc')
+                    03 ^{
+                        01=if(!(race_set & 1)) race_set = race_set + 1;
+                    }
+                    04=else if(t_str == 'Peleng')
+                    05 ^{
+                        01=if(!(race_set & 2)) race_set = race_set + 2;
+                    }
+                    06=else if(t_str == 'People')
+                    07 ^{
+                        01=if(!(race_set & 4)) race_set = race_set + 4;
+                    }
+                    08=else if(t_str == 'Fei')
+                    09 ^{
+                        01=if(!(race_set & 8)) race_set = race_set + 8;
+                    }
+                    10=else if(t_str == 'Gaal')
+                    11 ^{
+                        01=if(!(race_set & 16)) race_set = race_set + 16;
+                    }
+                    12=else if(t_str == 'PirateClan')
+                    13 ^{
+                        01=if(!(race_set & 128)) race_set = race_set + 128;
+                    }
+                    14=race_str = substr(race_str, check_comma + 1);
+                }
+                04=else
+                05 ^{
+                    01=t_str = race_str;
+                    02=if(t_str == 'Maloc')
+                    03 ^{
+                        01=if(!(race_set & 1)) race_set = race_set + 1;
+                    }
+                    04=else if(t_str == 'Peleng')
+                    05 ^{
+                        01=if(!(race_set & 2)) race_set = race_set + 2;
+                    }
+                    06=else if(t_str == 'People')
+                    07 ^{
+                        01=if(!(race_set & 4)) race_set = race_set + 4;
+                    }
+                    08=else if(t_str == 'Fei')
+                    09 ^{
+                        01=if(!(race_set & 8)) race_set = race_set + 8;
+                    }
+                    10=else if(t_str == 'Gaal')
+                    11 ^{
+                        01=if(!(race_set & 16)) race_set = race_set + 16;
+                    }
+                    12=else if(t_str == 'PirateClan')
+                    13 ^{
+                        01=if(!(race_set & 128)) race_set = race_set + 128;
+                    }
+                    14=end_while = 1;
+                }
+            }
+        }
+    }
+}
+MicroModuls ^{
+    350 ^{
+        Name=Assassin
+        NonSearchable=1
+    }
+    351 ^{
+        Name=Rock
+        NonSearchable=1
+    }
+    352 ^{
+        Name=Bolide
+        NonSearchable=1
+    }
+    353 ^{
+        AcrynLevel=1
+        AcrynSerie=Fast Hull I-IV
+        LevelsCount=4
+        Name=Fast Hull I
+        SerieLevel1=353
+        SerieLevel2=354
+        SerieLevel3=355
+        SerieLevel4=356
+    }
+    354 ^{
+        AcrynLevel=2
+        AcrynSerie=Fast Hull I-IV
+        LevelsCount=4
+        Name=Fast Hull II
+        SerieLevel1=353
+        SerieLevel2=354
+        SerieLevel3=355
+        SerieLevel4=356
+    }
+    355 ^{
+        AcrynLevel=3
+        AcrynSerie=Fast Hull I-IV
+        LevelsCount=4
+        Name=Fast Hull III
+        SerieLevel1=353
+        SerieLevel2=354
+        SerieLevel3=355
+        SerieLevel4=356
+    }
+    356 ^{
+        AcrynLevel=4
+        AcrynSerie=Fast Hull I-IV
+        LevelsCount=4
+        Name=Fast Hull IV
+        SerieLevel1=353
+        SerieLevel2=354
+        SerieLevel3=355
+        SerieLevel4=356
+    }
+    357 ^{
+        AcrynLevel=1
+        AcrynSerie=Invincible Hull I-IV
+        LevelsCount=4
+        Name=Invincible Hull I
+        SerieLevel1=357
+        SerieLevel2=358
+        SerieLevel3=359
+        SerieLevel4=360
+    }
+    358 ^{
+        AcrynLevel=2
+        AcrynSerie=Invincible Hull I-IV
+        LevelsCount=4
+        Name=Invincible Hull II
+        SerieLevel1=357
+        SerieLevel2=358
+        SerieLevel3=359
+        SerieLevel4=360
+    }
+    359 ^{
+        AcrynLevel=3
+        AcrynSerie=Invincible Hull I-IV
+        LevelsCount=4
+        Name=Invincible Hull III
+        SerieLevel1=357
+        SerieLevel2=358
+        SerieLevel3=359
+        SerieLevel4=360
+    }
+    360 ^{
+        AcrynLevel=4
+        AcrynSerie=Invincible Hull I-IV
+        LevelsCount=4
+        Name=Invincible Hull IV
+        SerieLevel1=357
+        SerieLevel2=358
+        SerieLevel3=359
+        SerieLevel4=360
+    }
+    361 ^{
+        AcrynLevel=1
+        AcrynSerie=Repair Hull I-IV
+        LevelsCount=4
+        Name=Repair Hull I
+        SerieLevel1=361
+        SerieLevel2=362
+        SerieLevel3=363
+        SerieLevel4=364
+    }
+    362 ^{
+        AcrynLevel=2
+        AcrynSerie=Repair Hull I-IV
+        LevelsCount=4
+        Name=Repair Hull II
+        SerieLevel1=361
+        SerieLevel2=362
+        SerieLevel3=363
+        SerieLevel4=364
+    }
+    363 ^{
+        AcrynLevel=3
+        AcrynSerie=Repair Hull I-IV
+        LevelsCount=4
+        Name=Repair Hull III
+        SerieLevel1=361
+        SerieLevel2=362
+        SerieLevel3=363
+        SerieLevel4=364
+    }
+    364 ^{
+        AcrynLevel=4
+        AcrynSerie=Repair Hull I-IV
+        LevelsCount=4
+        Name=Repair Hull IV
+        SerieLevel1=361
+        SerieLevel2=362
+        SerieLevel3=363
+        SerieLevel4=364
+    }
+    365 ^{
+        AcrynLevel=1
+        AcrynSerie=Myoplasmic Hull I-IV
+        LevelsCount=4
+        Name=Myoplasmic Hull I
+        SerieLevel1=365
+        SerieLevel2=366
+        SerieLevel3=368
+        SerieLevel4=368
+    }
+    366 ^{
+        AcrynLevel=2
+        AcrynSerie=Myoplasmic Hull I-IV
+        LevelsCount=4
+        Name=Myoplasmic Hull II
+        SerieLevel1=365
+        SerieLevel2=366
+        SerieLevel3=368
+        SerieLevel4=368
+    }
+    367 ^{
+        AcrynLevel=3
+        AcrynSerie=Myoplasmic Hull I-IV
+        LevelsCount=4
+        Name=Myoplasmic Hull III
+        SerieLevel1=365
+        SerieLevel2=366
+        SerieLevel3=368
+        SerieLevel4=368
+    }
+    368 ^{
+        AcrynLevel=4
+        AcrynSerie=Myoplasmic Hull I-IV
+        LevelsCount=4
+        Name=Myoplasmic Hull IV
+        SerieLevel1=365
+        SerieLevel2=366
+        SerieLevel3=368
+        SerieLevel4=368
+    }
+    369 ^{
+        AcrynLevel=1
+        AcrynSerie=Pygamore Hull I-IV
+        LevelsCount=4
+        Name=Pygamore Hull I
+        SerieLevel1=369
+        SerieLevel2=370
+        SerieLevel3=371
+        SerieLevel4=372
+    }
+    370 ^{
+        AcrynLevel=2
+        AcrynSerie=Pygamore Hull I-IV
+        LevelsCount=4
+        Name=Pygamore Hull II
+        SerieLevel1=369
+        SerieLevel2=370
+        SerieLevel3=371
+        SerieLevel4=372
+    }
+    371 ^{
+        AcrynLevel=3
+        AcrynSerie=Pygamore Hull I-IV
+        LevelsCount=4
+        Name=Pygamore Hull III
+        SerieLevel1=369
+        SerieLevel2=370
+        SerieLevel3=371
+        SerieLevel4=372
+    }
+    372 ^{
+        AcrynLevel=4
+        AcrynSerie=Pygamore Hull I-IV
+        LevelsCount=4
+        Name=Pygamore Hull IV
+        SerieLevel1=369
+        SerieLevel2=370
+        SerieLevel3=371
+        SerieLevel4=372
+    }
+    373 ^{
+        AcrynLevel=1
+        AcrynSerie=Myoplasmic Fuel Tank I-III
+        LevelsCount=3
+        Name=Myoplasmic Fuel Tank I
+        SerieLevel1=373
+        SerieLevel2=380
+        SerieLevel3=387
+    }
+    374 ^{
+        AcrynLevel=1
+        AcrynSerie=Myoplasmic Engine I-III
+        LevelsCount=3
+        Name=Myoplasmic Engine I
+        SerieLevel1=374
+        SerieLevel2=381
+        SerieLevel3=388
+    }
+    375 ^{
+        AcrynLevel=1
+        AcrynSerie=Myoplasmic Radar I-III
+        LevelsCount=3
+        Name=Myoplasmic Radar I
+        SerieLevel1=375
+        SerieLevel2=382
+        SerieLevel3=389
+    }
+    376 ^{
+        AcrynLevel=1
+        AcrynSerie=Myoplasmic Scanner I-III
+        LevelsCount=3
+        Name=Myoplasmic Scanner I
+        SerieLevel1=376
+        SerieLevel2=383
+        SerieLevel3=390
+    }
+    377 ^{
+        AcrynLevel=1
+        AcrynSerie=Myoplasmic Droid I-III
+        LevelsCount=3
+        Name=Myoplasmic Droid I
+        SerieLevel1=377
+        SerieLevel2=384
+        SerieLevel3=391
+    }
+    378 ^{
+        AcrynLevel=1
+        AcrynSerie=Myoplasmic Gripper I-III
+        LevelsCount=3
+        Name=Myoplasmic Gripper I
+        SerieLevel1=378
+        SerieLevel2=385
+        SerieLevel3=392
+    }
+    379 ^{
+        AcrynLevel=1
+        AcrynSerie=Myoplasmic Shield Generator I-III
+        LevelsCount=3
+        Name=Myoplasmic Shield Generator I
+        SerieLevel1=379
+        SerieLevel2=386
+        SerieLevel3=393
+    }
+    380 ^{
+        AcrynLevel=2
+        AcrynSerie=Myoplasmic Fuel Tank I-III
+        LevelsCount=3
+        Name=Myoplasmic Fuel Tank II
+        SerieLevel1=373
+        SerieLevel2=380
+        SerieLevel3=387
+    }
+    381 ^{
+        AcrynLevel=2
+        AcrynSerie=Myoplasmic Engine I-III
+        LevelsCount=3
+        Name=Myoplasmic Engine II
+        SerieLevel1=374
+        SerieLevel2=381
+        SerieLevel3=388
+    }
+    382 ^{
+        AcrynLevel=2
+        AcrynSerie=Myoplasmic Radar I-III
+        LevelsCount=3
+        Name=Myoplasmic Radar II
+        SerieLevel1=375
+        SerieLevel2=382
+        SerieLevel3=389
+    }
+    383 ^{
+        AcrynLevel=2
+        AcrynSerie=Myoplasmic Scanner I-III
+        LevelsCount=3
+        Name=Myoplasmic Scanner II
+        SerieLevel1=376
+        SerieLevel2=383
+        SerieLevel3=390
+    }
+    384 ^{
+        AcrynLevel=2
+        AcrynSerie=Myoplasmic Droid I-III
+        LevelsCount=3
+        Name=Myoplasmic Droid II
+        SerieLevel1=377
+        SerieLevel2=384
+        SerieLevel3=391
+    }
+    385 ^{
+        AcrynLevel=2
+        AcrynSerie=Myoplasmic Gripper I-III
+        LevelsCount=3
+        Name=Myoplasmic Gripper II
+        SerieLevel1=378
+        SerieLevel2=385
+        SerieLevel3=392
+    }
+    386 ^{
+        AcrynLevel=2
+        AcrynSerie=Myoplasmic Shield Generator I-III
+        LevelsCount=3
+        Name=Myoplasmic Shield Generator II
+        SerieLevel1=379
+        SerieLevel2=386
+        SerieLevel3=393
+    }
+    387 ^{
+        AcrynLevel=3
+        AcrynSerie=Myoplasmic Fuel Tank I-III
+        LevelsCount=3
+        Name=Myoplasmic Fuel Tank III
+        SerieLevel1=373
+        SerieLevel2=380
+        SerieLevel3=387
+    }
+    388 ^{
+        AcrynLevel=3
+        AcrynSerie=Myoplasmic Engine I-III
+        LevelsCount=3
+        Name=Myoplasmic Engine III
+        SerieLevel1=374
+        SerieLevel2=381
+        SerieLevel3=388
+    }
+    389 ^{
+        AcrynLevel=3
+        AcrynSerie=Myoplasmic Radar I-III
+        LevelsCount=3
+        Name=Myoplasmic Radar III
+        SerieLevel1=375
+        SerieLevel2=382
+        SerieLevel3=389
+    }
+    390 ^{
+        AcrynLevel=3
+        AcrynSerie=Myoplasmic Scanner I-III
+        LevelsCount=3
+        Name=Myoplasmic Scanner III
+        SerieLevel1=376
+        SerieLevel2=383
+        SerieLevel3=390
+    }
+    391 ^{
+        AcrynLevel=3
+        AcrynSerie=Myoplasmic Droid I-III
+        LevelsCount=3
+        Name=Myoplasmic Droid III
+        SerieLevel1=377
+        SerieLevel2=384
+        SerieLevel3=391
+    }
+    392 ^{
+        AcrynLevel=3
+        AcrynSerie=Myoplasmic Gripper I-III
+        LevelsCount=3
+        Name=Myoplasmic Gripper III
+        SerieLevel1=378
+        SerieLevel2=385
+        SerieLevel3=392
+    }
+    393 ^{
+        AcrynLevel=3
+        AcrynSerie=Myoplasmic Shield Generator I-III
+        LevelsCount=3
+        Name=Myoplasmic Shield Generator III
+        SerieLevel1=379
+        SerieLevel2=386
+        SerieLevel3=393
+    }
+    394 ^{
+        AcrynLevel=1
+        AcrynSerie=Pygamore Fuel Tank I-III
+        LevelsCount=3
+        Name=Pygamore Fuel Tank I
+        SerieLevel1=394
+        SerieLevel2=401
+        SerieLevel3=408
+    }
+    395 ^{
+        AcrynLevel=1
+        AcrynSerie=Pygamore Engine I-III
+        LevelsCount=3
+        Name=Pygamore Engine I
+        SerieLevel1=395
+        SerieLevel2=402
+        SerieLevel3=409
+    }
+    396 ^{
+        AcrynLevel=1
+        AcrynSerie=Pygamore Radar I-III
+        LevelsCount=3
+        Name=Pygamore Radar I
+        SerieLevel1=396
+        SerieLevel2=403
+        SerieLevel3=410
+    }
+    397 ^{
+        AcrynLevel=1
+        AcrynSerie=Pygamore Scanner I-III
+        LevelsCount=3
+        Name=Pygamore Scanner I
+        SerieLevel1=397
+        SerieLevel2=404
+        SerieLevel3=411
+    }
+    398 ^{
+        AcrynLevel=1
+        AcrynSerie=Pygamore Droid I-III
+        LevelsCount=3
+        Name=Pygamore Droid I
+        SerieLevel1=398
+        SerieLevel2=405
+        SerieLevel3=412
+    }
+    399 ^{
+        AcrynLevel=1
+        AcrynSerie=Pygamore Gripper I-III
+        LevelsCount=3
+        Name=Pygamore Gripper I
+        SerieLevel1=399
+        SerieLevel2=406
+        SerieLevel3=413
+    }
+    400 ^{
+        AcrynLevel=1
+        AcrynSerie=Pygamore Shield Generator I-III
+        LevelsCount=3
+        Name=Pygamore Shield Generator I
+        SerieLevel1=400
+        SerieLevel2=407
+        SerieLevel3=414
+    }
+    401 ^{
+        AcrynLevel=2
+        AcrynSerie=Pygamore Fuel Tank I-III
+        LevelsCount=3
+        Name=Pygamore Fuel Tank II
+        SerieLevel1=394
+        SerieLevel2=401
+        SerieLevel3=408
+    }
+    402 ^{
+        AcrynLevel=2
+        AcrynSerie=Pygamore Engine I-III
+        LevelsCount=3
+        Name=Pygamore Engine II
+        SerieLevel1=395
+        SerieLevel2=402
+        SerieLevel3=409
+    }
+    403 ^{
+        AcrynLevel=2
+        AcrynSerie=Pygamore Radar I-III
+        LevelsCount=3
+        Name=Pygamore Radar II
+        SerieLevel1=396
+        SerieLevel2=403
+        SerieLevel3=410
+    }
+    404 ^{
+        AcrynLevel=2
+        AcrynSerie=Pygamore Scanner I-III
+        LevelsCount=3
+        Name=Pygamore Scanner II
+        SerieLevel1=397
+        SerieLevel2=404
+        SerieLevel3=411
+    }
+    405 ^{
+        AcrynLevel=2
+        AcrynSerie=Pygamore Droid I-III
+        LevelsCount=3
+        Name=Pygamore Droid II
+        SerieLevel1=398
+        SerieLevel2=405
+        SerieLevel3=412
+    }
+    406 ^{
+        AcrynLevel=2
+        AcrynSerie=Pygamore Gripper I-III
+        LevelsCount=3
+        Name=Pygamore Gripper II
+        SerieLevel1=399
+        SerieLevel2=406
+        SerieLevel3=413
+    }
+    407 ^{
+        AcrynLevel=2
+        AcrynSerie=Pygamore Shield Generator I-III
+        LevelsCount=3
+        Name=Pygamore Shield Generator II
+        SerieLevel1=400
+        SerieLevel2=407
+        SerieLevel3=414
+    }
+    408 ^{
+        AcrynLevel=3
+        AcrynSerie=Pygamore Fuel Tank I-III
+        LevelsCount=3
+        Name=Pygamore Fuel Tank III
+        SerieLevel1=394
+        SerieLevel2=401
+        SerieLevel3=408
+    }
+    409 ^{
+        AcrynLevel=3
+        AcrynSerie=Pygamore Engine I-III
+        LevelsCount=3
+        Name=Pygamore Engine III
+        SerieLevel1=395
+        SerieLevel2=402
+        SerieLevel3=409
+    }
+    410 ^{
+        AcrynLevel=3
+        AcrynSerie=Pygamore Radar I-III
+        LevelsCount=3
+        Name=Pygamore Radar III
+        SerieLevel1=396
+        SerieLevel2=403
+        SerieLevel3=410
+    }
+    411 ^{
+        AcrynLevel=3
+        AcrynSerie=Pygamore Scanner I-III
+        LevelsCount=3
+        Name=Pygamore Scanner III
+        SerieLevel1=397
+        SerieLevel2=404
+        SerieLevel3=411
+    }
+    412 ^{
+        AcrynLevel=3
+        AcrynSerie=Pygamore Droid I-III
+        LevelsCount=3
+        Name=Pygamore Droid III
+        SerieLevel1=398
+        SerieLevel2=405
+        SerieLevel3=412
+    }
+    413 ^{
+        AcrynLevel=3
+        AcrynSerie=Pygamore Gripper I-III
+        LevelsCount=3
+        Name=Pygamore Gripper III
+        SerieLevel1=399
+        SerieLevel2=406
+        SerieLevel3=413
+    }
+    414 ^{
+        AcrynLevel=3
+        AcrynSerie=Pygamore Shield Generator I-III
+        LevelsCount=3
+        Name=Pygamore Shield Generator III
+        SerieLevel1=400
+        SerieLevel2=407
+        SerieLevel3=414
+    }
+    415 ^{
+        AcrynLevel=1
+        AcrynSerie=Transcendental Engine I-III
+        LevelsCount=3
+        Name=Transcendental Engine I
+        SerieLevel1=415
+        SerieLevel2=416
+        SerieLevel3=417
+    }
+    416 ^{
+        AcrynLevel=2
+        AcrynSerie=Transcendental Engine I-III
+        LevelsCount=3
+        Name=Transcendental Engine II
+        SerieLevel1=415
+        SerieLevel2=416
+        SerieLevel3=417
+    }
+    417 ^{
+        AcrynLevel=3
+        AcrynSerie=Transcendental Engine I-III
+        LevelsCount=3
+        Name=Transcendental Engine III
+        SerieLevel1=415
+        SerieLevel2=416
+        SerieLevel3=417
+    }
+    418 ^{
+        AcrynLevel=1
+        AcrynSerie=Upgraded Gripper I-III
+        LevelsCount=3
+        Name=Upgraded Gripper I
+        SerieLevel1=418
+        SerieLevel2=424
+        SerieLevel3=430
+    }
+    419 ^{
+        AcrynLevel=1
+        AcrynSerie=Upgraded Shield Generator I-III
+        LevelsCount=3
+        Name=Upgraded Shield Generator I
+        SerieLevel1=419
+        SerieLevel2=425
+        SerieLevel3=431
+    }
+    420 ^{
+        AcrynLevel=1
+        AcrynSerie=Upgraded Engine I-III
+        LevelsCount=3
+        Name=Upgraded Engine I
+        SerieLevel1=420
+        SerieLevel2=426
+        SerieLevel3=432
+    }
+    421 ^{
+        AcrynLevel=1
+        AcrynSerie=Upgraded Fuel Tank I-III
+        LevelsCount=3
+        Name=Upgraded Fuel Tank I
+        SerieLevel1=421
+        SerieLevel2=427
+        SerieLevel3=433
+    }
+    422 ^{
+        AcrynLevel=1
+        AcrynSerie=Upgraded Radar I-III
+        LevelsCount=3
+        Name=Upgraded Radar I
+        SerieLevel1=422
+        SerieLevel2=428
+        SerieLevel3=434
+    }
+    423 ^{
+        AcrynLevel=1
+        AcrynSerie=Upgraded Scanner I-III
+        LevelsCount=3
+        Name=Upgraded Scanner I
+        SerieLevel1=423
+        SerieLevel2=429
+        SerieLevel3=435
+    }
+    424 ^{
+        AcrynLevel=2
+        AcrynSerie=Upgraded Gripper I-III
+        LevelsCount=3
+        Name=Upgraded Gripper II
+        SerieLevel1=418
+        SerieLevel2=424
+        SerieLevel3=430
+    }
+    425 ^{
+        AcrynLevel=2
+        AcrynSerie=Upgraded Shield Generator I-III
+        LevelsCount=3
+        Name=Upgraded Shield Generator II
+        SerieLevel1=419
+        SerieLevel2=425
+        SerieLevel3=431
+    }
+    426 ^{
+        AcrynLevel=2
+        AcrynSerie=Upgraded Engine I-III
+        LevelsCount=3
+        Name=Upgraded Engine II
+        SerieLevel1=420
+        SerieLevel2=426
+        SerieLevel3=432
+    }
+    427 ^{
+        AcrynLevel=2
+        AcrynSerie=Upgraded Fuel Tank I-III
+        LevelsCount=3
+        Name=Upgraded Fuel Tank II
+        SerieLevel1=421
+        SerieLevel2=427
+        SerieLevel3=433
+    }
+    428 ^{
+        AcrynLevel=2
+        AcrynSerie=Upgraded Radar I-III
+        LevelsCount=3
+        Name=Upgraded Radar II
+        SerieLevel1=422
+        SerieLevel2=428
+        SerieLevel3=434
+    }
+    429 ^{
+        AcrynLevel=2
+        AcrynSerie=Upgraded Scanner I-III
+        LevelsCount=3
+        Name=Upgraded Scanner II
+        SerieLevel1=423
+        SerieLevel2=429
+        SerieLevel3=435
+    }
+    430 ^{
+        AcrynLevel=3
+        AcrynSerie=Upgraded Gripper I-III
+        LevelsCount=3
+        Name=Upgraded Gripper III
+        SerieLevel1=418
+        SerieLevel2=424
+        SerieLevel3=430
+    }
+    431 ^{
+        AcrynLevel=3
+        AcrynSerie=Upgraded Shield Generator I-III
+        LevelsCount=3
+        Name=Upgraded Shield Generator III
+        SerieLevel1=419
+        SerieLevel2=425
+        SerieLevel3=431
+    }
+    432 ^{
+        AcrynLevel=3
+        AcrynSerie=Upgraded Engine I-III
+        LevelsCount=3
+        Name=Upgraded Engine III
+        SerieLevel1=420
+        SerieLevel2=426
+        SerieLevel3=432
+    }
+    433 ^{
+        AcrynLevel=3
+        AcrynSerie=Upgraded Fuel Tank I-III
+        LevelsCount=3
+        Name=Upgraded Fuel Tank III
+        SerieLevel1=421
+        SerieLevel2=427
+        SerieLevel3=433
+    }
+    434 ^{
+        AcrynLevel=3
+        AcrynSerie=Upgraded Radar I-III
+        LevelsCount=3
+        Name=Upgraded Radar III
+        SerieLevel1=422
+        SerieLevel2=428
+        SerieLevel3=434
+    }
+    435 ^{
+        AcrynLevel=3
+        AcrynSerie=Upgraded Scanner I-III
+        LevelsCount=3
+        Name=Upgraded Scanner III
+        SerieLevel1=423
+        SerieLevel2=429
+        SerieLevel3=435
+    }
+    436 ^{
+        AcrynLevel=1
+        AcrynSerie=Biogenic Droid I-III
+        BioEquip=1
+        LevelsCount=3
+        Name=Biogenic Droid I
+        SerieLevel1=436
+        SerieLevel2=437
+        SerieLevel3=438
+    }
+    437 ^{
+        AcrynLevel=2
+        AcrynSerie=Biogenic Droid I-III
+        BioEquip=1
+        LevelsCount=3
+        Name=Biogenic Droid II
+        SerieLevel1=436
+        SerieLevel2=437
+        SerieLevel3=438
+    }
+    438 ^{
+        AcrynLevel=3
+        AcrynSerie=Biogenic Droid I-III
+        BioEquip=1
+        LevelsCount=3
+        Name=Biogenic Droid III
+        SerieLevel1=436
+        SerieLevel2=437
+        SerieLevel3=438
+    }
+    439 ^{
+        AcrynLevel=1
+        AcrynSerie=Nanobrolite Droid I-III
+        LevelsCount=3
+        Name=Nanobrolite Droid I
+        SerieLevel1=439
+        SerieLevel2=442
+        SerieLevel3=445
+    }
+    440 ^{
+        AcrynLevel=1
+        AcrynSerie=Nanobrolite Engine I-III
+        LevelsCount=3
+        Name=Nanobrolite Engine I
+        SerieLevel1=440
+        SerieLevel2=443
+        SerieLevel3=446
+    }
+    441 ^{
+        AcrynLevel=1
+        AcrynSerie=Nanobrolite Shield Generator I-III
+        LevelsCount=3
+        Name=Nanobrolite Shield Generator I
+        SerieLevel1=441
+        SerieLevel2=444
+        SerieLevel3=447
+    }
+    442 ^{
+        AcrynLevel=2
+        AcrynSerie=Nanobrolite Droid I-III
+        LevelsCount=3
+        Name=Nanobrolite Droid II
+        SerieLevel1=439
+        SerieLevel2=442
+        SerieLevel3=445
+    }
+    443 ^{
+        AcrynLevel=2
+        AcrynSerie=Nanobrolite Engine I-III
+        LevelsCount=3
+        Name=Nanobrolite Engine II
+        SerieLevel1=440
+        SerieLevel2=443
+        SerieLevel3=446
+    }
+    444 ^{
+        AcrynLevel=2
+        AcrynSerie=Nanobrolite Shield Generator I-III
+        LevelsCount=3
+        Name=Nanobrolite Shield Generator II
+        SerieLevel1=441
+        SerieLevel2=444
+        SerieLevel3=447
+    }
+    445 ^{
+        AcrynLevel=3
+        AcrynSerie=Nanobrolite Droid I-III
+        LevelsCount=3
+        Name=Nanobrolite Droid III
+        SerieLevel1=439
+        SerieLevel2=442
+        SerieLevel3=445
+    }
+    446 ^{
+        AcrynLevel=3
+        AcrynSerie=Nanobrolite Engine I-III
+        LevelsCount=3
+        Name=Nanobrolite Engine III
+        SerieLevel1=440
+        SerieLevel2=443
+        SerieLevel3=446
+    }
+    447 ^{
+        AcrynLevel=3
+        AcrynSerie=Nanobrolite Shield Generator I-III
+        LevelsCount=3
+        Name=Nanobrolite Shield Generator III
+        SerieLevel1=441
+        SerieLevel2=444
+        SerieLevel3=447
+    }
+    448 ^{
+        AcrynLevel=1
+        AcrynSerie=Ultraalloy Scanner I-III
+        LevelsCount=3
+        Name=Ultraalloy Scanner I
+        SerieLevel1=448
+        SerieLevel2=452
+        SerieLevel3=459
+    }
+    449 ^{
+        AcrynLevel=1
+        AcrynSerie=Ultraalloy Radar I-III
+        LevelsCount=3
+        Name=Ultraalloy Radar I
+        SerieLevel1=449
+        SerieLevel2=453
+        SerieLevel3=456
+    }
+    450 ^{
+        AcrynLevel=1
+        AcrynSerie=Ultraalloy Fuel Tank I-III
+        LevelsCount=3
+        Name=Ultraalloy Fuel Tank I
+        SerieLevel1=450
+        SerieLevel2=454
+        SerieLevel3=457
+    }
+    451 ^{
+        AcrynLevel=1
+        AcrynSerie=Ultraalloy Gripper I-III
+        LevelsCount=3
+        Name=Ultraalloy Gripper I
+        SerieLevel1=451
+        SerieLevel2=455
+        SerieLevel3=458
+    }
+    452 ^{
+        AcrynLevel=2
+        AcrynSerie=Ultraalloy Scanner I-III
+        LevelsCount=3
+        Name=Ultraalloy Scanner II
+        SerieLevel1=448
+        SerieLevel2=452
+        SerieLevel3=459
+    }
+    453 ^{
+        AcrynLevel=2
+        AcrynSerie=Ultraalloy Radar I-III
+        LevelsCount=3
+        Name=Ultraalloy Radar II
+        SerieLevel1=449
+        SerieLevel2=453
+        SerieLevel3=456
+    }
+    454 ^{
+        AcrynLevel=2
+        AcrynSerie=Ultraalloy Fuel Tank I-III
+        LevelsCount=3
+        Name=Ultraalloy Fuel Tank II
+        SerieLevel1=450
+        SerieLevel2=454
+        SerieLevel3=457
+    }
+    455 ^{
+        AcrynLevel=2
+        AcrynSerie=Ultraalloy Gripper I-III
+        LevelsCount=3
+        Name=Ultraalloy Gripper II
+        SerieLevel1=451
+        SerieLevel2=455
+        SerieLevel3=458
+    }
+    456 ^{
+        AcrynLevel=3
+        AcrynSerie=Ultraalloy Radar I-III
+        LevelsCount=3
+        Name=Ultraalloy Radar III
+        SerieLevel1=449
+        SerieLevel2=453
+        SerieLevel3=456
+    }
+    457 ^{
+        AcrynLevel=3
+        AcrynSerie=Ultraalloy Fuel Tank I-III
+        LevelsCount=3
+        Name=Ultraalloy Fuel Tank III
+        SerieLevel1=450
+        SerieLevel2=454
+        SerieLevel3=457
+    }
+    458 ^{
+        AcrynLevel=3
+        AcrynSerie=Ultraalloy Gripper I-III
+        LevelsCount=3
+        Name=Ultraalloy Gripper III
+        SerieLevel1=451
+        SerieLevel2=455
+        SerieLevel3=458
+    }
+    459 ^{
+        AcrynLevel=3
+        AcrynSerie=Ultraalloy Scanner I-III
+        LevelsCount=3
+        Name=Ultraalloy Scanner III
+        SerieLevel1=448
+        SerieLevel2=452
+        SerieLevel3=459
+    }
+    460 ^{
+        AcrynLevel=1
+        AcrynSerie=Kindhearted Lyakusha I-IV
+        LevelsCount=4
+        Name=Kindhearted Lyakusha Hull I
+        SerieLevel1=460
+        SerieLevel2=461
+        SerieLevel3=462
+        SerieLevel4=463
+    }
+    461 ^{
+        AcrynLevel=2
+        AcrynSerie=Kindhearted Lyakusha I-IV
+        LevelsCount=4
+        Name=Kindhearted Lyakusha Hull II
+        SerieLevel1=460
+        SerieLevel2=461
+        SerieLevel3=462
+        SerieLevel4=463
+    }
+    462 ^{
+        AcrynLevel=3
+        AcrynSerie=Kindhearted Lyakusha I-IV
+        LevelsCount=4
+        Name=Kindhearted Lyakusha Hull III
+        SerieLevel1=460
+        SerieLevel2=461
+        SerieLevel3=462
+        SerieLevel4=463
+    }
+    463 ^{
+        AcrynLevel=4
+        AcrynSerie=Kindhearted Lyakusha I-IV
+        LevelsCount=4
+        Name=Kindhearted Lyakusha Hull IV
+        SerieLevel1=460
+        SerieLevel2=461
+        SerieLevel3=462
+        SerieLevel4=463
+    }
+    464 ^{
+        AcrynLevel=1
+        AcrynSerie=Peaceful Corsair I-IV
+        LevelsCount=4
+        Name=Peaceful Corsair Hull I
+        SerieLevel1=464
+        SerieLevel2=465
+        SerieLevel3=466
+        SerieLevel4=467
+    }
+    465 ^{
+        AcrynLevel=2
+        AcrynSerie=Peaceful Corsair I-IV
+        LevelsCount=4
+        Name=Peaceful Corsair Hull II
+        SerieLevel1=464
+        SerieLevel2=465
+        SerieLevel3=466
+        SerieLevel4=467
+    }
+    466 ^{
+        AcrynLevel=3
+        AcrynSerie=Peaceful Corsair I-IV
+        LevelsCount=4
+        Name=Peaceful Corsair Hull III
+        SerieLevel1=464
+        SerieLevel2=465
+        SerieLevel3=466
+        SerieLevel4=467
+    }
+    467 ^{
+        AcrynLevel=4
+        AcrynSerie=Peaceful Corsair I-IV
+        LevelsCount=4
+        Name=Peaceful Corsair Hull IV
+        SerieLevel1=464
+        SerieLevel2=465
+        SerieLevel3=466
+        SerieLevel4=467
+    }
+    468 ^{
+        AcrynLevel=1
+        AcrynSerie=Conscientious Renegal I-IV
+        LevelsCount=4
+        Name=Conscientious Renegal Hull I
+        SerieLevel1=468
+        SerieLevel2=469
+        SerieLevel3=470
+        SerieLevel4=471
+    }
+    469 ^{
+        AcrynLevel=2
+        AcrynSerie=Conscientious Renegal I-IV
+        LevelsCount=4
+        Name=Conscientious Renegal Hull II
+        SerieLevel1=468
+        SerieLevel2=469
+        SerieLevel3=470
+        SerieLevel4=471
+    }
+    470 ^{
+        AcrynLevel=3
+        AcrynSerie=Conscientious Renegal I-IV
+        LevelsCount=4
+        Name=Conscientious Renegal Hull III
+        SerieLevel1=468
+        SerieLevel2=469
+        SerieLevel3=470
+        SerieLevel4=471
+    }
+    471 ^{
+        AcrynLevel=4
+        AcrynSerie=Conscientious Renegal I-IV
+        LevelsCount=4
+        Name=Conscientious Renegal Hull IV
+        SerieLevel1=468
+        SerieLevel2=469
+        SerieLevel3=470
+        SerieLevel4=471
+    }
+    472 ^{
+        AcrynLevel=1
+        AcrynSerie=Dandy I-IV
+        LevelsCount=4
+        Name=Dandy Hull I
+        SerieLevel1=472
+        SerieLevel2=473
+        SerieLevel3=474
+        SerieLevel4=475
+    }
+    473 ^{
+        AcrynLevel=2
+        AcrynSerie=Dandy I-IV
+        LevelsCount=4
+        Name=Dandy Hull II
+        SerieLevel1=472
+        SerieLevel2=473
+        SerieLevel3=474
+        SerieLevel4=475
+    }
+    474 ^{
+        AcrynLevel=3
+        AcrynSerie=Dandy I-IV
+        LevelsCount=4
+        Name=Dandy Hull III
+        SerieLevel1=472
+        SerieLevel2=473
+        SerieLevel3=474
+        SerieLevel4=475
+    }
+    475 ^{
+        AcrynLevel=4
+        AcrynSerie=Dandy I-IV
+        LevelsCount=4
+        Name=Dandy Hull IV
+        SerieLevel1=472
+        SerieLevel2=473
+        SerieLevel3=474
+        SerieLevel4=475
+    }
+    476 ^{
+        AcrynLevel=1
+        AcrynSerie=Ironclad I-IV
+        LevelsCount=4
+        Name=Ironclad Hull I
+        SerieLevel1=476
+        SerieLevel2=477
+        SerieLevel3=478
+        SerieLevel4=479
+    }
+    477 ^{
+        AcrynLevel=2
+        AcrynSerie=Ironclad I-IV
+        LevelsCount=4
+        Name=Ironclad Hull II
+        SerieLevel1=476
+        SerieLevel2=477
+        SerieLevel3=478
+        SerieLevel4=479
+    }
+    478 ^{
+        AcrynLevel=3
+        AcrynSerie=Ironclad I-IV
+        LevelsCount=4
+        Name=Ironclad Hull III
+        SerieLevel1=476
+        SerieLevel2=477
+        SerieLevel3=478
+        SerieLevel4=479
+    }
+    479 ^{
+        AcrynLevel=4
+        AcrynSerie=Ironclad I-IV
+        LevelsCount=4
+        Name=Ironclad Hull IV
+        SerieLevel1=476
+        SerieLevel2=477
+        SerieLevel3=478
+        SerieLevel4=479
+    }
+    480 ^{
+        AcrynLevel=1
+        AcrynSerie=Dumbo I-IV
+        LevelsCount=4
+        Name=Dumbo Hull I
+        SerieLevel1=480
+        SerieLevel2=481
+        SerieLevel3=482
+        SerieLevel4=483
+    }
+    481 ^{
+        AcrynLevel=2
+        AcrynSerie=Dumbo I-IV
+        LevelsCount=4
+        Name=Dumbo Hull II
+        SerieLevel1=480
+        SerieLevel2=481
+        SerieLevel3=482
+        SerieLevel4=483
+    }
+    482 ^{
+        AcrynLevel=3
+        AcrynSerie=Dumbo I-IV
+        LevelsCount=4
+        Name=Dumbo Hull III
+        SerieLevel1=480
+        SerieLevel2=481
+        SerieLevel3=482
+        SerieLevel4=483
+    }
+    483 ^{
+        AcrynLevel=4
+        AcrynSerie=Dumbo I-IV
+        LevelsCount=4
+        Name=Dumbo Hull IV
+        SerieLevel1=480
+        SerieLevel2=481
+        SerieLevel3=482
+        SerieLevel4=483
+    }
+    484 ^{
+        Name=Benevolent Lyakusha Hull
+        NonSearchable=1
+    }
+    485 ^{
+        Name=Pacifist Corsair Hull
+        NonSearchable=1
+    }
+    486 ^{
+        Name=Honest Renegal Hull
+        NonSearchable=1
+    }
+    487 ^{
+        NonSearchable=1
+    }
+    488 ^{
+        NonSearchable=1
+    }
+    489 ^{
+        NonSearchable=1
+    }
+    490 ^{
+        Name=Shadow of the Empire
+        NonSearchable=1
+    }
+    491 ^{
+        Name=Hybrid Droid
+        NonSearchable=1
+    }
+    492 ^{
+        Name=Hybrid Droid
+        NonSearchable=1
+    }
+    493 ^{
+        Name=Hybrid Droid
+        NonSearchable=1
+    }
+    494 ^{
+        Name=Hybrid Droid
+        NonSearchable=1
+    }
+    495 ^{
+        Name=Hybrid Droid
+        NonSearchable=1
+    }
+    496 ^{
+        Name=Hybrid Droid
+        NonSearchable=1
+    }
+    497 ^{
+        Name=Hybrid Droid
+        NonSearchable=1
+    }
+    498 ^{
+        Name=Acrynator
+        NonSearchable=1
+    }
+}

@@ -1,0 +1,193 @@
+FormInfo ^{
+    br=<br>
+}
+FormRuins ^{
+    BK ^{
+        AddDebtContinue=Wait... There's a red "CR" opposite your name in the computer. This deplorable fact means you are malignant loan defaulter. We demand a repayment of our funds! Until this requirement is met, you are not allowed to conduct any activity here.
+        DebtNoAccess=We demand a repayment of our funds! Until this requirement is met, you are not allowed to conduct any activity here.
+        DebtNoWar=To hell loans, <Player>! Our system has been attacked, evacuation of employees is going. Lending has been temporarily suspended!
+        Deposit ^{
+            BK=Great, <Player>! We have the opportunity to open a deposit account for rangers! You may deposit any amount more than <clr>1000<clrEnd> cr at <clr><Percent>%<clrEnd> of interest per annum with monthly capitalization. The account can be replenished at any time on our branded galanet-website <clr>Intersellar<clrEnd>, however you may withdraw your money no earlier than <clr>31<clrEnd> days after opening of the deposit. For depositors who hold their deposits for more than a year, we periodically hold prize draws!
+            BK=Well, when taking a loan, the accrual of interest on a deposit account is temporarily frozen until the debt is paid in full.
+            BK=How much money do you want to deposit?
+            BKAfterNo=Well, if you don't need it, why are you asking? Go to another business center, perhaps their conditions will suit you more. Just remember, our center <BK> has the best interest rates in the universe!
+            BKAfterOk=Good, <Player>! We have opened a deposit account for you in the amount of <SendMoney> cr. at <clr><Percent>%<clrEnd> per annum.
+            PlayerNo=I don't need a deposit account
+            PlayerOkAveMoney=Deposit <AveMoney> cr.
+            PlayerOkMaxMoney=Deposit <MaxMoney> cr.
+            PlayerOkMinMoney=Deposit <MinMoney> cr.
+            PlayerSend=Open deposit account.
+        }
+        RetDeposit ^{
+            BK=Deposite account has been closed. We look forward to further cooperation. Good luck.
+            PlayerSend=Withdraw <Money> cr from deposit account
+            War=There is no time for depositing, <Player>! The system was attacked, urgent evacuation of employees is going. All accounts are frozen!
+        }
+        TakeDebt ^{
+            BKAfterOk=Excellent, <Player>! We have transferred <SendMoney> cr to your account. Now your debt, taking into account our commission, is <DebtMoney> cr.
+            BKAfterOk=We hope that before <Date> you will have time to pay it off in any business center or on our branded galanet-website <clr>Intersellar<clrEnd>. Otherwise, we will be forced to impose penalties.
+            BKAfterOk=By the way, we recommend to spend this money in our hardware store. Our prices are slightly higher than usual, but the choice is the best in the galaxy!
+        }
+    }
+}
+GalaxyNews ^{
+    BK ^{
+        DebtInfo=<color=255,240,100>Message from the business center:</color><br>Dear <Player>! You failed to repay your <OldMoney> cr. loan on time and were fined <Penalty> cr. We kindly ask you to come to the nearest business center and pay off all your debts before <NewDate>.<br>Best regards, Administration.
+        DebtInfoContinue=<color=255,240,100>Message from the business center:</color><br>Dear <Player>! You again failed to repay your loan in the amount of <OldMoney> cr. We are pleased to inform you that you have again been fined the amount of <Penalty> cr. In order not to be unfounded, we put a bounty on your head for the pirates. So hurry up and repay before <NewDate> before we raise the bounty even more.<br>Sincerely, Administration.
+    }
+}
+FormInfo ^{
+    td_otstup_1=<td=155>
+    td_otstup_2=<td=225>
+    td_otstup_4=<td=156>
+    td_otstup_5=<td=253>
+    td_otstup_6=<td=264>
+    td_otstup_7=<td=267>
+    td_otstup_8=<td=269>
+}
+Script ^{
+    Mod_ExpBK ~{
+        32=<br>
+        178=Our network strives to keep its customers up to date with all the major events in the business world, so we are happy to provide you with a convenient gadget to keep track of the latest trading news.
+        95=Convenient display of galactic trade news on the general notification bar: <0>
+        167=Enabled<br>
+        170=Disabled<br>
+        168=<color=0,50,200>Enable</color> trading news output
+        169=<color=0,50,200>Enable</color> trading news output
+        165=<color=0,50,200>Disable</color> trading news output
+        166=<color=0,50,200>Disable</color> trading news output
+        190=<color=255,240,100>Latest economic news:</color>
+        164=Intersellar
+        191=Here you can access your deposit account, pay off your loan debt or, if you have a valid trading license, use the online terminal for remote purchase of goods.
+        128=</color><color=0,50,200>tomorrow</color>.
+        129=</color>in just <0> days.
+        107=Based on your reputation as an experienced trader, we would also like to suggest that you purchase a special <clr>trading license<clrEnd>, which will not only strengthen your status in the business environment, but also open up a number of new commercial opportunities.
+        123=What is this trade license?
+        68=Oh, I see you are interested in our special offer? Great!<br><clr>The trade license<clrEnd> is not just a formal document. For all the trading operations of its owners, we have the closest supervision. When you buy and, that's more importantly, when you sell various products, thereby making a financial profit, we carefully record each credit involved in the process. Subsequently, we transfer some of this information to the <clr>ranger centers<clrEnd>, relieving them of the obligation to obtain it on their own. Based on this information, ranger centers compile their statistics and lists of rangers-traders. Of course, the information we receive is usually much more accurate, and therefore the indexing of license holders in these lists is <clr>more accurate<clrEnd>.<br>But don't worry, the illegal aspect of your activity (if any) is completely beyond our control. Of course, as an official organization, we strongly condemn such actions, however, as you know, what is illegal in one place does not necessarily turn out to be illegal in another place... Or even in the same one... In a year or two. What is even more well known is that loans do not smell. In the latter, by the way, I am convinced personally.
+        115=Next
+        64=Of course, that's not all. Having a trading license will give you access to our special <clr>terminal for remote purchase of goods<clrEnd> on all coalition and even pirate planets. Yes, yes, you heard right! Just imagine what prospects can unfold before you! How many of the biggest sales you will be able to visit, while being on the other side of the galaxy! Of course, we will also receive a modest percentage of your purchases, but, <Player>, you must agree, everyone needs to live on something.<br>By the way, the cheapest way to use such a terminal is on board our business centers, and for more practical customers on our branded galanet site <clr>Intersellar<clrEnd> provides convenient access to the terminal online.<br>Do not forget also about the official status. <clr>A trading license<clrEnd> will increase your credibility in the business environment, and credibility always brings better conditions and more trust.<br>Now all you need to do is say YES! <clr>5<clrEnd> years you will turn from a simple amateur into a real professional, into a business shark! So tell me, <Player>, is there really a better use for pathetic <0> cr?! Come on, be brave - just do it, just say "YES!" your new possibilities!
+        153=YES!
+        150=This is the right attitude, <Player>! Can you already feel the flames of commerce coursing through your veins? From now on, you are a real merchant!<br>Although I was a little cunning about one signature. In fact, three of your signatures are required at once. Yes, on every instance. No, leave this field blank. Okay, it's okay, now we'll print it out again... And here's another form <clr>DD-1.04<clrEnd>...<br>Well, congratulations - now you are a real merchant already <clr>officially<clrEnd>. And don't forget to renew your license a month before it expires!
+        155=I'm not going to join the "Holy Fool" sect, but I'll still take a license
+        151=Well, what are you, really, I come to you with all my heart! And, by the way, it doesn't matter anymore... You got the license anyway.<br>By the way, I was a bit cunning about one signature. In fact, three of your signatures are required at once. Yes, on every instance. No, leave this field blank. Okay, it's okay, now we'll print it again...<br>Well, now you are a <clr>licensed<clrEnd> trader. And don't forget to renew your license a month before it expires!
+        116=Not interested
+        121=You don't understand what you're giving up, I strongly advise you to change your mind! There is no serious profit without investment, <Player> - think about it carefully.
+        154=Sorry, but I don't seem to have enough credits
+        152=How so, <Player>?! You are a galactic trader without five minutes! Well, it's okay - it's fixable. Let's get you a loan as soon as possible and you can immediately pay for the license.<br>What do you say?
+        156=How so, <Player>?! You are a galactic trader without five minutes! Well, it's okay - it's fixable. Just sell something you don't need... Your ship, for example. And you donвЂ™t have to look at me like that, you'll be able to repay the loan at the same time. And for a year or two just save up for a new one. By the way, we recently had a wonderful job opening for a janitor.<br>Hey, <Player>, wait, where are you going?!
+        127=We would also like to remind you that your <clr>trading license<clrEnd> is expiring <0> We strongly recommend renewing it, especially since renewing will cost you much less than buying a new license.
+        117=Renew trade license
+        65=Of course, <Player>, we will gladly renew your license. It is very nice to see such a punctual ranger: many people forget about timely renewal, as a result, losing time and money, because getting a new license costs them much more.<br>Renewal price is <0> cr, while the next <clr>5<clrEnd> years are summed up with the unexpired term, because taking care of you is our credo.
+        126=Excellent, I extend
+        60=A wise and profitable decision, <Player>! Now, give us your license here...<br>...<br><br>Well, that's it, the database has been updated, and the license has a fresh seal. By the way, forgery of the seal relies on a prison term. As I said: taking care of you is our credo.
+        23=I changed my mind
+        159=Very unwise of you. The license will expire, and you will still come back to us for renewal, only next time it will cost more.<br>Enjoy your overspending, Ranger <Player>.
+        124=We would also like to remind you that you can once again purchase <clr>trading license<clrEnd> from us, which will make your business life much easier.
+        125=Purchase a trading license
+        118=I'm glad you've decided to purchase our <clr>trading license<clrEnd> again. I will not retell its advantages, because you are no longer a beginner in this matter. I can only once again support your decision.<br>Oh, if only all humanoids were as intelligent as you, and quickly acquired trade licenses from us. Just imagine how our galaxy would change! Perhaps we would have already won the war a long time ago... Don't you agree, <Player>?<br>Anyway, I digress. The price of a trading license for you is only <0> cr, as usual, for a period of <clr>5<clrEnd> years.<br>Finishing?
+        120=Definitely
+        119=I knew I was right about you, <Player>. You are a real merchant. Yes, you are a real hero! Help us make the galaxy a better place! Let me shake the hero's hand... Don't you want to? Understand. We are simple financiers, and you are a Ranger! Where would we be without people like you.<br>Most importantly, in the heat of your exploits, do not forget to renew your license a month before the expiration date.
+        157=Probably not
+        158=And I thought that as a former licensed trader, you should be well aware of all the advantages of this document. Looks like I misunderstood you...<br>Well, I'd like to continue being an ex, ranger <Player>.
+        189=<color=255,240,100>Message from the business center:</color><br>Dear <Player>! Your <color=255,240,100>trading license</color> will expire in exactly three months. If you do not want to lose all the trading benefits associated with it, we recommend that you renew your license at any business center a month before its expiration.<br>An additional reminder will be sent to you at the same time as the renewal window opens.<br>Sincerely, Administration.
+        188=<color=255,240,100>Message from the business center:</color><br>Dear <Player>! Your <color=255,240,100>trading license</color> will expire in exactly one month. If you do not want to lose all the trading benefits associated with it, we recommend that you visit one of our centers for a timely renewal as soon as possible.<br>By the way, renewal will cost you less than issuing a new license , because we sincerely care about the financial well-being of our customers.<br> Sincerely, Administration.
+        110=All business centers have been destroyed. Your <color=255,240,100>trading license</color> is no longer valid.
+        149=<color=255,240,100>Message from the business center:</color><br>Dear <Player>! Your <color=255,240,100>trading license</color> has been canceled due to malicious delay on the loan.<br>Regards, Administration.
+        161=Available balance: <0> cr.<br>Annual interest: <1><br><br>Here you can quickly deposit or withdraw funds from your account with a commission of only <clr>5%<clrEnd>. <br><br>Account balance cannot be less than <clr>1000<clrEnd> cr. The minimum deposit or withdrawal amount is <clr>100<clrEnd> cr.<br><2><3>
+        143=<color=0,50,200>frozen</color>
+        84=</color><br>Withdrawals will become available after <0> days.
+        160=</color><br>Your deposit account <color=0,50,200>is frozen</color> until the loan debt is fully repaid.
+        112=This terminal will allow you to remotely purchase the product you want on almost any inhabited planet.<br>Only <clr>legal<clrEnd> products can be purchased. A <clr>fee<clrEnd> is charged for using the terminal.
+        53=Confirm
+        57=Select another product
+        54=Purchase product [Order in progress]
+        55=Purchase product
+        36=Select galactic <clr>sector<clrEnd>:
+        38=Sorry, no planets suitable for remote purchase found.
+        102=Tortugatz
+        103=Nifigatz
+        182=Price:
+        183=Qty:
+        39=Which <clr>planet<clrEnd> would you like to purchase the item from? The star <clr>systems<clrEnd> corresponding to the planets are indicated in brackets.
+        77=Choose another planet
+        113=The warehouses of planet <0> currently have the following products:<br><br><1><br>The remote purchase fee is <2> on top of the cost of the purchased products. The exact amount of the commission is calculated based on the price per ton, and cannot be less than <clr>1<clrEnd> cr. (the price including the commission is indicated in brackets).<br>Which product are you interested in?
+        100=Enter the amount you want:
+        162=Order confirmation required.<br><0><br>Item: <1><br>Quantity: <2> t.<br>Price per ton: <3> cr.<br>Commission per ton: <4> cr.<br><5><br>Total cost: <6> cr.
+        163=Order confirmed.<br><0><br>Thank you for using our terminal for remote purchases.<br>In the next few days, the ordered goods will be delivered to your personal warehouse on planet <1>.
+        181=Your debt: <0> cr.<br>Maturity date: <1><br>Days left: <2><br>Number of overdue payments: <3><br><br>Here you can repay your credit debt for any remaining amount with a commission of only <clr>5%<clrEnd>.<br><br>The minimum payment amount is <clr>100<clrEnd> cr.
+        48=Back
+        135=Leave terminal
+        22=Increases the amount of experience gained from trading (percentage depends on the trade rating), and also unlocks access to the remote purchase of goods terminal.<br>Valid until <0>.
+        194=My deposit account
+        44=Withdraw funds
+        81=Your deposit account has been closed. Thank you for using the services of <color=0,50,200>Interseller</color>.
+        82=You are about to withdraw all available funds from your account. In this case, your deposit account <color=0,50,200>will be closed</color>, and you can open it again only at the nearest business center.<br><clr><clrEnd><br>Are you sure do you want to continue?
+        83=If you withdraw this amount, your account balance will be less than <color=0,50,200>1000</color> cr. All accounts with a balance less than <color=0,50,200>1000</color> cr. are automatically canceled and the remaining funds are transferred to the owner with a base fee of <color=0,50,200>5%</color>.<br><clr><clrEnd><br>Are you sure you want to continue ?
+        45=Enter the debit amount:
+        46=Top up
+        47=Enter top-up amount:
+        70=Trading news
+        192=Terminal for remote purchases
+        195=My loan debt
+        88=Pay off debt
+        89=Sorry, you don't have enough funds in your account to pay the fee for this transfer.
+        90=Thank you for the timely repayment of the loan. We look forward to further cooperation.
+        91=Sorry, your account does not have enough funds to fully repay the loan.
+        92=When repaying the loan for this amount, the remaining debt will be less than <color=0,50,200>100</color> cr. In this case, the balance will be automatically deducted from your account, and the loan will be <color=0,50,200>fully repaid</color>.<br><clr><clrEnd><br>Are you sure you want to continue?
+        93=Enter the repayment amount:
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ~{
+            Trade_license ^{
+                Description=
+                Icon=0
+                Name=Trading license
+                OnActCode ^{
+                    01=if(ScriptItemActionType(t_OnStep,11))
+                    02 ^{
+                        01=int infos=ShipFindCustomShipInfoByType(Player(),'Trade_license');
+                        02=int data=ShipCustomShipInfoData(Player(),infos,1);
+                        03=if(ShipCustomShipInfoData(0,CurInfo(),2)>-1)
+                        04 ^{
+                            01=ShipStatus(Player(),0,ShipCustomShipInfoData(0,CurInfo(),2));
+                            02=ShipCustomShipInfoData(0,CurInfo(),2,-1);
+                            03=ShipStatus(Player(),0,ShipStatus(Player(),0,)+(100-ShipStatus(Player(),0,)-ShipStatus(Player(),1)-ShipStatus(Player(),2)));
+                        }
+                        05=if(data<CurTurn())
+                        06 ^{
+                            01=ShipSpecialBonuses(Player(),bonSkill4,ShipSpecialBonuses(Player(),bonSkill4)-1);
+                            02=ShipDeleteCustomShipInfo(Player(),'Trade_license');
+                        }
+                    }
+                    03=else if(ScriptItemActionType(t_OnShipSellsGoods))
+                    04 ^{
+                        01=if(ShipCustomShipInfoData(0,CurInfo(),2)==-1)
+                        02 ^{
+                            01=ShipCustomShipInfoData(0,CurInfo(),2,ShipStatus(Player(),0));
+                            02=ShipStatus(Player(),0,ShipStatus(Player(),0)+155);
+                        }
+                    }
+                    05=else
+                    06 ^{
+                        01=if(ShipCustomShipInfoData(0,CurInfo(),2)>-1)
+                        02 ^{
+                            01=ShipStatus(Player(),0,ShipCustomShipInfoData(0,CurInfo(),2));
+                            02=ShipCustomShipInfoData(0,CurInfo(),2,-1);
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnStep,t_OnShipSellsGoods,t_OnEnteringForm,t_OnReEnteringForm,t_OnLeavingForm
+                OnActStepTypes=11
+            }
+        }
+        DepositInfo ^{
+            Name=Deposit
+            Text=A deposit account has been opened in your name at <Percent><color=255,240,100>%</color> per annum.
+            Text=<clr><clrEnd>
+            Text=Available balance: <Sum> cr.
+            Text=Opening date: <Date>
+        }
+    }
+}

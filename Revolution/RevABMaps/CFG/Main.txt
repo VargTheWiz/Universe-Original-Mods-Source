@@ -1,0 +1,34 @@
+Data ^{
+    ABMap ^{
+        19 ^{
+            Path=ABMap.Nonsense
+            Portal=1,2,3
+            Priority=100
+        }
+        20 ^{
+            Path=ABMap.Pulsar
+            Portal=1,2,3
+            Priority=100
+        }
+        21 ^{
+            Path=ABMap.Strolocobs
+            Portal=1,2,3
+            Priority=100
+        }
+        22 ^{
+            Path=ABMap.Tachanka
+            Portal=1,2,3
+            Priority=100
+        }
+        23 ^{
+            Path=ABMap.Fifth_Dimension
+            Portal=1,2,3
+            Priority=100
+        }
+        24 ^{
+            Path=ABMap.Spider's_Lair
+            Portal=1,2,3
+            Priority=100
+        }
+    }
+}

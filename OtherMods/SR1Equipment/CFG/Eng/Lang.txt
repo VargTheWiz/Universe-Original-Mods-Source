@@ -1,0 +1,1423 @@
+MicroModuls ~{
+    SR1Equipment_DaredevilHull ^{
+        Cost=120
+        CustomTag=SR1Equipment_DaredevilHull
+        Equipments=Hull
+        KindGraph=SRPeople
+        LockedAcryn=3
+        Name=Daredevil
+        OnPlanets=1
+        Owner=People
+        Priority=30
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A series of hulls identical to the human ranger ships, made for by the Klissan War Museum Network of the Solar System. Despite the exact repetition of the design from three hundred years ago, the ship is technically completely modern. The ship's armor is supplemented with acryn elements, which increases its cost. It is known that humans love luxury, so the ship is decorated with mahogany material inside, and there is also a cozy Jacuzzi onboard, where the pilot can relax after his space adventures. An ideal choice for a humanoid who is not indifferent to the history of humanity.</color>
+        bonSlotArt=-2
+        bonSlotWeapon=-2
+    }
+    SR1Equipment_WarriorHull ^{
+        Cost=120
+        CustomTag=SR1Equipment_WarriorHull
+        Equipments=Hull
+        KindGraph=SRMaloc
+        LockedAcryn=3
+        Name=Champion
+        OnPlanets=1
+        Owner=Maloc
+        Priority=30
+        Special=1
+        Text=<color=248,252,248>Acryne hull series created by order of General Garndyim. Design fully replicates maloc rangers hull, whose names were written in galaxy history for valorous doings in the Klissan War three hundred years ago. Formidable and majestic, this hull makes any warrior salute it on reflex.</color>
+        bonSlotArt=-2
+        bonSlotWeapon=-2
+    }
+    SR1Equipment_CunningHull ^{
+        Cost=120
+        CustomTag=SR1Equipment_CunningHull
+        Equipments=Hull
+        KindGraph=SRPeleng
+        LockedAcryn=3
+        Name=Trickster
+        OnPlanets=1
+        Owner=Peleng
+        Priority=30
+        Size=120
+        Special=1
+        Text=<color=248,252,248>Peleng ranger ships used in thirty first century were not only participating in military operations splendidly but also were surprisingly good in smuggling questionable goods virtually anywhere. Exactly because of that one high-standing lyakusha ordered development of his own hull on this particular archaic basis. Visual design got to be almost the same, but most of internal functionality were made with modern standarts, even cutting edge technology was used - acryning. Unforunately, someone from lyakusha's nearest entourage decided that hull was too good exclusive for him and leaked blueprints to public.</color>
+        bonSlotArt=-2
+        bonSlotWeapon=-2
+    }
+    SR1Equipment_RationalistHull ^{
+        Cost=120
+        CustomTag=SR1Equipment_RationalistHull
+        Equipments=Hull
+        KindGraph=SRFei
+        LockedAcryn=3
+        Name=Rationalist
+        OnPlanets=1
+        Owner=Fei
+        Priority=30
+        Special=1
+        Text=<color=248,252,248>The design of Feyan ranger ships had changed little since the Klissan War, but this has not prevented scientists from reconstructing the models of those years, but with the use of acryn technologies. They explain this by the fact that, from a technical point of view, the old hulls may still have undeveloped potential. After much scientific debate, where respected dalani painted ten-story formulas on holographic boards while their opponents slapped themselves in the face, not everyone was convinced, although history connoisseurs were still delighted. From modern buildings, these differ not only in lighter color, but also in interior decoration. Otherwise, the differences are minimal, including efficiency and strength.</color>
+        bonSlotArt=-2
+        bonSlotWeapon=-2
+    }
+    SR1Equipment_PeacemakerHull ^{
+        Cost=120
+        CustomTag=SR1Equipment_PeacemakerHull
+        Equipments=Hull
+        KindGraph=SRGaal
+        LockedAcryn=3
+        Name=Peacemaker
+        OnPlanets=1
+        Owner=Gaal
+        Priority=30
+        Special=1
+        Text=<color=248,252,248>In process of long and thorought thoughts about the Universe's Fate, Everlasting Harmony and Raison d'Etre of every existing race, famous iike-baanist Noo-A'tra came to conclusion: space composiotion is incompleted without spacefring ships as beautiful as ones from times, when greatest enigma in Coalition's history was solved - Klissan aggression's reason. The Wise Gaal invested in gaalian ranger hull reconstruction project, but added his own condition: hull's armor should be infused with acryn, as symbol Past's Projections Into The Future.</color>
+        bonSlotArt=-2
+        bonSlotWeapon=-2
+    }
+    SR1Equipment_RemEngine1 ^{
+        AcrynLevel=1
+        AcrynSerie=Remastive engine I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemEngine1
+        Equipments=Engine
+        KindGraph=SR0
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive engine I
+        OnPlanets=1
+        Owner=Any
+        Priority=0
+        SerieLevel1=SR1Equipment_RemEngine1
+        SerieLevel2=SR1Equipment_RemEngine2
+        SerieLevel3=SR1Equipment_RemEngine3
+        SerieLevel4=SR1Equipment_RemEngine4
+        SerieLevel5=SR1Equipment_RemEngine5
+        SerieLevel6=SR1Equipment_RemEngine6
+        SerieLevel7=SR1Equipment_RemEngine7
+        SerieLevel8=SR1Equipment_RemEngine8
+        Special=1
+        Text=<color=248,252,248>Modern analogues of space engines restored according to the blueprints from era of the Klissan Invasion. Mass production of such samples was established after scientists performed theoretical calculations proving that such engines will not be inferior to modern ones after being subjected to acryn modernization. The low cost of manufacturing has contributed to an economical price that suits many buyers.</color>
+    }
+    SR1Equipment_RemEngine2 ^{
+        AcrynLevel=2
+        AcrynSerie=Remastive engine I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemEngine2
+        Equipments=Engine
+        KindGraph=SR1
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive engine II
+        OnPlanets=1
+        Owner=Any
+        Priority=20
+        SerieLevel1=SR1Equipment_RemEngine1
+        SerieLevel2=SR1Equipment_RemEngine2
+        SerieLevel3=SR1Equipment_RemEngine3
+        SerieLevel4=SR1Equipment_RemEngine4
+        SerieLevel5=SR1Equipment_RemEngine5
+        SerieLevel6=SR1Equipment_RemEngine6
+        SerieLevel7=SR1Equipment_RemEngine7
+        SerieLevel8=SR1Equipment_RemEngine8
+        Special=1
+        Text=<color=248,252,248>Modern analogues of space engines restored according to the blueprints from era of the Klissan Invasion. Mass production of such samples was established after scientists performed theoretical calculations proving that such engines will not be inferior to modern ones after being subjected to acryn modernization. The low cost of manufacturing has contributed to an economical price that suits many buyers.</color>
+    }
+    SR1Equipment_RemEngine3 ^{
+        AcrynLevel=3
+        AcrynSerie=Remastive engine I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemEngine3
+        Equipments=Engine
+        KindGraph=SR2
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive engine III
+        OnPlanets=1
+        Owner=Any
+        Priority=30
+        SerieLevel1=SR1Equipment_RemEngine1
+        SerieLevel2=SR1Equipment_RemEngine2
+        SerieLevel3=SR1Equipment_RemEngine3
+        SerieLevel4=SR1Equipment_RemEngine4
+        SerieLevel5=SR1Equipment_RemEngine5
+        SerieLevel6=SR1Equipment_RemEngine6
+        SerieLevel7=SR1Equipment_RemEngine7
+        SerieLevel8=SR1Equipment_RemEngine8
+        Special=1
+        Text=<color=248,252,248>Modern analogues of space engines restored according to the blueprints from era of the Klissan Invasion. Mass production of such samples was established after scientists performed theoretical calculations proving that such engines will not be inferior to modern ones after being subjected to acryn modernization. The low cost of manufacturing has contributed to an economical price that suits many buyers.</color>
+    }
+    SR1Equipment_RemEngine4 ^{
+        AcrynLevel=4
+        AcrynSerie=Remastive engine I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemEngine4
+        Equipments=Engine
+        KindGraph=SR3
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive engine IV
+        OnPlanets=1
+        Owner=Any
+        Priority=40
+        SerieLevel1=SR1Equipment_RemEngine1
+        SerieLevel2=SR1Equipment_RemEngine2
+        SerieLevel3=SR1Equipment_RemEngine3
+        SerieLevel4=SR1Equipment_RemEngine4
+        SerieLevel5=SR1Equipment_RemEngine5
+        SerieLevel6=SR1Equipment_RemEngine6
+        SerieLevel7=SR1Equipment_RemEngine7
+        SerieLevel8=SR1Equipment_RemEngine8
+        Special=1
+        Text=<color=248,252,248>Modern analogues of space engines restored according to the blueprints from era of the Klissan Invasion. Mass production of such samples was established after scientists performed theoretical calculations proving that such engines will not be inferior to modern ones after being subjected to acryn modernization. The low cost of manufacturing has contributed to an economical price that suits many buyers.</color>
+    }
+    SR1Equipment_RemEngine5 ^{
+        AcrynLevel=5
+        AcrynSerie=Remastive engine I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemEngine5
+        Equipments=Engine
+        KindGraph=SR4
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive engine V
+        OnPlanets=1
+        Owner=Any
+        Priority=60
+        SerieLevel1=SR1Equipment_RemEngine1
+        SerieLevel2=SR1Equipment_RemEngine2
+        SerieLevel3=SR1Equipment_RemEngine3
+        SerieLevel4=SR1Equipment_RemEngine4
+        SerieLevel5=SR1Equipment_RemEngine5
+        SerieLevel6=SR1Equipment_RemEngine6
+        SerieLevel7=SR1Equipment_RemEngine7
+        SerieLevel8=SR1Equipment_RemEngine8
+        Special=1
+        Text=<color=248,252,248>Modern analogues of space engines restored according to the blueprints from era of the Klissan Invasion. Mass production of such samples was established after scientists performed theoretical calculations proving that such engines will not be inferior to modern ones after being subjected to acryn modernization. The low cost of manufacturing has contributed to an economical price that suits many buyers.</color>
+    }
+    SR1Equipment_RemEngine6 ^{
+        AcrynLevel=6
+        AcrynSerie=Remastive engine I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemEngine6
+        Equipments=Engine
+        KindGraph=SR5
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive engine VI
+        OnPlanets=1
+        Owner=Any
+        Priority=70
+        SerieLevel1=SR1Equipment_RemEngine1
+        SerieLevel2=SR1Equipment_RemEngine2
+        SerieLevel3=SR1Equipment_RemEngine3
+        SerieLevel4=SR1Equipment_RemEngine4
+        SerieLevel5=SR1Equipment_RemEngine5
+        SerieLevel6=SR1Equipment_RemEngine6
+        SerieLevel7=SR1Equipment_RemEngine7
+        SerieLevel8=SR1Equipment_RemEngine8
+        Special=1
+        Text=<color=248,252,248>Modern analogues of space engines restored according to the blueprints from era of the Klissan Invasion. Mass production of such samples was established after scientists performed theoretical calculations proving that such engines will not be inferior to modern ones after being subjected to acryn modernization. The low cost of manufacturing has contributed to an economical price that suits many buyers.</color>
+    }
+    SR1Equipment_RemEngine7 ^{
+        AcrynLevel=7
+        AcrynSerie=Remastive engine I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemEngine7
+        Equipments=Engine
+        KindGraph=SR6
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive engine VII
+        OnPlanets=1
+        Owner=Any
+        Priority=80
+        SerieLevel1=SR1Equipment_RemEngine1
+        SerieLevel2=SR1Equipment_RemEngine2
+        SerieLevel3=SR1Equipment_RemEngine3
+        SerieLevel4=SR1Equipment_RemEngine4
+        SerieLevel5=SR1Equipment_RemEngine5
+        SerieLevel6=SR1Equipment_RemEngine6
+        SerieLevel7=SR1Equipment_RemEngine7
+        SerieLevel8=SR1Equipment_RemEngine8
+        Special=1
+        Text=<color=248,252,248>Modern analogues of space engines restored according to the blueprints from era of the Klissan Invasion. Mass production of such samples was established after scientists performed theoretical calculations proving that such engines will not be inferior to modern ones after being subjected to acryn modernization. The low cost of manufacturing has contributed to an economical price that suits many buyers.</color>
+    }
+    SR1Equipment_RemEngine8 ^{
+        AcrynLevel=8
+        AcrynSerie=Remastive engine I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemEngine8
+        Equipments=Engine
+        KindGraph=SR7
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive engine VIII
+        OnPlanets=1
+        Owner=Any
+        Priority=90
+        SerieLevel1=SR1Equipment_RemEngine1
+        SerieLevel2=SR1Equipment_RemEngine2
+        SerieLevel3=SR1Equipment_RemEngine3
+        SerieLevel4=SR1Equipment_RemEngine4
+        SerieLevel5=SR1Equipment_RemEngine5
+        SerieLevel6=SR1Equipment_RemEngine6
+        SerieLevel7=SR1Equipment_RemEngine7
+        SerieLevel8=SR1Equipment_RemEngine8
+        Special=1
+        Text=<color=248,252,248>Modern analogues of space engines restored according to the blueprints from era of the Klissan Invasion. Mass production of such samples was established after scientists performed theoretical calculations proving that such engines will not be inferior to modern ones after being subjected to acryn modernization. The low cost of manufacturing has contributed to an economical price that suits many buyers.</color>
+    }
+    SR1Equipment_RemFuelTank1 ^{
+        AcrynLevel=1
+        AcrynSerie=Remastive Fuel Tank I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemFuelTank1
+        Equipments=FuelTank
+        KindGraph=SR0
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Fuel Tank I
+        OnPlanets=1
+        Owner=Any
+        Priority=0
+        SerieLevel1=SR1Equipment_RemFuelTank1
+        SerieLevel2=SR1Equipment_RemFuelTank2
+        SerieLevel3=SR1Equipment_RemFuelTank3
+        SerieLevel4=SR1Equipment_RemFuelTank4
+        SerieLevel5=SR1Equipment_RemFuelTank5
+        SerieLevel6=SR1Equipment_RemFuelTank6
+        SerieLevel7=SR1Equipment_RemFuelTank7
+        SerieLevel8=SR1Equipment_RemFuelTank8
+        Special=1
+        Text=<color=248,252,248>Researches in acryn technology field allowed scientific association to reconsider their views on old fuel tank manufacturing processes, which resulted in reappearance of Rachekhan-old series. Their construction was recommended for it's reliability and manufacturing proved to be cheap, so after acryne infusing this series's popularity among rangers only is a question of time.</color>
+    }
+    SR1Equipment_RemFuelTank2 ^{
+        AcrynLevel=2
+        AcrynSerie=Remastive Fuel Tank I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemFuelTank2
+        Equipments=FuelTank
+        KindGraph=SR1
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Fuel Tank II
+        OnPlanets=1
+        Owner=Any
+        Priority=20
+        SerieLevel1=SR1Equipment_RemFuelTank1
+        SerieLevel2=SR1Equipment_RemFuelTank2
+        SerieLevel3=SR1Equipment_RemFuelTank3
+        SerieLevel4=SR1Equipment_RemFuelTank4
+        SerieLevel5=SR1Equipment_RemFuelTank5
+        SerieLevel6=SR1Equipment_RemFuelTank6
+        SerieLevel7=SR1Equipment_RemFuelTank7
+        SerieLevel8=SR1Equipment_RemFuelTank8
+        Special=1
+        Text=<color=248,252,248>Researches in acryn technology field allowed scientific association to reconsider their views on old fuel tank manufacturing processes, which resulted in reappearance of Rachekhan-old series. Their construction was recommended for it's reliability and manufacturing proved to be cheap, so after acryne infusing this series's popularity among rangers only is a question of time.</color>
+    }
+    SR1Equipment_RemFuelTank3 ^{
+        AcrynLevel=3
+        AcrynSerie=Remastive Fuel Tank I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemFuelTank3
+        Equipments=FuelTank
+        KindGraph=SR2
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Fuel Tank III
+        OnPlanets=1
+        Owner=Any
+        Priority=30
+        SerieLevel1=SR1Equipment_RemFuelTank1
+        SerieLevel2=SR1Equipment_RemFuelTank2
+        SerieLevel3=SR1Equipment_RemFuelTank3
+        SerieLevel4=SR1Equipment_RemFuelTank4
+        SerieLevel5=SR1Equipment_RemFuelTank5
+        SerieLevel6=SR1Equipment_RemFuelTank6
+        SerieLevel7=SR1Equipment_RemFuelTank7
+        SerieLevel8=SR1Equipment_RemFuelTank8
+        Special=1
+        Text=<color=248,252,248>Researches in acryn technology field allowed scientific association to reconsider their views on old fuel tank manufacturing processes, which resulted in reappearance of Rachekhan-old series. Their construction was recommended for it's reliability and manufacturing proved to be cheap, so after acryne infusing this series's popularity among rangers only is a question of time.</color>
+    }
+    SR1Equipment_RemFuelTank4 ^{
+        AcrynLevel=4
+        AcrynSerie=Remastive Fuel Tank I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemFuelTank4
+        Equipments=FuelTank
+        KindGraph=SR3
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Fuel Tank IV
+        OnPlanets=1
+        Owner=Any
+        Priority=40
+        SerieLevel1=SR1Equipment_RemFuelTank1
+        SerieLevel2=SR1Equipment_RemFuelTank2
+        SerieLevel3=SR1Equipment_RemFuelTank3
+        SerieLevel4=SR1Equipment_RemFuelTank4
+        SerieLevel5=SR1Equipment_RemFuelTank5
+        SerieLevel6=SR1Equipment_RemFuelTank6
+        SerieLevel7=SR1Equipment_RemFuelTank7
+        SerieLevel8=SR1Equipment_RemFuelTank8
+        Special=1
+        Text=<color=248,252,248>Researches in acryn technology field allowed scientific association to reconsider their views on old fuel tank manufacturing processes, which resulted in reappearance of Rachekhan-old series. Their construction was recommended for it's reliability and manufacturing proved to be cheap, so after acryne infusing this series's popularity among rangers only is a question of time.</color>
+    }
+    SR1Equipment_RemFuelTank5 ^{
+        AcrynLevel=5
+        AcrynSerie=Remastive Fuel Tank I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemFuelTank5
+        Equipments=FuelTank
+        KindGraph=SR4
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Fuel Tank V
+        OnPlanets=1
+        Owner=Any
+        Priority=60
+        SerieLevel1=SR1Equipment_RemFuelTank1
+        SerieLevel2=SR1Equipment_RemFuelTank2
+        SerieLevel3=SR1Equipment_RemFuelTank3
+        SerieLevel4=SR1Equipment_RemFuelTank4
+        SerieLevel5=SR1Equipment_RemFuelTank5
+        SerieLevel6=SR1Equipment_RemFuelTank6
+        SerieLevel7=SR1Equipment_RemFuelTank7
+        SerieLevel8=SR1Equipment_RemFuelTank8
+        Special=1
+        Text=<color=248,252,248>Researches in acryn technology field allowed scientific association to reconsider their views on old fuel tank manufacturing processes, which resulted in reappearance of Rachekhan-old series. Their construction was recommended for it's reliability and manufacturing proved to be cheap, so after acryne infusing this series's popularity among rangers only is a question of time.</color>
+    }
+    SR1Equipment_RemFuelTank6 ^{
+        AcrynLevel=6
+        AcrynSerie=Remastive Fuel Tank I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemFuelTank6
+        Equipments=FuelTank
+        KindGraph=SR5
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Fuel Tank VI
+        OnPlanets=1
+        Owner=Any
+        Priority=70
+        SerieLevel1=SR1Equipment_RemFuelTank1
+        SerieLevel2=SR1Equipment_RemFuelTank2
+        SerieLevel3=SR1Equipment_RemFuelTank3
+        SerieLevel4=SR1Equipment_RemFuelTank4
+        SerieLevel5=SR1Equipment_RemFuelTank5
+        SerieLevel6=SR1Equipment_RemFuelTank6
+        SerieLevel7=SR1Equipment_RemFuelTank7
+        SerieLevel8=SR1Equipment_RemFuelTank8
+        Special=1
+        Text=<color=248,252,248>Researches in acryn technology field allowed scientific association to reconsider their views on old fuel tank manufacturing processes, which resulted in reappearance of Rachekhan-old series. Their construction was recommended for it's reliability and manufacturing proved to be cheap, so after acryne infusing this series's popularity among rangers only is a question of time.</color>
+    }
+    SR1Equipment_RemFuelTank7 ^{
+        AcrynLevel=7
+        AcrynSerie=Remastive Fuel Tank I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemFuelTank7
+        Equipments=FuelTank
+        KindGraph=SR6
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Fuel Tank VII
+        OnPlanets=1
+        Owner=Any
+        Priority=80
+        SerieLevel1=SR1Equipment_RemFuelTank1
+        SerieLevel2=SR1Equipment_RemFuelTank2
+        SerieLevel3=SR1Equipment_RemFuelTank3
+        SerieLevel4=SR1Equipment_RemFuelTank4
+        SerieLevel5=SR1Equipment_RemFuelTank5
+        SerieLevel6=SR1Equipment_RemFuelTank6
+        SerieLevel7=SR1Equipment_RemFuelTank7
+        SerieLevel8=SR1Equipment_RemFuelTank8
+        Special=1
+        Text=<color=248,252,248>Researches in acryn technology field allowed scientific association to reconsider their views on old fuel tank manufacturing processes, which resulted in reappearance of Rachekhan-old series. Their construction was recommended for it's reliability and manufacturing proved to be cheap, so after acryne infusing this series's popularity among rangers only is a question of time.</color>
+    }
+    SR1Equipment_RemFuelTank8 ^{
+        AcrynLevel=8
+        AcrynSerie=Remastive Fuel Tank I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemFuelTank8
+        Equipments=FuelTank
+        KindGraph=SR7
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Fuel Tank VIII
+        OnPlanets=1
+        Owner=Any
+        Priority=90
+        SerieLevel1=SR1Equipment_RemFuelTank1
+        SerieLevel2=SR1Equipment_RemFuelTank2
+        SerieLevel3=SR1Equipment_RemFuelTank3
+        SerieLevel4=SR1Equipment_RemFuelTank4
+        SerieLevel5=SR1Equipment_RemFuelTank5
+        SerieLevel6=SR1Equipment_RemFuelTank6
+        SerieLevel7=SR1Equipment_RemFuelTank7
+        SerieLevel8=SR1Equipment_RemFuelTank8
+        Special=1
+        Text=<color=248,252,248>Researches in acryn technology field allowed scientific association to reconsider their views on old fuel tank manufacturing processes, which resulted in reappearance of Rachekhan-old series. Their construction was recommended for it's reliability and manufacturing proved to be cheap, so after acryne infusing this series's popularity among rangers only is a question of time.</color>
+    }
+    SR1Equipment_RemDroid1 ^{
+        AcrynLevel=1
+        AcrynSerie=Remastive Droid I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemDroid1
+        Equipments=Droid
+        KindGraph=SR0
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Droid I
+        OnPlanets=1
+        Owner=Any
+        Priority=0
+        SerieLevel1=SR1Equipment_RemDroid1
+        SerieLevel2=SR1Equipment_RemDroid2
+        SerieLevel3=SR1Equipment_RemDroid3
+        SerieLevel4=SR1Equipment_RemDroid4
+        SerieLevel5=SR1Equipment_RemDroid5
+        SerieLevel6=SR1Equipment_RemDroid6
+        SerieLevel7=SR1Equipment_RemDroid7
+        SerieLevel8=SR1Equipment_RemDroid8
+        Special=1
+        Text=<color=248,252,248>A series of acryn droids which design is based on the Klissan War models. Comparing to their predecessors, they work much more efficiently thanks to improved design elements and reworked artificial intelligence, allowing these droids to stand on a par with modern models.</color>
+    }
+    SR1Equipment_RemDroid2 ^{
+        AcrynLevel=2
+        AcrynSerie=Remastive Droid I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemDroid2
+        Equipments=Droid
+        KindGraph=SR1
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Droid II
+        OnPlanets=1
+        Owner=Any
+        Priority=20
+        SerieLevel1=SR1Equipment_RemDroid1
+        SerieLevel2=SR1Equipment_RemDroid2
+        SerieLevel3=SR1Equipment_RemDroid3
+        SerieLevel4=SR1Equipment_RemDroid4
+        SerieLevel5=SR1Equipment_RemDroid5
+        SerieLevel6=SR1Equipment_RemDroid6
+        SerieLevel7=SR1Equipment_RemDroid7
+        SerieLevel8=SR1Equipment_RemDroid8
+        Special=1
+        Text=<color=248,252,248>A series of acryn droids which design is based on the Klissan War models. Comparing to their predecessors, they work much more efficiently thanks to improved design elements and reworked artificial intelligence, allowing these droids to stand on a par with modern models.</color>
+    }
+    SR1Equipment_RemDroid3 ^{
+        AcrynLevel=3
+        AcrynSerie=Remastive Droid I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemDroid3
+        Equipments=Droid
+        KindGraph=SR2
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Droid III
+        OnPlanets=1
+        Owner=Any
+        Priority=30
+        SerieLevel1=SR1Equipment_RemDroid1
+        SerieLevel2=SR1Equipment_RemDroid2
+        SerieLevel3=SR1Equipment_RemDroid3
+        SerieLevel4=SR1Equipment_RemDroid4
+        SerieLevel5=SR1Equipment_RemDroid5
+        SerieLevel6=SR1Equipment_RemDroid6
+        SerieLevel7=SR1Equipment_RemDroid7
+        SerieLevel8=SR1Equipment_RemDroid8
+        Special=1
+        Text=<color=248,252,248>A series of acryn droids which design is based on the Klissan War models. Comparing to their predecessors, they work much more efficiently thanks to improved design elements and reworked artificial intelligence, allowing these droids to stand on a par with modern models.</color>
+    }
+    SR1Equipment_RemDroid4 ^{
+        AcrynLevel=4
+        AcrynSerie=Remastive Droid I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemDroid4
+        Equipments=Droid
+        KindGraph=SR3
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Droid IV
+        OnPlanets=1
+        Owner=Any
+        Priority=40
+        SerieLevel1=SR1Equipment_RemDroid1
+        SerieLevel2=SR1Equipment_RemDroid2
+        SerieLevel3=SR1Equipment_RemDroid3
+        SerieLevel4=SR1Equipment_RemDroid4
+        SerieLevel5=SR1Equipment_RemDroid5
+        SerieLevel6=SR1Equipment_RemDroid6
+        SerieLevel7=SR1Equipment_RemDroid7
+        SerieLevel8=SR1Equipment_RemDroid8
+        Special=1
+        Text=<color=248,252,248>A series of acryn droids which design is based on the Klissan War models. Comparing to their predecessors, they work much more efficiently thanks to improved design elements and reworked artificial intelligence, allowing these droids to stand on a par with modern models.</color>
+    }
+    SR1Equipment_RemDroid5 ^{
+        AcrynLevel=5
+        AcrynSerie=Remastive Droid I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemDroid5
+        Equipments=Droid
+        KindGraph=SR4
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Droid V
+        OnPlanets=1
+        Owner=Any
+        Priority=60
+        SerieLevel1=SR1Equipment_RemDroid1
+        SerieLevel2=SR1Equipment_RemDroid2
+        SerieLevel3=SR1Equipment_RemDroid3
+        SerieLevel4=SR1Equipment_RemDroid4
+        SerieLevel5=SR1Equipment_RemDroid5
+        SerieLevel6=SR1Equipment_RemDroid6
+        SerieLevel7=SR1Equipment_RemDroid7
+        SerieLevel8=SR1Equipment_RemDroid8
+        Special=1
+        Text=<color=248,252,248>A series of acryn droids which design is based on the Klissan War models. Comparing to their predecessors, they work much more efficiently thanks to improved design elements and reworked artificial intelligence, allowing these droids to stand on a par with modern models.</color>
+    }
+    SR1Equipment_RemDroid6 ^{
+        AcrynLevel=6
+        AcrynSerie=Remastive Droid I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemDroid6
+        Equipments=Droid
+        KindGraph=SR5
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Droid VI
+        OnPlanets=1
+        Owner=Any
+        Priority=70
+        SerieLevel1=SR1Equipment_RemDroid1
+        SerieLevel2=SR1Equipment_RemDroid2
+        SerieLevel3=SR1Equipment_RemDroid3
+        SerieLevel4=SR1Equipment_RemDroid4
+        SerieLevel5=SR1Equipment_RemDroid5
+        SerieLevel6=SR1Equipment_RemDroid6
+        SerieLevel7=SR1Equipment_RemDroid7
+        SerieLevel8=SR1Equipment_RemDroid8
+        Special=1
+        Text=<color=248,252,248>A series of acryn droids which design is based on the Klissan War models. Comparing to their predecessors, they work much more efficiently thanks to improved design elements and reworked artificial intelligence, allowing these droids to stand on a par with modern models.</color>
+    }
+    SR1Equipment_RemDroid7 ^{
+        AcrynLevel=7
+        AcrynSerie=Remastive Droid I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemDroid7
+        Equipments=Droid
+        KindGraph=SR6
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Droid VII
+        OnPlanets=1
+        Owner=Any
+        Priority=80
+        SerieLevel1=SR1Equipment_RemDroid1
+        SerieLevel2=SR1Equipment_RemDroid2
+        SerieLevel3=SR1Equipment_RemDroid3
+        SerieLevel4=SR1Equipment_RemDroid4
+        SerieLevel5=SR1Equipment_RemDroid5
+        SerieLevel6=SR1Equipment_RemDroid6
+        SerieLevel7=SR1Equipment_RemDroid7
+        SerieLevel8=SR1Equipment_RemDroid8
+        Special=1
+        Text=<color=248,252,248>A series of acryn droids which design is based on the Klissan War models. Comparing to their predecessors, they work much more efficiently thanks to improved design elements and reworked artificial intelligence, allowing these droids to stand on a par with modern models.</color>
+    }
+    SR1Equipment_RemDroid8 ^{
+        AcrynLevel=8
+        AcrynSerie=Remastive Droid I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemDroid8
+        Equipments=Droid
+        KindGraph=SR7
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Droid VIII
+        OnPlanets=1
+        Owner=Any
+        Priority=90
+        SerieLevel1=SR1Equipment_RemDroid1
+        SerieLevel2=SR1Equipment_RemDroid2
+        SerieLevel3=SR1Equipment_RemDroid3
+        SerieLevel4=SR1Equipment_RemDroid4
+        SerieLevel5=SR1Equipment_RemDroid5
+        SerieLevel6=SR1Equipment_RemDroid6
+        SerieLevel7=SR1Equipment_RemDroid7
+        SerieLevel8=SR1Equipment_RemDroid8
+        Special=1
+        Text=<color=248,252,248>A series of acryn droids which design is based on the Klissan War models. Comparing to their predecessors, they work much more efficiently thanks to improved design elements and reworked artificial intelligence, allowing these droids to stand on a par with modern models.</color>
+    }
+    SR1Equipment_RemHook1 ^{
+        AcrynLevel=1
+        AcrynSerie=Remastive Gripper I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemHook1
+        Equipments=Hook
+        KindGraph=SR0
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Gripper I
+        OnPlanets=1
+        Owner=Any
+        Priority=0
+        SerieLevel1=SR1Equipment_RemHook1
+        SerieLevel2=SR1Equipment_RemHook2
+        SerieLevel3=SR1Equipment_RemHook3
+        SerieLevel4=SR1Equipment_RemHook4
+        SerieLevel5=SR1Equipment_RemHook5
+        SerieLevel6=SR1Equipment_RemHook6
+        SerieLevel7=SR1Equipment_RemHook7
+        SerieLevel8=SR1Equipment_RemHook8
+        Special=1
+        Text=<color=248,252,248>Three hundred years ago grippers were so primitive that couldn't even pull objects while the ship is moving. However, scientists managed to breathe a new life into the old models, changing most of the details and thereby significantly increasing the power of rare samples. The introduction of acryn technology has opened up even more opportunities for the use of this technique.</color>
+    }
+    SR1Equipment_RemHook2 ^{
+        AcrynLevel=2
+        AcrynSerie=Remastive Gripper I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemHook2
+        Equipments=Hook
+        KindGraph=SR1
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Gripper II
+        OnPlanets=1
+        Owner=Any
+        Priority=20
+        SerieLevel1=SR1Equipment_RemHook1
+        SerieLevel2=SR1Equipment_RemHook2
+        SerieLevel3=SR1Equipment_RemHook3
+        SerieLevel4=SR1Equipment_RemHook4
+        SerieLevel5=SR1Equipment_RemHook5
+        SerieLevel6=SR1Equipment_RemHook6
+        SerieLevel7=SR1Equipment_RemHook7
+        SerieLevel8=SR1Equipment_RemHook8
+        Special=1
+        Text=<color=248,252,248>Three hundred years ago grippers were so primitive that couldn't even pull objects while the ship is moving. However, scientists managed to breathe a new life into the old models, changing most of the details and thereby significantly increasing the power of rare samples. The introduction of acryn technology has opened up even more opportunities for the use of this technique.</color>
+    }
+    SR1Equipment_RemHook3 ^{
+        AcrynLevel=3
+        AcrynSerie=Remastive Gripper I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemHook3
+        Equipments=Hook
+        KindGraph=SR2
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Gripper III
+        OnPlanets=1
+        Owner=Any
+        Priority=30
+        SerieLevel1=SR1Equipment_RemHook1
+        SerieLevel2=SR1Equipment_RemHook2
+        SerieLevel3=SR1Equipment_RemHook3
+        SerieLevel4=SR1Equipment_RemHook4
+        SerieLevel5=SR1Equipment_RemHook5
+        SerieLevel6=SR1Equipment_RemHook6
+        SerieLevel7=SR1Equipment_RemHook7
+        SerieLevel8=SR1Equipment_RemHook8
+        Special=1
+        Text=<color=248,252,248>Three hundred years ago grippers were so primitive that couldn't even pull objects while the ship is moving. However, scientists managed to breathe a new life into the old models, changing most of the details and thereby significantly increasing the power of rare samples. The introduction of acryn technology has opened up even more opportunities for the use of this technique.</color>
+    }
+    SR1Equipment_RemHook4 ^{
+        AcrynLevel=4
+        AcrynSerie=Remastive Gripper I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemHook4
+        Equipments=Hook
+        KindGraph=SR3
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Gripper IV
+        OnPlanets=1
+        Owner=Any
+        Priority=40
+        SerieLevel1=SR1Equipment_RemHook1
+        SerieLevel2=SR1Equipment_RemHook2
+        SerieLevel3=SR1Equipment_RemHook3
+        SerieLevel4=SR1Equipment_RemHook4
+        SerieLevel5=SR1Equipment_RemHook5
+        SerieLevel6=SR1Equipment_RemHook6
+        SerieLevel7=SR1Equipment_RemHook7
+        SerieLevel8=SR1Equipment_RemHook8
+        Special=1
+        Text=<color=248,252,248>Three hundred years ago grippers were so primitive that couldn't even pull objects while the ship is moving. However, scientists managed to breathe a new life into the old models, changing most of the details and thereby significantly increasing the power of rare samples. The introduction of acryn technology has opened up even more opportunities for the use of this technique.</color>
+    }
+    SR1Equipment_RemHook5 ^{
+        AcrynLevel=5
+        AcrynSerie=Remastive Gripper I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemHook5
+        Equipments=Hook
+        KindGraph=SR4
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Gripper V
+        OnPlanets=1
+        Owner=Any
+        Priority=60
+        SerieLevel1=SR1Equipment_RemHook1
+        SerieLevel2=SR1Equipment_RemHook2
+        SerieLevel3=SR1Equipment_RemHook3
+        SerieLevel4=SR1Equipment_RemHook4
+        SerieLevel5=SR1Equipment_RemHook5
+        SerieLevel6=SR1Equipment_RemHook6
+        SerieLevel7=SR1Equipment_RemHook7
+        SerieLevel8=SR1Equipment_RemHook8
+        Special=1
+        Text=<color=248,252,248>Three hundred years ago grippers were so primitive that couldn't even pull objects while the ship is moving. However, scientists managed to breathe a new life into the old models, changing most of the details and thereby significantly increasing the power of rare samples. The introduction of acryn technology has opened up even more opportunities for the use of this technique.</color>
+    }
+    SR1Equipment_RemHook6 ^{
+        AcrynLevel=6
+        AcrynSerie=Remastive Gripper I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemHook6
+        Equipments=Hook
+        KindGraph=SR5
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Gripper VI
+        OnPlanets=1
+        Owner=Any
+        Priority=70
+        SerieLevel1=SR1Equipment_RemHook1
+        SerieLevel2=SR1Equipment_RemHook2
+        SerieLevel3=SR1Equipment_RemHook3
+        SerieLevel4=SR1Equipment_RemHook4
+        SerieLevel5=SR1Equipment_RemHook5
+        SerieLevel6=SR1Equipment_RemHook6
+        SerieLevel7=SR1Equipment_RemHook7
+        SerieLevel8=SR1Equipment_RemHook8
+        Special=1
+        Text=<color=248,252,248>Three hundred years ago grippers were so primitive that couldn't even pull objects while the ship is moving. However, scientists managed to breathe a new life into the old models, changing most of the details and thereby significantly increasing the power of rare samples. The introduction of acryn technology has opened up even more opportunities for the use of this technique.</color>
+    }
+    SR1Equipment_RemHook7 ^{
+        AcrynLevel=7
+        AcrynSerie=Remastive Gripper I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemHook7
+        Equipments=Hook
+        KindGraph=SR6
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Gripper VII
+        OnPlanets=1
+        Owner=Any
+        Priority=80
+        SerieLevel1=SR1Equipment_RemHook1
+        SerieLevel2=SR1Equipment_RemHook2
+        SerieLevel3=SR1Equipment_RemHook3
+        SerieLevel4=SR1Equipment_RemHook4
+        SerieLevel5=SR1Equipment_RemHook5
+        SerieLevel6=SR1Equipment_RemHook6
+        SerieLevel7=SR1Equipment_RemHook7
+        SerieLevel8=SR1Equipment_RemHook8
+        Special=1
+        Text=<color=248,252,248>Three hundred years ago grippers were so primitive that couldn't even pull objects while the ship is moving. However, scientists managed to breathe a new life into the old models, changing most of the details and thereby significantly increasing the power of rare samples. The introduction of acryn technology has opened up even more opportunities for the use of this technique.</color>
+    }
+    SR1Equipment_RemHook8 ^{
+        AcrynLevel=8
+        AcrynSerie=Remastive Gripper I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemHook8
+        Equipments=Hook
+        KindGraph=SR7
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Gripper VIII
+        OnPlanets=1
+        Owner=Any
+        Priority=90
+        SerieLevel1=SR1Equipment_RemHook1
+        SerieLevel2=SR1Equipment_RemHook2
+        SerieLevel3=SR1Equipment_RemHook3
+        SerieLevel4=SR1Equipment_RemHook4
+        SerieLevel5=SR1Equipment_RemHook5
+        SerieLevel6=SR1Equipment_RemHook6
+        SerieLevel7=SR1Equipment_RemHook7
+        SerieLevel8=SR1Equipment_RemHook8
+        Special=1
+        Text=<color=248,252,248>Three hundred years ago grippers were so primitive that couldn't even pull objects while the ship is moving. However, scientists managed to breathe a new life into the old models, changing most of the details and thereby significantly increasing the power of rare samples. The introduction of acryn technology has opened up even more opportunities for the use of this technique.</color>
+    }
+    SR1Equipment_RemDefGenerator1 ^{
+        AcrynLevel=1
+        AcrynSerie=Remastive Shield Generator I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemDefGenerator1
+        Equipments=DefGenerator
+        KindGraph=SR0
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Shield Generator I
+        OnPlanets=1
+        Owner=Any
+        Priority=0
+        SerieLevel1=SR1Equipment_RemDefGenerator1
+        SerieLevel2=SR1Equipment_RemDefGenerator2
+        SerieLevel3=SR1Equipment_RemDefGenerator3
+        SerieLevel4=SR1Equipment_RemDefGenerator4
+        SerieLevel5=SR1Equipment_RemDefGenerator5
+        SerieLevel6=SR1Equipment_RemDefGenerator6
+        SerieLevel7=SR1Equipment_RemDefGenerator7
+        SerieLevel8=SR1Equipment_RemDefGenerator8
+        Special=1
+        Text=<color=248,252,248>A series of protective field generators that function according to the principles used three centuries ago. Experiments with acrynation resulted in the return of competitiveness to obsolete technologies, breathing a new life in obsolete devices. Appreciated by humanoids with a passion for history.</color>
+    }
+    SR1Equipment_RemDefGenerator2 ^{
+        AcrynLevel=2
+        AcrynSerie=Remastive Shield Generator I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemDefGenerator2
+        Equipments=DefGenerator
+        KindGraph=SR1
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Shield Generator II
+        OnPlanets=1
+        Owner=Any
+        Priority=20
+        SerieLevel1=SR1Equipment_RemDefGenerator1
+        SerieLevel2=SR1Equipment_RemDefGenerator2
+        SerieLevel3=SR1Equipment_RemDefGenerator3
+        SerieLevel4=SR1Equipment_RemDefGenerator4
+        SerieLevel5=SR1Equipment_RemDefGenerator5
+        SerieLevel6=SR1Equipment_RemDefGenerator6
+        SerieLevel7=SR1Equipment_RemDefGenerator7
+        SerieLevel8=SR1Equipment_RemDefGenerator8
+        Special=1
+        Text=<color=248,252,248>A series of protective field generators that function according to the principles used three centuries ago. Experiments with acrynation resulted in the return of competitiveness to obsolete technologies, breathing a new life in obsolete devices. Appreciated by humanoids with a passion for history.</color>
+    }
+    SR1Equipment_RemDefGenerator3 ^{
+        AcrynLevel=3
+        AcrynSerie=Remastive Shield Generator I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemDefGenerator3
+        Equipments=DefGenerator
+        KindGraph=SR2
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Shield Generator III
+        OnPlanets=1
+        Owner=Any
+        Priority=30
+        SerieLevel1=SR1Equipment_RemDefGenerator1
+        SerieLevel2=SR1Equipment_RemDefGenerator2
+        SerieLevel3=SR1Equipment_RemDefGenerator3
+        SerieLevel4=SR1Equipment_RemDefGenerator4
+        SerieLevel5=SR1Equipment_RemDefGenerator5
+        SerieLevel6=SR1Equipment_RemDefGenerator6
+        SerieLevel7=SR1Equipment_RemDefGenerator7
+        SerieLevel8=SR1Equipment_RemDefGenerator8
+        Special=1
+        Text=<color=248,252,248>A series of protective field generators that function according to the principles used three centuries ago. Experiments with acrynation resulted in the return of competitiveness to obsolete technologies, breathing a new life in obsolete devices. Appreciated by humanoids with a passion for history.</color>
+    }
+    SR1Equipment_RemDefGenerator4 ^{
+        AcrynLevel=4
+        AcrynSerie=Remastive Shield Generator I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemDefGenerator4
+        Equipments=DefGenerator
+        KindGraph=SR3
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Shield Generator IV
+        OnPlanets=1
+        Owner=Any
+        Priority=40
+        SerieLevel1=SR1Equipment_RemDefGenerator1
+        SerieLevel2=SR1Equipment_RemDefGenerator2
+        SerieLevel3=SR1Equipment_RemDefGenerator3
+        SerieLevel4=SR1Equipment_RemDefGenerator4
+        SerieLevel5=SR1Equipment_RemDefGenerator5
+        SerieLevel6=SR1Equipment_RemDefGenerator6
+        SerieLevel7=SR1Equipment_RemDefGenerator7
+        SerieLevel8=SR1Equipment_RemDefGenerator8
+        Special=1
+        Text=<color=248,252,248>A series of protective field generators that function according to the principles used three centuries ago. Experiments with acrynation resulted in the return of competitiveness to obsolete technologies, breathing a new life in obsolete devices. Appreciated by humanoids with a passion for history.</color>
+    }
+    SR1Equipment_RemDefGenerator5 ^{
+        AcrynLevel=5
+        AcrynSerie=Remastive Shield Generator I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemDefGenerator5
+        Equipments=DefGenerator
+        KindGraph=SR4
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Shield Generator V
+        OnPlanets=1
+        Owner=Any
+        Priority=60
+        SerieLevel1=SR1Equipment_RemDefGenerator1
+        SerieLevel2=SR1Equipment_RemDefGenerator2
+        SerieLevel3=SR1Equipment_RemDefGenerator3
+        SerieLevel4=SR1Equipment_RemDefGenerator4
+        SerieLevel5=SR1Equipment_RemDefGenerator5
+        SerieLevel6=SR1Equipment_RemDefGenerator6
+        SerieLevel7=SR1Equipment_RemDefGenerator7
+        SerieLevel8=SR1Equipment_RemDefGenerator8
+        Special=1
+        Text=<color=248,252,248>A series of protective field generators that function according to the principles used three centuries ago. Experiments with acrynation resulted in the return of competitiveness to obsolete technologies, breathing a new life in obsolete devices. Appreciated by humanoids with a passion for history.</color>
+    }
+    SR1Equipment_RemDefGenerator6 ^{
+        AcrynLevel=6
+        AcrynSerie=Remastive Shield Generator I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemDefGenerator6
+        Equipments=DefGenerator
+        KindGraph=SR5
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Shield Generator VI
+        OnPlanets=1
+        Owner=Any
+        Priority=70
+        SerieLevel1=SR1Equipment_RemDefGenerator1
+        SerieLevel2=SR1Equipment_RemDefGenerator2
+        SerieLevel3=SR1Equipment_RemDefGenerator3
+        SerieLevel4=SR1Equipment_RemDefGenerator4
+        SerieLevel5=SR1Equipment_RemDefGenerator5
+        SerieLevel6=SR1Equipment_RemDefGenerator6
+        SerieLevel7=SR1Equipment_RemDefGenerator7
+        SerieLevel8=SR1Equipment_RemDefGenerator8
+        Special=1
+        Text=<color=248,252,248>A series of protective field generators that function according to the principles used three centuries ago. Experiments with acrynation resulted in the return of competitiveness to obsolete technologies, breathing a new life in obsolete devices. Appreciated by humanoids with a passion for history.</color>
+    }
+    SR1Equipment_RemDefGenerator7 ^{
+        AcrynLevel=7
+        AcrynSerie=Remastive Shield Generator I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemDefGenerator7
+        Equipments=DefGenerator
+        KindGraph=SR6
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Shield Generator VII
+        OnPlanets=1
+        Owner=Any
+        Priority=80
+        SerieLevel1=SR1Equipment_RemDefGenerator1
+        SerieLevel2=SR1Equipment_RemDefGenerator2
+        SerieLevel3=SR1Equipment_RemDefGenerator3
+        SerieLevel4=SR1Equipment_RemDefGenerator4
+        SerieLevel5=SR1Equipment_RemDefGenerator5
+        SerieLevel6=SR1Equipment_RemDefGenerator6
+        SerieLevel7=SR1Equipment_RemDefGenerator7
+        SerieLevel8=SR1Equipment_RemDefGenerator8
+        Special=1
+        Text=<color=248,252,248>A series of protective field generators that function according to the principles used three centuries ago. Experiments with acrynation resulted in the return of competitiveness to obsolete technologies, breathing a new life in obsolete devices. Appreciated by humanoids with a passion for history.</color>
+    }
+    SR1Equipment_RemDefGenerator8 ^{
+        AcrynLevel=8
+        AcrynSerie=Remastive Shield Generator I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemDefGenerator8
+        Equipments=DefGenerator
+        KindGraph=SR7
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Shield Generator VIII
+        OnPlanets=1
+        Owner=Any
+        Priority=90
+        SerieLevel1=SR1Equipment_RemDefGenerator1
+        SerieLevel2=SR1Equipment_RemDefGenerator2
+        SerieLevel3=SR1Equipment_RemDefGenerator3
+        SerieLevel4=SR1Equipment_RemDefGenerator4
+        SerieLevel5=SR1Equipment_RemDefGenerator5
+        SerieLevel6=SR1Equipment_RemDefGenerator6
+        SerieLevel7=SR1Equipment_RemDefGenerator7
+        SerieLevel8=SR1Equipment_RemDefGenerator8
+        Special=1
+        Text=<color=248,252,248>A series of protective field generators that function according to the principles used three centuries ago. Experiments with acrynation resulted in the return of competitiveness to obsolete technologies, breathing a new life in obsolete devices. Appreciated by humanoids with a passion for history.</color>
+    }
+    SR1Equipment_RemScaner1 ^{
+        AcrynLevel=1
+        AcrynSerie=Remastive Scanner I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemScaner1
+        Equipments=Scaner
+        KindGraph=SR0
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Scanner I
+        OnPlanets=1
+        Owner=Any
+        Priority=0
+        SerieLevel1=SR1Equipment_RemScaner1
+        SerieLevel2=SR1Equipment_RemScaner2
+        SerieLevel3=SR1Equipment_RemScaner3
+        SerieLevel4=SR1Equipment_RemScaner4
+        SerieLevel5=SR1Equipment_RemScaner5
+        SerieLevel6=SR1Equipment_RemScaner6
+        SerieLevel7=SR1Equipment_RemScaner7
+        SerieLevel8=SR1Equipment_RemScaner8
+        Special=1
+        Text=<color=248,252,248>Mass-produced scanner analogs from era of the Klissan Aggression. After several years of sample studying  provided by Gaalian museums, scientists developed a way to modify old scanners to increase their power several times, allowing these models to scan spacecrafts as well as modern samples. Economical analog, suitable for low-income pilots or connoisseurs of retro style</color>
+    }
+    SR1Equipment_RemScaner2 ^{
+        AcrynLevel=2
+        AcrynSerie=Remastive Scanner I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemScaner2
+        Equipments=Scaner
+        KindGraph=SR1
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Scanner II
+        OnPlanets=1
+        Owner=Any
+        Priority=20
+        SerieLevel1=SR1Equipment_RemScaner1
+        SerieLevel2=SR1Equipment_RemScaner2
+        SerieLevel3=SR1Equipment_RemScaner3
+        SerieLevel4=SR1Equipment_RemScaner4
+        SerieLevel5=SR1Equipment_RemScaner5
+        SerieLevel6=SR1Equipment_RemScaner6
+        SerieLevel7=SR1Equipment_RemScaner7
+        SerieLevel8=SR1Equipment_RemScaner8
+        Special=1
+        Text=<color=248,252,248>Mass-produced scanner analogs from era of the Klissan Aggression. After several years of sample studying  provided by Gaalian museums, scientists developed a way to modify old scanners to increase their power several times, allowing these models to scan spacecrafts as well as modern samples. Economical analog, suitable for low-income pilots or connoisseurs of retro style</color>
+    }
+    SR1Equipment_RemScaner3 ^{
+        AcrynLevel=3
+        AcrynSerie=Remastive Scanner I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemScaner3
+        Equipments=Scaner
+        KindGraph=SR2
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Scanner III
+        OnPlanets=1
+        Owner=Any
+        Priority=30
+        SerieLevel1=SR1Equipment_RemScaner1
+        SerieLevel2=SR1Equipment_RemScaner2
+        SerieLevel3=SR1Equipment_RemScaner3
+        SerieLevel4=SR1Equipment_RemScaner4
+        SerieLevel5=SR1Equipment_RemScaner5
+        SerieLevel6=SR1Equipment_RemScaner6
+        SerieLevel7=SR1Equipment_RemScaner7
+        SerieLevel8=SR1Equipment_RemScaner8
+        Special=1
+        Text=<color=248,252,248>Mass-produced scanner analogs from era of the Klissan Aggression. After several years of sample studying  provided by Gaalian museums, scientists developed a way to modify old scanners to increase their power several times, allowing these models to scan spacecrafts as well as modern samples. Economical analog, suitable for low-income pilots or connoisseurs of retro style</color>
+    }
+    SR1Equipment_RemScaner4 ^{
+        AcrynLevel=4
+        AcrynSerie=Remastive Scanner I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemScaner4
+        Equipments=Scaner
+        KindGraph=SR3
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Scanner IV
+        OnPlanets=1
+        Owner=Any
+        Priority=40
+        SerieLevel1=SR1Equipment_RemScaner1
+        SerieLevel2=SR1Equipment_RemScaner2
+        SerieLevel3=SR1Equipment_RemScaner3
+        SerieLevel4=SR1Equipment_RemScaner4
+        SerieLevel5=SR1Equipment_RemScaner5
+        SerieLevel6=SR1Equipment_RemScaner6
+        SerieLevel7=SR1Equipment_RemScaner7
+        SerieLevel8=SR1Equipment_RemScaner8
+        Special=1
+        Text=<color=248,252,248>Mass-produced scanner analogs from era of the Klissan Aggression. After several years of sample studying  provided by Gaalian museums, scientists developed a way to modify old scanners to increase their power several times, allowing these models to scan spacecrafts as well as modern samples. Economical analog, suitable for low-income pilots or connoisseurs of retro style</color>
+    }
+    SR1Equipment_RemScaner5 ^{
+        AcrynLevel=5
+        AcrynSerie=Remastive Scanner I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemScaner5
+        Equipments=Scaner
+        KindGraph=SR4
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Scanner V
+        OnPlanets=1
+        Owner=Any
+        Priority=60
+        SerieLevel1=SR1Equipment_RemScaner1
+        SerieLevel2=SR1Equipment_RemScaner2
+        SerieLevel3=SR1Equipment_RemScaner3
+        SerieLevel4=SR1Equipment_RemScaner4
+        SerieLevel5=SR1Equipment_RemScaner5
+        SerieLevel6=SR1Equipment_RemScaner6
+        SerieLevel7=SR1Equipment_RemScaner7
+        SerieLevel8=SR1Equipment_RemScaner8
+        Special=1
+        Text=<color=248,252,248>Mass-produced scanner analogs from era of the Klissan Aggression. After several years of sample studying  provided by Gaalian museums, scientists developed a way to modify old scanners to increase their power several times, allowing these models to scan spacecrafts as well as modern samples. Economical analog, suitable for low-income pilots or connoisseurs of retro style</color>
+    }
+    SR1Equipment_RemScaner6 ^{
+        AcrynLevel=6
+        AcrynSerie=Remastive Scanner I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemScaner6
+        Equipments=Scaner
+        KindGraph=SR5
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Scanner VI
+        OnPlanets=1
+        Owner=Any
+        Priority=70
+        SerieLevel1=SR1Equipment_RemScaner1
+        SerieLevel2=SR1Equipment_RemScaner2
+        SerieLevel3=SR1Equipment_RemScaner3
+        SerieLevel4=SR1Equipment_RemScaner4
+        SerieLevel5=SR1Equipment_RemScaner5
+        SerieLevel6=SR1Equipment_RemScaner6
+        SerieLevel7=SR1Equipment_RemScaner7
+        SerieLevel8=SR1Equipment_RemScaner8
+        Special=1
+        Text=<color=248,252,248>Mass-produced scanner analogs from era of the Klissan Aggression. After several years of sample studying  provided by Gaalian museums, scientists developed a way to modify old scanners to increase their power several times, allowing these models to scan spacecrafts as well as modern samples. Economical analog, suitable for low-income pilots or connoisseurs of retro style</color>
+    }
+    SR1Equipment_RemScaner7 ^{
+        AcrynLevel=7
+        AcrynSerie=Remastive Scanner I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemScaner7
+        Equipments=Scaner
+        KindGraph=SR6
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Scanner VII
+        OnPlanets=1
+        Owner=Any
+        Priority=80
+        SerieLevel1=SR1Equipment_RemScaner1
+        SerieLevel2=SR1Equipment_RemScaner2
+        SerieLevel3=SR1Equipment_RemScaner3
+        SerieLevel4=SR1Equipment_RemScaner4
+        SerieLevel5=SR1Equipment_RemScaner5
+        SerieLevel6=SR1Equipment_RemScaner6
+        SerieLevel7=SR1Equipment_RemScaner7
+        SerieLevel8=SR1Equipment_RemScaner8
+        Special=1
+        Text=<color=248,252,248>Mass-produced scanner analogs from era of the Klissan Aggression. After several years of sample studying  provided by Gaalian museums, scientists developed a way to modify old scanners to increase their power several times, allowing these models to scan spacecrafts as well as modern samples. Economical analog, suitable for low-income pilots or connoisseurs of retro style</color>
+    }
+    SR1Equipment_RemScaner8 ^{
+        AcrynLevel=8
+        AcrynSerie=Remastive Scanner I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemScaner8
+        Equipments=Scaner
+        KindGraph=SR7
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Scanner VIII
+        OnPlanets=1
+        Owner=Any
+        Priority=90
+        SerieLevel1=SR1Equipment_RemScaner1
+        SerieLevel2=SR1Equipment_RemScaner2
+        SerieLevel3=SR1Equipment_RemScaner3
+        SerieLevel4=SR1Equipment_RemScaner4
+        SerieLevel5=SR1Equipment_RemScaner5
+        SerieLevel6=SR1Equipment_RemScaner6
+        SerieLevel7=SR1Equipment_RemScaner7
+        SerieLevel8=SR1Equipment_RemScaner8
+        Special=1
+        Text=<color=248,252,248>Mass-produced scanner analogs from era of the Klissan Aggression. After several years of sample studying  provided by Gaalian museums, scientists developed a way to modify old scanners to increase their power several times, allowing these models to scan spacecrafts as well as modern samples. Economical analog, suitable for low-income pilots or connoisseurs of retro style</color>
+    }
+    SR1Equipment_RemRadar1 ^{
+        AcrynLevel=1
+        AcrynSerie=Remastive Radar I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemRadar1
+        Equipments=Radar
+        KindGraph=SR0
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Radar I
+        OnPlanets=1
+        Owner=Any
+        Priority=0
+        SerieLevel1=SR1Equipment_RemRadar1
+        SerieLevel2=SR1Equipment_RemRadar2
+        SerieLevel3=SR1Equipment_RemRadar3
+        SerieLevel4=SR1Equipment_RemRadar4
+        SerieLevel5=SR1Equipment_RemRadar5
+        SerieLevel6=SR1Equipment_RemRadar6
+        SerieLevel7=SR1Equipment_RemRadar7
+        SerieLevel8=SR1Equipment_RemRadar8
+        Special=1
+        Text=<color=248,252,248>Industrial series of radars developed by engineers on basis of modifications of the Klissan War samples. Due to addition of acryn elements to the structure, it can achieve high coverage radius, which allows these radars to occupy a niche in the space technologies.</color>
+    }
+    SR1Equipment_RemRadar2 ^{
+        AcrynLevel=2
+        AcrynSerie=Remastive Radar I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemRadar2
+        Equipments=Radar
+        KindGraph=SR1
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Radar II
+        OnPlanets=1
+        Owner=Any
+        Priority=20
+        SerieLevel1=SR1Equipment_RemRadar1
+        SerieLevel2=SR1Equipment_RemRadar2
+        SerieLevel3=SR1Equipment_RemRadar3
+        SerieLevel4=SR1Equipment_RemRadar4
+        SerieLevel5=SR1Equipment_RemRadar5
+        SerieLevel6=SR1Equipment_RemRadar6
+        SerieLevel7=SR1Equipment_RemRadar7
+        SerieLevel8=SR1Equipment_RemRadar8
+        Special=1
+        Text=<color=248,252,248>Industrial series of radars developed by engineers on basis of modifications of the Klissan War samples. Due to addition of acryn elements to the structure, it can achieve high coverage radius, which allows these radars to occupy a niche in the space technologies.</color>
+    }
+    SR1Equipment_RemRadar3 ^{
+        AcrynLevel=3
+        AcrynSerie=Remastive Radar I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemRadar3
+        Equipments=Radar
+        KindGraph=SR2
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Radar III
+        OnPlanets=1
+        Owner=Any
+        Priority=30
+        SerieLevel1=SR1Equipment_RemRadar1
+        SerieLevel2=SR1Equipment_RemRadar2
+        SerieLevel3=SR1Equipment_RemRadar3
+        SerieLevel4=SR1Equipment_RemRadar4
+        SerieLevel5=SR1Equipment_RemRadar5
+        SerieLevel6=SR1Equipment_RemRadar6
+        SerieLevel7=SR1Equipment_RemRadar7
+        SerieLevel8=SR1Equipment_RemRadar8
+        Special=1
+        Text=<color=248,252,248>Industrial series of radars developed by engineers on basis of modifications of the Klissan War samples. Due to addition of acryn elements to the structure, it can achieve high coverage radius, which allows these radars to occupy a niche in the space technologies.</color>
+    }
+    SR1Equipment_RemRadar4 ^{
+        AcrynLevel=4
+        AcrynSerie=Remastive Radar I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemRadar4
+        Equipments=Radar
+        KindGraph=SR3
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Radar IV
+        OnPlanets=1
+        Owner=Any
+        Priority=40
+        SerieLevel1=SR1Equipment_RemRadar1
+        SerieLevel2=SR1Equipment_RemRadar2
+        SerieLevel3=SR1Equipment_RemRadar3
+        SerieLevel4=SR1Equipment_RemRadar4
+        SerieLevel5=SR1Equipment_RemRadar5
+        SerieLevel6=SR1Equipment_RemRadar6
+        SerieLevel7=SR1Equipment_RemRadar7
+        SerieLevel8=SR1Equipment_RemRadar8
+        Special=1
+        Text=<color=248,252,248>Industrial series of radars developed by engineers on basis of modifications of the Klissan War samples. Due to addition of acryn elements to the structure, it can achieve high coverage radius, which allows these radars to occupy a niche in the space technologies.</color>
+    }
+    SR1Equipment_RemRadar5 ^{
+        AcrynLevel=5
+        AcrynSerie=Remastive Radar I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemRadar5
+        Equipments=Radar
+        KindGraph=SR4
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Radar V
+        OnPlanets=1
+        Owner=Any
+        Priority=60
+        SerieLevel1=SR1Equipment_RemRadar1
+        SerieLevel2=SR1Equipment_RemRadar2
+        SerieLevel3=SR1Equipment_RemRadar3
+        SerieLevel4=SR1Equipment_RemRadar4
+        SerieLevel5=SR1Equipment_RemRadar5
+        SerieLevel6=SR1Equipment_RemRadar6
+        SerieLevel7=SR1Equipment_RemRadar7
+        SerieLevel8=SR1Equipment_RemRadar8
+        Special=1
+        Text=<color=248,252,248>Industrial series of radars developed by engineers on basis of modifications of the Klissan War samples. Due to addition of acryn elements to the structure, it can achieve high coverage radius, which allows these radars to occupy a niche in the space technologies.</color>
+    }
+    SR1Equipment_RemRadar6 ^{
+        AcrynLevel=6
+        AcrynSerie=Remastive Radar I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemRadar6
+        Equipments=Radar
+        KindGraph=SR5
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Radar VI
+        OnPlanets=1
+        Owner=Any
+        Priority=70
+        SerieLevel1=SR1Equipment_RemRadar1
+        SerieLevel2=SR1Equipment_RemRadar2
+        SerieLevel3=SR1Equipment_RemRadar3
+        SerieLevel4=SR1Equipment_RemRadar4
+        SerieLevel5=SR1Equipment_RemRadar5
+        SerieLevel6=SR1Equipment_RemRadar6
+        SerieLevel7=SR1Equipment_RemRadar7
+        SerieLevel8=SR1Equipment_RemRadar8
+        Special=1
+        Text=<color=248,252,248>Industrial series of radars developed by engineers on basis of modifications of the Klissan War samples. Due to addition of acryn elements to the structure, it can achieve high coverage radius, which allows these radars to occupy a niche in the space technologies.</color>
+    }
+    SR1Equipment_RemRadar7 ^{
+        AcrynLevel=7
+        AcrynSerie=Remastive Radar I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemRadar7
+        Equipments=Radar
+        KindGraph=SR6
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Radar VII
+        OnPlanets=1
+        Owner=Any
+        Priority=80
+        SerieLevel1=SR1Equipment_RemRadar1
+        SerieLevel2=SR1Equipment_RemRadar2
+        SerieLevel3=SR1Equipment_RemRadar3
+        SerieLevel4=SR1Equipment_RemRadar4
+        SerieLevel5=SR1Equipment_RemRadar5
+        SerieLevel6=SR1Equipment_RemRadar6
+        SerieLevel7=SR1Equipment_RemRadar7
+        SerieLevel8=SR1Equipment_RemRadar8
+        Special=1
+        Text=<color=248,252,248>Industrial series of radars developed by engineers on basis of modifications of the Klissan War samples. Due to addition of acryn elements to the structure, it can achieve high coverage radius, which allows these radars to occupy a niche in the space technologies.</color>
+    }
+    SR1Equipment_RemRadar8 ^{
+        AcrynLevel=8
+        AcrynSerie=Remastive Radar I-VIII
+        Cost=100
+        CustomTag=SR1Equipment_RemRadar8
+        Equipments=Radar
+        KindGraph=SR7
+        LevelsCount=8
+        LockedAcryn=3
+        Name=Remastive Radar VIII
+        OnPlanets=1
+        Owner=Any
+        Priority=90
+        SerieLevel1=SR1Equipment_RemRadar1
+        SerieLevel2=SR1Equipment_RemRadar2
+        SerieLevel3=SR1Equipment_RemRadar3
+        SerieLevel4=SR1Equipment_RemRadar4
+        SerieLevel5=SR1Equipment_RemRadar5
+        SerieLevel6=SR1Equipment_RemRadar6
+        SerieLevel7=SR1Equipment_RemRadar7
+        SerieLevel8=SR1Equipment_RemRadar8
+        Special=1
+        Text=<color=248,252,248>Industrial series of radars developed by engineers on basis of modifications of the Klissan War samples. Due to addition of acryn elements to the structure, it can achieve high coverage radius, which allows these radars to occupy a niche in the space technologies.</color>
+    }
+}

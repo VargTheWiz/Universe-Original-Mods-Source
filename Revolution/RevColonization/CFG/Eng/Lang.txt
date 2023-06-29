@@ -1,0 +1,243 @@
+ColonizationRewards ^{
+    1 ^{
+        Owner=None
+        Subtype=RevColonization_statuya
+        Type=useless
+    }
+    10 ^{
+        Owner=-1
+        Subtype=t_ArtefactAnalyzer
+        Type=artifact
+    }
+    11 ^{
+        ItemTechLevel=-1
+        Owner=People
+        Size=-1
+        Subtype=t_Engine
+        Type=equipment
+    }
+    12 ^{
+        ItemTechLevel=4
+        Owner=Maloc
+        Size=35
+        Subtype=t_Scaner
+        Type=equipment
+    }
+    13 ^{
+        Owner=-1
+        Subtype=t_ArtefactFuel
+        Type=artifact
+    }
+    14 ^{
+        ItemTechLevel=6
+        Owner=Kling
+        Size=15
+        Subtype=t_Weapon4
+        Type=equipment
+    }
+    15 ^{
+        Owner=Maloc
+        Subtype=t_ArtefactBomb
+        Type=artifact
+    }
+    2 ^{
+        Owner=None
+        Subtype=RevColonization_protoplasm
+        Type=useless
+    }
+    3 ^{
+        Owner=None
+        Subtype=RevColonization_ztrans
+        Type=useless
+    }
+    4 ^{
+        Owner=-1
+        Subtype=t_ArtefactSpeed
+        Type=artifact
+    }
+    5 ^{
+        ItemTechLevel=4
+        Owner=Kling
+        Size=120
+        Subtype=t_Weapon14
+        Type=equipment
+    }
+    6 ^{
+        Owner=-1
+        Subtype=t_ArtefactNano
+        Type=artifact
+    }
+    7 ^{
+        Owner=-1
+        Subtype=t_ArtefactMiniExpl
+        Type=artifact
+    }
+    8 ^{
+        ItemTechLevel=-1
+        Owner=Peleng
+        Size=-1
+        Subtype=t_Weapon8
+        Type=equipment
+    }
+    9 ^{
+        Owner=-1
+        Subtype=t_ArtefactAntigrav
+        Type=artifact
+    }
+    TotalRewards=15
+}
+Script ^{
+    Mod_RevColonization ~{
+        1=Epidemic details
+        10=Thank you <Player> for your help. Those in need will not forget you!
+        100=Set up the sale of goods from the warehouse
+        101=<color=0,48,192>Turn off</color> the sale of goods from the warehouse
+        102=Let's train merchants
+        103=Change sales volume from warehouses
+        104=No, not until we train anyone
+        105=Start the educational process.
+        106=Increase by <color=0,48,192>10%</color>
+        107=Reduce by <color=0,48,192>10%</color>
+        11=I would like to know more about the possibility of refurbishing the station
+        110=Reduce price
+        111=<0> cr.
+        112=Increase price
+        113=Bye
+        114=Sad news from planet <0> of system <1>. After contact with the Maloq expedition, an epidemic of the Granek plague broke out among the Menzols - the original inhabitants of this, at first glance, uninhabited planet. In this regard, the <2> Medical Center announced the launch of a fundraising campaign for a humanitarian mission, the purpose of which will be to fight this dangerous disease that threatens the small race. We call on all caring humanoids to respond and contribute! The fate of the entire Menzol civilization depends on us.
+        115=Sale <0> from stock <color=0,48,192>on</color>.<br> - Sell <1><color=0,48,192>%</color> <2>, store the rest.< br> - Cost of one ton <3>: <4> cr. - <5> sales will be carried out at this cost, the percentage of net profit depends on the skills of the regular traders of the base.<br> - Net profit from the transaction: <6><color=0,48,192>%</color> - this parameter depends on skill of persuasion of merchants from the planetary base and means the percentage of the final profit from the face value of the party <7>.
+        116= - Sell goods from stock: <color=0,48,192>active</color><br> - Sell from stock <color=0,48,192><0>% <1></color><br> - Cost one ton <color=0,48,192><2>: <3></color> cr.<br> - Net profit from the transaction: <color=0,48,192><4>%</color><br>
+        118=We are informing you <Player> that <0> cr. has been debited from your account for the upkeep of a planetary base on planet <1>.
+        119=Warehouses on planet <0> are full. Talented merchants and diplomats from the planetary base have sold <1> tons <2>, which is <3><color=248,236,96>%</color> of all goods in stock. The amount of the sale was <4> cr. The proceeds have already been credited to your account.<br>Have a nice day.
+        12=Excellent, I'm transferring money to your account. Start preparing for the mission
+        120=Due to the end of colonization, the contract for the delivery of items from <0> has come to an end. As a result, <1> has been delivered to your warehouse on planet <2>.
+        121=I want to sell you one thing
+        122=An epidemic is raging on planet <0>. The Menzols living there are suffering from a rare form of the Granek Plague, which was brought there by warlike Maloqs. Their expedition has already left the planet, leaving behind a terrible disease. We could land our medical center on <1> and then convert it into a planetary base. This will allow us to deploy a full-fledged humanitarian mission to save the Menzol civilization. Also, there are volunteer researchers among us who want to study Menzol culture and customs after we deal with the consequences of the epidemic. Unfortunately, all this is accompanied by colossal financial costs that we cannot afford. You can sponsor our endeavors. In this case, we will give you everything we find during your stay on <2>. Thus, in addition to the moral satisfaction of saving an entire civilization from destruction, you can get some archaeological or technical artifact from the planet <3> as a memorable prize.<br>If you do not have the amount to build a planetary base, you can donate to our mission the amount that you yourself consider necessary. Also, we will need medicines and food.<br>So, how do you want to help those in need?
+        123=Ah yes, we were warned by our colleagues from planet <0>. What do you want to sell us?
+        124=I won't sell anything
+        125=Thank you for your cooperation, <Player>. The bag has already been delivered to our warehouse, and the money has been transferred to your account.<br>All the best!
+        126=Deal canceled
+        127=Menzols are the galaxy's last hope. An expedition to planet <0>, in collaboration with Menzol thinkers and scientists, has developed a new algorithm for an experimental anti-dominatorial program. The revolutionary nature of the development is manifested in the fact that this program transmits quite meaningful commands to the on-board computer of the dominator ship, which takes them for genuine data and tries to process them. Menzol specialists used as a logical model of this program a model of the behavior of their people, which is fundamentally different from the previously used approach to solving problems of this type, both among the scientific races of the Coalition and among the Dominators themselves. However, many were skeptical about such a development. Most doubts about the effectiveness of the new development were expressed by Faeyan scientists. Their main argument is that the Menzol race is still too young and has very approximate knowledge about the structure of the logical apparatus of the dominators, so the program will be useless in the fight against the silicon mind.
+        128=Due to the completion of the mission on the planet <0>, all items in stock have been sold. The proceeds in the amount of <1> cr. have been transferred to your account.
+        129=The Ranger Medical Center <color=0,48,192><0></color> was opened today on planet <color=0,48,192><1></color>. The noble ranger, having learned about the crisis of the Menzol civilization, spared no personal funds and provided assistance in the construction of a planetary station. This fact will serve as an example for all of us to follow, and will also help to better understand Menzol history and the way of life. We will keep our valued readers up to date.
+        13=No, the amount is too big for me, another time
+        14=Now the products are expensive, I will share them
+        15=I will donate some money
+        16=I think medicines are never superfluous
+        17=Back
+        18=<0> times more
+        19=<0> tons of products. The contribution, although scanty, will benefit, I hope
+        2=An epidemic is raging on the planet <0>, the Menzols living there are suffering from a rare type of Granac plague, do you want to help them in any way?
+        20=<0> times less
+        21=Those in need will receive <0> cr from me
+        22=<0> tons
+        23=Always happy to help!
+        24=The team of the colonization base named after <Player> on the planet <0> was conducting excavations with the assistance of Menzol observers. During the work, a curious thing was found - <1>. We are sure that you will be interested in this find, contact the planetary base at any time to collect it.
+        25=Message from planet <0>.<br><Player> are you following the latest news? So, we notify you that recent events have had a beneficial effect on the production <1>.
+        26=Today, researchers from planet <0> made a curious discovery in the field of medicine. A wild animal attacked a representative of the Peleng delegation, as a result of which the latter was seriously injured. It is not known how long it would have taken to heal the wounds received, if a Menzol shaman who happened to be nearby had not intervened in the matter. He rubbed the victim's skin with mud from the lake soaked in fragrant oils, after which the bearing recovered in a matter of hours. The Pelenga government has expressed interest in buying therapeutic mud from the planet <1>.
+        27=The personnel of the planetary center on planet <0> has discovered a sensational find. Scanning the surface of the planet showed that directly below the base is a network of tunnels built by an unknown civilization. One of the tunnels led to a cave in which a whole lake of alcohol was discovered. The opinions of the researchers who discovered this phenomenon were divided: the Gaalian and Maloq scientists are in favor of studying the origin of the lake, while the representatives of the Peleng and Human races are primarily interested in the commercial benefits of the discovery.
+        28=According to the latest information, an agrarian revolution has begun on the planet <0>, where the headquarters of a humanitarian research mission funded by the <Player> ranger is currently located. After the outbreak of the Granac plague among the local population, agricultural land was abandoned, because there was no one to handle them. In order to avoid starvation, the Gaalic researchers shared their bioengineering technologies with the Menzols, and the Faeyans provided machinery for harvesting the fields. As a result, crops increased several times, but this turn of events did not suit the human expedition, which hoped to sell their equipment to the menzols.
+        29=Breaking news from planet <0>! For the first time, a representative of the Menzol race won a malok in Barabum. The local population is distinguished by its peacefulness, so this fact has served as an occasion for numerous discussions among researchers from the <Player> ranger planetary base. The Maloq government noted the tactical ingenuity of the natives and decided to send additional personnel for further research on this planet.
+        30=An unexpected discovery awaited researchers on planet <0>. A small team of archaeologists working with the local population unearthed the ruins of an ancient city. This event has served as a source of inspiration for the menzols, who have already reflected it in their art.
+        31=Statistical studies have shown that one of the highest indicators of the standard of living relative to the level of development is recorded on the planet <0>. The indigenous people are the Menzols, who live there to this day. Despite the relatively young age of this race, the menzols have already begun to contact with representatives of the Coalition and even explore the nearest space. A breakthrough in the technological and cultural development of this civilization became possible thanks to the construction by the ranger <Player> of a planetary center on this planet.
+        32=Breaking news! On the planet <0> brawls began among the representatives of the Menzol race. The causes of the unrest have not yet been clarified, but the situation was stabilized by the personnel of the planetary base, led by the ranger <Player>. The incident was without casualties.
+        33=On the planet <0> Menzol forces, with the assistance of the planetary base, have established the extraction of rare mineral salts. Without a doubt, this product will find its buyer on many planets of the Coalition. However, the human government did not appreciate such a breakthrough in the Menzol industry, as the supply of ores and minerals was traditionally handled by human-led trading companies.
+        34=The Gaalian government is withdrawing its specialists from the colonization base on planet <0>. The official reason is the pernicious influence of researchers on the unique Menzol culture. In contrast to this decision, the Malok and Peleng delegations acted exactly the opposite, sending additional specialists to the planet <1>. This decision is motivated by the fact that the decrease in the number of station personnel could jeopardize the entire research project.
+        35=Today, a tragedy occurred at the colonization base of planet <0>: the fourth power unit of the energy station was blown up. There are dead both on the part of the station personnel and losses among the menzols. This event significantly worsened relations between the natives and representatives of the Coalition. The Peleng specialists claim that this sabotage operation was carried out by the Maloq special services, but the Gaalian and Faeyan experts are of the opinion that there was a negligence of the personnel.
+        36=Maloqian authorities have filed a complaint with the Galactic Council against Ranger <Player>. The famous ranger <Player> who financed the construction of a planetary medical center on planet <0> may be convicted. The Maloki representatives claim that they have already begun to colonize <1>, but the <Player> ranger team threw the Maloq colonizers into outer space, which interrupted the expansion of the great Maloq power for some time. An investigation is underway.
+        38=Peleng spy probe on planet <0> was found and neutralized by Menzol security forces. The Pelenga government has so far refrained from commenting. Recall that on this planet there is a planetary station designed to help in the development of the Menzol race and to study the ancient culture of their peoples. According to one of the hypotheses, the Menzols in ancient times were in contact with representatives of other races, clearly not included in the list of known ones. If this theory is correct, great prospects open up before researchers both in cultural and historical terms, and in military and technical terms.
+        39=The trade expansion of the Menzol race continues! Thanks to the efforts of the researchers of the planetary base on the planet <0>, a deal was made between representatives of the Coalition and the Menzol race. Recall that the studies of the Menzol culture were forgotten in the 30th century, after the death of the main researcher of the Menzol - Rene McCallister. And now, after three hundred years, research has been resumed. This was made possible by the ranger <Player>, a philanthropist who financed the construction of the base on <1>
+        4=At the moment we have almost everything we need to land and deploy a base on the planet, however the Galactic Council is unwilling to pay for the further maintenance of our mission, due to a budget deficit. Also, the staff will need funds to purchase additional resources for the station, not to mention the reward for the amount of work that will have to be done to cope with the consequences of the Granek plague. <br>Once on the planet, we will be able to establish the production of goods for nearby planets, and we will also report various finds on the surface of <0>. We ourselves will deliver what we found to the planet <1>, after which you can get in touch with the base and pick up what is due.<br>Research conducted by our center will not only help the Menzol race, but also serve as a source of knowledge about their amazing culture and customs . You will be able to learn about the results of our activities from RNN, we will certainly inform the journalists that all this is possible only thanks to your financial support. We hope that the governments of the Coalition races will appreciate your patronage and will be much more loyal to your person.<br>Regarding the financial part: you pay us lifting <2> cr. plus <3> cr. every standard 60 days to pay for the maintenance of the station and the labor of personnel.<br>Well, do you agree?
+        40=Today, planet <0> was eradicated from the last outbreak of the Granek Plague, brought there by the Maloq expedition. The miraculous saving of hundreds of Menzol lives was made possible thanks to the efforts of the medical staff of the planetary base built with Ranger <Player> funds.
+        41=The warehouses on planet <0> have been filled. Production of <1> has been suspended until traders return to base in approximately <2></color><3>.
+        43=The warehouses on planet <0> have been filled. Production <1> has been suspended.
+        44=Today the <Player> planetary center on planet <0> was officially closed. Today, the medical center <1> will be returned to outer space and will be able to receive patients from tomorrow.
+        46=Planetary Base <Player> is online.
+        47=Although we are not a manufacturing base or even a food base, we can organize the production of certain types of goods in cooperation with the local population. Here is the list: <br> - <color=0,48,192>products</color> - exotic roots, foliage, juicy kwangi fruits and three-eyed fish;<br> - <color=0,48,192>medicines</color> - healing herbs, fragrant oils and therapeutic mud from Lake Mumba-Yumba;<br> - <color=0,48,192>luxury</color> - beautiful dongs, wooden gangs, new tongs and many more outlandish things that mensols use in everyday life;< br> - <color=0,48,192>alcohol</color> - an extremely nutritious drink based on guanavas, in addition to its healing properties, contains a share of alcohol, which will undoubtedly appeal to representatives of different races;<br> - <color=0,48,192 >minerals</color> - rare composites that are not found almost anywhere on the planets of the Coalition, but are available in abundance here.<br><br>Currently, the cost of opening a production is <0> cr. <br>Oh, yes, I almost forgot: only <color=0,48,192>one</color> type of goods can be produced at the same time.
+        48=So, production <0> is already deployed. Current production rate: <1> tons per day, the warehouse can hold another <2> tons of <3>.
+        49=<Player>, are you sure you want to close the planetary station? Please note that it will not be possible to restore it.
+        5=Excellent, course to <0> is already set. Oh yes, I completely forgot to mention the connection. We will keep it very simple: when you need us, fly up to the planet <1>, then launch the satellite into outer space. We will see a signal from the surface, after which we will make contact ourselves. If we urgently need to inform you of something important, we will send you a message via galanet. We have loaded a communications satellite into your hold.
+        50=<0>
+        51=All efforts are directed to the improvement of the production process. Please try again after <0><1>.<br>
+        52=Stock capacity: <0> t.<br>Available: <1> cu. <br>Increase storage by <2>: <3> cr.<br>Increase storage by <4>: <5> cr.<br>Increase storage by <6>: <7> cr.
+        53=Excellent, the refurbishment of the warehouse has already begun. This will take approximately <0> days, so during this period, no production-related operations will be possible.
+        54=Production rate: <0> tons per day.<br>Production increase cost:<br> - Increase by 1 tons per day - <1> cr.
+        55=Production refurbishment started, this operation will take approximately <0> days. Before the expiration of this period, changing the production parameters will not be available.
+        56=Currently in warehouse <0> <1>.<br>We can transfer the container with the goods directly into orbit, since our station is equipped with a space elevator.
+        57=Lot <0> is already packaged and ready to ship.<br>Stay close to <1>, <Player>, the ordered container will be in orbit soon.<br>
+        58=Are you sure you want to stop producing <0>? The remaining products in the warehouse will be disposed of, the warehouses will be converted into technical rooms, and the sales specialists will be fired.
+        6=Well, it's your right, <Player>, maybe the menzols will have another chance to overcome the disease.<br>Let me at least tell you about our center then.
+        60=The station is currently inhabited by Rogue Traders who now work with us and sell goods as the warehouse fills up. At the moment, their knowledge allows them to receive <0> percent of the benefit from the cost of each transaction. You can fund a training course for our merchants for <1> cr., which will last approximately <2> days, but no work can be done on the station during this time, so as not to distract them from the training process.
+        61=We currently sell <0><color=0,48,192>%</color> <1> and keep the rest in stock where the products are waiting for your disposal.<br>You can increase or decrease the percentage products for sale, if applicable.
+        64=So how much do you want for <0>?
+        65=Well, my dear, what do you want to sell <0> for <1> cr.? This is a swindle! The price is outrageously high! Reduce it, otherwise the transaction will not take place.<br>
+        67=We will expand the production of consumer goods
+        68=Expand the production of <color=0,48,192>minerals</color>
+        69=Expand production of <color=0,48,192>products</color>
+        7=Alas, the war does not contribute to the development of agriculture. How many tons of food are you willing to donate to our mission?
+        70=Expand the production of <color=0,48,192>medicines</color>
+        71=Expand the production of <color=0,48,192>alcohol</color>
+        72=Expand the production of <color=0,48,192>luxury</color>
+        73=We won't produce anything yet
+        74=Excellent
+        75=Not yet, maybe I can help you later
+        76=I'm not interested, I don't want to spend my money on underdeveloped savages
+        77=Completing the project. From now on the base is disbanded
+        78=Yes, I weighed everything, close the base
+        79=I'm talking about a find
+        8=So, how much of your hard earned capital are you willing to share with those in need, <Player>?
+        80=By the way, we contacted our colleagues from the planet <color=0,48,192><0></color>, they are interested in this archaeological artifact and can buy it from you for a decent amount, but you yourself will have to deliver it there, sorry for that. Just be careful and unload everything except what you want to hand over to the warehouse. Those government movers get things mixed up so often, you know.
+        81=</color>The ship <color=0,48,192><0></color> has already set a course to approach you. When the distance between your ships is at a minimum, <color=0,48,192><1></color> will be in open space, where you can pick up a find with a capture, of course.<br>
+        82=Disconnect
+        83=I need information about the progress of production <0>
+        84= - Merchants are in <color=0,48,192>base</color>. They will start selling the goods as soon as the warehouse is full.
+        85= - Traders will return to base in <color=0,48,192><0></color>
+        87=<br> - Sale of goods from the warehouse: <color=0,48,192>inactive</color>
+        88=</color>Production <color=0,48,192><0></color>:<br> - Storage capacity: <color=0,48,192><1></color> tons<br> - Remaining places in stock : <color=0,48,192><2></color> cu. meters.<br> - Finished products: <color=0,48,192><3></color> tons<br> - Production speed: <color=0,48,192><4></color> tons per day .<br>
+        89=Understood. Let's move on to other things
+        9=Quite right, <Player>. How many medical supplies can you donate?
+        90=Warehouse management
+        91=Increase storage capacity by <0> units.
+        92=Production speed
+        93=Increase production by one ton
+        94=I want to pick up a shipment of <0> from the warehouse<br>
+        95=Take <0> v. <1>
+        96=I changed my mind, let the goods lie in your warehouse
+        97=<color=0,48,192>Activate</color> sale of goods from stock
+        98=Close production <0>
+        99=Yes, I'm sure. Stop production <0>
+    }
+}
+UselessItems ^{
+    RevColonization_protoplasm ^{
+        Cost=Big
+        Description=
+        Name=Protoplasm
+        Owner=None
+        Size=25
+        Text=Biological substance. Decomposition product of klisans.
+    }
+    RevColonization_satellite_su ^{
+        Cost=Mini
+        Description=
+        Name=Satellite
+        Owner=People
+        Size=1
+        Text=Antique human communications satellite in excellent condition.
+    }
+    RevColonization_statuya ^{
+        Cost=Big
+        Description=
+        Name=Copper figurine of an unknown ranger
+        Owner=None
+        Size=1
+        Text=Statuette dedicated to the ranger of antiquity. Presumably of Menzolian origin.
+    }
+    RevColonization_ztrans ^{
+        Cost=Big
+        Description=
+        Name=Z-transmitter
+        Owner=None
+        Size=1
+        Text=Antique human communications satellite in excellent condition.
+    }
+}

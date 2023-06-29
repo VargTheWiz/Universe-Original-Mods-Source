@@ -1,0 +1,29 @@
+Script ^{
+    Mod_SR1Malocs&Traders ^{
+        0=We don't deal with traders. Stay out of our sight.
+        1=You deserve death, prepare to die.
+        10=Well, you had a chance and you missed it. Bye, trader.
+        11=These problems are entirely yours. We won't accept your apology without a ransom.
+        12=Ok <PlayerFull>, we accept your apology. Your contribution stays with us. But remember if we ever find out that you are still trading, we'll find you.
+        13=Wait, wait! What have I done to you?
+        14=Can't we settle the conflict in a more civilised way?
+        15=Well, so you have been looking for trouble. Good. Now I'll rip you to shreds.
+        16=At least, name your price. I'm ready to pay so that you let me pass.
+        17=I will change! I won't ever trade again! I promise!
+        18=YES, YES, YES!!!
+        19=No, this is too much! Name your price, I'll pay. Everybody likes money, you can't be any different.
+        2=<PlayerFull>, dirty trader. We need neither your stuff, nor your dirty money. Everybody like you is a disgrace to our Galaxy and every Maloq will spit in your face. But we will do even more. Load the guns!
+        20=I've had enough of this! You'll pay for your impudence!
+        21=I'm transferring the money. I hope, it'll be enough, sir.
+        22=Unfortunately, at the moment I don't have the money.
+        23=I think that's too much. Maybe, you can reduce the amount?
+        24=Honestly, I'm tired of you guys. I feel like clearing the Galaxy of you myself.
+        3=You are a dirty trader, you have made your fortune on the shameful exchange of goods. People like you destroy the morals and values of our youth. We represent a political party clearing the Galaxy from the likes of you. And we'll do it right now.
+        4=Hah, but what can a dirty trader offer? We don't need your filthy money.
+        5=Farewell, trading has ruined you. Now there will be one less trader.
+        6=We're honest pirates and we stick to our principles. We take no money from traders. You deserve to die. Say your prayers.
+        7=Hmm.. Do you swear you'll give up trading and start doing something more dignified, like war?
+        8=Well, perhaps, we'll accept your apology. But you must pay <0> cr as ransom, and then we'll stop the attack.
+        9=Look at him, he keeps on haggling even when facing death! I guess it's time to teach him a lesson.
+    }
+}

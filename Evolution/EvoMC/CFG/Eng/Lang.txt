@@ -1,0 +1,480 @@
+Script ^{
+    Mod_EvoMC ^{
+        120=<br>
+        125=<0>
+        126=Purchase medications
+        129=According to paragraph <clr>1/2<clrEnd> of section <clr>10<clrEnd> of the Medical Code, medications are only dispensed with a valid health policy. We, ranger <Player>, highly recommend you to go nearest business center and purchase a life insurance, which indeed does include policy agreement we're talking about.
+        132=Leave the medical center
+        133=Ranger, you don't have the money to buy our medicine.
+        136=Great choice.<br>Remember that medicines are dangerous to your health. They are addictive, you can become a drug addict, and deaths are not uncommon.<br>It is even better to lead a healthy lifestyle, to keep your body in good physical shape. For the soul, read the Ranger Statute and meditate!
+        137=Medications, according to paragraph <clr>18/2<clrEnd> of section <clr>744<clrEnd> of the Medical Code, are prescribed solely for use in emergency situations where it is not possible to provide medical assistance by medics in space.<br>Viewing this situation as pathologically dangerous to our nations, we can allow <0> various medications to be sold per year.<br>According to our data, this year you bought <1> units of medication. You can buy <2> units of any drug.<br>This is what we offer at the moment: <3>
+        138=According to our data, this year you bought <0> units of medication. You cannot purchase medication until the end of the year because you have reached your limit (<1> units).<br>We look forward to seeing you next year.
+        139=At the moment we have run out of medication that we can sell you. Wait for the next batch or go to the medical office for a stimulant appointment.
+        140=At least give me a sample! What... I'm not supposed to... Goodbye, then.
+        141=1 January
+    }
+}
+Artefacts ^{
+    CustomArtefacts ^{
+        UrineTincture ^{
+            Broken=(expired)
+            BrokenInBattle=---
+            BrokenInUse=---
+            Cost=1000
+            Name=Urine tincture
+            NameDialog=Traditional <clr>urine tincture<clrEnd> medicine
+            NoWear=1
+            OnUseCode ^{
+                01=if(MessageBoxYesNo('Are you sure you want to <color=0,50,200>drink urine</color>?'))
+                02 ^{
+                    01=dword num_ill;
+                    02=dword num_med = 0;
+                    03=str text;
+                    04=unknown array = newarray(1);
+                    05=for(num_ill = 1; num_ill < 13; num_ill = num_ill + 1)
+                    06 ^{
+                        01=if(ShipHealthFactor(Player(), num_ill))
+                        02 ^{
+                            01=ArrayAdd(array, num_ill);
+                            02=num_med = num_med + 1;
+                        }
+                    }
+                    07=if(!num_med) Ether(0, '', 'You felt an unpleasant bitterness in your mouth and a feeling of regret about the wasted medicine, because you did not have any symptoms of disease.');
+                    08=else
+                    09 ^{
+                        01=num_ill = Rnd(1, num_med);
+                        02=text = 'Illness.Illness.' + (array[num_ill] - 1) + '.Name';
+                        03=int rand = Rnd(0, 3, sqr(sqr(CurTurn()) + 42));
+                        04=if(!rand)
+                        05 ^{
+                            01=ShipHealthFactor(Player(), array[num_ill], 0);
+                            02=Ether(0, '', 'Urine tincture had a positive effect on you, completely getting rid of the <clr>' + CT(text) + '<clrEnd> illness!');
+                        }
+                        06=else if(rand == 1)
+                        07 ^{
+                            01=num_med=ShipHealthFactor(Player(), array[num_ill]) / 2;
+                            02=ShipHealthFactor(Player(), array[num_ill], num_med);
+                            03=Ether(0, '', 'Urine tincture had a positive effect on you, reducing the duration of the <clr>' + CT(text) + '<clrEnd> illness to half!');
+                        }
+                        08=else if(rand == 2)
+                        09 ^{
+                            01=num_med = ShipHealthFactor(Player(), array[num_ill]) + ShipHealthFactor(Player(), array[num_ill]) / 2;
+                            02=ShipHealthFactor(Player(), array[num_ill], num_med);
+                            03=Ether(0, '', 'Urine tincture has negatively affected you, increasing the duration of the <clr>' + CT(text) + '<clrEnd> illness by 50%!');
+                        }
+                        10=else
+                        11 ^{
+                            01=Ether(0, '', '<clr>Urine tincture<clrEnd> could not get rid of the <clr>' + CT(text) + '<clrEnd> illness!');
+                            02=if(ShipFindCustomShipInfoByType(Player(), 'EvoMC_UrineCurse') == -1)
+                            03 ^{
+                                01=ShipSpecialBonuses(Player(), bonSkill5,ShipSpecialBonuses(Player(), bonSkill5) - 3);
+                                02=ShipSpecialBonuses(Player(), bonSkill6,ShipSpecialBonuses(Player(), bonSkill6) - 3);
+                                03=ShipAddCustomShipInfo(Player(), 'EvoMC_UrineCurse', '', CurTurn() + Rnd(93, 124), 3, 3);
+                                04=if(IsScriptActive('Mod_ExpImplants'))
+                                05 ^{
+                                    01=GlobalImplantsEnduranceBonus = GlobalImplantsEnduranceBonus - 2;
+                                }
+                            }
+                            04=else
+                            05 ^{
+                                01=ShipSpecialBonuses(Player(), bonSkill5, ShipSpecialBonuses(Player(), bonSkill5) - 1);
+                                02=ShipSpecialBonuses(Player(), bonSkill6, ShipSpecialBonuses(Player(), bonSkill6) - 1);
+                                03=ShipCustomShipInfoData(Player(), 'EvoMC_UrineCurse', 1, CurTurn() + Rnd(124, 186));
+                                04=ShipCustomShipInfoData(Player(), 'EvoMC_UrineCurse', 2, ShipCustomShipInfoData(Player(), 'EvoMC_UrineCurse', 2) + 1);
+                                05=ShipCustomShipInfoData(Player(), 'EvoMC_UrineCurse', 3, ShipCustomShipInfoData(Player(), 'EvoMC_UrineCurse', 3) + 1);
+                            }
+                        }
+                    }
+                    10=if(~FindItemInShip(Player(), CurItem())) FreeItem(GetArtFromShip(Player(), CurItem()));
+                    11=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+                }
+            }
+            Owner=None
+            Size=1
+            Text=Can cure you of an illness or reduce its duration.
+            Text=A good, but ineffective remedy for any illness.
+        }
+    }
+}
+UselessItems ^{
+    Usl_Drug01 ^{
+        Cost=Average
+        Name="Chekumash" virus strain
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Are you sure you want to catch a mild form of <color=0,50,200>Chekumash</color>?'))
+            02 ^{
+                01=ShipHealthFactor(Player(),2,30);
+                02=Ether(0,'','The <clr>Chekumash<clrEnd> virus strain has been successfully injected into your body. Immunity to this disease will be developed in 30 days.');
+                03=if (FindItemInShip(Player(),CurItem())>0) FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                04=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=Injects antigenic material in order to induce immunity to Chekumash disease.<br>Gives resistance to visual and auditory hallucinations for 2 years. You will have to suffer from the disease for it to have an effect.
+    }
+    Usl_Drug02 ^{
+        Cost=Average
+        Name="Holy Fanaticism" virus strain
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Are you sure you want to catch a mild form of <color=0,50,200>Holy Fanaticism</color>?'))
+            02 ^{
+                01=ShipHealthFactor(Player(),3,30);
+                02=Ether(0,'','The <clr>Holy Fanaticism<clrEnd> virus strain successfully injected into your system.');
+                03=if (FindItemInShip(Player(),CurItem())>0) FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                04=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=Introduces antigenic material in order to induce immunity to the disease Holy Fanaticism.<br>Gives resistance to visual hallucinations for 2 years. You will have to suffer from the disease for it to have an effect.
+    }
+    Usl_Drug03 ^{
+        Cost=Average
+        Name="Mysterious Luatanza" virus strain
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Are you sure you want to catch a mild form of <color=0,50,200>Mysterious Luatanza</color>?'))
+            02 ^{
+                01=ShipHealthFactor(Player(),5,30);
+                02=Ether(0,'','The <clr>Mysterious Luatanza<clrEnd> virus strain successfully injected into your system.');
+                03=if (FindItemInShip(Player(),CurItem())>0) FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                04=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=Introduces viral material to cause the disease Mysterious Luatanation, for study by galactic scientists.<br> The medical analyzer will automatically collect data about your well-being and send it to us, and we, in turn, will replenish your account. Unfortunately, re-infection is only possible after 2 years.
+    }
+    Usl_Drug04 ^{
+        Cost=Average
+        Name="Grand Malosausus" virus strain
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Are you sure you want to catch a mild form of <color=0,50,200>Grand Malosausus</color>?'))
+            02 ^{
+                01=ShipHealthFactor(Player(),9,30);
+                02=Ether(0,'','The <clr>Grand Malosausus<clrEnd> virus strain successfully injected into your system.');
+                03=if (FindItemInShip(Player(),CurItem()) > -1) FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                04=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=Introduces viral material in order to cause the disease Grand Malosausus.<br> The medical analyzer will automatically collect data about your well-being and send it to us. The study of the disease is not funded by the Galactic Academy of Sciences. Re-infection is possible only after 2 years.
+    }
+    Usl_Drug05 ^{
+        Cost=Average
+        Name="New Molizone" hormone
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Are you sure you want to take <color=0,50,200>New Molizone</color>?'))
+            02 ^{
+                01=ShipHealthFactor(Player(),12,30);
+                02=Ether(0,'','The <clr>New Molizone<clrEnd> hormone has been successfully injected into your body.');
+                03=if (FindItemInShip(Player(),CurItem())>0) FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                04=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=Administers a shock dose of a biologically active substance to increase accuracy and maneuverability skills. Medical scientists consider an excess of this hormone to be a disease, as the pheromones of the patient begin to arouse aversion to food and other medication.<br>Patient gains immunity to the hormone for some time.
+    }
+    Usl_Drug06 ^{
+        Cost=Average
+        Name="Maloq Sizha" stimulant
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Are you sure you want to take <color=0,50,200>Maloq Sizha</color>?'))
+            02 ^{
+                01=ShipHealthFactor(Player(),13,ShipHealthFactor(0,13)*Rnd(9,20)/10);
+                02=Ether(0,'','<clr>Maloq Sizha<clrEnd> stimulant has been successfully injected into your body.');
+                03=if (FindItemInShip(Player(),CurItem())>0) FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                04=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=A liquid stimulant. Use once a year only, or else you will become addicted. Improves accuracy and mobility to nearly their maximum. It is not for nothing that this stimulant is often referred to as "the Devil's Luck."
+    }
+    Usl_Drug07 ^{
+        Cost=Average
+        Name="One-eyed Khamas" stimulant
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Are you sure you want to take <color=0,50,200>One-eyed Khamas</color>?'))
+            02 ^{
+                01=ShipHealthFactor(Player(),14,ShipHealthFactor(0,14)*Rnd(9,20)/10);
+                02=Ether(0,'','<clr>One-eyed Khamas<clrEnd> stimulant has been successfully injected into your body.');
+                03=if (FindItemInShip(Player(),CurItem())>0) FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                04=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=A peleng stimulant. In 3227 it was adopted for use by other races. Looks like a small one-eyed creature. The creature roots itself onto a humanoid, enters its brain, and imparts to it hypnotic abilities. Any ship that the pilot may claim tribute from will give away their goods without argument. On the downside, the stimulant negatively affects reputation, reducing leadership and charisma.
+    }
+    Usl_Drug08 ^{
+        Cost=Average
+        Name="Stardust" stimulant
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Are you sure you want to take <color=0,50,200>Stardust</color>?'))
+            02 ^{
+                01=ShipHealthFactor(Player(),15,ShipHealthFactor(0,15)*Rnd(9,20)/10);
+                02=Ether(0,'','<clr>Stardust<clrEnd> stimulant has been successfully injected into your body.');
+                03=if (FindItemInShip(Player(),CurItem())>0) FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                04=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=A stimulant in the form of particle micropowder, recovered in close vicinity of black holes. For internal use only. Improves the brain function in creatures of any race for an prolonged period of time. Improves a whole set of skills.
+    }
+    Usl_Drug09 ^{
+        Cost=Average
+        Name="Super Technician" stimulant
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Are you sure you want to take <color=0,50,200>Super Technician</color>?'))
+            02 ^{
+                01=ShipHealthFactor(Player(),16,ShipHealthFactor(0,16)*Rnd(9,20)/10);
+                02=Ether(0,'','<clr>Super Technician<clrEnd> stimulant has been successfully injected into your body.');
+                03=if (FindItemInShip(Player(),CurItem())>0) FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                04=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=A faeyan biostimulant that improves technical skills. Equipment wear and tear becomes almost nonexistent. However, the duration is very limited.
+    }
+    Usl_Drug10 ^{
+        Cost=Average
+        Name="Gaalian Alacrity" stimulant
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Are you sure you want to take <color=0,50,200>Gaalian Alacrity</color>?'))
+            02 ^{
+                01=ShipHealthFactor(Player(),17,ShipHealthFactor(0,17)*Rnd(9,20)/10);
+                02=Ether(0,'','<clr>Gaalian Alacrity<clrEnd> stimulant has been successfully injected into your body.');
+                03=if (FindItemInShip(Player(),CurItem())>0) FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                04=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=A gaalian combat stimulant. Recommended for use in combat. Speeds up brain activity by several thousand times. Ship speed and firing accuracy see a sharp improvement.
+    }
+    Usl_Drug11 ^{
+        Cost=Average
+        Name="Blood Djogar" stimulant
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Are you sure you want to take <color=0,50,200>Blood Djogar</color>?'))
+            02 ^{
+                01=ShipHealthFactor(Player(),18,ShipHealthFactor(0,18)*Rnd(9,20)/10);
+                02=Ether(0,'','<clr>Blood Djogar<clrEnd> stimulant has been successfully injected into your body.');
+                03=if (FindItemInShip(Player(),CurItem())>0) FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                04=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=A solid oily clot from a maloq sand djogar. The stimulant improves blood supply by replacing regular blood cells with enhanced, artificial substitutes, making the body less susceptible to disease.
+    }
+    Usl_Drug12 ^{
+        Cost=Average
+        Name="Ragobam Whisper" stimulant
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Are you sure you want to take <color=0,50,200>Ragobam Whisper</color>?'))
+            02 ^{
+                01=ShipHealthFactor(Player(),19,ShipHealthFactor(0,19)*Rnd(9,20)/10);
+                02=Ether(0,'','<clr>Ragobam Whisper<clrEnd> stimulant has been successfully injected into your body.');
+                03=if (FindItemInShip(Player(),CurItem())>0) FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                04=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=The stimulant is made from a tincture of filthy swamp slush, using radioactive extracts of ragobam bullfrog poison. Increases negotiation and persuasion skills, improving the pilot's likability. Additionally, it is safe to consume ragobam bullfrogs.
+    }
+    Usl_Drug13 ^{
+        Cost=Average
+        Name="Shakhmandoo Leader" stimulant
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Are you sure you want to take <color=0,50,200>Shakhmandoo Leader</color>?'))
+            02 ^{
+                01=ShipHealthFactor(Player(),20,ShipHealthFactor(0,20)*Rnd(9,20)/10);
+                02=Ether(0,'','<clr>Shakhmandoo Leader<clrEnd> stimulant has been successfully injected into your body.');
+                03=if (FindItemInShip(Player(),CurItem())>0) FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                04=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=This peleng stimulant temporary inflates the subject's self-esteem - a priceless quality for rallying others around you. The stimulant boosts leadership and enables you to conclude long-term contracts.
+    }
+    Usl_Drug14 ^{
+        Cost=Average
+        Name="Psychotropic Cache" stimulant
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Are you sure you want to take <color=0,50,200>Psychotropic Cache</color>?'))
+            02 ^{
+                01=ShipHealthFactor(Player(),21,ShipHealthFactor(0,21)*Rnd(9,20)/10);
+                02=Ether(0,'','<clr>Psychotropic Cache<clrEnd> stimulant has been successfully injected into your body.');
+                03=if (FindItemInShip(Player(),CurItem())>0) FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                04=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=The stimulator enables the brain to send impulse signals to the radar and scanner, tremendously boosting their capacity. The human scanner irritates everyone around him, eliciting a negative response no matter what he does.
+    }
+    Usl_Drug15 ^{
+        Cost=Average
+        Name="Business Mark" stimulant
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Are you sure you want to take <color=0,50,200>Business Mark</color>?'))
+            02 ^{
+                01=ShipHealthFactor(Player(),22,ShipHealthFactor(0,22)*Rnd(9,20)/10);
+                02=Ether(0,'','<clr>Business Mark<clrEnd> stimulant has been successfully injected into your body.');
+                03=if (FindItemInShip(Player(),CurItem())>0) FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                04=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=A temporary hypodermic business mark. Indicates a wealth of experience in conducting commercial deals. Enables maximum profit when selling equipment (80% of actual value).
+    }
+    Usl_Drug16 ^{
+        Cost=Average
+        Name="Doubleplex" stimulant
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Are you sure you want to take <color=0,50,200>Doubleplex</color>?'))
+            02 ^{
+                01=ShipHealthFactor(Player(),23,ShipHealthFactor(0,23)*Rnd(9,20)/10);
+                02=Ether(0,'','<clr>Doubleplex<clrEnd> stimulant has been successfully injected into your body.');
+                03=if (FindItemInShip(Player(),CurItem())>0) FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                04=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=A short-lived virus artificially developed on Earth in 2117 as part of a series of experiments using the theory of relativity. Rumor has it that the infected become successful in virtually any endeavor, though this claim has never been proven. One known side effect of the virus is anemia, resulting in reduced attack and mobility. On the other hand, the infected are guaranteed greater rewards for completing government missions, as every planet has got its share of superstitious humanoids.
+    }
+    Usl_Drug17 ^{
+        Cost=Average
+        Name="Absolute Status" stimulant
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Are you sure you want to take <color=0,50,200>Absolute Status</color>?'))
+            02 ^{
+                01=ShipHealthFactor(Player(),24,ShipHealthFactor(0,24)*Rnd(9,20)/10);
+                02=Ether(0,'','<clr>Absolute Status<clrEnd> stimulant has been successfully injected into your body.');
+                03=if (FindItemInShip(Player(),CurItem())>0) FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                04=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=Seen exclusively on bioscans in governmental institutions. Those with the status enjoy unusual, minimal requirements. Namely, the terms of offered government missions are less stringent.
+    }
+    Usl_Urine ^{
+        Cost=Average
+        Name=Folksy medication "Urine tincture"
+        OnActCode ^{
+            01=UselessItemData(CurItem(),1,UselessItemData(CurItem(),1)+1);
+            02=if(UselessItemData(CurItem(),1)==Rnd(14,17))
+            03 ^{
+                01=UselessItemData(CurItem(),2,Rnd(0,3));
+                02=UselessItemData(CurItem(),1,0);
+            }
+        }
+        OnActCodeTypes=t_OnStep
+        OnActStepTypes=11
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Are you sure you want to take <color=0,50,200>urine tincture</color>?'))
+            02 ^{
+                01=dword num_ill;
+                02=dword num_med = 0;
+                03=str text;
+                04=unknown array = newarray(1);
+                05=for(num_ill = 1; num_ill < 13; num_ill = num_ill + 1)
+                06 ^{
+                    01=if(ShipHealthFactor(Player(), num_ill))
+                    02 ^{
+                        01=ArrayAdd(array, num_ill);
+                        02=num_med = num_med + 1;
+                    }
+                }
+                07=if(!num_med) Ether(0, '', 'You felt an unpleasant bitterness in your mouth and a feeling of regret about the wasted medicine, because you had no symptoms of disease.');
+                08=else
+                09 ^{
+                    01=num_ill = Rnd(1, num_med);
+                    02=text = 'Illness.Illness.' + (array[num_ill] - 1) + '.Name';
+                    03=int rand = UselessItemData(CurItem(),2);
+                    04=if(!rand)
+                    05 ^{
+                        01=ShipHealthFactor(Player(), array[num_ill], 0);
+                        02=Ether(0, '', 'Tincture of urine had a positive effect on you, completely getting rid of the <clr>' + CT(text) + '<clrEnd> illness!');
+                    }
+                    06=else if(rand == 1)
+                    07 ^{
+                        01=num_med=ShipHealthFactor(Player(), array[num_ill]) / 2;
+                        02=ShipHealthFactor(Player(), array[num_ill], num_med);
+                        03=Ether(0, '', 'Tincture of urine has had a positive effect on you, reducing the duration of the <clr>' + CT(text) + '<clrEnd> illness to half!');
+                    }
+                    08=else if(rand == 2)
+                    09 ^{
+                        01=num_med = ShipHealthFactor(Player(), array[num_ill]) + ShipHealthFactor(Player(), array[num_ill]) / 2;
+                        02=ShipHealthFactor(Player(), array[num_ill], num_med);
+                        03=Ether(0, '', 'Tincture of urine has negatively affected you, increasing the duration of the <clr>' + CT(text) + '<clrEnd> illness by 50%!');
+                    }
+                    10=else
+                    11 ^{
+                        01=Ether(0, '', '<clr>Urine tincture<clrEnd> could not get rid of the <clr>' + CT(text) + '<clrEnd> illness!');
+                        02=if(ShipFindCustomShipInfoByType(Player(), 'EvoMC_UrineCurse') == -1)
+                        03 ^{
+                            01=ShipSpecialBonuses(Player(), bonSkill5,ShipSpecialBonuses(Player(), bonSkill5) - 3);
+                            02=ShipSpecialBonuses(Player(), bonSkill6,ShipSpecialBonuses(Player(), bonSkill6) - 3);
+                            03=ShipAddCustomShipInfo(Player(), 'EvoMC_UrineCurse', '', CurTurn() + Rnd(93, 124), 3, 3);
+                            04=if(IsScriptActive('Mod_ExpImplants'))
+                            05 ^{
+                                01=GlobalImplantsEnduranceBonus = GlobalImplantsEnduranceBonus - 2;
+                            }
+                        }
+                        04=else
+                        05 ^{
+                            01=ShipSpecialBonuses(Player(), bonSkill5, ShipSpecialBonuses(Player(), bonSkill5) - 1);
+                            02=ShipSpecialBonuses(Player(), bonSkill6, ShipSpecialBonuses(Player(), bonSkill6) - 1);
+                            03=ShipCustomShipInfoData(Player(), 'EvoMC_UrineCurse', 1, CurTurn() + Rnd(124, 186));
+                            04=ShipCustomShipInfoData(Player(), 'EvoMC_UrineCurse', 2, ShipCustomShipInfoData(Player(), 'EvoMC_UrineCurse', 2) + 1);
+                            05=ShipCustomShipInfoData(Player(), 'EvoMC_UrineCurse', 3, ShipCustomShipInfoData(Player(), 'EvoMC_UrineCurse', 3) + 1);
+                        }
+                    }
+                }
+                10=if(~FindItemInShip(Player(), CurItem())) FreeItem(GetItemFromShip(Player(), FindItemInShip(Player(), CurItem())));
+                11=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=Can cure you of an illness or reduce its duration.<br>A good, but ineffective remedy for any illness.
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            EvoMC_UrineCurse ^{
+                Description=Your medical opinions are not shared by all of the intelligent races of the Galaxy. Your social skills will be reduced for some time.
+                Icon=1
+                Name=A fan of traditional medicine
+                OnActCode ^{
+                    01=dword cur_info = CurInfo();
+                    02=if(ShipCustomShipInfoData(0, cur_info,1) <= CurTurn())
+                    03 ^{
+                        01=ShipSpecialBonuses(Player(), bonSkill5, ShipSpecialBonuses(Player(), bonSkill5) + ShipCustomShipInfoData(0, cur_info, 2));
+                        02=ShipSpecialBonuses(Player(), bonSkill6, ShipSpecialBonuses(Player(), bonSkill6) + ShipCustomShipInfoData(0, cur_info, 3));
+                        03=ShipDeleteCustomShipInfo(Player(), 'EvoMC_UrineCurse');
+                        04=if(IsScriptActive('Mod_ExpImplants'))
+                        05 ^{
+                            01=GlobalImplantsEnduranceBonus = GlobalImplantsEnduranceBonus + 2;
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnStep
+                OnActStepTypes=11
+            }
+        }
+    }
+}

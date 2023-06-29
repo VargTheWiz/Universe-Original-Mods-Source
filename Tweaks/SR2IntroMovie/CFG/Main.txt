@@ -1,0 +1,13 @@
+Intro ^{
+    4 ^{
+        Frames=4521
+        Image=Mods\Tweaks\SR2IntroMovie\DATA\Video\sr.vdo
+        Sound=SR
+        Time=180840
+    }
+}
+Music ^{
+    SR ^{
+        1=Mods\Tweaks\SR2IntroMovie\DATA\Audio\sr.dat
+    }
+}

@@ -1,0 +1,2344 @@
+FormInfo ^{
+    br=<br>
+}
+Script ^{
+    Mod_ExpArts ^{
+        BombIsDepleted=This bomb has already depleted and cannot be reused. Is of value exclusively in the form of scrap metal.
+        BombWithTimer= with timer
+        ContactFuse=Contact
+        ContactFuseAndTimer=Contact with timer
+        ContactFuseIsActivated=<br>Contact fuse is activated
+        ContactFuseIsActive=<br>Contact fuse is active
+        ContactFuseIsSet=<br>Contact fuse installed
+        DepletedEMPBomb=Discharged EMF bomb
+        DepletedEMPMine=Discharged EMF mine
+        DepletedStunBomb=Discharged stun bomb
+        DepletedStunMine=Discharged stun mine
+        DetonatorIsAlreadySet=This bomb already has one detonator. A second one is of no use to it.
+        HowMuchDaysToSet=How much days till the bomb explodes?
+        MineIsDepleted=This mine has already depleted and cannot be reused. Is of value exclusively in the form of scrap metal.
+        SelectFuseType=Select the type of fuse:
+        TheBomb=bomb
+        TheMine=mine
+        TimerIsSet=<br>The timer is set to <Data1> days.
+        TimerWithDelay=Preset timer
+        WillBeActivatedIn=<br>Will work in: <Data1> days.
+        WillExplodeIn=<br>Will explode in: <Data1> days.
+    }
+}
+Artefacts ^{
+    ArtArtefactor ^{
+        Description=The Artifactor is an artifact connection adapter. Designed on the principle of crystal signal inversion, it allows to connect <clr>three<clrEnd> artifacts instead of one droid.
+        Name=Artifactor
+        OnActCode ^{
+            01=if(!ItemIsInUse(CurItem())) exit;
+            02=dword ship = ScriptItemActShip();
+            03=if(!ship) exit;
+            04=if(ItemIsBroken(CurItem())) exit;
+            05=if(ArtefactTypeInUse(ship, 'RNDart_03')) exit;
+            06=int hasker_check = 0;
+            07=for(int i = 0; i < ShipArts(ship); i = i + 1)
+            08 ^{
+                01=dword art = ShipArts(ship, i);
+                02=if(ItemType(art) == t_Artefact)
+                03 ^{
+                    01=if(EquipmentImageName(art) == 'RNDart_03')
+                    02 ^{
+                        01=if(!ItemIsBroken(art))
+                        02 ^{
+                            01=hasker_check = 1;
+                            02=break;
+                        }
+                    }
+                }
+            }
+            09=if(hasker_check)
+            10 ^{
+                01=if(ScriptItemActionType(t_OnStep, 11))
+                02 ^{
+                    01=CreateActCodeEvent(t_OnStep, art, ship, 0, 0, 11);
+                }
+                03=if(ScriptItemActionType(t_OnPlayerTalkedWithShip) || ScriptItemActionType(t_OnShipTalkedWithPlayer))
+                04 ^{
+                    01=if(ScriptItemActionType(t_OnPlayerTalkedWithShip)) CreateActCodeEvent(t_OnPlayerTalkedWithShip, art, ship, ScriptItemActObject1(), 0, 0);
+                    02=else CreateActCodeEvent(t_OnShipTalkedWithPlayer, art, ship, ScriptItemActObject1(), 0, 0);
+                }
+            }
+        }
+        OnActCodeTypes=t_OnPlayerTalkedWithShip,t_OnShipTalkedWithPlayer,t_OnStep
+        OnActStepTypes=11
+        Text=A splitter for connecting rare device types. Allows the use of a droid connector to connect <clr>three<clrEnd> additional artifacts. Additional power lines and data transfers enable the <clr>Prolonger<clrEnd>, <clr>Probability Analyzer<clrEnd>, <clr>Scanner Cache<clrEnd>, <clr>Hasker_PROx64<clrEnd> and <clr>Bioworld<clrEnd> to function in limited mode from ship's cargo hold without taking up a nonstandard expansion slot.
+    }
+    CustomArtefacts ^{
+        EMP_bomb ^{
+            Cost=1500
+            Name=EMP Bomb
+            NoWear=1
+            Size=5
+            Text=On activation, generates a powerful electromagnetic pulse. Causes severe damage to all electronics and completely destroys engines over a wide area.
+        }
+        Null-generator ^{
+            Cost=2500
+            Name=Null-generator
+            NoWear=1
+            Size=5
+            Text=Bends the temporal field around the ship and removes gravitational interference from the jump path of the engine, thereby allowing a <color=255,240,100>null transition from any point</color> in space. Unfortunately, after the very first such transition, the generator's power source is completely depleted, and therefore it is physically impossible to reuse the device.
+        }
+        RNDart_01 ^{
+            Broken=(out of energy)
+            BrokenInBattle=A well-placed enemy hit damaged the Techdisruptor's <color=255,240,100>energy pack</color>. The device is no longer functional.
+            BrokenInUse=<color=255,240,100>Techdisruptor</color> has used up its energy resource and needs to be recharged.
+            Cost=2100
+            CountsAs=ArtSplinter
+            Name=Techdisruptor
+            OnActCode ^{
+                01=if(!ItemIsInUse(CurItem())) exit;
+                02=if(!ScriptItemActShip()) exit;
+                03=if(ItemIsBroken(CurItem())) exit;
+                04=if(!ScriptItemActObject2()) exit;
+                05=dword target = ScriptItemActObject1();
+                06=if(ObjectType(target) != 4 && ObjectType(target) != 5) exit;
+                07=int damage_set = GetEquipmentStats(ScriptItemActObject2(), 6);
+                08=if(!(damage_set & 2)) exit;
+                09=if((damage_set & 2048)) exit;
+                10=int shot = Rnd(1, 100);
+                11=int shot_chance;
+                12=if(ItemOwner(ScriptItemActObject2()) == 6) shot_chance = 40;
+                13=else shot_chance = 25;
+                14=if(shot_chance >= shot)
+                15 ^{
+                    01=int damag = (ScriptItemActParam() + ShipArmor(target)) * 100;
+                    02=damag = damag / (100 - ShipProtectability(target));
+                    03=ScriptItemActParam(damag);
+                }
+                16=if(ItemIsBroken(CurItem()) && ScriptItemActShip() == Player())Ether(8, '', CT('Artefacts.CustomArtefacts.RNDart_01.BrokenInUse'));
+            }
+            OnActCodeTypes=t_OnWeaponShot
+            SharedEffect=0
+            SharedUse=0
+            Size=7
+            Text=Transfers a neutral static charge to the projectiles of fragmentation weapons and increases their initial velocity, as a result of which the target's hull armor and the protective field generator are ignored with a probability of <clr>25%<clrEnd>.
+        }
+        RNDart_02 ^{
+            Broken=(worn out)
+            BrokenInBattle=As a result of the impact received in battle, the dome of the <color=255,240,100>Reflector</color> shattered in half. In this state, the device is unable to reflect damage.
+            BrokenInUse=<color=255,240,100>The reflector</color> is badly worn out and no longer functions. Major repairs required.
+            Cost=1600
+            CountsAs=ArtEnergyDef
+            Name=Reflector
+            OnActCode ^{
+                01=dword cur_item = CurItem();
+                02=if(ItemIsBroken(cur_item)) exit;
+                03=if(!ItemIsInUse(cur_item)) exit;
+                04=dword cur_ship = ScriptItemActShip();
+                05=if(!cur_ship) exit;
+                06=if(ScriptItemActionType(t_OnTakingDamage))
+                07 ^{
+                    01=if(ObjectType(ScriptItemActObject1()) == 1)
+                    02 ^{
+                        01=ItemDurability(cur_item, ItemDurability(cur_item) - 3);
+                        02=int i = 0;
+                        03=dword ship = 0;
+                        04=dword damag = ScriptItemActParam();
+                        05=if(CustomArtData(cur_item, 3) != CurTurn())
+                        06 ^{
+                            01=if(ShipStar(Player()) == ShipStar(cur_ship) && ShipInNormalSpace(Player()))
+                            02 ^{
+                                01=ShowEffect('Weapon.13', 6, cur_ship, cur_ship, 0, 0, 1, 0, 0, 0);
+                            }
+                            03=CustomArtData(cur_item, 3, CurTurn());
+                        }
+                        07=if(ShipTypeN(cur_ship) == 1)
+                        08 ^{
+                            01=for(i = 0; i < StarShips(ShipStar(cur_ship)); i = i + 1)
+                            02 ^{
+                                01=ship = StarShips(ShipStar(cur_ship), i);
+                                02=if(Dist(ship, cur_ship) > 330) continue;
+                                03=if(RelationToRanger(ship, cur_ship) >= 10) continue;
+                                04=if(!ShipInNormalSpace(ship)) continue;
+                                05=if(Dist(ship, cur_ship) > 165) damag = damag - (damag / 3);
+                                06=if(HullHP(ship) > damag) HullHP(ship, HullHP(ship) - damag);
+                                07=else ShipDestroy(ship, 1);
+                                08=if(ShipStar(Player()) == ShipStar(cur_ship) && ShipInNormalSpace(Player()))
+                                09 ^{
+                                    01=ShowEffect('Weapon.NoGraph', 0, ship, cur_ship, damag, 0, 0, 255, 255, 255);
+                                }
+                            }
+                        }
+                        09=if(ItemIsBroken(cur_item) && cur_ship == Player())Ether(8, '', CT('Artefacts.CustomArtefacts.RNDart_02.BrokenInUse'));
+                        10=ScriptItemActParam(0);
+                    }
+                }
+                08=else
+                09 ^{
+                    01=ScriptItemActParam(ScriptItemActParam() - ScriptItemActParam() / 5);
+                    02=if(Rnd(1, 100) <= 20) ItemDurability(cur_item, ItemDurability(cur_item) - 1);
+                    03=if(ItemIsBroken(cur_item) && cur_ship == Player())Ether(8, '', CT('Artefacts.CustomArtefacts.RNDart_02.BrokenInUse'));
+                }
+            }
+            OnActCodeTypes=t_OnTakingDamage,t_OnTakingDamageEn
+            SharedEffect=0
+            SharedUse=0
+            Size=12
+            Text=Creates a field around the ship, which completely reflects the thermal and ionizing radiation emanating from the star. In this case, all radiation <clr>reflected in this way is redirected<clrEnd> to hostile ships that are in sufficient proximity to the carrier <clr>of the Reflector<clrEnd>.
+            Text=<clr><clrEnd>
+            Text=As a side effect, increases defense against energy weapons by <clr> 20% <clrEnd>.
+        }
+        RNDart_03 ^{
+            Broken=(unusable)
+            BrokenInBattle=While executing an evasion maneuver, <color=255,240,100>Hasker_PROx64</color> fell out of its nest. From hitting the deck, the screen of the device broke and now requires replacement.
+            BrokenInUse=A voltage drop in the ship's energy nodes caused a short circuit in <color=255,240,100>Hasker_PROx64</color>. Replacement of fused contacts and main nano-boards is required.
+            Cost=1100
+            CountsAs=ArtMiniExpl
+            Name=Hasker_PROx64
+            OnActCode ^{
+                01=dword cur_item = CurItem();
+                02=if(ScriptItemActionType(t_OnItemDeEquip))
+                03 ^{
+                    01=CustomArtData(cur_item, 1, 0);
+                    02=CustomArtData(cur_item, 2, 0);
+                }
+                04=if(ItemIsBroken(cur_item)) exit;
+                05=dword cur_ship = ScriptItemActShip();
+                06=if(!cur_ship) exit;
+                07=if(CustomArtData(cur_item, 3) >= CurTurn()) exit;
+                08=if(ScriptItemActionType(t_OnStep, 11))
+                09 ^{
+                    01=if(cur_ship != Player())
+                    02 ^{
+                        01=if(ShipTypeN(cur_ship) == 1)
+                        02 ^{
+                            01=if(ShipInNormalSpace(cur_ship))
+                            02 ^{
+                                01=if(!CustomArtData(cur_item, 1) || !CustomArtData(cur_item, 2))
+                                02 ^{
+                                    01=CustomArtData(cur_item, 1, ShipStatus(cur_ship, 1));
+                                    02=CustomArtData(cur_item, 2, ShipMoney(cur_ship));
+                                }
+                                03=else
+                                04 ^{
+                                    01=if(CustomArtData(cur_item, 1) != ShipStatus(cur_ship, 1))
+                                    02 ^{
+                                        01=if(CustomArtData(cur_item, 2) != ShipMoney(cur_ship))
+                                        02 ^{
+                                            01=ShipMoney(cur_ship, ShipMoney(cur_ship) + (((ShipMoney(cur_ship) - CustomArtData(cur_item, 2)) * Rnd(55, 95)) / 100));
+                                            02=ItemDurability(cur_item, ItemDurability(cur_item) - 5);
+                                            03=CustomArtData(cur_item, 3, CurTurn() + Rnd(1, 3));
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                10=if(ScriptItemActionType(t_OnPlayerTalkedWithShip) || ScriptItemActionType(t_OnShipTalkedWithPlayer))
+                11 ^{
+                    01=int i = 0;
+                    02=dword ship = ScriptItemActObject1();
+                    03=int j = 0;
+                    04=int drp_scs = 0;
+                    05=str text_2;
+                    06=int money = 0;
+                    07=str text;
+                    08=for(i = GalaxyEvents() - 1; i >= 0; i = i - 1)
+                    09 ^{
+                        01=if(GalaxyEventDate(i) < CurTurn()) break;
+                        02=if(GalaxyEventType(i) == 'PlayerExtortsMoney' || GalaxyEventType(i) == 'PlayerAcceptsMoneyForTruce')
+                        03 ^{
+                            01=int how_much;
+                            02=if(ItemIsInUse(cur_item)) how_much = Rnd(55, 95);
+                            03=else how_much = Rnd(25, 50);
+                            04=money = (GalaxyEventData(i, 0) * how_much) / 100;
+                            05=ShipMoney(Player(), ShipMoney(Player()) + money);
+                            06=text = Format('<color=255,240,100>Hasker_PROx64</color> made a successful hack! Your account receives additional funds in the amount of MONEY cr.', 'MONEY', money);
+                            07=Ether(0, '', text);
+                            08=Sound('Sound.Sell');
+                            09=ItemDurability(cur_item, ItemDurability(cur_item) - 5);
+                            10=CustomArtData(cur_item, 3, CurTurn() + Rnd(1, 3));
+                        }
+                        04=else if(GalaxyEventType(i) == 'PlayerExtortsGoods')
+                        05 ^{
+                            01=for(j = t_Food; j <= t_Narcotics; j = j + 1)
+                            02 ^{
+                                01=if(GoodsCount(ship, j) > 1)
+                                02 ^{
+                                    01=int how_much2;
+                                    02=if(ItemIsInUse(cur_item)) how_much2 = Rnd(2, GoodsCount(ship, j));
+                                    03=else how_much2 = Rnd(1, GoodsCount(ship, j) - 1);
+                                    04=GoodsDrop(ship, j, how_much2);
+                                    05=drp_scs = 1;
+                                }
+                                03=if(drp_scs == 1 && j == t_Narcotics)
+                                04 ^{
+                                    01=text_2 = '<color=255,240,100>Hasker_PROx64</color> has successfully hacked into the cargo systems of the ship, prepare to receive their cargo!';
+                                    02=Ether(0, '', text_2);
+                                    03=ItemDurability(cur_item, ItemDurability(cur_item) - 5);
+                                    04=CustomArtData(cur_item, 3, CurTurn() + Rnd(1, 3));
+                                }
+                            }
+                        }
+                    }
+                    10=if(ItemIsBroken(cur_item) && cur_ship == Player()) Ether(8, '', CT('Artefacts.CustomArtefacts.RNDart_03.BrokenInUse'));
+                }
+                12=if(!ItemIsInUse(cur_item))
+                13 ^{
+                    01=CustomArtData(cur_item, 1, 0);
+                    02=CustomArtData(cur_item, 2, 0);
+                }
+            }
+            OnActCodeTypes=t_OnStep,t_OnItemDeEquip,t_OnPlayerTalkedWithShip,t_OnShipTalkedWithPlayer
+            OnActStepTypes=11
+            SharedEffect=0
+            SharedUse=0
+            Size=5
+            Text=Establishes an unstable covert connection with another ship through the communication channel of an ordinary communicator. When transferring money to the account of the captain of the ship using <color=255,240,100>Hasker_PROx64</color>, or when opening the doors of the cargo lock, the captain of the ship subjected to the attack of <color=255,240,100>Hasker</color> runs the risk of missing his account or hold of several <color=255,240,100>more amounts</color>, or <color=255,240,100>parts of the cargo</color> than he planned to transfer to the extortionist.
+        }
+        RNDart_04 ^{
+            Broken=(bugged)
+            BrokenInBattle=The <color=255,240,100>Booster</color> computing system was damaged in battle. Due to the high probability of spontaneous detonation of missiles, the security system disabled the artifact.
+            BrokenInUse=Long service life has worn out the<color=255,240,100>Booster</color> gauge assemblies, your ship is now your number one target. Immediate repairs required.
+            Cost=2500
+            CountsAs=ArtFastRacks
+            Name=Booster
+            OnActCode ^{
+                01=dword ship = ScriptItemActShip();
+                02=if(!ship) exit;
+                03=if(ItemIsBroken(CurItem())) exit;
+                04=if(CustomWeaponType(CurItem()) == 'PhysGun') exit;
+                05=dword missile = ScriptItemActObject1();
+                06=MissileAngle(missile, Angle(WeaponTarget(ScriptItemActObject2()), missile));
+                07=MissileLive(missile, Rnd(500, 600));
+                08=MissileSpeed(missile, MissileSpeed(missile) + Rnd(900, 1400));
+                09=if(ItemIsBroken(CurItem()) && ship == Player())Ether(8, '', CT('Artefacts.CustomArtefacts.RNDart_04.BrokenInUse'));
+            }
+            OnActCodeTypes=t_OnMissileShot
+            SharedEffect=0
+            SharedUse=0
+            Size=18
+            Text=Optimizes launcher guidance systems, allowing them to <clr>target missiles<clrEnd> before they are launched. It also redistributes fuel consumption, increasing <clr>missile speed<clrEnd> at the expense of maximum range.
+        }
+        Stun_bomb ^{
+            Cost=1500
+            Name=Stun bomb
+            NoWear=1
+            Size=5
+            Text=A complex electronic device, a unique heritage of antiquity, which, when activated, generates a stream of radiation of a hitherto unknown nature. Radiation suppresses any higher nervous activity, as well as the logic of all types of computers for a period from <color=255,240,100>5</color> to <color=255,240,100>15</color> days.
+        }
+    }
+}
+MicroModuls ^{
+    436 ^{
+        BioEquip=1
+        Name=Biogenic droid I
+    }
+    437 ^{
+        BioEquip=1
+        Name=Biogenic droid II
+    }
+    438 ^{
+        BioEquip=1
+        Name=Biogenic droid III
+    }
+    ExpArts_Acidius ^{
+        CustomTag=dt_Acid
+        Equipments=WSplinter
+        ExText=<clr><clrEnd>
+        ExText=<color=248,252,248>Improvement:</color> <clr>Acidius<clrEnd>
+        ExText=<color=248,252,248>The rupture of each projectile sprays a finely dispersed cloud of a special corrosive composition, which significantly weakens the target's armor. The complication of the design of the loading mechanism, however, negatively affects the reliability of the gun.</color>
+        ExText=<clr><clrEnd>
+        ExText=Additional effect: <clr>armor weakening<clrEnd>
+        ExText=Weapon reliability: <clr>-15%<clrEnd>
+        Fragility=117
+        LockedAcryn=3
+        NonSearchable=1
+        Owner=None
+        Priority=0
+        Special=1
+        WeaponMods=Acid
+    }
+    ExpArts_AdditionalStowage ^{
+        Equipments=WMissile
+        ExText=<clr><clrEnd>
+        ExText=<color=248,252,248>Improvement:</color> <clr>Additional ammo rack<clrEnd>
+        ExText=<color=248,252,248>Additional ammo rack for rockets and shells, connected directly to the loading mechanism</color>
+        ExText=<clr><clrEnd>
+        ExText=Maximum number of charges: <clr>+15<clrEnd> pcs.
+        LockedAcryn=3
+        Name=dt_Modify_AdditionalStowage
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpArts_CircuitAmplifier ^{
+        Equipments=Scaner
+        ExText=<clr><clrEnd>
+        ExText=<color=248,252,248>Improvement:</color> <clr>Loop amplifier<clrEnd>
+        ExText=<color=248,252,248>Amplifies the voltage applied to the scanning circuit, resulting in increased scanning power. Unfortunately, the burnout rate of the circuit also increases.</color>
+        ExText=<clr><clrEnd>
+        ExText=Scanner power: <clr>+7<clrEnd> pt.
+        ExText=Scanner reliability: <clr>-20%<clrEnd>
+        Fragility=125
+        LockedAcryn=3
+        Name=dt_Modify_CircuitAmplifier
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpArts_Decelerator ^{
+        CustomTag=dt_Decelerate
+        Equipments=WEnergy
+        ExText=<clr><clrEnd>
+        ExText=<color=248,252,248>Enhancement:</color> <clr>Deaccelerator<clrEnd>
+        ExText=<color=248,252,248>Together with the energy impulse when fired, a stream of charged particles is released, suppressing the operation of the accelerating circuit of the engine, which leads to a significant decrease in the target speed. Unfortunately, at the moment of activation, the modified emitter generates an excessive amount of heat, which does not have the best effect on the durability of the weapon.</color>
+        ExText=<clr><clrEnd>
+        ExText=Additional effect: <clr>target slowdown<clrEnd>
+        ExText=Weapon reliability: <clr>-15%<clrEnd>
+        Fragility=117
+        LockedAcryn=3
+        NonSearchable=1
+        Owner=None
+        Priority=0
+        Special=1
+        WeaponMods=Decelerate,DecelerateA,DecelerateAEx
+    }
+    ExpArts_FieldDensityAmplifier ^{
+        Equipments=DefGenerator
+        ExText=<clr><clrEnd>
+        ExText=<color=248,252,248>Improvement:</color> <clr>Field density amplifier<clrEnd>
+        ExText=<color=248,252,248>The protective field seal enhances the effect produced by the generator in normal operation, however, the additional load on the power system of the device reduces its durability.</color>
+        ExText=<clr><clrEnd>
+        ExText=Field generator: <clr>+6<clrEnd> pt.
+        ExText=Generator reliability: <clr>-20%<clrEnd>
+        Fragility=125
+        LockedAcryn=3
+        Name=dt_Modify_FieldCompressor
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpArts_FragiliumParts ^{
+        Equipments=WEnergy,WSplinter,WMissile,Engine,FuelTank,Radar,Scaner,Droid,Hook,DefGenerator
+        ExText=<clr><clrEnd>
+        ExText=<color=248,252,248>Improvement:</color> <clr>Fragilium components<clrEnd>
+        ExText=<color=248,252,248>The most popular parts in this equipment were replaced with more wear-resistant fragilium counterparts.</color>
+        ExText=<clr><clrEnd>
+        ExText=Equipment reliability: <clr>+40%<clrEnd>
+        Fragility=71
+        LockedAcryn=3
+        Name=dt_Modify_FragiliumParts
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpArts_HackedInjector ^{
+        Equipments=Engine
+        ExText=<clr><clrEnd>
+        ExText=<color=248,252,248>Improvement:</color> <clr>Hacked injector<clrEnd>
+        ExText=<color=248,252,248>The hacked version of the injector lets more fuel into the combustion chamber, which leads to a significant increase in engine speed. Unfortunately, the increased fuel flow puts the engine into constant boost mode, which negatively affects the durability of the unit.</color>
+        ExText=<clr><clrEnd>
+        ExText=Engine speed: <clr>+200<clrEnd> pt.
+        ExText=Engine reliability: <clr>-40%<clrEnd>
+        Fragility=165
+        LockedAcryn=3
+        Name=dt_Modify_HackedInjector
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpArts_MeonChips ^{
+        Equipments=Radar
+        ExText=<clr><clrEnd>
+        ExText=<color=248,252,248>Improvement:</color> <clr>Meon chips<clrEnd>
+        ExText=<color=248,252,248>Meon chips are not famous for their durability, but they can significantly improve the overall efficiency of the radar.</color>
+        ExText=<clr><clrEnd>
+        ExText=Radar range: <clr>+900<clrEnd> mln. km.
+        ExText=Equipment reliability: <clr>-20%<clrEnd>
+        Fragility=125
+        LockedAcryn=3
+        Name=dt_Modify_MeonChips
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpArts_ProcessorsExtreme ^{
+        Equipments=Droid
+        ExText=<clr><clrEnd>
+        ExText=<color=248,252,248>Improvement:</color> <clr>Processors "Extreme"<clrEnd>
+        ExText=<color=248,252,248>The Extreme processors change the logic of the droid's behavior, such as overriding most safety protocols, but at the same time makes the necessary repairs faster.</color>
+        ExText=<clr><clrEnd>
+        ExText=Droid efficiency: <clr>+8<clrEnd> pt.
+        ExText=Droid reliability: <clr>-20%<clrEnd>
+        Fragility=125
+        LockedAcryn=3
+        Name=dt_Modify_ProcessorsExtreme
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpArts_ReinforcedServoDrives ^{
+        Equipments=Hook
+        ExText=<clr><clrEnd>
+        ExText=<color=248,252,248>Improvement:</color> <clr>Reinforced servos<clrEnd>
+        ExText=<color=248,252,248>The gripper is equipped with reinforced servos, which allows it to grip larger and heavier objects. Unfortunately, the rest of the mechanism of the device is not designed for an increased load, and therefore fails much earlier than expected.</color>
+        ExText=<clr><clrEnd>
+        ExText=Gripper power: <clr>+40<clrEnd> pt.
+        ExText=Gripper reliability: <clr>-25%<clrEnd>
+        Fragility=133
+        LockedAcryn=3
+        Name=dt_Modify_ReinforcedServoDrives
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpArts_SecurityReplacement ^{
+        Equipments=FuelTank
+        ExText=<clr><clrEnd>
+        ExText=<color=248,252,248>Improvement:</color> <clr>Security systems replacement<clrEnd>
+        ExText=<color=248,252,248>Re-coding and removal of some security systems made it possible to significantly increase the maximum capacity of the tank, but its reliability from such mockery did not improve at all.</color>
+        ExText=<clr><clrEnd>
+        ExText=Tank capacity: <clr>+20<clrEnd> pt.
+        ExText=Tank reliability: <clr>-60%<clrEnd>
+        Fragility=250
+        LockedAcryn=3
+        Name=dt_Modify_SecurityReplacement
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpArts_SmugglersCompartment ^{
+        Equipments=Hull
+        ExText=<clr><clrEnd>
+        ExText=<color=248,252,248>Improvement:</color> <clr>Smuggler's compartment<clrEnd>
+        ExText=<color=248,252,248>A special compartment for the transport of contraband was installed on this ship, significantly expanding its original capacity. The additional compartment is unscannable, but unfortunately does not bear any armor and therefore is a weakened area of the hull.</color>
+        ExText=<clr><clrEnd>
+        ExText=Storage capacity: <clr>+25%<clrEnd>
+        ExText=Damage susceptibility: <clr>+15%<clrEnd>
+        FragilityEnergy=117
+        FragilityMissile=117
+        FragilitySplinter=117
+        LockedAcryn=3
+        Name=dt_Modify_SmugglersCompartment
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpArts_TillCapacitors ^{
+        Equipments=WEnergy
+        ExText=<clr><clrEnd>
+        ExText=<color=248,252,248>Improvement :</color> <clr>Tiliv capacitors <clrEnd>
+        ExText=<color=248,252,248>Tiliv capacitors have an increased capacity, which makes it possible to accumulate a large shot power, however, the same excess power wears out the conductive power units of the weapon faster, which were simply not intended to distribute such loads.</color>
+        ExText=<clr><clrEnd>
+        ExText=The strength of the weapon : <clr>+15<clrEnd> pt.
+        ExText=Weapon reliability : <clr>-20%<clrEnd>
+        Fragility=125
+        LockedAcryn=3
+        Name=dt_Modify_TillCapacitors
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonWEnergy=15
+    }
+    ExpArts_WeakenedLimiters ^{
+        Equipments=WSplinter
+        ExText=<clr><clrEnd>
+        ExText=<color=248,252,248>Improvement :</color> <clr>Twisted limiters <clrEnd>
+        ExText=<color=248,252,248>A fire control unit, from which some factory restrictions have been neatly removed. Weapons equipped with such a unit are capable of firing at long distances, however, the recoil compensation mechanisms do not withstand the additional load, which is why they fail faster.</color>
+        ExText=<clr><clrEnd>
+        ExText=Firing range : <clr>+40<clrEnd> pt.
+        ExText=Weapon reliability: <clr>-20%<clrEnd>
+        Fragility=125
+        LockedAcryn=3
+        Name=dt_Modify_WeakenedLimiters
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonWRadius=40
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            ExpArts_ShipInStarWithStunnedPlayer ^{
+                Description=This infobox removes the ship's ban on talking and scanning at the end of a turn
+                Icon=1
+                Name=
+                OnActCode ^{
+                    01=dword infos = CurInfo();
+                    02=dword ship = ScriptItemActShip();
+                    03=if(ShipCustomShipInfoData(0, infos, 2)) NoTalkToShip(ship, 0);
+                    04=if(ShipCustomShipInfoData(0, infos, 3)) NoScanToShip(ship, 0);
+                    05=ShipDeleteCustomShipInfo(0, infos);
+                }
+                OnActCodeTypes=t_OnStep
+                OnActStepTypes=10
+            }
+            ExpArts_ShipStunned ^{
+                Description=The ship's crew was exposed to unknown radiation and temporarily lost control over their own actions.
+                Icon=1
+                Name=Stun
+                OnActCode ^{
+                    01=dword infos = CurInfo();
+                    02=dword ship = ScriptItemActShip();
+                    05=if(ScriptItemActionType(t_OnStep))
+                    06 ^{
+                        01=if(!ScriptItemActParam())
+                        02 ^{
+                            01=OrderNone(ship);
+                            02=for(int i = 1; i <= ShipCntWeapon(ship); i = i + 1)
+                            03 ^{
+                                01=WeaponTarget(ShipWeapon(ship, i), 0);
+                            }
+                            04=float angle = pi * (ShipAngle(ship) + 90.0) / Rnd(179, 181);
+                            05=OrderMove(ship, cos(angle) * 10.0 + CoordX(ship), sin(angle) * 10.0 + CoordY(ship));
+                        }
+                        03=else
+                        04 ^{
+                            01=int days_left = ShipCustomShipInfoData(0, infos, 1);
+                            02=if(days_left <= 1)
+                            03 ^{
+                                01=OrderLock(ship, 0);
+                                02=ShipSpecialBonuses(ship, bonHook, ShipSpecialBonuses(ship, bonHook) + 50000);
+                                03=if(IsPlayer(ship))
+                                04 ^{
+                                    01=if(~HullSpecial(Player()))
+                                    02 ^{
+                                        01=if(BonusNumInCfg(HullSpecial(Player())) == '490')
+                                        02 ^{
+                                            01=CapitalShipStats(ShipItems(Player(), 0), 1, 1000);
+                                        }
+                                    }
+                                    03=if(ShipCustomShipInfoData(0, infos, 3))
+                                    04 ^{
+                                        01=int b = ShipCustomShipInfoData(0, infos, 3) % 10;
+                                        02=while(b)
+                                        03 ^{
+                                            01=InterfaceState('StarMap', 'set_button_' + b + '_c', 1);
+                                            02=b = b - 1;
+                                        }
+                                        04=if(int(ShipCustomShipInfoData(0, infos, 3) / 10) > 0)
+                                        05 ^{
+                                            01=InterfaceState('StarMap', 'Klesh_panel', 1);
+                                        }
+                                        06=if(int(ShipCustomShipInfoData(0, infos, 3) / 10) > 1)
+                                        07 ^{
+                                            01=InterfaceState('StarMap', 'ppb_panel', 1);
+                                        }
+                                    }
+                                }
+                                05=if(ShipCustomShipInfoData(0, infos, 3) == 1) NoTalkToShip(ship, 0);
+                                06=ShipDeleteCustomShipInfo(0, infos);
+                            }
+                            04=else
+                            05 ^{
+                                01=ShipCustomShipInfoData(0, infos, 1, days_left - 1);
+                                02=if(IsPlayer(ship))
+                                03 ^{
+                                    01=FilmFlags(3, 1);
+                                    02=dword cur_star = ShipStar(Player());
+                                    03=for(i = 0; i < StarShips(cur_star); i = i + 1)
+                                    04 ^{
+                                        01=dword cur_ship = StarShips(cur_star, i);
+                                        02=if(ShipFindCustomShipInfoByType(cur_ship, 'ExpArts_ShipInStarWithStunnedPlayer') == -1)
+                                        03 ^{
+                                            01=ShipAddCustomShipInfo(cur_ship, 'ExpArts_ShipInStarWithStunnedPlayer', 'NoShow');
+                                            02=if(!NoTalkToShip(cur_ship))
+                                            03 ^{
+                                                01=NoTalkToShip(cur_ship, 1);
+                                                02=ShipCustomShipInfoData(cur_ship, 'ExpArts_ShipInStarWithStunnedPlayer', 2, 1);
+                                            }
+                                            04=if(!NoScanToShip(cur_ship))
+                                            05 ^{
+                                                01=NoScanToShip(cur_ship, 1);
+                                                02=ShipCustomShipInfoData(cur_ship, 'ExpArts_ShipInStarWithStunnedPlayer', 3, 1);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    07=else
+                    08 ^{
+                        01=str cur_form = CurrentForm();
+                        02=if(cur_form == 'Ship' || cur_form == 'Info' || cur_form == 'Rating' || cur_form == 'Galaxy' || PlayerBridge())
+                        03 ^{
+                            01=MessageBox('You was exposed to unknown radiation and temporarily lost control over your own actions.', 34);
+                            02=FormChange('StarMap');
+                        }
+                        04=else if(cur_form == 'StarMap')
+                        05 ^{
+                            01=if(ShipCustomShipInfoData(Player(), infos, 3))
+                            02 ^{
+                                01=int k = ShipCustomShipInfoData(0, infos, 3) % 10;
+                                02=while(k)
+                                03 ^{
+                                    01=InterfaceState('StarMap', 'set_button_' + k + '_c', 0);
+                                    02=k = k - 1;
+                                }
+                            }
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnStep,t_OnEnteringForm
+                OnActStepTypes=0,11
+                StatusEffect=Stun
+            }
+            RNDbomb_2_infos ^{
+                Description=The ship's crew was exposed to unknown radiation and temporarily lost control over their own actions.
+                Icon=1
+                Name=Stun
+                OnActCode ^{
+                    01=dword infos = CurInfo();
+                    02=dword ship = ScriptItemActShip();
+                    05=if(ScriptItemActionType(t_OnStep))
+                    06 ^{
+                        01=if(!ScriptItemActParam())
+                        02 ^{
+                            01=OrderNone(ship);
+                            02=for(int i = 1; i <= ShipCntWeapon(ship); i = i + 1)
+                            03 ^{
+                                01=WeaponTarget(ShipWeapon(ship, i), 0);
+                            }
+                            04=float angle = pi * (ShipAngle(ship) + 90.0) / Rnd(179, 181);
+                            05=OrderMove(ship, cos(angle) * 10.0 + CoordX(ship), sin(angle) * 10.0 + CoordY(ship));
+                        }
+                        03=else
+                        04 ^{
+                            01=int days_left = ShipCustomShipInfoData(0, infos, 1);
+                            02=if(days_left <= 1)
+                            03 ^{
+                                01=OrderLock(ship, 0);
+                                02=ShipSpecialBonuses(ship, bonHook, ShipSpecialBonuses(ship, bonHook) + 50000);
+                                03=if(IsPlayer(ship))
+                                04 ^{
+                                    01=if(~HullSpecial(Player()))
+                                    02 ^{
+                                        01=if(BonusNumInCfg(HullSpecial(Player())) == '490')
+                                        02 ^{
+                                            01=CapitalShipStats(ShipItems(Player(), 0), 1, 1000);
+                                        }
+                                    }
+                                    03=if(ShipCustomShipInfoData(0, infos, 3))
+                                    04 ^{
+                                        01=int b = ShipCustomShipInfoData(0, infos, 3) % 10;
+                                        02=while(b)
+                                        03 ^{
+                                            01=InterfaceState('StarMap', 'set_button_' + b + '_c', 1);
+                                            02=b = b - 1;
+                                        }
+                                        04=if(int(ShipCustomShipInfoData(0, infos, 3) / 10) > 0)
+                                        05 ^{
+                                            01=InterfaceState('StarMap', 'Klesh_panel', 1);
+                                        }
+                                        06=if(int(ShipCustomShipInfoData(0, infos, 3) / 10) > 1)
+                                        07 ^{
+                                            01=InterfaceState('StarMap', 'ppb_panel', 1);
+                                        }
+                                    }
+                                }
+                                05=if(ShipCustomShipInfoData(0, infos, 3) == 1) NoTalkToShip(ship, 0);
+                                06=ShipDeleteCustomShipInfo(0, infos);
+                            }
+                            04=else
+                            05 ^{
+                                01=ShipCustomShipInfoData(0, infos, 1, days_left - 1);
+                                02=if(IsPlayer(ship))
+                                03 ^{
+                                    01=FilmFlags(3, 1);
+                                    02=for(i = 0; i < StarShips(ShipStar(Player())); i = i + 1)
+                                    03 ^{
+                                        01=dword cur_ship = StarShips(ShipStar(Player()), i);
+                                        02=if(ShipFindCustomShipInfoByType(cur_ship, 'ExpArts_ShipInStarWithStunnedPlayer') == -1)
+                                        03 ^{
+                                            01=ShipAddCustomShipInfo(cur_ship, 'ExpArts_ShipInStarWithStunnedPlayer', 'NoShow');
+                                            02=if(!NoTalkToShip(cur_ship))
+                                            03 ^{
+                                                01=NoTalkToShip(cur_ship, 1);
+                                                02=ShipCustomShipInfoData(cur_ship, 'ExpArts_ShipInStarWithStunnedPlayer', 2, 1);
+                                            }
+                                            04=if(!NoScanToShip(cur_ship))
+                                            05 ^{
+                                                01=NoScanToShip(cur_ship, 1);
+                                                02=ShipCustomShipInfoData(cur_ship, 'ExpArts_ShipInStarWithStunnedPlayer', 3, 1);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    07=else
+                    08 ^{
+                        01=str cur_form = CurrentForm();
+                        02=if(cur_form == 'Ship' || cur_form == 'Info' || cur_form == 'Rating' || cur_form == 'Galaxy' || PlayerBridge())
+                        03 ^{
+                            01=MessageBox('You have been exposed to unknown radiation and have temporarily lost control over your own actions.', 34);
+                            02=FormChange('StarMap');
+                        }
+                        04=else if(cur_form == 'StarMap')
+                        05 ^{
+                            01=if(ShipCustomShipInfoData(Player(), infos, 3))
+                            02 ^{
+                                01=int k = ShipCustomShipInfoData(0, infos, 3) % 10;
+                                02=while(k)
+                                03 ^{
+                                    01=InterfaceState('StarMap', 'set_button_' + k + '_c', 0);
+                                    02=k = k - 1;
+                                }
+                            }
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnStep,t_OnEnteringForm
+                OnActStepTypes=0,11
+            }
+        }
+    }
+}
+UselessItems ^{
+    RNDbomb_1 ^{
+        Cost=Big
+        Name=Quark bomb
+        OnActCode ^{
+            01=dword bomb = CurItem();
+            02=int primer_type = UselessItemData(bomb, 2);
+            03=int boom_flag = 0;
+            04=if(primer_type == 1) exit;
+            05=if(ScriptItemActionType(t_OnStep))
+            06 ^{
+                01=if(ScriptItemActParam() == 5)
+                02 ^{
+                    01=if(primer_type == -5 || primer_type <= -7)
+                    02 ^{
+                        01=if(UselessItemData(bomb, 1) > 0)
+                        02 ^{
+                            01=if(UselessItemData(bomb, 1) == 1) boom_flag = 1;
+                            02=else UselessItemData(bomb, 1, UselessItemData(bomb, 1) - 1);
+                        }
+                        03=if(primer_type == -5)
+                        04 ^{
+                            01=primer_type = -6;
+                            02=UselessItemData(bomb, 2, -6);
+                        }
+                        05=else if(primer_type == -7)
+                        06 ^{
+                            01=primer_type = -9;
+                            02=UselessItemData(bomb, 2, -9);
+                        }
+                    }
+                }
+                03=if(primer_type == -6 || primer_type == -9)
+                04 ^{
+                    01=if(!boom_flag)
+                    02 ^{
+                        01=bomb_star = ScriptItemActObject1();
+                        02=for(k = 0; k < StarShips(bomb_star); k = k + 1)
+                        03 ^{
+                            01=ship = StarShips(bomb_star, k);
+                            02=if(Dist(bomb,ship) <= 70)
+                            03 ^{
+                                01=boom_flag = 2;
+                                02=break;
+                            }
+                        }
+                        04=if(!boom_flag)
+                        05 ^{
+                            01=for(k = 0; k < StarRuins(bomb_star); k = k + 1)
+                            02 ^{
+                                01=ship = StarRuins(bomb_star, k);
+                                02=if(Dist(bomb,ship) <= 70)
+                                03 ^{
+                                    01=boom_flag = 2;
+                                    02=break;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            07=else if(ScriptItemActionType(t_OnDropItem) || ScriptItemActionType(t_OnDropItemFixed))
+            08 ^{
+                01=if(ScriptItemActObject1() == bomb)
+                02 ^{
+                    01=UselessItemData(bomb, 3, Id(ShipStar(ScriptItemActShip())) - 1);
+                    02=if(primer_type == 0)
+                    03 ^{
+                        01=primer_type = -4;
+                        02=UselessItemData(bomb, 2, -4);
+                    }
+                    04=else if(primer_type == -1)
+                    05 ^{
+                        01=primer_type = -5;
+                        02=UselessItemData(bomb, 2, -5);
+                    }
+                    06=else if(primer_type == -2)
+                    07 ^{
+                        01=UselessItemText(bomb,CT('UselessItems.' + EquipmentImageName(bomb) + '.Text') + substr(CT('Cheat.Ok'), 0, 2) + '<br><clr><clrEnd><br>' + CT('Script.Mod_ExpArts.WillExplodeIn'));
+                        02=primer_type = -8;
+                        03=UselessItemData(bomb, 2, -8);
+                    }
+                    08=else if(primer_type == -3)
+                    09 ^{
+                        01=UselessItemText(bomb, CT('UselessItems.' + EquipmentImageName(bomb) + '.Text') + substr(CT('Cheat.Ok'), 0, 2) + '<br><clr><clrEnd><br>' + CT('Script.Mod_ExpArts.WillExplodeIn'));
+                        02=primer_type = -7;
+                        03=UselessItemData(bomb, 2, -7);
+                    }
+                }
+            }
+            09=else if(ScriptItemActionType(t_OnItemPickUp))
+            10 ^{
+                01=if(ScriptItemActObject1() == bomb)
+                02 ^{
+                    01=if(primer_type == -4)
+                    02 ^{
+                        01=primer_type = 0;
+                        02=UselessItemData(bomb, 2, 0);
+                    }
+                }
+            }
+            11=if(ScriptItemActionType(t_OnItemHit)) boom_flag = (ItemType(ScriptItemActObject1()) == t_Weapon16 || ObjectType(ScriptItemActObject1()) == 7);
+            12=else if(ScriptItemActionType(t_OnItemDestroy)) boom_flag = (primer_type <= -4);
+            13=else if(ScriptItemActionType(t_OnItemPickUp)) boom_flag = (ScriptItemActObject1() == bomb && primer_type <= -5);
+            14=if(boom_flag)
+            15 ^{
+                01=dword ship;
+                02=dword item;
+                03=dword pick_ship = 0;
+                04=dword bomb_star = GalaxyStar(UselessItemData(bomb, 3));
+                05=int k;
+                06=int Tdist = 0;
+                07=int Tdamage = 0;
+                08=int Edamage = 0;
+                09=int targetInfo = -2;
+                10=int fuel_tank_imitation = ScriptItemActParam();
+                11=int player_can_see = (ShipStar(Player()) == bomb_star && ShipInNormalSpace(Player()));
+                12=if(ScriptItemActionType(t_OnItemHit)) ItemDestroy(bomb, 0);
+                13=if(ScriptItemActionType(t_OnItemPickUp))
+                14 ^{
+                    01=pick_ship = ScriptItemActShip();
+                    02=if(!ScriptItemActObject2()) OrderNone(pick_ship);
+                    03=if(player_can_see)
+                    04 ^{
+                        01=targetInfo = ShipFindCustomShipInfoByType(pick_ship, 'LifeboatLaunchInfo');
+                        02=if(targetInfo == -1) ShowStaticEffect('RNDbomb_1BAM', CoordX(pick_ship), CoordY(pick_ship));
+                        03=else ShipCustomShipInfoTextData(pick_ship, targetInfo, 2, 'ShowBAMEffect');
+                    }
+                }
+                15=else
+                16 ^{
+                    01=if(player_can_see)
+                    02 ^{
+                        01=if(ScriptItemActionType(t_OnItemHit))
+                        02 ^{
+                            01=if(ItemType(ScriptItemActObject1()) == t_Weapon16 || ObjectType(ScriptItemActObject1()) == 7)
+                            02 ^{
+                                01=if(ItemType(ScriptItemActObject1()) == t_Weapon16) ShowStaticEffect('RNDbomb_1SlowBAM', CoordX(bomb), CoordY(bomb));
+                                02=if(ObjectType(ScriptItemActObject1()) == 7) ShowStaticEffect('RNDbomb_1FastBAM', CoordX(bomb), CoordY(bomb));
+                            }
+                        }
+                        03=else ShowStaticEffect('RNDbomb_1BAM', CoordX(bomb), CoordY(bomb));
+                    }
+                }
+                17=for(k = 0; k < StarShips(bomb_star); k = k + 1)
+                18 ^{
+                    01=ship = StarShips(bomb_star, k);
+                    02=if(ScriptItemActionType(t_OnItemPickUp))
+                    03 ^{
+                        01=Tdist = Dist(pick_ship, ship);
+                        02=if(Tdist > 250) continue;
+                    }
+                    04=else
+                    05 ^{
+                        01=Tdist = Dist(bomb, ship);
+                        02=if(Tdist > 250) continue;
+                    }
+                    06=if(!ShipInNormalSpace(ship)) continue;
+                    07=if(fuel_tank_imitation && !ScriptItemActionType(t_OnStep)) Tdamage = fuel_tank_imitation;
+                    08=else
+                    09 ^{
+                        01=Tdamage = round(800.0 - (400.0 * (Tdist * Tdist) / 62500));
+                        02=if(ship == pick_ship)
+                        03 ^{
+                            01=if(ScriptItemActObject2()) Tdamage = 800;
+                            02=else if(HullHP(pick_ship) > Tdamage) Tdamage = HullHP(pick_ship) + Rnd(43, 157);
+                        }
+                    }
+                    10=if(ShipType(ship) == 'KillerAsteroid') Tdamage = 0;
+                    11=if(player_can_see) ShowEffect('Weapon.NoGraph', 0, ship, ship, Tdamage, 0, 0, 255, 0, 0);
+                    12=if(HullHP(ship) > Tdamage) HullHP(ship, HullHP(ship) - Tdamage);
+                    13=else
+                    14 ^{
+                        01=if(targetInfo == -2) targetInfo = ShipFindCustomShipInfoByType(ship, 'LifeboatLaunchInfo');
+                        02=if(~targetInfo)
+                        03 ^{
+                            01=ShipCustomShipInfoTextData(ship, targetInfo, 3, bomb);
+                            02=DealDamageToShip(ship, bomb, 1000000, 0);
+                        }
+                        04=else if(ShipFindCustomShipInfoByType(ship, 'AbandonedShipInfo') == -1) ShipDestroy(ship, 1);
+                        05=OrderNone(ship);
+                    }
+                }
+                19=for(k = 0; k < StarItems(bomb_star); k = k + 1)
+                20 ^{
+                    01=item = StarItems(bomb_star, k);
+                    02=if(item == bomb) continue;
+                    03=if(ScriptItemActionType(t_OnItemPickUp))
+                    04 ^{
+                        01=if(Dist(pick_ship, item) > 250) continue;
+                        02=else Tdist = Dist(pick_ship, item);
+                    }
+                    05=else
+                    06 ^{
+                        01=if(Dist(bomb, item) > 250) continue;
+                        02=else Tdist = Dist(bomb, item);
+                    }
+                    07=Tdamage = round(20.0 - (20.0 * (Tdist * Tdist) / 62500));
+                    08=if(Rnd(1, 100) <= Tdamage)
+                    09 ^{
+                        01=if(ItemType(item) == t_ArtefactBomb)
+                        02 ^{
+                            01=if(ShipStar(Player()) == bomb_star && ShipInNormalSpace(Player())) ShowStaticEffect('RNDbomb_1BAM', CoordX(item), CoordY(item));
+                            02=ItemDestroy(item, 1);
+                        }
+                        03=else ItemDestroy(item, 1);
+                    }
+                    10=else continue;
+                }
+                21=UselessItemData(bomb, 2, 1);
+                22=if(ScriptItemActionType(t_OnStep, 11))
+                23 ^{
+                    01=if(StarShips(bomb_star))
+                    02 ^{
+                        01=FireWeapon(StarShips(bomb_star, 0), bomb, 0);
+                    }
+                    03=else ItemDestroy(bomb, 1);
+                }
+                24=else ItemDestroy(bomb, 1);
+            }
+        }
+        OnActCodeTypes=t_OnStep,t_OnDropItem,t_OnDropItemFixed,t_OnItemPickUp,t_OnItemHit,t_OnItemDestroy
+        OnActStepTypes=1,2,3,4,5,6,7,8,9,10,11
+        Owner=PirateClan
+        Size=7
+        Text=Upon explosion causes significant damage to all material objects.
+    }
+    RNDbomb_2 ^{
+        Cost=Big
+        Name=Stun bomb
+        OnActCode ^{
+            01=dword bomb = CurItem();
+            02=int primer_type = UselessItemData(bomb, 2);
+            03=int boom_flag = 0;
+            04=if(primer_type == 1) exit;
+            05=if(ScriptItemActionType(t_OnStep))
+            06 ^{
+                01=if(ScriptItemActParam() == 5)
+                02 ^{
+                    01=if(primer_type == -5 || primer_type <= -7)
+                    02 ^{
+                        01=if(UselessItemData(bomb, 1) > 0)
+                        02 ^{
+                            01=if(UselessItemData(bomb, 1) == 1) boom_flag = 1;
+                            02=else UselessItemData(bomb, 1, UselessItemData(bomb, 1) - 1);
+                        }
+                        03=if(primer_type == -5)
+                        04 ^{
+                            01=primer_type = -6;
+                            02=UselessItemData(bomb, 2, -6);
+                        }
+                        05=else if(primer_type == -7)
+                        06 ^{
+                            01=primer_type = -9;
+                            02=UselessItemData(bomb, 2, -9);
+                        }
+                    }
+                }
+                03=if(primer_type == -6 || primer_type == -9)
+                04 ^{
+                    01=if(!boom_flag)
+                    02 ^{
+                        01=bomb_star = ScriptItemActObject1();
+                        02=for(k = 0; k < StarShips(bomb_star); k = k + 1)
+                        03 ^{
+                            01=ship = StarShips(bomb_star, k);
+                            02=if(Dist(bomb, ship) <= 70)
+                            03 ^{
+                                01=boom_flag = 2;
+                                02=break;
+                            }
+                        }
+                        04=if(!boom_flag)
+                        05 ^{
+                            01=for(k = 0; k < StarRuins(bomb_star); k = k + 1)
+                            02 ^{
+                                01=ship = StarRuins(bomb_star, k);
+                                02=if(Dist(bomb, ship) <= 70)
+                                03 ^{
+                                    01=boom_flag = 2;
+                                    02=break;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            07=else if(ScriptItemActionType(t_OnDropItem) || ScriptItemActionType(t_OnDropItemFixed))
+            08 ^{
+                01=if(ScriptItemActObject1() == bomb)
+                02 ^{
+                    01=UselessItemData(bomb, 3, Id(ShipStar(ScriptItemActShip())) - 1);
+                    02=if(primer_type == 0)
+                    03 ^{
+                        01=primer_type = -4;
+                        02=UselessItemData(bomb, 2, -4);
+                    }
+                    04=else if(primer_type == -1)
+                    05 ^{
+                        01=primer_type = -5;
+                        02=UselessItemData(bomb, 2, -5);
+                    }
+                    06=else if(primer_type == -2)
+                    07 ^{
+                        01=UselessItemText(bomb, CT('UselessItems.' + EquipmentImageName(bomb) + '.Text') + substr(CT('Cheat.Ok'), 0, 2) + '<br><clr><clrEnd><br>' + CT('Script.Mod_ExpArts.WillBeActivatedIn'));
+                        02=primer_type = -8;
+                        03=UselessItemData(bomb, 2, -8);
+                    }
+                    08=else if(primer_type == -3)
+                    09 ^{
+                        01=UselessItemText(bomb, CT('UselessItems.' + EquipmentImageName(bomb) + '.Text') + substr(CT('Cheat.Ok'), 0, 2) + '<br><clr><clrEnd><br>' + CT('Script.Mod_ExpArts.WillBeActivatedIn'));
+                        02=primer_type = -7;
+                        03=UselessItemData(bomb, 2, -7);
+                    }
+                }
+            }
+            09=else if(ScriptItemActionType(t_OnItemPickUp))
+            10 ^{
+                01=if(ScriptItemActObject1() == bomb)
+                02 ^{
+                    01=if(primer_type == -4)
+                    02 ^{
+                        01=primer_type = 0;
+                        02=UselessItemData(bomb, 2, 0);
+                    }
+                }
+            }
+            11=else if(ScriptItemActionType(t_OnItemHit))
+            12 ^{
+                01=if(ObjectType(ScriptItemActObject1()) == 7)
+                02 ^{
+                    01=if(ShipStar(Player()) == GalaxyStar(UselessItemData(bomb, 3)) && ShipInNormalSpace(Player())) FilmSound('Sound.RndHole03', bomb);
+                }
+            }
+            13=if(ScriptItemActionType(t_OnItemDestroy)) boom_flag = (primer_type <= -4);
+            14=else if(ScriptItemActionType(t_OnItemPickUp)) boom_flag = (ScriptItemActObject1() == bomb && primer_type <= -5);
+            15=if(boom_flag)
+            16 ^{
+                01=dword ship;
+                02=dword pick_ship = 0;
+                03=dword bomb_star = GalaxyStar(UselessItemData(bomb, 3));
+                04=int k;
+                05=int i;
+                06=int Tdist = 0;
+                07=int DayLong = 0;
+                08=if(ScriptItemActionType(t_OnItemPickUp))
+                09 ^{
+                    01=pick_ship = ScriptItemActShip();
+                    02=if(!ScriptItemActObject2()) OrderNone(pick_ship);
+                    03=if(ShipStar(Player()) == bomb_star && ShipInNormalSpace(Player()))
+                    04 ^{
+                        01=ShowStaticEffect('RNDbomb_2BAM', CoordX(pick_ship), CoordY(pick_ship));
+                        02=FilmSound('Sound.RndHole03', pick_ship);
+                    }
+                }
+                10=else
+                11 ^{
+                    01=if(ShipStar(Player()) == bomb_star && ShipInNormalSpace(Player()))
+                    02 ^{
+                        01=ShowStaticEffect('RNDbomb_2BAM', CoordX(bomb), CoordY(bomb));
+                        02=FilmSound('Sound.RndHole03', bomb);
+                    }
+                }
+                12=for(k = 0; k < StarShips(bomb_star); k = k + 1)
+                13 ^{
+                    01=ship = StarShips(bomb_star, k);
+                    02=if(ScriptItemActionType(t_OnItemPickUp))
+                    03 ^{
+                        01=Tdist = Dist(pick_ship, ship);
+                        02=if(Tdist > 250) continue;
+                    }
+                    04=else
+                    05 ^{
+                        01=Tdist = Dist(bomb, ship);
+                        02=if(Tdist > 250) continue;
+                    }
+                    06=if(!ShipInNormalSpace(ship)) continue;
+                    07=if(ObjectType(ship) == 4 || ShipType(ship) == 'DomRuins') continue;
+                    08=str tempType = ShipType(ship);
+                    09=if(ship == Keller() || ship == Terron() || ship == Blazer() || tempType == 'Machpella' || tempType == 'KillerAsteroid') continue;
+                    10=DayLong = round(15.0 - (10.0 * (Tdist * Tdist) / 62500));
+                    11=OrderLock(ship, 1);
+                    12=if(!ShipIsTakeoff(ship))
+                    13 ^{
+                        01=float angle = pi * (ShipAngle(ship) + 90.0) / Rnd(179, 181);
+                        02=OrderMove(ship, cos(angle) * 10.0 + CoordX(ship), sin(angle) * 10.0 + CoordY(ship));
+                    }
+                    14=if(ship == Player()) FilmFlags(3, 1);
+                    15=int targ_infos = ShipFindCustomShipInfoByType(ship, 'ExpArts_ShipStunned');
+                    16=if(targ_infos == -1)
+                    17 ^{
+                        01=if(ship == Player()) ShipAddCustomShipInfo(ship, 'ExpArts_ShipStunned', 'You have been exposed to unknown radiation and have temporarily lost control over your own actions.', DayLong);
+                        02=else ShipAddCustomShipInfo(ship, 'ExpArts_ShipStunned', '', DayLong + 1);
+                        03=ShipSpecialBonuses(ship, bonHook, ShipSpecialBonuses(ship, bonHook) - 50000);
+                        04=if(!NoTalkToShip(ship))
+                        05 ^{
+                            01=NoTalkToShip(ship, 1);
+                            02=ShipCustomShipInfoData(ship, ShipFindCustomShipInfoByType(ship, 'ExpArts_ShipStunned'), 3, 1);
+                        }
+                    }
+                    18=else ShipCustomShipInfoData(ship, targ_infos, 1, ShipCustomShipInfoData(ship, targ_infos, 1) + DayLong);
+                    19=if(ship == Player())
+                    20 ^{
+                        01=dword player_star = ShipStar(Player());
+                        02=for(i = 0; i < StarShips(player_star); i = i + 1)
+                        03 ^{
+                            01=dword some_ship = StarShips(player_star, i);
+                            02=if(ShipFindCustomShipInfoByType(some_ship, 'ExpArts_ShipInStarWithStunnedPlayer') == -1)
+                            03 ^{
+                                01=ShipAddCustomShipInfo(some_ship, 'ExpArts_ShipInStarWithStunnedPlayer', 'NoShow');
+                                02=if(!NoTalkToShip(some_ship))
+                                03 ^{
+                                    01=NoTalkToShip(some_ship, 1);
+                                    02=ShipCustomShipInfoData(some_ship, ShipFindCustomShipInfoByType(some_ship, 'ExpArts_ShipInStarWithStunnedPlayer'), 2, 1);
+                                }
+                                04=if(!NoScanToShip(some_ship))
+                                05 ^{
+                                    01=NoScanToShip(some_ship, 1);
+                                    02=ShipCustomShipInfoData(some_ship, ShipFindCustomShipInfoByType(some_ship, 'ExpArts_ShipInStarWithStunnedPlayer'), 3, 1);
+                                }
+                            }
+                        }
+                        04=if(~HullSpecial(Player()))
+                        05 ^{
+                            01=if(BonusNumInCfg(HullSpecial(Player())) == 490) CapitalShipStats(ShipItems(Player(), 0), 1, 0);
+                        }
+                        06=if(GetMainData('Data.Script.Mod_ExpPanel') == '1,Script.Mod_ExpPanel')
+                        07 ^{
+                            01=ShipCustomShipInfoData(Player(), ShipFindCustomShipInfoByType(Player(), 'ExpArts_ShipStunned'), 3, 0);
+                            02=int v = 9;
+                            03=while(v)
+                            04 ^{
+                                01=if(InterfaceState('StarMap', 'set_button_' + v + '_c') == 1)
+                                02 ^{
+                                    01=InterfaceState('StarMap', 'set_button_' + v + '_c', 0);
+                                    02=ShipCustomShipInfoData(Player(), ShipFindCustomShipInfoByType(Player(), 'ExpArts_ShipStunned'), 3, ShipCustomShipInfoData(Player(), ShipFindCustomShipInfoByType(Player(), 'ExpArts_ShipStunned'), 3) + 1);
+                                }
+                                03=v = v - 1;
+                            }
+                            05=if(InterfaceState('StarMap', 'Klesh_panel') == 1)
+                            06 ^{
+                                01=InterfaceState('StarMap', 'Klesh_panel', 0);
+                                02=ShipCustomShipInfoData(Player(), ShipFindCustomShipInfoByType(Player(), 'ExpArts_ShipStunned'), 3, ShipCustomShipInfoData(Player(), ShipFindCustomShipInfoByType(Player(),'ExpArts_ShipStunned'), 3) + 10);
+                            }
+                            07=if(InterfaceState('StarMap', 'ppb_panel') == 1)
+                            08 ^{
+                                01=InterfaceState('StarMap', 'ppb_panel', 0);
+                                02=ShipCustomShipInfoData(Player(), ShipFindCustomShipInfoByType(Player(), 'ExpArts_ShipStunned'), 3, ShipCustomShipInfoData(Player(), ShipFindCustomShipInfoByType(Player(), 'ExpArts_ShipStunned'), 3) + 10);
+                            }
+                        }
+                    }
+                }
+                14=if(primer_type <= -5 && primer_type != -8)
+                15 ^{
+                    01=SetName(bomb, CT('Script.Mod_ExpArts.DepletedStunBomb'));
+                    02=UselessItemText(bomb, CT('Script.Mod_ExpArts.BombIsDepleted'));
+                }
+                16=else
+                17 ^{
+                    01=SetName(bomb, CT('Script.Mod_ExpArts.DepletedStunMine'));
+                    02=UselessItemText(bomb, CT('Script.Mod_ExpArts.MineIsDepleted'));
+                }
+                18=ItemCost(bomb, Rnd(15, 21) * ItemSize(bomb));
+                19=UselessItemData(bomb, 2, 1);
+            }
+        }
+        OnActCodeTypes=t_OnStep,t_OnDropItem,t_OnDropItemFixed,t_OnItemPickUp,t_OnItemHit,t_OnItemDestroy
+        OnActStepTypes=1,2,3,4,5,6,7,8,9,10,11
+        Owner=PirateClan
+        Size=7
+        Text=A complex electronic device, a unique heritage of antiquity, which, when activated, generates a flow of radiation of an unknown nature. Radiation suppresses all higher nervous activity, as well as the logic of all types of computers<br>for <color=255,240,100>5</color> to <color=255,240,100>15</color> days.
+    }
+    RNDbomb_3 ^{
+        Cost=Big
+        Name=EMF Bomb
+        OnActCode ^{
+            01=dword bomb = CurItem();
+            02=int primer_type = UselessItemData(bomb, 2);
+            03=int boom_flag = 0;
+            04=if(primer_type == 1) exit;
+            05=if(ScriptItemActionType(t_OnStep))
+            06 ^{
+                01=if(ScriptItemActParam() == 5)
+                02 ^{
+                    01=if(primer_type == -5 || primer_type <= -7)
+                    02 ^{
+                        01=if(UselessItemData(bomb, 1) > 0)
+                        02 ^{
+                            01=if(UselessItemData(bomb, 1) == 1) boom_flag = 1;
+                            02=else UselessItemData(bomb, 1, UselessItemData(bomb, 1) - 1);
+                        }
+                        03=if(primer_type == -5)
+                        04 ^{
+                            01=primer_type = -6;
+                            02=UselessItemData(bomb, 2, -6);
+                        }
+                        05=else if(primer_type == -7)
+                        06 ^{
+                            01=primer_type = -9;
+                            02=UselessItemData(bomb, 2, -9);
+                        }
+                    }
+                }
+                03=if(primer_type == -6 || primer_type == -9)
+                04 ^{
+                    01=if(!boom_flag)
+                    02 ^{
+                        01=bomb_star = ScriptItemActObject1();
+                        02=for(k = 0; k < StarShips(bomb_star); k = k + 1)
+                        03 ^{
+                            01=ship = StarShips(bomb_star, k);
+                            02=if(Dist(bomb, ship) <= 70)
+                            03 ^{
+                                01=boom_flag = 2;
+                                02=break;
+                            }
+                        }
+                        04=if(!boom_flag)
+                        05 ^{
+                            01=for(k = 0; k < StarRuins(bomb_star); k = k + 1)
+                            02 ^{
+                                01=ship = StarRuins(bomb_star, k);
+                                02=if(Dist(bomb, ship) <= 70)
+                                03 ^{
+                                    01=boom_flag = 2;
+                                    02=break;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            07=else if(ScriptItemActionType(t_OnDropItem) || ScriptItemActionType(t_OnDropItemFixed))
+            08 ^{
+                01=if(ScriptItemActObject1() == bomb)
+                02 ^{
+                    01=UselessItemData(bomb, 3, Id(ShipStar(ScriptItemActShip())) - 1);
+                    02=if(primer_type == 0)
+                    03 ^{
+                        01=primer_type = -4;
+                        02=UselessItemData(bomb, 2, -4);
+                    }
+                    04=else if(primer_type == -1)
+                    05 ^{
+                        01=primer_type = -5;
+                        02=UselessItemData(bomb, 2, -5);
+                    }
+                    06=else if(primer_type == -2)
+                    07 ^{
+                        01=UselessItemText(bomb, CT('UselessItems.' + EquipmentImageName(bomb) + '.Text') + substr(CT('Cheat.Ok'), 0, 2) + '<br><clr><clrEnd><br>' + CT('Script.Mod_ExpArts.WillBeActivatedIn'));
+                        02=primer_type = -8;
+                        03=UselessItemData(bomb, 2, -8);
+                    }
+                    08=else if(primer_type == -3)
+                    09 ^{
+                        01=UselessItemText(bomb, CT('UselessItems.' + EquipmentImageName(bomb) + '.Text') + substr(CT('Cheat.Ok'), 0, 2) + '<br><clr><clrEnd><br>' + CT('Script.Mod_ExpArts.WillBeActivatedIn'));
+                        02=primer_type = -7;
+                        03=UselessItemData(bomb, 2, -7);
+                    }
+                }
+            }
+            09=else if(ScriptItemActionType(t_OnItemPickUp))
+            10 ^{
+                01=if(ScriptItemActObject1() == bomb)
+                02 ^{
+                    01=if(primer_type == -4)
+                    02 ^{
+                        01=primer_type = 0;
+                        02=UselessItemData(bomb, 2, 0);
+                    }
+                }
+            }
+            11=else if(ScriptItemActionType(t_OnItemHit))
+            12 ^{
+                01=if(ObjectType(ScriptItemActObject1()) == 7)
+                02 ^{
+                    01=if(ShipStar(Player()) == GalaxyStar(UselessItemData(bomb, 3)) && ShipInNormalSpace(Player())) FilmSound('Sound.Zamknulo', bomb);
+                }
+            }
+            13=if(ScriptItemActionType(t_OnItemDestroy)) boom_flag = (primer_type <= -4);
+            14=else if(ScriptItemActionType(t_OnItemPickUp)) boom_flag = (ScriptItemActObject1() == bomb && primer_type <= -5);
+            15=if(boom_flag)
+            16 ^{
+                01=dword ship = 0;
+                02=dword pick_ship = 0;
+                03=dword bomb_star = GalaxyStar(UselessItemData(bomb, 3));
+                04=int k;
+                05=int j;
+                06=int reduce = 0;
+                07=int Tdist = 0;
+                08=dword item = 0;
+                09=if(ScriptItemActionType(t_OnItemPickUp))
+                10 ^{
+                    01=pick_ship = ScriptItemActShip();
+                    02=if(!ScriptItemActObject2()) OrderNone(pick_ship);
+                    03=if(ShipStar(Player()) == bomb_star && ShipInNormalSpace(Player()))
+                    04 ^{
+                        01=ShowStaticEffect('RNDbomb_3BAM', CoordX(pick_ship), CoordY(pick_ship));
+                        02=FilmSound('Sound.Zamknulo', pick_ship);
+                    }
+                }
+                11=else
+                12 ^{
+                    01=if(ShipStar(Player()) == bomb_star && ShipInNormalSpace(Player()))
+                    02 ^{
+                        01=ShowStaticEffect('RNDbomb_3BAM', CoordX(bomb), CoordY(bomb));
+                        02=FilmSound('Sound.Zamknulo', bomb);
+                    }
+                }
+                13=for(k = 0; k < StarShips(bomb_star); k = k + 1)
+                14 ^{
+                    01=ship = StarShips(bomb_star, k);
+                    02=if(ScriptItemActionType(t_OnItemPickUp))
+                    03 ^{
+                        01=Tdist = Dist(pick_ship, ship);
+                        02=if(Tdist > 250) continue;
+                    }
+                    04=else
+                    05 ^{
+                        01=Tdist = Dist(bomb, ship);
+                        02=if(Tdist > 250) continue;
+                    }
+                    06=if(!ShipInNormalSpace(ship)) continue;
+                    07=str tempType = ShipType(ship);
+                    08=if(tempType == 'Klissan' || tempType == 'Klissan1' || tempType == 'Klissan2' || tempType == 'Klissan3' || tempType == 'Klissan4' || tempType == 'Klissan5' || tempType == 'KB' || tempType == 'Machpella' || tempType == 'KillerAsteroid') continue;
+                    09=int is_the_boss = (ship == Keller() || ship == Terron() || ship == Blazer());
+                    10=for(j = 1; j < ShipItems(ship); j = j + 1)
+                    11 ^{
+                        01=item = ShipItems(ship, j);
+                        02=if(!ItemIsInUse(item)) continue;
+                        03=if(~EqSpecial(item))
+                        04 ^{
+                            01=if(CT('MicroModuls.' + BonusNumInCfg(EqSpecial(item)) + '.BioEquip') == 1) continue;
+                        }
+                        05=if(EqCustomFaction(item) == 'Klissan') continue;
+                        06=reduce = round(75.0 - (45.0 * (Tdist * Tdist) / 62500));
+                        07=if(!ShipProtectability(ship)) reduce = reduce * 2;
+                        08=if(ship == pick_ship) reduce = 100;
+                        09=if(is_the_boss) reduce = reduce / 10;
+                        10=if(ItemDurability(item) - reduce < 0) ItemDurability(item, 0);
+                        11=else ItemDurability(item, ItemDurability(item) - reduce);
+                        12=if(is_the_boss) continue;
+                        13=ItemDurability(ShipEqInSlot(ship, t_Engine), 0);
+                        14=int memHP = HullHP(ship);
+                        15=HullHP(ship, HullHP(ship) + 100);
+                        16=ShipSpecialBonuses(ship, bonHull, ShipSpecialBonuses(ship, bonHull) + reduce * 15);
+                        17=DealDamageToShip(ship, 0, 10, 256);
+                        18=ShipSpecialBonuses(ship, bonHull, ShipSpecialBonuses(ship, bonHull) - reduce * 15);
+                        19=if(HullHP(ship) != memHP) HullHP(ship, memHP);
+                    }
+                    12=for(j = 1; j <= 4; j = j + 1)
+                    13 ^{
+                        01=item = ShipEqInSlot(ship, t_Artefact, j);
+                        02=if(ItemType(item) > t_Artefact && ItemType(item) < t_ArtefactRadar) continue;
+                        03=reduce = round(75.0 - (45.0 * (Tdist * Tdist) / 62500));
+                        04=if(!ShipProtectability(ship)) reduce = reduce * 2;
+                        05=if(ship == pick_ship) reduce = 100;
+                        06=if(is_the_boss) reduce = reduce / 10;
+                        07=if(ItemDurability(item) - reduce < 0) ItemDurability(item, 0);
+                        08=else ItemDurability(item, ItemDurability(item) - reduce);
+                    }
+                }
+                15=if(primer_type <= -5 && primer_type != -8)
+                16 ^{
+                    01=SetName(bomb, CT('Script.Mod_ExpArts.DepletedEMPBomb'));
+                    02=UselessItemText(bomb, CT('Script.Mod_ExpArts.BombIsDepleted'));
+                }
+                17=else
+                18 ^{
+                    01=SetName(bomb, CT('Script.Mod_ExpArts.DepletedEMPMine'));
+                    02=UselessItemText(bomb, CT('Script.Mod_ExpArts.MineIsDepleted'));
+                }
+                19=ItemCost(bomb, Rnd(15, 21) * ItemSize(bomb));
+                20=UselessItemData(bomb, 2, 1);
+            }
+        }
+        OnActCodeTypes=t_OnStep,t_OnDropItem,t_OnDropItemFixed,t_OnItemPickUp,t_OnItemHit,t_OnItemDestroy
+        OnActStepTypes=1,2,3,4,5,6,7,8,9,10,11
+        Owner=PirateClan
+        Size=7
+        Text=When activated it generates a powerful electromagnetic pulse which causes severe damage to all electronics and completely shuts down engines<br>in huge radius.
+    }
+    RNDbombbox ^{
+        Cost=Big
+        Name=Bomb container
+        OnUseCode ^{
+            01=if(FindItemInShip(Player(), CurItem()) == -1) exit;
+            02=if(MessageBoxYesNo('Are you sure you want to open this container?'))
+            03 ^{
+                01=dword Titem = 0;
+                02=str Ttype = 0;
+                03=int Tquant = 0;
+                04=if(UselessItemData(CurItem(), 1) > 30) Tquant = 1;
+                05=if(UselessItemData(CurItem(), 1) > 70) Tquant = 2;
+                06=if(UselessItemData(CurItem(), 1) > 95) Tquant = 3;
+                07=while(Tquant > 0)
+                08 ^{
+                    01=Titem = CreateQuestItem('RNDtimer', PirateClan);
+                    02=ItemSize(Titem, 1);
+                    03=AddItemToShip(Player(), Titem);
+                    04=Tquant = Tquant - 1;
+                }
+                09=Tquant = 1;
+                10=if(UselessItemData(CurItem(), 2) > 35) Tquant = 2;
+                11=if(UselessItemData(CurItem(), 2) > 75) Tquant = 3;
+                12=if(UselessItemData(CurItem(), 2) > 90) Tquant = 4;
+                13=while(Tquant > 0)
+                14 ^{
+                    01=Ttype = UselessItemData(CurItem(), 3) + '';
+                    02=Ttype = substr(Ttype, Tquant - 1, 1);
+                    03=if(Ttype != '1')
+                    04 ^{
+                        01=Titem = CreateQuestItem('RNDbomb_' + Ttype, PirateClan);
+                        02=ItemSize(Titem, ItemSize(Titem) + Rnd(-2, 2));
+                        03=ItemCost(Titem, ItemCost(Titem) + Rnd(-297, 303));
+                        04=AddItemToShip(Player(), Titem);
+                    }
+                    05=else
+                    06 ^{
+                        01=Titem = CreateArt(t_ArtefactBomb, PirateClan);
+                        02=ItemSize(Titem, ItemSize(Titem) + Rnd(-2, 2));
+                        03=ItemCost(Titem, ItemCost(Titem) + Rnd(-297, 303));
+                        04=AddItemToShip(Player(), Titem);
+                    }
+                    07=Tquant = Tquant - 1;
+                }
+                15=FreeItem(GetItemFromShip(Player(), FindItemInShip(Player(), CurItem())));
+            }
+        }
+        Owner=PirateClan
+        Size=40
+        Text=A container designed to provide members of the <color=255,240,100>pirate clan</color> with effective weapons. Contains several <color=255,240,100>bombs</color> and <color=255,240,100>detonators</color> produced by pirates.
+    }
+    RNDmodbox ^{
+        Cost=Big
+        Name=Container with modification kits
+        OnUseCode ^{
+            01=if(FindItemInShip(Player(), CurItem()) == -1) exit;
+            02=if(MessageBoxYesNo('Are you sure you want to open the container?'))
+            03 ^{
+                01=str itemName = 'RNDmoditem_' + UselessItemData(CurItem(), 1);
+                02=dword item = CreateQuestItem(itemName, ItemOwner(CurItem()));
+                03=AddItemToShip(Player(), item);
+                04=FreeItem(GetItemFromShip(Player(), FindItemInShip(Player(), CurItem())));
+            }
+        }
+        Owner=PirateClan
+        Size=13
+        Text=In an attempt to catch up with the Coalition on the level of technical equipment, the <color=255,240,100>pirate brotherhood</color> began to produce their own <color=255,240,100>modifications</color> for various types of <color=255,240,100>equipment</color>. The overall quality of such modifications is often questionable, but they still manage to achieve the desired effect. One of the traditional schemes of distribution of such modifications has always been the creation of various caches.
+    }
+    RNDmoditem_1 ^{
+        Cost=Big
+        Name=Decelerator
+        OnActCode ^{
+            01=dword item = ScriptItemActObject1();
+            02=if(ItemType(item) < t_Weapon1|| ItemType(item) > t_CustomWeapon) exit;
+            03=if(EqCustomFaction(item) == 'Klissan') exit;
+            04=int dmgset = GetEquipmentStats(item, 6);
+            05=if((dmgset & 1) != 1 || (dmgset & 8) == 8 || (dmgset & 512) == 512 || (dmgset & 1024) == 1024) exit;
+            06=if(ScriptItemActionType(t_OnCheckingUsability))
+            07 ^{
+                01=ScriptItemActParam(1);
+            }
+            08=else
+            09 ^{
+                01=str text_q = 'Are you sure you want to apply ModuleName to ItemName?';
+                02=text_q = Format(text_q, 'ModuleName', Name(CurItem()), 'ItemName', Name(item));
+                03=if(MessageBoxYesNo(text_q))
+                04 ^{
+                    01=ItemExtraSpecialsAddByType(item, FindBonusByNameInCfg('ExpArts_Decelerator'), 1);
+                    02=ItemSize(item, ItemSize(item) + ItemSize(CurItem()));
+                    03=ItemCost(item, ItemCost(item) + ItemCost(CurItem()));
+                    04=ScriptItemActParam(1);
+                }
+            }
+        }
+        OnActCodeTypes=t_OnCheckingUsability,t_OnAnotherItem
+        Owner=None
+        Size=5
+        Text=Modification kit for <color=255,240,100>energy weapons</color>.<br>Augments the emitter of the gun with a special chamber with charged particles which, after receiving an energy impulse, rush to the target in a common stream, and upon reaching it, suppress the work of the engine acceleration circuit, thereby significantly reducing the speed of the irradiated ship. Unfortunately, an extraneous chamber placed in the path of the shot partially delays the energy release and overheats the gun, which ultimately leads to a decrease in its durability.
+        Text=<clr><clrEnd>
+        Text=Additional effect: <color=255,240,100>slows target</color>
+        Text=Weapon reliability: <color=255,240,100>-15%</color>
+        Text=<clr><clrEnd>
+        Text=<color=255,240,100>Cannot be used on weapon which<br>already slows target.</color>
+    }
+    RNDmoditem_10 ^{
+        Cost=Average
+        Name=Processors "Extreme"
+        OnActCode ^{
+            01=dword item = ScriptItemActObject1();
+            02=if(ItemType(item) != t_RepairRobot) exit;
+            03=if(ItemImprovement(item) || EqCustomFaction(item) == 'Klissan') exit;
+            04=if(ItemExtraSpecials(item))
+            05 ^{
+                01=int sp_num = 0;
+                02=for(int i = 0; i < ItemExtraSpecials(item); i = i + 1)
+                03 ^{
+                    01=sp_num = ItemExtraSpecials(item, i);
+                    02=if(!findsubstr(CT('MicroModuls.' + BonusNumInCfg(sp_num) + '.Name'), 'dt_Modify')) exit;
+                }
+            }
+            06=if(~EqSpecial(item))
+            07 ^{
+                01=str bon_num = BonusNumInCfg(EqSpecial(item));
+                02=if(CT('MicroModuls.' + bon_num + '.BlockImp') == 1) exit;
+                03=if(CT('MicroModuls.' + bon_num + '.BioEquip') == 1)
+                04 ^{
+                    01=if(ScriptItemActionType(t_OnCheckingUsability)) exit;
+                    02=MessageBox('You are not quite sure if this droid has a processor, but either way, trying to shove it into the poor animal would be extremely inhumane.', 34);
+                    03=exit;
+                }
+                05=if(!findsubstr(bon_num, 'RevAcryn_BattleDroid'))
+                06 ^{
+                    01=if(ScriptItemActionType(t_OnCheckingUsability)) exit;
+                    02=MessageBox('A battle droid is incapable of making repairs, and its behavior under enemy fire is already extreme.', 34);
+                    03=exit;
+                }
+            }
+            08=if(ScriptItemActionType(t_OnCheckingUsability))
+            09 ^{
+                01=ScriptItemActParam(1);
+            }
+            10=else
+            11 ^{
+                01=str text_q = 'Are you sure you want to install ModuleName to ItemName?';
+                02=text_q = Format(text_q, 'ModuleName', Name(CurItem()), 'ItemName', Name(item));
+                03=if(MessageBoxYesNo(text_q))
+                04 ^{
+                    01=ItemExtraSpecialsAddByType(item, FindBonusByNameInCfg('ExpArts_ProcessorsExtreme'), 1);
+                    02=SetEquipmentStats(item, GetEquipmentStats(item, 0) + 8, 0);
+                    03=ItemSize(item, ItemSize(item) + ItemSize(CurItem()));
+                    04=ItemCost(item, ItemCost(item) + ItemCost(CurItem()));
+                    05=ScriptItemActParam(1);
+                }
+            }
+        }
+        OnActCodeTypes=t_OnCheckingUsability,t_OnAnotherItem
+        Owner=PirateClan
+        Size=3
+        Text=Modification kit for <color=255,240,100>repair droid</color>.<br>Processors "Extreme" change the logic of the droid's behavior, making it less cautious, but at the same time faster to make the necessary repairs.
+        Text=<clr><clrEnd>
+        Text=Droid efficiency: <color=255,240,100>+8</color> pt.
+        Text=Droid reliability: <color=255,240,100>-20%</color>
+        Text=<clr><clrEnd>
+        Text=<color=255,240,100>After this modification it will be impossible to improve the droid in the standard way.</color>
+    }
+    RNDmoditem_11 ^{
+        Cost=Average
+        Name=Security systems replacement
+        OnActCode ^{
+            01=dword item = ScriptItemActObject1();
+            02=if(ItemType(item) != t_FuelTanks) exit;
+            03=if(ItemImprovement(item) || EqCustomFaction(item) == 'Klissan') exit;
+            04=if(ItemExtraSpecials(item))
+            05 ^{
+                01=int sp_num = 0;
+                02=for(int i = 0; i < ItemExtraSpecials(item); i = i + 1)
+                03 ^{
+                    01=sp_num = ItemExtraSpecials(item, i);
+                    02=if(!findsubstr(CT('MicroModuls.' + BonusNumInCfg(sp_num) + '.Name'), 'dt_Modify')) exit;
+                }
+            }
+            06=if(~EqSpecial(item))
+            07 ^{
+                01=if(CT('MicroModuls.' + BonusNumInCfg(EqSpecial(item)) + '.BlockImp') == 1) exit;
+            }
+            08=if(ScriptItemActionType(t_OnCheckingUsability))
+            09 ^{
+                01=ScriptItemActParam(1);
+            }
+            10=else
+            11 ^{
+                01=str text_q = 'Are you sure you want to install <color=0,50,200>security systems replacement</color> to ItemName?';
+                02=text_q = Format(text_q, 'ModuleName', Name(CurItem()), 'ItemName', Name(item));
+                03=if(MessageBoxYesNo(text_q))
+                04 ^{
+                    01=ItemExtraSpecialsAddByType(item, FindBonusByNameInCfg('ExpArts_SecurityReplacement'), 1);
+                    02=SetEquipmentStats(item, GetEquipmentStats(item, 0) + 20, 0);
+                    03=ItemCost(item, ItemCost(item) + ItemCost(CurItem()));
+                    04=ScriptItemActParam(1);
+                }
+            }
+        }
+        OnActCodeTypes=t_OnCheckingUsability,t_OnAnotherItem
+        Owner=PirateClan
+        Size=5
+        Text=Modification kit for <color=255,240,100>fuel tank</color>.<br>By recoding and removing some safety systems, the maximum capacity of the tank can be significantly increased, at the expense of reliability.
+        Text=<clr><clrEnd>
+        Text=Tank capacity: <color=255,240,100>+20</color> pt.
+        Text=Tank reliability: <color=255,240,100>-60%</color>
+        Text=<clr><clrEnd>
+        Text=<color=255,240,100>After this modification it will be impossible to improve the fuel tank in the standard way.</color>
+    }
+    RNDmoditem_12 ^{
+        Cost=Big
+        Name=Hacked injector
+        OnActCode ^{
+            01=dword item = ScriptItemActObject1();
+            02=if(ItemType(item) != t_Engine) exit;
+            03=if(ItemImprovement(item) || EqCustomFaction(item) == 'Klissan') exit;
+            04=if(ItemExtraSpecials(item))
+            05 ^{
+                01=int sp_num = 0;
+                02=for(int i = 0; i < ItemExtraSpecials(item); i = i + 1)
+                03 ^{
+                    01=sp_num = ItemExtraSpecials(item, i);
+                    02=if(!findsubstr(CT('MicroModuls.' + BonusNumInCfg(sp_num) + '.Name'), 'dt_Modify')) exit;
+                }
+            }
+            06=if(~EqSpecial(item))
+            07 ^{
+                01=if(!findsubstr(BonusNumInCfg(EqSpecial(item)), 'RevAcryn_NOKM'))
+                02 ^{
+                    01=if(ScriptItemActionType(t_OnCheckingUsability)) exit;
+                    02=MessageBox('This device has no injector, and in general it is not an engine.', 34);
+                    03=exit;
+                }
+                03=if(CT('MicroModuls.' + BonusNumInCfg(EqSpecial(item)) + '.BlockImp') == 1) exit;
+            }
+            08=if(ScriptItemActionType(t_OnCheckingUsability))
+            09 ^{
+                01=ScriptItemActParam(1);
+            }
+            10=else
+            11 ^{
+                01=str text_q = 'Are you sure you want to install <color=0,50,200>hacked injector</color> to ItemName?';
+                02=text_q = Format(text_q, 'ModuleName', Name(CurItem()), 'ItemName', Name(item));
+                03=if(MessageBoxYesNo(text_q))
+                04 ^{
+                    01=ItemExtraSpecialsAddByType(item, FindBonusByNameInCfg('ExpArts_HackedInjector'), 1);
+                    02=SetEquipmentStats(item, GetEquipmentStats(item, 0) + 200, 0);
+                    03=ItemCost(item, ItemCost(item) + ItemCost(CurItem()));
+                    04=ScriptItemActParam(1);
+                }
+            }
+        }
+        OnActCodeTypes=t_OnCheckingUsability,t_OnAnotherItem
+        Owner=PirateClan
+        Size=8
+        Text=Modification kit for <color=255,240,100>engine</color>.<br>Replaces the standard fuel injector with a hacked version that allows significantly more fuel into the combustion chamber, resulting in a significant increase in engine speed. Unfortunately, the increased fuel intake actually puts the engine into a constant boost mode, which adversely affects the longevity of the unit.
+        Text=<clr><clrEnd>
+        Text=Engine speed: <color=255,240,100>+200</color> pt.
+        Text=Engine reliability: <color=255,240,100>-40%</color>
+        Text=<clr><clrEnd>
+        Text=<color=255,240,100>After this modification it will be impossible to improve the engine in the standard way.</color>
+    }
+    RNDmoditem_13 ^{
+        Cost=Average
+        Name=Reinforced servo drives
+        OnActCode ^{
+            01=dword item = ScriptItemActObject1();
+            02=if(ItemType(item) != t_CargoHook) exit;
+            03=if(ItemImprovement(item) || EqCustomFaction(item) == 'Klissan') exit;
+            04=if(ItemExtraSpecials(item))
+            05 ^{
+                01=int sp_num = 0;
+                02=for(int i = 0; i < ItemExtraSpecials(item); i = i + 1)
+                03 ^{
+                    01=sp_num = ItemExtraSpecials(item, i);
+                    02=if(!findsubstr(CT('MicroModuls.' + BonusNumInCfg(sp_num) + '.Name'), 'dt_Modify')) exit;
+                }
+            }
+            06=if(~EqSpecial(item))
+            07 ^{
+                01=if(CT('MicroModuls.' + BonusNumInCfg(EqSpecial(item)) + '.BlockImp') == 1) exit;
+            }
+            08=if(ScriptItemActionType(t_OnCheckingUsability))
+            09 ^{
+                01=ScriptItemActParam(1);
+            }
+            10=else
+            11 ^{
+                01=str text_q = 'Are you sure you want to install <color=0,50,200>reinforced servo drives</color> to ItemName?';
+                02=text_q = Format(text_q, 'ModuleName', Name(CurItem()), 'ItemName', Name(item));
+                03=if(MessageBoxYesNo(text_q))
+                04 ^{
+                    01=ItemExtraSpecialsAddByType(item, FindBonusByNameInCfg('ExpArts_ReinforcedServoDrives'), 1);
+                    02=SetEquipmentStats(item, GetEquipmentStats(item, 0) + 40, 0);
+                    03=ItemCost(item, ItemCost(item) + ItemCost(CurItem()));
+                    04=ScriptItemActParam(1);
+                }
+            }
+        }
+        OnActCodeTypes=t_OnCheckingUsability,t_OnAnotherItem
+        Owner=PirateClan
+        Size=16
+        Text=Modification kit for <color=255,240,100>gripper</color>.<br>Equips the gripper with reinforced servos, which allows it to grip objects of larger size and weight. Unfortunately, the rest of the mechanism of the device is not designed for increased load, and therefore fails much earlier than it should.
+        Text=<clr><clrEnd>
+        Text=Gripper power: <color=255,240,100>+40</color> pt.
+        Text=Gripper reliability: <color=255,240,100>-25%</color>
+        Text=<clr><clrEnd>
+        Text=<color=255,240,100>After this modification it will be impossible to improve the gripper in the standard way.</color>
+    }
+    RNDmoditem_14 ^{
+        Cost=Big
+        Name=Fragilium parts
+        OnActCode ^{
+            01=dword item = ScriptItemActObject1();
+            02=if(ItemType(item) < t_FuelTanks || ItemType(item) > t_CustomWeapon) exit;
+            03=if(EqCustomFaction(item) == 'Klissan') exit;
+            04=if(ItemExtraSpecials(item))
+            05 ^{
+                01=int sp_num = 0;
+                02=for(int i = 0; i < ItemExtraSpecials(item); i = i + 1)
+                03 ^{
+                    01=sp_num = ItemExtraSpecials(item, i);
+                    02=if(!findsubstr(CT('MicroModuls.' + BonusNumInCfg(sp_num) + '.Name'), 'dt_Modify')) exit;
+                    03=if(BonusNumInCfg(sp_num) == 'ShuMercs_Exdurality') exit;
+                }
+            }
+            06=if(ScriptItemActionType(t_OnCheckingUsability))
+            07 ^{
+                01=ScriptItemActParam(1);
+            }
+            08=else
+            09 ^{
+                01=str text_q = 'Do you really want to strengthen ItemName with <color=0,50,200>fragilium parts</color>?';
+                02=text_q = Format(text_q, 'ModuleName', Name(CurItem()), 'ItemName', Name(item));
+                03=if(MessageBoxYesNo(text_q))
+                04 ^{
+                    01=ItemExtraSpecialsAddByType(item, FindBonusByNameInCfg('ExpArts_FragiliumParts'), 1);
+                    02=ItemSize(item, ItemSize(item) + ItemSize(CurItem()));
+                    03=ItemCost(item, ItemCost(item) + ItemCost(CurItem()));
+                    04=ScriptItemActParam(1);
+                }
+            }
+        }
+        OnActCodeTypes=t_OnCheckingUsability,t_OnAnotherItem
+        Owner=PirateClan
+        Size=5
+        Text=Modification kit for <br><color=255,240,100>all equipment</color>.<br>Replaces the most common parts in the equipment with more wear-resistant counterparts made of Fragilium.
+        Text=<clr><clrEnd>
+        Text=Equipment reliability: <color=255,240,100>+40%</color>
+    }
+    RNDmoditem_15 ^{
+        Cost=Huge
+        Name=Smuggler's compartment
+        OnActCode ^{
+            01=dword item = ScriptItemActObject1();
+            02=if(ItemType(item) != t_Hull) exit;
+            03=if(HullType(item) == 7 || HullType(item) == 8 || EqCustomFaction(item) == 'Klissan') exit;
+            04=if(ItemExtraSpecials(item))
+            05 ^{
+                01=int sp_num = 0;
+                02=for(int i = 0; i < ItemExtraSpecials(item); i = i + 1)
+                03 ^{
+                    01=sp_num = ItemExtraSpecials(item, i);
+                    02=if(!findsubstr(CT('MicroModuls.' + BonusNumInCfg(sp_num) + '.Name'), 'dt_Modify')) exit;
+                }
+            }
+            06=if(~EqSpecial(item))
+            07 ^{
+                01=if(CT('MicroModuls.' + BonusNumInCfg(EqSpecial(item)) + '.BlockImp') == 1) exit;
+            }
+            08=if(ScriptItemActionType(t_OnCheckingUsability))
+            09 ^{
+                01=ScriptItemActParam(1);
+            }
+            10=else
+            11 ^{
+                01=str text_q = 'Are you sure you want to install <color=0,50,200>smugglers compartment</color> to ItemName?';
+                02=text_q = Format(text_q, 'ModuleName', Name(CurItem()), 'ItemName', Name(item));
+                03=if(MessageBoxYesNo(text_q))
+                04 ^{
+                    01=ItemExtraSpecialsAddByType(item, FindBonusByNameInCfg('ExpArts_SmugglersCompartment'), 1);
+                    02=ItemSize(item, ItemSize(item) + (ItemSize(item) * 25) / 100);
+                    03=if(UselessItemData(item, 1) >= 1 && UselessItemData(item, 1) <= 3)
+                    04 ^{
+                        01=MessageBox('In the new compartment you found a shipment of <color=0,50,200>weapon</color> contraband.');
+                        02=ShipGoods(Player(), t_Arms, GoodsCount(Player(), t_Arms) + UselessItemData(item, 2));
+                    }
+                    05=else if(UselessItemData(item, 1) == 4 || UselessItemData(item, 1) == 5)
+                    06 ^{
+                        01=MessageBox('In the new compartment you found a shipment of smuggled <color=0,50,200>luxury</color>.');
+                        02=ShipGoods(Player(), t_Luxury, GoodsCount(Player(), t_Luxury) + UselessItemData(item, 2));
+                    }
+                    07=else if(UselessItemData(item, 1) == 6)
+                    08 ^{
+                        01=MessageBox('In the new compartment you found a shipment of smuggled <color=0,50,200>drugs</color>.');
+                        02=ShipGoods(Player(), t_Narcotics, GoodsCount(Player(), t_Narcotics) + UselessItemData(item, 2));
+                    }
+                    09=ItemCost(item, ItemCost(item) + (ItemCost(CurItem()) / 2));
+                    10=ScriptItemActParam(1);
+                }
+            }
+        }
+        OnActCodeTypes=t_OnCheckingUsability,t_OnAnotherItem
+        Owner=PirateClan
+        Size=65
+        Text=A compartment for carrying illicit cargo, urgently dumped by an unknown smuggler, most likely in an attempt to evade the forces of law.<br>Installation adds a special compartment to the ship, greatly expanding its original capacity. The additional compartment is protected from scanning, but, unfortunately, does not carry any armor, and therefore becomes a weakened hull area.
+        Text=<clr><clrEnd>
+        Text=Hull size: <color=255,240,100>+25%</color>
+        Text=Damage susceptibility: <color=255,240,100>+15%</color>
+        TextBlackMarket=External compartment for concealed carrying<br>of illegal cargo.<br>When installed, it adds a special compartment to the ship, greatly expanding its original capacity. The additional compartment is protected from scanning, but, unfortunately, does not carry any armor, and therefore becomes a weakened<br>hull area.
+        TextBlackMarket=<clr><clrEnd>
+        TextBlackMarket=Hull sie: <color=255,240,100>+25%</color>
+        TextBlackMarket=Damage susceptibility: <color=255,240,100>+15%</color>
+    }
+    RNDmoditem_2 ^{
+        Cost=Huge
+        Name=Null-generator
+        OnActCode ^{
+            01=if(CurrentForm() == 'Ship' && UselessItemData(CurItem(), 1) == 1)
+            02 ^{
+                01=UselessItemData(CurItem(), 1, 0);
+                02=RunChildForm('Galaxy');
+                03=if(ShipOrder(Player()) == 7)
+                04 ^{
+                    01=ShipOrderData1(Player(), 1);
+                    02=FreeItem(GetItemFromShip(Player(), FindItemInShip(Player(), CurItem())));
+                    03=ForceNextDay();
+                    04=ButtonClick('Ship', 'Exit');
+                    05=exit;
+                }
+                05=else UselessItemData(CurItem(), 1, 0);
+                06=UpdateFormShip();
+            }
+        }
+        OnActCodeTypes=t_OnReEnteringForm
+        OnUseCode ^{
+            01=if(!ShipInNormalSpace(Player()))
+            02 ^{
+                01=MessageBox(CT('FormShip.UseOnlyInSpace'));
+                02=exit;
+            }
+            03=if(!ShipSpeed(Player()))
+            04 ^{
+                01=MessageBox('The ship cannot move. Null-generator cannot work.');
+                02=exit;
+            }
+            05=if(MessageBoxYesNo('Are you sure you want to make the null-jump? The null-generator <color=0,50,200>will be destroyed</color> by the jump.'))
+            06 ^{
+                01=UselessItemData(CurItem(), 1, 1);
+            }
+        }
+        Owner=None
+        Size=5
+        Text=It distorts the temporal field around the ship and removes gravitational interference from the jump engine circuit, thereby allowing you to make <color=255,240,100>hyperjump to any point</color> in space. Unfortunately, after the first jump the generator's power supply is completely depleted, and therefore it is physically impossible to use the device again.
+    }
+    RNDmoditem_3 ^{
+        Cost=Big
+        Name=Acidius
+        OnActCode ^{
+            01=dword item = ScriptItemActObject1();
+            02=if(ItemType(item) < t_Weapon1|| ItemType(item) > t_CustomWeapon) exit;
+            03=if(EqCustomFaction(item) == 'Klissan') exit;
+            04=int dmgset = GetEquipmentStats(item, 6);
+            05=if((dmgset & 2) != 2 || (dmgset & 128) == 128) exit;
+            06=if(ScriptItemActionType(t_OnCheckingUsability))
+            07 ^{
+                01=ScriptItemActParam(1);
+            }
+            08=else
+            09 ^{
+                01=str text_q = 'Are you sure you want to apply ModuleName to ItemName?';
+                02=text_q = Format(text_q, 'ModuleName', Name(CurItem()), 'ItemName', Name(item));
+                03=if(MessageBoxYesNo(text_q))
+                04 ^{
+                    01=ItemExtraSpecialsAddByType(item, FindBonusByNameInCfg('ExpArts_Acidius'), 1);
+                    02=ItemSize(item, ItemSize(item) + ItemSize(CurItem()));
+                    03=ItemCost(item, ItemCost(item) + ItemCost(CurItem()));
+                    04=ScriptItemActParam(1);
+                }
+            }
+        }
+        OnActCodeTypes=t_OnCheckingUsability,t_OnAnotherItem
+        Owner=None
+        Size=5
+        Text=Modification kit for <color=255,240,100>fragmentation weapons</color>.<br>Equips the loading mechanism with a special device that fills all shells with a special corrosive composition, which weakens the enemy ship's armor on hit. However the device decreases the reliability of the loading mechanism.
+        Text=<clr><clrEnd>
+        Text=Additional effect: <color=255,240,100>reduces armor</color>
+        Text=Weapon reliability: <color=255,240,100>-15%</color>
+        Text=<clr><clrEnd>
+        Text=<color=255,240,100>Cannot be used on weapon which<br>reduces armor.</color>
+    }
+    RNDmoditem_4 ^{
+        Cost=Average
+        Name=Till capacitors
+        OnActCode ^{
+            01=dword item = ScriptItemActObject1();
+            02=if(ItemType(item) < t_Weapon1|| ItemType(item) > t_CustomWeapon) exit;
+            03=if(ItemImprovement(item) || EqCustomFaction(item) == 'Klissan') exit;
+            04=if((GetEquipmentStats(item, 6) & 1) != 1) exit;
+            05=if(ItemExtraSpecials(item))
+            06 ^{
+                01=int sp_num = 0;
+                02=for(int i = 0; i < ItemExtraSpecials(item); i = i + 1)
+                03 ^{
+                    01=sp_num = ItemExtraSpecials(item, i);
+                    02=if(!findsubstr(CT('MicroModuls.' + BonusNumInCfg(sp_num) + '.Name'), 'dt_Modify')) exit;
+                }
+            }
+            07=if(~EqSpecial(item))
+            08 ^{
+                01=if(CT('MicroModuls.' + BonusNumInCfg(EqSpecial(item)) + '.BlockImp') == 1) exit;
+            }
+            09=if(ScriptItemActionType(t_OnCheckingUsability))
+            10 ^{
+                01=ScriptItemActParam(1);
+            }
+            11=else
+            12 ^{
+                01=str text_q = 'Are you sure you want to install <color=0,50,200>Till Capacitors</color> to ItemName?';
+                02=text_q = Format(text_q, 'ModuleName', Name(CurItem()), 'ItemName', Name(item));
+                03=if(MessageBoxYesNo(text_q))
+                04 ^{
+                    01=ItemExtraSpecialsAddByType(item, FindBonusByNameInCfg('ExpArts_TillCapacitors'), 1);
+                    02=ItemSize(item, ItemSize(item) + ItemSize(CurItem()));
+                    03=ItemCost(item, ItemCost(item) + ItemCost(CurItem()));
+                    04=ScriptItemActParam(1);
+                }
+            }
+        }
+        OnActCodeTypes=t_OnCheckingUsability,t_OnAnotherItem
+        Owner=PirateClan
+        Size=7
+        Text=Modification kit for <color=255,240,100>energy weapons</color>.<br>Teal capacitors have an increased capacitance, which allows the accumulation of more shot power, but this same excess power wears out the conductive power nodes of the gun, which were simply not designed for the distribution of such loads, more quickly.
+        Text=<clr><clrEnd>
+        Text=Weapon damage: <color=255,240,100>+15</color> pt.
+        Text=Weapon reliability: <color=255,240,100>-20%</color>
+    }
+    RNDmoditem_5 ^{
+        Cost=Average
+        Name=Weakened limiters
+        OnActCode ^{
+            01=dword item = ScriptItemActObject1();
+            02=if(ItemType(item) < t_Weapon1|| ItemType(item) > t_CustomWeapon) exit;
+            03=if(ItemImprovement(item) || EqCustomFaction(item) == 'Klissan') exit;
+            04=if((GetEquipmentStats(item, 6) & 2) != 2) exit;
+            05=if(ItemExtraSpecials(item))
+            06 ^{
+                01=int sp_num = 0;
+                02=for(int i = 0; i < ItemExtraSpecials(item); i = i + 1)
+                03 ^{
+                    01=sp_num = ItemExtraSpecials(item, i);
+                    02=if(!findsubstr(CT('MicroModuls.' + BonusNumInCfg(sp_num) + '.Name'), 'dt_Modify')) exit;
+                }
+            }
+            07=if(~EqSpecial(item))
+            08 ^{
+                01=if(CT('MicroModuls.' + BonusNumInCfg(EqSpecial(item)) + '.BlockImp') == 1) exit;
+            }
+            09=if(ScriptItemActionType(t_OnCheckingUsability))
+            10 ^{
+                01=ScriptItemActParam(1);
+            }
+            11=else
+            12 ^{
+                01=str text_q = 'Are you sure you want to install <color=0,50,200>weakened limiters</color> to ItemName?';
+                02=text_q = Format(text_q, 'ModuleName', Name(CurItem()), 'ItemName', Name(item));
+                03=if(MessageBoxYesNo(text_q))
+                04 ^{
+                    01=ItemExtraSpecialsAddByType(item, FindBonusByNameInCfg('ExpArts_WeakenedLimiters'), 1);
+                    02=ItemSize(item, ItemSize(item) + ItemSize(CurItem()));
+                    03=ItemCost(item, ItemCost(item) + ItemCost(CurItem()));
+                    04=ScriptItemActParam(1);
+                }
+            }
+        }
+        OnActCodeTypes=t_OnCheckingUsability,t_OnAnotherItem
+        Owner=PirateClan
+        Size=7
+        Text=Modification kit for <color=255,240,100>fragmentation weapons</color>.<br>A firing control unit from which some of the factory limitations have been carefully removed. Guns equipped with such a unit are capable of firing at greater ranges, but the recoil compensation mechanisms cannot withstand the additional load, causing them to malfunction more quickly.
+        Text=<clr><clrEnd>
+        Text=Firing range: <color=255,240,100>+40</color> pt.
+        Text=Weapon reliability: <color=255,240,100>-20%</color>
+    }
+    RNDmoditem_6 ^{
+        Cost=Average
+        Name=Additional stowage
+        OnActCode ^{
+            01=dword item = ScriptItemActObject1();
+            02=if(ItemType(item) < t_Weapon1|| ItemType(item) > t_CustomWeapon) exit;
+            03=if(EqCustomFaction(item) == 'Klissan') exit;
+            04=if((GetEquipmentStats(item, 6) & 4) != 4) exit;
+            05=if(ItemExtraSpecials(item))
+            06 ^{
+                01=int sp_num = 0;
+                02=for(int i = 0; i < ItemExtraSpecials(item); i = i + 1)
+                03 ^{
+                    01=sp_num = ItemExtraSpecials(item, i);
+                    02=if(!findsubstr(CT('MicroModuls.' + BonusNumInCfg(sp_num) + '.Name'), 'dt_Modify')) exit;
+                }
+            }
+            07=if(~EqSpecial(item))
+            08 ^{
+                02=if(CustomWeaponType(item) == 'PhysGun') exit;
+            }
+            09=if(ScriptItemActionType(t_OnCheckingUsability))
+            10 ^{
+                01=ScriptItemActParam(1);
+            }
+            11=else
+            12 ^{
+                01=str text_q = 'Are you sure you want to install <color=0,50,200>additional stowage</color> to ItemName?';
+                02=text_q = Format(text_q, 'ModuleName', Name(CurItem()), 'ItemName', Name(item));
+                03=if(MessageBoxYesNo(text_q))
+                04 ^{
+                    01=ItemExtraSpecialsAddByType(item, FindBonusByNameInCfg('ExpArts_AdditionalStowage'), 1);
+                    02=WeaponMaxAmmunition(item, WeaponMaxAmmunition(item) + 15);
+                    03=ItemSize(item, ItemSize(item) + ItemSize(CurItem()));
+                    04=ItemCost(item, ItemCost(item) + ItemCost(CurItem()));
+                    05=ScriptItemActParam(1);
+                }
+            }
+        }
+        OnActCodeTypes=t_OnCheckingUsability,t_OnAnotherItem
+        Owner=PirateClan
+        Size=12
+        Text=Modification kit for <color=255,240,100>missile weapons</color>.<br>Additional ammunition for rockets, connected directly to the charging mechanism. Increases the maximum number of charges.
+        Text=<clr><clrEnd>
+        Text=Missile capacity: <color=255,240,100>+15</color> pcs.
+    }
+    RNDmoditem_7 ^{
+        Cost=Big
+        Name=Field density amplifier
+        OnActCode ^{
+            01=dword item = ScriptItemActObject1();
+            02=if(ItemType(item) != t_DefGenerator) exit;
+            03=if(ItemImprovement(item) || EqCustomFaction(item) == 'Klissan') exit;
+            04=if(ItemExtraSpecials(item))
+            05 ^{
+                01=int sp_num = 0;
+                02=for(int i = 0; i < ItemExtraSpecials(item); i = i + 1)
+                03 ^{
+                    01=sp_num = ItemExtraSpecials(item, i);
+                    02=if(!findsubstr(CT('MicroModuls.' + BonusNumInCfg(sp_num) + '.Name'), 'dt_Modify')) exit;
+                }
+            }
+            06=if(~EqSpecial(item))
+            07 ^{
+                01=if(CT('MicroModuls.' + BonusNumInCfg(EqSpecial(item)) + '.BlockImp') == 1) exit;
+            }
+            08=if(ScriptItemActionType(t_OnCheckingUsability))
+            09 ^{
+                01=ScriptItemActParam(1);
+            }
+            10=else
+            11 ^{
+                01=str text_q = 'Are you sure you want to install <color=0,50,200>field density amplifier</color> to ItemName?';
+                02=text_q = Format(text_q, 'ModuleName', Name(CurItem()), 'ItemName', Name(item));
+                03=if(MessageBoxYesNo(text_q))
+                04 ^{
+                    01=ItemExtraSpecialsAddByType(item, FindBonusByNameInCfg('ExpArts_FieldDensityAmplifier'), 1);
+                    02=SetEquipmentStats(item, GetEquipmentStats(item, 0) + 6, 0);
+                    03=ItemSize(item, ItemSize(item) + ItemSize(CurItem()));
+                    04=ItemCost(item, ItemCost(item) + ItemCost(CurItem()));
+                    05=ScriptItemActParam(1);
+                }
+            }
+        }
+        OnActCodeTypes=t_OnCheckingUsability,t_OnAnotherItem
+        Owner=PirateClan
+        Size=7
+        Text=Modification kit for <color=255,240,100>shield generator</color>.<br>The field density amplifier enhances the effect produced by the generator in normal operation, but the additional load on the unit's power system reduces its durability.
+        Text=<clr><clrEnd>
+        Text=Shield generator: <color=255,240,100>+6</color> pt.
+        Text=Generator reliability: <color=255,240,100>-20%</color>
+        Text=<clr><clrEnd>
+        Text=<color=255,240,100>After this modification it will be impossible to improve the protection generator in the standard way.</color>
+    }
+    RNDmoditem_8 ^{
+        Cost=Average
+        Name=Meon chips
+        OnActCode ^{
+            01=dword item = ScriptItemActObject1();
+            02=if(ItemType(item) != t_Radar) exit;
+            03=if(ItemImprovement(item) || EqCustomFaction(item) == 'Klissan') exit;
+            04=if(ItemExtraSpecials(item))
+            05 ^{
+                01=int sp_num = 0;
+                02=for(int i = 0; i < ItemExtraSpecials(item); i = i + 1)
+                03 ^{
+                    01=sp_num = ItemExtraSpecials(item, i);
+                    02=if(!findsubstr(CT('MicroModuls.' + BonusNumInCfg(sp_num) + '.Name'), 'dt_Modify')) exit;
+                }
+            }
+            06=if(~EqSpecial(item))
+            07 ^{
+                01=if(!findsubstr(BonusNumInCfg(EqSpecial(item)), 'RevAcryn_Ubivator'))
+                02 ^{
+                    01=if(ScriptItemActionType(t_OnCheckingUsability)) exit;
+                    02=MessageBox('This device is not a radar, and it is simply dangerous to insert anything into it.', 34);
+                    03=exit;
+                }
+                03=if(CT('MicroModuls.' + BonusNumInCfg(EqSpecial(item)) + '.BlockImp') == 1) exit;
+            }
+            08=if(ScriptItemActionType(t_OnCheckingUsability))
+            09 ^{
+                01=ScriptItemActParam(1);
+            }
+            10=else
+            11 ^{
+                01=str text_q = 'Are you sure you want to install <color=0,50,200>meon chips</color> to ItemName?';
+                02=text_q = Format(text_q, 'ModuleName', Name(CurItem()), 'ItemName', Name(item));
+                03=if(MessageBoxYesNo(text_q))
+                04 ^{
+                    01=ItemExtraSpecialsAddByType(item, FindBonusByNameInCfg('ExpArts_MeonChips'), 1);
+                    02=SetEquipmentStats(item, GetEquipmentStats(item, 0) + 900, 0);
+                    03=ItemSize(item, ItemSize(item) + ItemSize(CurItem()));
+                    04=ItemCost(item, ItemCost(item) + ItemCost(CurItem()));
+                    05=ScriptItemActParam(1);
+                }
+            }
+        }
+        OnActCodeTypes=t_OnCheckingUsability,t_OnAnotherItem
+        Owner=PirateClan
+        Size=7
+        Text=Modification kit for <color=255,240,100>radar</color>.<br>Meon chips are not famous for their longevity, but they can significantly improve the overall performance of the radar.
+        Text=<clr><clrEnd>
+        Text=Radar range: <color=255,240,100>+900</color> mln. km.
+        Text=Radar reliability: <color=255,240,100>-20%</color>
+        Text=<clr><clrEnd>
+        Text=<color=255,240,100>After this modification it will be impossible to improve the radar in the standard way.</color>
+    }
+    RNDmoditem_9 ^{
+        Cost=Average
+        Name=Circuit amplifier
+        OnActCode ^{
+            01=dword item = ScriptItemActObject1();
+            02=if(ItemType(item) != t_Scaner) exit;
+            03=if(ItemImprovement(item) || EqCustomFaction(item) == 'Klissan') exit;
+            04=if(ItemExtraSpecials(item))
+            05 ^{
+                01=int sp_num = 0;
+                02=for(int i = 0; i < ItemExtraSpecials(item); i = i + 1)
+                03 ^{
+                    01=sp_num = ItemExtraSpecials(item, i);
+                    02=if(!findsubstr(CT('MicroModuls.' + BonusNumInCfg(sp_num) + '.Name'), 'dt_Modify')) exit;
+                }
+            }
+            06=if(~EqSpecial(item))
+            07 ^{
+                01=if(CT('MicroModuls.' + BonusNumInCfg(EqSpecial(item)) + '.BlockImp') == 1) exit;
+            }
+            08=if(ScriptItemActionType(t_OnCheckingUsability))
+            09 ^{
+                01=ScriptItemActParam(1);
+            }
+            10=else
+            11 ^{
+                01=str text_q = 'Are you sure you want to install <color=0,50,200>circuit amplifier</color> to ItemName?';
+                02=text_q = Format(text_q, 'ModuleName', Name(CurItem()), 'ItemName', Name(item));
+                03=if(MessageBoxYesNo(text_q))
+                04 ^{
+                    01=ItemExtraSpecialsAddByType(item, FindBonusByNameInCfg('ExpArts_CircuitAmplifier'), 1);
+                    02=SetEquipmentStats(item, GetEquipmentStats(item, 0) + 7, 0);
+                    03=ItemSize(item, ItemSize(item) + ItemSize(CurItem()));
+                    04=ItemCost(item, ItemCost(item) + ItemCost(CurItem()));
+                    05=ScriptItemActParam(1);
+                }
+            }
+        }
+        OnActCodeTypes=t_OnCheckingUsability,t_OnAnotherItem
+        Owner=PirateClan
+        Size=7
+        Text=Modification kit for <color=255,240,100>scanner</color>.<br>Increases the voltage applied to the scanning circuit, thereby increasing the scanning power. Unfortunately, the burn-in rate of the scanning circuit also increases.
+        Text=<clr><clrEnd>
+        Text=Scanner power: <color=255,240,100>+7</color> pt.
+        Text=Scanner reliability: <color=255,240,100>-20%</color>
+        Text=<clr><clrEnd>
+        Text=<color=255,240,100>After this modification it will be impossible to improve the scanner in the standard way.</color>
+    }
+    RNDtimer ^{
+        Cost=Average
+        Name=Bomb detonator with timer
+        OnActCode ^{
+            01=dword item = ScriptItemActObject1();
+            02=if(ItemType(item) != t_UselessItem && ItemType(item) != t_ArtefactBomb) exit;
+            03=if(EquipmentImageName(item) != 'RNDbomb_1' && EquipmentImageName(item) != 'RNDbomb_2' && EquipmentImageName(item) != 'RNDbomb_3' && ItemType(item) != t_ArtefactBomb) exit;
+            04=if(UselessItemData(item, 2) == 1) exit;
+            05=if(UselessItemData(item, 2) <= -1)
+            06 ^{
+                01=MessageBox(CT('Script.Mod_ExpArts.DetonatorIsAlreadySet'), 34);
+                02=ScriptItemActParam(2);
+                03=exit;
+            }
+            07=unknown optionsArr = newarray(3);
+            08=optionsArr[0] = CT('Script.Mod_ExpArts.ContactFuse');
+            09=optionsArr[1] = CT('Script.Mod_ExpArts.TimerWithDelay');
+            10=optionsArr[2] = CT('Script.Mod_ExpArts.ContactFuseAndTimer');
+            11=int choosed_fuse = ListBox(CT('Script.Mod_ExpArts.SelectFuseType'), optionsArr);
+            12=if(choosed_fuse > -1)
+            13 ^{
+                01=int blow_turn = 0;
+                02=dword item_2 = 0;
+                03=str BombName = '';
+                04=if(ItemType(item) == t_ArtefactBomb) BombName = 'Bm.Items.2ArtBomb_s';
+                05=else BombName = 'Bm.ItemsUseless.2' + EquipmentImageName(item) + '_s';
+                06=if(choosed_fuse > 0)
+                07 ^{
+                    06=blow_turn = NumberBox(BombName, CT('Script.Mod_ExpArts.HowMuchDaysToSet'), 1, 30);
+                    07=if(blow_turn < 1)
+                    08 ^{
+                        01=ScriptItemActParam(2);
+                        02=exit;
+                    }
+                }
+                08=if(!findsubstr(EquipmentImageName(item), 'RNDbomb_')) item_2 = item;
+                09=else if(ItemType(item) == t_ArtefactBomb)
+                10 ^{
+                    01=item_2 = CreateQuestItem('RNDbomb_1');
+                    02=ItemOwner(item_2, ItemOwner(item));
+                    03=ItemSize(item_2, ItemSize(item));
+                    04=ItemCost(item_2, ItemCost(item));
+                    05=DropItemInSystem(StarNearbyStars(ShipStar(Player()), 1), GetArtFromShip(Player(), FindItemInShip(Player(), item)), 30000, 30000, 30000, 30000);
+                    06=ItemDestroy(item, 1);
+                    07=AddItemToShip(Player(), item_2);
+                }
+                11=str add_note = substr(CT('Cheat.Ok'), 0, 2) + '<br><clr><clrEnd>';
+                12=if(!choosed_fuse)
+                13 ^{
+                    01=UselessItemData(item_2, 2, -1);
+                    02=add_note = '';
+                    03=SetName(item_2, Format(Name(item_2), CT('Script.Mod_ExpArts.TheBomb'), '</color>' + CT('Script.Mod_ExpArts.TheMine')));
+                }
+                14=else if(choosed_fuse == 1)
+                15 ^{
+                    01=UselessItemData(item_2, 2, -2);
+                    02=UselessItemData(item_2, 1, blow_turn);
+                    03=add_note = add_note + CT('Script.Mod_ExpArts.TimerIsSet');
+                    04=SetName(item_2, Name(item_2) + CT('Script.Mod_ExpArts.BombWithTimer'));
+                }
+                16=else if(choosed_fuse == 2)
+                17 ^{
+                    01=UselessItemData(item_2, 2, -3);
+                    02=UselessItemData(item_2, 1, blow_turn);
+                    03=add_note = add_note + CT('Script.Mod_ExpArts.TimerIsSet');
+                    04=str tstr = '</color>' + CT('Script.Mod_ExpArts.TheMine') + CT('Script.Mod_ExpArts.BombWithTimer');
+                    05=SetName(item_2, Format(Name(item_2), CT('Script.Mod_ExpArts.TheBomb'), tstr));
+                }
+                18=UselessItemText(item_2, CT('UselessItems.' + EquipmentImageName(item_2) + '.Text') + add_note);
+                19=ItemSize(item_2, ItemSize(item_2) + ItemSize(CurItem()));
+                20=ItemCost(item_2, ItemCost(item_2) + ItemCost(CurItem()));
+                21=ScriptItemActParam(1);
+            }
+            14=else ScriptItemActParam(2);
+        }
+        OnActCodeTypes=t_OnAnotherItem
+        Owner=PirateClan
+        Size=1
+        Text=When set to <color=255,240,100>bomb</color> detonates (or activates) it after a set time, or on contact with an approaching ship.
+        Text=<clr><clrEnd>
+        Text=The countdown will not begin until after the bomb has been released into the <color=255,240,100>space</color>, but it will be impossible to pick up a bomb with an activated timer.
+    }
+}

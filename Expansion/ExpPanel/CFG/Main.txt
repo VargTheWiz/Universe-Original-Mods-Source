@@ -1,0 +1,2648 @@
+Data ^{
+    Script ^{
+        Mod_ExpPanel=1,Script.Mod_ExpPanel
+    }
+}
+ML ^{
+    EquipmentShop ^{
+        Panel ^{
+            Name=MainPanel
+            Panel ^{
+                Name=PanelMain
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurnBrakeOff ^{
+                        GraphButton ^{
+                            Active=True
+                            Help=Help.EndTurnBrakeOn
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOn
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=Help.EndTurnBrakeOff
+                            ImageDisable=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageDown=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormal=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormalA=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOff
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_EndTurn
+                        OnMouseRightClick ^{
+                            01=if(!GTurnBrakeOff)
+                            02 ^{
+                                01=GTurnBrakeOff = 1;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 0);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 0);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 0);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 0);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 0);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 0);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 0);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 0);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 0);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 0);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 0);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 0);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 0);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 1);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 1);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 1);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 1);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 1);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 1);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 1);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 1);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 1);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 1);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 1);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 1);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 1);
+                            }
+                            03=else
+                            04 ^{
+                                01=GTurnBrakeOff = 0;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 1);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 1);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 1);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 1);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 1);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 1);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 1);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 1);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 1);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 1);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 1);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 1);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 1);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 0);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 0);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 0);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 0);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 0);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 0);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 0);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 0);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 0);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 0);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 0);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 0);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 0);
+                            }
+                        }
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_Break
+                    }
+                }
+            }
+        }
+    }
+    Galaxy ^{
+        Panel ^{
+            Name=MainPanel
+            Panel ^{
+                Name=PanelMain
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurnBrakeOff ^{
+                        GraphButton ^{
+                            Active=True
+                            Help=Help.EndTurnBrakeOn
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOn
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=Help.EndTurnBrakeOff
+                            ImageDisable=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageDown=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormal=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormalA=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOff
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_EndTurn
+                        OnMouseRightClick ^{
+                            01=if(!GTurnBrakeOff)
+                            02 ^{
+                                01=GTurnBrakeOff = 1;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 0);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 0);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 0);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 0);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 0);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 0);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 0);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 0);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 0);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 0);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 0);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 0);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 0);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 1);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 1);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 1);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 1);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 1);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 1);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 1);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 1);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 1);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 1);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 1);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 1);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 1);
+                            }
+                            03=else
+                            04 ^{
+                                01=GTurnBrakeOff = 0;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 1);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 1);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 1);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 1);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 1);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 1);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 1);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 1);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 1);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 1);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 1);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 1);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 1);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 0);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 0);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 0);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 0);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 0);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 0);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 0);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 0);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 0);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 0);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 0);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 0);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 0);
+                            }
+                        }
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_Break
+                    }
+                }
+            }
+        }
+    }
+    GoodsShop ^{
+        Panel ^{
+            Name=MainPanel
+            Panel ^{
+                Name=PanelMain
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurnBrakeOff ^{
+                        GraphButton ^{
+                            Active=True
+                            Help=Help.EndTurnBrakeOn
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOn
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=Help.EndTurnBrakeOff
+                            ImageDisable=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageDown=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormal=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormalA=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOff
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_EndTurn
+                        OnMouseRightClick ^{
+                            01=if(!GTurnBrakeOff)
+                            02 ^{
+                                01=GTurnBrakeOff = 1;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 0);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 0);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 0);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 0);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 0);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 0);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 0);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 0);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 0);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 0);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 0);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 0);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 0);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 1);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 1);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 1);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 1);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 1);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 1);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 1);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 1);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 1);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 1);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 1);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 1);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 1);
+                            }
+                            03=else
+                            04 ^{
+                                01=GTurnBrakeOff = 0;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 1);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 1);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 1);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 1);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 1);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 1);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 1);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 1);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 1);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 1);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 1);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 1);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 1);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 0);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 0);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 0);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 0);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 0);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 0);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 0);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 0);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 0);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 0);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 0);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 0);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 0);
+                            }
+                        }
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_Break
+                    }
+                }
+            }
+        }
+    }
+    Gov ^{
+        Panel ^{
+            Name=MainPanel
+            Panel ^{
+                Name=PanelMain
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurnBrakeOff ^{
+                        GraphButton ^{
+                            Active=True
+                            Help=Help.EndTurnBrakeOn
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOn
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=Help.EndTurnBrakeOff
+                            ImageDisable=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageDown=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormal=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormalA=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOff
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_EndTurn
+                        OnMouseRightClick ^{
+                            01=if(!GTurnBrakeOff)
+                            02 ^{
+                                01=GTurnBrakeOff = 1;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 0);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 0);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 0);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 0);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 0);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 0);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 0);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 0);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 0);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 0);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 0);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 0);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 0);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 1);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 1);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 1);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 1);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 1);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 1);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 1);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 1);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 1);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 1);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 1);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 1);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 1);
+                            }
+                            03=else
+                            04 ^{
+                                01=GTurnBrakeOff = 0;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 1);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 1);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 1);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 1);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 1);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 1);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 1);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 1);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 1);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 1);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 1);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 1);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 1);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 0);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 0);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 0);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 0);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 0);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 0);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 0);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 0);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 0);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 0);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 0);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 0);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 0);
+                            }
+                        }
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_Break
+                    }
+                }
+            }
+        }
+    }
+    Hangar ^{
+        Panel ^{
+            Name=MainPanel
+            Panel ^{
+                Name=PanelMain
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurnBrakeOff ^{
+                        GraphButton ^{
+                            Active=True
+                            Help=Help.EndTurnBrakeOn
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOn
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=Help.EndTurnBrakeOff
+                            ImageDisable=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageDown=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormal=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormalA=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOff
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_EndTurn
+                        OnMouseRightClick ^{
+                            01=if(!GTurnBrakeOff)
+                            02 ^{
+                                01=GTurnBrakeOff = 1;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 0);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 0);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 0);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 0);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 0);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 0);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 0);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 0);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 0);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 0);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 0);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 0);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 0);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 1);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 1);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 1);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 1);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 1);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 1);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 1);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 1);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 1);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 1);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 1);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 1);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 1);
+                            }
+                            03=else
+                            04 ^{
+                                01=GTurnBrakeOff = 0;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 1);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 1);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 1);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 1);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 1);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 1);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 1);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 1);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 1);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 1);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 1);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 1);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 1);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 0);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 0);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 0);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 0);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 0);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 0);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 0);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 0);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 0);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 0);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 0);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 0);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 0);
+                            }
+                        }
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_Break
+                    }
+                }
+            }
+        }
+    }
+    Info ^{
+        Panel ^{
+            Name=MainPanel
+            Panel ^{
+                Name=PanelMain
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurnBrakeOff ^{
+                        GraphButton ^{
+                            Active=True
+                            Help=Help.EndTurnBrakeOn
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOn
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=Help.EndTurnBrakeOff
+                            ImageDisable=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageDown=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormal=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormalA=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOff
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_EndTurn
+                        OnMouseRightClick ^{
+                            01=if(!GTurnBrakeOff)
+                            02 ^{
+                                01=GTurnBrakeOff = 1;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 0);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 0);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 0);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 0);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 0);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 0);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 0);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 0);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 0);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 0);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 0);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 0);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 0);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 1);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 1);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 1);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 1);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 1);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 1);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 1);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 1);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 1);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 1);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 1);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 1);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 1);
+                            }
+                            03=else
+                            04 ^{
+                                01=GTurnBrakeOff = 0;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 1);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 1);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 1);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 1);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 1);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 1);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 1);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 1);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 1);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 1);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 1);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 1);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 1);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 0);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 0);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 0);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 0);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 0);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 0);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 0);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 0);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 0);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 0);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 0);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 0);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 0);
+                            }
+                        }
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_Break
+                    }
+                }
+            }
+        }
+    }
+    Journal ^{
+        Panel ^{
+            Name=MainPanel
+            Panel ^{
+                Name=PanelMain
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurnBrakeOff ^{
+                        GraphButton ^{
+                            Active=True
+                            Help=Help.EndTurnBrakeOn
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOn
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=Help.EndTurnBrakeOff
+                            ImageDisable=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageDown=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormal=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormalA=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOff
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_EndTurn
+                        OnMouseRightClick ^{
+                            01=if(!GTurnBrakeOff)
+                            02 ^{
+                                01=GTurnBrakeOff = 1;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 0);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 0);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 0);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 0);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 0);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 0);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 0);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 0);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 0);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 0);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 0);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 0);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 0);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 1);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 1);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 1);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 1);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 1);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 1);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 1);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 1);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 1);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 1);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 1);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 1);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 1);
+                            }
+                            03=else
+                            04 ^{
+                                01=GTurnBrakeOff = 0;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 1);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 1);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 1);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 1);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 1);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 1);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 1);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 1);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 1);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 1);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 1);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 1);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 1);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 0);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 0);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 0);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 0);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 0);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 0);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 0);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 0);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 0);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 0);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 0);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 0);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 0);
+                            }
+                        }
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_Break
+                    }
+                }
+            }
+        }
+    }
+    Planet ^{
+        Panel ^{
+            Name=MainPanel
+            Panel ^{
+                Name=PanelMain
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurnBrakeOff ^{
+                        GraphButton ^{
+                            Active=True
+                            Help=Help.EndTurnBrakeOn
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOn
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=Help.EndTurnBrakeOff
+                            ImageDisable=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageDown=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormal=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormalA=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOff
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_EndTurn
+                        OnMouseRightClick ^{
+                            01=if(!GTurnBrakeOff)
+                            02 ^{
+                                01=GTurnBrakeOff = 1;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 0);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 0);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 0);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 0);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 0);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 0);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 0);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 0);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 0);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 0);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 0);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 0);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 0);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 1);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 1);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 1);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 1);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 1);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 1);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 1);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 1);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 1);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 1);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 1);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 1);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 1);
+                            }
+                            03=else
+                            04 ^{
+                                01=GTurnBrakeOff = 0;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 1);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 1);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 1);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 1);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 1);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 1);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 1);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 1);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 1);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 1);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 1);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 1);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 1);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 0);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 0);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 0);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 0);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 0);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 0);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 0);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 0);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 0);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 0);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 0);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 0);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 0);
+                            }
+                        }
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_Break
+                    }
+                }
+            }
+        }
+    }
+    PlanetNO ^{
+        Panel ^{
+            Name=MainPanel
+            Panel ^{
+                Name=PanelMain
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurnBrakeOff ^{
+                        GraphButton ^{
+                            Active=True
+                            Help=Help.EndTurnBrakeOn
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOn
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=Help.EndTurnBrakeOff
+                            ImageDisable=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageDown=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormal=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormalA=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOff
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_EndTurn
+                        OnMouseRightClick ^{
+                            01=if(!GTurnBrakeOff)
+                            02 ^{
+                                01=GTurnBrakeOff = 1;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 0);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 0);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 0);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 0);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 0);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 0);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 0);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 0);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 0);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 0);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 0);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 0);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 0);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 1);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 1);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 1);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 1);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 1);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 1);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 1);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 1);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 1);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 1);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 1);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 1);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 1);
+                            }
+                            03=else
+                            04 ^{
+                                01=GTurnBrakeOff = 0;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 1);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 1);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 1);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 1);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 1);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 1);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 1);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 1);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 1);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 1);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 1);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 1);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 1);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 0);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 0);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 0);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 0);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 0);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 0);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 0);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 0);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 0);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 0);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 0);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 0);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 0);
+                            }
+                        }
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_Break
+                    }
+                }
+            }
+        }
+    }
+    Rating ^{
+        Panel ^{
+            Name=MainPanel
+            Panel ^{
+                Name=PanelMain
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurnBrakeOff ^{
+                        GraphButton ^{
+                            Active=True
+                            Help=Help.EndTurnBrakeOn
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOn
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=Help.EndTurnBrakeOff
+                            ImageDisable=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageDown=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormal=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormalA=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOff
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_EndTurn
+                        OnMouseRightClick ^{
+                            01=if(!GTurnBrakeOff)
+                            02 ^{
+                                01=GTurnBrakeOff = 1;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 0);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 0);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 0);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 0);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 0);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 0);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 0);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 0);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 0);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 0);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 0);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 0);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 0);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 1);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 1);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 1);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 1);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 1);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 1);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 1);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 1);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 1);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 1);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 1);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 1);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 1);
+                            }
+                            03=else
+                            04 ^{
+                                01=GTurnBrakeOff = 0;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 1);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 1);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 1);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 1);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 1);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 1);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 1);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 1);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 1);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 1);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 1);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 1);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 1);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 0);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 0);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 0);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 0);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 0);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 0);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 0);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 0);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 0);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 0);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 0);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 0);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 0);
+                            }
+                        }
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_Break
+                    }
+                }
+            }
+        }
+    }
+    Rewards ^{
+        Panel ^{
+            Panel ^{
+                GraphButton ^{
+                    Name=Sub
+                    OnMouseEnterCode ^{
+                        01=InterfaceText('Rewards', 'Info', CT('FormRewards.MoreRewards'));
+                    }
+                    OnMouseLeaveCode ^{
+                        01=InterfaceText('Rewards', 'Info', '');
+                    }
+                }
+                GraphButton ^{
+                    Name=Add
+                    OnMouseEnterCode ^{
+                        01=InterfaceText('Rewards', 'Info', CT('FormRewards.LessRewards'));
+                    }
+                    OnMouseLeaveCode ^{
+                        01=InterfaceText('Rewards', 'Info', '');
+                    }
+                }
+            }
+        }
+    }
+    RuinsTalk ^{
+        Panel ^{
+            Name=MainPanel
+            Panel ^{
+                Name=PanelMain
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurnBrakeOff ^{
+                        GraphButton ^{
+                            Active=True
+                            Help=Help.EndTurnBrakeOn
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOn
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=Help.EndTurnBrakeOff
+                            ImageDisable=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageDown=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormal=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormalA=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOff
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_EndTurn
+                        OnMouseRightClick ^{
+                            01=if(!GTurnBrakeOff)
+                            02 ^{
+                                01=GTurnBrakeOff = 1;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 0);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 0);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 0);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 0);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 0);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 0);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 0);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 0);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 0);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 0);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 0);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 0);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 0);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 1);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 1);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 1);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 1);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 1);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 1);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 1);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 1);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 1);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 1);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 1);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 1);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 1);
+                            }
+                            03=else
+                            04 ^{
+                                01=GTurnBrakeOff = 0;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 1);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 1);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 1);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 1);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 1);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 1);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 1);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 1);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 1);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 1);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 1);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 1);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 1);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 0);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 0);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 0);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 0);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 0);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 0);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 0);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 0);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 0);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 0);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 0);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 0);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 0);
+                            }
+                        }
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_Break
+                    }
+                }
+            }
+        }
+    }
+    Scaner ^{
+        Panel ^{
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    Panel ^{
+                        Image ^{
+                        }
+                        Image ^{
+                        }
+                        Image ^{
+                            Name=RankIDel
+                        }
+                        Image ^{
+                            Name=RankI2Del
+                        }
+                        Panel ^{
+                        }
+                        Panel ^{
+                            Image ^{
+                                Name=RankI
+                                Pos=190,52,1
+                                Size=94,30
+                            }
+                            Image ^{
+                                Name=RankI2
+                                Pos=191,52,1
+                                Size=94,33
+                            }
+                            MouseBlocking=No
+                            Name=RankWndCustom
+                            Pos=0,0,0
+                            Size=328,598
+                        }
+                    }
+                    Pos=100,0,2
+                    Size=738,617
+                }
+            }
+        }
+    }
+    Ship ^{
+        Panel ^{
+            Name=MainPanel
+            Panel ^{
+                Name=PanelMain
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurnBrakeOff ^{
+                        GraphButton ^{
+                            Active=True
+                            Help=Help.EndTurnBrakeOn
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOn
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=Help.EndTurnBrakeOff
+                            ImageDisable=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageDown=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormal=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            ImageNormalA=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                            Kind=Normal
+                            KindHit=Rect
+                            Name=EndTurnBrakeOff
+                            Pos=919,22,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=0.5
+                            Size=44,8
+                            Style=Style.GB.SilentNight
+                        }
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_EndTurn
+                        OnMouseRightClick ^{
+                            01=if(!GTurnBrakeOff)
+                            02 ^{
+                                01=GTurnBrakeOff = 1;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 0);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 0);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 0);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 0);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 0);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 0);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 0);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 0);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 0);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 0);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 0);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 0);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 0);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 1);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 1);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 1);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 1);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 1);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 1);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 1);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 1);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 1);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 1);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 1);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 1);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 1);
+                            }
+                            03=else
+                            04 ^{
+                                01=GTurnBrakeOff = 0;
+                                02=InterfaceState('StarMap', 'EndTurnBrakeOn', 1);
+                                03=InterfaceState('Planet', 'EndTurnBrakeOn', 1);
+                                04=InterfaceState('Gov', 'EndTurnBrakeOn', 1);
+                                05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 1);
+                                06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 1);
+                                07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 1);
+                                08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 1);
+                                09=InterfaceState('Info', 'EndTurnBrakeOn', 1);
+                                10=InterfaceState('Hangar', 'EndTurnBrakeOn', 1);
+                                11=InterfaceState('Ship', 'EndTurnBrakeOn', 1);
+                                12=InterfaceState('Rating', 'EndTurnBrakeOn', 1);
+                                13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 1);
+                                14=InterfaceState('Journal', 'EndTurnBrakeOn', 1);
+                                15=InterfaceState('StarMap', 'EndTurnBrakeOff', 0);
+                                16=InterfaceState('Planet', 'EndTurnBrakeOff', 0);
+                                17=InterfaceState('Gov', 'EndTurnBrakeOff', 0);
+                                18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 0);
+                                19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 0);
+                                20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 0);
+                                21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 0);
+                                22=InterfaceState('Info', 'EndTurnBrakeOff', 0);
+                                23=InterfaceState('Hangar', 'EndTurnBrakeOff', 0);
+                                24=InterfaceState('Ship', 'EndTurnBrakeOff', 0);
+                                25=InterfaceState('Rating', 'EndTurnBrakeOff', 0);
+                                26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 0);
+                                27=InterfaceState('Journal', 'EndTurnBrakeOff', 0);
+                            }
+                        }
+                    }
+                    GraphButton ^{
+                        KindHit=Graph
+                        Name=PM_Break
+                    }
+                }
+            }
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    Panel ^{
+                        GraphButton ^{
+                        }
+                        GraphButton ^{
+                        }
+                        GraphButton ^{
+                        }
+                        GraphButton ^{
+                        }
+                        GraphButton ^{
+                            Name=Compl3
+                        }
+                        GraphButton ^{
+                            Name=Compl4
+                        }
+                        GraphButton ^{
+                            Name=Compl5
+                        }
+                        GraphButton ^{
+                            Name=Compl6
+                        }
+                        GraphButton ^{
+                            Name=Compl7
+                        }
+                        GraphButton ^{
+                            Name=Compl8
+                        }
+                    }
+                }
+                Panel ^{
+                    Panel ^{
+                    }
+                    Panel ^{
+                        HideShipRank ^{
+                            Panel ^{
+                                Active=False
+                                Image ^{
+                                    Name=RankI
+                                    Pos=190,52,1
+                                    Size=94,30
+                                }
+                                Image ^{
+                                    Name=RankI2
+                                    Pos=190,52,1
+                                    Size=94,33
+                                }
+                                MouseBlocking=No
+                                Name=HideShipRankPanel
+                                Pos=0,0,0
+                                Size=328,598
+                            }
+                        }
+                        Image ^{
+                        }
+                        Image ^{
+                        }
+                        Image ^{
+                            Name=RankIDel
+                            Pos=190,52,1
+                            Size=94,30
+                        }
+                        Image ^{
+                            Image=GI,Bm.FormShip2.2NextRank
+                            Name=RankAdd
+                            Pos=193,58,0
+                            Size=20,20
+                        }
+                        Image ^{
+                            Name=RankI2Del
+                            Pos=190,52,1
+                            Size=94,33
+                        }
+                    }
+                }
+                Pos=87,37,6
+                Size=964,650
+            }
+        }
+    }
+    StarMap ^{
+        Panel ^{
+            Panel ^{
+                HitpointsBarPanel ^{
+                    Panel ^{
+                        Image ^{
+                            Image=GI,Bm.PanelSpace2.2HPbar
+                            Name=HPbar_m
+                            Pos=0,0,4
+                            Size=27,150
+                        }
+                        Image ^{
+                            Image=GI,Bm.PanelSpace2.2HPbar_s
+                            Name=HPbar_s
+                            Pos=7,5,2
+                            Size=14,141
+                        }
+                        Image ^{
+                            Image=GI,Bm.PanelSpace2.2HPbar_s_r
+                            Name=HPbar_s_r
+                            Pos=7,5,3
+                            Size=14,141
+                        }
+                        Name=HPbar_panel
+                        Pos=322,-375,-10
+                        PosAutoCorrection=True
+                        PosAutoCorrectionXCoef=0.5
+                        PosAutoCorrectionYCoef=-0.5
+                        Size=27,150
+                    }
+                }
+                Panel ^{
+                    Name=PanelMain
+                    Panel ^{
+                    }
+                    Panel ^{
+                        EndTurnBrakeOff ^{
+                            GraphButton ^{
+                                Active=True
+                                Help=Help.EndTurnBrakeOn
+                                Kind=Normal
+                                KindHit=Rect
+                                Name=EndTurnBrakeOn
+                                Pos=919,22,8
+                                PosAutoCorrection=True
+                                PosAutoCorrectionXCoef=0.5
+                                Size=44,8
+                                Style=Style.GB.SilentNight
+                            }
+                            GraphButton ^{
+                                Active=False
+                                Help=Help.EndTurnBrakeOff
+                                ImageDisable=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                                ImageDown=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                                ImageNormal=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                                ImageNormalA=GI,Bm.PanelSpace2.TurnBrakeOff_Ind
+                                Kind=Normal
+                                KindHit=Rect
+                                Name=EndTurnBrakeOff
+                                Pos=919,22,8
+                                PosAutoCorrection=True
+                                PosAutoCorrectionXCoef=0.5
+                                Size=44,8
+                                Style=Style.GB.SilentNight
+                            }
+                        }
+                        GraphButton ^{
+                        }
+                        GraphButton ^{
+                        }
+                        GraphButton ^{
+                        }
+                        GraphButton ^{
+                            KindHit=Graph
+                            Name=PM_EndTurn
+                            OnMouseRightClick ^{
+                                01=if(!GTurnBrakeOff)
+                                02 ^{
+                                    01=GTurnBrakeOff = 1;
+                                    02=InterfaceState('StarMap', 'EndTurnBrakeOn', 0);
+                                    03=InterfaceState('Planet', 'EndTurnBrakeOn', 0);
+                                    04=InterfaceState('Gov', 'EndTurnBrakeOn', 0);
+                                    05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 0);
+                                    06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 0);
+                                    07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 0);
+                                    08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 0);
+                                    09=InterfaceState('Info', 'EndTurnBrakeOn', 0);
+                                    10=InterfaceState('Hangar', 'EndTurnBrakeOn', 0);
+                                    11=InterfaceState('Ship', 'EndTurnBrakeOn', 0);
+                                    12=InterfaceState('Rating', 'EndTurnBrakeOn', 0);
+                                    13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 0);
+                                    14=InterfaceState('Journal', 'EndTurnBrakeOn', 0);
+                                    15=InterfaceState('StarMap', 'EndTurnBrakeOff', 1);
+                                    16=InterfaceState('Planet', 'EndTurnBrakeOff', 1);
+                                    17=InterfaceState('Gov', 'EndTurnBrakeOff', 1);
+                                    18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 1);
+                                    19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 1);
+                                    20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 1);
+                                    21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 1);
+                                    22=InterfaceState('Info', 'EndTurnBrakeOff', 1);
+                                    23=InterfaceState('Hangar', 'EndTurnBrakeOff', 1);
+                                    24=InterfaceState('Ship', 'EndTurnBrakeOff', 1);
+                                    25=InterfaceState('Rating', 'EndTurnBrakeOff', 1);
+                                    26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 1);
+                                    27=InterfaceState('Journal', 'EndTurnBrakeOff', 1);
+                                }
+                                03=else
+                                04 ^{
+                                    01=GTurnBrakeOff = 0;
+                                    02=InterfaceState('StarMap', 'EndTurnBrakeOn', 1);
+                                    03=InterfaceState('Planet', 'EndTurnBrakeOn', 1);
+                                    04=InterfaceState('Gov', 'EndTurnBrakeOn', 1);
+                                    05=InterfaceState('PlanetNO', 'EndTurnBrakeOn', 1);
+                                    06=InterfaceState('RuinsTalk', 'EndTurnBrakeOn', 1);
+                                    07=InterfaceState('GoodsShop', 'EndTurnBrakeOn', 1);
+                                    08=InterfaceState('EquipmentShop', 'EndTurnBrakeOn', 1);
+                                    09=InterfaceState('Info', 'EndTurnBrakeOn', 1);
+                                    10=InterfaceState('Hangar', 'EndTurnBrakeOn', 1);
+                                    11=InterfaceState('Ship', 'EndTurnBrakeOn', 1);
+                                    12=InterfaceState('Rating', 'EndTurnBrakeOn', 1);
+                                    13=InterfaceState('Galaxy', 'EndTurnBrakeOn', 1);
+                                    14=InterfaceState('Journal', 'EndTurnBrakeOn', 1);
+                                    15=InterfaceState('StarMap', 'EndTurnBrakeOff', 0);
+                                    16=InterfaceState('Planet', 'EndTurnBrakeOff', 0);
+                                    17=InterfaceState('Gov', 'EndTurnBrakeOff', 0);
+                                    18=InterfaceState('PlanetNO', 'EndTurnBrakeOff', 0);
+                                    19=InterfaceState('RuinsTalk', 'EndTurnBrakeOff', 0);
+                                    20=InterfaceState('GoodsShop', 'EndTurnBrakeOff', 0);
+                                    21=InterfaceState('EquipmentShop', 'EndTurnBrakeOff', 0);
+                                    22=InterfaceState('Info', 'EndTurnBrakeOff', 0);
+                                    23=InterfaceState('Hangar', 'EndTurnBrakeOff', 0);
+                                    24=InterfaceState('Ship', 'EndTurnBrakeOff', 0);
+                                    25=InterfaceState('Rating', 'EndTurnBrakeOff', 0);
+                                    26=InterfaceState('Galaxy', 'EndTurnBrakeOff', 0);
+                                    27=InterfaceState('Journal', 'EndTurnBrakeOff', 0);
+                                }
+                            }
+                        }
+                        GraphButton ^{
+                            KindHit=Graph
+                            Name=PM_Break
+                        }
+                    }
+                }
+                Panel ^{
+                }
+                Panel ^{
+                }
+                Panel ^{
+                }
+                Panel ^{
+                    Active=True
+                    Image ^{
+                        Image=GI,Bm.PanelSpace2.2ExpPanel_image
+                        MouseBlocking=True
+                        Name=ExpPanel_image
+                        Pos=83,11,6
+                        Size=213,53
+                    }
+                    Name=ExpPanel
+                    Panel ^{
+                        GraphButton ^{
+                            Active=True
+                            Help=FormShip.OnSpaceCurrentSet
+                            ImageDown=GI,Bm.PanelSpace2.2SetFirstA
+                            ImageNormal=GI,Bm.PanelSpace2.2SetFirstA
+                            ImageNormalA=GI,Bm.PanelSpace2.2SetFirstA
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=set_button_a_first
+                            Pos=16,20,0
+                            Size=27,18
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=FormShip.OnSpaceCurrentSet
+                            ImageDown=GI,Bm.PanelSpace2.2Set_Butt_A
+                            ImageNormal=GI,Bm.PanelSpace2.2Set_Butt_A
+                            ImageNormalA=GI,Bm.PanelSpace2.2Set_Butt_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=set_button_a
+                            Pos=-5,20,0
+                            Size=27,18
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=FormShip.OnSpaceCurrentSet
+                            ImageDown=GI,Bm.PanelSpace2.2SetLastA
+                            ImageNormal=GI,Bm.PanelSpace2.2SetLastA
+                            ImageNormalA=GI,Bm.PanelSpace2.2SetLastA
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=set_button_a_last
+                            Pos=175,20,0
+                            Size=27,18
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=FormShip.OnSpaceSet1
+                            ImageDown=GI,Bm.PanelSpace2.2SetFirstA
+                            ImageNormal=GI,Bm.PanelSpace2.2SetFirstC
+                            ImageNormalA=GI,Bm.PanelSpace2.2SetFirstA
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            MouseBlockingTest=False
+                            Name=set_button_1_c
+                            OnPressCode ^{
+                                01=InterfaceState('StarMap','set_button_'+PlayerEqSet()+'_c',1);
+                                02=ButtonClick('StarMap','PM_Ship');
+                                03=ButtonClick('Ship','Compl0');
+                                04=InterfacePos('StarMap','set_button_a',PlayerEqSet()*20,0,0);
+                                05=InterfaceState('StarMap','set_button_a_first',1);
+                                06=InterfaceState('StarMap','set_button_a',0);
+                                07=InterfaceState('StarMap','set_button_a_last',0);
+                                08=InterfaceState('StarMap','set_button_'+PlayerEqSet()+'_c',0);
+                                09=int i=0;
+                                10=dword temp_dword;
+                                11=InterfaceState('StarMap','ppb_panel',0);
+                                12=for(i = 1; i < 6; i = i + 1)
+                                13 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Weapon1,i);
+                                    02=if(!ItemInScript(temp_dword)) continue;
+                                    03=if(ScriptItemTextData(temp_dword, 1) == 'Fizgun') InterfaceState('StarMap', 'ppb_panel', 1);
+                                }
+                                14=ShipCalcParam(Player());
+                                15=if(ShipOrder(Player()) == 3)
+                                16 ^{
+                                    01=if(!ShipCanJump(Player(),ShipStar(Player()),ShipOrderObj(Player()),1))ShipOrder(Player(),0);
+                                }
+                                17=ButtonClick('Ship','Exit');
+                            }
+                            Pos=16,20,1
+                            Size=27,18
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=FormShip.OnSpaceSet2
+                            ImageDown=GI,Bm.PanelSpace2.2Set_Butt_A
+                            ImageNormal=GI,Bm.PanelSpace2.2Set_Butt_C
+                            ImageNormalA=GI,Bm.PanelSpace2.2Set_Butt_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            MouseBlockingTest=False
+                            Name=set_button_2_c
+                            OnPressCode ^{
+                                01=InterfaceState('StarMap','set_button_'+PlayerEqSet()+'_c',1);
+                                02=ButtonClick('StarMap','PM_Ship');
+                                03=ButtonClick('Ship','Compl1');
+                                04=InterfacePos('StarMap','set_button_a',PlayerEqSet()*20,0,0);
+                                05=InterfaceState('StarMap','set_button_a',1);
+                                06=InterfaceState('StarMap','set_button_a_last',0);
+                                07=InterfaceState('StarMap','set_button_a_first',0);
+                                08=InterfaceState('StarMap','set_button_'+PlayerEqSet()+'_c',0);
+                                09=int i=0;
+                                10=dword temp_dword;
+                                11=InterfaceState('StarMap','ppb_panel',0);
+                                12=for(i = 1; i < 6; i = i + 1)
+                                13 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Weapon1,i);
+                                    02=if(!ItemInScript(temp_dword)) continue;
+                                    03=if(ScriptItemTextData(temp_dword, 1) == 'Fizgun') InterfaceState('StarMap', 'ppb_panel', 1);
+                                }
+                                14=ShipCalcParam(Player());
+                                15=if(ShipOrder(Player()) == 3)
+                                16 ^{
+                                    01=if(!ShipCanJump(Player(),ShipStar(Player()),ShipOrderObj(Player()),1))ShipOrder(Player(),0);
+                                }
+                                17=ButtonClick('Ship','Exit');
+                            }
+                            Pos=35,20,1
+                            Size=27,18
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=FormShip.OnSpaceSet3
+                            ImageDown=GI,Bm.PanelSpace2.2Set_Butt_A
+                            ImageNormal=GI,Bm.PanelSpace2.2Set_Butt_C
+                            ImageNormalA=GI,Bm.PanelSpace2.2Set_Butt_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            MouseBlockingTest=False
+                            Name=set_button_3_c
+                            OnPressCode ^{
+                                01=InterfaceState('StarMap','set_button_'+PlayerEqSet()+'_c',1);
+                                02=ButtonClick('StarMap','PM_Ship');
+                                03=ButtonClick('Ship','Compl2');
+                                04=InterfacePos('StarMap','set_button_a',PlayerEqSet()*20,0,0);
+                                05=InterfaceState('StarMap','set_button_a',1);
+                                06=InterfaceState('StarMap','set_button_a_last',0);
+                                07=InterfaceState('StarMap','set_button_a_first',0);
+                                08=InterfaceState('StarMap','set_button_'+PlayerEqSet()+'_c',0);
+                                09=int i=0;
+                                10=dword temp_dword;
+                                11=InterfaceState('StarMap','ppb_panel',0);
+                                12=for(i = 1; i < 6; i = i + 1)
+                                13 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Weapon1,i);
+                                    02=if(!ItemInScript(temp_dword)) continue;
+                                    03=if(ScriptItemTextData(temp_dword, 1) == 'Fizgun') InterfaceState('StarMap', 'ppb_panel', 1);
+                                }
+                                14=ShipCalcParam(Player());
+                                15=if(ShipOrder(Player()) == 3)
+                                16 ^{
+                                    01=if(!ShipCanJump(Player(),ShipStar(Player()),ShipOrderObj(Player()),1))ShipOrder(Player(),0);
+                                }
+                                17=ButtonClick('Ship','Exit');
+                            }
+                            Pos=55,20,1
+                            Size=27,18
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=FormShip.OnSpaceSet4
+                            ImageDown=GI,Bm.PanelSpace2.2Set_Butt_A
+                            ImageNormal=GI,Bm.PanelSpace2.2Set_Butt_C
+                            ImageNormalA=GI,Bm.PanelSpace2.2Set_Butt_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            MouseBlockingTest=False
+                            Name=set_button_4_c
+                            OnPressCode ^{
+                                01=InterfaceState('StarMap','set_button_'+PlayerEqSet()+'_c',1);
+                                02=ButtonClick('StarMap','PM_Ship');
+                                03=ButtonClick('Ship','Compl3');
+                                04=InterfacePos('StarMap','set_button_a',PlayerEqSet()*20,0,0);
+                                05=InterfaceState('StarMap','set_button_a',1);
+                                06=InterfaceState('StarMap','set_button_a_last',0);
+                                07=InterfaceState('StarMap','set_button_a_first',0);
+                                08=InterfaceState('StarMap','set_button_'+PlayerEqSet()+'_c',0);
+                                09=int i=0;
+                                10=dword temp_dword;
+                                11=InterfaceState('StarMap','ppb_panel',0);
+                                12=for(i = 1; i < 6; i = i + 1)
+                                13 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Weapon1,i);
+                                    02=if(!ItemInScript(temp_dword)) continue;
+                                    03=if(ScriptItemTextData(temp_dword, 1) == 'Fizgun') InterfaceState('StarMap', 'ppb_panel', 1);
+                                }
+                                14=ShipCalcParam(Player());
+                                15=if(ShipOrder(Player()) == 3)
+                                16 ^{
+                                    01=if(!ShipCanJump(Player(),ShipStar(Player()),ShipOrderObj(Player()),1))ShipOrder(Player(),0);
+                                }
+                                17=ButtonClick('Ship','Exit');
+                            }
+                            Pos=75,20,1
+                            Size=27,18
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=FormShip.OnSpaceSet5
+                            ImageDown=GI,Bm.PanelSpace2.2Set_Butt_A
+                            ImageNormal=GI,Bm.PanelSpace2.2Set_Butt_C
+                            ImageNormalA=GI,Bm.PanelSpace2.2Set_Butt_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            MouseBlockingTest=False
+                            Name=set_button_5_c
+                            OnPressCode ^{
+                                01=InterfaceState('StarMap','set_button_'+PlayerEqSet()+'_c',1);
+                                02=ButtonClick('StarMap','PM_Ship');
+                                03=ButtonClick('Ship','Compl4');
+                                04=InterfacePos('StarMap','set_button_a',PlayerEqSet()*20,0,0);
+                                05=InterfaceState('StarMap','set_button_a',1);
+                                06=InterfaceState('StarMap','set_button_a_last',0);
+                                07=InterfaceState('StarMap','set_button_a_first',0);
+                                08=InterfaceState('StarMap','set_button_'+PlayerEqSet()+'_c',0);
+                                09=int i=0;
+                                10=dword temp_dword;
+                                11=InterfaceState('StarMap','ppb_panel',0);
+                                12=for(i = 1; i < 6; i = i + 1)
+                                13 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Weapon1,i);
+                                    02=if(!ItemInScript(temp_dword)) continue;
+                                    03=if(ScriptItemTextData(temp_dword, 1) == 'Fizgun') InterfaceState('StarMap', 'ppb_panel', 1);
+                                }
+                                14=ShipCalcParam(Player());
+                                15=if(ShipOrder(Player()) == 3)
+                                16 ^{
+                                    01=if(!ShipCanJump(Player(),ShipStar(Player()),ShipOrderObj(Player()),1))ShipOrder(Player(),0);
+                                }
+                                17=ButtonClick('Ship','Exit');
+                            }
+                            Pos=95,20,1
+                            Size=27,18
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=FormShip.OnSpaceSet6
+                            ImageDown=GI,Bm.PanelSpace2.2Set_Butt_A
+                            ImageNormal=GI,Bm.PanelSpace2.2Set_Butt_C
+                            ImageNormalA=GI,Bm.PanelSpace2.2Set_Butt_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            MouseBlockingTest=False
+                            Name=set_button_6_c
+                            OnPressCode ^{
+                                01=InterfaceState('StarMap','set_button_'+PlayerEqSet()+'_c',1);
+                                02=ButtonClick('StarMap','PM_Ship');
+                                03=ButtonClick('Ship','Compl5');
+                                04=InterfacePos('StarMap','set_button_a',PlayerEqSet()*20,0,0);
+                                05=InterfaceState('StarMap','set_button_a',1);
+                                06=InterfaceState('StarMap','set_button_a_last',0);
+                                07=InterfaceState('StarMap','set_button_a_first',0);
+                                08=InterfaceState('StarMap','set_button_'+PlayerEqSet()+'_c',0);
+                                09=int i=0;
+                                10=dword temp_dword;
+                                11=InterfaceState('StarMap','ppb_panel',0);
+                                12=for(i = 1; i < 6; i = i + 1)
+                                13 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Weapon1,i);
+                                    02=if(!ItemInScript(temp_dword)) continue;
+                                    03=if(ScriptItemTextData(temp_dword, 1) == 'Fizgun') InterfaceState('StarMap', 'ppb_panel', 1);
+                                }
+                                14=ShipCalcParam(Player());
+                                15=if(ShipOrder(Player()) == 3)
+                                16 ^{
+                                    01=if(!ShipCanJump(Player(),ShipStar(Player()),ShipOrderObj(Player()),1))ShipOrder(Player(),0);
+                                }
+                                17=ButtonClick('Ship','Exit');
+                            }
+                            Pos=115,20,1
+                            Size=27,18
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=FormShip.OnSpaceSet7
+                            ImageDown=GI,Bm.PanelSpace2.2Set_Butt_A
+                            ImageNormal=GI,Bm.PanelSpace2.2Set_Butt_C
+                            ImageNormalA=GI,Bm.PanelSpace2.2Set_Butt_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            MouseBlockingTest=False
+                            Name=set_button_7_c
+                            OnPressCode ^{
+                                01=InterfaceState('StarMap','set_button_'+PlayerEqSet()+'_c',1);
+                                02=ButtonClick('StarMap','PM_Ship');
+                                03=ButtonClick('Ship','Compl6');
+                                04=InterfacePos('StarMap','set_button_a',PlayerEqSet()*20,0,0);
+                                05=InterfaceState('StarMap','set_button_a',1);
+                                06=InterfaceState('StarMap','set_button_a_last',0);
+                                07=InterfaceState('StarMap','set_button_a_first',0);
+                                08=InterfaceState('StarMap','set_button_'+PlayerEqSet()+'_c',0);
+                                09=int i=0;
+                                10=dword temp_dword;
+                                11=InterfaceState('StarMap','ppb_panel',0);
+                                12=for(i = 1; i < 6; i = i + 1)
+                                13 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Weapon1,i);
+                                    02=if(!ItemInScript(temp_dword)) continue;
+                                    03=if(ScriptItemTextData(temp_dword, 1) == 'Fizgun') InterfaceState('StarMap', 'ppb_panel', 1);
+                                }
+                                14=ShipCalcParam(Player());
+                                15=if(ShipOrder(Player()) == 3)
+                                16 ^{
+                                    01=if(!ShipCanJump(Player(),ShipStar(Player()),ShipOrderObj(Player()),1))ShipOrder(Player(),0);
+                                }
+                                17=ButtonClick('Ship','Exit');
+                            }
+                            Pos=135,20,1
+                            Size=27,18
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=FormShip.OnSpaceSet8
+                            ImageDown=GI,Bm.PanelSpace2.2Set_Butt_A
+                            ImageNormal=GI,Bm.PanelSpace2.2Set_Butt_C
+                            ImageNormalA=GI,Bm.PanelSpace2.2Set_Butt_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            MouseBlockingTest=False
+                            Name=set_button_8_c
+                            OnPressCode ^{
+                                01=InterfaceState('StarMap','set_button_'+PlayerEqSet()+'_c',1);
+                                02=ButtonClick('StarMap','PM_Ship');
+                                03=ButtonClick('Ship','Compl7');
+                                04=InterfacePos('StarMap','set_button_a',PlayerEqSet()*20,0,0);
+                                05=InterfaceState('StarMap','set_button_a',1);
+                                06=InterfaceState('StarMap','set_button_a_last',0);
+                                07=InterfaceState('StarMap','set_button_a_first',0);
+                                08=InterfaceState('StarMap','set_button_'+PlayerEqSet()+'_c',0);
+                                09=int i=0;
+                                10=dword temp_dword;
+                                11=InterfaceState('StarMap','ppb_panel',0);
+                                12=for(i = 1; i < 6; i = i + 1)
+                                13 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Weapon1,i);
+                                    02=if(!ItemInScript(temp_dword)) continue;
+                                    03=if(ScriptItemTextData(temp_dword, 1) == 'Fizgun') InterfaceState('StarMap', 'ppb_panel', 1);
+                                }
+                                14=ShipCalcParam(Player());
+                                15=if(ShipOrder(Player()) == 3)
+                                16 ^{
+                                    01=if(!ShipCanJump(Player(),ShipStar(Player()),ShipOrderObj(Player()),1))ShipOrder(Player(),0);
+                                }
+                                17=ButtonClick('Ship','Exit');
+                            }
+                            Pos=155,20,1
+                            Size=27,18
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            Help=FormShip.OnSpaceSet9
+                            ImageDown=GI,Bm.PanelSpace2.2SetLastA
+                            ImageNormal=GI,Bm.PanelSpace2.2SetLastC
+                            ImageNormalA=GI,Bm.PanelSpace2.2SetLastA
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            MouseBlockingTest=False
+                            Name=set_button_9_c
+                            OnPressCode ^{
+                                01=InterfaceState('StarMap','set_button_'+PlayerEqSet()+'_c',1);
+                                02=ButtonClick('StarMap','PM_Ship');
+                                03=ButtonClick('Ship','Compl8');
+                                04=InterfacePos('StarMap','set_button_a',PlayerEqSet()*20,0,0);
+                                05=InterfaceState('StarMap','set_button_a_last',1);
+                                06=InterfaceState('StarMap','set_button_a',0);
+                                07=InterfaceState('StarMap','set_button_a_first',0);
+                                08=InterfaceState('StarMap','set_button_'+PlayerEqSet()+'_c',0);
+                                09=int i=0;
+                                10=dword temp_dword;
+                                11=InterfaceState('StarMap','ppb_panel',0);
+                                12=for(i = 1; i < 6; i = i + 1)
+                                13 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Weapon1,i);
+                                    02=if(!ItemInScript(temp_dword)) continue;
+                                    03=if(ScriptItemTextData(temp_dword, 1) == 'Fizgun') InterfaceState('StarMap', 'ppb_panel', 1);
+                                }
+                                14=ShipCalcParam(Player());
+                                15=if(ShipOrder(Player()) == 3)
+                                16 ^{
+                                    01=if(!ShipCanJump(Player(),ShipStar(Player()),ShipOrderObj(Player()),1))ShipOrder(Player(),0);
+                                }
+                                17=ButtonClick('Ship','Exit');
+                            }
+                            Pos=175,20,1
+                            Size=27,18
+                            Style=Style.GB.SoundNormal
+                        }
+                        Name=set_button
+                        Pos=92,-3,3
+                        Size=280,80
+                    }
+                    Panel ^{
+                        Active=False
+                        Name=Klesh_main_panel
+                        Panel ^{
+                            Active=False
+                            GraphButton ^{
+                                Active=True
+                                ImageDown=GI,Bm.PanelSpace2.2kl_but_d
+                                ImageNormal=GI,Bm.PanelSpace2.2kl_but_n
+                                ImageNormalA=GI,Bm.PanelSpace2.2kl_but_g
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=kl_but_g
+                                OnPressCode ^{
+                                    01=int temp_int = HullHP(Player());
+                                    02=if(HullSpecial(Player()) == FindBonusByNameInCfg('ExpScienceRanks_TickSpeedMode'))
+                                    03 ^{
+                                        01=if(ShipOrder(Player()) == 3)
+                                        02 ^{
+                                            01=if(!ShipCanJump(Player(), ShipStar(Player()), ShipOrderObj(Player()), 1)) OrderNone(Player());
+                                        }
+                                    }
+                                    04=SwitchToMirrorImage(Player(), FindBonusByNameInCfg('ExpScienceRanks_TickDefenseMode'));
+                                    05=HullHP(Player(), temp_int);
+                                    06=InterfaceState('StarMap', 'kl_but_y_a', 0);
+                                    07=InterfaceState('StarMap', 'kl_but_r_a', 0);
+                                    08=InterfaceState('StarMap', 'kl_but_g_a', 1);
+                                    09=InterfaceState('StarMap', 'kl_but_g', 0);
+                                    10=InterfaceState('StarMap', 'kl_but_r', 1);
+                                    11=InterfaceState('StarMap', 'kl_but_y', 1);
+                                }
+                                Pos=10,10,1
+                                Size=27,20
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                Active=True
+                                ImageDown=GI,Bm.PanelSpace2.2kl_but_d
+                                ImageNormal=GI,Bm.PanelSpace2.2kl_but_n
+                                ImageNormalA=GI,Bm.PanelSpace2.2kl_but_r
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=kl_but_r
+                                OnPressCode ^{
+                                    01=int temp_int = HullHP(Player());
+                                    02=if(HullSpecial(Player()) == FindBonusByNameInCfg('ExpScienceRanks_TickSpeedMode'))
+                                    03 ^{
+                                        01=if(ShipOrder(Player()) == 3)
+                                        02 ^{
+                                            01=if(!ShipCanJump(Player(), ShipStar(Player()), ShipOrderObj(Player()), 1)) OrderNone(Player());
+                                        }
+                                    }
+                                    04=SwitchToMirrorImage(Player(), FindBonusByNameInCfg('ExpScienceRanks_TickAttackMode'));
+                                    05=HullHP(Player(), temp_int);
+                                    06=InterfaceState('StarMap', 'kl_but_y_a', 0);
+                                    07=InterfaceState('StarMap', 'kl_but_r_a', 1);
+                                    08=InterfaceState('StarMap', 'kl_but_g_a', 0);
+                                    09=InterfaceState('StarMap', 'kl_but_g', 1);
+                                    10=InterfaceState('StarMap', 'kl_but_r', 0);
+                                    11=InterfaceState('StarMap', 'kl_but_y', 1);
+                                }
+                                Pos=36,10,1
+                                Size=27,20
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                Active=True
+                                ImageDown=GI,Bm.PanelSpace2.2kl_but_d
+                                ImageNormal=GI,Bm.PanelSpace2.2kl_but_n
+                                ImageNormalA=GI,Bm.PanelSpace2.2kl_but_y
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=kl_but_y
+                                OnPressCode ^{
+                                    01=int temp_int = HullHP(Player());
+                                    02=SwitchToMirrorImage(Player(), FindBonusByNameInCfg('ExpScienceRanks_TickSpeedMode'));
+                                    03=HullHP(Player(), temp_int);
+                                    04=InterfaceState('StarMap', 'kl_but_y_a', 1);
+                                    05=InterfaceState('StarMap', 'kl_but_r_a', 0);
+                                    06=InterfaceState('StarMap', 'kl_but_g_a', 0);
+                                    07=InterfaceState('StarMap', 'kl_but_r', 1);
+                                    08=InterfaceState('StarMap', 'kl_but_g', 1);
+                                    09=InterfaceState('StarMap', 'kl_but_y', 0);
+                                }
+                                Pos=62,10,1
+                                Size=27,20
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                Active=False
+                                ImageDown=GI,Bm.PanelSpace2.2kl_but_g
+                                ImageNormal=GI,Bm.PanelSpace2.2kl_but_g
+                                ImageNormalA=GI,Bm.PanelSpace2.2kl_but_g
+                                Kind=Normal
+                                KindHit=Graph
+                                MouseBlocking=True
+                                Name=kl_but_g_a
+                                Pos=10,10,0
+                                Size=27,20
+                            }
+                            GraphButton ^{
+                                Active=False
+                                ImageDown=GI,Bm.PanelSpace2.2kl_but_r
+                                ImageNormal=GI,Bm.PanelSpace2.2kl_but_r
+                                ImageNormalA=GI,Bm.PanelSpace2.2kl_but_r
+                                Kind=Normal
+                                KindHit=Graph
+                                MouseBlocking=True
+                                Name=kl_but_r_a
+                                Pos=36,10,0
+                                Size=27,20
+                            }
+                            GraphButton ^{
+                                Active=False
+                                ImageDown=GI,Bm.PanelSpace2.2kl_but_y
+                                ImageNormal=GI,Bm.PanelSpace2.2kl_but_y
+                                ImageNormalA=GI,Bm.PanelSpace2.2kl_but_y
+                                Kind=Normal
+                                KindHit=Graph
+                                MouseBlocking=True
+                                Name=kl_but_y_a
+                                Pos=62,10,0
+                                Size=27,20
+                            }
+                            Image ^{
+                                Image=GI,Bm.PanelSpace2.2klesh_add_panel
+                                Pos=0,6,5
+                                Size=100,36
+                            }
+                            Name=Klesh_panel
+                            Pos=0,0,0
+                            Size=110,70
+                        }
+                        Pos=9,5,0
+                        Size=110,70
+                    }
+                    Panel ^{
+                        Active=False
+                        GraphButton ^{
+                            Active=True
+                            ImageDown=GI,Bm.PanelSpace2.2grab_aster_D
+                            ImageNormal=GI,Bm.PanelSpace2.2grab_aster_N
+                            ImageNormalA=GI,Bm.PanelSpace2.2grab_aster_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            MouseBlockingTest=False
+                            Name=art_button_1
+                            OnPressCode ^{
+                                01=if(IsFilm()==1) exit;
+                                02=int i;
+                                03=dword gun;
+                                04=dword curitem;
+                                05=for(i=1;i<6;i=i+1)
+                                06 ^{
+                                    01=curitem=ShipEqInSlot(Player(),t_Weapon1,i);
+                                    02=if(!ItemInScript(curitem))continue;
+                                    03=if(ScriptItemTextData(curitem,1)=='Fizgun')gun=curitem;
+                                }
+                                07=int temp_int_2=0;
+                                08=if(ShipInNormalSpace(Player()) && WeaponAmmunition(gun)==0)
+                                09 ^{
+                                    01=dword temp_dword=0;
+                                    02=str temp_str='';
+                                    03=str temp_str_2='';
+                                    04=for(i=0;i<StarAsteroids(ShipStar(Player()));i=i+1)
+                                    05 ^{
+                                        01=temp_dword=StarAsteroids(ShipStar(Player()),i);
+                                        02=temp_str=Format(AsteroidGraph(temp_dword),'Asteroid.','');
+                                        03=temp_str=DeleteTags(temp_str);
+                                        04=if(Dist(Player(),temp_dword)<=ShipHookRange(Player()) && ShipHookRange(Player())!=0)
+                                        05 ^{
+                                            01=if(temp_str=='00' || temp_str=='08' || temp_str=='11' || temp_str=='Blue08' || temp_str=='Blue09' || temp_str=='Green09') temp_str_2='w30_pp_w';
+                                            02=if(temp_str=='01' || temp_str=='10' || temp_str=='Blue10' || temp_str=='Green14' || temp_str=='Red00' || temp_str=='Red01' || temp_str=='Red02' || temp_str=='Red03' || temp_str=='Red04' || temp_str=='Red05' || temp_str=='Red06' || temp_str=='Red07' || temp_str=='Red08' || temp_str=='Red10' || temp_str=='Red11' || temp_str=='Red13') temp_str_2='w30_rd_w';
+                                            03=if(temp_str=='04' || temp_str=='Blue06' || temp_str=='Blue00' || temp_str=='Blue01' || temp_str=='Blue02' || temp_str=='Blue03' || temp_str=='Blue04' || temp_str=='Blue05' || temp_str=='Blue07' || temp_str=='Blue11' || temp_str=='Blue12' || temp_str=='Blue13' || temp_str=='Blue14' || temp_str=='Blue15' || temp_str=='Blue16') temp_str_2='w30_bl_w';
+                                            04=if(temp_str=='06' || temp_str=='14' || temp_str=='Yellow00' || temp_str=='Yellow01' || temp_str=='Yellow02' || temp_str=='Yellow03' || temp_str=='Yellow04' || temp_str=='Yellow05' || temp_str=='Yellow06' || temp_str=='Yellow07') temp_str_2='w30_wh_w';
+                                            05=if(temp_str=='02' || temp_str=='07' || temp_str=='13' || temp_str=='Blue17' || temp_str=='Green13' || temp_str=='Red09' || temp_str=='Red12') temp_str_2='w30_yw_w';
+                                            06=if(temp_str=='03' || temp_str=='09' || temp_str=='12' || temp_str=='Blue18' || temp_str=='Green00' || temp_str=='Green01' || temp_str=='Green02' || temp_str=='Green03' || temp_str=='Green04' || temp_str=='Green05' || temp_str=='Green06' || temp_str=='Green07' || temp_str=='Green08' || temp_str=='Green10' || temp_str=='Green11' || temp_str=='Green12') temp_str_2='w30_gr_w';
+                                            07=WeaponAmmunition(gun,1);
+                                            08=SetEquipmentStats(gun,1,0);
+                                            09=SetEquipmentStats(gun,1,1);
+                                            10=AsteroidRespawn(temp_dword);
+                                            11=EqSpecial(gun,FindBonusByCustomTag(temp_str_2));
+                                            12=temp_int_2=1;
+                                            13=ButtonClick('StarMap','PM_Ship');
+                                            14=ButtonClick('Ship','Exit');
+                                        }
+                                    }
+                                    06=if(temp_int_2==0 && ShipHookRange(Player())!=0)MessageBox('Поблизости нету астероидов.');
+                                    07=if(temp_int_2==0 && ShipHookRange(Player())==0)MessageBox('Для корректной работы Физгана необходим захват.');
+                                }
+                                10=if(!ShipInNormalSpace(Player()))MessageBox('Поблизости нету астероидов.');
+                                11=if(ShipInNormalSpace(Player()) && WeaponAmmunition(gun)==1 && temp_int_2==0)MessageBox('Физган уже заряжен.');
+                            }
+                            Pos=0,5
+                            Size=32,10
+                            Style=Style.GB.SoundNormal
+                        }
+                        Name=ppb_panel
+                        Pos=214,42
+                        Size=58,34
+                    }
+                    Pos=216,262,1
+                    PosAutoCorrection=True
+                    PosAutoCorrectionXCoef=0.5
+                    PosAutoCorrectionYCoef=0.5
+                    Size=350,80
+                }
+                Panel ^{
+                    Active=False
+                    Image ^{
+                        Image=GI,Bm.PanelSpace2.2fix_info_image
+                        MouseBlocking=True
+                        Name=fix_info_image
+                        Pos=0,0,2
+                        Size=242,264
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=Center
+                        Font=Font.2Normal
+                        Name=fix_info_weapon_1
+                        Pos=55,55,1
+                        Size=30,30
+                        Text=FormInfo.tranc_free_spaсe
+                        TextColor=255,255,255
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=Center
+                        Font=Font.2Normal
+                        Name=fix_info_weapon_2
+                        Pos=105,55,1
+                        Size=30,30
+                        Text=FormInfo.tranc_free_spaсe
+                        TextColor=255,255,255
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=Center
+                        Font=Font.2Normal
+                        Name=fix_info_weapon_3
+                        Pos=152,55,1
+                        Size=30,30
+                        Text=FormInfo.tranc_free_spaсe
+                        TextColor=255,255,255
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=Center
+                        Font=Font.2Normal
+                        Name=fix_info_weapon_4
+                        Pos=82,15,1
+                        Size=30,30
+                        Text=FormInfo.tranc_free_spaсe
+                        TextColor=255,255,255
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=Center
+                        Font=Font.2Normal
+                        Name=fix_info_weapon_5
+                        Pos=131,15,1
+                        Size=30,30
+                        Text=FormInfo.tranc_free_spaсe
+                        TextColor=255,255,255
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=Center
+                        Font=Font.2Normal
+                        Name=fix_info_engen
+                        Pos=37,107,1
+                        Size=30,30
+                        Text=FormInfo.tranc_free_spaсe
+                        TextColor=255,255,255
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=Center
+                        Font=Font.2Normal
+                        Name=fix_info_fuel
+                        Pos=37,160,1
+                        Size=30,30
+                        Text=FormInfo.tranc_free_spaсe
+                        TextColor=255,255,255
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=Center
+                        Font=Font.2Normal
+                        Name=fix_info_droid
+                        Pos=57,212,1
+                        Size=30,30
+                        Text=FormInfo.tranc_free_spaсe
+                        TextColor=255,255,255
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=Center
+                        Font=Font.2Normal
+                        Name=fix_info_hook
+                        Pos=105,212,1
+                        Size=30,30
+                        Text=FormInfo.tranc_free_spaсe
+                        TextColor=255,255,255
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=Center
+                        Font=Font.2Normal
+                        Name=fix_info_def
+                        Pos=153,212,1
+                        Size=30,30
+                        Text=FormInfo.tranc_free_spaсe
+                        TextColor=255,255,255
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=Center
+                        Font=Font.2Normal
+                        Name=fix_info_radar
+                        Pos=173,160,1
+                        Size=30,30
+                        Text=FormInfo.tranc_free_spaсe
+                        TextColor=255,255,255
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=Center
+                        Font=Font.2Normal
+                        Name=fix_info_scaner
+                        Pos=173,107,1
+                        Size=30,30
+                        Text=FormInfo.tranc_free_spaсe
+                        TextColor=255,255,255
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=Center
+                        Font=Font.2Normal
+                        Name=fix_info_art_1
+                        Pos=203,63,1
+                        Size=30,30
+                        Text=FormInfo.tranc_free_spaсe
+                        TextColor=255,255,255
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=Center
+                        Font=Font.2Normal
+                        Name=fix_info_art_2
+                        Pos=8,63,1
+                        Size=30,30
+                        Text=FormInfo.tranc_free_spaсe
+                        TextColor=255,255,255
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=Center
+                        Font=Font.2Normal
+                        Name=fix_info_art_3
+                        Pos=202,202,1
+                        Size=30,30
+                        Text=FormInfo.tranc_free_spaсe
+                        TextColor=255,255,255
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=Center
+                        Font=Font.2Normal
+                        Name=fix_info_art_4
+                        Pos=7,202,1
+                        Size=30,30
+                        Text=FormInfo.tranc_free_spaсe
+                        TextColor=255,255,255
+                    }
+                    Label ^{
+                        AlignX=Center
+                        AlignY=Center
+                        Font=Font.2Normal
+                        Name=fix_info_hull
+                        Pos=105,130,1
+                        Size=36,30
+                        Text=FormInfo.tranc_free_spaсe
+                        TextColor=255,255,255
+                    }
+                    Name=fix_info_window
+                    Pos=150,0
+                    PosAutoCorrection=True
+                    PosAutoCorrectionXCoef=0.5
+                    PosAutoCorrectionYCoef=0.5
+                    Size=242,264
+                }
+                Panel ^{
+                    GraphButton ^{
+                        Active=True
+                        ImageDown=GI,Bm.PanelSpace2.2fix_but_n
+                        ImageNormal=GI,Bm.PanelSpace2.2fix_but_n
+                        ImageNormalA=GI,Bm.PanelSpace2.2fix_but_n
+                        Kind=Normal
+                        KindHit=Graph
+                        Name=fix_info_butt
+                        OnMouseEnterCode ^{
+                            01=if(IsFilm()) exit;
+                            02=else
+                            03 ^{
+                                01=InterfaceText('StarMap','fix_info_hull','--');
+                                02=InterfaceText('StarMap','fix_info_fuel','--');
+                                03=InterfaceText('StarMap','fix_info_engen','--');
+                                04=InterfaceText('StarMap','fix_info_scaner','--');
+                                05=InterfaceText('StarMap','fix_info_radar','--');
+                                06=InterfaceText('StarMap','fix_info_droid','--');
+                                07=InterfaceText('StarMap','fix_info_hook','--');
+                                08=InterfaceText('StarMap','fix_info_def','--');
+                                09=InterfaceText('StarMap','fix_info_weapon_1','--');
+                                10=InterfaceText('StarMap','fix_info_weapon_2','--');
+                                11=InterfaceText('StarMap','fix_info_weapon_3','--');
+                                12=InterfaceText('StarMap','fix_info_weapon_4','--');
+                                13=InterfaceText('StarMap','fix_info_weapon_5','--');
+                                14=InterfaceText('StarMap','fix_info_art_1','--');
+                                15=InterfaceText('StarMap','fix_info_art_2','--');
+                                16=InterfaceText('StarMap','fix_info_art_3','--');
+                                17=InterfaceText('StarMap','fix_info_art_4','--');
+                                18=dword curitem = 0;
+                                19=int temp_int = 0;
+                                20=str temp_str;
+                                21=str color;
+                                22=int hull_dur = 101;
+                                23=for(int i = t_Hull; i < t_Weapon1; i = i + 1)
+                                24 ^{
+                                    01=curitem = ShipEqInSlot(Player(), i);
+                                    02=if(!curitem) continue;
+                                    03=if(ItemType(curitem) == t_Hull) hull_dur = (Hitpoints(Player()) * 100) / ItemSize(curitem);
+                                    04=if((ItemDurability(curitem)>=70 && ItemDurability(curitem)<=100) || (hull_dur>=70 && hull_dur<=100)) color='<color=0,255,0>';
+                                    05=if((ItemDurability(curitem)>=40 && ItemDurability(curitem)<=69) || (hull_dur>=40 && hull_dur<=69)) color='<color=255,255,0>';
+                                    06=if((ItemDurability(curitem)>=10 && ItemDurability(curitem)<=39) || (hull_dur>=10 && hull_dur<=39)) color='<color=255,128,0>';
+                                    07=if(ItemDurability(curitem)<=9 || hull_dur<=9) color='<color=255,0,0>';
+                                    08=if(ItemType(curitem)==t_FuelTanks)InterfaceText('StarMap','fix_info_fuel',color+ItemDurability(curitem));
+                                    09=if(ItemType(curitem)==t_Engine)InterfaceText('StarMap','fix_info_engen',color+ItemDurability(curitem));
+                                    10=if(ItemType(curitem)==t_Radar)InterfaceText('StarMap','fix_info_radar',color+ItemDurability(curitem));
+                                    11=if(ItemType(curitem)==t_Scaner)InterfaceText('StarMap','fix_info_scaner',color+ItemDurability(curitem));
+                                    12=if(ItemType(curitem)==t_RepairRobot)InterfaceText('StarMap','fix_info_droid',color+ItemDurability(curitem));
+                                    13=if(ItemType(curitem)==t_CargoHook)InterfaceText('StarMap','fix_info_hook',color+ItemDurability(curitem));
+                                    14=if(ItemType(curitem)==t_DefGenerator)InterfaceText('StarMap','fix_info_def',color+ItemDurability(curitem));
+                                    15=if(ItemType(curitem)==t_Hull)InterfaceText('StarMap','fix_info_hull',color+Hitpoints(Player()));
+                                }
+                                25=for(i = 1; i < 6; i = i + 1)
+                                26 ^{
+                                    01=curitem = ShipEqInSlot(Player(), t_Weapon1, i);
+                                    02=if(!curitem) continue;
+                                    03=temp_str='fix_info_weapon_'+ItemIsInUse(curitem);
+                                    04=if(ItemIsInUse(curitem)>100)temp_str='fix_info_weapon_'+(ItemIsInUse(curitem)-128);
+                                    05=if(ItemDurability(curitem)>=70 && ItemDurability(curitem)<=100)color='<color=0,255,0>';
+                                    06=if(ItemDurability(curitem)>=40 && ItemDurability(curitem)<=69)color='<color=255,255,0>';
+                                    07=if(ItemDurability(curitem)>=10 && ItemDurability(curitem)<=39)color='<color=255,128,0>';
+                                    08=if(ItemDurability(curitem)<=9 || hull_dur<=9) color='<color=255,0,0>';
+                                    09=InterfaceText('StarMap',DeleteTags(temp_str),color+ItemDurability(curitem));
+                                }
+                                27=for(i = 1; i < 5; i = i + 1)
+                                28 ^{
+                                    01=curitem = ShipEqInSlot(Player(), t_Artefact, i);
+                                    02=if(!curitem) continue;
+                                    03=if(ItemDurability(curitem)>=70 && ItemDurability(curitem)<=100) color='<color=0,255,0>';
+                                    04=if(ItemDurability(curitem)>=40 && ItemDurability(curitem)<=69) color='<color=255,255,0>';
+                                    05=if(ItemDurability(curitem)>=10 && ItemDurability(curitem)<=39) color='<color=255,128,0>';
+                                    06=if(ItemDurability(curitem)<=9) color='<color=255,0,0>';
+                                    07=temp_str='fix_info_art_'+(5-ItemIsInUse(curitem));
+                                    08=InterfaceText('StarMap',DeleteTags(temp_str),color+ItemDurability(curitem));
+                                }
+                                29=InterfaceState('StarMap','fix_info_window',1);
+                            }
+                        }
+                        OnMouseLeaveCode ^{
+                            01=InterfaceState('StarMap', 'fix_info_window', 0);
+                        }
+                        Pos=0,2,1
+                        Size=32,10
+                        Style=Style.GB.SoundNormal
+                    }
+                    Image ^{
+                        Image=GI,Bm.PanelSpace2.2fix_but_a
+                        Name=fix_info_butt_a
+                        Pos=0,2
+                        Size=32,10
+                    }
+                    Name=fix_panel
+                    Pos=388,307,2
+                    PosAutoCorrection=True
+                    PosAutoCorrectionXCoef=0.5
+                    PosAutoCorrectionYCoef=0.5
+                    Size=50,13
+                }
+            }
+        }
+    }
+    Style ^{
+        GB ^{
+            SilentNight ^{
+                SoundClick=Sound.ShipItemInfo
+                SoundEnter=Sound.ShipItemInfo
+                SoundLeave=Sound.ShipItemInfo
+            }
+        }
+    }
+}

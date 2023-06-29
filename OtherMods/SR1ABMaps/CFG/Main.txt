@@ -1,0 +1,19 @@
+Data ^{
+    ABMap ^{
+        29 ^{
+            Path=ABMap.02_1_V02
+            Portal=1,2,3
+            Priority=100
+        }
+        30 ^{
+            Path=ABMap.04_2_V01
+            Portal=1,2,3
+            Priority=100
+        }
+        31 ^{
+            Path=ABMap.04_3_V03
+            Portal=1,2,3
+            Priority=100
+        }
+    }
+}

@@ -1,0 +1,10 @@
+Bm ~{
+    ItemsUseless ~{
+        2OperatedProbe_c=DATA\ItemsUseless\2OperatedProbe.gai
+        2OperatedProbe_s=DATA\ItemsUseless\2OperatedProbe.gi
+        2SB_scaner_s=Mods\Revolution\RevDominatorSpy\DATA\ItemsUseless\SB_scaner.gi
+    }
+}
+Script ~{
+    Mod_RevDominatorSpy=Mods\Revolution\RevDominatorSpy\DATA\Script\Mod_RevDominatorSpy.scr
+}

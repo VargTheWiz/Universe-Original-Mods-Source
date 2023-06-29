@@ -1,0 +1,998 @@
+Data ^{
+    Script ^{
+        Mod_ExpSkills=1,Script.Mod_ExpSkills
+    }
+}
+ML ^{
+    PerksForm ^{
+        Border=0,0,1024,767
+        CodeBeforeRun ^{
+            00=int i=0;
+            01=int Zstate=-1;
+            02=for(i=1;i<13;i=i+1)
+            02 ^{
+                00=CustomInterfaceSize('PerkScaleF'+i,ExpSkillsArray[i]*15,8);
+                01=if(i<5 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),0)>5)Zstate=3;
+                02=if(i>4 && i<9 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),1)>5)Zstate=3;
+                03=if(i>8 && ShipFreeExp(Player())>=40000 && ShipSkill(Player(),2)>5)Zstate=3;
+                04=CustomInterfacePosZ('Perk'+i+'H',Zstate);
+                05=Zstate=-1;
+            }
+        }
+        Panel ^{
+            Active=True
+            GraphButton ^{
+                ImageDown=GI,Bm.FormMessageBox.2CancelD
+                ImageNormal=GI,Bm.FormMessageBox.2CancelN
+                ImageNormalA=GI,Bm.FormMessageBox.2CancelA
+                Kind=Normal
+                KindHit=Rect
+                Name=PerkFormExit
+                OnPressCode ^{
+                    00=CloseCustomForm(1);
+                }
+                Pos=225,550,1
+                Size=48,21
+                Style=Style.GB.SoundNormal
+            }
+            Image ^{
+                Image=GI,Bm.CFormBG.2CastomFormBG
+                MouseBlocking=True
+                MouseBlockingTest=True
+                Pos=0,0,6
+                Size=491,591
+            }
+            Label ^{
+                AlignX=Center
+                AlignY=Top
+                Name=PerkTextName
+                Pos=12,470,0
+                Size=467,20
+                Style=Style.Label.2Normal
+                TextColor=0,0,255
+                WordWrap=True
+            }
+            Label ^{
+                AlignX=Center
+                AlignY=Top
+                Name=PerkText
+                Pos=12,490,0
+                Size=467,66
+                Style=Style.Label.2Normal
+                TextColor=0,0,0
+                WordWrap=True
+            }
+            Label ^{
+                AlignX=Center
+                AlignY=Center
+                Font=Font.2Ranger
+                Pos=170,0,0
+                Size=134,16
+                Text=FormPerks.Title
+                TextColor=88,229,255
+                WordWrap=True
+            }
+            Name=PerksPanel
+            Panel ^{
+                Image ^{
+                    Image=GI,Bm.FormShip2.2ScaleE
+                    Pos=35,35,3
+                    Size=79,12
+                }
+                Image ^{
+                    Image=GI,Bm.FormShip2.2ScaleE
+                    Pos=35,80,3
+                    Size=79,12
+                }
+                Image ^{
+                    Image=GI,Bm.FormShip2.2ScaleE
+                    Pos=35,125,3
+                    Size=79,12
+                }
+                Image ^{
+                    Image=GI,Bm.FormShip2.2ScaleE
+                    Pos=340,80,3
+                    Size=79,12
+                }
+                Image ^{
+                    Image=GI,Bm.FormShip2.2ArrowsB
+                    Pos=160,38,4
+                    Size=120,94
+                }
+                Name=AttackPanel
+                Panel ^{
+                    GraphButton ^{
+                        ImageDown=GI,Bm.FormShip2.2AttEngD
+                        ImageNormal=GI,Bm.FormShip2.2AttEngN
+                        ImageNormalA=GI,Bm.FormShip2.2AttEngA
+                        Kind=Normal
+                        KindHit=Rect
+                        Name=Att1A
+                        OnMouseEnterCode ^{
+                            00=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName1'));
+                            01=str text=Format(CT('FormPerks.PerkText1'),'VAR','<color=0,0,255>'+4*ExpSkillsArray[1]+'</color>');
+                            02=if(ExpSkillsArray[1]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+45000+'</color>');
+                            03=CustomInterfaceText('PerkText',text);
+                        }
+                        OnMouseLeaveCode ^{
+                            00=CustomInterfaceText('PerkTextName','');
+                            01=CustomInterfaceText('PerkText','');
+                        }
+                        OnPressCode ^{
+                            00=if(ExpSkillsArray[1]>4)exit;
+                            01=ExpSkillsArray[1]=ExpSkillsArray[1]+1;
+                            02=ShipFreeExp(Player(),ShipFreeExp(Player())-45000);
+                            03=ShipSpecialBonuses(Player(),bonWEnergy,ShipSpecialBonuses(Player(),bonWEnergy)+4);
+                            04=int i=0;
+                            05=int Zstate=-1;
+                            06=for(i=1;i<13;i=i+1)
+                            06 ^{
+                                00=CustomInterfaceSize('PerkScaleF'+i,ExpSkillsArray[i]*15,8);
+                                01=if(i<5 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),0)>5)Zstate=3;
+                                02=if(i>4 && i<9 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),1)>5)Zstate=3;
+                                03=if(i>8 && ShipFreeExp(Player())>=40000 && ShipSkill(Player(),2)>5)Zstate=3;
+                                04=CustomInterfacePosZ('Perk'+i+'H',Zstate);
+                                05=Zstate=-1;
+                            }
+                            07=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName1'));
+                            08=str text=Format(CT('FormPerks.PerkText1'),'VAR','<color=0,0,255>'+4*ExpSkillsArray[1]+'</color>');
+                            09=if(ExpSkillsArray[1]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+45000+'</color>');
+                            10=CustomInterfaceText('PerkText',text);
+                        }
+                        Pos=0,0,0
+                        Size=44,43
+                        Style=Style.GB.SoundNormal
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2AttEngH
+                        MouseBlocking=True
+                        Name=Perk1H
+                        Pos=0,0,2
+                        Size=44,43
+                    }
+                    Name=AttEngPanel
+                    Pos=130,20,1
+                    Size=44,43
+                }
+                Panel ^{
+                    GraphButton ^{
+                        ImageDown=GI,Bm.FormShip2.2AttMslD
+                        ImageNormal=GI,Bm.FormShip2.2AttMslN
+                        ImageNormalA=GI,Bm.FormShip2.2AttMslA
+                        Kind=Normal
+                        KindHit=Rect
+                        Name=Att2A
+                        OnMouseEnterCode ^{
+                            00=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName2'));
+                            01=str text=Format(CT('FormPerks.PerkText2'),'VAR','<color=0,0,255>'+6*ExpSkillsArray[2]+'</color>');
+                            02=if(ExpSkillsArray[2]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+45000+'</color>');
+                            03=CustomInterfaceText('PerkText',text);
+                        }
+                        OnMouseLeaveCode ^{
+                            00=CustomInterfaceText('PerkTextName','');
+                            01=CustomInterfaceText('PerkText','');
+                        }
+                        OnPressCode ^{
+                            00=if(ExpSkillsArray[2]>4)exit;
+                            01=ExpSkillsArray[2]=ExpSkillsArray[2]+1;
+                            02=ShipFreeExp(Player(),ShipFreeExp(Player())-45000);
+                            03=ShipSpecialBonuses(Player(),bonWMissile,ShipSpecialBonuses(Player(),bonWMissile)+6);
+                            04=int i=0;
+                            05=int Zstate=-1;
+                            06=for(i=1;i<13;i=i+1)
+                            06 ^{
+                                00=CustomInterfaceSize('PerkScaleF'+i,ExpSkillsArray[i]*15,8);
+                                01=if(i<5 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),0)>5)Zstate=3;
+                                02=if(i>4 && i<9 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),1)>5)Zstate=3;
+                                03=if(i>8 && ShipFreeExp(Player())>=40000 && ShipSkill(Player(),2)>5)Zstate=3;
+                                04=CustomInterfacePosZ('Perk'+i+'H',Zstate);
+                                05=Zstate=-1;
+                            }
+                            07=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName2'));
+                            08=str text=Format(CT('FormPerks.PerkText2'),'VAR','<color=0,0,255>'+6*ExpSkillsArray[2]+'</color>');
+                            09=if(ExpSkillsArray[2]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+45000+'</color>');
+                            10=CustomInterfaceText('PerkText',text);
+                        }
+                        Pos=0,0,1
+                        Size=44,43
+                        Style=Style.GB.SoundNormal
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2AttMslH
+                        MouseBlocking=True
+                        Name=Perk2H
+                        Pos=0,0,2
+                        Size=44,43
+                    }
+                    Name=AttMslPanel
+                    Pos=130,65,1
+                    Size=44,43
+                }
+                Panel ^{
+                    GraphButton ^{
+                        ImageDown=GI,Bm.FormShip2.2AttSplD
+                        ImageNormal=GI,Bm.FormShip2.2AttSplN
+                        ImageNormalA=GI,Bm.FormShip2.2AttSplA
+                        Kind=Normal
+                        KindHit=Rect
+                        Name=Att3A
+                        OnMouseEnterCode ^{
+                            00=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName3'));
+                            01=str text=Format(CT('FormPerks.PerkText3'),'VAR','<color=0,0,255>'+3*ExpSkillsArray[3]+'</color>');
+                            02=if(ExpSkillsArray[3]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+45000+'</color>');
+                            03=CustomInterfaceText('PerkText',text);
+                        }
+                        OnMouseLeaveCode ^{
+                            00=CustomInterfaceText('PerkTextName','');
+                            01=CustomInterfaceText('PerkText','');
+                        }
+                        OnPressCode ^{
+                            00=if(ExpSkillsArray[3]>4)exit;
+                            01=ExpSkillsArray[3]=ExpSkillsArray[3]+1;
+                            02=ShipFreeExp(Player(),ShipFreeExp(Player())-45000);
+                            03=ShipSpecialBonuses(Player(),bonWSplinter,ShipSpecialBonuses(Player(),bonWSplinter)+3);
+                            04=int i=0;
+                            05=int Zstate=-1;
+                            06=for(i=1;i<13;i=i+1)
+                            06 ^{
+                                00=CustomInterfaceSize('PerkScaleF'+i,ExpSkillsArray[i]*15,8);
+                                01=if(i<5 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),0)>5)Zstate=3;
+                                02=if(i>4 && i<9 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),1)>5)Zstate=3;
+                                03=if(i>8 && ShipFreeExp(Player())>=40000 && ShipSkill(Player(),2)>5)Zstate=3;
+                                04=CustomInterfacePosZ('Perk'+i+'H',Zstate);
+                                05=Zstate=-1;
+                            }
+                            07=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName3'));
+                            08=str text=Format(CT('FormPerks.PerkText3'),'VAR','<color=0,0,255>'+3*ExpSkillsArray[3]+'</color>');
+                            09=if(ExpSkillsArray[3]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+45000+'</color>');
+                            10=CustomInterfaceText('PerkText',text);
+                        }
+                        Pos=0,0,1
+                        Size=44,43
+                        Style=Style.GB.SoundNormal
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2AttSplH
+                        MouseBlocking=True
+                        Name=Perk3H
+                        Pos=0,0,2
+                        Size=44,43
+                    }
+                    Name=AttSplPanel
+                    Pos=130,110,1
+                    Size=44,43
+                }
+                Panel ^{
+                    GraphButton ^{
+                        ImageDown=GI,Bm.FormShip2.2AttSclD
+                        ImageNormal=GI,Bm.FormShip2.2AttSclN
+                        ImageNormalA=GI,Bm.FormShip2.2AttSclA
+                        Kind=Normal
+                        KindHit=Rect
+                        Name=Att4A
+                        OnMouseEnterCode ^{
+                            00=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName4'));
+                            01=str text='';
+                            02=if(ExpSkillsArray[1]>4 && ExpSkillsArray[2]>4 && ExpSkillsArray[3]>4)text=Format(CT('FormPerks.PerkText4'),'VAR','<color=0,0,255>'+2*ExpSkillsArray[4]+'</color>');
+                            03=if(ExpSkillsArray[1]<5 || ExpSkillsArray[2]<5 || ExpSkillsArray[3]<5)
+                            03 ^{
+                                00=if(ExpSkillsArray[1]<5)text=text+Format(CT('FormPerks.PerkTextNoSkill'),'SKILL','<color=255,0,0>'+CT('FormPerks.PerkName1')+' '+CT('FormPerks.PerkTextLevel5')+'</color>');
+                                01=if(ExpSkillsArray[2]<5)text=text+Format(CT('FormPerks.PerkTextNoSkill'),'SKILL','<color=255,0,0>'+CT('FormPerks.PerkName2')+' '+CT('FormPerks.PerkTextLevel5')+'</color>');
+                                02=if(ExpSkillsArray[3]<5)text=text+Format(CT('FormPerks.PerkTextNoSkill'),'SKILL','<color=255,0,0>'+CT('FormPerks.PerkName3')+' '+CT('FormPerks.PerkTextLevel5')+'</color>');
+                            }
+                            04=if(ExpSkillsArray[4]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+45000+'</color>');
+                            05=CustomInterfaceText('PerkText',text);
+                        }
+                        OnMouseLeaveCode ^{
+                            00=CustomInterfaceText('PerkTextName','');
+                            01=CustomInterfaceText('PerkText','');
+                        }
+                        OnPressCode ^{
+                            00=if(ExpSkillsArray[1]<5 || ExpSkillsArray[2]<5 || ExpSkillsArray[3]<5 || ExpSkillsArray[4]>4)exit;
+                            01=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName4'));
+                            02=ExpSkillsArray[4]=ExpSkillsArray[4]+1;
+                            03=str text='';
+                            04=ShipFreeExp(Player(),ShipFreeExp(Player())-45000);
+                            05=if(ExpSkillsArray[1]>4 && ExpSkillsArray[2]>4 && ExpSkillsArray[3]>4)text=Format(CT('FormPerks.PerkText4'),'VAR','<color=0,0,255>'+2*ExpSkillsArray[4]+'</color>');
+                            06=if(ExpSkillsArray[4]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+45000+'</color>');
+                            07=CustomInterfaceText('PerkText',text);
+                            08=int i=0;
+                            09=int Zstate=-1;
+                            10=for(i=1;i<13;i=i+1)
+                            10 ^{
+                                00=CustomInterfaceSize('PerkScaleF'+i,ExpSkillsArray[i]*15,8);
+                                01=if(i<5 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),0)>5)Zstate=3;
+                                02=if(i>4 && i<9 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),1)>5)Zstate=3;
+                                03=if(i>8 && ShipFreeExp(Player())>=40000 && ShipSkill(Player(),2)>5)Zstate=3;
+                                04=CustomInterfacePosZ('Perk'+i+'H',Zstate);
+                                05=Zstate=-1;
+                            }
+                        }
+                        Pos=0,0,1
+                        Size=44,43
+                        Style=Style.GB.SoundNormal
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2AttSclH
+                        MouseBlocking=True
+                        Name=Perk4H
+                        Pos=0,0,2
+                        Size=44,43
+                    }
+                    Name=AttSclPanel
+                    Pos=280,65,1
+                    Size=44,43
+                }
+                Panel ^{
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2ScaleF
+                        Pos=0,0,0
+                        Size=75,8
+                    }
+                    Name=PerkScaleF1
+                    Pos=37,37,2
+                    Size=75,8
+                }
+                Panel ^{
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2ScaleF
+                        Pos=0,0,0
+                        Size=75,8
+                    }
+                    Name=PerkScaleF2
+                    Pos=37,82,2
+                    Size=75,8
+                }
+                Panel ^{
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2ScaleF
+                        Pos=0,0,0
+                        Size=75,8
+                    }
+                    Name=PerkScaleF3
+                    Pos=37,127,2
+                    Size=75,8
+                }
+                Panel ^{
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2ScaleF
+                        Pos=0,0,0
+                        Size=75,8
+                    }
+                    Name=PerkScaleF4
+                    Pos=342,82,2
+                    Size=75,8
+                }
+                Pos=0,10,0
+                Size=491,591
+            }
+            Panel ^{
+                Image ^{
+                    Image=GI,Bm.FormShip2.2ScaleE
+                    Pos=35,35,3
+                    Size=79,12
+                }
+                Image ^{
+                    Image=GI,Bm.FormShip2.2ScaleE
+                    Pos=35,80,3
+                    Size=79,12
+                }
+                Image ^{
+                    Image=GI,Bm.FormShip2.2ScaleE
+                    Pos=35,125,3
+                    Size=79,12
+                }
+                Image ^{
+                    Image=GI,Bm.FormShip2.2ScaleE
+                    Pos=340,80,3
+                    Size=79,12
+                }
+                Image ^{
+                    Image=GI,Bm.FormShip2.2ArrowsB
+                    Pos=160,38,4
+                    Size=120,94
+                }
+                Name=EvadePanel
+                Panel ^{
+                    GraphButton ^{
+                        ImageDown=GI,Bm.FormShip2.2Evd1D
+                        ImageNormal=GI,Bm.FormShip2.2Evd1N
+                        ImageNormalA=GI,Bm.FormShip2.2Evd1A
+                        Kind=Normal
+                        KindHit=Rect
+                        Name=Evd1A
+                        OnMouseEnterCode ^{
+                            00=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName5'));
+                            01=str text=Format(CT('FormPerks.PerkText5'),'VAR','<color=0,0,255>'+3*ExpSkillsArray[5]+'</color>');
+                            02=if(ExpSkillsArray[5]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+45000+'</color>');
+                            03=CustomInterfaceText('PerkText',text);
+                        }
+                        OnMouseLeaveCode ^{
+                            00=CustomInterfaceText('PerkTextName','');
+                            01=CustomInterfaceText('PerkText','');
+                        }
+                        OnPressCode ^{
+                            00=if(ExpSkillsArray[5]>4)exit;
+                            01=ExpSkillsArray[5]=ExpSkillsArray[5]+1;
+                            02=ShipFreeExp(Player(),ShipFreeExp(Player())-45000);
+                            04=int i=0;
+                            05=int Zstate=-1;
+                            06=for(i=1;i<13;i=i+1)
+                            06 ^{
+                                00=CustomInterfaceSize('PerkScaleF'+i,ExpSkillsArray[i]*15,8);
+                                01=if(i<5 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),0)>5)Zstate=3;
+                                02=if(i>4 && i<9 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),1)>5)Zstate=3;
+                                03=if(i>8 && ShipFreeExp(Player())>=40000 && ShipSkill(Player(),2)>5)Zstate=3;
+                                04=CustomInterfacePosZ('Perk'+i+'H',Zstate);
+                                05=Zstate=-1;
+                            }
+                            07=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName5'));
+                            08=str text=Format(CT('FormPerks.PerkText5'),'VAR','<color=0,0,255>'+3*ExpSkillsArray[5]+'</color>');
+                            09=if(ExpSkillsArray[5]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+45000+'</color>');
+                            10=CustomInterfaceText('PerkText',text);
+                        }
+                        Pos=0,0,0
+                        Size=44,43
+                        Style=Style.GB.SoundNormal
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2Evd1H
+                        MouseBlocking=True
+                        Name=Perk5H
+                        Pos=0,0,2
+                        Size=44,43
+                    }
+                    Name=Evd1Panel
+                    Pos=130,20,1
+                    Size=44,43
+                }
+                Panel ^{
+                    GraphButton ^{
+                        ImageDown=GI,Bm.FormShip2.2Evd2D
+                        ImageNormal=GI,Bm.FormShip2.2Evd2N
+                        ImageNormalA=GI,Bm.FormShip2.2Evd2A
+                        Kind=Normal
+                        KindHit=Rect
+                        Name=Evd2A
+                        OnMouseEnterCode ^{
+                            00=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName6'));
+                            01=str text=Format(CT('FormPerks.PerkText6'),'VAR','<color=0,0,255>'+3*ExpSkillsArray[6]+'</color>');
+                            02=if(ExpSkillsArray[6]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+45000+'</color>');
+                            03=CustomInterfaceText('PerkText',text);
+                        }
+                        OnMouseLeaveCode ^{
+                            00=CustomInterfaceText('PerkTextName','');
+                            01=CustomInterfaceText('PerkText','');
+                        }
+                        OnPressCode ^{
+                            00=if(ExpSkillsArray[6]>4)exit;
+                            01=ExpSkillsArray[6]=ExpSkillsArray[6]+1;
+                            02=ShipFreeExp(Player(),ShipFreeExp(Player())-45000);
+                            04=int i=0;
+                            05=int Zstate=-1;
+                            06=for(i=1;i<13;i=i+1)
+                            06 ^{
+                                00=CustomInterfaceSize('PerkScaleF'+i,ExpSkillsArray[i]*15,8);
+                                01=if(i<5 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),0)>5)Zstate=3;
+                                02=if(i>4 && i<9 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),1)>5)Zstate=3;
+                                03=if(i>8 && ShipFreeExp(Player())>=40000 && ShipSkill(Player(),2)>5)Zstate=3;
+                                04=CustomInterfacePosZ('Perk'+i+'H',Zstate);
+                                05=Zstate=-1;
+                            }
+                            07=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName6'));
+                            08=str text=Format(CT('FormPerks.PerkText6'),'VAR','<color=0,0,255>'+3*ExpSkillsArray[6]+'</color>');
+                            09=if(ExpSkillsArray[6]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+45000+'</color>');
+                            10=CustomInterfaceText('PerkText',text);
+                        }
+                        Pos=0,0,1
+                        Size=44,43
+                        Style=Style.GB.SoundNormal
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2Evd2H
+                        MouseBlocking=True
+                        Name=Perk6H
+                        Pos=0,0,2
+                        Size=44,43
+                    }
+                    Name=Evd2Panel
+                    Pos=130,65,1
+                    Size=44,43
+                }
+                Panel ^{
+                    GraphButton ^{
+                        ImageDown=GI,Bm.FormShip2.2Evd3D
+                        ImageNormal=GI,Bm.FormShip2.2Evd3N
+                        ImageNormalA=GI,Bm.FormShip2.2Evd3A
+                        Kind=Normal
+                        KindHit=Rect
+                        Name=Evd3A
+                        OnMouseEnterCode ^{
+                            00=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName7'));
+                            01=str text=Format(CT('FormPerks.PerkText7'),'VAR','<color=0,0,255>'+3*ExpSkillsArray[7]+'</color>');
+                            02=if(ExpSkillsArray[7]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+45000+'</color>');
+                            03=CustomInterfaceText('PerkText',text);
+                        }
+                        OnMouseLeaveCode ^{
+                            00=CustomInterfaceText('PerkTextName','');
+                            01=CustomInterfaceText('PerkText','');
+                        }
+                        OnPressCode ^{
+                            00=if(ExpSkillsArray[7]>4)exit;
+                            01=ExpSkillsArray[7]=ExpSkillsArray[7]+1;
+                            02=ShipFreeExp(Player(),ShipFreeExp(Player())-45000);
+                            04=int i=0;
+                            05=int Zstate=-1;
+                            06=for(i=1;i<13;i=i+1)
+                            06 ^{
+                                00=CustomInterfaceSize('PerkScaleF'+i,ExpSkillsArray[i]*15,8);
+                                01=if(i<5 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),0)>5)Zstate=3;
+                                02=if(i>4 && i<9 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),1)>5)Zstate=3;
+                                03=if(i>8 && ShipFreeExp(Player())>=40000 && ShipSkill(Player(),2)>5)Zstate=3;
+                                04=CustomInterfacePosZ('Perk'+i+'H',Zstate);
+                                05=Zstate=-1;
+                            }
+                            07=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName7'));
+                            08=str text=Format(CT('FormPerks.PerkText7'),'VAR','<color=0,0,255>'+3*ExpSkillsArray[7]+'</color>');
+                            09=if(ExpSkillsArray[7]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+45000+'</color>');
+                            10=CustomInterfaceText('PerkText',text);
+                        }
+                        Pos=0,0,1
+                        Size=44,43
+                        Style=Style.GB.SoundNormal
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2Evd3H
+                        MouseBlocking=True
+                        Name=Perk7H
+                        Pos=0,0,2
+                        Size=44,43
+                    }
+                    Name=Evd3Panel
+                    Pos=130,110,1
+                    Size=44,43
+                }
+                Panel ^{
+                    GraphButton ^{
+                        ImageDown=GI,Bm.FormShip2.2EvdSclD
+                        ImageNormal=GI,Bm.FormShip2.2EvdSclN
+                        ImageNormalA=GI,Bm.FormShip2.2EvdSclA
+                        Kind=Normal
+                        KindHit=Rect
+                        Name=EvdSclA
+                        OnMouseEnterCode ^{
+                            00=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName8'));
+                            01=str text='';
+                            02=if(ExpSkillsArray[5]>4 && ExpSkillsArray[6]>4 && ExpSkillsArray[7]>4)text=Format(CT('FormPerks.PerkText8'),'VAR','<color=0,0,255>'+2*ExpSkillsArray[8]+'</color>');
+                            03=if(ExpSkillsArray[5]<5 || ExpSkillsArray[6]<5 || ExpSkillsArray[7]<5)
+                            03 ^{
+                                00=if(ExpSkillsArray[5]<5)text=text+Format(CT('FormPerks.PerkTextNoSkill'),'SKILL','<color=255,0,0>'+CT('FormPerks.PerkName5')+' '+CT('FormPerks.PerkTextLevel5')+'</color>');
+                                01=if(ExpSkillsArray[6]<5)text=text+Format(CT('FormPerks.PerkTextNoSkill'),'SKILL','<color=255,0,0>'+CT('FormPerks.PerkName6')+' '+CT('FormPerks.PerkTextLevel5')+'</color>');
+                                02=if(ExpSkillsArray[7]<5)text=text+Format(CT('FormPerks.PerkTextNoSkill'),'SKILL','<color=255,0,0>'+CT('FormPerks.PerkName7')+' '+CT('FormPerks.PerkTextLevel5')+'</color>');
+                            }
+                            04=if(ExpSkillsArray[8]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+45000+'</color>');
+                            05=CustomInterfaceText('PerkText',text);
+                        }
+                        OnMouseLeaveCode ^{
+                            00=CustomInterfaceText('PerkTextName','');
+                            01=CustomInterfaceText('PerkText','');
+                        }
+                        OnPressCode ^{
+                            00=if(ExpSkillsArray[5]<5 || ExpSkillsArray[6]<5 || ExpSkillsArray[7]<5 || ExpSkillsArray[8]>4)exit;
+                            01=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName8'));
+                            02=ExpSkillsArray[8]=ExpSkillsArray[8]+1;
+                            03=str text='';
+                            04=ShipFreeExp(Player(),ShipFreeExp(Player())-45000);
+                            05=if(ExpSkillsArray[5]>4 && ExpSkillsArray[6]>4 && ExpSkillsArray[7]>4)text=Format(CT('FormPerks.PerkText8'),'VAR','<color=0,0,255>'+2*ExpSkillsArray[8]+'</color>');
+                            06=if(ExpSkillsArray[8]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+45000+'</color>');
+                            07=CustomInterfaceText('PerkText',text);
+                            08=int i=0;
+                            09=int Zstate=-1;
+                            10=for(i=1;i<13;i=i+1)
+                            10 ^{
+                                00=CustomInterfaceSize('PerkScaleF'+i,ExpSkillsArray[i]*15,8);
+                                01=if(i<5 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),0)>5)Zstate=3;
+                                02=if(i>4 && i<9 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),1)>5)Zstate=3;
+                                03=if(i>8 && ShipFreeExp(Player())>=40000 && ShipSkill(Player(),2)>5)Zstate=3;
+                                04=CustomInterfacePosZ('Perk'+i+'H',Zstate);
+                                05=Zstate=-1;
+                            }
+                        }
+                        Pos=0,0,1
+                        Size=44,43
+                        Style=Style.GB.SoundNormal
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2EvdSclH
+                        MouseBlocking=True
+                        Name=Perk8H
+                        Pos=0,0,2
+                        Size=44,43
+                    }
+                    Name=AttSclPanel
+                    Pos=280,65,1
+                    Size=44,43
+                }
+                Panel ^{
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2ScaleF
+                        Pos=0,0,0
+                        Size=75,8
+                    }
+                    Name=PerkScaleF5
+                    Pos=37,37,2
+                    Size=75,8
+                }
+                Panel ^{
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2ScaleF
+                        Pos=0,0,0
+                        Size=75,8
+                    }
+                    Name=PerkScaleF6
+                    Pos=37,82,2
+                    Size=75,8
+                }
+                Panel ^{
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2ScaleF
+                        Pos=0,0,0
+                        Size=75,8
+                    }
+                    Name=PerkScaleF7
+                    Pos=37,127,2
+                    Size=75,8
+                }
+                Panel ^{
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2ScaleF
+                        Pos=0,0,0
+                        Size=75,8
+                    }
+                    Name=PerkScaleF8
+                    Pos=342,82,2
+                    Size=75,8
+                }
+                Pos=0,150,0
+                Size=491,591
+            }
+            Panel ^{
+                Image ^{
+                    Image=GI,Bm.FormShip2.2ScaleE
+                    Pos=35,35,3
+                    Size=79,12
+                }
+                Image ^{
+                    Image=GI,Bm.FormShip2.2ScaleE
+                    Pos=35,80,3
+                    Size=79,12
+                }
+                Image ^{
+                    Image=GI,Bm.FormShip2.2ScaleE
+                    Pos=35,125,3
+                    Size=79,12
+                }
+                Image ^{
+                    Image=GI,Bm.FormShip2.2ScaleE
+                    Pos=340,80,3
+                    Size=79,12
+                }
+                Image ^{
+                    Image=GI,Bm.FormShip2.2ArrowsB
+                    Pos=160,38,4
+                    Size=120,94
+                }
+                Name=UpgradePanel
+                Panel ^{
+                    GraphButton ^{
+                        ImageDown=GI,Bm.FormShip2.2Upg1D
+                        ImageNormal=GI,Bm.FormShip2.2Upg1N
+                        ImageNormalA=GI,Bm.FormShip2.2Upg1A
+                        Kind=Normal
+                        KindHit=Rect
+                        Name=Upg1A
+                        OnMouseEnterCode ^{
+                            00=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName9'));
+                            01=str text=Format(CT('FormPerks.PerkText9'),'VAR','<color=0,0,255>'+5*ExpSkillsArray[9]+'</color>');
+                            02=if(ExpSkillsArray[9]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+40000+'</color>');
+                            03=CustomInterfaceText('PerkText',text);
+                        }
+                        OnMouseLeaveCode ^{
+                            00=CustomInterfaceText('PerkTextName','');
+                            01=CustomInterfaceText('PerkText','');
+                        }
+                        OnPressCode ^{
+                            00=if(ExpSkillsArray[9]>4)exit;
+                            01=ExpSkillsArray[9]=ExpSkillsArray[9]+1;
+                            02=ShipFreeExp(Player(),ShipFreeExp(Player())-40000);
+                            04=int i=0;
+                            05=int Zstate=-1;
+                            06=for(i=1;i<13;i=i+1)
+                            06 ^{
+                                00=CustomInterfaceSize('PerkScaleF'+i,ExpSkillsArray[i]*15,8);
+                                01=if(i<5 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),0)>5)Zstate=3;
+                                02=if(i>4 && i<9 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),1)>5)Zstate=3;
+                                03=if(i>8 && ShipFreeExp(Player())>=40000 && ShipSkill(Player(),2)>5)Zstate=3;
+                                04=CustomInterfacePosZ('Perk'+i+'H',Zstate);
+                                05=Zstate=-1;
+                            }
+                            07=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName9'));
+                            08=str text=Format(CT('FormPerks.PerkText9'),'VAR','<color=0,0,255>'+5*ExpSkillsArray[9]+'</color>');
+                            09=if(ExpSkillsArray[9]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+40000+'</color>');
+                            10=CustomInterfaceText('PerkText',text);
+                        }
+                        Pos=0,0,0
+                        Size=44,43
+                        Style=Style.GB.SoundNormal
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2Upg1H
+                        MouseBlocking=True
+                        Name=Perk9H
+                        Pos=0,0,2
+                        Size=44,43
+                    }
+                    Name=Upg1Panel
+                    Pos=130,20,1
+                    Size=44,43
+                }
+                Panel ^{
+                    GraphButton ^{
+                        ImageDown=GI,Bm.FormShip2.2Upg2D
+                        ImageNormal=GI,Bm.FormShip2.2Upg2N
+                        ImageNormalA=GI,Bm.FormShip2.2Upg2A
+                        Kind=Normal
+                        KindHit=Rect
+                        Name=Upg2A
+                        OnMouseEnterCode ^{
+                            00=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName10'));
+                            01=str text=Format(CT('FormPerks.PerkText10'),'VAR','<color=0,0,255>'+5*ExpSkillsArray[10]+'</color>');
+                            02=if(ExpSkillsArray[10]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+40000+'</color>');
+                            03=CustomInterfaceText('PerkText',text);
+                        }
+                        OnMouseLeaveCode ^{
+                            00=CustomInterfaceText('PerkTextName','');
+                            01=CustomInterfaceText('PerkText','');
+                        }
+                        OnPressCode ^{
+                            00=if(ExpSkillsArray[10]>4)exit;
+                            01=ExpSkillsArray[10]=ExpSkillsArray[10]+1;
+                            02=ShipFreeExp(Player(),ShipFreeExp(Player())-40000);
+                            04=int i=0;
+                            05=int Zstate=-1;
+                            06=for(i=1;i<13;i=i+1)
+                            06 ^{
+                                00=CustomInterfaceSize('PerkScaleF'+i,ExpSkillsArray[i]*15,8);
+                                01=if(i<5 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),0)>5)Zstate=3;
+                                02=if(i>4 && i<9 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),1)>5)Zstate=3;
+                                03=if(i>8 && ShipFreeExp(Player())>=40000 && ShipSkill(Player(),2)>5)Zstate=3;
+                                04=CustomInterfacePosZ('Perk'+i+'H',Zstate);
+                                05=Zstate=-1;
+                            }
+                            07=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName10'));
+                            08=str text=Format(CT('FormPerks.PerkText10'),'VAR','<color=0,0,255>'+5*ExpSkillsArray[10]+'</color>');
+                            09=if(ExpSkillsArray[10]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+40000+'</color>');
+                            10=CustomInterfaceText('PerkText',text);
+                        }
+                        Pos=0,0,1
+                        Size=44,43
+                        Style=Style.GB.SoundNormal
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2Upg2H
+                        MouseBlocking=True
+                        Name=Perk10H
+                        Pos=0,0,2
+                        Size=44,43
+                    }
+                    Name=Upg2Panel
+                    Pos=130,65,1
+                    Size=44,43
+                }
+                Panel ^{
+                    GraphButton ^{
+                        ImageDown=GI,Bm.FormShip2.2Upg3D
+                        ImageNormal=GI,Bm.FormShip2.2Upg3N
+                        ImageNormalA=GI,Bm.FormShip2.2Upg3A
+                        Kind=Normal
+                        KindHit=Rect
+                        Name=Upg3A
+                        OnMouseEnterCode ^{
+                            00=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName11'));
+                            01=str text=Format(CT('FormPerks.PerkText11'),'VAR','<color=0,0,255>'+5*ExpSkillsArray[11]+'</color>');
+                            02=if(ExpSkillsArray[11]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+40000+'</color>');
+                            03=CustomInterfaceText('PerkText',text);
+                        }
+                        OnMouseLeaveCode ^{
+                            00=CustomInterfaceText('PerkTextName','');
+                            01=CustomInterfaceText('PerkText','');
+                        }
+                        OnPressCode ^{
+                            00=if(ExpSkillsArray[11]>4)exit;
+                            01=ExpSkillsArray[11]=ExpSkillsArray[11]+1;
+                            02=ShipFreeExp(Player(),ShipFreeExp(Player())-40000);
+                            04=int i=0;
+                            05=int Zstate=-1;
+                            06=for(i=1;i<13;i=i+1)
+                            06 ^{
+                                00=CustomInterfaceSize('PerkScaleF'+i,ExpSkillsArray[i]*15,8);
+                                01=if(i<5 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),0)>5)Zstate=3;
+                                02=if(i>4 && i<9 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),1)>5)Zstate=3;
+                                03=if(i>8 && ShipFreeExp(Player())>=40000 && ShipSkill(Player(),2)>5)Zstate=3;
+                                04=CustomInterfacePosZ('Perk'+i+'H',Zstate);
+                                05=Zstate=-1;
+                            }
+                            07=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName11'));
+                            08=str text=Format(CT('FormPerks.PerkText11'),'VAR','<color=0,0,255>'+5*ExpSkillsArray[11]+'</color>');
+                            09=if(ExpSkillsArray[11]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+40000+'</color>');
+                            10=CustomInterfaceText('PerkText',text);
+                        }
+                        Pos=0,0,1
+                        Size=44,43
+                        Style=Style.GB.SoundNormal
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2Upg3H
+                        MouseBlocking=True
+                        Name=Perk11H
+                        Pos=0,0,2
+                        Size=44,43
+                    }
+                    Name=Upg3Panel
+                    Pos=130,110,1
+                    Size=44,43
+                }
+                Panel ^{
+                    GraphButton ^{
+                        ImageDown=GI,Bm.FormShip2.2UpgSclD
+                        ImageNormal=GI,Bm.FormShip2.2UpgSclN
+                        ImageNormalA=GI,Bm.FormShip2.2UpgSclA
+                        Kind=Normal
+                        KindHit=Rect
+                        Name=UpgSclA
+                        OnMouseEnterCode ^{
+                            00=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName12'));
+                            01=str text='';
+                            02=if(ExpSkillsArray[9]>4 && ExpSkillsArray[10]>4 && ExpSkillsArray[11]>4)text=Format(CT('FormPerks.PerkText12'),'VAR','<color=0,0,255>'+5*ExpSkillsArray[12]+'</color>');
+                            03=if(ExpSkillsArray[9]<5 || ExpSkillsArray[10]<5 || ExpSkillsArray[11]<5)
+                            03 ^{
+                                00=if(ExpSkillsArray[9]<5)text=text+Format(CT('FormPerks.PerkTextNoSkill'),'SKILL','<color=255,0,0>'+CT('FormPerks.PerkName9')+' '+CT('FormPerks.PerkTextLevel5')+'</color>');
+                                01=if(ExpSkillsArray[10]<5)text=text+Format(CT('FormPerks.PerkTextNoSkill'),'SKILL','<color=255,0,0>'+CT('FormPerks.PerkName10')+' '+CT('FormPerks.PerkTextLevel5')+'</color>');
+                                02=if(ExpSkillsArray[11]<5)text=text+Format(CT('FormPerks.PerkTextNoSkill'),'SKILL','<color=255,0,0>'+CT('FormPerks.PerkName11')+' '+CT('FormPerks.PerkTextLevel5')+'</color>');
+                            }
+                            04=if(ExpSkillsArray[12]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+40000+'</color>');
+                            05=CustomInterfaceText('PerkText',text);
+                        }
+                        OnMouseLeaveCode ^{
+                            00=CustomInterfaceText('PerkTextName','');
+                            01=CustomInterfaceText('PerkText','');
+                        }
+                        OnPressCode ^{
+                            00=if(ExpSkillsArray[9]<5 || ExpSkillsArray[10]<5 || ExpSkillsArray[11]<5 || ExpSkillsArray[12]>4)exit;
+                            01=CustomInterfaceText('PerkTextName',CT('FormPerks.PerkName12'));
+                            02=ExpSkillsArray[12]=ExpSkillsArray[12]+1;
+                            03=str text='';
+                            04=ShipFreeExp(Player(),ShipFreeExp(Player())-40000);
+                            05=if(ExpSkillsArray[9]>4 && ExpSkillsArray[10]>4 && ExpSkillsArray[11]>4)text=Format(CT('FormPerks.PerkText12'),'VAR','<color=0,0,255>'+5*ExpSkillsArray[12]+'</color>');
+                            06=if(ExpSkillsArray[12]<5)text=text+Format(CT('FormPerks.PerkTextAdd'),'PNT','<color=0,0,255>'+40000+'</color>');
+                            07=CustomInterfaceText('PerkText',text);
+                            08=int i=0;
+                            09=int Zstate=-1;
+                            10=for(i=1;i<13;i=i+1)
+                            10 ^{
+                                00=CustomInterfaceSize('PerkScaleF'+i,ExpSkillsArray[i]*15,8);
+                                01=if(i<5 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),0)>5)Zstate=3;
+                                02=if(i>4 && i<9 && ShipFreeExp(Player())>=45000 && ShipSkill(Player(),1)>5)Zstate=3;
+                                03=if(i>8 && ShipFreeExp(Player())>=40000 && ShipSkill(Player(),2)>5)Zstate=3;
+                                04=CustomInterfacePosZ('Perk'+i+'H',Zstate);
+                                05=Zstate=-1;
+                            }
+                        }
+                        Pos=0,0,1
+                        Size=44,43
+                        Style=Style.GB.SoundNormal
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2UpgSclH
+                        MouseBlocking=True
+                        Name=Perk12H
+                        Pos=0,0,2
+                        Size=44,43
+                    }
+                    Name=AttSclPanel
+                    Pos=280,65,1
+                    Size=44,43
+                }
+                Panel ^{
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2ScaleF
+                        Pos=0,0,0
+                        Size=75,8
+                    }
+                    Name=PerkScaleF9
+                    Pos=37,37,2
+                    Size=75,8
+                }
+                Panel ^{
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2ScaleF
+                        Pos=0,0,0
+                        Size=75,8
+                    }
+                    Name=PerkScaleF10
+                    Pos=37,82,2
+                    Size=75,8
+                }
+                Panel ^{
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2ScaleF
+                        Pos=0,0,0
+                        Size=75,8
+                    }
+                    Name=PerkScaleF11
+                    Pos=37,127,2
+                    Size=75,8
+                }
+                Panel ^{
+                    Image ^{
+                        Image=GI,Bm.FormShip2.2ScaleF
+                        Pos=0,0,0
+                        Size=75,8
+                    }
+                    Name=PerkScaleF12
+                    Pos=342,82,2
+                    Size=75,8
+                }
+                Pos=0,290,0
+                Size=491,591
+            }
+            Pos=266,88,0
+            PosAutoCorrection=True
+            PosAutoCorrectionXCoef=0.5
+            PosAutoCorrectionYCoef=0.5
+            Size=491,591
+        }
+    }
+    Ship ^{
+        Panel ^{
+            Panel ^{
+            }
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                }
+                Panel ^{
+                    Panel ^{
+                    }
+                    Panel ^{
+                        Panel ^{
+                        }
+                        Panel ^{
+                        }
+                        Panel ^{
+                            Active=False
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormShip2.2PerkD
+                                ImageNormal=GI,Bm.FormShip2.2PerkN
+                                ImageNormalA=GI,Bm.FormShip2.2PerkA
+                                Kind=Normal
+                                KindHit=Rect
+                                Name=PerksUpButton
+                                OnPressCode ^{
+                                    00=OpenCustomForm('PerksForm');
+                                }
+                                Pos=0,0,0
+                                Size=18,18
+                                Style=Style.GB.SoundNormal
+                            }
+                            Name=PerksUpPanel
+                            Pos=220,171,0
+                            Size=18,18
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

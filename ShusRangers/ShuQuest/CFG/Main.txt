@@ -1,0 +1,156 @@
+Data ^{
+    Script ^{
+        Mod_ShuQuest=1,Script.Mod_ShuQuest
+    }
+}
+Music ^{
+    QuestSoundtrack ^{
+        ForQuest_AGuestFromTheFuture ^{
+            1=Music\REV\yozhik_a_guest_from_the_future.dat
+        }
+        ForQuest_BetelgeuseSystem ^{
+            1=Music\REV\lind_erebros_belegeuse_system.dat
+        }
+        ForQuest_BeyondReach ^{
+            1=Music\fly\Beyond_reach.dat
+        }
+        ForQuest_COSMIC ^{
+            1=Music\planet\cosmic.dat
+        }
+        ForQuest_COSMIC2 ^{
+            1=Music\planet\cosmic2.dat
+        }
+        ForQuest_ChildrenOfEltan ^{
+            1=Music\REV\wen_children_of_eltan.dat
+        }
+        ForQuest_Childville ^{
+            1=Music\REV\nikinit_childville.dat
+        }
+        ForQuest_Depth ^{
+            1=Music\REV\nikinit_glubina_base_special.dat
+        }
+        ForQuest_EndOfStory ^{
+            1=Music\REV\nikinit_end_of_story.dat
+        }
+        ForQuest_EndOfWar ^{
+            1=Music\REV\nikinit_end_of_war.dat
+        }
+        ForQuest_Fei ^{
+            1=Music\planet\FEI1.dat
+        }
+        ForQuest_FeiHymn ^{
+            1=Mods\ShusRangers\ShuQuest\DATA\Music\Gregory_Semenov-Fei_Hymn.dat
+        }
+        ForQuest_FightTheme2 ^{
+            1=Music\battle\fight2.dat
+        }
+        ForQuest_Fighter ^{
+            1=Music\REV\nikinit_fighter.dat
+        }
+        ForQuest_FlyTheme12 ^{
+            1=Music\fly\fly12.dat
+        }
+        ForQuest_Gaal ^{
+            1=Music\planet\GAAL.dat
+        }
+        ForQuest_Gladiator ^{
+            1=Music\quests\gladiator.dat
+        }
+        ForQuest_HYMN ^{
+            1=Music\special\hymn.dat
+        }
+        ForQuest_HyperDream2 ^{
+            1=Music\fly\HyperDream2.dat
+        }
+        ForQuest_Illuminator ^{
+            1=Music\REV\nikinit_illuminator.dat
+        }
+        ForQuest_Illusion ^{
+            1=Music\REV\nikinit_illusion.dat
+        }
+        ForQuest_Imperial ^{
+            1=Music\Rev\nikinit_imperial.dat
+        }
+        ForQuest_Inside ^{
+            1=Music\fly\Theo-Inside.dat
+        }
+        ForQuest_LastFlight ^{
+            1=Music\REV\nikinit_last_flight.dat
+        }
+        ForQuest_LongWayBallad ^{
+            1=Music\fly\longway.dat
+        }
+        ForQuest_Maloc ^{
+            1=Music\planet\MALLOC4.dat
+        }
+        ForQuest_MalocHymn ^{
+            1=Mods\ShusRangers\ShuQuest\DATA\Music\Gregory_Semenov-Malloc_Hymn.dat
+        }
+        ForQuest_MeteorShower ^{
+            1=Music\REV\nikinit_meteorit_rain.dat
+        }
+        ForQuest_Outroden ^{
+            1=Music\special\outroden.dat
+        }
+        ForQuest_Peleng ^{
+            1=Music\planet\WEAPON.dat
+        }
+        ForQuest_People ^{
+            1=Music\planet\PEOPLE.dat
+        }
+        ForQuest_Pulsar ^{
+            1=Mods\ShusRangers\ShuQuest\DATA\Music\SRQ\nikinit_pulsar.dat
+        }
+        ForQuest_Quasar ^{
+            1=Music\REV\nikinit_quazar.dat
+        }
+        ForQuest_RobotForce ^{
+            1=Music\planet\RobotForce.dat
+        }
+        ForQuest_Robotech ^{
+            1=Music\REV\nikinit_robotech.dat
+        }
+        ForQuest_RunningAway ^{
+            1=Music\REV\theo_running_away.dat
+        }
+        ForQuest_SilentFlower ^{
+            1=Music\special\SilentFlower.dat
+        }
+        ForQuest_SpaceIsCalling ^{
+            1=Music\special\SpaceIsCalling.dat
+        }
+        ForQuest_StarTrooper ^{
+            1=Mods\ShusRangers\ShuQuest\DATA\Music\SRQ\nikinit_star_trooper.dat
+        }
+        ForQuest_Starflight ^{
+            1=Music\fly\starflight.dat
+        }
+        ForQuest_Surf ^{
+            1=Music\fly\Surf.dat
+        }
+        ForQuest_TRASH ^{
+            1=Music\fly\trash.dat
+        }
+        ForQuest_TRIUMPH ^{
+            1=Music\special\triumph.dat
+        }
+        ForQuest_ThroughTheStars ^{
+            1=Music\REV\nikinit_through_the_stars.dat
+        }
+        ForQuest_ToTheMoon ^{
+            1=Music\REV\nikinit_flight_to_the_moon.dat
+        }
+        ForQuest_TwoStars ^{
+            1=Music\REV\nikinit_two_stars.dat
+        }
+        ForQuest_WaitingForYou ^{
+            1=Music\REV\theo_waiting_for_you.dat
+        }
+        ForQuest_WanderingWarrior ^{
+            1=Music\REV\nikinit_wandering_warrior.dat
+        }
+        ForQuest_Warman ^{
+            1=Music\REV\nikinit_warman.dat
+        }
+    }
+}

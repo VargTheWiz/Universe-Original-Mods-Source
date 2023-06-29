@@ -1,0 +1,354 @@
+PlanetQuest ^{
+    ItemForPlanetQuest ^{
+        71=none
+        72=none
+        73=none
+        74=none
+        75=Usl_GradDoc
+        76=Usl_FishCont
+        77=none
+        78=none
+        79=none
+        80=none
+        81=Usl_IdealPenchecryak
+        82=none
+        83=none
+        84=none
+        85=Usl_HeadBowl
+        86=none
+        87=none
+        88=Usl_ScnDisc
+        89=none
+        90=none
+        91=Usl_Doc
+        92=none
+        93=none
+        94=none
+        95=none
+    }
+    List ^{
+        71 ^{
+            Access=13
+            Dif=15
+            Genre=головоломка
+            Group=2
+            Image=Bm.PQI.Boat_03
+            Length=0
+            Name=Лодка
+        }
+        72 ^{
+            Access=13
+            Dif=50
+            Genre=шпионаж
+            Group=2
+            Image=Bm.PQI.Newflora_00
+            Length=1
+            Name=Неофлора
+        }
+        73 ^{
+            Access=13
+            Dif=50
+            Genre=штурм
+            Group=2
+            Image=Bm.PQI.Commando_01
+            Length=1
+            Name=Коммандо
+        }
+        74 ^{
+            Access=14
+            Dif=10
+            Genre=симулятор "подопытной крысы"
+            Group=2
+            Image=Bm.PQI.Diehard_01
+            Length=0
+            Name=Страшная смерть
+        }
+        75 ^{
+            Access=14
+            Dif=50
+            Genre=сдача вступительных экзаменов
+            Group=2
+            Image=Bm.PQI.Examen_00
+            Length=1
+            Name=Экзамен
+        }
+        76 ^{
+            Access=14
+            Dif=50
+            Genre=симулятор рыбалки
+            Group=2
+            Image=Bm.PQI.Fishing_03
+            Length=1
+            Name=Рыбалка
+        }
+        77 ^{
+            Access=15
+            Dif=85
+            Genre=шпионаж, азартные игры
+            Group=2
+            Image=Bm.PQI.Galaxy_00
+            Length=1
+            Name=Галактика
+        }
+        78 ^{
+            Access=15
+            Dif=60
+            Genre=логическая головоломка
+            Group=2
+            Image=Bm.PQI.Ikebana_02
+            Length=1
+            Name=Иикэ-Баана
+        }
+        79 ^{
+            Access=15
+            Dif=75
+            Genre=детектив
+            Group=2
+            Image=Bm.PQI.Murder_01
+            Length=3
+            Name=Убийство
+        }
+        80 ^{
+            Access=16
+            Dif=50
+            Genre=испытание оружия
+            Group=2
+            Image=Bm.PQI.Penetrator_01
+            Length=2
+            Name=Пенетратор
+        }
+        81 ^{
+            Access=16
+            Dif=100
+            Genre=симулятор выведения пенчекряка
+            Group=2
+            Image=Bm.PQI.Poroda_00
+            Length=2
+            Name=Порода
+        }
+        82 ^{
+            Access=16
+            Dif=30
+            Genre=гонки на древних машинах
+            Group=2
+            Image=Bm.PQI.Rush_02
+            Length=0
+            Name=Гонка
+        }
+        83 ^{
+            Access=16
+            Dif=28
+            Genre=шпионаж, установка жучков
+            Group=2
+            Image=Bm.PQI.Spy_00
+            Length=0
+            Name=Шпион
+        }
+        84 ^{
+            Access=17
+            Dif=20
+            Genre=головоломка
+            Group=2
+            Image=Bm.PQI.Tomb_00
+            Length=0
+            Name=Гробница
+        }
+        85 ^{
+            Access=17
+            Dif=100
+            Genre=менеджмент
+            Group=2
+            Image=Bm.PQI.Gladiator_00
+            Length=1
+            Name=Гладиатор
+        }
+        86 ^{
+            Access=18
+            Dif=20
+            Genre=спорт-менеджер
+            Group=2
+            Image=Bm.PQI.Hachball_03
+            Length=1
+            Name=Хэчбол
+        }
+        87 ^{
+            Access=18
+            Dif=73
+            Genre=логическая головоломка
+            Group=2
+            Image=Bm.PQI.Energy_00
+            Length=1
+            Name=Энергия
+        }
+        88 ^{
+            Access=18
+            Dif=10
+            Genre=симулятор укрощения дикого гобзавра
+            Group=2
+            Image=Bm.PQI.Gobsaur_00
+            Length=0
+            Name=Гобзавр
+        }
+        89 ^{
+            Access=19
+            Dif=50
+            Genre=торговля
+            Group=2
+            Image=Bm.PQI.Menzols_00
+            Length=2
+            Name=Мензолы
+        }
+        90 ^{
+            Access=19
+            Dif=50
+            Genre=защита крепости
+            Group=2
+            Image=Bm.PQI.Siege_00
+            Length=1
+            Name=Осада
+        }
+        91 ^{
+            Access=19
+            Dif=50
+            Genre=азартная игра
+            Group=2
+            Image=Bm.PQI.Casino_00
+            Length=1
+            Name=Казино
+        }
+        92 ^{
+            Access=19
+            Dif=50
+            Genre=бродилка-стрелялка
+            Group=2
+            Image=Bm.PQI.Bondiana_00
+            Length=0
+            Name=Бондиана
+        }
+        93 ^{
+            Access=20
+            Dif=50
+            Genre=менеджмент
+            Group=2
+            Image=Bm.PQI.Build_01
+            Length=1
+            Name=Стройка
+        }
+        94 ^{
+            Access=20
+            Dif=90
+            Genre=симулятор взлома сейфа
+            Group=2
+            Image=Bm.PQI.Player_00
+            Length=3
+            Name=Бриллиант
+        }
+        95 ^{
+            Access=12
+            Dif=88
+            Genre=шпионаж
+            Group=2
+            Image=Bm.PQI.Bank_02
+            Length=1
+            Name=Банк
+        }
+    }
+    PlanetQuest ^{
+        71=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Boat.qmm
+        72=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Newflora.qmm
+        73=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Commando.qmm
+        74=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Diehard.qmm
+        75=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Examen.qmm
+        76=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Fishing.qmm
+        77=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Galaxy.qmm
+        78=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Ikebana.qmm
+        79=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Murder.qmm
+        80=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Penetrator.qmm
+        81=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Poroda.qmm
+        82=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Rush.qmm
+        83=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Spy.qmm
+        84=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Tomb.qmm
+        85=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Gladiator.qmm
+        86=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Hachball.qmm
+        87=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Energy.qmm
+        88=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Gobsaur.qmm
+        89=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Menzols.qmm
+        90=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Siege.qmm
+        91=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Casino.qmm
+        92=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Bondiana.qmm
+        93=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Build.qmm
+        94=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Diamond.qmm
+        95=Mods\OtherMods\SR1TextQuests\DATA\Quest\Rus\Bank.qmm
+    }
+    StartText ^{
+        71=Экспедиция ученых на необитаемой планете, состоящая из археологов и этнографов, столкнулась, как всегда, с неразрешимой задачей. Вы прилетели, чтобы помочь им.
+        72=Следующей вашей миссией станет поиск контейнера с неофлорой - выведенным фэянскими учеными растением. Во время выполнения задания вас будет сопровождать агент-фэянин по имени Айлаунлат.
+        73=В роли коммандо вам предстоит уничтожить завод по производству мощнейшего взрывчатого вещества - фиброгена, используемого террористами для своих целей.
+        74=Вам предстоит сыграть роль подопытного в ходе некоего эксперимента, как утверждается, безопасного. Что ж, 250 000 cr - слишком большая сумма, чтобы отказаться!
+        75=Сдать экзамены за какого-то гаальского принца? Что же, рейнджеру ни к чему не привыкать. Шпаргалки по карманам - и вперед!
+        76=Согласно указаниям Гуманитарного медицинского бюро, вам необходимо получить образцы лепрасовых рыб - мертиний, и, упаковав их в криоконтейнер, отвезти заказчику.
+        77=Как вам сообщили, вам предстоит весьма деликатное и небезопасное задание. Пора разыскать Верховного Надзирателя Куакиша для введения в курс дела.
+        78=Планета <FromPlanet> наняла вас, чтобы вы достойно представили ее на Чемпионате Галактики по Иикэ-Баане. Едва ли это окажется сложнее, чем лавировать между астероидами.
+        79=Когда-то в юности вы зачитывались детективами и мечтали стать знаменитым сыщиком. Сейчас у вас есть отличный шанс проверить свои навыки в деле, раскрыв громкое дело об убийстве журналиста!
+        80=Вы знаете только то, что прибыли сюда ради тестирования недавно разработанного малокского вооружения... Интересно, не кроется ли за этим какой-нибудь подвох?
+        81=Да уж! Придется космическому рейнджеру на какое-то время сменить профессию и заняться воспитанием идеального пенчекряка. Награда в случае успеха не заставит себя ждать.
+        82=Никогда еще фэянин не побеждал представителя другой расы в наземной гонке, но скоро вы обязательно внесете свое имя в историю соревнований на скорость, прославив вашу расу!
+        83=Вам предстоит под видом туриста проникнуть в президентский дворец и установить там 36 жучков.
+        84=Археологи попросили вас помочь им в решении загадки прошлого. Руны, притчи, вековая пыль - разве все это может быть вам помехой?
+        85=Вам никогда еще не доводилось становиться наставником воина-гладиатора? Сегодня вам выпал уникальный шанс показать толпе зрителей настоящее шоу!
+        86=На этот раз вам предстоит выступить тренером человеческой сборной по хэчболу. Станет ли ваша команда чемпионом вопреки предположениям букмекеров?
+        87=Ремонт пси-электростанции - непростая задача! Однако права на ошибку нет - на кону судьба целой планеты.
+        88=Необходимо разыскать двух членов пропавшей экспедиции. Ну или хотя бы их диск с экспедиционными записями.
+        89=Что там какая-то Галактическая торговая биржа?! Вот выкупить идол мензолов - обожающих торговлю аборигенов - действительно задача не из легких!
+        90=Вы - новый командир малокской цитадели Хардор. Пришло время задействовать ваши выдающиеся лидерские качества!
+        91=Необходимо обыграть некоего Глыдла в новую игру - клюг. Азартные игры - что для рейнджера может быть роднее, чем свой корабль и постоянные приключения?
+        92=Вам обещали "несколько щепетильное" задание. Интересно, чем же вам предстоит заняться?
+        93=Вам предстоит возвести малокский форпост. К счастью, возиться с автолопатой самому не придется: вы будете руководить непосредственно процессом.
+        94=На этот раз ваши навыки взломщика понадобились президенту планеты <FromPlanet> для проведения операции по краже знаменитого бриллианта Софиты.
+        95=Вы вызвались помочь гаальским агентам на планете <ToPlanet> расправиться с крупной пиратской сетью пеленгов. Задание обещает быть интересным.
+    }
+}
+UselessItems ^{
+    Usl_Doc ^{
+        Cost=Average
+        Name=Документ
+        Owner=Peleng
+        Size=1
+        Text=Подписанный контракт на передачу авторских прав.
+    }
+    Usl_FishCont ^{
+        Cost=Small
+        Name=Криокапсула
+        Owner=Peleng
+        Size=10
+        Text=Контейнер-криокапсула с живыми лепрасовыми рыбами-мертиниями.
+    }
+    Usl_GradDoc ^{
+        Cost=Huge
+        Name=Документ
+        Owner=Gaal
+        Size=1
+        Text=Документ для наследного принца о поступлении в университет.
+    }
+    Usl_HeadBowl ^{
+        Cost=Big
+        Name=Кубок
+        Owner=Maloc
+        Size=3
+        Text=Кубок победителя соревнований гладиаторов.
+    }
+    Usl_IdealPenchecryak ^{
+        Cost=Average
+        Name=Пенчекряк
+        Owner=Maloc
+        Size=35
+        Text=Клетка с идеальным пенчекряком.
+    }
+    Usl_ScnDisc ^{
+        Cost=Average
+        Name=Диск
+        Owner=Fei
+        Size=1
+        Text=На диске записи фэянских ученых.
+    }
+}

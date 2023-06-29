@@ -1,0 +1,21 @@
+ABMap ~{
+    Fifth_Dimension=Mods\Revolution\RevABMaps\DATA\ABMap\Fifth_Dimension.map
+    Fifth_Dimension_=Mods\Revolution\RevABMaps\DATA\ABMap\Fifth_Dimension.opt
+    Nonsense=Mods\Revolution\RevABMaps\DATA\ABMap\Nonsense.map
+    Nonsense_=Mods\Revolution\RevABMaps\DATA\ABMap\Nonsense.opt
+    Pulsar=Mods\Revolution\RevABMaps\DATA\ABMap\Pulsar.map
+    Pulsar_=Mods\Revolution\RevABMaps\DATA\ABMap\Pulsar.opt
+    Spider's_Lair=Mods\Revolution\RevABMaps\DATA\ABMap\Spider's_Lair.map
+    Spider's_Lair_=Mods\Revolution\RevABMaps\DATA\ABMap\Spider's_Lair.opt
+    Strolocobs=Mods\Revolution\RevABMaps\DATA\ABMap\Strolocobs.map
+    Strolocobs_=Mods\Revolution\RevABMaps\DATA\ABMap\Strolocobs.opt
+    Tachanka=Mods\Revolution\RevABMaps\DATA\ABMap\Tachanka.map
+    Tachanka_=Mods\Revolution\RevABMaps\DATA\ABMap\Tachanka.opt
+}
+Bm ~{
+    ABWall ~{
+        2 ~{
+            Spiderweb_01=Mods\Revolution\RevABMaps\DATA\AB\SpiderWeb.gai
+        }
+    }
+}

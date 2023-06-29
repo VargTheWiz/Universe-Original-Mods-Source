@@ -1,0 +1,53 @@
+Script ^{
+    Mod_RevDiplomat ~{
+        0=<0> --> <PlayerFull><br><br><Player>, you're a drag! What, could not kill these scumbags before?
+        50=<Player>, you motherfucker! We're under attack, get those bastards out of here now! Otherwise, neither they nor you will be greeted.
+        2=I am a high-ranking official from the planet <0>. A bunch of pirates are chasing me. They can destroy me. You need to save me, otherwise anything can happen!<br>Listen, are you really that stupid for not understanding this right away, huh?
+        53=<Player>, what are you talking on the intercom over there?! We have already been destroyed almost, <0> units of structure left, and you have the courage to get in touch with me?! <br>Quickly killed these pirates, so that I would not be nervous.
+        43=What are you up to?
+        55=Hurry him here! We will now cut a door into this capsule.<br>I hope the humanoid contained inside is non-aggressive? <br>Ah, to hell with him, you still need to save.<br><Player>, wait a few minutes, go to a bar, have a drink. Here's <0> cr, order a mug of yanwelb.
+        54=Ah, <Player>, hungover already? Well, he did the right thing. <br>Our specialists sawed out the door, found there a terribly swearing ambassador named Sotikin. Despite the threats to us and to you, he still decided to thank his savior. Well, you will not be deprived. The Ambassador offers a choice of two reward options: <0> cr, or he can put in a good word for you at a meeting of the Galactic Council. Choose.
+        7=Great choice, <Player>!<br>The money has already been deposited into your account, all the best.
+        8=Excellent, I will pass on your request to Sotikin. <br>Farewell.
+        24=Hey, brother. I saw how you picked up the capsule. Listen, why do you need this piece of metal? Give it to me, huh?
+        51=You're not as simple as you seem, <Player>!<br>I can offer you <0> cr, <1> tons of weapons, or <2> tons of drugs. Choose.
+        32=<Player>, back off, I'm at work.
+        52=That's not very brotherhoodly, <Player>! Well, okay, okay, you're an authoritative thief, I won't attack <0> anymore, just don't hit me.
+        36=And who do you want to establish a relationship with?
+        49=Haha, ragamuffin. Who did you decide to hit? Now we will destroy you together with the diplomat.
+        56=Thank you for your support. By the way, I spoke with the familiar ambassadors of other races, so I managed to raise your authority a little among the governments of the planets of different races.
+        57=Okay, so be it, since you did save me, I'll give you a capsule. <br>Maybe you can help out for it, something valuable on a scientific basis.
+        61=Are you bringing an ordinary escape pod to the Science Base and hoping to get something valuable for it? Ha. We release such capsules every day for very important people.<br>But in order not to offend Ambassador Satikin, we offer you a choice of two options.
+        9=Uh... What?
+        10=Hold on, you don't have long. Right now I'll smash these pirates
+        46=I don't communicate with boors and snickering officials
+        48=I need to cut a hole in the capsule. They say there is a humanoid
+        13=Wait for operation to finish
+        14=I choose money
+        16=Bye
+        23=I need to improve my relationship
+        26=Indeed, no one will even buy it. I'll throw it out now, hold on
+        27=Uh no, that won't do. What can you offer for her?
+        28=No, I won't give you anything
+        29=Give me weapons
+        30=I'm for drugs
+        34=Get away from him or you'll have to deal with me!
+        37=With Gaalians
+        38=With Feyans
+        39=With Pelengs
+        40=With Humans
+        41=With Maloqs
+        59=Glad to help
+        60=One very influential ambassador gave me one wonderful capsule for saving his life. <br>What could I get in return for it?
+    }
+}
+UselessItems ^{
+    Capsule ^{
+        Cost=Huge
+        Description=
+        Name=Lifepod
+        Owner=People
+        Size=1
+        Text=Used to evacuate from a ship in distress.
+    }
+}

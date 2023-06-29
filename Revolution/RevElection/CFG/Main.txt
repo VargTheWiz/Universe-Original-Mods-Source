@@ -1,0 +1,15 @@
+Data ~{
+    Script ^{
+        Mod_RevElection=1,Script.Mod_RevElection
+    }
+    SE ^{
+        Item ^{
+            Capsule ^{
+                1Image=Bm.ItemsUseless.1Capsule_c
+                2Image=Bm.ItemsUseless.2Capsule_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+        }
+    }
+}

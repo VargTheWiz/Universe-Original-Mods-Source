@@ -1,0 +1,138 @@
+Data ^{
+    SE ^{
+        Item ~{
+            Mod_ExpRC_UnknownMM0_0 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM0_1 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM0_2 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM0_3 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM0_4 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM1_0 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM1_1 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM1_2 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM1_3 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM1_4 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM2_0 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM2_1 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM2_2 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM2_3 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM2_4 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM3_0 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM3_1 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM3_2 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM3_3 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            Mod_ExpRC_UnknownMM3_4 ^{
+                1Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                2Image=Bm.Container.2Mod_ExpRC_UnknownMM
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            mm_Exp ^{
+                1Image=Bm.Container.2mm_Exp
+                2Image=Bm.Container.2mm_Exp
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+        }
+    }
+    Script ^{
+        Mod_ExpRC=1,Script.Mod_ExpRC
+    }
+    ScriptLibs ^{
+        Mod_ExpRC=UtilityFunctions
+    }
+}

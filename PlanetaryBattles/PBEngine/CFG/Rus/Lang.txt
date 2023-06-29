@@ -1,0 +1,3 @@
+RobotsMap ^{
+    MatrixOverride=Mods\\PlanetaryBattles\\PBEngine\\Matrix\\MatrixGame.dll
+}

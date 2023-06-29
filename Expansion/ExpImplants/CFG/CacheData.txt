@@ -1,0 +1,15 @@
+Bm ~{
+    FormShip2 ~{
+        2AI_61=Mods\Expansion\ExpImplants\DATA\FormShip2\inplants_main.gi
+        2AI_61L=Mods\Expansion\ExpImplants\DATA\FormShip2\inplants_main_L.gi
+        2AI_62=Mods\Expansion\ExpImplants\DATA\FormShip2\inplants_main.gi
+        2AI_62L=Mods\Expansion\ExpImplants\DATA\FormShip2\hand_imp.gi
+        2AI_63=Mods\Expansion\ExpImplants\DATA\FormShip2\inplants_main.gi
+        2AI_63L=Mods\Expansion\ExpImplants\DATA\FormShip2\eye_imp.gi
+        2AI_64=Mods\Expansion\ExpImplants\DATA\FormShip2\Cure.gi
+        2AI_64L=Mods\Expansion\ExpImplants\DATA\FormShip2\CureL.gi
+    }
+}
+Script ~{
+    Mod_ExpImplants=Mods\Expansion\ExpImplants\DATA\Script\Mod_ExpImplants.scr
+}

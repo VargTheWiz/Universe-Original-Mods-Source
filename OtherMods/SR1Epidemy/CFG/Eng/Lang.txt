@@ -1,0 +1,29 @@
+Script ^{
+    Mod_SR1Epidemy ~{
+        3=We're asking for help!
+        4=Looks like we're doomed to die in this damned space...
+        6=But hurry up, we can't last longer than <0> days!
+        8=Have you got it? Come closer.
+        17=Fly away, we are going to blow ourselves up now!
+        19=I'm too busy at the moment, find someone else.
+        20=Ok, I'll do what I can.
+        21=Yes, sure. Here it is!
+        22=I've got medicine, but it's from another planet. Do you think it will work?
+        23=Unfortunately, I cannot help you. Honestly, I'm just too busy.
+        24=Go on.
+        25=<0><br><br>SOS, SOS
+        26=<0><br>We're blowing up the ship so that we don't infect others. Ranger <Player> who refused to help us is responsible for our death!
+        27=You must bring medicines from planet <0> in <1> system and deliver them to <2> in <3> system before <4>
+        28=Thank you, perhaps, there's still hope if you are kind enough to help us. A terrible epidemic has started onboard and no one knows what the disease is... Already all the passengers and the crew have been infected and they are dying! Our home planet <0> has forbidden our landing. We have lost all hope, but then one of our passengers, a Gaalian doctor, said that he knew the symptoms, and there's a remedy for this disease on one of the Gaalian planets.
+        29=Bring the medicine here; we'll be waiting for you.
+        30=Finally! More passengers and the second pilot have died. It looks like we are running out of time! Have you brought the medicine from planet <0> ?<br>
+        31=I see. You just can't be bothered to help people who are dying! Oh, we have no hope left, and only thing we can do now is to activate the self-annihilation mechanism. Farewell, Galaxy...
+        32=OK, let's try it.
+        33=Most likely it is absolutely useless. But we will lose nothing by trying.
+        34=Wonderful medicine! The epidemic seems to have stopped. And now we've got permission for landing on planet <0>! <PlayerFull>, the passengers of our modest liner have passed round a hat and transferred <1> cr to your account as a token of our gratitude. Thank you so much! Space needs more heroes like you.
+        35=No, that's no good. You must have gone to the wrong planet! Don't you get it? We need a very special medicine that is produced on planet <0>! Oh, we have no hope left, and only one thing we can do now is to activate the self-annihilation mechanism. Farewell, Galaxy...
+        36=It's planet <0> in <1> system. If we had enough fuel, we would fly there ourselves, but we had just enough to get here. Now if nobody helps us, we will all die! <PlayerFull>, please go there and get at least one unit of medicine. We guarantee a modest compensation and our eternal gratitude.
+        37=We're doomed.
+        38=Yes, what's up?
+    }
+}

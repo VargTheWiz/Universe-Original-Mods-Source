@@ -1,0 +1,29 @@
+ABMap ^{
+    29 ^{
+        Access=1
+        Desc=Standard bubble with wrong shape. Extremely brave pilots can leave it without fight after breaking the barriers.
+        Dif=1
+        Group=1
+        Image=Mods\OtherMods\SR1ABMaps\DATA\ABMap\02_1_V02.jpg
+        Map=ABMap.02_1_V02
+        Name=Blue
+    }
+    30 ^{
+        Access=1
+        Desc=Space, which looks like Keller's black hole.
+        Dif=1
+        Group=1
+        Image=Mods\OtherMods\SR1ABMaps\DATA\ABMap\04_2_V01.jpg
+        Map=ABMap.04_2_V01
+        Name=Non-circle
+    }
+    31 ^{
+        Access=1
+        Desc=Famous closed bubble. Have a way for emergency evacuation if matters will go wrong.
+        Dif=1
+        Group=1
+        Image=Mods\OtherMods\SR1ABMaps\DATA\ABMap\04_3_V03.jpg
+        Map=ABMap.04_3_V03
+        Name=Thor
+    }
+}

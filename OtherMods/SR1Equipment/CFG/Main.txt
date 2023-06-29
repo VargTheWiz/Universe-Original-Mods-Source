@@ -1,0 +1,118 @@
+Data ^{
+    SE ^{
+        Ship ^{
+            Akrin ^{
+                SRFei ^{
+                    2ImageP=GI,Bm.ShipP.2HullSR_Fei
+                    Anim ^{
+                        0=1,[70,20-69]
+                        Normal=2,[70,0-19]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-19]
+                    }
+                    Image=Bm.Ship.2HullSR_Fei
+                    ImageMap=Bm.Ship.SpecialMap
+                    ImageS=Bm.Ship.2HullSR_Feis
+                    PanelPartnerImage=HullSR_Fei
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=58,109
+                    Tail2=67,109
+                }
+                SRGaal ^{
+                    2ImageP=GI,Bm.ShipP.2HullSR_Gaal
+                    Anim ^{
+                        0=1,[70,20-59]
+                        Normal=2,[70,0-19]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-19]
+                    }
+                    Image=Bm.Ship.2HullSR_Gaal
+                    ImageMap=Bm.Ship.SpecialMap
+                    ImageS=Bm.Ship.2HullSR_Gaals
+                    PanelPartnerImage=HullSR_Gaal
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=23,111
+                    Tail2=104,111
+                }
+                SRMaloc ^{
+                    2ImageP=GI,Bm.ShipP.2HullSR_Maloc
+                    Anim ^{
+                        0=1,[70,31-50]
+                        Normal=2,[70,0-30]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-30]
+                    }
+                    Image=Bm.Ship.2HullSR_Maloc
+                    ImageMap=Bm.Ship.SpecialMap
+                    ImageS=Bm.Ship.2HullSR_Maloc
+                    PanelPartnerImage=HullSR_Maloc
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=49,117
+                    Tail2=73,117
+                }
+                SRPeleng ^{
+                    2ImageP=GI,Bm.ShipP.2HullSR_Peleng
+                    Anim ^{
+                        0=1,[70,20-79]
+                        Normal=2,[70,0-19]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-19]
+                    }
+                    Image=Bm.Ship.2HullSR_Peleng
+                    ImageMap=Bm.Ship.SpecialMap
+                    ImageS=Bm.Ship.2HullSR_Pelengs
+                    PanelPartnerImage=HullSR_Peleng
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=57,116
+                    Tail2=68,116
+                }
+                SRPeople ^{
+                    2ImageP=GI,Bm.ShipP.2HullSR_People
+                    Anim ^{
+                        0=1,[70,33-65]
+                        Normal=2,[70,0-32]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-32]
+                    }
+                    Image=Bm.Ship.2HullSR_People
+                    ImageMap=Bm.Ship.SpecialMap
+                    ImageS=Bm.Ship.2HullSR_Peoples
+                    PanelPartnerImage=HullSR_People
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=32,98
+                    Tail2=95,98
+                }
+            }
+        }
+    }
+}

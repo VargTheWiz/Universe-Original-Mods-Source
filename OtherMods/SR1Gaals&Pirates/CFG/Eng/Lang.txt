@@ -1,0 +1,20 @@
+Script ^{
+    Mod_SR1Gaals&Pirates ~{
+        0=This is an official representative of the Gaalian Rehabilitation Committee. According to the Galaxy Clearance Plan you have an opportunity to register your remorse and clear your legal status.
+        1=Citizens engaged in criminal activity have a right to remorse. On paying <0> cr, you will be granted amnesty. After that you must not commit any unlawful deeds. If you reject this, we will have to destroy you.
+        2=Do you promise not to commit murderous assault, not to encroach upon citizens' property and obey the law?
+        3=In this case, according to the Rehabilitation Committee policy, we will have to destroy you now.
+        4=Now you must pay <0> cr to cover the administrative fees.
+        5=You are cleared to proceed. We hope now you will value your clean legal status. Good luck.
+        6=You must either accept clearance or prepare to die.
+        7=I am acting according to the instructions received from the Rehabilitation Committee. You are subject to compulsory clearance as an unrepentant criminal.
+        8=Information on your evil deeds will be stored in our database. You are subject to unconditional termination.
+        9=What do you mean, "clear my legal status"?
+        10=Ok, I agree.
+        11=I don't need amnesty. I do what I want!
+        12=Yes
+        13=No
+        14=I'm transferring the money.
+        15=Unfortunately, I don't have the money.
+    }
+}

@@ -1,0 +1,3 @@
+Script ~{
+    Mod_ExpBasesAutoUpgrade=Mods\Expansion\ExpBasesAutoUpgrade\DATA\Script\Mod_ExpBasesAutoUpgrade.scr
+}

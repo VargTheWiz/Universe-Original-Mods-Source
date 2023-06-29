@@ -1,0 +1,3700 @@
+ML ^{
+    AB ^{
+        Panel ^{
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    Panel ^{
+                        GAI ^{
+                            Active=False
+                        }
+                        Image ^{
+                            Active=False
+                        }
+                        Image ^{
+                            Active=False
+                            Name=ShipPanelImage
+                        }
+                        Image ^{
+                            Active=False
+                            Name=LoadAnimText
+                        }
+                        Label ^{
+                            Active=False
+                            Name=PLProgress
+                        }
+                        Name=PanelLoad
+                        Panel ^{
+                            Image ^{
+                                Name=PLB1_Block
+                            }
+                            Image ^{
+                                Name=PLB2_Block
+                            }
+                            Image ^{
+                                Name=PLB3_Block
+                            }
+                            Image ^{
+                                Name=PLB4_Block
+                            }
+                            Image ^{
+                                Name=PLB5_Block
+                            }
+                            Image ^{
+                                Name=PLB6_Block
+                            }
+                            Image ^{
+                                Name=PLB7_Block
+                            }
+                            Image ^{
+                                Name=PLB8_Block
+                            }
+                            Image ^{
+                                Name=PLB9_Block
+                            }
+                            Image ^{
+                                Name=PLB10_Block
+                            }
+                            Image ^{
+                                Name=PLB11_Block
+                            }
+                            Image ^{
+                                Name=PLB12_Block
+                            }
+                            Image ^{
+                                Name=PLB13_Block
+                            }
+                            Image ^{
+                                Name=PLB14_Block
+                            }
+                            Image ^{
+                                Name=PLB15_Block
+                            }
+                            Image ^{
+                                Name=PLB16_Block
+                            }
+                            Image ^{
+                                Name=PLB17_Block
+                            }
+                            Name=PLBar
+                        }
+                        ShutterAnim ^{
+                            Panel ^{
+                                Image ^{
+                                    Name=PLRightImage
+                                    Pos=0,0
+                                    Size=282,658
+                                }
+                                Name=PLRight
+                                Pos=0,0
+                                Size=298,768
+                            }
+                            Panel ^{
+                                Image ^{
+                                    Name=PLLeftImage
+                                    Pos=0,0
+                                    Size=282,658
+                                }
+                                Name=PLLeft
+                                Pos=0,0
+                                Size=299,768
+                            }
+                            Panel ^{
+                                Image ^{
+                                    Name=PLTopImage
+                                    Pos=0,0
+                                    Size=714,450
+                                }
+                                Name=PLTop
+                                Pos=0,0
+                                Size=766,470
+                            }
+                            Panel ^{
+                                Image ^{
+                                    Name=PLBottomImage
+                                    Pos=0,0
+                                    Size=718,218
+                                }
+                                Name=PLBottom
+                                Panel ^{
+                                    Image ^{
+                                        Image=GI,Bm.FormLoad2.ShutterLoadbar1
+                                        Name=PLB1
+                                        Pos=0,0
+                                        Size=31,37
+                                    }
+                                    Image ^{
+                                        Image=GI,Bm.FormLoad2.ShutterLoadbar2
+                                        Name=PLB2
+                                        Pos=0,0
+                                        Size=29,37
+                                    }
+                                    Image ^{
+                                        Image=GI,Bm.FormLoad2.ShutterLoadbar3
+                                        Name=PLB3
+                                        Pos=0,0
+                                        Size=29,37
+                                    }
+                                    Image ^{
+                                        Image=GI,Bm.FormLoad2.ShutterLoadbar4
+                                        Name=PLB4
+                                        Pos=0,0
+                                        Size=29,37
+                                    }
+                                    Image ^{
+                                        Image=GI,Bm.FormLoad2.ShutterLoadbar5
+                                        Name=PLB5
+                                        Pos=0,0
+                                        Size=29,37
+                                    }
+                                    Image ^{
+                                        Image=GI,Bm.FormLoad2.ShutterLoadbar6
+                                        Name=PLB6
+                                        Pos=0,0
+                                        Size=29,37
+                                    }
+                                    Image ^{
+                                        Image=GI,Bm.FormLoad2.ShutterLoadbar7
+                                        Name=PLB7
+                                        Pos=0,0
+                                        Size=29,37
+                                    }
+                                    Image ^{
+                                        Image=GI,Bm.FormLoad2.ShutterLoadbar8
+                                        Name=PLB8
+                                        Pos=0,0
+                                        Size=29,37
+                                    }
+                                    Image ^{
+                                        Image=GI,Bm.FormLoad2.ShutterLoadbar9
+                                        Name=PLB9
+                                        Pos=0,0
+                                        Size=29,37
+                                    }
+                                    Image ^{
+                                        Image=GI,Bm.FormLoad2.ShutterLoadbar10
+                                        Name=PLB10
+                                        Pos=0,0
+                                        Size=29,37
+                                    }
+                                    Image ^{
+                                        Image=GI,Bm.FormLoad2.ShutterLoadbar11
+                                        Name=PLB11
+                                        Pos=0,0
+                                        Size=29,37
+                                    }
+                                    Image ^{
+                                        Image=GI,Bm.FormLoad2.ShutterLoadbar12
+                                        Name=PLB12
+                                        Pos=0,0
+                                        Size=29,37
+                                    }
+                                    Image ^{
+                                        Image=GI,Bm.FormLoad2.ShutterLoadbar13
+                                        Name=PLB13
+                                        Pos=0,0
+                                        Size=29,37
+                                    }
+                                    Image ^{
+                                        Image=GI,Bm.FormLoad2.ShutterLoadbar14
+                                        Name=PLB14
+                                        Pos=0,0
+                                        Size=29,37
+                                    }
+                                    Image ^{
+                                        Image=GI,Bm.FormLoad2.ShutterLoadbar15
+                                        Name=PLB15
+                                        Pos=0,0
+                                        Size=29,37
+                                    }
+                                    Image ^{
+                                        Image=GI,Bm.FormLoad2.ShutterLoadbar16
+                                        Name=PLB16
+                                        Pos=0,0
+                                        Size=29,37
+                                    }
+                                    Image ^{
+                                        Image=GI,Bm.FormLoad2.ShutterLoadbar17
+                                        Name=PLB17
+                                        Pos=0,0
+                                        Size=31,37
+                                    }
+                                    Name=PLBarMod
+                                    Pos=0,0,-2
+                                    Size=5000,5000
+                                }
+                                Pos=0,0
+                                Size=778,301
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    EquipmentShop ^{
+        Panel ^{
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+                GAI ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                    Name=ShipPanelImage
+                }
+                Image ^{
+                    Active=False
+                    Name=LoadAnimText
+                }
+                Label ^{
+                    Active=False
+                    Name=PLProgress
+                }
+                Name=PanelLoad
+                Panel ^{
+                    Image ^{
+                        Name=PLB1_Block
+                    }
+                    Image ^{
+                        Name=PLB2_Block
+                    }
+                    Image ^{
+                        Name=PLB3_Block
+                    }
+                    Image ^{
+                        Name=PLB4_Block
+                    }
+                    Image ^{
+                        Name=PLB5_Block
+                    }
+                    Image ^{
+                        Name=PLB6_Block
+                    }
+                    Image ^{
+                        Name=PLB7_Block
+                    }
+                    Image ^{
+                        Name=PLB8_Block
+                    }
+                    Image ^{
+                        Name=PLB9_Block
+                    }
+                    Image ^{
+                        Name=PLB10_Block
+                    }
+                    Image ^{
+                        Name=PLB11_Block
+                    }
+                    Image ^{
+                        Name=PLB12_Block
+                    }
+                    Image ^{
+                        Name=PLB13_Block
+                    }
+                    Image ^{
+                        Name=PLB14_Block
+                    }
+                    Image ^{
+                        Name=PLB15_Block
+                    }
+                    Image ^{
+                        Name=PLB16_Block
+                    }
+                    Image ^{
+                        Name=PLB17_Block
+                    }
+                    Name=PLBar
+                }
+                ShutterAnim ^{
+                    Panel ^{
+                        Image ^{
+                            Name=PLRightImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLRight
+                        Pos=0,0
+                        Size=298,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLLeftImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLLeft
+                        Pos=0,0
+                        Size=299,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLTopImage
+                            Pos=0,0
+                            Size=714,450
+                        }
+                        Name=PLTop
+                        Pos=0,0
+                        Size=766,470
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLBottomImage
+                            Pos=0,0
+                            Size=718,218
+                        }
+                        Name=PLBottom
+                        Panel ^{
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar1
+                                Name=PLB1
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar2
+                                Name=PLB2
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar3
+                                Name=PLB3
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar4
+                                Name=PLB4
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar5
+                                Name=PLB5
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar6
+                                Name=PLB6
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar7
+                                Name=PLB7
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar8
+                                Name=PLB8
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar9
+                                Name=PLB9
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar10
+                                Name=PLB10
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar11
+                                Name=PLB11
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar12
+                                Name=PLB12
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar13
+                                Name=PLB13
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar14
+                                Name=PLB14
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar15
+                                Name=PLB15
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar16
+                                Name=PLB16
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar17
+                                Name=PLB17
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Name=PLBarMod
+                            Pos=0,0,-2
+                            Size=5000,5000
+                        }
+                        Pos=0,0
+                        Size=778,301
+                    }
+                }
+            }
+        }
+    }
+    GameLoad ^{
+        Panel ^{
+            Panel ^{
+                GAI ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                    Name=ShipPanelImage
+                }
+                Image ^{
+                    Active=False
+                    Name=LoadAnimText
+                }
+                Label ^{
+                    Active=False
+                    Name=PLProgress
+                }
+                Name=PanelLoad
+                Panel ^{
+                    Image ^{
+                        Name=PLB1_Block
+                    }
+                    Image ^{
+                        Name=PLB2_Block
+                    }
+                    Image ^{
+                        Name=PLB3_Block
+                    }
+                    Image ^{
+                        Name=PLB4_Block
+                    }
+                    Image ^{
+                        Name=PLB5_Block
+                    }
+                    Image ^{
+                        Name=PLB6_Block
+                    }
+                    Image ^{
+                        Name=PLB7_Block
+                    }
+                    Image ^{
+                        Name=PLB8_Block
+                    }
+                    Image ^{
+                        Name=PLB9_Block
+                    }
+                    Image ^{
+                        Name=PLB10_Block
+                    }
+                    Image ^{
+                        Name=PLB11_Block
+                    }
+                    Image ^{
+                        Name=PLB12_Block
+                    }
+                    Image ^{
+                        Name=PLB13_Block
+                    }
+                    Image ^{
+                        Name=PLB14_Block
+                    }
+                    Image ^{
+                        Name=PLB15_Block
+                    }
+                    Image ^{
+                        Name=PLB16_Block
+                    }
+                    Image ^{
+                        Name=PLB17_Block
+                    }
+                    Name=PLBar
+                }
+                ShutterAnim ^{
+                    Panel ^{
+                        Image ^{
+                            Name=PLRightImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLRight
+                        Pos=0,0
+                        Size=298,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLLeftImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLLeft
+                        Pos=0,0
+                        Size=299,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLTopImage
+                            Pos=0,0
+                            Size=714,450
+                        }
+                        Name=PLTop
+                        Pos=0,0
+                        Size=766,470
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLBottomImage
+                            Pos=0,0
+                            Size=718,218
+                        }
+                        Name=PLBottom
+                        Panel ^{
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar1
+                                Name=PLB1
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar2
+                                Name=PLB2
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar3
+                                Name=PLB3
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar4
+                                Name=PLB4
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar5
+                                Name=PLB5
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar6
+                                Name=PLB6
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar7
+                                Name=PLB7
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar8
+                                Name=PLB8
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar9
+                                Name=PLB9
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar10
+                                Name=PLB10
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar11
+                                Name=PLB11
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar12
+                                Name=PLB12
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar13
+                                Name=PLB13
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar14
+                                Name=PLB14
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar15
+                                Name=PLB15
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar16
+                                Name=PLB16
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar17
+                                Name=PLB17
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Name=PLBarMod
+                            Pos=0,0,-2
+                            Size=5000,5000
+                        }
+                        Pos=0,0
+                        Size=778,301
+                    }
+                }
+            }
+        }
+    }
+    GoodsShop ^{
+        Panel ^{
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+                GAI ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                    Name=ShipPanelImage
+                }
+                Image ^{
+                    Active=False
+                    Name=LoadAnimText
+                }
+                Label ^{
+                    Active=False
+                    Name=PLProgress
+                }
+                Name=PanelLoad
+                Panel ^{
+                    Image ^{
+                        Name=PLB1_Block
+                    }
+                    Image ^{
+                        Name=PLB2_Block
+                    }
+                    Image ^{
+                        Name=PLB3_Block
+                    }
+                    Image ^{
+                        Name=PLB4_Block
+                    }
+                    Image ^{
+                        Name=PLB5_Block
+                    }
+                    Image ^{
+                        Name=PLB6_Block
+                    }
+                    Image ^{
+                        Name=PLB7_Block
+                    }
+                    Image ^{
+                        Name=PLB8_Block
+                    }
+                    Image ^{
+                        Name=PLB9_Block
+                    }
+                    Image ^{
+                        Name=PLB10_Block
+                    }
+                    Image ^{
+                        Name=PLB11_Block
+                    }
+                    Image ^{
+                        Name=PLB12_Block
+                    }
+                    Image ^{
+                        Name=PLB13_Block
+                    }
+                    Image ^{
+                        Name=PLB14_Block
+                    }
+                    Image ^{
+                        Name=PLB15_Block
+                    }
+                    Image ^{
+                        Name=PLB16_Block
+                    }
+                    Image ^{
+                        Name=PLB17_Block
+                    }
+                    Name=PLBar
+                }
+                ShutterAnim ^{
+                    Panel ^{
+                        Image ^{
+                            Name=PLRightImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLRight
+                        Pos=0,0
+                        Size=298,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLLeftImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLLeft
+                        Pos=0,0
+                        Size=299,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLTopImage
+                            Pos=0,0
+                            Size=714,450
+                        }
+                        Name=PLTop
+                        Pos=0,0
+                        Size=766,470
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLBottomImage
+                            Pos=0,0
+                            Size=718,218
+                        }
+                        Name=PLBottom
+                        Panel ^{
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar1
+                                Name=PLB1
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar2
+                                Name=PLB2
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar3
+                                Name=PLB3
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar4
+                                Name=PLB4
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar5
+                                Name=PLB5
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar6
+                                Name=PLB6
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar7
+                                Name=PLB7
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar8
+                                Name=PLB8
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar9
+                                Name=PLB9
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar10
+                                Name=PLB10
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar11
+                                Name=PLB11
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar12
+                                Name=PLB12
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar13
+                                Name=PLB13
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar14
+                                Name=PLB14
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar15
+                                Name=PLB15
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar16
+                                Name=PLB16
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar17
+                                Name=PLB17
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Name=PLBarMod
+                            Pos=0,0,-2
+                            Size=5000,5000
+                        }
+                        Pos=0,0
+                        Size=778,301
+                    }
+                }
+            }
+        }
+    }
+    Gov ^{
+        Panel ^{
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+                GAI ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                    Name=ShipPanelImage
+                }
+                Image ^{
+                    Active=False
+                    Name=LoadAnimText
+                }
+                Label ^{
+                    Active=False
+                    Name=PLProgress
+                }
+                Name=PanelLoad
+                Panel ^{
+                    Image ^{
+                        Name=PLB1_Block
+                    }
+                    Image ^{
+                        Name=PLB2_Block
+                    }
+                    Image ^{
+                        Name=PLB3_Block
+                    }
+                    Image ^{
+                        Name=PLB4_Block
+                    }
+                    Image ^{
+                        Name=PLB5_Block
+                    }
+                    Image ^{
+                        Name=PLB6_Block
+                    }
+                    Image ^{
+                        Name=PLB7_Block
+                    }
+                    Image ^{
+                        Name=PLB8_Block
+                    }
+                    Image ^{
+                        Name=PLB9_Block
+                    }
+                    Image ^{
+                        Name=PLB10_Block
+                    }
+                    Image ^{
+                        Name=PLB11_Block
+                    }
+                    Image ^{
+                        Name=PLB12_Block
+                    }
+                    Image ^{
+                        Name=PLB13_Block
+                    }
+                    Image ^{
+                        Name=PLB14_Block
+                    }
+                    Image ^{
+                        Name=PLB15_Block
+                    }
+                    Image ^{
+                        Name=PLB16_Block
+                    }
+                    Image ^{
+                        Name=PLB17_Block
+                    }
+                    Name=PLBar
+                }
+                ShutterAnim ^{
+                    Panel ^{
+                        Image ^{
+                            Name=PLRightImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLRight
+                        Pos=0,0
+                        Size=298,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLLeftImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLLeft
+                        Pos=0,0
+                        Size=299,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLTopImage
+                            Pos=0,0
+                            Size=714,450
+                        }
+                        Name=PLTop
+                        Pos=0,0
+                        Size=766,470
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLBottomImage
+                            Pos=0,0
+                            Size=718,218
+                        }
+                        Name=PLBottom
+                        Panel ^{
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar1
+                                Name=PLB1
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar2
+                                Name=PLB2
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar3
+                                Name=PLB3
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar4
+                                Name=PLB4
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar5
+                                Name=PLB5
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar6
+                                Name=PLB6
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar7
+                                Name=PLB7
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar8
+                                Name=PLB8
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar9
+                                Name=PLB9
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar10
+                                Name=PLB10
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar11
+                                Name=PLB11
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar12
+                                Name=PLB12
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar13
+                                Name=PLB13
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar14
+                                Name=PLB14
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar15
+                                Name=PLB15
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar16
+                                Name=PLB16
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar17
+                                Name=PLB17
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Name=PLBarMod
+                            Pos=0,0,-2
+                            Size=5000,5000
+                        }
+                        Pos=0,0
+                        Size=778,301
+                    }
+                }
+            }
+        }
+    }
+    Hangar ^{
+        Panel ^{
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+                GAI ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                    Name=ShipPanelImage
+                }
+                Image ^{
+                    Active=False
+                    Name=LoadAnimText
+                }
+                Label ^{
+                    Active=False
+                    Name=PLProgress
+                }
+                Name=PanelLoad
+                Panel ^{
+                    Image ^{
+                        Name=PLB1_Block
+                    }
+                    Image ^{
+                        Name=PLB2_Block
+                    }
+                    Image ^{
+                        Name=PLB3_Block
+                    }
+                    Image ^{
+                        Name=PLB4_Block
+                    }
+                    Image ^{
+                        Name=PLB5_Block
+                    }
+                    Image ^{
+                        Name=PLB6_Block
+                    }
+                    Image ^{
+                        Name=PLB7_Block
+                    }
+                    Image ^{
+                        Name=PLB8_Block
+                    }
+                    Image ^{
+                        Name=PLB9_Block
+                    }
+                    Image ^{
+                        Name=PLB10_Block
+                    }
+                    Image ^{
+                        Name=PLB11_Block
+                    }
+                    Image ^{
+                        Name=PLB12_Block
+                    }
+                    Image ^{
+                        Name=PLB13_Block
+                    }
+                    Image ^{
+                        Name=PLB14_Block
+                    }
+                    Image ^{
+                        Name=PLB15_Block
+                    }
+                    Image ^{
+                        Name=PLB16_Block
+                    }
+                    Image ^{
+                        Name=PLB17_Block
+                    }
+                    Name=PLBar
+                }
+                ShutterAnim ^{
+                    Panel ^{
+                        Image ^{
+                            Name=PLRightImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLRight
+                        Pos=0,0
+                        Size=298,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLLeftImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLLeft
+                        Pos=0,0
+                        Size=299,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLTopImage
+                            Pos=0,0
+                            Size=714,450
+                        }
+                        Name=PLTop
+                        Pos=0,0
+                        Size=766,470
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLBottomImage
+                            Pos=0,0
+                            Size=718,218
+                        }
+                        Name=PLBottom
+                        Panel ^{
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar1
+                                Name=PLB1
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar2
+                                Name=PLB2
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar3
+                                Name=PLB3
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar4
+                                Name=PLB4
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar5
+                                Name=PLB5
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar6
+                                Name=PLB6
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar7
+                                Name=PLB7
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar8
+                                Name=PLB8
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar9
+                                Name=PLB9
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar10
+                                Name=PLB10
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar11
+                                Name=PLB11
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar12
+                                Name=PLB12
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar13
+                                Name=PLB13
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar14
+                                Name=PLB14
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar15
+                                Name=PLB15
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar16
+                                Name=PLB16
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar17
+                                Name=PLB17
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Name=PLBarMod
+                            Pos=0,0,-2
+                            Size=5000,5000
+                        }
+                        Pos=0,0
+                        Size=778,301
+                    }
+                }
+            }
+        }
+    }
+    Info ^{
+        Panel ^{
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+                GAI ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                    Name=ShipPanelImage
+                }
+                Image ^{
+                    Active=False
+                    Name=LoadAnimText
+                }
+                Label ^{
+                    Active=False
+                    Name=PLProgress
+                }
+                Name=PanelLoad
+                Panel ^{
+                    Image ^{
+                        Name=PLB1_Block
+                    }
+                    Image ^{
+                        Name=PLB2_Block
+                    }
+                    Image ^{
+                        Name=PLB3_Block
+                    }
+                    Image ^{
+                        Name=PLB4_Block
+                    }
+                    Image ^{
+                        Name=PLB5_Block
+                    }
+                    Image ^{
+                        Name=PLB6_Block
+                    }
+                    Image ^{
+                        Name=PLB7_Block
+                    }
+                    Image ^{
+                        Name=PLB8_Block
+                    }
+                    Image ^{
+                        Name=PLB9_Block
+                    }
+                    Image ^{
+                        Name=PLB10_Block
+                    }
+                    Image ^{
+                        Name=PLB11_Block
+                    }
+                    Image ^{
+                        Name=PLB12_Block
+                    }
+                    Image ^{
+                        Name=PLB13_Block
+                    }
+                    Image ^{
+                        Name=PLB14_Block
+                    }
+                    Image ^{
+                        Name=PLB15_Block
+                    }
+                    Image ^{
+                        Name=PLB16_Block
+                    }
+                    Image ^{
+                        Name=PLB17_Block
+                    }
+                    Name=PLBar
+                }
+                ShutterAnim ^{
+                    Panel ^{
+                        Image ^{
+                            Name=PLRightImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLRight
+                        Pos=0,0
+                        Size=298,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLLeftImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLLeft
+                        Pos=0,0
+                        Size=299,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLTopImage
+                            Pos=0,0
+                            Size=714,450
+                        }
+                        Name=PLTop
+                        Pos=0,0
+                        Size=766,470
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLBottomImage
+                            Pos=0,0
+                            Size=718,218
+                        }
+                        Name=PLBottom
+                        Panel ^{
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar1
+                                Name=PLB1
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar2
+                                Name=PLB2
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar3
+                                Name=PLB3
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar4
+                                Name=PLB4
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar5
+                                Name=PLB5
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar6
+                                Name=PLB6
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar7
+                                Name=PLB7
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar8
+                                Name=PLB8
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar9
+                                Name=PLB9
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar10
+                                Name=PLB10
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar11
+                                Name=PLB11
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar12
+                                Name=PLB12
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar13
+                                Name=PLB13
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar14
+                                Name=PLB14
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar15
+                                Name=PLB15
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar16
+                                Name=PLB16
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar17
+                                Name=PLB17
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Name=PLBarMod
+                            Pos=0,0,-2
+                            Size=5000,5000
+                        }
+                        Pos=0,0
+                        Size=778,301
+                    }
+                }
+            }
+        }
+    }
+    Jump ^{
+        Panel ^{
+            Panel ^{
+                GAI ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                    Name=ShipPanelImage
+                }
+                Image ^{
+                    Active=False
+                    Name=LoadAnimText
+                }
+                Label ^{
+                    Active=False
+                    Name=PLProgress
+                }
+                Name=PanelLoad
+                Panel ^{
+                    Image ^{
+                        Name=PLB1_Block
+                    }
+                    Image ^{
+                        Name=PLB2_Block
+                    }
+                    Image ^{
+                        Name=PLB3_Block
+                    }
+                    Image ^{
+                        Name=PLB4_Block
+                    }
+                    Image ^{
+                        Name=PLB5_Block
+                    }
+                    Image ^{
+                        Name=PLB6_Block
+                    }
+                    Image ^{
+                        Name=PLB7_Block
+                    }
+                    Image ^{
+                        Name=PLB8_Block
+                    }
+                    Image ^{
+                        Name=PLB9_Block
+                    }
+                    Image ^{
+                        Name=PLB10_Block
+                    }
+                    Image ^{
+                        Name=PLB11_Block
+                    }
+                    Image ^{
+                        Name=PLB12_Block
+                    }
+                    Image ^{
+                        Name=PLB13_Block
+                    }
+                    Image ^{
+                        Name=PLB14_Block
+                    }
+                    Image ^{
+                        Name=PLB15_Block
+                    }
+                    Image ^{
+                        Name=PLB16_Block
+                    }
+                    Image ^{
+                        Name=PLB17_Block
+                    }
+                    Name=PLBar
+                }
+                ShutterAnim ^{
+                    Panel ^{
+                        Image ^{
+                            Name=PLRightImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLRight
+                        Pos=0,0
+                        Size=298,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLLeftImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLLeft
+                        Pos=0,0
+                        Size=299,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLTopImage
+                            Pos=0,0
+                            Size=714,450
+                        }
+                        Name=PLTop
+                        Pos=0,0
+                        Size=766,470
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLBottomImage
+                            Pos=0,0
+                            Size=718,218
+                        }
+                        Name=PLBottom
+                        Panel ^{
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar1
+                                Name=PLB1
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar2
+                                Name=PLB2
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar3
+                                Name=PLB3
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar4
+                                Name=PLB4
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar5
+                                Name=PLB5
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar6
+                                Name=PLB6
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar7
+                                Name=PLB7
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar8
+                                Name=PLB8
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar9
+                                Name=PLB9
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar10
+                                Name=PLB10
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar11
+                                Name=PLB11
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar12
+                                Name=PLB12
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar13
+                                Name=PLB13
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar14
+                                Name=PLB14
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar15
+                                Name=PLB15
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar16
+                                Name=PLB16
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar17
+                                Name=PLB17
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Name=PLBarMod
+                            Pos=0,0,-2
+                            Size=5000,5000
+                        }
+                        Pos=0,0
+                        Size=778,301
+                    }
+                }
+            }
+        }
+    }
+    Load ^{
+        Panel ^{
+            Panel ^{
+                GAI ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                    Name=ShipPanelImage
+                }
+                Image ^{
+                    Active=False
+                    Name=LoadAnimText
+                }
+                Label ^{
+                    Active=False
+                    Name=PLProgress
+                }
+                Name=PanelLoad
+                Panel ^{
+                    Image ^{
+                        Name=PLB1_Block
+                    }
+                    Image ^{
+                        Name=PLB2_Block
+                    }
+                    Image ^{
+                        Name=PLB3_Block
+                    }
+                    Image ^{
+                        Name=PLB4_Block
+                    }
+                    Image ^{
+                        Name=PLB5_Block
+                    }
+                    Image ^{
+                        Name=PLB6_Block
+                    }
+                    Image ^{
+                        Name=PLB7_Block
+                    }
+                    Image ^{
+                        Name=PLB8_Block
+                    }
+                    Image ^{
+                        Name=PLB9_Block
+                    }
+                    Image ^{
+                        Name=PLB10_Block
+                    }
+                    Image ^{
+                        Name=PLB11_Block
+                    }
+                    Image ^{
+                        Name=PLB12_Block
+                    }
+                    Image ^{
+                        Name=PLB13_Block
+                    }
+                    Image ^{
+                        Name=PLB14_Block
+                    }
+                    Image ^{
+                        Name=PLB15_Block
+                    }
+                    Image ^{
+                        Name=PLB16_Block
+                    }
+                    Image ^{
+                        Name=PLB17_Block
+                    }
+                    Name=PLBar
+                }
+                ShutterAnim ^{
+                    Panel ^{
+                        Image ^{
+                            Name=PLRightImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLRight
+                        Pos=0,0
+                        Size=298,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLLeftImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLLeft
+                        Pos=0,0
+                        Size=299,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLTopImage
+                            Pos=0,0
+                            Size=714,450
+                        }
+                        Name=PLTop
+                        Pos=0,0
+                        Size=766,470
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLBottomImage
+                            Pos=0,0
+                            Size=718,218
+                        }
+                        Name=PLBottom
+                        Panel ^{
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar1
+                                Name=PLB1
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar2
+                                Name=PLB2
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar3
+                                Name=PLB3
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar4
+                                Name=PLB4
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar5
+                                Name=PLB5
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar6
+                                Name=PLB6
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar7
+                                Name=PLB7
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar8
+                                Name=PLB8
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar9
+                                Name=PLB9
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar10
+                                Name=PLB10
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar11
+                                Name=PLB11
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar12
+                                Name=PLB12
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar13
+                                Name=PLB13
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar14
+                                Name=PLB14
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar15
+                                Name=PLB15
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar16
+                                Name=PLB16
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar17
+                                Name=PLB17
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Name=PLBarMod
+                            Pos=0,0,-2
+                            Size=5000,5000
+                        }
+                        Pos=0,0
+                        Size=778,301
+                    }
+                }
+            }
+        }
+    }
+    LoadQuest ^{
+        Panel ^{
+            Panel ^{
+                GAI ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                    Name=ShipPanelImage
+                }
+                Image ^{
+                    Active=False
+                    Name=LoadAnimText
+                }
+                Label ^{
+                    Active=False
+                    Name=PLProgress
+                }
+                Name=PanelLoad
+                Panel ^{
+                    Image ^{
+                        Name=PLB1_Block
+                    }
+                    Image ^{
+                        Name=PLB2_Block
+                    }
+                    Image ^{
+                        Name=PLB3_Block
+                    }
+                    Image ^{
+                        Name=PLB4_Block
+                    }
+                    Image ^{
+                        Name=PLB5_Block
+                    }
+                    Image ^{
+                        Name=PLB6_Block
+                    }
+                    Image ^{
+                        Name=PLB7_Block
+                    }
+                    Image ^{
+                        Name=PLB8_Block
+                    }
+                    Image ^{
+                        Name=PLB9_Block
+                    }
+                    Image ^{
+                        Name=PLB10_Block
+                    }
+                    Image ^{
+                        Name=PLB11_Block
+                    }
+                    Image ^{
+                        Name=PLB12_Block
+                    }
+                    Image ^{
+                        Name=PLB13_Block
+                    }
+                    Image ^{
+                        Name=PLB14_Block
+                    }
+                    Image ^{
+                        Name=PLB15_Block
+                    }
+                    Image ^{
+                        Name=PLB16_Block
+                    }
+                    Image ^{
+                        Name=PLB17_Block
+                    }
+                    Name=PLBar
+                }
+                ShutterAnim ^{
+                    Panel ^{
+                        Image ^{
+                            Name=PLRightImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLRight
+                        Pos=0,0
+                        Size=298,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLLeftImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLLeft
+                        Pos=0,0
+                        Size=299,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLTopImage
+                            Pos=0,0
+                            Size=714,450
+                        }
+                        Name=PLTop
+                        Pos=0,0
+                        Size=766,470
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLBottomImage
+                            Pos=0,0
+                            Size=718,218
+                        }
+                        Name=PLBottom
+                        Panel ^{
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar1
+                                Name=PLB1
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar2
+                                Name=PLB2
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar3
+                                Name=PLB3
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar4
+                                Name=PLB4
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar5
+                                Name=PLB5
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar6
+                                Name=PLB6
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar7
+                                Name=PLB7
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar8
+                                Name=PLB8
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar9
+                                Name=PLB9
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar10
+                                Name=PLB10
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar11
+                                Name=PLB11
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar12
+                                Name=PLB12
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar13
+                                Name=PLB13
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar14
+                                Name=PLB14
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar15
+                                Name=PLB15
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar16
+                                Name=PLB16
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar17
+                                Name=PLB17
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Name=PLBarMod
+                            Pos=0,0,-2
+                            Size=5000,5000
+                        }
+                        Pos=0,0
+                        Size=778,301
+                    }
+                }
+            }
+        }
+    }
+    LoadRobot ^{
+        Panel ^{
+            Panel ^{
+                GAI ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                    Name=ShipPanelImage
+                }
+                Image ^{
+                    Active=False
+                    Name=LoadAnimText
+                }
+                Label ^{
+                    Active=False
+                    Name=PLProgress
+                }
+                Name=PanelLoad
+                Panel ^{
+                    Image ^{
+                        Name=PLB1_Block
+                    }
+                    Image ^{
+                        Name=PLB2_Block
+                    }
+                    Image ^{
+                        Name=PLB3_Block
+                    }
+                    Image ^{
+                        Name=PLB4_Block
+                    }
+                    Image ^{
+                        Name=PLB5_Block
+                    }
+                    Image ^{
+                        Name=PLB6_Block
+                    }
+                    Image ^{
+                        Name=PLB7_Block
+                    }
+                    Image ^{
+                        Name=PLB8_Block
+                    }
+                    Image ^{
+                        Name=PLB9_Block
+                    }
+                    Image ^{
+                        Name=PLB10_Block
+                    }
+                    Image ^{
+                        Name=PLB11_Block
+                    }
+                    Image ^{
+                        Name=PLB12_Block
+                    }
+                    Image ^{
+                        Name=PLB13_Block
+                    }
+                    Image ^{
+                        Name=PLB14_Block
+                    }
+                    Image ^{
+                        Name=PLB15_Block
+                    }
+                    Image ^{
+                        Name=PLB16_Block
+                    }
+                    Image ^{
+                        Name=PLB17_Block
+                    }
+                    Name=PLBar
+                }
+                ShutterAnim ^{
+                    Panel ^{
+                        Image ^{
+                            Name=PLRightImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLRight
+                        Pos=0,0
+                        Size=298,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLLeftImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLLeft
+                        Pos=0,0
+                        Size=299,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLTopImage
+                            Pos=0,0
+                            Size=714,450
+                        }
+                        Name=PLTop
+                        Pos=0,0
+                        Size=766,470
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLBottomImage
+                            Pos=0,0
+                            Size=718,218
+                        }
+                        Name=PLBottom
+                        Panel ^{
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar1
+                                Name=PLB1
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar2
+                                Name=PLB2
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar3
+                                Name=PLB3
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar4
+                                Name=PLB4
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar5
+                                Name=PLB5
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar6
+                                Name=PLB6
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar7
+                                Name=PLB7
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar8
+                                Name=PLB8
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar9
+                                Name=PLB9
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar10
+                                Name=PLB10
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar11
+                                Name=PLB11
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar12
+                                Name=PLB12
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar13
+                                Name=PLB13
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar14
+                                Name=PLB14
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar15
+                                Name=PLB15
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar16
+                                Name=PLB16
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar17
+                                Name=PLB17
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Name=PLBarMod
+                            Pos=0,0,-2
+                            Size=5000,5000
+                        }
+                        Pos=0,0
+                        Size=778,301
+                    }
+                }
+            }
+        }
+    }
+    MainForm ^{
+        Panel ^{
+            Panel ^{
+                GAI ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                    Name=ShipPanelImage
+                }
+                Image ^{
+                    Active=False
+                    Name=LoadAnimText
+                }
+                Label ^{
+                    Active=False
+                    Name=PLProgress
+                }
+                Name=PanelLoad
+                Panel ^{
+                    Image ^{
+                        Name=PLB1_Block
+                    }
+                    Image ^{
+                        Name=PLB2_Block
+                    }
+                    Image ^{
+                        Name=PLB3_Block
+                    }
+                    Image ^{
+                        Name=PLB4_Block
+                    }
+                    Image ^{
+                        Name=PLB5_Block
+                    }
+                    Image ^{
+                        Name=PLB6_Block
+                    }
+                    Image ^{
+                        Name=PLB7_Block
+                    }
+                    Image ^{
+                        Name=PLB8_Block
+                    }
+                    Image ^{
+                        Name=PLB9_Block
+                    }
+                    Image ^{
+                        Name=PLB10_Block
+                    }
+                    Image ^{
+                        Name=PLB11_Block
+                    }
+                    Image ^{
+                        Name=PLB12_Block
+                    }
+                    Image ^{
+                        Name=PLB13_Block
+                    }
+                    Image ^{
+                        Name=PLB14_Block
+                    }
+                    Image ^{
+                        Name=PLB15_Block
+                    }
+                    Image ^{
+                        Name=PLB16_Block
+                    }
+                    Image ^{
+                        Name=PLB17_Block
+                    }
+                    Name=PLBar
+                }
+                ShutterAnim ^{
+                    Panel ^{
+                        Image ^{
+                            Name=PLRightImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLRight
+                        Pos=0,0
+                        Size=298,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLLeftImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLLeft
+                        Pos=0,0
+                        Size=299,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLTopImage
+                            Pos=0,0
+                            Size=714,450
+                        }
+                        Name=PLTop
+                        Pos=0,0
+                        Size=766,470
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLBottomImage
+                            Pos=0,0
+                            Size=718,218
+                        }
+                        Name=PLBottom
+                        Panel ^{
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar1
+                                Name=PLB1
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar2
+                                Name=PLB2
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar3
+                                Name=PLB3
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar4
+                                Name=PLB4
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar5
+                                Name=PLB5
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar6
+                                Name=PLB6
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar7
+                                Name=PLB7
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar8
+                                Name=PLB8
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar9
+                                Name=PLB9
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar10
+                                Name=PLB10
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar11
+                                Name=PLB11
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar12
+                                Name=PLB12
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar13
+                                Name=PLB13
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar14
+                                Name=PLB14
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar15
+                                Name=PLB15
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar16
+                                Name=PLB16
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar17
+                                Name=PLB17
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Name=PLBarMod
+                            Pos=0,0,-2
+                            Size=5000,5000
+                        }
+                        Pos=0,0
+                        Size=778,301
+                    }
+                }
+            }
+        }
+    }
+    Planet ^{
+        Panel ^{
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+                GAI ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                    Name=ShipPanelImage
+                }
+                Image ^{
+                    Active=False
+                    Name=LoadAnimText
+                }
+                Label ^{
+                    Active=False
+                    Name=PLProgress
+                }
+                Name=PanelLoad
+                Panel ^{
+                    Image ^{
+                        Name=PLB1_Block
+                    }
+                    Image ^{
+                        Name=PLB2_Block
+                    }
+                    Image ^{
+                        Name=PLB3_Block
+                    }
+                    Image ^{
+                        Name=PLB4_Block
+                    }
+                    Image ^{
+                        Name=PLB5_Block
+                    }
+                    Image ^{
+                        Name=PLB6_Block
+                    }
+                    Image ^{
+                        Name=PLB7_Block
+                    }
+                    Image ^{
+                        Name=PLB8_Block
+                    }
+                    Image ^{
+                        Name=PLB9_Block
+                    }
+                    Image ^{
+                        Name=PLB10_Block
+                    }
+                    Image ^{
+                        Name=PLB11_Block
+                    }
+                    Image ^{
+                        Name=PLB12_Block
+                    }
+                    Image ^{
+                        Name=PLB13_Block
+                    }
+                    Image ^{
+                        Name=PLB14_Block
+                    }
+                    Image ^{
+                        Name=PLB15_Block
+                    }
+                    Image ^{
+                        Name=PLB16_Block
+                    }
+                    Image ^{
+                        Name=PLB17_Block
+                    }
+                    Name=PLBar
+                }
+                ShutterAnim ^{
+                    Panel ^{
+                        Image ^{
+                            Name=PLRightImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLRight
+                        Pos=0,0
+                        Size=298,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLLeftImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLLeft
+                        Pos=0,0
+                        Size=299,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLTopImage
+                            Pos=0,0
+                            Size=714,450
+                        }
+                        Name=PLTop
+                        Pos=0,0
+                        Size=766,470
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLBottomImage
+                            Pos=0,0
+                            Size=718,218
+                        }
+                        Name=PLBottom
+                        Panel ^{
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar1
+                                Name=PLB1
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar2
+                                Name=PLB2
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar3
+                                Name=PLB3
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar4
+                                Name=PLB4
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar5
+                                Name=PLB5
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar6
+                                Name=PLB6
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar7
+                                Name=PLB7
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar8
+                                Name=PLB8
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar9
+                                Name=PLB9
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar10
+                                Name=PLB10
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar11
+                                Name=PLB11
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar12
+                                Name=PLB12
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar13
+                                Name=PLB13
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar14
+                                Name=PLB14
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar15
+                                Name=PLB15
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar16
+                                Name=PLB16
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar17
+                                Name=PLB17
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Name=PLBarMod
+                            Pos=0,0,-2
+                            Size=5000,5000
+                        }
+                        Pos=0,0
+                        Size=778,301
+                    }
+                }
+            }
+        }
+    }
+    PlanetNO ^{
+        Panel ^{
+            Panel ^{
+            }
+            Panel ^{
+                GAI ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                    Name=ShipPanelImage
+                }
+                Image ^{
+                    Active=False
+                    Name=LoadAnimText
+                }
+                Label ^{
+                    Active=False
+                    Name=PLProgress
+                }
+                Name=PanelLoad
+                Panel ^{
+                    Image ^{
+                        Name=PLB1_Block
+                    }
+                    Image ^{
+                        Name=PLB2_Block
+                    }
+                    Image ^{
+                        Name=PLB3_Block
+                    }
+                    Image ^{
+                        Name=PLB4_Block
+                    }
+                    Image ^{
+                        Name=PLB5_Block
+                    }
+                    Image ^{
+                        Name=PLB6_Block
+                    }
+                    Image ^{
+                        Name=PLB7_Block
+                    }
+                    Image ^{
+                        Name=PLB8_Block
+                    }
+                    Image ^{
+                        Name=PLB9_Block
+                    }
+                    Image ^{
+                        Name=PLB10_Block
+                    }
+                    Image ^{
+                        Name=PLB11_Block
+                    }
+                    Image ^{
+                        Name=PLB12_Block
+                    }
+                    Image ^{
+                        Name=PLB13_Block
+                    }
+                    Image ^{
+                        Name=PLB14_Block
+                    }
+                    Image ^{
+                        Name=PLB15_Block
+                    }
+                    Image ^{
+                        Name=PLB16_Block
+                    }
+                    Image ^{
+                        Name=PLB17_Block
+                    }
+                    Name=PLBar
+                }
+                ShutterAnim ^{
+                    Panel ^{
+                        Image ^{
+                            Name=PLRightImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLRight
+                        Pos=0,0
+                        Size=298,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLLeftImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLLeft
+                        Pos=0,0
+                        Size=299,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLTopImage
+                            Pos=0,0
+                            Size=714,450
+                        }
+                        Name=PLTop
+                        Pos=0,0
+                        Size=766,470
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLBottomImage
+                            Pos=0,0
+                            Size=718,218
+                        }
+                        Name=PLBottom
+                        Panel ^{
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar1
+                                Name=PLB1
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar2
+                                Name=PLB2
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar3
+                                Name=PLB3
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar4
+                                Name=PLB4
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar5
+                                Name=PLB5
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar6
+                                Name=PLB6
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar7
+                                Name=PLB7
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar8
+                                Name=PLB8
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar9
+                                Name=PLB9
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar10
+                                Name=PLB10
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar11
+                                Name=PLB11
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar12
+                                Name=PLB12
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar13
+                                Name=PLB13
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar14
+                                Name=PLB14
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar15
+                                Name=PLB15
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar16
+                                Name=PLB16
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar17
+                                Name=PLB17
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Name=PLBarMod
+                            Pos=0,0,-2
+                            Size=5000,5000
+                        }
+                        Pos=0,0
+                        Size=778,301
+                    }
+                }
+            }
+        }
+    }
+    RuinsTalk ^{
+        Panel ^{
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+                GAI ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                }
+                Image ^{
+                    Active=False
+                    Name=ShipPanelImage
+                }
+                Image ^{
+                    Active=False
+                    Name=LoadAnimText
+                }
+                Label ^{
+                    Active=False
+                    Name=PLProgress
+                }
+                Name=PanelLoad
+                Panel ^{
+                    Image ^{
+                        Name=PLB1_Block
+                    }
+                    Image ^{
+                        Name=PLB2_Block
+                    }
+                    Image ^{
+                        Name=PLB3_Block
+                    }
+                    Image ^{
+                        Name=PLB4_Block
+                    }
+                    Image ^{
+                        Name=PLB5_Block
+                    }
+                    Image ^{
+                        Name=PLB6_Block
+                    }
+                    Image ^{
+                        Name=PLB7_Block
+                    }
+                    Image ^{
+                        Name=PLB8_Block
+                    }
+                    Image ^{
+                        Name=PLB9_Block
+                    }
+                    Image ^{
+                        Name=PLB10_Block
+                    }
+                    Image ^{
+                        Name=PLB11_Block
+                    }
+                    Image ^{
+                        Name=PLB12_Block
+                    }
+                    Image ^{
+                        Name=PLB13_Block
+                    }
+                    Image ^{
+                        Name=PLB14_Block
+                    }
+                    Image ^{
+                        Name=PLB15_Block
+                    }
+                    Image ^{
+                        Name=PLB16_Block
+                    }
+                    Image ^{
+                        Name=PLB17_Block
+                    }
+                    Name=PLBar
+                }
+                ShutterAnim ^{
+                    Panel ^{
+                        Image ^{
+                            Name=PLRightImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLRight
+                        Pos=0,0
+                        Size=298,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLLeftImage
+                            Pos=0,0
+                            Size=282,658
+                        }
+                        Name=PLLeft
+                        Pos=0,0
+                        Size=299,768
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLTopImage
+                            Pos=0,0
+                            Size=714,450
+                        }
+                        Name=PLTop
+                        Pos=0,0
+                        Size=766,470
+                    }
+                    Panel ^{
+                        Image ^{
+                            Name=PLBottomImage
+                            Pos=0,0
+                            Size=718,218
+                        }
+                        Name=PLBottom
+                        Panel ^{
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar1
+                                Name=PLB1
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar2
+                                Name=PLB2
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar3
+                                Name=PLB3
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar4
+                                Name=PLB4
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar5
+                                Name=PLB5
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar6
+                                Name=PLB6
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar7
+                                Name=PLB7
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar8
+                                Name=PLB8
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar9
+                                Name=PLB9
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar10
+                                Name=PLB10
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar11
+                                Name=PLB11
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar12
+                                Name=PLB12
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar13
+                                Name=PLB13
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar14
+                                Name=PLB14
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar15
+                                Name=PLB15
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar16
+                                Name=PLB16
+                                Pos=0,0
+                                Size=29,37
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormLoad2.ShutterLoadbar17
+                                Name=PLB17
+                                Pos=0,0
+                                Size=31,37
+                            }
+                            Name=PLBarMod
+                            Pos=0,0,-2
+                            Size=5000,5000
+                        }
+                        Pos=0,0
+                        Size=778,301
+                    }
+                }
+            }
+        }
+    }
+    StarMap ^{
+        Panel ^{
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                }
+                Panel ^{
+                    GAI ^{
+                        Active=False
+                    }
+                    Image ^{
+                        Active=False
+                    }
+                    Image ^{
+                        Active=False
+                        Name=ShipPanelImage
+                    }
+                    Image ^{
+                        Active=False
+                        Name=LoadAnimText
+                    }
+                    Label ^{
+                        Active=False
+                        Name=PLProgress
+                    }
+                    Name=PanelLoad
+                    Panel ^{
+                        Image ^{
+                            Name=PLB1_Block
+                        }
+                        Image ^{
+                            Name=PLB2_Block
+                        }
+                        Image ^{
+                            Name=PLB3_Block
+                        }
+                        Image ^{
+                            Name=PLB4_Block
+                        }
+                        Image ^{
+                            Name=PLB5_Block
+                        }
+                        Image ^{
+                            Name=PLB6_Block
+                        }
+                        Image ^{
+                            Name=PLB7_Block
+                        }
+                        Image ^{
+                            Name=PLB8_Block
+                        }
+                        Image ^{
+                            Name=PLB9_Block
+                        }
+                        Image ^{
+                            Name=PLB10_Block
+                        }
+                        Image ^{
+                            Name=PLB11_Block
+                        }
+                        Image ^{
+                            Name=PLB12_Block
+                        }
+                        Image ^{
+                            Name=PLB13_Block
+                        }
+                        Image ^{
+                            Name=PLB14_Block
+                        }
+                        Image ^{
+                            Name=PLB15_Block
+                        }
+                        Image ^{
+                            Name=PLB16_Block
+                        }
+                        Image ^{
+                            Name=PLB17_Block
+                        }
+                        Name=PLBar
+                    }
+                    ShutterAnim ^{
+                        Panel ^{
+                            Image ^{
+                                Name=PLRightImage
+                                Pos=0,0
+                                Size=282,658
+                            }
+                            Name=PLRight
+                            Pos=0,0
+                            Size=298,768
+                        }
+                        Panel ^{
+                            Image ^{
+                                Name=PLLeftImage
+                                Pos=0,0
+                                Size=282,658
+                            }
+                            Name=PLLeft
+                            Pos=0,0
+                            Size=299,768
+                        }
+                        Panel ^{
+                            Image ^{
+                                Name=PLTopImage
+                                Pos=0,0
+                                Size=714,450
+                            }
+                            Name=PLTop
+                            Pos=0,0
+                            Size=766,470
+                        }
+                        Panel ^{
+                            Image ^{
+                                Name=PLBottomImage
+                                Pos=0,0
+                                Size=718,218
+                            }
+                            Name=PLBottom
+                            Panel ^{
+                                Image ^{
+                                    Image=GI,Bm.FormLoad2.ShutterLoadbar1
+                                    Name=PLB1
+                                    Pos=0,0
+                                    Size=31,37
+                                }
+                                Image ^{
+                                    Image=GI,Bm.FormLoad2.ShutterLoadbar2
+                                    Name=PLB2
+                                    Pos=0,0
+                                    Size=29,37
+                                }
+                                Image ^{
+                                    Image=GI,Bm.FormLoad2.ShutterLoadbar3
+                                    Name=PLB3
+                                    Pos=0,0
+                                    Size=29,37
+                                }
+                                Image ^{
+                                    Image=GI,Bm.FormLoad2.ShutterLoadbar4
+                                    Name=PLB4
+                                    Pos=0,0
+                                    Size=29,37
+                                }
+                                Image ^{
+                                    Image=GI,Bm.FormLoad2.ShutterLoadbar5
+                                    Name=PLB5
+                                    Pos=0,0
+                                    Size=29,37
+                                }
+                                Image ^{
+                                    Image=GI,Bm.FormLoad2.ShutterLoadbar6
+                                    Name=PLB6
+                                    Pos=0,0
+                                    Size=29,37
+                                }
+                                Image ^{
+                                    Image=GI,Bm.FormLoad2.ShutterLoadbar7
+                                    Name=PLB7
+                                    Pos=0,0
+                                    Size=29,37
+                                }
+                                Image ^{
+                                    Image=GI,Bm.FormLoad2.ShutterLoadbar8
+                                    Name=PLB8
+                                    Pos=0,0
+                                    Size=29,37
+                                }
+                                Image ^{
+                                    Image=GI,Bm.FormLoad2.ShutterLoadbar9
+                                    Name=PLB9
+                                    Pos=0,0
+                                    Size=29,37
+                                }
+                                Image ^{
+                                    Image=GI,Bm.FormLoad2.ShutterLoadbar10
+                                    Name=PLB10
+                                    Pos=0,0
+                                    Size=29,37
+                                }
+                                Image ^{
+                                    Image=GI,Bm.FormLoad2.ShutterLoadbar11
+                                    Name=PLB11
+                                    Pos=0,0
+                                    Size=29,37
+                                }
+                                Image ^{
+                                    Image=GI,Bm.FormLoad2.ShutterLoadbar12
+                                    Name=PLB12
+                                    Pos=0,0
+                                    Size=29,37
+                                }
+                                Image ^{
+                                    Image=GI,Bm.FormLoad2.ShutterLoadbar13
+                                    Name=PLB13
+                                    Pos=0,0
+                                    Size=29,37
+                                }
+                                Image ^{
+                                    Image=GI,Bm.FormLoad2.ShutterLoadbar14
+                                    Name=PLB14
+                                    Pos=0,0
+                                    Size=29,37
+                                }
+                                Image ^{
+                                    Image=GI,Bm.FormLoad2.ShutterLoadbar15
+                                    Name=PLB15
+                                    Pos=0,0
+                                    Size=29,37
+                                }
+                                Image ^{
+                                    Image=GI,Bm.FormLoad2.ShutterLoadbar16
+                                    Name=PLB16
+                                    Pos=0,0
+                                    Size=29,37
+                                }
+                                Image ^{
+                                    Image=GI,Bm.FormLoad2.ShutterLoadbar17
+                                    Name=PLB17
+                                    Pos=0,0
+                                    Size=31,37
+                                }
+                                Name=PLBarMod
+                                Pos=0,0,-2
+                                Size=5000,5000
+                            }
+                            Pos=0,0
+                            Size=778,301
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

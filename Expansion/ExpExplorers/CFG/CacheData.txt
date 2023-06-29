@@ -1,0 +1,3 @@
+Script ~{
+    Mod_ExpExplorers=Mods\Expansion\ExpExplorers\DATA\Script\Mod_ExpExplorers.scr
+}

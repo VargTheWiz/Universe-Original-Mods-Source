@@ -1,0 +1,8 @@
+Bm ~{
+    FormGalaxy2 ~{
+        2BG=Mods\Tweaks\GalamapBGChange\DATA\Backgrounds\OpenedBG.gi
+        2Img=Mods\Tweaks\GalamapBGChange\DATA\Backgrounds\ClosedBG.png
+        2bg=Mods\Tweaks\GalamapBGChange\DATA\Backgrounds\OpenedBG.gi
+        2img=Mods\Tweaks\GalamapBGChange\DATA\Backgrounds\ClosedBG.png
+    }
+}

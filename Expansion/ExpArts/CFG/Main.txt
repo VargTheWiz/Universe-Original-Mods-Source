@@ -1,0 +1,101 @@
+Data ^{
+    SE ^{
+        Effect ^{
+            RNDbomb_1BAM ^{
+                GAI=Bm.ArtEffect.RNDbomb_01
+                PosZ=GateEffect
+            }
+            RNDbomb_1FastBAM ^{
+                GAI=Bm.ArtEffect.RNDbomb_01Fast
+                PosZ=GateEffect
+            }
+            RNDbomb_1SlowBAM ^{
+                GAI=Bm.ArtEffect.RNDbomb_01Slow
+                PosZ=GateEffect
+            }
+            RNDbomb_2BAM ^{
+                GAI=Bm.ArtEffect.RNDbomb_02
+                PosZ=GateEffect
+            }
+            RNDbomb_3BAM ^{
+                GAI=Bm.ArtEffect.RNDbomb_03
+                PosZ=GateEffect
+            }
+        }
+        Item ^{
+            RNDbomb_1 ^{
+                1Image=Bm.Container.2RNDbomb_1
+                2Image=Bm.Container.2RNDbomb_1
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            RNDbomb_2 ^{
+                1Image=Bm.Container.2RNDbomb_2
+                2Image=Bm.Container.2RNDbomb_2
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            RNDbomb_3 ^{
+                1Image=Bm.Container.2RNDbomb_3
+                2Image=Bm.Container.2RNDbomb_3
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            RNDmoditem_15 ^{
+                1Image=Bm.Container.2RNDmoditem_15
+                2Image=Bm.Container.2RNDmoditem_15
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+        }
+        Weapon ^{
+            13 ^{
+                Palettes ^{
+                    0 ^{
+                    }
+                    1 ^{
+                    }
+                    2 ^{
+                    }
+                    3 ^{
+                    }
+                    4 ^{
+                    }
+                    5 ^{
+                    }
+                    6 ^{
+                        GAI=Bm.ArtEffect.RNDart_02
+                        SoundShot=Sound.shot12
+                    }
+                    PalettesCount=7
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_ExpArts=1,Script.Mod_ExpArts
+    }
+    ScriptLibs ^{
+        Mod_ExpArts=UtilityFunctions
+    }
+}
+ML ^{
+    Number ^{
+        Panel ~{
+            Panel ^{
+                Image ^{
+                }
+                Image ^{
+                }
+                Image ^{
+                }
+                Image ^{
+                    Image=GI,Bm.FormCount2.2KindEmpty
+                    Name=Kind1
+                    Pos=31,113,11
+                    Size=218,30
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,379 @@
+MicroModuls ^{
+    ShuSmugglers_SmugglerFei ^{
+        Cost=130
+        CustomTag=transport_pirate_fei
+        Equipments=Hull
+        Fragility=105
+        ImitatedHullType=Transport,Pirate
+        KindGraph=SmugglerFei
+        LockedAcryn=3
+        Name=</color><Type> hull smuggler
+        NonSearchable=2
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=10
+        RacialRestriction=1
+        Size=110
+        Special=1
+        Text=<color=248,252,248>A special hull used by traders of the pirate syndicate. Combined with the membership in the pirate clan allows to sell goods on the black markets at better prices.</color>
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        Text=(only for <clr>pirates<clrEnd>)
+        bonSkill4=1
+        bonSkill5=1
+        bonSlotArt=-1
+        bonSlotForsage=-1
+        bonSlotScaner=-1
+        bonSlotWeapon=-2
+    }
+    ShuSmugglers_SmugglerGaal ^{
+        Cost=130
+        CustomTag=transport_pirate_gaal
+        Equipments=Hull
+        Fragility=105
+        ImitatedHullType=Transport,Pirate
+        KindGraph=SmugglerGaal
+        LockedAcryn=3
+        Name=</color><Type> hull smuggler
+        NonSearchable=2
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=10
+        RacialRestriction=1
+        Size=110
+        Special=1
+        Text=<color=248,252,248>A special hull used by traders of the pirate syndicate. Combined with the membership in the pirate clan allows to sell goods on the black markets at better prices.</color>
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        Text=(only for <clr>pirates<clrEnd>)
+        bonSkill4=1
+        bonSkill5=1
+        bonSlotArt=-1
+        bonSlotDef=-1
+        bonSlotForsage=-1
+        bonSlotWeapon=-2
+    }
+    ShuSmugglers_SmugglerMaloc ^{
+        Cost=130
+        CustomTag=transport_pirate_maloc
+        Equipments=Hull
+        Fragility=105
+        ImitatedHullType=Transport,Pirate
+        KindGraph=SmugglerMaloc
+        LockedAcryn=3
+        Name=</color><Type> hull smuggler
+        NonSearchable=2
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=10
+        RacialRestriction=1
+        Size=110
+        Special=1
+        Text=<color=248,252,248>A special hull used by traders of the pirate syndicate. Combined with the membership in the pirate clan allows to sell goods on the black markets at better prices.</color>
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        Text=(only for <clr>pirates<clrEnd>)
+        bonSkill4=1
+        bonSkill5=1
+        bonSlotArt=-2
+        bonSlotDef=-1
+        bonSlotForsage=-1
+        bonSlotScaner=-1
+        bonSlotWeapon=-1
+    }
+    ShuSmugglers_SmugglerPeleng ^{
+        Cost=130
+        CustomTag=transport_pirate_peleng
+        Equipments=Hull
+        Fragility=105
+        ImitatedHullType=Transport,Pirate
+        KindGraph=SmugglerPeleng
+        LockedAcryn=3
+        Name=</color><Type> hull smuggler
+        NonSearchable=2
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=10
+        RacialRestriction=1
+        Size=110
+        Special=1
+        Text=<color=248,252,248>A special hull used by traders of the pirate syndicate. Combined with the membership in the pirate clan allows to sell goods on the black markets at better prices.</color>
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        Text=(only for <clr>pirates<clrEnd>)
+        bonSkill4=1
+        bonSkill5=1
+        bonSlotArt=-2
+        bonSlotForsage=-1
+        bonSlotWeapon=-2
+    }
+    ShuSmugglers_SmugglerPeople ^{
+        Cost=130
+        CustomTag=transport_pirate_people
+        Equipments=Hull
+        Fragility=105
+        ImitatedHullType=Transport,Pirate
+        KindGraph=SmugglerPeople
+        LockedAcryn=3
+        Name=</color><Type> hull smuggler
+        NonSearchable=2
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=10
+        RacialRestriction=1
+        Size=110
+        Special=1
+        Text=<color=248,252,248>A special hull used by traders of the pirate syndicate. Combined with the membership in the pirate clan allows to sell goods on the black markets at better prices.</color>
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        Text=(only for <clr>pirates<clrEnd>)
+        bonSkill4=1
+        bonSkill5=1
+        bonSlotArt=-3
+        bonSlotForsage=-1
+        bonSlotWeapon=-2
+    }
+}
+Script ^{
+    Mod_ShuSmugglers ^{
+        0=<0>
+    }
+}
+ShipType ^{
+    Fei ^{
+        Smuggler=Ashian
+    }
+    Gaal ^{
+        Smuggler=Mohonal
+    }
+    Maloc ^{
+        Smuggler=Hardor
+    }
+    Peleng ^{
+        Smuggler=Chhasha
+    }
+    People ^{
+        Smuggler=Bootlegger
+    }
+    TypeName ^{
+        Smuggler=Smuggler
+    }
+}
+Talk ^{
+    PirateClan ^{
+        Attack ^{
+            TransportFear=I can't go for it. The ship' condition is very bad, everything is worn out. I'm not into fights.
+            TransportFear1=Nope, buddy! If they kill me, then who will fluff my elderly mother's pillow?
+            TransportFear2=As soon as I heard your proposal - I wanted to write poetry, grow plants ... in general, do anything, just not to listen to your crazy ideas.
+            TransportFear3=What, do you think, I want to die? Find another helper.
+            TransportFear4=Well, no, I won’t get into such an adventure, you’ll deal with him somehow yourself.
+            TransportHaveBusiness=Time is money! This truth does not age with years. I need to mind my own business, if I get involved in all the showdowns along the way, I will quickly go bankrupt.
+            TransportHaveBusiness1=I now have enough of my own affairs, turn to someone else.
+            TransportHaveBusiness2=Sorry, comrade, but I'm not up to fighting now. Come back another time, okay?
+            TransportHaveBusiness3=I have no reason to fight now, come on a little later, okay?
+            TransportHaveBusiness4=Buddy, it just so happens that I'm very busy right now, check back later.
+            TransportItsMyTranc=Now I’ll hit you on the cockpit with rockets! Get your hands off my tranclucator, you homegrown penchecrakus!
+            TransportItsYourTranc=Listen, are you a moron or what? If you want to do such things, then lock yourself up in your hangar first, and don’t you dare show such a shame in public!
+            TransportOk=Great idea bro! Let's hit him right!
+            TransportOk1=And really, why don't I shake things up? There is life in the old dog yet!
+            TransportOk2=Well, it's high time to kill this adversary. Computer, full combat readiness!
+            TransportOk3=I think it really won’t hurt me to warm up, otherwise I’ve become a transport rat. Now I'll drink "Makhpella Light" for courage and go!
+            TransportOk4=I just didn’t have enough money for a bottle of tokilla, and here is such a profitable offer! I'm in!
+            TransportSend=Son, I want to ask you for one favor. Do you see <Target>? I need help fighting him.
+            TransportSend1=Listen, comrade, here <Target> calls me very bad words, can you help me teach him politeness?
+            TransportSend2=This bastard <Target> screwed me away! Let's teach the bad guy a lesson, shall we?
+            TransportSend3=A bastard named <Target> wants to take my belongings! Help me in the fight against him, we will share the profit equally.
+            TransportSend4=Listen, friend, help me to kill <Target>, I won't forget!
+            TransportSuspect=Come on, you, otherwise you’ll knock off a piece of skin of my ship while I fight with him.
+            TransportSuspect1=Who are you to waste my time on your business?! Get out of here with your suggestions!
+            TransportSuspect2=You are a muddy type, I'm not ready to turn my back on you.
+            TransportSuspect3=I don't trust you, let's do it yourself.
+            TransportSuspect4=Necessarily! But first, give me at least three reasons why I should trust you.
+            TransportWeFriends=The captain of that ship is, by the way, my business partner, and I'm not going to attack him.
+            TransportWeFriends1=That is my friend! If you run into him, I'll break off your claws.
+            TransportWeFriends2=Yes, we have known each other for a thousand years, what are you talking about! In a decent society, you can get a blow in the face for this.
+            TransportWeFriends3=This is my old comrade, I won't shoot him.
+            TransportWeFriends4=We don't shoot at our allies, comrade.
+            TransportWeFriendsTranc=I don't want to meddle in other humanoids' business for no reason. What if the owner of this tranclucator is a crime boss?
+            TransportWeFriendsTranc1=Well, a robot, well, it flies - what harm is it to you? All in all, I'm going to stay away from all of this.
+            TransportWeFriendsTranc2=Sorry, <Player>, I'm late with the express delivery. It would be nice to suggest someone to attack for the cause, but I personally have nothing against other humanoids' robots.
+        }
+        Goods ^{
+            TransportLongDistance=Wow! I almost choked on my "Makhpella Light" with laughter! You would have flown even farther and threatened from there!
+            TransportLongDistance1=And you're funny! Next time threaten me twenty parsecs away.
+            TransportLongDistance2=I don’t understand, are you laughing at me or do you really have such long-range guns?
+            TransportLongDistance3=So you need to serve my cargo on a silver platter? Fly up first, and then yelp something.
+            TransportLongDistance4=Boy, have you gone over maloq's hard red alcohol? At this distance, any sucker will get away from you!
+            TransportNo=Your face is not too intimidating, practice in front of the mirror.
+            TransportNo1=Come on, take cargo from me. Or are you just so formidable on the intercom?
+            TransportNo2=I'll fight to the death for my cargo, my dear, and I don't intend to give it to cretins like you.
+            TransportNo3=Listen, buddy, I'd love to share with you, but I'm doing an important delivery job right now. Come on next time, huh?
+            TransportNo4=This will be news to you, but I don't plan on gifting my belongings to every scoundrel I meet. Give me one reason to make an exception for you.
+            TransportOk=You win. Stop firing, I'll drop the cargo now.
+            TransportOk1=So be it, you convinced me. I'm dropping the load.
+            TransportOk2=Goods, of course, a valuable thing, but life still comes out more expensive. Grab presents.
+            TransportOk3=Okay, okay, I don't need problems, comrade, take the cargo and fly to the left, and I'll fly to the right, okay?
+            TransportOk4=Your guns will be more powerful than mine, so take them. Fuck knows, why the hell do you need this cargo, but I don’t get into other people’s business, if you want goods, then there is a reason.
+        }
+        Money ^{
+            TransportLongDistance=What? Money? Well, of course, I like nothing better then just transfer my money to the first inappropriate person I meet, who is broadcasting on the air from the other end of the system. If suddenly you didn't got it, which I won’t be surprised at, then this is sarcasm.
+            TransportLongDistance1=Where do you get these from? Do you want my money? You can't even catch up with me!
+            TransportLongDistance2=And you're funny! Next time threaten me twenty parsecs away.
+            TransportLongDistance3=I don’t understand, are you laughing at me or do you really have such long-range guns?
+            TransportLongDistance4=Do you really think I'm such an idiot that you think I'll pay you, being a cloud of miles away from you? Oh naive...
+            TransportLongDistance5=Eh, in my youth, pirates were completely different - self-esteem did not allow them to demand money from the viewing radius of a modern radar...
+            TransportLongDistance6=How daring you are! Send me your photo, as soon as I land on the nearest planet, I will definitely sell it to journalists. Just imagine: the report "Moron of the Year"! So I see: "he robs ships from gigantic distances!" Hey, what's wrong with you? Come on, buddy, this is a joke.
+            TransportNo=I will not part with my earned money without a proper reason. Or are you saying that your wreck might be a danger to me?
+            TransportNo1=You would fly, you half-educated robber! Now I will inform my sidekick, so he will correct your nozzles!
+            TransportNo2=Brother, you have confused something: I'm not an ATM for you, so move your engine somewhere to gobsaurus' den, huh?
+            TransportNo3=My money honestly earned over the years of drug trafficking and sales of large batches of weapons, and I do not intend to give it away.
+            TransportNo4=Are you completely out of your mind to threaten crime bosses?! Wouldn't you go far and for a long time, would you?
+            TransportNo5=Man, I'm in a good mood today, so I'll take this as a failed joke. But you better not make me angry, otherwise you can lose a couple of teeth...
+            TransportNo6=Let's see how much money I have here... fifty cr. for a gas station, ten cr. for a tip for a taxi driver, five thousand cr. for the cartel's common fund... I think repairs after the fight will be cheaper than throwing away my money to brats like you, ha ha.
+            TransportNo7=Well, why is everyone trying to steal money from our cartel? All such half-wits that they do not understand, since we are the richest, then we are also the best armed? Put your attacks back in the box, you won't get any money from me anyway.
+            TransportOk=Your requests for me - a mere trifle. It's easier to pay off and not bother. But in the future I'd rather buy a cruiser.
+            TransportOk1=So I saved them, saved up, robbed, traded smuggling, didn’t sleep at night, ate badly! And here you are! Well, you're not ashamed, are you? Okay, I'll transfer...
+            TransportOk2=So be it, I'll pay. Accept money order.
+            TransportOk3=ow, of course, I have nothing to do, and I will have to pay off, but believe me: as soon as I gain strength, I will immediately find you and kick your ass!
+            TransportOk4=Cabbage is always good, but life is better. Take some money.
+            TransportOk5=You'll rob me to the bone... Keep your blood money.
+            TransportOk6=Listen, maybe a smaller amount will suit you, huh? .. Yes, okay, okay, I'm transferring...
+            TransportSumIsVeryBig=For starters, I advise you not to be impudent. If I do not restrain myself, then, you see, your ship will nevertheless fly apart ahead of time with you.
+            TransportSumIsVeryBig1=Wait a minute, let me borrow money from my comrade, and you will arrive in a week or two, huh?
+            TransportSumIsVeryBig2=Buddy, please don't hit me! Well, I don't have that amount!
+            TransportSumIsVeryBig3=The amount that you just mentioned, I lost last week in an elite casino. Reduce amount out of respect for gamers.
+            TransportSumIsVeryBig4=Oh, you flattered me... If I had that amount of money, I would, perhaps, not hang out in cold space, but would now be resting somewhere on Mauna Roa...
+        }
+        Partner ^{
+            FinancesCheck=What is your financial situation?
+            FinancesConfirmed=Roger that
+            FinancesGotGift=Thanks, now I have <Money> cr. on my account.
+            FinancesOfferGift=Give money to partner.
+            FinancesReport=<Player>, I've got <Money> cr. on my account.
+            FinancesSendGift=Take <Money> cr.
+            FinancesWaitForGift=So, <Player>, how much money can you transfer to me?
+        }
+        PreserveItems ^{
+            TransportNo=No, this garbage should not litter outer space.
+            TransportOk=So be it, let it stay, I'm kind today.
+        }
+        Protect ^{
+            TransportNo=Dude, mind your own business or you'll be next in line.
+            TransportNo1=Look, man, <Target> will be smeared on the wall, and you can't stop it.
+            TransportNo2=Wouldn't you, unfortunate peacemaker, fly somewhere to Makhpella?
+            TransportNo3=Are you suggesting that I squander such a benefit? No, never in my life!
+            TransportNo4=Otherwise, are you torturing me to death with your peace-making speeches? It's funny.
+            TransportNo5=What more? Who are you to order me?
+            TransportOk=Well, that's why you got in! I almost killed him! So be it, today is that scoundrel's lucky day.
+            TransportOk1=<Target> is still a bastard, but I'm not ready to compete with you. Okay, I'll let him live.
+            TransportOk2=There is no reason for me to quarrel with you, so today <Target> can fly, but I do not promise to be so merciful the next time I meet him.
+            TransportOk3=Oh, I am missing out on such opportunity! Okay, <Target> will live, but you'll owe me a jar of "Makhpella Dark".
+            TransportOk4=Well, <Player>, it's not good to break off the fun like that ... Today you protect every oncoming transport worker, and what's next? Will you save every animal? Okay, I don't want to deal with animal rights... <Target>, fly, I'm letting you go.
+        }
+        SmugglerShop ^{
+            PlayerOk1=This is just what I need! I'll buy it!
+            PlayerOk2=You got me interested. I'll buy it!
+            PlayerOk3=I agree to pay
+            PlayerOk4=I'll give any money for this!
+            PlayerOk5=I'll buy it!
+            PlayerSend1=Do you have anything for sale, uh, not quite legal?
+            PlayerSend2=Is there anything interesting for me?
+            PlayerSend3=Huckster, sell me something
+            PlayerSend4=Do you happen to have some goods?
+            PlayerSend5=Hey, do you have anything for sale?
+            TransportNo1=Forgive me, comrade, but so far nothing for you. Come back in a week or two and we'll talk.
+            TransportNo2=Sorry, comrade, but everything cool has already been sold out, contact me later.
+            TransportNo3=So far I have nothing to offer you, but don't be upset, something will definitely appear later.
+        }
+        Truce ^{
+            TransportNo=Well, no, brother! These small sums of money will not even be enough for me to repair, not to mention compensation for moral damage. Give me more, I said!
+            TransportNo1=I don’t understand: are you really such a rogue or such a terrible miser? I'm spending more on fuel stations than you're offering me now!
+            TransportNo2=This money won't even compensate me for seeing your face on the screen.
+            TransportNo3=Do you want to pity me? I would like to lend you money, only so that you can offer me not such a meager amount!
+            TransportNo4=Really, buddy! Thanks to you, I have a new joke that I can remember over a bottle of rum!
+            TransportNo5=Do you know who I am?! I earned so much greens in a day before you were housebroken! Give me more!
+            TransportOk=It's still cool that space is full of suckers like you. Robbery - you know, a great help to business.
+            TransportOk1=That's the way to talk! It's not a pity to let you go for such money.
+            TransportOk2=Thank you, mate, for such a wonderful investment in the underground business. I'll put you on the honor roll of our independent sponsors.
+            TransportOk3=Another time I would have taken more from you, but I'm in a really good mood today. Or is it because of the liquor? And yet, it doesn't matter.
+            TransportOk4=You see how easy it is to get along with me: you paid and forgot, and no snotty pleas for mercy are needed, hehe.
+            TransportSend=Unfortunately, now I have no time to fight with you, it's easier to pay off. I hope the amount in <Money> cr suits you?
+            TransportSend1=enough, enough, you're cooler than me, cooler than everyone here, I agree! Take these <Money> cr, I've been saving them for a very long time, just let me fly away!
+            TransportSend2=I offer a wonderful deal: I transfer <Money> cr to your account, and you leave me alone. Deal?
+            TransportSend3=Uh, darling, stop shooting! Are you not ready to let me go even for <Money> cr?
+            TransportSend4=Buddy, you really deserve this money! I offer you a tempting sum in <Money> cr, after which I calmly fly away. Deal?
+        }
+    }
+}
+UselessItems ^{
+    Usl_PirateItem1 ^{
+        Cost=Average
+        Name=Container with an Animal
+        Owner=None
+        Size=1
+        Text=Holds an unknown animal. Opening the container is NOT recommended!
+    }
+    Usl_PirateItem10 ^{
+        Cost=Big
+        Name=Disodane
+        Owner=None
+        Size=1
+        Text=A valuable mineral. Affects the psyche of biological organisms.
+    }
+    Usl_PirateItem2 ^{
+        Cost=Average
+        Name=Urgent Letter
+        Owner=None
+        Size=1
+        Text=A paper letter with additional orders. For the purpose of secrecy, it is made of paper and requires security.
+    }
+    Usl_PirateItem3 ^{
+        Cost=Big
+        Name=Armored Box with Precious Cargo
+        Owner=None
+        Size=1
+        Text=A highly valuable cargo. So valuable that sawing the box in half is the only way of getting to it.
+    }
+    Usl_PirateItem4 ^{
+        Cost=Big
+        Name=A case with documents
+        Owner=None
+        Size=1
+        Text=A case with important documents.
+    }
+    Usl_PirateItem5 ^{
+        Cost=Big
+        Name=Data drive
+        Owner=None
+        Size=1
+        Text=A high-capacity data storage device.
+    }
+    Usl_PirateItem6 ^{
+        Cost=Huge
+        Name=Server
+        Owner=None
+        Size=1
+        Text=Server with large amount of data.
+    }
+    Usl_PirateItem7 ^{
+        Cost=Average
+        Name=Audio cassette
+        Owner=None
+        Size=1
+        Text=Cassette with encoded audio recording.
+    }
+    Usl_PirateItem8 ^{
+        Cost=Average
+        Name=Substance container
+        Owner=None
+        Size=1
+        Text=A container with a strange green substance.
+    }
+    Usl_PirateItem9 ^{
+        Cost=Average
+        Name=Bottle
+        Owner=None
+        Size=1
+        Text=Bottle with an unknown drug.
+    }
+}

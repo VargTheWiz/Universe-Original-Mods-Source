@@ -1,0 +1,36 @@
+Script ^{
+    Mod_SR1PelengZond ^{
+        0=Sleuth
+        1=Nayana
+        10=Well, you asked for it...
+        11=This is scientific base "<0>". We have been watching you and we are grateful to you for stopping the Pelengan spy Sleuth. We could not destroy him ourselves because we were afraid that he would set off the explosive device in the probe, threatening the safety of our system and the base.
+        12=The intelligence probe you have picked up is primed with powerful explosives. The agent was supposed to blow it up at the smallest hint of danger. It's strange he didn't do it, probably he just underestimated the threat.
+        13=Without Sleuth around the explosive device of the probe will soon go off. You must take the probe far away from the base so that it does not suffer from the explosion. We will be very grateful for your help.
+        14=Congratulations! On behalf of the Faeyan government we are paying you <0> cr for the destruction of the hostile spy and for the successful neutralisation of the intelligence probe.
+        15=What have you done, we could all have died!
+        16=Sure, I don't want any problems.
+        17=Shut up! What's lost is lost.
+        18=Ok, take your stuff.
+        19=I won't give it back, get lost.
+        2=You should take the probe far from the base so that it will not be hit from an explosion. We will be grateful for your help.
+        20=A bomb? What are you talking about? The probe seems to be quite harmless.
+        21=And what do I do with this probe now?
+        3=This is the representative of the Pelengan government, a superliner "<0>". Return the capsule you have just collected to its place immediately, otherwise we will have to use force.
+        4=You do not understand what you're getting into. For your sake, put the capsule in its place or you will be very sorry.
+        5=That's better
+        6=You don't understand what you're getting yourself into! Throw the probe overboard before you get hurt!
+        7=You are encroaching upon the property of the Pelengan government. If you do not do as we say, we will destroy you.
+        8=I think you're just dumb. Throw the probe overboard immediately. And if you take it again, I'll shoot you.
+        9=I'm on a special mission and I can't talk. Don't you dare touch my probe!
+    }
+}
+UselessItems ^{
+    OperatedProbe ^{
+        Cost=Mini
+        Description=Spy probe. Can receive external commands.
+        Name=Controlled intelligence probe
+        Owner=Peleng
+        Size=10
+        Text=Pelengs spy device.
+    }
+}

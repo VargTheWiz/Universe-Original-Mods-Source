@@ -1,0 +1,831 @@
+FormInfo ^{
+    br=<br>
+}
+MicroModuls ~{
+    ShuMercs_MercMalocHull ^{
+        Cost=110
+        CustomTag=Merc0
+        Equipments=Hull
+        Fragility=90
+        ImitatedHullType=Ranger,Warrior
+        KindGraph=MercMaloc
+        LockedAcryn=3
+        Name=</color><Type> hull mercenary
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-3
+        bonSlotDef=-1
+        bonSlotHook=-1
+    }
+    ShuMercs_MercPelengHull ^{
+        Cost=110
+        CustomTag=Merc1
+        Equipments=Hull
+        Fragility=110
+        ImitatedHullType=Ranger,Warrior
+        KindGraph=MercPeleng
+        LockedAcryn=3
+        Name=</color><Type> hull mercenary
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-3
+        bonSlotDroid=-1
+        bonSlotWeapon=-1
+    }
+    ShuMercs_MercPeopleHull ^{
+        Cost=110
+        CustomTag=Merc2
+        Equipments=Hull
+        Fragility=110
+        ImitatedHullType=Ranger,Warrior
+        KindGraph=MercPeople
+        LockedAcryn=3
+        Name=</color><Type> hull mercenary
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-4
+        bonSlotHook=-1
+        bonSlotWeapon=-1
+    }
+    ShuMercs_MercFeiHull ^{
+        Cost=110
+        CustomTag=Merc3
+        Equipments=Hull
+        Fragility=70
+        ImitatedHullType=Ranger,Warrior
+        KindGraph=MercFei
+        LockedAcryn=3
+        Name=</color><Type> hull mercenary
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-2
+        bonSlotWeapon=-1
+    }
+    ShuMercs_FreeMercMalocHull ^{
+        Cost=110
+        CustomTag=Free0
+        Equipments=Hull
+        ImitatedHullType=Ranger,Warrior
+        KindGraph=FreeMercMaloc
+        LockedAcryn=3
+        Name=</color><Type> hull freelancer
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-2
+        bonSlotForsage=-1
+        bonSlotWeapon=-1
+    }
+    ShuMercs_FreeMercPelengHull ^{
+        Cost=110
+        CustomTag=Free1
+        Equipments=Hull
+        ImitatedHullType=Ranger,Warrior
+        KindGraph=FreeMercPeleng
+        LockedAcryn=3
+        Name=</color><Type> hull freelancer
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-2
+        bonSlotForsage=-1
+        bonSlotWeapon=-2
+    }
+    ShuMercs_FreeMercPeopleHull ^{
+        Cost=110
+        CustomTag=Free2
+        Equipments=Hull
+        ImitatedHullType=Ranger,Warrior
+        KindGraph=FreeMercPeople
+        LockedAcryn=3
+        Name=</color><Type> hull freelancer
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-1
+        bonSlotWeapon=-2
+    }
+    ShuMercs_FreeMercFeiHull ^{
+        Cost=110
+        CustomTag=Free3
+        Equipments=Hull
+        ImitatedHullType=Ranger,Warrior
+        KindGraph=FreeMercFei
+        LockedAcryn=3
+        Name=</color><Type> hull freelancer
+        NonSearchable=2
+        Special=1
+        bonSlotWeapon=-2
+    }
+    ShuMercs_FreeMercGaalHull ^{
+        Cost=110
+        CustomTag=Free4
+        Equipments=Hull
+        ImitatedHullType=Ranger,Warrior
+        KindGraph=FreeMercGaal
+        LockedAcryn=3
+        Name=</color><Type> hull freelancer
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-1
+        bonSlotForsage=-1
+        bonSlotWeapon=-2
+    }
+    ShuMercs_Merzenary1 ^{
+        AcrynLevel=1
+        AcrynSerie=Mercenary I-IV
+        Cost=200
+        CustomTag=MercHull
+        Equipments=Hull
+        FragilityEnergy=94
+        FragilityMissile=94
+        FragilitySplinter=94
+        KindGraph=Merzenary
+        LevelsCount=4
+        LockedAcryn=3
+        Name=Mercenary hull I
+        Priority=10
+        Ruins=MB
+        SerieLevel1=ShuMercs_Merzenary1
+        SerieLevel2=ShuMercs_Merzenary2
+        SerieLevel3=ShuMercs_Merzenary3
+        SerieLevel4=ShuMercs_Merzenary4
+        Special=1
+        Text=<color=248,252,248>An ancient ship hull, the technological stuffing of which was completely re-equipped to meet the needs of modern mercenary special forces. In addition to reduced susceptibility to damage, hull has integrated analytical modules, patented by the largest mercenary groups, the use of which is controlled through their private channels.</color>
+        Text=<clr><clrEnd>
+        Text=Attack skill: <bonSkill1>
+        Text=Mobility skill: <bonSkill2>
+        Text=Technical skill: <bonSkill3>
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        Text=Leadership skill: <bonSkill6>
+        Text=Scanner power: <bonScan>%
+        Text=Gripper power: <bonHook>
+        Text=Gripper range: <bonHookRadius>
+        Text=Gripper speed: <bonHookMinSpeed>
+        bonHook=-10
+        bonHookMaxSpeed=-2
+        bonHookMinSpeed=-2
+        bonHookRadius=-10
+        bonScan=-6
+        bonSkill1=1
+        bonSkill2=1
+        bonSkill3=1
+        bonSkill4=1
+        bonSkill5=1
+        bonSkill6=1
+        bonSlotArt=-4
+        bonSlotWeapon=-2
+    }
+    ShuMercs_Merzenary2 ^{
+        AcrynLevel=2
+        AcrynSerie=Mercenary I-IV
+        Cost=300
+        CustomTag=MercHull
+        Equipments=Hull
+        FragilityEnergy=90
+        FragilityMissile=90
+        FragilitySplinter=90
+        KindGraph=Merzenary
+        LevelsCount=4
+        LockedAcryn=3
+        Name=Mercenary hull II
+        Priority=30
+        Ruins=MB
+        SerieLevel1=ShuMercs_Merzenary1
+        SerieLevel2=ShuMercs_Merzenary2
+        SerieLevel3=ShuMercs_Merzenary3
+        SerieLevel4=ShuMercs_Merzenary4
+        Special=1
+        Text=<color=248,252,248>An ancient ship hull, the technological stuffing of which was completely re-equipped to meet the needs of modern mercenary special forces. In addition to reduced susceptibility to damage, hull has integrated analytical modules, patented by the largest mercenary groups, the use of which is controlled through their private channels.</color>
+        Text=<clr><clrEnd>
+        Text=Attack skill: <bonSkill1>
+        Text=Mobility skill: <bonSkill2>
+        Text=Technical skill: <bonSkill3>
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        Text=Leadership skill: <bonSkill6>
+        Text=Scanner power: <bonScan>%
+        Text=Gripper power: <bonHook>
+        Text=Gripper range: <bonHookRadius>
+        Text=Gripper speed: <bonHookMinSpeed>
+        bonHook=-10
+        bonHookMaxSpeed=-2
+        bonHookMinSpeed=-2
+        bonHookRadius=-10
+        bonScan=-6
+        bonSkill1=1
+        bonSkill2=1
+        bonSkill3=1
+        bonSkill4=1
+        bonSkill5=1
+        bonSkill6=1
+        bonSlotArt=-3
+        bonSlotWeapon=-2
+    }
+    ShuMercs_Merzenary3 ^{
+        AcrynLevel=3
+        AcrynSerie=Mercenary I-IV
+        Cost=400
+        CustomTag=MercHull
+        Equipments=Hull
+        FragilityEnergy=86
+        FragilityMissile=86
+        FragilitySplinter=86
+        KindGraph=Merzenary
+        LevelsCount=4
+        LockedAcryn=3
+        Name=Mercenary hull III
+        Priority=50
+        Ruins=MB
+        SerieLevel1=ShuMercs_Merzenary1
+        SerieLevel2=ShuMercs_Merzenary2
+        SerieLevel3=ShuMercs_Merzenary3
+        SerieLevel4=ShuMercs_Merzenary4
+        Special=1
+        Text=<color=248,252,248>An ancient ship hull, the technological stuffing of which was completely re-equipped to meet the needs of modern mercenary special forces. In addition to reduced susceptibility to damage, hull has integrated analytical modules, patented by the largest mercenary groups, the use of which is controlled through their private channels.</color>
+        Text=<clr><clrEnd>
+        Text=Attack skill: <bonSkill1>
+        Text=Mobility skill: <bonSkill2>
+        Text=Technical skill: <bonSkill3>
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        Text=Leadership skill: <bonSkill6>
+        Text=Scanner power: <bonScan>%
+        Text=Gripper power: <bonHook>
+        Text=Gripper range: <bonHookRadius>
+        Text=Gripper speed: <bonHookMinSpeed>
+        bonHook=-10
+        bonHookMaxSpeed=-2
+        bonHookMinSpeed=-2
+        bonHookRadius=-10
+        bonScan=-6
+        bonSkill1=1
+        bonSkill2=1
+        bonSkill3=1
+        bonSkill4=1
+        bonSkill5=1
+        bonSkill6=1
+        bonSlotArt=-2
+        bonSlotWeapon=-2
+    }
+    ShuMercs_Merzenary4 ^{
+        AcrynLevel=4
+        AcrynSerie=Mercenary I-IV
+        Cost=500
+        CustomTag=MercHull
+        Equipments=Hull
+        FragilityEnergy=90
+        FragilityMissile=90
+        FragilitySplinter=90
+        KindGraph=Merzenary
+        LevelsCount=4
+        LockedAcryn=3
+        Name=Mercenary hull IV
+        Priority=70
+        Ruins=MB
+        SerieLevel1=ShuMercs_Merzenary1
+        SerieLevel2=ShuMercs_Merzenary2
+        SerieLevel3=ShuMercs_Merzenary3
+        SerieLevel4=ShuMercs_Merzenary4
+        Special=1
+        Text=<color=248,252,248>An ancient ship hull, the technological stuffing of which was completely re-equipped to meet the needs of modern mercenary special forces. In addition to reduced susceptibility to damage, hull has integrated analytical modules, patented by the largest mercenary groups, the use of which is controlled through their private channels.</color>
+        Text=<clr><clrEnd>
+        Text=Attack skill: <bonSkill1>
+        Text=Mobility skill: <bonSkill2>
+        Text=Technical skill: <bonSkill3>
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        Text=Leadership skill: <bonSkill6>
+        Text=Scanner power: <bonScan>%
+        Text=Gripper power: <bonHook>
+        Text=Gripper range: <bonHookRadius>
+        Text=Gripper speed: <bonHookMinSpeed>
+        bonHook=-15
+        bonHookMaxSpeed=-3
+        bonHookMinSpeed=-3
+        bonHookRadius=-15
+        bonScan=-7
+        bonSkill1=1
+        bonSkill2=1
+        bonSkill3=1
+        bonSkill4=1
+        bonSkill5=1
+        bonSkill6=1
+    }
+    353 ^{
+        Ruins=SB,BK,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    354 ^{
+        Ruins=SB,BK,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    355 ^{
+        Ruins=SB,BK,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    356 ^{
+        Ruins=SB,BK,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    357 ^{
+        Ruins=RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    358 ^{
+        Ruins=RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    359 ^{
+        Ruins=RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    360 ^{
+        Ruins=RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    361 ^{
+        Ruins=MC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    362 ^{
+        Ruins=MC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    363 ^{
+        Ruins=MC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    364 ^{
+        Ruins=MC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    365 ^{
+        Ruins=WB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    366 ^{
+        Ruins=WB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    367 ^{
+        Ruins=WB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    368 ^{
+        Ruins=WB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    369 ^{
+        Ruins=WB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    370 ^{
+        Ruins=WB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    371 ^{
+        Ruins=WB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    372 ^{
+        Ruins=WB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    418 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    419 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    420 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    421 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    422 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    423 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    424 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    425 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    426 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    427 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    428 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    429 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    430 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    431 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    432 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    433 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    434 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    435 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    436 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    437 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    438 ^{
+        Ruins=PB,CB,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    439 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    440 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    441 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    442 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    443 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    444 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    445 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    446 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    447 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    448 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    449 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    450 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    451 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    452 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    453 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    454 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    455 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    456 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    457 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    458 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    459 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    472 ^{
+        Ruins=SB,BK,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    473 ^{
+        Ruins=SB,BK,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    474 ^{
+        Ruins=SB,BK,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    475 ^{
+        Ruins=SB,BK,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    476 ^{
+        Ruins=RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    477 ^{
+        Ruins=RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    478 ^{
+        Ruins=RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    479 ^{
+        Ruins=RC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    480 ^{
+        Ruins=MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    481 ^{
+        Ruins=MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    482 ^{
+        Ruins=MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    483 ^{
+        Ruins=MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+}
+Talk ^{
+    Attack ^{
+        PlayerHaveBusiness3=Hmm, I'd like to help you, but I'm too busy. You can't count me in.
+    }
+}
+GalaxyNews ^{
+    CreateNewObject ^{
+        MB=Today <Name> <Type> was built in the <Star> system. All free pilots who want to earn extra money have already gone to the station.
+    }
+    GoToPrison ^{
+        Pirate=At last, the authorities of planet <Planet> have apprehended the pirate ship <Name>. Thanks to a shrewdly constructed defense by their team of lawyers, the criminals were sentenced to a mere <Month> months in prison plus forfeiture of property.
+        Pirate1=The ship <FullName> has been apprehended in a port on planet <Planet> after police dogs detected a batch of illegal drugs and weapons in the ship's cargo bay. The criminals will be released no sooner than <Month> months from today.
+        Ranger=<FullName> has been sentenced today on planet <Planet>. He appeared before the court on a variety of charges. The court has decided to make an example of the scoundrel and sentenced him to <Month> months in prison without forfeiture of property.
+        Ranger1=<FullName> has been sentenced to <Month> months in a high security prison. A regular on the <Star> system's authorities' most wanted list, he has finally turned himself in on planet <Planet>.
+    }
+}
+Script ^{
+    Mod_ShuMercs ^{
+        100=Don't distract me, <Player>, I'm doing another task right now.
+        101=<0> is currently executing a contract to kill the ship <1>. The pursuit will continue until <2>.
+        102=<0>? We are in the territory of <clr>Exchange<clrEnd>, shooting between mercenaries is prohibited here. You need to lure the target out of the system.
+        104=<0> is my colleague. I'm not going to break our agreements for the sake of such an order.
+        105=Falling back to the Mercenary center, boss.
+        106=Got it, boss. I return to the fight.
+        107=The station previously had three factions of mercenaries, but after their leaders were eliminated one by one, <clr>The Exchange<clrEnd> broke the contract with each organization separately and was converted into a free port.<br><br>Currently <0> freelancers are ready to provide escort services or organize a raid.
+        108=<0> terminated the contract for the liquidation of the ship <1> due to the expiration of the term. <br> - <clr>Exchange Mercenary Center<clrEnd>
+        109=<0> has successfully completed your contract to kill ship <1>. <br> - <clr>Exchange Mercenary Center<clrEnd>
+        110=well, quickly close the game, a Gaalian cannot be a mercenary. YOU ARE CHEATER!!!
+        111=of Feyangelion
+        112=of Red Axes
+        113=of Atlant
+        114=I changed my mind
+        115=I need Feyangelion warriors, definitely.
+        116=Red Axes - the choice of real men!
+        117=I choose the pilots of Atlant - cheap and wrathful
+        118=Back
+        119=One is enough
+        120=Give me two
+        121=Exactly three
+        122=I'll hire four and that's it
+        123=I'll take five
+        124=What's the big deal - I'm hiring six!
+        125=Military operation
+        126=Escort
+        127=Three
+        128=Four
+        129=Five
+        130=Six
+        131=Eight
+        132=Seven
+        133=Ten
+        134=Nine
+        135=One year
+        136=Two years
+        137=Three hears
+        138=Four years
+        139=Five years
+        140=Yes, I'm willing to pay
+        142=Raid
+        143=Enter target name
+        144=I will pay <0> cr.
+        146=I think my partners can do without it
+        147=Confirm, replace
+        149=I want to improve relations with Atlant
+        150=I need to appease the Red Axes
+        151=I care about Feyangelion's attitude
+        152=I'm ready for negotiations
+        153=Listen to your death, <clr>Nort<clrEnd>!
+        154=What is "one"?
+        155=Why do you counting?
+        156=I was joking, calm down
+        157=I need to fix relations with <clr>Atlant<clrEnd>
+        158=I agree to pay
+        166=One
+        167=Two
+        168=I need to fix relations with <clr>Red Axes<clrEnd>
+        169=I will hold you forever! Wait for the spraying into atoms, red-faced
+        170=I need to fix relations with <clr>Feyangelion<clrEnd>
+        171=Answer my question: which of us will be the first to go to the bioreactor?
+        172=Five years is not enough, let's make out for six <clr>(leadership)<clrEnd>
+        173=Not less than ten years <clr>(leadership)<clrEnd>
+        174=I need to attack the ship
+        175=Cancel attack
+        176=Over and out
+        177=Cancel
+        178=Return
+        179=And relay this order to others
+        180=Cancel contract
+        181=To the pilot bridge
+        182=Raid (<0> days)
+        183=Military operation (<0> days)
+        184=Return to the battle
+        185=Then I'll hire freelancers
+        186=Freelancers
+        187=Feyangelion Corporation
+        188=Red Axes squad
+        189=Atlant private security company
+        191=Enter target name
+        195=<br>
+        198=<0>? I found several targets that match your request. Specify who exactly you want to order to kill:
+        199=<0> has broke the contract for the liquidation of the ship <1> due to the fact that he was attacked by his employer - you. <br> - <clr>Exchange Mercenary Center<clrEnd>
+        200=The military operation in the <0> system has been suspended. Mercenaries don't want to work with someone who attacks them.
+        201=You have attacked a ship hired to raid system <0>. As a result, the raid is cancelled. The funds spent on its organization will not be returned.
+        202=<Player>, there's a good bounty on your head. And I'm going to get it.
+        207=The cost of solving the problem is <0> cr. Transfer money to my account and fly home. Not such a big sum to take a life, is it?
+        208=Can we settle things peacefully?
+        209=I agree.
+        210=I don't agree to that. Defend yourself.
+        211=I just won't leave you. Now, I will gather my strength, fix the ship, and receive reward for your head!
+        212=Stay away
+        213=Okay, okay, I admit that you're not my league. Life is more precious than any contract, so I'm ready to leave you alone if you will stop shooting at my ship.
+        214=You convinced me, fly home before I change my mind about letting you live.
+        215=Well, no, your death will serve as a lesson to everyone who decides to cross my path!
+        216=Give up, <Player>, you have no chances. Want to live - pay <0> cr. right now.
+        217=I am willing to pay
+        218=No way!
+        219=free port
+        220=mercenary center
+        25=<0> has died while fulfilling a contract to kill the ship <1>. <br> - <clr>Exchange Mercenary Center<clrEnd>
+        26=Your actions to eliminate the three authorities known to you did not go unnoticed. Check your account and storage of <clr>Exchange<clrEnd> - I think this is enough reward for the work you have done. <br> Your B. G.
+        28=Kylo Nort
+        30=Bordyurg Ebryn
+        32=Elima Fay
+        34=Exchange
+        36=Raid on <0> system <clr>successfully completed<clrEnd>. <br> Loot:
+        37=Raid on <0> system <clr> failed<clrEnd>.
+        38=Contract management
+        39=I want to offer you a contract to kill (<0>) days
+        40=I want to offer you a contract to kill
+        45=Three groups of mercenaries operate on the station, differing in the price of hiring, race of pilots, preferences in equipment, type of contracts and the number of pilots available.<br><br>-------------------<br><clr>Atlant private security company<clrEnd><br><br>Race - <clr>pelengs, humans<clrEnd><br>Equipment level - <clr>low<clrEnd><br>Hire price - <clr>low<clrEnd><br>Contract type - <clr>escort, raid<clrEnd><br>Loyalty - <0>%<br>Pilots - <1><br><br>-------------------<br><clr>Red Axes squad<clrEnd><br><br>Race - <clr>maloqs<clrEnd><br>Equipment level - <clr>medium<clrEnd><br>Hire price - <clr>medium<clrEnd><br>Contract type - <clr>escort, military operation<clrEnd><br>Loyalty - <2>%<br>Pilots - <3><br><br>-------------------<br><clr>Feyangelion Corporation<clrEnd><br><br>Race - <clr>fae<clrEnd><br>Equipment level - <clr>high<clrEnd><br>Hire price - <clr>high<clrEnd><br>Contract type - <clr>escort, raid, military operation<clrEnd><br>Loyalty - <4>%<br>Pilots - <5><br>-------------------<br><br>So which group do you choose?
+        46=According to the policy of our station, escorts can be hired regardless of your leadership skill. But it is worth warning that <clr>some mercenaries, not seeing you as a worthy leader, may break the contract,<clrEnd> so hire fighters "over" the skill at your own risk. <br><br>How many ships will you hire?
+        47=As you know, there are three types of contracts: <clr>escort<clrEnd>, <clr>raid<clrEnd> and <clr>military operation<clrEnd>.<br><br><clr>Escort<clrEnd> is a normal partnership contract for a certain duration. РЎustomer is accompanied by employees of a security agency, universal in almost any situation. But such agents are not prepared to attack enemy systems, so they can get cold feet when attacked.<br><br><clr>Raid<clrEnd> is a special operation carried out in the dominator system. A detachment of 3 ships makes a jump, make dominators drop their equipment using Distress signal programms and returns to the base with the trophies obtained. <br><clr>Contract is issued no more than once every 90 days by Atlant and 150 days by Feyangelion. You need a leadership skill of at least three and the rank of cadet / ship boy.<clrEnd><br><br><clr>Military operation<clrEnd> - an attack on the system of your choice by a strike group of 3 to 10 ships.<br>Strike group will obey your orders and attack enemy ships you specified. You can also order your squad to follow you or retreat to save the lives of the soldiers.<br><clr>Organization of such an operation requires rank of captain / skipper and leadership skill 3. It is carried out once every 3 months.<clrEnd><br> <br>Well, what type of contract do you choose?
+        48=How many ships will you hire?
+        49=What is the hire period? We can issue a contract for one, two, three, four or five years.
+        50=You want to hire <0> soldiers to guard your ship. According to prices of <1> faction, one mercenary for <2> days will cost you <3> cr., total (with discount <4>%) it will be <5> cr. Will you make a contract?
+        51=Choose a system for attack.
+        53=You want to hire <0> soldiers for a military operation in system <1>. According to <2> faction rates, participation of one mercenary will cost you <3> cr., in total (including the discount <4>%) it will be <5> cr. Will you make a contract?
+        54=You want to hire <0> pilots for a raid in system <1>. According to <2> faction rates, the participation of one mercenary will cost you <3> cr., in total (including the discount <4>%) it will be <5> cr. Are we making a contract?
+        55=Can't you see my ship is falling apart on the fly? What contract fulfillment are you talking about, <Player>?
+        56=I'm doing another job right now. Hang up.
+        57=I'm ready to work for you. Name the target, and then we will determine the price. We communicate over an encrypted communication channel, so don't worry, victim won't hear us.
+        58=I don't trust you enough to make a contract with you. Look for another killer.
+        59=<0>? No, life is still dear to me, I wonвЂ™t take up this business.
+        60=<0>? Such a serious risk should be well paid. With discount <1> (<2>%) - let's say <3> cr.
+        61=<0>, ... Okay, but it will cost you a pretty penny. Discounted <1> (<2>%) will be <3> cr.
+        62=<0>? We'll deal with it, money up front. Given the <1> (<2>%) discount, it will cost you <3> cr.
+        63=<0>? Nothing difficult. Pay <1> cr. (taking into account the discount <2>%), and everything will be done.
+        64=<0>... Nothing found. Are you sure you entered the target name correctly?
+        65=<0>? Well, I'll take it as a bad joke. If it didnвЂ™t reach you, IвЂ™ll say it differently - I wonвЂ™t take this order.
+        66=<0>? Such a serious risk should be well paid. Let's say <1> cr. will be enough.
+        67=<0>, ... Okay, but it will cost you a pretty penny. <1> cr.
+        68=<0> so <1>. We'll deal with it, money up front. Transfer <2> cr, and everything will be done in the shortest possible time.
+        69=<0>? Nothing difficult. Pay <1> cr. and everything will be done.
+        70=Which of your partners needs a hull change?
+        71=Now select desired hull from storage.
+        72=You want to replace ship hull <0> with <1>. This operation is estimated by our technicians at <2> cr, confirm?
+        73=Station factions loyalty to you<br><clr>Atlant private security company<clrEnd> - <0>%<br><clr>Red Axes squad<clrEnd> - <1>%<br><clr>Feyangelion corporation<clrEnd> - <2>%<br><br>Which faction do you want to improve relations with?
+        74=In order to improve relations with <clr>Atlant<clrEnd>, you will have to meet with the faction leader.<br><br>The leader of the <clr>Atlant private security company<clrEnd> is <clr>Kylo Nort<clrEnd>, a renowned assassin who founded a guild of guards and killers with his accumulated money. Extremely dangerous.<br><br><clr>Nort<clrEnd> agrees to speak with you for <0> cr.<br><br>The next call will available <1>.
+        75=In order to improve relations with the <clr>Red Axes<clrEnd>, you will have to meet with the group leader.<br><br>The <clr>Red Axes <clrEnd> leader is <clr>Bordyurg Ebryn<clrEnd> is a seasoned Maloq warrior and pirate notorious for his hatred of shopkeepers and bestial cruelty.<br> <br>You can try talking to <clr>Ebryn<clrEnd> for <0> cr.<br><br>Next call <1>.
+        76=In order to improve relations with <clr>Feyangelion<clrEnd>, you will have to meet with the leader of faction.<br><br>Post of CEO of <clr>Feyangelion Corporation<clrEnd> is occupied by <clr>Elima Fay<clrEnd> who is an excellent engineer convicted of stealing secret blueprints and subsequently amnestied, also he is xenophobe and author of several eugenic concepts. <br> <br><clr>Fay<clrEnd> can arrange a meeting for you for <0> cr. <br><br>The next call is available <1>.
+        77=I'm listening to you.
+        78=One.
+        79=Two.
+        80=Three. Die.
+        81=If you will pay <0> cr. - I will provide you with <1>% of loyalty. Then you will raise loyalty by yourself.
+        82=Nice to do business with you.
+        83=We offer a variety of training equipment, from pilot simulators to logic puzzles, for our customers. Using all this variety of methods, you can improve any skill of your partners. It should be borne in mind that the effectiveness of training directly depends on your leadership qualities: the number of sessions that can be carried out without compromising the skills being developed is directly equal to the coach's leadership skill. That is, with the maximum leadership, each partner can be trained 6 times. Oh, yes, I almost forgot: for mercenaries from our station training costs are half price.<br><br>Now select the pilot you want to train.
+        84=Now choose the skill you want to develop.
+        85=One training will cost <0> cr. How many sessions you want to hold?
+        86=Speak, <Player>, and don't delay me.
+        87=The soldiers of our detachment are not interested in money!.. However, ammunition also has to be taken from somewhere... So be it, pilot, lay out <0> cr, and the contempt of my soldiers will be replaced by indifference.
+        88=What did you say, you little bastard?! Arr-r-rgh, on-board computer, all guns for battle!
+        89=Rest assured, pilot, all your resources will go into equipping the famed Red Axes!
+        90=<Player>, as an official representative of the Corporation, I am authorized to answer all your questions.
+        91=What primitive rudeness... I will not be sorry to liquidate you.
+        92=For <0> cr. I guarantee you <1>% loyalty. Great deal, don't hesitate.
+        93=Glad we were able to reach an agreement. We only wish you to increase your material wealth together with the mercenaries of the Corporation.
+        94=Getting ready to jump into system <0>, boss. Don't distract me.
+        95=Speak, boss, I'm all at your disposal.
+        96=As you say, boss. I will tell the others to focus on higher priority goals.
+        97=And who, exactly, should be attacked?
+        98=Understood, boss. I return to the center.
+        99=Understood, boss, I will attack the ship <0>.
+        FreePortDialogs ^{
+            Greeting=Welcome to the free port <Name>. At our independent station, neither the laws of the Coalition nor the concepts of the Brotherhood apply - you are free to do what you want. We provide hull changing services for your partners and equipment for their training. In addition, you may be interested in the assortment of our store: take a look, maybe you will find something attractive.
+            PlayerAskHireMercs=I'm interested in mercenary service
+            PlayerAskPartnerChangeHull=I'd like to change my partner's hull
+            PlayerAskPartnerTraining=I'd like to train my partner
+        }
+        MercCenterDialogs ^{
+            Greeting=Welcome to <Name> Mercenary center. Here you can enter into a contract with the mercenaries of one of the groups, ranging from a simple escort to a complex military operation. In addition, we provide services for changing the hulls of your partners and equipment for their training.
+            Greeting=<clr><clrEnd>
+            Greeting=Station factions loyalty:
+            Greeting=<clr>Atlant private security company - <RelationAtlants>%<clrEnd>
+            Greeting=<clr>Red Axes squad - <RelationRedAxes>%<clrEnd>
+            Greeting=<clr>Feyangelion corporation - <RelationFaeys>%<clrEnd>
+            PlayerAskFixRelations=I need to fix my relationship with mercenaries
+            PlayerAskHireMercs=I'm interested in mercenary service
+            PlayerAskPartnerChangeHull=I'd like to change my partner's hull
+            PlayerAskPartnerTraining=I'd like to train my partner
+        }
+        RanksCoalition ^{
+            0=Rookie
+            1=Cadet
+            2=Pilot
+            3=Captain
+            4=Fighter
+            5=Ace
+            6=Commander
+            7=Admiral
+        }
+        RanksPirateClan ^{
+            0=Noob
+            1=Ship Boy
+            2=Raider
+            3=Skipper
+            4=Cutthroat
+            5=Capo
+            6=Khan
+            7=Baron
+        }
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            Atlant ^{
+                Description=Once every few days, the energy pulse of weapon systems is doubled, resulting in a serious increase in damage.
+                Icon=0
+                Name=Berserker
+            }
+            Fei ^{
+                Description=When owner try to retreat, a phase accelerator is activated, which significantly increases the flight speed.
+                Icon=0
+                Name=Phase accelerator
+            }
+            Red ^{
+                Description=Once every few days, a unique force shield is activated, providing almost complete invulnerability for one turn.
+                Icon=0
+                Name=Barrier
+            }
+            ShuMercs_AdditionalStatsInfo ^{
+                Description=Informational hidden infobox for recording the number of trainings conducted by the player's partner on the MC
+                Icon=0
+                Name=
+            }
+            ShuTarget ^{
+                Description=???
+                Icon=1
+                Name=Target
+            }
+        }
+    }
+}
+ShipCharacterFreelancer ^{
+    00=34, 33, 33, Freelancer
+}
+ShipCharacterMerc ^{
+    00=34, 33, 33, Mercenary
+}
+ShipType ^{
+    Fei ^{
+        FeiLeader=
+        Freelancer=Freelancer
+        Merc=Fay
+    }
+    Gaal ^{
+        Freelancer=Freelancer
+        Merc=
+    }
+    Maloc ^{
+        Freelancer=Freelancer
+        Merc=Axe
+        RedLeader=
+    }
+    Peleng ^{
+        Freelancer=Freelancer
+        Merc=Atlant
+    }
+    People ^{
+        AtlantLeader=
+        Freelancer=Freelancer
+        Merc=Atlant
+    }
+    TypeName ^{
+        AtlantLeader=Leader
+        FeiLeader=CEO
+        Freelancer=Freelancer
+        MB=Mercenary center
+        MBSmall=MC
+        Manaan=Free port
+        ManaanSmall=FP
+        Merc=Mercenary
+        RedLeader=Warlord
+    }
+}

@@ -1,0 +1,15 @@
+Bm ~{
+    PanelMain2 ~{
+        2Info_SM_A=Mods\Expansion\ExpInfoCenter\DATA\PanelMain2\Info_SM_A.gi
+        2Info_SM_D=Mods\Expansion\ExpInfoCenter\DATA\PanelMain2\Info_SM_D.gi
+        2Info_SM_N=Mods\Expansion\ExpInfoCenter\DATA\PanelMain2\Info_SM_N.gi
+        2Space=Mods\Expansion\ExpInfoCenter\DATA\PanelMain2\Space_long.gi
+        2TalkA=Mods\Expansion\ExpInfoCenter\DATA\PanelMain2\2TalkFixA.gi
+        2TalkD=Mods\Expansion\ExpInfoCenter\DATA\PanelMain2\2TalkFixD.gi
+        2TalkH=Mods\Expansion\ExpInfoCenter\DATA\PanelMain2\2TalkFixH.gi
+        2TalkN=Mods\Expansion\ExpInfoCenter\DATA\PanelMain2\2TalkFixN.gi
+    }
+}
+Script ~{
+    Mod_ExpInfoCenter=Mods\Expansion\ExpInfoCenter\DATA\Script\Mod_ExpInfoCenter.scr
+}

@@ -1,0 +1,5 @@
+Data ~{
+    Script ^{
+        Mod_SR1Epidemy=1,Script.Mod_SR1Epidemy
+    }
+}

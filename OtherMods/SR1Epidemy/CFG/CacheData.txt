@@ -1,0 +1,3 @@
+Script ~{
+    Mod_SR1Epidemy=Mods\OtherMods\SR1Epidemy\DATA\Script\Mod_SR1Epidemy.scr
+}

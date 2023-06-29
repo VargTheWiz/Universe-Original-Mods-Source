@@ -1,0 +1,15 @@
+Data ^{
+    SE ^{
+        Item ^{
+            Mod_ExpAcryn_zond ^{
+                1Image=Bm.Container.2Mod_ExpAcryn_zond
+                2Image=Bm.Container.2Mod_ExpAcryn_zond
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+        }
+    }
+    Script ^{
+        Mod_ExpAcryn=1,Script.Mod_ExpAcryn
+    }
+}

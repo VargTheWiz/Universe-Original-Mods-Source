@@ -1,0 +1,521 @@
+Data ^{
+    Race ^{
+        Color ^{
+            SubFactionPlayerMercsFixedStanding=0,200,230
+            SubFactionStarCockerels=190,30,0
+        }
+        Emblem ^{
+            2SubFactionPlayerMercsFixedStanding=Alpha,Bm.Race.Emblem.2SubFactionPlayerMercsFixedStanding
+            2SubFactionStarCockerels=Alpha,Bm.Race.Emblem.2SubFactionStarCockerels
+        }
+    }
+    SE ^{
+        Item ^{
+            SubFactionPlayerMercsFixedStanding0 ^{
+                1Image=Bm.Container.16_0
+                2Image=Bm.Container.20_2
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            SubFactionPlayerMercsFixedStanding1 ^{
+                1Image=Bm.Container.20_6
+                2Image=Bm.Container.25_6
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            SubFactionPlayerMercsFixedStanding2 ^{
+                1Image=Bm.Container.25_3
+                2Image=Bm.Container.32_3
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            SubFactionPlayerMercsFixedStanding3 ^{
+                1Image=Bm.Container.32_7
+                2Image=Bm.Container.38_1
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            SubFactionStarCockerels0 ^{
+                1Image=Bm.Container.16_0
+                2Image=Bm.Container.20_2
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            SubFactionStarCockerels1 ^{
+                1Image=Bm.Container.20_6
+                2Image=Bm.Container.25_6
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            SubFactionStarCockerels2 ^{
+                1Image=Bm.Container.25_3
+                2Image=Bm.Container.32_3
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            SubFactionStarCockerels3 ^{
+                1Image=Bm.Container.32_7
+                2Image=Bm.Container.38_1
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+        }
+        Missile ^{
+            wEMP_torpedo ^{
+                PosZ=Missile
+                Scale=1.75
+            }
+            wGluonTorpedoLauncher ^{
+                PosZ=Missile
+                Scale=0.80
+            }
+        }
+        Ruins ^{
+            PlayerMB ^{
+                Image=Bm.Ruins.PlayerMB_level1_anim
+                ImageI=GI,Bm.Ruins.PlayerMB_level1
+                ImageMap=Bm.Ruins.PlayerMB_map
+                PosZ=Ruins
+            }
+            PlayerMBLevel1 ^{
+                Image=Bm.Ruins.PlayerMB_level1_anim
+                ImageI=GI,Bm.Ruins.PlayerMB_level1
+                ImageMap=Bm.Ruins.PlayerMB_map
+                PosZ=Ruins
+            }
+            PlayerMBLevel2 ^{
+                Image=Bm.Ruins.PlayerMB_level2_anim
+                ImageI=GI,Bm.Ruins.PlayerMB_level2
+                ImageMap=Bm.Ruins.PlayerMB_map
+                PosZ=Ruins
+            }
+            PlayerMBLevel3 ^{
+                Image=Bm.Ruins.PlayerMB_level3_anim
+                ImageI=GI,Bm.Ruins.PlayerMB_level3
+                ImageMap=Bm.Ruins.PlayerMB_map
+                PosZ=Ruins
+            }
+            PlayerMBLevel4 ^{
+                Image=Bm.Ruins.PlayerMB_level4_anim
+                ImageI=GI,Bm.Ruins.PlayerMB_level4
+                ImageMap=Bm.Ruins.PlayerMB_map
+                PosZ=Ruins
+            }
+            PlayerMBLevel5 ^{
+                Image=Bm.Ruins.PlayerMB_level5_anim
+                ImageI=GI,Bm.Ruins.PlayerMB_level5
+                ImageMap=Bm.Ruins.PlayerMB_map
+                PosZ=Ruins
+            }
+            PlayerMB_licensed ^{
+                Image=Bm.Ruins.PlayerMB_level1_anim
+                ImageI=GI,Bm.Ruins.PlayerMB_level1
+                ImageMap=Bm.Ruins.PlayerMB_map
+                PosZ=Ruins
+            }
+        }
+        Ship ^{
+            Akrin ^{
+                PlayerMercFei ^{
+                    2ImageP=GI,Bm.ShipP.PlayerMercFei
+                    Anim ^{
+                        0=1,[70,50-75][70,26-28][70,76-96]
+                        Normal=2,[70,0-49]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-49]
+                    }
+                    Image=Bm.Ship.PlayerMercFei
+                    ImageMap=Bm.Ship.PlayerMerc_map
+                    ImageS=Bm.Ship.PlayerMercFeis
+                    PanelPartnerImage=PlayerMercFei
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=56,110
+                    Tail2=73,110
+                }
+                PlayerMercGaal ^{
+                    2ImageP=GI,Bm.ShipP.PlayerMercGaal
+                    Anim ^{
+                        0=1,[70,0-0][70,50-98]
+                        Normal=1,[70,0-49]
+                    }
+                    AnimS ^{
+                        Normal=1,[70,0-49]
+                    }
+                    Image=Bm.Ship.PlayerMercGaal
+                    ImageMap=Bm.Ship.PlayerMerc_map
+                    ImageS=Bm.Ship.PlayerMercGaals
+                    PanelPartnerImage=PlayerMercGaal
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=64,108
+                }
+                PlayerMercMaloc ^{
+                    2ImageP=GI,Bm.ShipP.PlayerMercMaloc
+                    Anim ^{
+                        0=1,[70,50-99]
+                        1=1,[70,50-50][70,100-148]
+                        Normal=2,[70,0-49]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-49]
+                    }
+                    Image=Bm.Ship.PlayerMercMaloc
+                    ImageMap=Bm.Ship.PlayerMerc_map
+                    ImageS=Bm.Ship.PlayerMercMalocs
+                    PanelPartnerImage=PlayerMercMaloc
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=49,98
+                    Tail2=69,98
+                }
+                PlayerMercPeleng ^{
+                    2ImageP=GI,Bm.ShipP.PlayerMercPeleng
+                    Anim ^{
+                        0=1,[70,50-99]
+                        1=1,[70,100-149]
+                        Normal=2,[70,0-49]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-49]
+                    }
+                    Image=Bm.Ship.PlayerMercPeleng
+                    ImageMap=Bm.Ship.PlayerMerc_map
+                    ImageS=Bm.Ship.PlayerMercPelengs
+                    PanelPartnerImage=PlayerMercPeleng
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=56,97
+                    Tail2=72,97
+                }
+                PlayerMercPeople ^{
+                    2ImageP=GI,Bm.ShipP.PlayerMercPeople
+                    Anim ^{
+                        0=1,[70,50-99]
+                        Normal=2,[70,0-49]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-49]
+                    }
+                    Image=Bm.Ship.PlayerMercPeople
+                    ImageMap=Bm.Ship.PlayerMerc_map
+                    ImageS=Bm.Ship.PlayerMercPeoples
+                    PanelPartnerImage=PlayerMercPeople
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=63,69
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=63,103
+                }
+                PlayerMercSpecial ^{
+                    2ImageP=GI,Bm.ShipP.PlayerMercSpecial
+                    Anim ^{
+                        0=1,[60,59-119]
+                        Normal=4,[60,0-58]
+                    }
+                    AnimS ^{
+                        Normal=1,[60,0-58]
+                    }
+                    Image=Bm.Ship.PlayerMercSpecial
+                    ImageMap=Bm.Ship.PlayerMerc_map
+                    ImageS=Bm.Ship.PlayerMercSpecials
+                    PanelPartnerImage=PlayerMercSpecial
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SizeLarge=90
+                    SizeSmall=70
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=57,105
+                    Tail2=73,105
+                }
+                StarCockerelFei ^{
+                    2ImageP=GI,Bm.ShipP.StarCockerelFei
+                    Anim ^{
+                        0=1,[70,50-75][70,26-28][70,76-96]
+                        Normal=2,[70,0-49]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-49]
+                    }
+                    Image=Bm.Ship.StarCockerelFei
+                    ImageMap=Bm.Ship.StarCockerel_map
+                    ImageS=Bm.Ship.StarCockerelFeis
+                    PanelPartnerImage=StarCockerelFei
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=56,110
+                    Tail2=73,110
+                }
+            }
+            TranclucatorCyan ^{
+                2ImageP=GI,Bm.ShipP.TranclucatorCyan
+                Anim ^{
+                    0=1,[30,150-299]
+                    1=1,[30,300-449]
+                    Normal=2,[30,0-149]
+                }
+                AnimS ^{
+                    Normal=2,[30,0-149]
+                }
+                Image=Bm.Ship.TranclucatorCyan
+                ImageMap=Bm.Ship.Tranc_map
+                ImageS=Bm.Ship.TranclucatorCyans
+                PosZ=Tranclucator
+                SizeImage=128,128
+                SmeCenterImage=64,64
+                SmeImage=64,64
+                SmeImageMap=1,1
+                StateTime=2000
+            }
+        }
+        Sound ^{
+            Loop ^{
+                Ruins ^{
+                    PlayerMB_level1_anim ^{
+                        10=3000,Sound.LoopRuins03
+                    }
+                    PlayerMB_level2_anim ^{
+                        10=3000,Sound.LoopRuins03
+                    }
+                    PlayerMB_level3_anim ^{
+                        10=3000,Sound.LoopRuins03
+                    }
+                    PlayerMB_level4_anim ^{
+                        10=3000,Sound.LoopRuins03
+                    }
+                    PlayerMB_level5_anim ^{
+                        10=3000,Sound.LoopRuins03
+                    }
+                }
+            }
+            Rnd ^{
+                Ruins ^{
+                    PlayerMB_level1_anim ^{
+                    }
+                    PlayerMB_level2_anim ^{
+                    }
+                    PlayerMB_level3_anim ^{
+                    }
+                    PlayerMB_level4_anim ^{
+                    }
+                    PlayerMB_level5_anim ^{
+                    }
+                }
+            }
+        }
+        Weapon ^{
+            0 ^{
+                Palettes ^{
+                    444 ^{
+                        Color0=0.0,0.78,0.89
+                        Color1=0.0,0.78,0.89
+                        Color2=0.0,0.78,0.89
+                        SoundShot=Sound.GluonEmitterShot
+                        Time=80
+                        Width=0.15
+                    }
+                }
+            }
+            14 ^{
+                Palettes ^{
+                    444 ^{
+                        SoundShot=Sound.GluonTorpedoLauncherShot
+                    }
+                }
+            }
+            8 ^{
+                Palettes ^{
+                    444 ^{
+                        Color0=0.0,0.78,0.89
+                        GAI=Bm.Weapon.W09_blue
+                        SoundShot=Sound.GluonTormentorShot
+                    }
+                }
+            }
+            MissileHit ^{
+                Palettes ^{
+                    444 ^{
+                        GAI=Bm.Weapon.MissileHit_dmg
+                        SoundExpl=Sound.expl2
+                    }
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_ShuMercsHQ=1,Script.Mod_ShuMercsHQ
+    }
+    ScriptLibs ^{
+        Mod_ShuMercsHQ=UtilityFunctions
+    }
+}
+ML ^{
+    RuinsTalk ^{
+        Panel ^{
+            ShuMercsHQ ^{
+                Panel ^{
+                    Active=False
+                    GAI ^{
+                        Active=False
+                        AlignX=Center
+                        AlignY=Center
+                        Frame=[75,0-99]
+                        Image=Bm.Gov.2PelengAnim0a
+                        ImageFirst=Bm.Gov.2PelengAnim0i
+                        Name=Panel_Anim0
+                        PBuf=True
+                        Pos=528,183,-2
+                        Size=304,690
+                        SkipImageUpdateRect=True
+                    }
+                    GAI ^{
+                        Active=False
+                        AlignX=Center
+                        AlignY=Center
+                        Frame=[75,0-99]
+                        Image=Bm.Gov.2PelengAnim1a
+                        ImageFirst=Bm.Gov.2PelengAnim1i
+                        Name=Panel_Anim1
+                        PBuf=True
+                        Pos=475,150,-2
+                        Size=384,723
+                        SkipImageUpdateRect=True
+                    }
+                    GAI ^{
+                        Active=False
+                        AlignX=Center
+                        AlignY=Center
+                        Frame=[75,0-99]
+                        Image=Bm.GovHD.PelengAnim0a
+                        ImageFirst=Bm.GovHD.PelengAnim0i
+                        Name=PanelHD_Anim0
+                        PBuf=True
+                        Pos=-150,-88,-2
+                        Size=480,903
+                        SkipImageUpdateRect=True
+                    }
+                    GAI ^{
+                        Active=False
+                        AlignX=Center
+                        AlignY=Center
+                        Frame=[75,0-99]
+                        Image=Bm.GovHD.PelengAnim1a
+                        ImageFirst=Bm.GovHD.PelengAnim1i
+                        Name=PanelHD_Anim1
+                        PBuf=True
+                        Pos=-150,-88,-2
+                        Size=480,903
+                        SkipImageUpdateRect=True
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormRuins.2PBtable
+                        Name=Table
+                        Pos=-150,0,-3
+                        Size=1262,569
+                    }
+                    Name=PanelPlayerMB
+                    Pos=0,0,800
+                    Size=1024,768
+                }
+                Panel ^{
+                    Active=False
+                    GAI ^{
+                        Active=False
+                        AlignX=Center
+                        AlignY=Center
+                        Frame=[75,0-99]
+                        Image=Bm.Gov.2PelengAnim0a
+                        ImageFirst=Bm.Gov.2PelengAnim0i
+                        Name=Panel_Anim0
+                        PBuf=True
+                        Pos=528,183,-2
+                        Size=304,690
+                        SkipImageUpdateRect=True
+                    }
+                    GAI ^{
+                        Active=False
+                        AlignX=Center
+                        AlignY=Center
+                        Frame=[75,0-99]
+                        Image=Bm.Gov.2PelengAnim1a
+                        ImageFirst=Bm.Gov.2PelengAnim1i
+                        Name=Panel_Anim1
+                        PBuf=True
+                        Pos=475,150,-2
+                        Size=384,723
+                        SkipImageUpdateRect=True
+                    }
+                    GAI ^{
+                        Active=False
+                        AlignX=Center
+                        AlignY=Center
+                        Frame=[75,0-99]
+                        Image=Bm.GovHD.PelengAnim0a
+                        ImageFirst=Bm.GovHD.PelengAnim0i
+                        Name=PanelHD_Anim0
+                        PBuf=True
+                        Pos=-150,-88,-2
+                        Size=480,903
+                        SkipImageUpdateRect=True
+                    }
+                    GAI ^{
+                        Active=False
+                        AlignX=Center
+                        AlignY=Center
+                        Frame=[75,0-99]
+                        Image=Bm.GovHD.PelengAnim1a
+                        ImageFirst=Bm.GovHD.PelengAnim1i
+                        Name=PanelHD_Anim1
+                        PBuf=True
+                        Pos=-150,-88,-2
+                        Size=480,903
+                        SkipImageUpdateRect=True
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormRuins.2PBtable
+                        Name=Table
+                        Pos=-150,0,-3
+                        Size=1262,569
+                    }
+                    Name=PanelPlayerMB_licensed
+                    Pos=0,0,800
+                    Size=1024,768
+                }
+            }
+        }
+    }
+}
+Music ^{
+    PlayerMB ^{
+        1=Mods\ShusRangers\ShuMercs\DATA\Music\Craftor-Night_Courage.dat
+    }
+    PlayerMB_licensed ^{
+        1=Mods\ShusRangers\ShuMercs\DATA\Music\Craftor-Night_Courage.dat
+    }
+}

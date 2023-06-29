@@ -1,0 +1,1147 @@
+Items ^{
+    CustomCountables ^{
+        NuggetAsteroid ^{
+            Name=Precious minerals
+            Text=Contains rare, or not very, compounds of metals and minerals.
+        }
+    }
+}
+MicroModuls ^{
+    353 ^{
+        Ruins=SB,BK,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    354 ^{
+        Ruins=SB,BK,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    355 ^{
+        Ruins=SB,BK,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    356 ^{
+        Ruins=SB,BK,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    365 ^{
+        Ruins=WB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    366 ^{
+        Ruins=WB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    367 ^{
+        Ruins=WB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    368 ^{
+        Ruins=WB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    439 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    440 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    441 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    442 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    443 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    444 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    445 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    446 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    447 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    448 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    449 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    450 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    451 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    452 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    453 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    454 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    455 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    456 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    457 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    458 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    459 ^{
+        Ruins=RC,WB,SB,BK,MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    480 ^{
+        Ruins=MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    481 ^{
+        Ruins=MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    482 ^{
+        Ruins=MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    483 ^{
+        Ruins=MC,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+    }
+    ExpTC_AddAllSlotsForTest ^{
+        CustomTag=all_slots_plus
+        Equipments=Hull
+        LockedAcryn=3
+        Name=all_slots_plus
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSlotArt=1
+        bonSlotDef=1
+        bonSlotDroid=1
+        bonSlotForsage=1
+        bonSlotHook=1
+        bonSlotRadar=1
+        bonSlotScaner=1
+        bonSlotWeapon=1
+    }
+    ExpTC_AddSlotArtefact ^{
+        Equipments=Hull
+        LockedAcryn=3
+        Name=add_slot_art
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSlotArt=1
+    }
+    ExpTC_AddSlotDefGenerator ^{
+        Equipments=Hull
+        LockedAcryn=3
+        Name=add_slot_def
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSlotDef=1
+    }
+    ExpTC_AddSlotDroid ^{
+        Equipments=Hull
+        LockedAcryn=3
+        Name=add_slot_droid
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSlotDroid=1
+    }
+    ExpTC_AddSlotForsage ^{
+        Equipments=Hull
+        LockedAcryn=3
+        Name=add_slot_forsage
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSlotForsage=1
+    }
+    ExpTC_AddSlotHook ^{
+        Equipments=Hull
+        LockedAcryn=3
+        Name=add_slot_hook
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSlotHook=1
+    }
+    ExpTC_AddSlotRadar ^{
+        Equipments=Hull
+        LockedAcryn=3
+        Name=add_slot_radar
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSlotRadar=1
+    }
+    ExpTC_AddSlotScaner ^{
+        Equipments=Hull
+        LockedAcryn=3
+        Name=add_slot_scaner
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSlotScaner=1
+    }
+    ExpTC_AddSlotWeapon ^{
+        Equipments=Hull
+        LockedAcryn=3
+        Name=add_slot_weapon
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSlotWeapon=1
+    }
+    ExpTC_DeleteAllSlotsForTest ^{
+        CustomTag=all_slots_minus
+        Equipments=Hull
+        LockedAcryn=3
+        Name=all_slots_minus
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSlotArt=-1
+        bonSlotDef=-1
+        bonSlotDroid=-1
+        bonSlotForsage=-1
+        bonSlotHook=-1
+        bonSlotRadar=-1
+        bonSlotScaner=-1
+        bonSlotWeapon=-1
+    }
+    ExpTC_DeleteSlotArtefact ^{
+        Equipments=Hull
+        LockedAcryn=3
+        Name=del_slot_art
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSlotArt=-1
+    }
+    ExpTC_DeleteSlotDefGenerator ^{
+        Equipments=Hull
+        LockedAcryn=3
+        Name=del_slot_def
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSlotDef=-1
+    }
+    ExpTC_DeleteSlotDroid ^{
+        Equipments=Hull
+        LockedAcryn=3
+        Name=del_slot_droid
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSlotDroid=-1
+    }
+    ExpTC_DeleteSlotForsage ^{
+        Equipments=Hull
+        LockedAcryn=3
+        Name=del_slot_forsage
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSlotForsage=-1
+    }
+    ExpTC_DeleteSlotHook ^{
+        Equipments=Hull
+        LockedAcryn=3
+        Name=del_slot_hook
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSlotHook=-1
+    }
+    ExpTC_DeleteSlotRadar ^{
+        Equipments=Hull
+        LockedAcryn=3
+        Name=del_slot_radar
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSlotRadar=-1
+    }
+    ExpTC_DeleteSlotScaner ^{
+        Equipments=Hull
+        LockedAcryn=3
+        Name=del_slot_scaner
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSlotScaner=-1
+    }
+    ExpTC_DeleteSlotWeapon ^{
+        Equipments=Hull
+        LockedAcryn=3
+        Name=del_slot_weapon
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSlotWeapon=-1
+    }
+    ExpTC_DyshotEnergy ^{
+        Cost=400
+        CustomTag=ExpTC_DyshotEnergy
+        Equipments=W01,W03,W05,W06,W08,W10,W11,W12,W17,grav_beam,splash_faser,gaal_vision,slow_gun,sphere_gun,pulse_gun,pulse_gun2,maloc_laser,maloc_laser2,photon_gun,photon_gun2,photon_gun3
+        Fragility=133
+        Name=Dyshot
+        OnPlanets=1
+        Priority=10
+        Ruins=Any
+        Size=200
+        Special=1
+        Text=<color=248,252,248>An additional power module is installed on this weapon, which is put into operation while the main one is being reloaded. By synchronizing the cycles of their work, the engineers were able to achieve an impressive increase in the rate of fire. The disadvantage of this approach was the increased weight and cost of the tool, as well as accelerated wear of the main conductive circuits of the device.</color>
+        Text=<clr><clrEnd>
+        Text=Rate of fire: <clr>+1<clrEnd>
+        bonAttacks=1
+    }
+    ExpTC_DyshotSplinter ^{
+        Cost=400
+        CustomTag=ExpTC_DyshotSplinter
+        Equipments=W02,W07,W09,W16,frag_gun
+        Fragility=133
+        Name=Dyshot
+        OnPlanets=1
+        Priority=10
+        Ruins=Any
+        Size=200
+        Special=1
+        Text=<color=248,252,248>This gun has an advanced projectile feeding system. Zero-friction materials and additional cooling systems have made it possible to significantly reduce the time required for a full reload and, accordingly, reduce the undesirable delay before firing. Unfortunately, the engineers could not completely eliminate the accelerated wear factor, and the use of more durable and expensive parts led to an increase in the final weight of the structure.</color>
+        Text=<clr><clrEnd>
+        Text=Rate of fire: <clr>+1<clrEnd>
+        bonAttacks=1
+    }
+    ExpTC_EnergyHullSusceptibilityMinus16 ^{
+        Equipments=Hull
+        FragilityEnergy=84
+        LockedAcryn=3
+        Name=add_energo_2
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_EnergyHullSusceptibilityMinus23 ^{
+        Equipments=Hull
+        FragilityEnergy=77
+        LockedAcryn=3
+        Name=add_energo_3
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_EnergyHullSusceptibilityMinus9 ^{
+        Equipments=Hull
+        FragilityEnergy=91
+        LockedAcryn=3
+        Name=add_energo_1
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_EquipmentImprovement ^{
+        Equipments=Any
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_ExpHull1 ^{
+        AcrynLevel=1
+        AcrynSerie=Experimental hull I-IV
+        Cost=200
+        CustomTag=ExpTC_ExpHull1
+        Equipments=Hull
+        FragilityEnergy=150
+        FragilityMissile=150
+        FragilitySplinter=150
+        KindGraph=ExperimentalHull
+        LevelsCount=4
+        Name=Experimental hull I
+        Owner=Maloc
+        Priority=10
+        Ruins=TC
+        SerieLevel1=ExpTC_ExpHull1
+        SerieLevel2=ExpTC_ExpHull2
+        SerieLevel3=ExpTC_ExpHull3
+        SerieLevel4=ExpTC_ExpHull4
+        Special=1
+        Text=<color=248,252,248>The specialists of the Technology Centers are constantly looking for solutions to improve equipment, this case is another "brilliant" solution, from one of the leading specialists. Optimization of the internal space and energy nodes allows you to connect almost all possible equipment. However, the designers forgot about the realities of modern space and moved many of the ship's vulnerable systems too close to the outer plating. As a result, in battle, this ship suffers with its greater damage suspectibility.</color>
+    }
+    ExpTC_ExpHull2 ^{
+        AcrynLevel=2
+        AcrynSerie=Experimental hull I-IV
+        Cost=300
+        CustomTag=ExpTC_ExpHull2
+        Equipments=Hull
+        FragilityEnergy=140
+        FragilityMissile=140
+        FragilitySplinter=140
+        KindGraph=ExperimentalHull
+        LevelsCount=4
+        Name=Experimental hull II
+        Owner=Maloc
+        Priority=30
+        Ruins=TC
+        SerieLevel1=ExpTC_ExpHull1
+        SerieLevel2=ExpTC_ExpHull2
+        SerieLevel3=ExpTC_ExpHull3
+        SerieLevel4=ExpTC_ExpHull4
+        Special=1
+        Text=<color=248,252,248>The specialists of the Technology Centers are constantly looking for solutions to improve equipment, this case is another "brilliant" solution, from one of the leading specialists. Optimization of the internal space and energy nodes allows you to connect almost all possible equipment. However, the designers forgot about the realities of modern space and moved many of the ship's vulnerable systems too close to the outer plating. As a result, in battle, this ship suffers with its greater damage suspectibility.</color>
+    }
+    ExpTC_ExpHull3 ^{
+        AcrynLevel=3
+        AcrynSerie=Experimental hull I-IV
+        Cost=400
+        CustomTag=ExpTC_ExpHull3
+        Equipments=Hull
+        FragilityEnergy=130
+        FragilityMissile=130
+        FragilitySplinter=130
+        KindGraph=ExperimentalHull
+        LevelsCount=4
+        Name=Experimental hull III
+        Owner=Maloc
+        Priority=50
+        Ruins=TC
+        SerieLevel1=ExpTC_ExpHull1
+        SerieLevel2=ExpTC_ExpHull2
+        SerieLevel3=ExpTC_ExpHull3
+        SerieLevel4=ExpTC_ExpHull4
+        Special=1
+        Text=<color=248,252,248>The specialists of the Technology Centers are constantly looking for solutions to improve equipment, this case is another "brilliant" solution, from one of the leading specialists. Optimization of the internal space and energy nodes allows you to connect almost all possible equipment. However, the designers forgot about the realities of modern space and moved many of the ship's vulnerable systems too close to the outer plating. As a result, in battle, this ship suffers with its greater damage suspectibility.</color>
+    }
+    ExpTC_ExpHull4 ^{
+        AcrynLevel=4
+        AcrynSerie=Experimental hull I-IV
+        Cost=500
+        CustomTag=ExpTC_ExpHull4
+        Equipments=Hull
+        FragilityEnergy=120
+        FragilityMissile=120
+        FragilitySplinter=120
+        KindGraph=ExperimentalHull
+        LevelsCount=4
+        Name=Experimental hull IV
+        Owner=Maloc
+        Priority=70
+        Ruins=TC
+        SerieLevel1=ExpTC_ExpHull1
+        SerieLevel2=ExpTC_ExpHull2
+        SerieLevel3=ExpTC_ExpHull3
+        SerieLevel4=ExpTC_ExpHull4
+        Special=1
+        Text=<color=248,252,248>The specialists of the Technology Centers are constantly looking for solutions to improve equipment, this case is another "brilliant" solution, from one of the leading specialists. Optimization of the internal space and energy nodes allows you to connect almost all possible equipment. However, the designers forgot about the realities of modern space and moved many of the ship's vulnerable systems too close to the outer plating. As a result, in battle, this ship suffers with its greater damage suspectibility.</color>
+    }
+    ExpTC_FirmwareOff ^{
+        Equipments=Any
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_FirmwareOn ^{
+        Equipments=Any
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_FragilityMinus10 ^{
+        Equipments=Any
+        Fragility=111
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_FragilityMinus30 ^{
+        Equipments=Any
+        Fragility=143
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_FragilityMinus5 ^{
+        Equipments=Any
+        Fragility=105
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_FragilityPlus10 ^{
+        Equipments=Any
+        Fragility=91
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_HullSpraying ^{
+        Equipments=Hull
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_Lifeboat ^{
+        AbandonedShipName=Abandoned ship
+        BlockImp=1
+        BlockMM=1
+        Cost=20
+        CustomTag=ExpTC_Lifeboat
+        Equipments=Hull
+        FragilityEnergy=33
+        FragilityMissile=33
+        FragilitySplinter=33
+        KindGraph=Lifeboat
+        LockedAcryn=3
+        Name=</color>Lifeboat
+        NoBridge=1
+        NonSearchable=1
+        Priority=0
+        Size=100
+        Special=1
+        TextReplace=A tiny lifeboat hull designed for emergency ejection. Due to the minimum configuration and small size, it is able to develop impressive speed, however, its toughness is extremely low.
+        bonSlotArt=-4
+        bonSlotDef=-1
+        bonSlotDroid=-1
+        bonSlotForsage=-1
+        bonSlotHook=-1
+        bonSlotRadar=-1
+        bonSlotScaner=-1
+        bonSlotWeapon=-5
+        bonSpeed=800
+    }
+    ExpTC_MagnetronEnergy ^{
+        Cost=180
+        Equipments=W01,W03,W05,W06,W08,W10,W11,W12,W17,PlasmaGun,sub_gun,grav_beam,splash_faser,gaal_vision,slow_gun,pulse_gun,pulse_gun2,maloc_laser,maloc_laser2,photon_gun,photon_gun2,photon_gun3
+        Fragility=133
+        Name=Magnetron
+        OnPlanets=1
+        Priority=10
+        Ruins=Any
+        Size=110
+        Special=1
+        Text=<color=248,252,248>A powerful magnetic field source mounted on this weapon significantly increases the penetration power of any energy pulse. At the same time, the interference caused by the magnetic field adversely affects the reliability of the installation, and also significantly reduces the efficiency of the onboard equipment of both the attacker and his target.</color>
+        Text=<clr><clrEnd>
+        Text=Damage bonus: <clr>+12<clrEnd>
+        Text=Additional effect: <clr>EMP interference<clrEnd>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Scanner power: <bonScan>%
+        WeaponMods=Magnetic
+        bonRadar=-100
+        bonScan=-2
+        bonWEnergy=12
+    }
+    ExpTC_MagnetronSplinter ^{
+        Cost=180
+        Equipments=W02,W07,W09,W16,frag_gun,laser_gun
+        Fragility=133
+        Name=Magnetron
+        OnPlanets=1
+        Priority=10
+        Ruins=Any
+        Size=110
+        Special=1
+        Text=<color=248,252,248>The source of a powerful magnetic field, installed on this weapon, significantly increases the penetration power of any kinetic ammunition. At the same time, the interference caused by the magnetic field adversely affects the reliability of the installation, and also significantly reduces the efficiency of the onboard equipment of both the attacker and his target.</color>
+        Text=<clr><clrEnd>
+        Text=Damage Bonus: <clr>+15<clrEnd>
+        Text=Additional effect: <clr>EMP interference<clrEnd>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Scanner power: <bonScan>%
+        WeaponMods=Magnetic
+        bonRadar=-100
+        bonScan=-2
+        bonWSplinter=15
+    }
+    ExpTC_MissileHullSusceptibilityMinus16 ^{
+        Equipments=Hull
+        FragilityMissile=84
+        LockedAcryn=3
+        Name=add_rocket_2
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_MissileHullSusceptibilityMinus23 ^{
+        Equipments=Hull
+        FragilityMissile=77
+        LockedAcryn=3
+        Name=add_rocket_3
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_MissileHullSusceptibilityMinus9 ^{
+        Equipments=Hull
+        FragilityMissile=91
+        LockedAcryn=3
+        Name=add_rocket_1
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_ProbeImprovement ^{
+        Equipments=Any
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_SecondLife ^{
+        CustomTag=ExpTC_SecondLife
+        LockedAcryn=3
+        Name=name22
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_SecondLifeText ^{
+        CustomTag=ExpTC_SecondLifeText
+        ExText=<clr><clrEnd>
+        ExText=<color=255,167,84>Hull equipped with <color=255,240,100>lifeboat</color>.</color>
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_SplinterHullSusceptibilityMinus16 ^{
+        Equipments=Hull
+        FragilitySplinter=84
+        LockedAcryn=3
+        Name=add_splinter_2
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_SplinterHullSusceptibilityMinus23 ^{
+        Equipments=Hull
+        FragilitySplinter=77
+        LockedAcryn=3
+        Name=add_splinter_3
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_SplinterHullSusceptibilityMinus9 ^{
+        Equipments=Hull
+        FragilitySplinter=91
+        LockedAcryn=3
+        Name=add_splinter_1
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_TotalHullSusceptibilityMinus3 ^{
+        Equipments=Hull
+        FragilityEnergy=97
+        FragilityMissile=97
+        FragilitySplinter=97
+        LockedAcryn=3
+        Name=add_balance_1
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_TotalHullSusceptibilityMinus6 ^{
+        Equipments=Hull
+        FragilityEnergy=94
+        FragilityMissile=94
+        FragilitySplinter=94
+        LockedAcryn=3
+        Name=add_balance_2
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_TotalHullSusceptibilityMinus9 ^{
+        Equipments=Hull
+        FragilityEnergy=91
+        FragilityMissile=91
+        FragilitySplinter=91
+        LockedAcryn=3
+        Name=add_balance_3
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_TotalHullSusceptibilityMinus99 ^{
+        Cost=1
+        CustomTag=immortal_wpn
+        Equipments=Hull
+        FragilityEnergy=1
+        FragilityMissile=1
+        FragilitySplinter=1
+        LockedAcryn=3
+        Name=immortal
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_TotalHullSusceptibilityPlus10 ^{
+        Equipments=Hull
+        FragilityEnergy=110
+        FragilityMissile=110
+        FragilitySplinter=110
+        LockedAcryn=3
+        Name=del_balance_10
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpTC_TryshotLaserGun ^{
+        Cost=400
+        Equipments=laser_gun
+        Fragility=133
+        Name=Trishot
+        OnPlanets=1
+        Priority=10
+        ShotVisual=3
+        Size=200
+        Special=1
+        Text=<color=248,252,248>This gun has an advanced projectile feeding system. Zero-friction materials and additional cooling systems have made it possible to significantly reduce the time required for a full reload and, accordingly, reduce the undesirable delay before firing. Unfortunately, the engineers could not completely eliminate the accelerated wear factor, and the use of more durable and expensive parts led to an increase in the final weight of the structure.</color>
+        Text=<clr><clrEnd>
+        Text=Rate of fire: <clr>+1<clrEnd>
+        bonAttacks=1
+    }
+}
+RuinName ^{
+    TC ~{
+        1=The Screw
+        2=Shpuntik
+        3=Wrench
+        4=Skillful Hands
+        5=Engine Oil
+        6=Tire Fitting
+        7=Shock Labor
+        8=Modernizations
+        9=Harsh Techprocess
+        10=Heavy Machinery
+        11=Space Workshop
+        12=Astroworks
+        13=Shiny Bolt
+        14=Overfulfillment
+        15=Merry Kulibin
+        16=High Hardened
+        17=Constructive
+        18=Transmission
+        19=Gravicara
+        20=Clockwork Orange
+        21=Quality Parts
+        22=Star Forge
+        23=Optimum Hardness
+        24=Defectoscopy
+        25=Y. Gagarin
+        26=G. Titov
+        27=S. Korolev
+        28=A. Shepard
+        29=D. Glenn
+        30=N. Armstrong
+        Name_count=30
+    }
+}
+Script ^{
+    Mod_ExpTC ^{
+        124=Agree
+        159=<0>
+        275=The probability of success is <0>%.
+        363=Upgrade probes
+        368=Roll back improvements
+        381=</color>increases
+        383=</color>decreases
+        384=Weapon systems
+        387=Repair systems
+        388=Capture systems
+        389=Shielding Field Generator Systems
+        390=Scanner systems
+        391=Radar systems
+        392=Additional equipment systems
+        393=Afterburner systems
+        394=Possibly, what can you suggest?
+        395=I want to install an escape pod
+        396=Understandable
+        397=I refuse
+        398=Further
+        399=I'll use the services of other professionals
+        405=You can improve the hull in the following ways:<br>-installing a life capsule<br>-spraying a protective layer<br>-changing the functionality of the hull
+        418=Mix all types evenly
+        419=Energy-proof spraying
+        420=Splinter-proof coating
+        421=Rocket-proof coating
+        422=Thanks...
+        423=I changed my mind
+        428=Choose something else
+        429=Great, the work is already done, and your money is already in our account. That's how fast we work! Perhaps you want to improve something else?
+        431=Choose a donor
+        434=</color>Great, the work is already done, and your money is already in our account. That's how fast we work!
+        435=</color>The donor item did not contain the necessary parts.
+        459=Exploration of water surfaces
+        460=Exploration of flat surfaces
+        461=Exploration of mountain surfaces
+        477=We are pleased to inform you that our network of technology centers is expanding! A new service station <0> is waiting for pilots in system <1> of sector <2>! Don't fly by! Only with us you will find the best technology services in the entire galaxy!
+        478=Today, a new technology center <0> was opened in system <1> of sector <2>. We strongly recommend that all concerned pilots pass the inspection of their starships as soon as possible.
+        479=Attention all pilots! In System <0>, Sector <1>, the Chief Architect has just cut the red ribbon of the new Technology Center <2>! The information on your galactic maps has already been updated.
+        480=Have you long dreamed of upgrading your old rusty trough, inherited from your great-grandmother? Hurry to system <0>, where our highly qualified specialists will gladly turn it into a real swallow! Technology Center <1> - the best prices in the sector <2>!
+        493=By the end of the day we will finish the installation and connection.
+        494=Roll back without a donor
+        514=There is no equipment suitable for change.
+        515=We can roll back  <0> to factory default values for <1> cr.<br><2><br>However, if you have a "donor item", the decrease in wear resistance will not exceed 5%, but only if the necessary parts are found in it.
+        516=Make unique improvements
+        517=Hull improvement
+        521=It is difficult to complete such work in a short amount of time, but our technicians will be on time. Would you like to order something else?
+        522=Our TC network has developed a unique coating based on acryn. Treated hulls become less susceptible to various types of damage, but normal armor upgrades are no longer possible.<br>How many layers of spray do you want to apply?
+        523=Clear. We can use balanced spraying or specialized for a certain type of damage. Which treatment do you want to order?<br>Also, for a fee, we can apply vinyls. Not? Maybe you want to install chrome flaps or neon lights under the bottom? Every whim for your money!
+        524=It does not take much time. True, the new coating has a specific smell, but do not worry, after a few days you will stop noticing it. In the meantime, we will hang an aromatic faruk in your cabin. And remember, it's completely free!
+        527=Distribute improvement evenly
+        528=The probability of success is extremely small! I would recommend canceling the operation. Do you really want to continue?
+        529=Your ship has an escape pod already installed. Installation of the second one is impossible due to the technical features of the capsule. And why do you need two, after all?
+        530=A standard escape pod will cost you <0> cr.<br>The system is fully automated, no manual oversight. The capsule ejects even if you lose consciousness in the heat of battle... With you on board, of course.<br>However, due to insurmountable technical difficulties in hyperspace, unfortunately, the ship's diagnostic system fails.
+        532="Rollback" we mean returning the equipment to its factory settings. It may seem that this is a simple procedure, but in fact, resetting user settings is not so simple. Of course, the service is paid.
+        533=Removing micromodules until recently was considered a technically impossible task, but our engineers managed to develop a universal technique that allows you to do this. Unfortunately, this puts the equipment under severe hardware and software stress from which it will never recover. The reliability of such equipment is irrevocably reduced. This effect will only accumulate in case of repeated deletions.
+        534=A network of our stations has developed a unique technique for overclocking equipment parameters. This is our know-how. We can increase one of the equipment parameters without affecting the second. At the same time, the wear resistance of the equipment will not change. Of course, this is only possible if the equipment is upgradeable.<br>Which equipment would you like to upgrade?
+        535=Of course, anyone can put a micromodule in the equipment. Even the most basic technical education is enough for this. However, only a professional is able to unlock the full potential of the micromodule. Did you know that when properly installed, a micro-module can increase equipment durability? Our specialists can easily cope with this.
+        536=Additional service of the network of our centers. We can optimize the performance of your research probes, increasing their efficiency and reliability.
+        537=We keep a record of each installed improvement. Inspection of what equipment would you like to carry out?
+        538=Select the equipment from which the parts will be extracted. Please note that once the parts have been removed, repairs will not be possible. Our center keeps the remaining spare parts for itself as payment for dismantling.
+        539=After scanning your ship for rare metals, we found <0> cr.<br>units worth of minerals. Will you sell?
+        540=Armoring hull spray
+        541=Dismantling of excess equipment
+        542=Installation of additional equipment
+        543=Agree
+        544=<clrEnd>Wear resistance of equipment <clr>decreases<clrEnd> by <0>%.
+        545=So so... Additional parts will cost you <0> cr.<br>Which parameter to improve?
+        546=So so... Additional details will cost you <0> cr.<br>Which parameter are we improving?
+        561=Of course, take
+        562=No! I won't give up... my beauty...
+        566=One layer, for <0> cr.
+        567=Two layers, for <0> cr.
+        568=Three layers, for <0> cr.
+        580=Firmware update
+        583=(cargo)
+        587=for <0> cr.
+        588=for
+        591=To type <color=0,50,200><0></color>, update cost: <1> cr.
+        592=To type <color=0,50,200><0></color>, update cost:
+        593=To what technological type will we flash?
+        596=type <color=0,50,200><0></color>
+        597=Turn in rare minerals
+        599=Sorry, but it is not possible to improve the lifeboat in any way. Buy yourself a normal case or stop suffering from garbage.
+        600=Thank you for visiting our Technology Center <0>. Make yourself comfortable, <1>, make yourself at home here. We are the best specialists in the Galaxy in the field of spacecraft technological services. The list of our services includes: improving equipment, closing and opening slots, changing susceptibility to a particular type of damage, and much more! I invite you to fully enjoy our delicious coffee and study the price list during this time.
+        602=Our technicians try to work efficiently and professionally, but each item has its own limit. The welds that result from this improvement will not be as tear-resistant as factory ones, so overall the hull's resistance to damage will be reduced. In addition, when improving the body size <0>. Also, you should be aware that there is no way we can remove the <clr>limits of the<clrEnd> series. The cost of the service is <1> cr.<br>So, which part of the ship should we change?
+        603=Firing range
+        604=Damage
+        605=Capture range
+        606=Capture power
+        607=Jump range
+        608=Speed
+        609=Unique PhysGun Accuracy Improvement
+        610=By "firmware" we mean the replacement of a number of modules in the equipment with newer ones, as well as the corresponding software update. Strictly speaking, this is not a firmware at all, but an upgrade, but the name stuck... In a word, flashing an old equipment, we are quite capable of achieving results from it at the level of its newest analogues. Hardware Endurance <clr>decreases<clrEnd> by <0>.<br>So what hardware do you want to flash?
+        HyperDeath=The launch mechanism of the <color=255,240,100>lifeboat</color>, which normally works like clockwork, was not designed to launch in just one single place... in <color=255,240,100>hyperspace</color>. However, as ironically so often happens, it was precisely there that your ship managed to be sucked in in a matter of seconds before a deafening explosion ended your heroic and incredible adventure forever.<br>You died, <Player>, and now all the glory goes to the other Rangers! But your name will be listed forever in the list of war heroes, and the family will receive the required insurance in the amount of <Money> cr.
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            AbandonedShipInfo ^{
+                Description=Info for abandoned ship (crashes without zeroing it)
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=if(ScriptItemActionType(t_OnDeath))
+                    02 ^{
+                        01=dword ship = ScriptItemActShip();
+                        02=dword star = ShipStar(ship);
+                        03=dword item;
+                        04=int tX = CoordX(ship);
+                        05=int tY = CoordY(ship);
+                        06=float angle;
+                        07=int rad;
+                        08=int i;
+                        09=int tId = Id(ship);
+                        10=for(i = ShipCustomShipInfoData(0, CurInfo(), 1); i > 0; i = i - 1)
+                        11 ^{
+                            01=item = GetItemFromVault('RNDbomb_1_' + tId + '_' + i);
+                            02=AddItemToShip(ship, item);
+                        }
+                        12=for(i = ShipItems(ship); i > 0; i = i - 1)
+                        13 ^{
+                            01=item = ShipItems(ship, i);
+                            02=if(ItemIsInUse(item)) continue;
+                            03=if(ItemType(item)==t_UselessItem) DropItem(ship, t_UselessItem);
+                            04=else
+                            05 ^{
+                                01=angle = 0.01 * Rnd(0, 200) * pi;
+                                02=rad = Rnd(100, 200);
+                                03=if(ItemInScript(item)==1) DropItemInSystem(star, GetItemFromShip(ship, i), tX, tY, round(cos(angle) * rad) + tX, round(sin(angle) * rad) + tY);
+                                04=else if(ItemType(item) == t_UselessItem) DropItemInSystem(star, GetItemFromShip(ship, i), tX, tY, round(cos(angle) * rad) + tX, round(sin(angle) * rad) + tY);
+                                05=else if(Rnd(1, 100) <= 15) DropItemInSystem(star, GetItemFromShip(ship, i), tX, tY, round(cos(angle) * rad) + tX, round(sin(angle) * rad) + tY);
+                            }
+                        }
+                        14=for(i = ShipArts(ship); i >= 0; i = i - 1)
+                        15 ^{
+                            01=item = ShipArts(ship,i);
+                            02=angle = 0.01 * Rnd(0, 200) * pi;
+                            03=rad = Rnd(100, 200);
+                            04=DropItemInSystem(star, GetArtFromShip(ship, i), tX, tY, round(cos(angle) * rad) + tX, round(sin(angle) * rad) + tY);
+                        }
+                    }
+                    03=else
+                    04 ^{
+                        01=ScriptItemActParam(0);
+                    }
+                }
+                OnActCodeTypes=t_OnTakingDamage,t_OnTakingDamageEn,t_OnTakingDamageSp,t_OnTakingDamageMi,t_OnDeath
+            }
+            LifeboatLaunchInfo ^{
+                Description=Lifeboat info
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=dword cur_ship = ScriptItemActShip();
+                    02=int bon = FindBonusByCustomTag('ExpTC_SecondLife');
+                    03=if(!ItemExtraSpecialsCountByType(ShipItems(cur_ship, 0), bon)) exit;
+                    04=int i;
+                    05=int infos = CurInfo();
+                    06=int infos_var_2;
+                    07=if(ScriptItemActionType(t_OnTakingDamage) || ScriptItemActionType(t_OnTakingDamageEn) || ScriptItemActionType(t_OnTakingDamageSp) || ScriptItemActionType(t_OnTakingDamageMi))
+                    08 ^{
+                        01=infos_var_2=ShipCustomShipInfoData(0,infos,2);
+                        02=if(infos_var_2)ScriptItemActParam(0);
+                        03=if(ScriptItemActParam()>=HullHP(cur_ship) && !infos_var_2)
+                        04 ^{
+                            01=int effectCheck=(ShipStar(cur_ship)==ShipStar(Player()) && ShipInNormalSpace(Player()));
+                            02=dword dealer=ScriptItemActObject1();
+                            03=int dealerType=ObjectType(dealer);
+                            04=int saveItemsCheck=1;
+                            05=unknown itemsArr=newarray(1);
+                            06=for(i=ShipItems(cur_ship)-1;i>0;i=i-1)ArrayAdd(itemsArr,GetItemFromShip(cur_ship,i));
+                            07=unknown artsArr=newarray(1);
+                            08=for(i=ShipArts(cur_ship)-1;i>=0;i=i-1)ArrayAdd(artsArr,GetArtFromShip(cur_ship,i));
+                            09=dword ejectship=BuyTransport(StarPlanets(GalaxyStar(0),3),1);
+                            10=for(i=ShipItems(ejectship)-1;i>0;i=i-1)FreeItem(GetItemFromShip(ejectship,i));
+                            11=for(i=ShipArts(ejectship)-1;i>=0;i=i-1)FreeItem(GetArtFromShip(ejectship,i));
+                            12=dword hullOld=GetItemFromShip(ejectship,0);
+                            13=dword hull=GetItemFromShip(cur_ship,0);
+                            14=AddItemToShip(ejectship,hull);
+                            15=ItemIsInUse(hull,ejectship,1);
+                            16=if(1)
+                            17 ^{
+                                01=ShipSpecialBonuses(ejectship,bonSlotRadar,-1);
+                                02=ShipSpecialBonuses(ejectship,bonSlotScaner,-1);
+                                03=ShipSpecialBonuses(ejectship,bonSlotDroid,-1);
+                                04=ShipSpecialBonuses(ejectship,bonSlotHook,-1);
+                                05=ShipSpecialBonuses(ejectship,bonSlotDef,-1);
+                                06=ShipSpecialBonuses(ejectship,bonSlotWeapon,-4);
+                                07=ShipSpecialBonuses(ejectship,bonSlotArt,-4);
+                                08=ShipSpecialBonuses(ejectship,bonSkill1,-300);
+                                09=ShipSpecialBonuses(ejectship,bonSkill2,-300);
+                                10=ShipSpecialBonuses(ejectship,bonSkill3,-300);
+                                11=ShipSpecialBonuses(ejectship,bonSkill4,-300);
+                                12=ShipSpecialBonuses(ejectship,bonSkill5,-300);
+                                13=ShipSpecialBonuses(ejectship,bonSkill6,-300);
+                                14=ShipSpecialBonuses(ejectship,bonSpeed,-10000);
+                                15=dword add_item;
+                                16=add_item=CreateEquipment(t_FuelTanks,0,1,0);
+                                17=AddItemToShip(ejectship,add_item);
+                                18=ItemIsInUse(add_item,ejectship,1);
+                                19=NoDropItem(add_item,1);
+                                20=add_item=CreateEquipment(t_Engine,0,1,0);
+                                21=SetEquipmentStats(add_item,0,0);
+                                22=AddItemToShip(ejectship,add_item);
+                                23=ItemIsInUse(add_item,ejectship,1);
+                                24=NoDropItem(add_item,1);
+                                25=add_item=CreateEquipment(t_Weapon1,0,1,0);
+                                26=ItemDurability(add_item,0);
+                                27=AddItemToShip(ejectship,add_item);
+                                28=ItemIsInUse(add_item,ejectship,1);
+                                29=NoDropItem(add_item,1);
+                                30=ShipAddCustomShipInfo(ejectship,'AbandonedShipInfo','NoShow');
+                                31=if(effectCheck)
+                                32 ^{
+                                    01=int NoEffectCheck=ShipCustomShipInfoTextData(0,infos,3);
+                                    02=if(NoEffectCheck!=dealer)
+                                    03 ^{
+                                        01=if(dealerType==1)
+                                        02 ^{
+                                            01=ShowEffect('Weapon.NoGraph',1,cur_ship,0,ScriptItemActParam(),0,0,255,255,255);
+                                        }
+                                        03=else if(dealerType==6)
+                                        04 ^{
+                                            01=ShowEffect('Weapon.NoGraph',1,cur_ship,0,ScriptItemActParam(),0,0,255,0,0);
+                                        }
+                                        05=else ShowEffect('Weapon.NoGraph',1,cur_ship,0,ScriptItemActParam(),0,0);
+                                    }
+                                }
+                                33=if(dealerType==1 || dealerType==6)saveItemsCheck=0;
+                                34=int RNDbomb_1_Num=0;
+                                35=if(saveItemsCheck)
+                                36 ^{
+                                    01=for(i=ArrayDim(itemsArr)-1;i;i=i-1)
+                                    02 ^{
+                                        01=if(ItemType(itemsArr[i])==t_UselessItem)
+                                        02 ^{
+                                            01=str itemSysName=EquipmentImageName(itemsArr[i]);
+                                            02=if(findsubstr(itemSysName,'RNDbomb')>-1)
+                                            03 ^{
+                                                01=if(itemSysName=='RNDbomb_1')
+                                                02 ^{
+                                                    01=if(UselessItemData(itemsArr[i],2)==-2)
+                                                    02 ^{
+                                                        01=DropItemInSystem(StarNearbyStars(ShipStar(Player()),1),itemsArr[i],30000,30000,30000,30000);
+                                                        02=ItemDestroy(itemsArr[i],1);
+                                                    }
+                                                    03=else
+                                                    04 ^{
+                                                        01=RNDbomb_1_Num=RNDbomb_1_Num+1;
+                                                        02=PutItemInVault('RNDbomb_1_'+Id(ejectship)+'_'+RNDbomb_1_Num,itemsArr[i]);
+                                                    }
+                                                }
+                                                03=else AddItemToShip(ejectship,itemsArr[i]);
+                                            }
+                                            04=else AddItemToShip(ejectship,itemsArr[i]);
+                                        }
+                                        03=else AddItemToShip(ejectship,itemsArr[i]);
+                                    }
+                                    03=for(i=ArrayDim(artsArr)-1;i;i=i-1)
+                                    04 ^{
+                                        01=AddItemToShip(ejectship,artsArr[i]);
+                                    }
+                                }
+                                37=else
+                                38 ^{
+                                    01=for(i=ArrayDim(itemsArr)-1;i;i=i-1)
+                                    02 ^{
+                                        01=DropItemInSystem(StarNearbyStars(ShipStar(Player()),1),itemsArr[i],30000,30000,30000,30000);
+                                        02=ItemDestroy(itemsArr[i],1);
+                                    }
+                                    02=for(i=ArrayDim(artsArr)-1;i;i=i-1)FreeItem(artsArr[i]);
+                                }
+                            }
+                            18=Chameleon(ejectship);
+                            19=ShipCustomShipInfoData(ejectship,'AbandonedShipInfo',1,RNDbomb_1_Num);
+                            20=FreeItem(hullOld);
+                            21=SetName(ejectship,'<color=57,239,255>'+CT('MicroModuls.ExpTC_Lifeboat.AbandonedShipName')+'</color>');
+                            22=ShipType(ejectship,'AbandonedShip');
+                            23=ShipOwner(ejectship,ShipOwner(cur_ship));
+                            24=RelationToRanger(ejectship,Player(),50);
+                            25=NoTalkToShip(ejectship,1);
+                            26=NoScanToShip(ejectship,1);
+                            27=OrderNone(ejectship);
+                            28=OrderLock(ejectship,1);
+                            29=ShipAngle(ejectship,ShipAngle(cur_ship));
+                            30=TransferShip(ejectship,ShipStar(cur_ship));
+                            31=ShipSetCoords(ejectship,CoordX(cur_ship),CoordY(cur_ship));
+                            32=ShipCustomShipInfoData(0,infos,1,Id(ejectship));
+                            33=dword hullBoat=CreateHull(t_Ranger,100,1,3,-1);
+                            34=SetEquipmentStats(hullBoat,0,0);
+                            35=AddItemToShip(cur_ship,hullBoat);
+                            36=ItemIsInUse(hullBoat,cur_ship,1);
+                            37=SpecialToEquipment(FindBonusByCustomTag('ExpTC_Lifeboat'),hullBoat);
+                            38=ShipCustomShipInfoData(0,infos,2,1);
+                            39=add_item=CreateEquipment(t_FuelTanks,10,1,ItemOwner(hullBoat));
+                            40=AddItemToShip(cur_ship,add_item);
+                            41=ItemIsInUse(add_item,cur_ship,1);
+                            42=add_item=CreateEquipment(t_Engine,15,1,ItemOwner(hullBoat));
+                            43=AddItemToShip(cur_ship,add_item);
+                            44=ItemIsInUse(add_item,cur_ship,1);
+                            45=add_item=CreateEquipment(t_Weapon1,15,1,ItemOwner(hullBoat));
+                            46=AddItemToShip(cur_ship,add_item);
+                            47=ItemExtraSpecialsAddByType(ShipItems(cur_ship,0),bon);
+                            48=ItemIsInUse(add_item,cur_ship,1);
+                            49=Chameleon(cur_ship);
+                            50=AutoBattle(0);
+                            51=if(GetMainData('Data.Script.Mod_ExpPanel')=='1,Script.Mod_ExpPanel')
+                            52 ^{
+                                01=if(InterfaceState('StarMap','Klesh_panel'))
+                                02 ^{
+                                    01=InterfaceState('StarMap','Klesh_panel',0);
+                                }
+                            }
+                            53=HullHP(ejectship,1);
+                            54=ScriptItemActParam(0);
+                        }
+                    }
+                    09=if(ScriptItemActionType(t_OnStep,9))
+                    10 ^{
+                        01=if(ShipCustomShipInfoData(0,infos,2)==1)OrderNone(cur_ship);
+                    }
+                    11=if(ScriptItemActionType(t_OnStep,11))
+                    12 ^{
+                        01=infos_var_2=ShipCustomShipInfoData(0,infos,2);
+                        02=if(infos_var_2==1)
+                        03 ^{
+                            01=ShipCustomShipInfoData(0,infos,2,2);
+                            02=Chameleon(cur_ship);
+                            03=if(IsPlayer(cur_ship))ForceNextDay();
+                        }
+                        04=else if(infos_var_2==3)
+                        05 ^{
+                            01=if(!IsPlayer(cur_ship))ShipDeleteCustomShipInfo(cur_ship,'LifeboatLaunchInfo');
+                            02=ItemExtraSpecialsDeleteByType(ShipItems(cur_ship,0),bon);
+                            03=ShipCustomShipInfoData(0,infos,1,0);
+                            04=ShipCustomShipInfoData(0,infos,2,0);
+                        }
+                    }
+                    13=if(ScriptItemActionType(t_OnStep,0))
+                    14 ^{
+                        01=if(ShipCustomShipInfoData(0,infos,2)==2)
+                        02 ^{
+                            01=if(!ShipInHyperSpace(cur_ship))
+                            02 ^{
+                                01=ejectship=IdToShip(ShipCustomShipInfoData(0,infos,1));
+                                02=float angle=(ShipAngle(cur_ship)*3.141592653)/180.0;
+                                03=OrderMove(cur_ship,CoordX(cur_ship)+700.0*sin(angle),CoordY(cur_ship)-700.0*cos(angle),1);
+                                04=ShipCustomShipInfoData(0,infos,2,3);
+                                05=ShipAngle(ejectship,ShipAngle(cur_ship));
+                                06=ShipSetCoords(ejectship,CoordX(cur_ship),CoordY(cur_ship));
+                                07=ShipDestroy(ejectship,1);
+                                08=if(ShipCustomShipInfoTextData(0,infos,2)=='ShowBAMEffect')
+                                09 ^{
+                                    01=if(effectCheck)ShowStaticEffect('RNDbomb_1BAM',CoordX(ejectship),CoordY(ejectship));
+                                }
+                            }
+                            03=else if(cur_ship==Player())CustomLose(CT('Script.Mod_ExpTC.HyperDeath'));
+                            04=else
+                            05 ^{
+                                01=ShipDestroy(IdToShip(ShipCustomShipInfoData(0,infos,1)),1);
+                                02=ShipDestroy(cur_ship,1);
+                            }
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnStep,t_OnTakingDamage,t_OnTakingDamageEn,t_OnTakingDamageSp,t_OnTakingDamageMi
+                OnActStepTypes=0,9,11
+            }
+        }
+    }
+}
+ShipType ^{
+    Fei ^{
+        AbandonedShip=
+    }
+    Gaal ^{
+        AbandonedShip=
+    }
+    Maloc ^{
+        AbandonedShip=
+    }
+    Peleng ^{
+        AbandonedShip=
+    }
+    People ^{
+        AbandonedShip=
+    }
+    TypeName ^{
+        AbandonedShip=Spaceship
+        TC=Technology Center
+        TCSmall=TC
+    }
+}

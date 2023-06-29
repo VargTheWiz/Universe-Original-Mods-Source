@@ -1,0 +1,24 @@
+MicroModuls ^{
+    EvoGkvan_GkvanHull ^{
+        Cost=400
+        CustomTag=EvoGkvan_GkvanHull
+        Equipments=Hull
+        ForCharacterTypes=Trader,Pirate
+        ForNPCTypes=Ranger,RangerExplorer
+        Fragility=100
+        KindGraph=Gkvan
+        Name=Корпус "Гкван"
+        OnPlanets=1
+        Owner=Maloc
+        Priority=50
+        RacialRestriction=1
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Корпус, воссозданный по чертежам неизвестной расы из другого рукава Галактики - до недавнего времени засекреченный проект <clr>малоков<clrEnd>. Разблокировка скоростного ограничителя осуществляется только после полного биосканирования и подтверждения расовой принадлежности пилота.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=(только для <clr>малоков<clrEnd>)
+        bonSlotArt=-3
+        bonSlotWeapon=-2
+        bonSpeed=300
+    }
+}

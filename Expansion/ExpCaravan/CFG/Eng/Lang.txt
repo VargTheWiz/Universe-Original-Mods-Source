@@ -1,0 +1,73 @@
+Script ^{
+    Mod_ExpCaravan ^{
+        13=Oh, hey, it's you, <Player>. Sorry, I don't have time right now, let's talk later.
+        14=Hello, <Player>, glad to see you amongst this boundless space emptiness! Unfortunately, I have no time to talk right now. But still I promise that I will drink a cup of "Machpells" with you sometime later.
+        15=You! Damned pirate! Come here! Come here, you prick, I'll shot you so much that you'll fly off to klissanic galaxy arm!
+        16=Hey, get off this frequency channel! I'm doing important task right now and have no time for mindless talks.
+        17=<0>
+        19=Salute, <Player>. Sorry, but I'm on task, really can't allow any distraction.
+        4=Over
+        5=Wish your comm will crack like hell! Get rid of my screen, <Player>, I have no time to look at your muzzle!
+    }
+    Mod_ExpCaravan_PB ^{
+        0=Listen, where could I trade off a bunch of my hard job?
+        11=You could offer me more, "I shoulda say", but I agree still, you now is like my subbro man. Don't wanna pull this thing somethere else anyway.
+        14=Containers
+        15=Container
+        16=Then, deal! Bros unloaded <0> from your cargo already, here's your credits, sign off and we're aright.<br>And, this.. Respect, dude. The Clan will not forget this.
+        4=What, <Player>, bitten off from some pity jerk? Well, I see you're one tough son of a gun. Didn't mentioned so before, I shoulda say. Aright, let me with bros check whatchu got at you holda, then.<br>...<br>Well, we just talked a little and decided that <0> cr. is quite enough for that stuff under your upper deck. But you shouldn't ask for more, I shoulda say, ain't no millionaire's son here.
+        6=Hah, do all the pirates have such a little pouch? Even cooling off my guns will cost more!
+        9=Hey, hey, know your shores, okay? My dear dude, what if we undocked you ship right now, with you here, eh?
+    }
+}
+UselessItems ^{
+    ExpCaravan_CargoBox ^{
+        Cost=Average
+        Name=Container with unknown goods
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Size=1
+        Text=All can you do is only guess what's inside.
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            ExpCaravan_WarriorShotInfos ^{
+                Description=Скрытая инфошка для возможности осуществления выстрела военного по контейнеру
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=dword cur_ship = ScriptItemActShip();
+                    02=if(cur_ship)
+                    03 ^{
+                        01=if(ShipInNormalSpace(cur_ship))
+                        02 ^{
+                            01=dword cur_info = CurInfo();
+                            02=dword container = ShipCustomShipInfoData(0, cur_info, 1);
+                            03=if(container)
+                            04 ^{
+                                01=container = IdToItem(container);
+                                02=if(container)
+                                03 ^{
+                                    01=if(ItemIn(GetValueFromScript('Mod_ExpCaravan', 'Cargo_' + ShipCustomShipInfoData(0, cur_info, 2)), ShipStar(cur_ship)))
+                                    02 ^{
+                                        01=int i = 1;
+                                        02=dword gun = 0;
+                                        03=while(!gun)
+                                        04 ^{
+                                            01=gun = ShipEqInSlot(cur_ship, t_Weapon1, i);
+                                            02=i = i + 1;
+                                        }
+                                        05=FireWeapon(cur_ship, container, gun);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnStep
+                OnActStepTypes=3,4,5,6,7,8,9
+            }
+        }
+    }
+}

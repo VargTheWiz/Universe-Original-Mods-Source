@@ -1,0 +1,1704 @@
+Data ^{
+    SE ^{
+        Effect ^{
+            TeleportOut_256_30 ^{
+                GAI=Bm.Teleport.Out_256_30
+                PosZ=GateEffect
+            }
+        }
+        Ruins ^{
+            SSB ^{
+                Image=Bm.Ruins.SSB
+                ImageI=GI,Bm.Ruins.SSBi
+                ImageMap=GI,Bm.Ruins.MapSSB
+                PosZ=Ruins
+            }
+        }
+        Ship ^{
+            Unknown ^{
+                Zond ^{
+                    1ImageP=GI,Bm.ShipP.1Zond
+                    2ImageP=GI,Bm.ShipP.2Zond
+                    Anim ^{
+                        0=1,[90,0-89]
+                        Normal=2,[90,0-89]
+                    }
+                    AnimS ^{
+                        Normal=2,[90,0-89]
+                    }
+                    Image=Bm.Ship.Zond
+                    ImageMap=Bm.Ship.FeiMap
+                    ImageS=Bm.Ship.Zonds
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                }
+            }
+        }
+        Sound ^{
+            Loop ^{
+                Ruins ^{
+                    SSB ^{
+                        10=3000,Sound.LoopRuins01
+                    }
+                }
+            }
+            Rnd ^{
+                Ruins ^{
+                    SSB ^{
+                    }
+                }
+            }
+        }
+        Weapon ^{
+            MissileHit ^{
+                Palettes ^{
+                    0 ^{
+                    }
+                    1 ^{
+                    }
+                    2 ^{
+                    }
+                    3 ^{
+                    }
+                    4 ^{
+                    }
+                    5 ^{
+                        GAI=Bm.Weapon.FX_blue
+                    }
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_ExpSSB=1,Script.Mod_ExpSSB
+    }
+}
+ML ^{
+    RuinsTalk ^{
+        Panel ^{
+            Expansion ^{
+                Panel ^{
+                }
+                Panel ^{
+                }
+                Panel ^{
+                    Active=False
+                    GAI ^{
+                        Active=False
+                        AlignX=Center
+                        AlignY=Center
+                        Frame=[75,0-80]
+                        Image=Bm.Gov.2Gaal2Anim0a
+                        ImageFirst=Bm.Gov.2Gaal2Anim0i
+                        Name=Panel_Anim0
+                        PBuf=True
+                        Pos=574,115,-2
+                        Size=346,653
+                    }
+                    GAI ^{
+                        Active=False
+                        AlignX=Center
+                        AlignY=Center
+                        Frame=[75,0-80]
+                        Image=Bm.Gov.2Gaal2Anim1a
+                        ImageFirst=Bm.Gov.2Gaal2Anim1i
+                        Name=Panel_Anim1
+                        PBuf=True
+                        Pos=509,114,-2
+                        Size=436,654
+                    }
+                    GAI ^{
+                        Active=False
+                        AlignX=Center
+                        AlignY=Center
+                        Frame=[75,0-80]
+                        Image=Bm.GovHD.GaalAnim0a
+                        ImageFirst=Bm.GovHD.GaalAnim0i
+                        Name=PanelHD_Anim0
+                        PBuf=True
+                        Pos=0,-81,-2
+                        Size=545,817
+                    }
+                    GAI ^{
+                        Active=False
+                        AlignX=Center
+                        AlignY=Center
+                        Frame=[75,0-80]
+                        Image=Bm.GovHD.GaalAnim1a
+                        ImageFirst=Bm.GovHD.GaalAnim1i
+                        Name=PanelHD_Anim1
+                        PBuf=True
+                        Pos=0,-81,-2
+                        Size=545,817
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormRuins.2Empty_table
+                        Name=Table
+                        Pos=0,0,-3
+                        Size=1,331
+                    }
+                    Name=PanelGaalSSB
+                    Pos=0,0,800
+                    Size=1024,768
+                }
+                Panel ^{
+                }
+            }
+        }
+    }
+    Ship ^{
+        Panel ^{
+            Panel ^{
+            }
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    Image ^{
+                        Pos=137,519,5
+                    }
+                    Panel ^{
+                        Pos=40,0,3
+                    }
+                    Panel ^{
+                        GraphButton ^{
+                            Pos=179,32,1
+                        }
+                        GraphButton ^{
+                            Pos=463,32,1
+                        }
+                        Image ^{
+                            Pos=149,0,2
+                        }
+                        Image ^{
+                            Pos=204,30,1
+                        }
+                        Image ^{
+                            Pos=204,30,0
+                        }
+                        Image ^{
+                            Pos=247,30,1
+                        }
+                        Image ^{
+                            Pos=247,30,0
+                        }
+                        Image ^{
+                            Pos=290,30,1
+                        }
+                        Image ^{
+                            Pos=290,30,0
+                        }
+                        Image ^{
+                            Pos=333,30,1
+                        }
+                        Image ^{
+                            Pos=333,30,0
+                        }
+                        Image ^{
+                            Pos=376,30,1
+                        }
+                        Image ^{
+                            Pos=376,30,0
+                        }
+                        Image ^{
+                            Pos=419,30,1
+                        }
+                        Image ^{
+                            Pos=419,30,0
+                        }
+                        Label ^{
+                            Pos=205,58,0
+                        }
+                        Pos=0,519,4
+                        Size=500,180
+                        Zone ^{
+                            Pos=204,30,0
+                        }
+                        Zone ^{
+                            Pos=247,30,0
+                        }
+                        Zone ^{
+                            Pos=290,30,0
+                        }
+                        Zone ^{
+                            Pos=333,30,0
+                        }
+                        Zone ^{
+                            Pos=376,30,0
+                        }
+                        Zone ^{
+                            Pos=419,30,0
+                        }
+                    }
+                    Panel ^{
+                        Image ^{
+                            Pos=149,0,9
+                        }
+                        Image ^{
+                            Pos=188,28,7
+                        }
+                        Image ^{
+                            Pos=213,28,7
+                        }
+                        Image ^{
+                            Pos=238,28,7
+                        }
+                        Image ^{
+                            Pos=263,28,7
+                        }
+                        Image ^{
+                            Pos=288,28,7
+                        }
+                        Image ^{
+                            Pos=313,28,7
+                        }
+                        Image ^{
+                            Pos=194,55,8
+                        }
+                        Image ^{
+                            Pos=219,55,8
+                        }
+                        Image ^{
+                            Pos=244,55,8
+                        }
+                        Image ^{
+                            Pos=269,55,8
+                        }
+                        Image ^{
+                            Pos=294,55,8
+                        }
+                        Image ^{
+                            Pos=319,55,8
+                        }
+                        Label ^{
+                            Pos=193,33,1
+                        }
+                        Label ^{
+                            Pos=218,33,1
+                        }
+                        Label ^{
+                            Pos=243,33,1
+                        }
+                        Label ^{
+                            Pos=268,33,1
+                        }
+                        Label ^{
+                            Pos=293,33,1
+                        }
+                        Label ^{
+                            Pos=318,33,1
+                        }
+                        Label ^{
+                            Pos=340,47,1
+                        }
+                        Label ^{
+                            Pos=340,57,1
+                        }
+                        Label ^{
+                            Pos=402,42,1
+                        }
+                        Pos=0,519,4
+                        Size=500,180
+                    }
+                    Panel ^{
+                        Active=False
+                        GraphButton ^{
+                            ImageDown=GI,Bm.FormShip2.2DR_P_D
+                            ImageNormal=GI,Bm.FormShip2.2DR_P_N
+                            ImageNormalA=GI,Bm.FormShip2.2DR_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_droid
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_RepairRobot);
+                                04=if(item)
+                                05 ^{
+                                    01=var=GetEquipmentStats(item,0)/2;
+                                    02=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',Format(CT('FormInfo.ForsageEQ'),'EQP','дроид','VAR',var));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int temp_int=9;
+                                02=if(ShipEqInSlot(Player(),t_RepairRobot)==0 && temp_int==9)
+                                03 ^{
+                                    01=temp_int=0;
+                                    02=MessageBox('Отсутствует необходимое оборудование.');
+                                }
+                                04=if(temp_int==0)exit;
+                                05=dword item=ShipEqInSlot(Player(),t_RepairRobot);
+                                06=if(ItemInScript(item))exit;
+                                07=if(ShipFindCustomShipInfoByType(Player(),'pulsar_infos')>=0 && temp_int==9)
+                                08 ^{
+                                    01=temp_int=1;
+                                    02=MessageBox('Пульсар синхронизирован с другим оборудованием.');
+                                }
+                                09=if(ItemDurability(item)<20 && temp_int==9)
+                                10 ^{
+                                    01=temp_int=2;
+                                    02=MessageBox('Оборудование не выдержит нагрузки.');
+                                }
+                                11=int i=0;
+                                12=dword temp_dword=0;
+                                13=dword art_pulsar=0;
+                                14=for(i=1;i<5;i=i+1)
+                                15 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                16=if(ItemDurability(art_pulsar)<12 && temp_int==9)
+                                17 ^{
+                                    01=temp_int=3;
+                                    02=MessageBox('Пульсар не выдержит нагрузки, требуется ремонт.');
+                                }
+                                18=if(CustomArtData(art_pulsar,1)<100 && temp_int==9)
+                                19 ^{
+                                    01=temp_int=4;
+                                    02=MessageBox('Недостаточно заряда.');
+                                }
+                                20=if(temp_int!=9)exit;
+                                21=ShipAddCustomShipInfo(Player(),'pulsar_infos','NoShow');
+                                22=CustomArtTextData(art_pulsar,2,Id(item));
+                                23=CustomArtData(art_pulsar,3,1);
+                                24=InterfaceState('Ship','pulsar_butt_droid_A',1);
+                                25=InterfaceState('Ship','pulsar_butt_droid',0);
+                                26=CustomArtTextData(art_pulsar,3,'pulsar_butt_droid');
+                            }
+                            Pos=20,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            ImageDown=GI,Bm.FormShip2.2CH_P_D
+                            ImageNormal=GI,Bm.FormShip2.2CH_P_N
+                            ImageNormalA=GI,Bm.FormShip2.2CH_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_hook
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_CargoHook);
+                                04=if(item)
+                                05 ^{
+                                    01=var=GetEquipmentStats(item,0)/2;
+                                    02=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',Format(CT('FormInfo.ForsageEQ'),'EQP','захват','VAR',var));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int temp_int=9;
+                                02=if(ShipEqInSlot(Player(),t_CargoHook)==0 && temp_int==9)
+                                03 ^{
+                                    01=temp_int=0;
+                                    02=MessageBox('Отсутствует необходимое оборудование.');
+                                }
+                                04=if(temp_int==0)exit;
+                                05=dword item=ShipEqInSlot(Player(),t_CargoHook);
+                                06=if(ItemInScript(item))exit;
+                                07=if(ShipFindCustomShipInfoByType(Player(),'pulsar_infos')>=0 && temp_int==9)
+                                08 ^{
+                                    01=temp_int=1;
+                                    02=MessageBox('Пульсар синхронизирован с другим оборудованием.');
+                                }
+                                09=if(ItemDurability(item)<20 && temp_int==9)
+                                10 ^{
+                                    01=temp_int=2;
+                                    02=MessageBox('Оборудование не выдержит нагрузки.');
+                                }
+                                11=int i=0;
+                                12=dword temp_dword=0;
+                                13=dword art_pulsar=0;
+                                14=for(i=1;i<5;i=i+1)
+                                15 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                16=if(ItemDurability(art_pulsar)<12 && temp_int==9)
+                                17 ^{
+                                    01=temp_int=3;
+                                    02=MessageBox('Пульсар не выдержит нагрузки, требуется ремонт.');
+                                }
+                                18=if(CustomArtData(art_pulsar,1)<100 && temp_int==9)
+                                19 ^{
+                                    01=temp_int=4;
+                                    02=MessageBox('Недостаточно заряда.');
+                                }
+                                20=if(temp_int!=9)exit;
+                                21=ShipAddCustomShipInfo(Player(),'pulsar_infos','NoShow');
+                                22=CustomArtTextData(art_pulsar,2,Id(item));
+                                23=CustomArtData(art_pulsar,3,1);
+                                24=InterfaceState('Ship','pulsar_butt_hook_A',1);
+                                25=InterfaceState('Ship','pulsar_butt_hook',0);
+                                26=CustomArtTextData(art_pulsar,3,'pulsar_butt_hook');
+                            }
+                            Pos=50,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            ImageDown=GI,Bm.FormShip2.2DG_P_D
+                            ImageNormal=GI,Bm.FormShip2.2DG_P_N
+                            ImageNormalA=GI,Bm.FormShip2.2DG_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_gzp
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_DefGenerator);
+                                04=if(item)
+                                05 ^{
+                                    01=var=GetEquipmentStats(item,0)/2;
+                                    02=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',Format(CT('FormInfo.ForsageEQ'),'EQP','генератор защиты','VAR',var));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int temp_int=9;
+                                02=if(ShipEqInSlot(Player(),t_DefGenerator)==0 && temp_int==9)
+                                03 ^{
+                                    01=temp_int=0;
+                                    02=MessageBox('Отсутствует необходимое оборудование.');
+                                }
+                                04=if(temp_int==0)exit;
+                                05=dword item=ShipEqInSlot(Player(),t_DefGenerator);
+                                06=if(ItemInScript(item))exit;
+                                07=if(ShipFindCustomShipInfoByType(Player(),'pulsar_infos')>=0 && temp_int==9)
+                                08 ^{
+                                    01=temp_int=1;
+                                    02=MessageBox('Пульсар синхронизирован с другим оборудованием.');
+                                }
+                                09=if(ItemDurability(item)<20 && temp_int==9)
+                                10 ^{
+                                    01=temp_int=2;
+                                    02=MessageBox('Оборудование не выдержит нагрузки.');
+                                }
+                                11=int i=0;
+                                12=dword temp_dword=0;
+                                13=dword art_pulsar=0;
+                                14=for(i=1;i<5;i=i+1)
+                                15 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                16=if(ItemDurability(art_pulsar)<12 && temp_int==9)
+                                17 ^{
+                                    01=temp_int=3;
+                                    02=MessageBox('Пульсар не выдержит нагрузки, требуется ремонт.');
+                                }
+                                18=if(CustomArtData(art_pulsar,1)<100 && temp_int==9)
+                                19 ^{
+                                    01=temp_int=4;
+                                    02=MessageBox('Недостаточно заряда.');
+                                }
+                                20=if(temp_int!=9)exit;
+                                21=ShipAddCustomShipInfo(Player(),'pulsar_infos','NoShow');
+                                22=CustomArtTextData(art_pulsar,2,Id(item));
+                                23=CustomArtData(art_pulsar,3,1);
+                                24=InterfaceState('Ship','pulsar_butt_gzp_A',1);
+                                25=InterfaceState('Ship','pulsar_butt_gzp',0);
+                                26=CustomArtTextData(art_pulsar,3,'pulsar_butt_gzp');
+                            }
+                            Pos=80,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            ImageDown=GI,Bm.FormShip2.2SC_P_D
+                            ImageNormal=GI,Bm.FormShip2.2SC_P_N
+                            ImageNormalA=GI,Bm.FormShip2.2SC_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_scaner
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_Scaner);
+                                04=if(item)
+                                05 ^{
+                                    01=var=GetEquipmentStats(item,0)/2;
+                                    02=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',Format(CT('FormInfo.ForsageEQ'),'EQP','сканер','VAR',var));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int temp_int=9;
+                                02=if(ShipEqInSlot(Player(),t_Scaner)==0 && temp_int==9)
+                                03 ^{
+                                    01=temp_int=0;
+                                    02=MessageBox('Отсутствует необходимое оборудование.');
+                                }
+                                04=if(temp_int==0)exit;
+                                05=dword item=ShipEqInSlot(Player(),t_Scaner);
+                                06=if(ItemInScript(item))exit;
+                                07=if(ShipFindCustomShipInfoByType(Player(),'pulsar_infos')>=0 && temp_int==9)
+                                08 ^{
+                                    01=temp_int=1;
+                                    02=MessageBox('Пульсар синхронизирован с другим оборудованием.');
+                                }
+                                09=if(ItemDurability(item)<20 && temp_int==9)
+                                10 ^{
+                                    01=temp_int=2;
+                                    02=MessageBox('Оборудование не выдержит нагрузки.');
+                                }
+                                11=int i=0;
+                                12=dword temp_dword=0;
+                                13=dword art_pulsar=0;
+                                14=for(i=1;i<5;i=i+1)
+                                15 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                16=if(ItemDurability(art_pulsar)<12 && temp_int==9)
+                                17 ^{
+                                    01=temp_int=3;
+                                    02=MessageBox('Пульсар не выдержит нагрузки, требуется ремонт.');
+                                }
+                                18=if(CustomArtData(art_pulsar,1)<100 && temp_int==9)
+                                19 ^{
+                                    01=temp_int=4;
+                                    02=MessageBox('Недостаточно заряда.');
+                                }
+                                20=if(temp_int!=9)exit;
+                                21=ShipAddCustomShipInfo(Player(),'pulsar_infos','NoShow');
+                                22=CustomArtTextData(art_pulsar,2,Id(item));
+                                23=CustomArtData(art_pulsar,3,1);
+                                24=InterfaceState('Ship','pulsar_butt_scaner_A',1);
+                                25=InterfaceState('Ship','pulsar_butt_scaner',0);
+                                26=CustomArtTextData(art_pulsar,3,'pulsar_butt_scaner');
+                            }
+                            Pos=110,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            ImageDown=GI,Bm.FormShip2.2RD_P_D
+                            ImageNormal=GI,Bm.FormShip2.2RD_P_N
+                            ImageNormalA=GI,Bm.FormShip2.2RD_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_radar
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_Radar);
+                                04=if(item)
+                                05 ^{
+                                    01=var=GetEquipmentStats(item,0)/2;
+                                    02=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',Format(CT('FormInfo.ForsageEQ'),'EQP','радар','VAR',var));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int temp_int=9;
+                                02=if(ShipEqInSlot(Player(),t_Radar)==0 && temp_int==9)
+                                03 ^{
+                                    01=temp_int=0;
+                                    02=MessageBox('Отсутствует необходимое оборудование.');
+                                }
+                                04=if(temp_int==0)exit;
+                                05=dword item=ShipEqInSlot(Player(),t_Radar);
+                                06=if(ItemInScript(item))exit;
+                                07=if(ShipFindCustomShipInfoByType(Player(),'pulsar_infos')>=0 && temp_int==9)
+                                08 ^{
+                                    01=temp_int=1;
+                                    02=MessageBox('Пульсар синхронизирован с другим оборудованием.');
+                                }
+                                09=if(ItemDurability(item)<20 && temp_int==9)
+                                10 ^{
+                                    01=temp_int=2;
+                                    02=MessageBox('Оборудование не выдержит нагрузки.');
+                                }
+                                11=int i=0;
+                                12=dword temp_dword=0;
+                                13=dword art_pulsar=0;
+                                14=for(i=1;i<5;i=i+1)
+                                15 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                16=if(ItemDurability(art_pulsar)<12 && temp_int==9)
+                                17 ^{
+                                    01=temp_int=3;
+                                    02=MessageBox('Пульсар не выдержит нагрузки, требуется ремонт.');
+                                }
+                                18=if(CustomArtData(art_pulsar,1)<100 && temp_int==9)
+                                19 ^{
+                                    01=temp_int=4;
+                                    02=MessageBox('Недостаточно заряда.');
+                                }
+                                20=if(temp_int!=9)exit;
+                                21=ShipAddCustomShipInfo(Player(),'pulsar_infos','NoShow');
+                                22=CustomArtTextData(art_pulsar,2,Id(item));
+                                23=CustomArtData(art_pulsar,3,1);
+                                24=InterfaceState('Ship','pulsar_butt_radar_A',1);
+                                25=InterfaceState('Ship','pulsar_butt_radar',0);
+                                26=CustomArtTextData(art_pulsar,3,'pulsar_butt_radar');
+                            }
+                            Pos=140,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            ImageDown=GI,Bm.FormShip2.2WP_P_D
+                            ImageNormal=GI,Bm.FormShip2.2WP_P_N
+                            ImageNormalA=GI,Bm.FormShip2.2WP_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_wpn_1
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_Weapon1,1);
+                                04=if(item)
+                                05 ^{
+                                    01=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',CT('FormInfo.ForsageWP'));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int temp_int=9;
+                                02=if(ShipEqInSlot(Player(),t_Weapon1,1)==0 && temp_int==9)
+                                03 ^{
+                                    01=temp_int=0;
+                                    02=MessageBox('Отсутствует необходимое оборудование.');
+                                }
+                                04=if(temp_int==0)exit;
+                                05=dword item=ShipEqInSlot(Player(),t_Weapon1,1);
+                                06=if(ItemType(item) >= t_Weapon1 && ItemType(item) <= t_CustomWeapon && temp_int==9)
+                                07 ^{
+                                    01=dword dmgset=GetEquipmentStats(item,6);
+                                    02=if(dmgset & 4)
+                                    03 ^{
+                                        01=temp_int=5;
+                                        02=MessageBox('Конфликтный тип оборудования.');
+                                    }
+                                }
+                                08=if(ShipFindCustomShipInfoByType(Player(),'pulsar_infos')>=0 && temp_int==9)
+                                09 ^{
+                                    01=temp_int=1;
+                                    02=MessageBox('Пульсар синхронизирован с другим оборудованием.');
+                                }
+                                10=if(ItemDurability(item)<20 && temp_int==9)
+                                11 ^{
+                                    01=temp_int=2;
+                                    02=MessageBox('Оборудование не выдержит нагрузки.');
+                                }
+                                12=int i=0;
+                                13=dword temp_dword=0;
+                                14=dword art_pulsar=0;
+                                15=for(i=1;i<5;i=i+1)
+                                16 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                17=if(ItemDurability(art_pulsar)<12 && temp_int==9)
+                                18 ^{
+                                    01=temp_int=3;
+                                    02=MessageBox('Пульсар не выдержит нагрузки, требуется ремонт.');
+                                }
+                                19=if(CustomArtData(art_pulsar,1)<100 && temp_int==9)
+                                20 ^{
+                                    01=temp_int=4;
+                                    02=MessageBox('Недостаточно заряда.');
+                                }
+                                21=if(temp_int!=9)exit;
+                                22=ShipAddCustomShipInfo(Player(),'pulsar_infos','NoShow');
+                                23=CustomArtTextData(art_pulsar,2,Id(item));
+                                24=CustomArtData(art_pulsar,3,1);
+                                25=InterfaceState('Ship','pulsar_butt_wpn_1_A',1);
+                                26=InterfaceState('Ship','pulsar_butt_wpn_1',0);
+                                27=CustomArtTextData(art_pulsar,3,'pulsar_butt_wpn_1');
+                            }
+                            Pos=170,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            ImageDown=GI,Bm.FormShip2.2WP_P_D
+                            ImageNormal=GI,Bm.FormShip2.2WP_P_N
+                            ImageNormalA=GI,Bm.FormShip2.2WP_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_wpn_2
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_Weapon1,2);
+                                04=if(item)
+                                05 ^{
+                                    01=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',CT('FormInfo.ForsageWP'));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int temp_int=9;
+                                02=if(ShipEqInSlot(Player(),t_Weapon1,2)==0 && temp_int==9)
+                                03 ^{
+                                    01=temp_int=0;
+                                    02=MessageBox('Отсутствует необходимое оборудование.');
+                                }
+                                04=if(temp_int==0)exit;
+                                05=dword item=ShipEqInSlot(Player(),t_Weapon1,2);
+                                06=if(ItemType(item) >= t_Weapon1 && ItemType(item) <= t_CustomWeapon && temp_int==9)
+                                07 ^{
+                                    01=dword dmgset=GetEquipmentStats(item,6);
+                                    02=if(dmgset & 4)
+                                    03 ^{
+                                        01=temp_int=5;
+                                        02=MessageBox('Конфликтный тип оборудования.');
+                                    }
+                                }
+                                08=if(ShipFindCustomShipInfoByType(Player(),'pulsar_infos')>=0 && temp_int==9)
+                                09 ^{
+                                    01=temp_int=1;
+                                    02=MessageBox('Пульсар синхронизирован с другим оборудованием.');
+                                }
+                                10=if(ItemDurability(item)<20 && temp_int==9)
+                                11 ^{
+                                    01=temp_int=2;
+                                    02=MessageBox('Оборудование не выдержит нагрузки.');
+                                }
+                                12=int i=0;
+                                13=dword temp_dword=0;
+                                14=dword art_pulsar=0;
+                                15=for(i=1;i<5;i=i+1)
+                                16 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                17=if(ItemDurability(art_pulsar)<12 && temp_int==9)
+                                18 ^{
+                                    01=temp_int=3;
+                                    02=MessageBox('Пульсар не выдержит нагрузки, требуется ремонт.');
+                                }
+                                19=if(CustomArtData(art_pulsar,1)<100 && temp_int==9)
+                                20 ^{
+                                    01=temp_int=4;
+                                    02=MessageBox('Недостаточно заряда.');
+                                }
+                                21=if(temp_int!=9)exit;
+                                22=ShipAddCustomShipInfo(Player(),'pulsar_infos','NoShow');
+                                23=CustomArtTextData(art_pulsar,2,Id(item));
+                                24=CustomArtData(art_pulsar,3,1);
+                                25=InterfaceState('Ship','pulsar_butt_wpn_2_A',1);
+                                26=InterfaceState('Ship','pulsar_butt_wpn_2',0);
+                                27=CustomArtTextData(art_pulsar,3,'pulsar_butt_wpn_2');
+                            }
+                            Pos=200,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            ImageDown=GI,Bm.FormShip2.2WP_P_D
+                            ImageNormal=GI,Bm.FormShip2.2WP_P_N
+                            ImageNormalA=GI,Bm.FormShip2.2WP_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_wpn_3
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_Weapon1,3);
+                                04=if(item)
+                                05 ^{
+                                    01=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',CT('FormInfo.ForsageWP'));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int temp_int=9;
+                                02=if(ShipEqInSlot(Player(),t_Weapon1,3)==0 && temp_int==9)
+                                03 ^{
+                                    01=temp_int=0;
+                                    02=MessageBox('Отсутствует необходимое оборудование.');
+                                }
+                                04=if(temp_int==0)exit;
+                                05=dword item=ShipEqInSlot(Player(),t_Weapon1,3);
+                                06=if(ItemType(item) >= t_Weapon1 && ItemType(item) <= t_CustomWeapon && temp_int==9)
+                                07 ^{
+                                    01=dword dmgset=GetEquipmentStats(item,6);
+                                    02=if(dmgset & 4)
+                                    03 ^{
+                                        01=temp_int=5;
+                                        02=MessageBox('Конфликтный тип оборудования.');
+                                    }
+                                }
+                                08=if(ShipFindCustomShipInfoByType(Player(),'pulsar_infos')>=0 && temp_int==9)
+                                09 ^{
+                                    01=temp_int=1;
+                                    02=MessageBox('Пульсар синхронизирован с другим оборудованием.');
+                                }
+                                10=if(ItemDurability(item)<20 && temp_int==9)
+                                11 ^{
+                                    01=temp_int=2;
+                                    02=MessageBox('Оборудование не выдержит нагрузки.');
+                                }
+                                12=int i=0;
+                                13=dword temp_dword=0;
+                                14=dword art_pulsar=0;
+                                15=for(i=1;i<5;i=i+1)
+                                16 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                17=if(ItemDurability(art_pulsar)<12 && temp_int==9)
+                                18 ^{
+                                    01=temp_int=3;
+                                    02=MessageBox('Пульсар не выдержит нагрузки, требуется ремонт.');
+                                }
+                                19=if(CustomArtData(art_pulsar,1)<100 && temp_int==9)
+                                20 ^{
+                                    01=temp_int=4;
+                                    02=MessageBox('Недостаточно заряда.');
+                                }
+                                21=if(temp_int!=9)exit;
+                                22=ShipAddCustomShipInfo(Player(),'pulsar_infos','NoShow');
+                                23=CustomArtTextData(art_pulsar,2,Id(item));
+                                24=CustomArtData(art_pulsar,3,1);
+                                25=InterfaceState('Ship','pulsar_butt_wpn_3_A',1);
+                                26=InterfaceState('Ship','pulsar_butt_wpn_3',0);
+                                27=CustomArtTextData(art_pulsar,3,'pulsar_butt_wpn_3');
+                            }
+                            Pos=230,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            ImageDown=GI,Bm.FormShip2.2WP_P_D
+                            ImageNormal=GI,Bm.FormShip2.2WP_P_N
+                            ImageNormalA=GI,Bm.FormShip2.2WP_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_wpn_4
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_Weapon1,4);
+                                04=if(item)
+                                05 ^{
+                                    01=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',CT('FormInfo.ForsageWP'));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int temp_int=9;
+                                02=if(ShipEqInSlot(Player(),t_Weapon1,4)==0 && temp_int==9)
+                                03 ^{
+                                    01=temp_int=0;
+                                    02=MessageBox('Отсутствует необходимое оборудование.');
+                                }
+                                04=if(temp_int==0)exit;
+                                05=dword item=ShipEqInSlot(Player(),t_Weapon1,4);
+                                06=if(ItemType(item) >= t_Weapon1 && ItemType(item) <= t_CustomWeapon && temp_int==9)
+                                07 ^{
+                                    01=dword dmgset=GetEquipmentStats(item,6);
+                                    02=if(dmgset & 4)
+                                    03 ^{
+                                        01=temp_int=5;
+                                        02=MessageBox('Конфликтный тип оборудования.');
+                                    }
+                                }
+                                08=if(ShipFindCustomShipInfoByType(Player(),'pulsar_infos')>=0 && temp_int==9)
+                                09 ^{
+                                    01=temp_int=1;
+                                    02=MessageBox('Пульсар синхронизирован с другим оборудованием.');
+                                }
+                                10=if(ItemDurability(item)<20 && temp_int==9)
+                                11 ^{
+                                    01=temp_int=2;
+                                    02=MessageBox('Оборудование не выдержит нагрузки.');
+                                }
+                                12=int i=0;
+                                13=dword temp_dword=0;
+                                14=dword art_pulsar=0;
+                                15=for(i=1;i<5;i=i+1)
+                                16 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                17=if(ItemDurability(art_pulsar)<12 && temp_int==9)
+                                18 ^{
+                                    01=temp_int=3;
+                                    02=MessageBox('Пульсар не выдержит нагрузки, требуется ремонт.');
+                                }
+                                19=if(CustomArtData(art_pulsar,1)<100 && temp_int==9)
+                                20 ^{
+                                    01=temp_int=4;
+                                    02=MessageBox('Недостаточно заряда.');
+                                }
+                                21=if(temp_int!=9)exit;
+                                22=ShipAddCustomShipInfo(Player(),'pulsar_infos','NoShow');
+                                23=CustomArtTextData(art_pulsar,2,Id(item));
+                                24=CustomArtData(art_pulsar,3,1);
+                                25=InterfaceState('Ship','pulsar_butt_wpn_4_A',1);
+                                26=InterfaceState('Ship','pulsar_butt_wpn_4',0);
+                                27=CustomArtTextData(art_pulsar,3,'pulsar_butt_wpn_4');
+                            }
+                            Pos=260,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            ImageDown=GI,Bm.FormShip2.2WP_P_D
+                            ImageNormal=GI,Bm.FormShip2.2WP_P_N
+                            ImageNormalA=GI,Bm.FormShip2.2WP_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_wpn_5
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_Weapon1,5);
+                                04=if(item)
+                                05 ^{
+                                    01=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',CT('FormInfo.ForsageWP'));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int temp_int=9;
+                                02=if(ShipEqInSlot(Player(),t_Weapon1,5)==0 && temp_int==9)
+                                03 ^{
+                                    01=temp_int=0;
+                                    02=MessageBox('Отсутствует необходимое оборудование.');
+                                }
+                                04=if(temp_int==0)exit;
+                                05=dword item=ShipEqInSlot(Player(),t_Weapon1,5);
+                                06=if(ItemType(item) >= t_Weapon1 && ItemType(item) <= t_CustomWeapon && temp_int==9)
+                                07 ^{
+                                    01=dword dmgset=GetEquipmentStats(item,6);
+                                    02=if(dmgset & 4)
+                                    03 ^{
+                                        01=temp_int=5;
+                                        02=MessageBox('Конфликтный тип оборудования.');
+                                    }
+                                }
+                                08=if(ShipFindCustomShipInfoByType(Player(),'pulsar_infos')>=0 && temp_int==9)
+                                09 ^{
+                                    01=temp_int=1;
+                                    02=MessageBox('Пульсар синхронизирован с другим оборудованием.');
+                                }
+                                10=if(ItemDurability(item)<20 && temp_int==9)
+                                11 ^{
+                                    01=temp_int=2;
+                                    02=MessageBox('Оборудование не выдержит нагрузки.');
+                                }
+                                12=int i=0;
+                                13=dword temp_dword=0;
+                                14=dword art_pulsar=0;
+                                15=for(i=1;i<5;i=i+1)
+                                16 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                17=if(ItemDurability(art_pulsar)<12 && temp_int==9)
+                                18 ^{
+                                    01=temp_int=3;
+                                    02=MessageBox('Пульсар не выдержит нагрузки, требуется ремонт.');
+                                }
+                                19=if(CustomArtData(art_pulsar,1)<100 && temp_int==9)
+                                20 ^{
+                                    01=temp_int=4;
+                                    02=MessageBox('Недостаточно заряда.');
+                                }
+                                21=if(temp_int!=9)exit;
+                                22=ShipAddCustomShipInfo(Player(),'pulsar_infos','NoShow');
+                                23=CustomArtTextData(art_pulsar,2,Id(item));
+                                24=CustomArtData(art_pulsar,3,1);
+                                25=InterfaceState('Ship','pulsar_butt_wpn_5_A',1);
+                                26=InterfaceState('Ship','pulsar_butt_wpn_5',0);
+                                27=CustomArtTextData(art_pulsar,3,'pulsar_butt_wpn_5');
+                            }
+                            Pos=290,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            ImageDown=GI,Bm.FormShip2.2DR_P_D
+                            ImageNormal=GI,Bm.FormShip2.2DR_P_A
+                            ImageNormalA=GI,Bm.FormShip2.2DR_P_D
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_droid_A
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_RepairRobot);
+                                04=if(item)
+                                05 ^{
+                                    01=var=GetEquipmentStats(item,0)/2;
+                                    02=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',Format(CT('FormInfo.ForsageEQ'),'EQP','дроид','VAR',var));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int i=0;
+                                02=dword temp_dword=0;
+                                03=dword art_pulsar=0;
+                                04=for(i=1;i<5;i=i+1)
+                                05 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                06=if(CustomArtData(art_pulsar,2) && CustomArtData(art_pulsar,3)==10)
+                                07 ^{
+                                    00=ShipSpecialBonuses(Player(),bonDroid,ShipSpecialBonuses(Player(),bonDroid)-CustomArtData(art_pulsar,2));
+                                }
+                                08=ShipDeleteCustomShipInfo(Player(),'pulsar_infos');
+                                09=CustomArtData(art_pulsar,2,0);
+                                10=CustomArtData(art_pulsar,3,0);
+                                11=CustomArtTextData(art_pulsar,1,'');
+                                12=CustomArtTextData(art_pulsar,2,'');
+                                13=CustomArtTextData(art_pulsar,3,'');
+                                14=InterfaceState('Ship','pulsar_butt_droid_A',0);
+                                15=InterfaceState('Ship','pulsar_butt_droid',1);
+                            }
+                            Pos=20,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            ImageDown=GI,Bm.FormShip2.2CH_P_D
+                            ImageNormal=GI,Bm.FormShip2.2CH_P_A
+                            ImageNormalA=GI,Bm.FormShip2.2CH_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_hook_A
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_CargoHook);
+                                04=if(item)
+                                05 ^{
+                                    01=var=GetEquipmentStats(item,0)/2;
+                                    02=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',Format(CT('FormInfo.ForsageEQ'),'EQP','захват','VAR',var));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int i=0;
+                                02=dword temp_dword=0;
+                                03=dword art_pulsar=0;
+                                04=for(i=1;i<5;i=i+1)
+                                05 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                06=if(CustomArtData(art_pulsar,2) && CustomArtData(art_pulsar,3)==10)
+                                07 ^{
+                                    00=ShipSpecialBonuses(Player(),bonHook,ShipSpecialBonuses(Player(),bonHook)-CustomArtData(art_pulsar,2));
+                                }
+                                08=ShipDeleteCustomShipInfo(Player(),'pulsar_infos');
+                                09=CustomArtData(art_pulsar,2,0);
+                                10=CustomArtData(art_pulsar,3,0);
+                                11=CustomArtTextData(art_pulsar,1,'');
+                                12=CustomArtTextData(art_pulsar,2,'');
+                                13=CustomArtTextData(art_pulsar,3,'');
+                                14=InterfaceState('Ship','pulsar_butt_hook_A',0);
+                                15=InterfaceState('Ship','pulsar_butt_hook',1);
+                            }
+                            Pos=50,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            ImageDown=GI,Bm.FormShip2.2DG_P_D
+                            ImageNormal=GI,Bm.FormShip2.2DG_P_A
+                            ImageNormalA=GI,Bm.FormShip2.2DG_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_gzp_A
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_DefGenerator);
+                                04=if(item)
+                                05 ^{
+                                    01=var=GetEquipmentStats(item,0)/2;
+                                    02=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',Format(CT('FormInfo.ForsageEQ'),'EQP','генератор защиты','VAR',var));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int i=0;
+                                02=dword temp_dword=0;
+                                03=dword art_pulsar=0;
+                                04=for(i=1;i<5;i=i+1)
+                                05 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                06=if(CustomArtData(art_pulsar,2) && CustomArtData(art_pulsar,3)==10)
+                                07 ^{
+                                    00=ShipSpecialBonuses(Player(),bonDef,ShipSpecialBonuses(Player(),bonDef)-CustomArtData(art_pulsar,2));
+                                }
+                                08=ShipDeleteCustomShipInfo(Player(),'pulsar_infos');
+                                09=CustomArtData(art_pulsar,2,0);
+                                10=CustomArtData(art_pulsar,3,0);
+                                11=CustomArtTextData(art_pulsar,1,'');
+                                12=CustomArtTextData(art_pulsar,2,'');
+                                13=CustomArtTextData(art_pulsar,3,'');
+                                14=InterfaceState('Ship','pulsar_butt_gzp_A',0);
+                                15=InterfaceState('Ship','pulsar_butt_gzp',1);
+                            }
+                            Pos=80,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            ImageDown=GI,Bm.FormShip2.2SC_P_D
+                            ImageNormal=GI,Bm.FormShip2.2SC_P_A
+                            ImageNormalA=GI,Bm.FormShip2.2SC_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_scaner_A
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_Scaner);
+                                04=if(item)
+                                05 ^{
+                                    01=var=GetEquipmentStats(item,0)/2;
+                                    02=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',Format(CT('FormInfo.ForsageEQ'),'EQP','сканер','VAR',var));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int i=0;
+                                02=dword temp_dword=0;
+                                03=dword art_pulsar=0;
+                                04=for(i=1;i<5;i=i+1)
+                                05 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                06=if(CustomArtData(art_pulsar,2) && CustomArtData(art_pulsar,3)==10)
+                                07 ^{
+                                    00=ShipSpecialBonuses(Player(),bonScan,ShipSpecialBonuses(Player(),bonScan)-CustomArtData(art_pulsar,2));
+                                }
+                                08=ShipDeleteCustomShipInfo(Player(),'pulsar_infos');
+                                09=CustomArtData(art_pulsar,2,0);
+                                10=CustomArtData(art_pulsar,3,0);
+                                11=CustomArtTextData(art_pulsar,1,'');
+                                12=CustomArtTextData(art_pulsar,2,'');
+                                13=CustomArtTextData(art_pulsar,3,'');
+                                14=InterfaceState('Ship','pulsar_butt_scaner_A',0);
+                                15=InterfaceState('Ship','pulsar_butt_scaner',1);
+                            }
+                            Pos=110,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            ImageDown=GI,Bm.FormShip2.2RD_P_D
+                            ImageNormal=GI,Bm.FormShip2.2RD_P_A
+                            ImageNormalA=GI,Bm.FormShip2.2RD_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_radar_A
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_Radar);
+                                04=if(item)
+                                05 ^{
+                                    01=var=GetEquipmentStats(item,0)/2;
+                                    02=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',Format(CT('FormInfo.ForsageEQ'),'EQP','радар','VAR',var));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int i=0;
+                                02=dword temp_dword=0;
+                                03=dword art_pulsar=0;
+                                04=for(i=1;i<5;i=i+1)
+                                05 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                06=if(CustomArtData(art_pulsar,2) && CustomArtData(art_pulsar,3)==10)
+                                07 ^{
+                                    00=ShipSpecialBonuses(Player(),bonRadar,ShipSpecialBonuses(Player(),bonRadar)-CustomArtData(art_pulsar,2));
+                                }
+                                08=ShipDeleteCustomShipInfo(Player(),'pulsar_infos');
+                                09=CustomArtData(art_pulsar,2,0);
+                                10=CustomArtData(art_pulsar,3,0);
+                                11=CustomArtTextData(art_pulsar,1,'');
+                                12=CustomArtTextData(art_pulsar,2,'');
+                                13=CustomArtTextData(art_pulsar,3,'');
+                                14=InterfaceState('Ship','pulsar_butt_radar_A',0);
+                                15=InterfaceState('Ship','pulsar_butt_radar',1);
+                            }
+                            Pos=140,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            ImageDown=GI,Bm.FormShip2.2WP_P_D
+                            ImageNormal=GI,Bm.FormShip2.2WP_P_A
+                            ImageNormalA=GI,Bm.FormShip2.2WP_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_wpn_1_A
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_Weapon1,1);
+                                04=if(item)
+                                05 ^{
+                                    01=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',CT('FormInfo.ForsageWP'));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int i=0;
+                                02=dword temp_dword=0;
+                                03=dword art_pulsar=0;
+                                04=for(i=1;i<5;i=i+1)
+                                05 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                06=ShipDeleteCustomShipInfo(Player(),'pulsar_infos');
+                                07=CustomArtData(art_pulsar,2,0);
+                                08=CustomArtData(art_pulsar,3,0);
+                                09=CustomArtTextData(art_pulsar,1,'');
+                                10=CustomArtTextData(art_pulsar,2,'');
+                                11=CustomArtTextData(art_pulsar,3,'');
+                                12=InterfaceState('Ship','pulsar_butt_wpn_1_A',0);
+                                13=InterfaceState('Ship','pulsar_butt_wpn_1',1);
+                            }
+                            Pos=170,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            ImageDown=GI,Bm.FormShip2.2WP_P_D
+                            ImageNormal=GI,Bm.FormShip2.2WP_P_A
+                            ImageNormalA=GI,Bm.FormShip2.2WP_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_wpn_2_A
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_Weapon1,2);
+                                04=if(item)
+                                05 ^{
+                                    01=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',CT('FormInfo.ForsageWP'));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int i=0;
+                                02=dword temp_dword=0;
+                                03=dword art_pulsar=0;
+                                04=for(i=1;i<5;i=i+1)
+                                05 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                06=ShipDeleteCustomShipInfo(Player(),'pulsar_infos');
+                                07=CustomArtData(art_pulsar,2,0);
+                                08=CustomArtData(art_pulsar,3,0);
+                                09=CustomArtTextData(art_pulsar,1,'');
+                                10=CustomArtTextData(art_pulsar,2,'');
+                                11=CustomArtTextData(art_pulsar,3,'');
+                                12=InterfaceState('Ship','pulsar_butt_wpn_2_A',0);
+                                13=InterfaceState('Ship','pulsar_butt_wpn_2',1);
+                            }
+                            Pos=200,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            ImageDown=GI,Bm.FormShip2.2WP_P_D
+                            ImageNormal=GI,Bm.FormShip2.2WP_P_A
+                            ImageNormalA=GI,Bm.FormShip2.2WP_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_wpn_3_A
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_Weapon1,3);
+                                04=if(item)
+                                05 ^{
+                                    01=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',CT('FormInfo.ForsageWP'));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int i=0;
+                                02=dword temp_dword=0;
+                                03=dword art_pulsar=0;
+                                04=for(i=1;i<5;i=i+1)
+                                05 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                06=ShipDeleteCustomShipInfo(Player(),'pulsar_infos');
+                                07=CustomArtData(art_pulsar,2,0);
+                                08=CustomArtData(art_pulsar,3,0);
+                                09=CustomArtTextData(art_pulsar,1,'');
+                                10=CustomArtTextData(art_pulsar,2,'');
+                                11=CustomArtTextData(art_pulsar,3,'');
+                                12=InterfaceState('Ship','pulsar_butt_wpn_3_A',0);
+                                13=InterfaceState('Ship','pulsar_butt_wpn_3',1);
+                            }
+                            Pos=230,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            ImageDown=GI,Bm.FormShip2.2WP_P_D
+                            ImageNormal=GI,Bm.FormShip2.2WP_P_A
+                            ImageNormalA=GI,Bm.FormShip2.2WP_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_wpn_4_A
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_Weapon1,4);
+                                04=if(item)
+                                05 ^{
+                                    01=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',CT('FormInfo.ForsageWP'));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int i=0;
+                                02=dword temp_dword=0;
+                                03=dword art_pulsar=0;
+                                04=for(i=1;i<5;i=i+1)
+                                05 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                06=ShipDeleteCustomShipInfo(Player(),'pulsar_infos');
+                                07=CustomArtData(art_pulsar,2,0);
+                                08=CustomArtData(art_pulsar,3,0);
+                                09=CustomArtTextData(art_pulsar,1,'');
+                                10=CustomArtTextData(art_pulsar,2,'');
+                                11=CustomArtTextData(art_pulsar,3,'');
+                                12=InterfaceState('Ship','pulsar_butt_wpn_4_A',0);
+                                13=InterfaceState('Ship','pulsar_butt_wpn_4',1);
+                            }
+                            Pos=260,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        GraphButton ^{
+                            Active=False
+                            ImageDown=GI,Bm.FormShip2.2WP_P_D
+                            ImageNormal=GI,Bm.FormShip2.2WP_P_A
+                            ImageNormalA=GI,Bm.FormShip2.2WP_P_A
+                            Kind=Normal
+                            KindHit=Graph
+                            MouseBlocking=True
+                            Name=pulsar_butt_wpn_5_A
+                            OnMouseEnterCode ^{
+                                01=str name='Оборудование отсутствует';
+                                02=int var=0;
+                                03=dword item=ShipEqInSlot(Player(),t_Weapon1,5);
+                                04=if(item)
+                                05 ^{
+                                    01=name=ItemFullName(item);
+                                }
+                                06=InterfaceText('Ship','PE_name',name);
+                                07=InterfaceText('Ship','PE_text',CT('FormInfo.ForsageWP'));
+                                08=InterfaceState('Ship','p_window',1);
+                            }
+                            OnMouseLeaveCode ^{
+                                01=InterfaceState('Ship','p_window',0);
+                            }
+                            OnPressCode ^{
+                                01=int i=0;
+                                02=dword temp_dword=0;
+                                03=dword art_pulsar=0;
+                                04=for(i=1;i<5;i=i+1)
+                                05 ^{
+                                    01=temp_dword=ShipEqInSlot(Player(),t_Artefact,i);
+                                    02=if(temp_dword)
+                                    03 ^{
+                                        01=if(EquipmentImageName(temp_dword)=='pulsar')art_pulsar=temp_dword;
+                                    }
+                                }
+                                06=ShipDeleteCustomShipInfo(Player(),'pulsar_infos');
+                                07=CustomArtData(art_pulsar,2,0);
+                                08=CustomArtData(art_pulsar,3,0);
+                                09=CustomArtTextData(art_pulsar,1,'');
+                                10=CustomArtTextData(art_pulsar,2,'');
+                                11=CustomArtTextData(art_pulsar,3,'');
+                                12=InterfaceState('Ship','pulsar_butt_wpn_5_A',0);
+                                13=InterfaceState('Ship','pulsar_butt_wpn_5',1);
+                            }
+                            Pos=290,40
+                            Size=25,23
+                            Style=Style.GB.SoundNormal
+                        }
+                        Image ^{
+                            Image=GI,Bm.FormShip2.2PIP
+                            MouseBlocking=True
+                            Pos=0,1
+                            Size=351,90
+                        }
+                        Name=pulsar_panel
+                        Pos=10,599,5
+                        Size=351,90
+                    }
+                    Pos=60,0,1
+                    Size=560,700
+                }
+                Pos=87,37,6
+                Size=964,700
+            }
+            Window ^{
+            }
+            Window ^{
+            }
+            Window ^{
+            }
+            Window ^{
+            }
+            Window ^{
+            }
+            Window ^{
+            }
+            Window ^{
+            }
+            Window ^{
+            }
+            Window ^{
+            }
+            Window ^{
+                Active=False
+                Image ^{
+                    Image=GI,Bm.FormShip2.2ForsageIcon
+                    Name=PE_image
+                    Pos=17,17,0
+                    Size=35,35
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2SmallBold
+                    Name=PE_name
+                    Pos=45,10,8
+                    Size=180,43
+                    TextColor=57,239,255
+                    WordWrap=True
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=Center
+                    Font=Font.2Small
+                    Name=PE_text
+                    Pos=20,65,8
+                    Size=200,60
+                    TextColor=255,255,255
+                    WordWrap=True
+                }
+                Name=p_window
+                Pos=200,500,5
+                Size=150,150
+                Style=Style.Window.2Simple
+            }
+        }
+    }
+}
+Music ^{
+    SSB ^{
+        1=Music\REV\nikinit_childville.dat
+        10=Music\REV\nikinit_childville.dat
+    }
+}

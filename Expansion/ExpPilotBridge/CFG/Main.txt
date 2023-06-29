@@ -1,0 +1,359 @@
+Data ^{
+    CustomBridges ^{
+        1 ^{
+            BGI=Bm.FormRuins.2DestroyerBridgeAlphabg
+            PanelName=PanelPeopleHolo
+            Table=Bm.FormRuins.2WBtable
+        }
+        10 ^{
+            BGI=Bm.FormRuins.NullBGImg
+            PanelName=PanelEmpty
+            Table=Bm.FormRuins.2WBtable
+        }
+        11 ^{
+            BGI=Bm.FormRuins.NullBGImg
+            PanelName=PanelEmpty
+            Table=Bm.FormRuins.2WBtable
+        }
+        12 ^{
+            BGI=Bm.FormRuins.NullBGImg
+            PanelName=PanelEmpty
+            Table=Bm.FormRuins.2WBtable
+        }
+        13 ^{
+            BGI=Bm.FormRuins.NullBGImg
+            PanelName=PanelEmpty
+            Table=Bm.FormRuins.2WBtable
+        }
+        14 ^{
+            BGI=Bm.FormRuins.NullBGImg
+            PanelName=PanelEmpty
+            Table=Bm.FormRuins.2WBtable
+        }
+        3 ^{
+            BGI=Bm.FormRuins.NullBGImg
+            PanelName=PanelEmpty
+            Table=Bm.FormRuins.2WBtable
+        }
+    }
+    Race ^{
+        Emblem ^{
+            2Aperture_Science=GI,Bm.Race.Emblem.2Aperture_Science_emblem
+        }
+    }
+    SE ^{
+        Item ^{
+            ExpPilotBridge_UselessProbe ^{
+                1Image=Bm.Container.2ExpPilotBridge_UselessProbe
+                2Image=Bm.Container.2ExpPilotBridge_UselessProbe
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            ExpPilotBridge_Wheatley ^{
+                1Image=Bm.Container.2ExpPilotBridge_Wheatley
+                2Image=Bm.Container.2ExpPilotBridge_Wheatley
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            mm_Wheatley ^{
+                1Image=Bm.Container.2ExpPilotBridge_Wheatley
+                2Image=Bm.Container.2ExpPilotBridge_Wheatley
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+        }
+    }
+    Script ^{
+        Mod_ExpPilotBridge=1,Script.Mod_ExpPilotBridge
+    }
+}
+CustomBridgeCheck ^{
+    Enabled=True
+}
+ML ^{
+    Galaxy ^{
+        Panel ^{
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    CustomBridgeLock ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Lock
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Info ^{
+        Panel ~{
+            GI ^{
+                Image=Bm.FormRuins.NullBGImg
+                Name=SecondLayerBridgeInfo
+                Pos=0,0,9
+                Size=0,0
+            }
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    CustomBridgeLock ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Lock
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Journal ^{
+        Panel ^{
+            Name=MainPanel
+            Panel ^{
+                Name=PanelMain
+                Panel ^{
+                }
+                Panel ^{
+                    CustomBridgeLock ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Lock
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Rating ^{
+        Panel ^{
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    CustomBridgeLock ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Lock
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+        }
+    }
+    RuinsTalk ^{
+        Panel ^{
+            Expansion ^{
+                Panel ^{
+                }
+                Panel ^{
+                }
+                Panel ^{
+                }
+                Panel ^{
+                    Active=False
+                    DisabledCrap ^{
+                        Panel ^{
+                            Active=False
+                            GAI ^{
+                                Active=False
+                                AlignX=Center
+                                AlignY=Center
+                                Frame=[75,0-80]
+                                Image=Bm.Gov.2Gaal2Anim0a
+                                ImageFirst=Bm.Gov.2Gaal2Anim0i
+                                Name=Panel_Anim0
+                                PBuf=True
+                                Pos=574,115,-2
+                                Size=346,653
+                            }
+                            GAI ^{
+                                Active=False
+                                AlignX=Center
+                                AlignY=Center
+                                Frame=[75,0-80]
+                                Image=Bm.Gov.2Gaal2Anim1a
+                                ImageFirst=Bm.Gov.2Gaal2Anim1i
+                                Name=Panel_Anim1
+                                PBuf=True
+                                Pos=509,114,-2
+                                Size=436,654
+                            }
+                            GAI ^{
+                                Active=False
+                                AlignX=Center
+                                AlignY=Center
+                                Frame=[75,0-80]
+                                Image=Bm.GovHD.GaalAnim0a
+                                ImageFirst=Bm.GovHD.GaalAnim0i
+                                Name=PanelHD_Anim0
+                                PBuf=True
+                                Pos=0,-81,-2
+                                Size=545,817
+                            }
+                            GAI ^{
+                                Active=False
+                                AlignX=Center
+                                AlignY=Center
+                                Frame=[75,0-80]
+                                Image=Bm.GovHD.GaalAnim1a
+                                ImageFirst=Bm.GovHD.GaalAnim1i
+                                Name=PanelHD_Anim1
+                                PBuf=True
+                                Pos=0,-81,-2
+                                Size=545,817
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormRuins.2RCtable
+                                Name=Table
+                                Pos=0,0,-3
+                                Size=760,779
+                            }
+                            Name=DisabledCrap
+                        }
+                    }
+                    GAI ^{
+                        Name=
+                    }
+                    GAI ^{
+                        Name=
+                    }
+                    GAI ^{
+                        Name=
+                    }
+                    GAI ^{
+                        Name=
+                    }
+                    GI ^{
+                        Image=Bm.FormRuins.NullBGImg
+                        Name=FirstLayerBridge
+                        Pos=0,0,5
+                        Size=0,0
+                    }
+                    GI ^{
+                        Image=Bm.FormRuins.NullBGImg
+                        Name=SecondLayerBridge
+                        Pos=0,0,10
+                        Size=0,0
+                    }
+                    Image ^{
+                        Name=
+                    }
+                    Name=PanelEmpty
+                    Pos=0,0,900
+                    Size=1024,768
+                    StarFieldM ^{
+                        Name=StarFieldM
+                        Pos=0,0,100
+                        Size=3325,1871
+                        Sme=1024,768
+                    }
+                }
+            }
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    CustomBridgeLock ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Lock
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Ship ^{
+        Panel ^{
+            GraphButton ^{
+                Help=FormShip.HelpDestrInto
+                ImageDown=GI,Bm.FormShip2.IntoD2
+                ImageNormal=GI,Bm.FormShip2.IntoN2
+                ImageNormalA=GI,Bm.FormShip2.IntoA2
+                Kind=Normal
+                KindHit=Rect
+                Name=CustomBridgeInto
+                Pos=378,420,6
+                Size=80,25
+                Style=Style.GB.SoundNormal
+            }
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    CustomBridgeLock ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Lock
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    Panel ^{
+                        Image ^{
+                        }
+                        Image ^{
+                        }
+                        Image ^{
+                        }
+                        Image ^{
+                        }
+                        Image ^{
+                        }
+                        Image ^{
+                        }
+                        Image ^{
+                            Image=GI,Bm.FormShip2.2HullA
+                            Name=HullA
+                            Pos=142,212,1
+                            Size=175,175
+                        }
+                        Image ^{
+                            Image=GI,Bm.FormShip2.2HullEx
+                            Name=HullEx
+                            Pos=142,212,1
+                            Size=175,175
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

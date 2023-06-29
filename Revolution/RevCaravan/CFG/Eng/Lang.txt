@@ -1,0 +1,7 @@
+Script ^{
+    Mod_RevCaravan ^{
+        BusinessTalks1=#0#-->#1#<br>- Hi buddy! Are you looking for where to earn extra money? Fly to planet #2# and buy drugs. Now on the neighboring planet #3# the demand for it is just crazy! You will swim in money!<br>- Thanks for the information, friend. Perhaps that is exactly what I will do.
+        BusinessTalks2=#0#-->#1#<br>- If anything, I didn't tell you this, but there's an acute shortage of you know what on planet #3# right now. And on the planet #2# they just decided to make some money on this. If I were you, I wouldn't fail to take advantage of the opportunity.<br>- Thanks for the advice, I'll use it. And I won't give you up, don't worry.
+        BusinessTalks3=#0#-->#1#<br>- Hey, listen! Do you like money? Yes, I know you like it. In general, on planet #3#, the locals went completely crazy. They buy up "expanders of consciousness" in tons! I don’t know what happened to them there, but the chance to make money on this is reinforced concrete. Let's blow to planet #2# and fill the ship with goods before the authorities catch on.<br>- What are you talking about?! Now I am emptying my hold and flying to stock up to the fullest!
+    }
+}

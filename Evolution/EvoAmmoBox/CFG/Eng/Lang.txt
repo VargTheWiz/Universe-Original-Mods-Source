@@ -1,0 +1,554 @@
+Script ^{
+    Mod_EvoAmmoBox ~{
+        35=I don't need any crates!
+        39=Well, okay, I'll manage!
+        4=Thank you
+        41=Great choice! The containers have been delivered to the hold of your ship.
+        42=Buy container with warheads
+        43=Buy a container with missiles
+        44=Buy a container with orbs
+        45=Buy a container with torpedoes
+        48=Ranger <Player>, you are clearly interested in autonomous resupply of missile weapons. We have something to offer you!
+        50=Insufficient funds to complete the purchase.
+        58=Replenish charges in containers
+        59=Done! Do you want anything else?
+        61=We can offer you containers for replenishing stocks of various types of missile weapons. But we do not sell our developments to just anyone, your military rank and information about your actions is the best characteristic for us.<br>We can also replenish your empty containers at a very affordable price.<br>---------------------------------------------------------<br> The container with warheads for Lirecron is available for you in quantity: <0> units for the price: <1> cr.<br><br>A container with rockets for the Missile Launcher is available for you in the amount of: <2> units for the price: <3> cr.<br><br>A container with spheres for Mabokit is available for you in the amount of: <4> units for the price: <5> cr.<br><br>A container with torpedoes for the Torpedo Launcher is available for you in the amount of: <6> units for the price: <7> cr.<br>---------------------------------------------------------<br>Once a year we clear the customer database and you have a chance to use this opportunity, the main thing is not to miss the moment.
+        64=<br>
+        67=Back
+        70=Our experts have found a shortage of shells in the following containers:<br><0><br><1><br><2><br>Which one would you like to replenish?
+        71=Purchase ammunition containers
+        72=1 January
+        73= for <0> cr.
+    }
+}
+UselessItems ^{
+    Container_lirekron ^{
+        Cost=Average
+        Name=Warhead container
+        OnActCode ^{
+            01=dword item;
+            02=dword flag;
+            03=str tstr;
+            04=if(ScriptItemActionType()==t_OnAnotherItem)
+            05 ^{
+                01=item=ScriptItemActObject1();
+                02=if(ItemType(item)==t_Weapon18) flag=1;
+                03=else if(ItemType(item)==t_CustomWeapon)
+                04 ^{
+                    01=tstr=CustomWeaponType(item);
+                    02=if((findsubstr(GetCustomWeaponData(tstr,'ShotType'),'Rocket')>-1) && (GetCustomWeaponData(tstr,'DamageType') & 256)) flag=1;
+                }
+                05=else flag=0;
+                06=if(flag)
+                07 ^{
+                    01=if(MissilesToRearm(item)>0 && UselessItemData(CurItem(),2)>0)
+                    02 ^{
+                        01=if(MessageBoxYesNo('Replenish ammo?'))
+                        02 ^{
+                            00=UselessItemData(CurItem(),3,UselessItemData(CurItem(),3)-1);
+                            01=if(MissilesToRearm(item)>=UselessItemData(CurItem(),2))
+                            02 ^{
+                                01=MissilesToRearm(item,UselessItemData(CurItem(),2));
+                                02=UselessItemData(CurItem(),2,0);
+                                03=ScriptItemActParam(2);
+                            }
+                            03=else
+                            04 ^{
+                                01=UselessItemData(CurItem(),2,(UselessItemData(CurItem(),2)-MissilesToRearm(item)));
+                                02=MissilesToRearm(item,MissilesToRearm(item));
+                                03=ScriptItemActParam(2);
+                            }
+                            05=if(UselessItemData(CurItem(),3)==0)
+                            05 ^{
+                                00=MessageBox('The container could not withstand such treatment and fell apart');
+                                01=ScriptItemActParam(1);
+                                02=exit;
+                            }
+                            06=exit;
+                        }
+                        03=else exit;
+                    }
+                    03=else exit;
+                }
+                08=if(ItemType(item)==t_UselessItem && findsubstr(EquipmentImageName(item),'Container_lirekron')==0)
+                09 ^{
+                    01=if(UselessItemData(item,1)-UselessItemData(item,2)>0 && UselessItemData(CurItem(),2)>0)
+                    02 ^{
+                        01=if(MessageBoxYesNo('Move ammunition?'))
+                        02 ^{
+                            00=UselessItemData(CurItem(),3,UselessItemData(CurItem(),3)-1);
+                            01=if(UselessItemData(item,1)-UselessItemData(item,2)>=UselessItemData(CurItem(),2))
+                            02 ^{
+                                01=UselessItemData(item,2,UselessItemData(item,2)+UselessItemData(CurItem(),2));
+                                02=UselessItemData(CurItem(),2,0);
+                                03=ScriptItemActParam(2);
+                            }
+                            03=else
+                            04 ^{
+                                01=UselessItemData(CurItem(),2,UselessItemData(CurItem(),2)+UselessItemData(item,2)-UselessItemData(item,1));
+                                02=UselessItemData(item,2,UselessItemData(item,1));
+                                03=ScriptItemActParam(2);
+                            }
+                            05=if(UselessItemData(CurItem(),3)==0)
+                            05 ^{
+                                00=MessageBox('The container could not withstand such treatment and fell apart');
+                                01=ScriptItemActParam(1);
+                                02=exit;
+                            }
+                            06=exit;
+                        }
+                        03=else exit;
+                    }
+                    03=else exit;
+                }
+            }
+            06=else if(ScriptItemActionType()==t_OnAnotherItem2)
+            07 ^{
+                01=item=ScriptItemActObject1();
+                03=if(ItemType(item)==t_Weapon18) flag=1;
+                04=else if(ItemType(item)==t_CustomWeapon)
+                05 ^{
+                    01=tstr=CustomWeaponType(item);
+                    02=if((findsubstr(GetCustomWeaponData(tstr,'ShotType'),'Rocket')>-1) && (GetCustomWeaponData(tstr,'DamageType') & 256)) flag=1;
+                }
+                06=else flag=0;
+                07=if(flag)
+                08 ^{
+                    01=if(UselessItemData(CurItem(),3)==1)
+                    02 ^{
+                        01=MessageBox('The container will fall apart from another similar recharge. Contact the military base.');
+                        02=exit;
+                    }
+                    03=if(UselessItemData(CurItem(),1)-UselessItemData(CurItem(),2)>0)
+                    04 ^{
+                        01=if((25+5*ItemLevel(item)-MissilesToRearm(item))>0)
+                        02 ^{
+                            01=if (MessageBoxYesNo('Move ammunition?'))
+                            02 ^{
+                                00=UselessItemData(CurItem(),3,UselessItemData(CurItem(),3)-1);
+                                01=dword missile_container;
+                                02=dword missile_weapon;
+                                03=missile_container=UselessItemData(CurItem(),1)-UselessItemData(CurItem(),2);
+                                04=missile_weapon=25+5*ItemLevel(item)-MissilesToRearm(item);
+                                05=if (missile_weapon>missile_container)
+                                06 ^{
+                                    01=MissilesToRearm(item,(0-missile_container));
+                                    02=UselessItemData(CurItem(),2,UselessItemData(CurItem(),2)+missile_container);
+                                    03=ScriptItemActParam(2);
+                                }
+                                07=else
+                                08 ^{
+                                    01=UselessItemData(CurItem(),2,UselessItemData(CurItem(),2)+missile_weapon);
+                                    02=MissilesToRearm(item,(0-missile_weapon));
+                                    03=ScriptItemActParam(2);
+                                }
+                                09=exit;
+                            }
+                            03=else exit;
+                        }
+                        03=else exit;
+                    }
+                    05=else exit;
+                }
+            }
+        }
+        OnActCodeTypes=t_OnAnotherItem,t_OnAnotherItem2
+        Owner=None
+        Size=20
+        Text=Container for storing miniature warheads.
+        Text=Quantity: <Data2>/<Data1>, withstand uses: <Data3>
+    }
+    Container_missile ^{
+        Cost=Average
+        Name=Missile container
+        OnActCode ^{
+            01=dword item;
+            02=dword flag;
+            03=str tstr;
+            04=if(ScriptItemActionType()==t_OnAnotherItem)
+            05 ^{
+                01=item=ScriptItemActObject1();
+                02=if(ItemType(item)==t_Weapon4) flag=1;
+                03=else if(ItemType(item)==t_CustomWeapon)
+                04 ^{
+                    01=tstr=CustomWeaponType(item);
+                    02=if((findsubstr(GetCustomWeaponData(tstr,'ShotType'),'Rocket')>-1) && !(GetCustomWeaponData(tstr,'DamageType') & 256)) flag=1;
+                }
+                05=else flag=0;
+                06=if(flag)
+                07 ^{
+                    01=if(MissilesToRearm(item)>0 && UselessItemData(CurItem(),2)>0)
+                    02 ^{
+                        01=if(MessageBoxYesNo('Replenish ammo?'))
+                        02 ^{
+                            00=UselessItemData(CurItem(),3,UselessItemData(CurItem(),3)-1);
+                            01=if(MissilesToRearm(item)>=UselessItemData(CurItem(),2))
+                            02 ^{
+                                01=MissilesToRearm(item,UselessItemData(CurItem(),2));
+                                02=UselessItemData(CurItem(),2,0);
+                                03=ScriptItemActParam(2);
+                            }
+                            03=else
+                            04 ^{
+                                01=UselessItemData(CurItem(),2,(UselessItemData(CurItem(),2)-MissilesToRearm(item)));
+                                02=MissilesToRearm(item,MissilesToRearm(item));
+                                03=ScriptItemActParam(2);
+                            }
+                            05=if(UselessItemData(CurItem(),3)==0)
+                            05 ^{
+                                00=MessageBox('The container could not withstand such treatment and fell apart');
+                                01=ScriptItemActParam(1);
+                                02=exit;
+                            }
+                            06=exit;
+                        }
+                        03=else exit;
+                    }
+                    03=else exit;
+                }
+                08=if(ItemType(item)==t_UselessItem && findsubstr(EquipmentImageName(item),'Container_missile')==0)
+                09 ^{
+                    01=if(UselessItemData(item,1)-UselessItemData(item,2)>0 && UselessItemData(CurItem(),2)>0)
+                    02 ^{
+                        01=if(MessageBoxYesNo('Move ammunition?'))
+                        02 ^{
+                            00=UselessItemData(CurItem(),3,UselessItemData(CurItem(),3)-1);
+                            01=if(UselessItemData(item,1)-UselessItemData(item,2)>=UselessItemData(CurItem(),2))
+                            02 ^{
+                                01=UselessItemData(item,2,UselessItemData(item,2)+UselessItemData(CurItem(),2));
+                                02=UselessItemData(CurItem(),2,0);
+                                03=ScriptItemActParam(2);
+                            }
+                            03=else
+                            04 ^{
+                                01=UselessItemData(CurItem(),2,UselessItemData(CurItem(),2)+UselessItemData(item,2)-UselessItemData(item,1));
+                                02=UselessItemData(item,2,UselessItemData(item,1));
+                                03=ScriptItemActParam(2);
+                            }
+                            05=if(UselessItemData(CurItem(),3)==0)
+                            05 ^{
+                                00=MessageBox('The container could not withstand such treatment and fell apart');
+                                01=ScriptItemActParam(1);
+                                02=exit;
+                            }
+                            06=exit;
+                        }
+                        03=else exit;
+                    }
+                    03=else exit;
+                }
+            }
+            06=else if(ScriptItemActionType()==t_OnAnotherItem2)
+            07 ^{
+                01=item=ScriptItemActObject1();
+                03=if(ItemType(item)==t_Weapon4) flag=1;
+                04=else if(ItemType(item)==t_CustomWeapon)
+                05 ^{
+                    01=tstr=CustomWeaponType(item);
+                    02=if((findsubstr(GetCustomWeaponData(tstr,'ShotType'),'Rocket')>-1) && !(GetCustomWeaponData(tstr,'DamageType') & 256)) flag=1;
+                }
+                06=else flag=0;
+                07=if(flag)
+                08 ^{
+                    01=if(UselessItemData(CurItem(),3)==1)
+                    02 ^{
+                        01=MessageBox('The container will fall apart from another similar recharge. Contact the military base.');
+                        02=exit;
+                    }
+                    03=if(UselessItemData(CurItem(),1)-UselessItemData(CurItem(),2)>0)
+                    04 ^{
+                        01=if((25+5*ItemLevel(item)-MissilesToRearm(item))>0)
+                        02 ^{
+                            01=if (MessageBoxYesNo('Move ammo?'))
+                            02 ^{
+                                00=UselessItemData(CurItem(),3,UselessItemData(CurItem(),3)-1);
+                                01=dword missile_container;
+                                02=dword missile_weapon;
+                                03=missile_container=UselessItemData(CurItem(),1)-UselessItemData(CurItem(),2);
+                                04=missile_weapon=25+5*ItemLevel(item)-MissilesToRearm(item);
+                                05=if (missile_weapon>missile_container)
+                                06 ^{
+                                    01=MissilesToRearm(item,(0-missile_container));
+                                    02=UselessItemData(CurItem(),2,UselessItemData(CurItem(),2)+missile_container);
+                                    03=ScriptItemActParam(2);
+                                }
+                                07=else
+                                08 ^{
+                                    01=UselessItemData(CurItem(),2,UselessItemData(CurItem(),2)+missile_weapon);
+                                    02=MissilesToRearm(item,(0-missile_weapon));
+                                    03=ScriptItemActParam(2);
+                                }
+                                09=exit;
+                            }
+                            03=else exit;
+                        }
+                        03=else exit;
+                    }
+                    05=else exit;
+                }
+            }
+        }
+        OnActCodeTypes=t_OnAnotherItem,t_OnAnotherItem2
+        Owner=None
+        Size=20
+        Text=Capacity for storing missiles.
+        Text=Quantity: <Data2>/<Data1>, withstand uses: <Data3>
+    }
+    Container_sphere ^{
+        Cost=Average
+        Name=Orb Container
+        OnActCode ^{
+            01=dword item;
+            02=str tstr;
+            03=if(ScriptItemActionType()==t_OnAnotherItem)
+            04 ^{
+                01=item=ScriptItemActObject1();
+                02=if(ItemType(item)==t_CustomWeapon && CustomWeaponType(item)=='Mabokit')
+                03 ^{
+                    01=if(MissilesToRearm(item)>0 && UselessItemData(CurItem(),2)>0)
+                    02 ^{
+                        01=if(MessageBoxYesNo('Replenish ammo?'))
+                        02 ^{
+                            00=UselessItemData(CurItem(),3,UselessItemData(CurItem(),3)-1);
+                            01=if(MissilesToRearm(item)>=UselessItemData(CurItem(),2))
+                            02 ^{
+                                01=MissilesToRearm(item,UselessItemData(CurItem(),2));
+                                02=UselessItemData(CurItem(),2,0);
+                                03=ScriptItemActParam(2);
+                            }
+                            03=else
+                            04 ^{
+                                01=UselessItemData(CurItem(),2,(UselessItemData(CurItem(),2)-MissilesToRearm(item)));
+                                02=MissilesToRearm(item,MissilesToRearm(item));
+                                03=ScriptItemActParam(2);
+                            }
+                            05=if(UselessItemData(CurItem(),3)==0)
+                            05 ^{
+                                00=MessageBox('The container could not withstand such treatment and collapsed');
+                                01=ScriptItemActParam(1);
+                                02=exit;
+                            }
+                            06=exit;
+                        }
+                        03=else exit;
+                    }
+                    03=else exit;
+                }
+                04=if(ItemType(item)==t_UselessItem && findsubstr(EquipmentImageName(item),'Container_sphere')==0)
+                05 ^{
+                    01=if(UselessItemData(item,1)-UselessItemData(item,2)>0 && UselessItemData(CurItem(),2)>0)
+                    02 ^{
+                        01=if(MessageBoxYesNo('Move ammunition?'))
+                        02 ^{
+                            00=UselessItemData(CurItem(),3,UselessItemData(CurItem(),3)-1);
+                            01=if(UselessItemData(item,1)-UselessItemData(item,2)>=UselessItemData(CurItem(),2))
+                            02 ^{
+                                01=UselessItemData(item,2,UselessItemData(item,2)+UselessItemData(CurItem(),2));
+                                02=UselessItemData(CurItem(),2,0);
+                                03=ScriptItemActParam(2);
+                            }
+                            03=else
+                            04 ^{
+                                01=UselessItemData(CurItem(),2,UselessItemData(CurItem(),2)+UselessItemData(item,2)-UselessItemData(item,1));
+                                02=UselessItemData(item,2,UselessItemData(item,1));
+                                03=ScriptItemActParam(2);
+                            }
+                            05=if(UselessItemData(CurItem(),3)==0)
+                            05 ^{
+                                00=MessageBox('The container could not withstand such treatment and fell apart');
+                                01=ScriptItemActParam(1);
+                                02=exit;
+                            }
+                            06=exit;
+                        }
+                        03=else exit;
+                    }
+                    03=else exit;
+                }
+            }
+            05=else if(ScriptItemActionType()==t_OnAnotherItem2)
+            06 ^{
+                01=item=ScriptItemActObject1();
+                03=if(ItemType(item)==t_CustomWeapon && CustomWeaponType(item)=='Mabokit')
+                04 ^{
+                    01=if(UselessItemData(CurItem(),3)==1)
+                    02 ^{
+                        01=MessageBox('The container will fall apart from another similar recharge. Contact the military base.');
+                        02=exit;
+                    }
+                    03=if(UselessItemData(CurItem(),1)-UselessItemData(CurItem(),2)>0)
+                    04 ^{
+                        01=if((25+5*ItemLevel(item)-MissilesToRearm(item))>0)
+                        02 ^{
+                            01=if (MessageBoxYesNo('Move ammunition?'))
+                            02 ^{
+                                00=UselessItemData(CurItem(),3,UselessItemData(CurItem(),3)-1);
+                                01=dword missile_container;
+                                02=dword missile_weapon;
+                                03=missile_container=UselessItemData(CurItem(),1)-UselessItemData(CurItem(),2);
+                                04=missile_weapon=25+5*ItemLevel(item)-MissilesToRearm(item);
+                                05=if (missile_weapon>missile_container)
+                                06 ^{
+                                    01=MissilesToRearm(item,(0-missile_container));
+                                    02=UselessItemData(CurItem(),2,UselessItemData(CurItem(),2)+missile_container);
+                                    03=ScriptItemActParam(2);
+                                }
+                                07=else
+                                08 ^{
+                                    01=UselessItemData(CurItem(),2,UselessItemData(CurItem(),2)+missile_weapon);
+                                    02=MissilesToRearm(item,(0-missile_weapon));
+                                    03=ScriptItemActParam(2);
+                                }
+                                09=exit;
+                            }
+                            03=else exit;
+                        }
+                        03=else exit;
+                    }
+                    05=else exit;
+                }
+            }
+        }
+        OnActCodeTypes=t_OnAnotherItem,t_OnAnotherItem2
+        Owner=None
+        Size=20
+        Text=Capacity for storing missiles.
+        Text=Quantity: <Data2>/<Data1>, withstand uses: <Data3>
+    }
+    Container_torpedo ^{
+        Cost=Average
+        Name=container with torpedoes
+        OnActCode ^{
+            01=dword item;
+            02=dword flag;
+            03=str tstr;
+            04=if(ScriptItemActionType()==t_OnAnotherItem)
+            05 ^{
+                01=item=ScriptItemActObject1();
+                02=if(ItemType(item)==t_Weapon15) flag=1;
+                03=else if(ItemType(item)==t_CustomWeapon)
+                04 ^{
+                    01=tstr=CustomWeaponType(item);
+                    02=if(findsubstr(GetCustomWeaponData(tstr,'ShotType'),'Torpedo')>-1) flag=1;
+                }
+                05=else flag=0;
+                06=if(flag)
+                07 ^{
+                    01=if(MissilesToRearm(item)>0 && UselessItemData(CurItem(),2)>0)
+                    02 ^{
+                        01=if(MessageBoxYesNo('Replenish ammo?'))
+                        02 ^{
+                            00=UselessItemData(CurItem(),3,UselessItemData(CurItem(),3)-1);
+                            01=if(MissilesToRearm(item)>=UselessItemData(CurItem(),2))
+                            02 ^{
+                                01=MissilesToRearm(item,UselessItemData(CurItem(),2));
+                                02=UselessItemData(CurItem(),2,0);
+                                03=ScriptItemActParam(2);
+                            }
+                            03=else
+                            04 ^{
+                                01=UselessItemData(CurItem(),2,(UselessItemData(CurItem(),2)-MissilesToRearm(item)));
+                                02=MissilesToRearm(item,MissilesToRearm(item));
+                                03=ScriptItemActParam(2);
+                            }
+                            05=if(UselessItemData(CurItem(),3)==0)
+                            05 ^{
+                                00=MessageBox('The container could not withstand such treatment and collapsed');
+                                01=ScriptItemActParam(1);
+                                02=exit;
+                            }
+                            06=exit;
+                        }
+                        03=else exit;
+                    }
+                    03=else exit;
+                }
+                08=if(ItemType(item)==t_UselessItem && findsubstr(EquipmentImageName(item),'Container_torpedo')==0)
+                09 ^{
+                    01=if(UselessItemData(item,1)-UselessItemData(item,2)>0 && UselessItemData(CurItem(),2)>0)
+                    02 ^{
+                        01=if(MessageBoxYesNo('Move ammunition?'))
+                        02 ^{
+                            00=UselessItemData(CurItem(),3,UselessItemData(CurItem(),3)-1);
+                            01=if(UselessItemData(item,1)-UselessItemData(item,2)>=UselessItemData(CurItem(),2))
+                            02 ^{
+                                01=UselessItemData(item,2,UselessItemData(item,2)+UselessItemData(CurItem(),2));
+                                02=UselessItemData(CurItem(),2,0);
+                                03=ScriptItemActParam(2);
+                            }
+                            03=else
+                            04 ^{
+                                01=UselessItemData(CurItem(),2,UselessItemData(CurItem(),2)+UselessItemData(item,2)-UselessItemData(item,1));
+                                02=UselessItemData(item,2,UselessItemData(item,1));
+                                03=ScriptItemActParam(2);
+                            }
+                            05=if(UselessItemData(CurItem(),3)==0)
+                            05 ^{
+                                00=MessageBox('The container could not withstand such treatment and fell apart');
+                                01=ScriptItemActParam(1);
+                                02=exit;
+                            }
+                            06=exit;
+                        }
+                        03=else exit;
+                    }
+                    03=else exit;
+                }
+            }
+            06=else if(ScriptItemActionType()==t_OnAnotherItem2)
+            07 ^{
+                01=item=ScriptItemActObject1();
+                03=if(ItemType(item)==t_Weapon15) flag=1;
+                04=else if(ItemType(item)==t_CustomWeapon)
+                05 ^{
+                    01=tstr=CustomWeaponType(item);
+                    02=if(findsubstr(GetCustomWeaponData(tstr,'ShotType'),'Torpedo')>-1) flag=1;
+                }
+                06=else flag=0;
+                07=if(flag)
+                08 ^{
+                    01=if(UselessItemData(CurItem(),3)==1)
+                    02 ^{
+                        01=MessageBox('The container will fall apart from another similar recharge. Contact the military base.');
+                        02=exit;
+                    }
+                    03=if(UselessItemData(CurItem(),1)-UselessItemData(CurItem(),2)>0)
+                    04 ^{
+                        01=if((25+5*ItemLevel(item)-MissilesToRearm(item))>0)
+                        02 ^{
+                            01=if (MessageBoxYesNo('Move ammunition?'))
+                            02 ^{
+                                00=UselessItemData(CurItem(),3,UselessItemData(CurItem(),3)-1);
+                                01=dword missile_container;
+                                02=dword missile_weapon;
+                                03=missile_container=UselessItemData(CurItem(),1)-UselessItemData(CurItem(),2);
+                                04=missile_weapon=25+5*ItemLevel(item)-MissilesToRearm(item);
+                                05=if (missile_weapon>missile_container)
+                                06 ^{
+                                    01=MissilesToRearm(item,(0-missile_container));
+                                    02=UselessItemData(CurItem(),2,UselessItemData(CurItem(),2)+missile_container);
+                                    03=ScriptItemActParam(2);
+                                }
+                                07=else
+                                08 ^{
+                                    01=UselessItemData(CurItem(),2,UselessItemData(CurItem(),2)+missile_weapon);
+                                    02=MissilesToRearm(item,(0-missile_weapon));
+                                    03=ScriptItemActParam(2);
+                                }
+                                09=exit;
+                            }
+                            03=else exit;
+                        }
+                        03=else exit;
+                    }
+                    05=else exit;
+                }
+            }
+        }
+        OnActCodeTypes=t_OnAnotherItem,t_OnAnotherItem2
+        Owner=None
+        Size=20
+        Text=Capacity for storing torpedoes.
+        Text=Number: <Data2>/<Data1>,  withstand uses: <Data3>
+    }
+}

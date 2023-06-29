@@ -1,0 +1,8 @@
+Data ^{
+    Script ^{
+        Mod_ExpExplorers=1,Script.Mod_ExpExplorers
+    }
+    ScriptLibs ^{
+        Mod_ExpExplorers=UtilityFunctions
+    }
+}

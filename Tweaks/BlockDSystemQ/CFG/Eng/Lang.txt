@@ -1,0 +1,5 @@
+Quest ~{
+    DefSystem ^{
+        Count=0
+    }
+}

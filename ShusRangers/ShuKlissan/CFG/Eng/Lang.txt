@@ -1,0 +1,2162 @@
+FormInfo ^{
+    StarInfo ^{
+        ControlledByKlissan=Controlled by Klissans
+    }
+}
+FormGameSet2 ^{
+    Common ^{
+        HelpGroupKlissanEasy=---
+        HelpGroupKlissanExpert=---
+        HelpGroupKlissanHard=---
+        HelpGroupKlissanNormal=---
+        LevelGroupKlissan=Klissans
+        NameGroup1Easy=Slugs
+        NameGroup1Expert=Corsairs
+        NameGroup1Hard=Lyakushas
+        NameGroup1Normal=Skippers
+        NameGroupKlissanEasy=Lazy
+        NameGroupKlissanExpert=Alphas
+        NameGroupKlissanHard=Overgrown
+        NameGroupKlissanNormal=Adults
+    }
+}
+GalaxyNews ^{
+    Global ^{
+        KlissanTakeSystemFromNormals1=Attention everyone!<br>In <Sector> sector, the klissans have taken over <Star> system. There is no information about casualties count.
+        KlissanTakeSystemFromNormals2=The forces of the Interstellar Coalition are in danger!<br>In <Sector> sector, despite fierce resistance, <Star> system was lost in the battle with klissans. Eternal glory to the fallen heroes. Additional recruitment of rangers is underway.
+        KlissanTakeSystemFromNormals3=Bad news:<br>Klissans won battle in <Sector> sector. They took over <Star> system.
+        KlissanTakeSystemFromPirates1=The enemies of the Coalition continue to torment the civilians of the Galaxy, waging an endless and destructive war among themselves - this time the system <Star>, which belonged to a pirate brotherhood, was invaded by the klissans and was completely overrun. It is impossible to determine the number of civilian casualties.
+        KlissanTakeSystemFromPirates2=After a brief battle, the klissans took over the star system <Star>, previously under pirate control. There were no reports with count of civilian casualties.
+        KlissanTakeSystemFromPirates3=Star system <Star> continues to change hands. Until recently, it was under the control of pirates, but they were unable to protect it after a sudden attack by the klissans. One can only be glad that the enemies of the Coalition are fighting against each other, but we all wish that civilians would not suffer in the process.
+        NormalsTakeSystemFromKlissan1=Great news! The klissan blockade has just been completely exterminated by the Galactic Council in the <Star> system. The risk of a counterattack remains, but at this point the system is deemed safe to fly. All who participated in the battle, please visit the <Planet> planet to receive your reward.
+        NormalsTakeSystemFromKlissan2=The last klissan ships holding defenses in the <Star> system have been successfully eliminated. All pilots who took part in the battle are asked to visit the <Planet> planet for an honorary award ceremony.
+        NormalsTakeSystemFromKlissan3=Glory to the Galactic Council! <br>The <Star> system in the <Sector> sector has been liberated. All liberators who have destroyed at least one enemy ship are invited to the award ceremony held on the <Planet> planet.
+        PiratesTakeSystemFromKlissan1=The pirates were unusually active, freeing the <Star> system from the klissans, and the Coalition strategists can only guess why the bandits took such a risk and what it might entail for everyone. Intelligence reports indicate that the pirates have established temporary headquarters on the surface of the <Planet> planet.
+        PiratesTakeSystemFromKlissan2=A pirate brotherhood has taken control of the <Star> system, formerly under the control of the klissans. Remain cautious and try to avoid the orbit of the <Planet> planet, where the villains have already begun deploying orbital defense firing positions.
+    }
+    Group ^{
+        WarriorLiberator ^{
+            CreateKlissan=All available rangers are invited to take part in a military operation to liberate the <StarEnemy> system. The rallying point is in the <StarNormal> system of sector <SectorNormal>. The combined forces of the military and the free rangers will launch a decisive offensive from there on <Date>.
+        }
+    }
+}
+PlanetCongratulations ^{
+    LiberationStarNormalsFromKlisan ^{
+        FeiText=Well done, <Player>, <Planet> is no longer under the oppression of the klissan infestation. You're entitled to a decent reward, and we hope it won't be your last.
+        GaalText=<Player>, we are speechless. This is not the first time the planets of the <Star> system have been attacked by the enemy, and we were already desperate to wait for real reinforcements, and here you are! Please accept your reward.
+        MalocText=It is a pleasure to welcome you to our land, <Player>, for it is not without your contribution that the <Planet> planet has been snatched from the clutches of the klissan's... whatever they have. You have indeed earned your reward.
+        PelengText=<Player>, what a fight, what a victory! Your battle will definitely go down in the history of the <Planet> planet and the <Star> system in general. We thank you for your bravery.
+        PeopleText=Brilliant, <Player>! No more klissan invaders threatening the safety of the inhabitants of the <Star> system! We've prepared a whole ceremony to celebrate your award, please follow me.
+    }
+    LiberationStarPirateClanFromKlisan ^{
+        CongratulationsCount=4
+        PirateClanText1=Those klissans are really aggressive, aren't they, <Player>? But they've had their share, and it's certainly not without your merit, my friend. Long live the Brotherhood!
+        PirateClanText2=The klissans, the dominators, the Coalition... they all look alike in the face of our power! It's time to start asking them to get in line. <Player>, my personal thanks for your cooperation.
+        PirateClanText3=And what, one wonders, are these greens doing here three centuries later? Don't you know, <Player>? Maybe ask them why? Heh, yeah, there better be someone left to ask after you. What I can say for sure is that the fight was great!
+        PirateClanText4=Get 'em, <Player>! No one fights the way the clan brothers do! And you proved that axiom in practice today! You, of course, are entitled to a share of the loot, so don't be too late.
+    }
+}
+Items ^{
+    CargoHook ^{
+        KlissanName=Plasmathread
+        KlissanText=Plasma flow of particles creating negative gravity and letting Klissans pick up their booty.
+        KlissanText=Grips objects up to <PickUpSize> units in size within a radius of <Radius>.
+    }
+    CustomCountables ^{
+        kProtoplasm ^{
+            Name=Protoplasm
+            Text=A biological substance. Remains of Klissans.
+            Text=Amount: <N> units
+        }
+    }
+    DefGenerator ^{
+        KlissanName=Plasmashield
+        KlissanText=Ordered fan of plasma particles, can partially absorb hit energy.
+        KlissanText=Capable of neutralizing up to <Percent>% of incoming negative effects.
+    }
+    Engine ^{
+        KlissanName=Gillnozzles
+        KlissanText=Klissan hull part with gill hollows expelling plasma for jet action.
+        KlissanText=Allow to develop speed up to <Speed> units and make hyper jumps for <Parsec> parsec.
+    }
+    FuelTanks ^{
+        KlissanName=Protobubble
+        KlissanText=Tank with thick muscular walls to store fuel for <color=255,240,100>gillnozzles</color>.
+        KlissanText=Bubble capacity is <Capacity> units. The amount of fuel stored is <Fuel> units.
+    }
+    Radar ^{
+        KlissanName=Radiosensors
+        KlissanText=A group of organs rich in electromagnetic receptors, serves Klissans as a live radar.
+        KlissanText=Allow the host to get information on objects at the distance of up to <Radius> mln. km.
+    }
+    RepairRobot ^{
+        KlissanName=Bioregenerator
+        KlissanText=Autonomous ameba-shaped clot of crystal protoplasm rebuilding the damaged klissan's shell.
+        KlissanText=Restores <RecoverHitPoints> units of damaged skin.
+    }
+    Scaner ^{
+        KlissanName=Neuroprobe
+        KlissanText=A complex compound organ allowing to scan inanimate objects.
+        KlissanText=Neurally scans inanimate objects with protective field lower than <Percent>%.
+    }
+    Weapon ^{
+        CustomWeapon ~{
+            StatsVersion ^{
+                ShuKlissan=30.07.2020
+            }
+            ShuKlissan ~{
+                1=klissan_splitter
+                2=klissan_emitter
+                3=klissan_nargun
+                4=klissan_cluster
+                5=klissan_hellwave
+                6=klissan_antimatter
+                7=klissan_nihiler
+                8=klissan_moldikvink
+                9=klissan_stunner
+                10=klissan_burster
+                11=klissan_protomissile
+                12=klissan_laser
+                13=klissan_capacer
+                Count=13
+            }
+            klissan_splitter ~{
+                BaseGun=Electronic_Cutter
+                MinDamage=23
+                MaxDamage=25
+                DamageSet=Splinter
+                ShotType=Normal
+                Speed=47
+                AverageRadius=250
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.20,1.30,1.40,1.50,1.60,1.70
+                ShotsPerTurn=1
+                ArcadeType=Esodapher
+                MiningFactor=5
+                kCost=15.5
+                AverageSize=30
+                TechLevel=3
+                InventTechLevel=Industrial_Laser
+                StoreAvailability=NotSold
+                ShotEffectPath=Weapon.15
+                ShotEffectPalette=4
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            klissan_emitter ~{
+                BaseGun=Fragmentation_Cannon
+                MinDamage=22
+                MaxDamage=38
+                DamageSet=Energy
+                ShotType=Exploder
+                Speed=86
+                AverageRadius=344
+                SecondaryDamageRadius=250
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.20,1.40,1.60,1.80,2.00,2.20,2.40
+                ShotsPerTurn=1
+                ArcadeType=Wave_Phaser
+                MiningFactor=3
+                kCost=53
+                AverageSize=110
+                TechLevel=8
+                InventTechLevel=Industrial_Laser
+                StoreAvailability=NotSold
+                ShotEffectPath=Weapon.5
+                ShotEffectPalette=4
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            klissan_nargun ~{
+                BaseGun=Flow_Blaster
+                MinDamage=30
+                MaxDamage=35
+                DamageSet=Energy,Undefendable,MoreDrop
+                ShotType=Normal
+                Speed=115
+                AverageRadius=342
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.15,1.20,1.25,1.30,1.50,1.70
+                ShotsPerTurn=1
+                ArcadeType=Turbogravitron
+                MiningFactor=2
+                kCost=61
+                AverageSize=160
+                TechLevel=9
+                InventTechLevel=Industrial_Laser
+                StoreAvailability=NotSold
+                ShotEffectPath=Weapon.11
+                ShotEffectPalette=4
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            klissan_cluster ~{
+                BaseGun=Missile_Launcher
+                MinDamage=3
+                MaxDamage=13
+                DamageSet=Energy,Decelerate,Destruct,Drain,Acid,Magnetic,DecelerateAEx,ReduceEngine,BlockWeapon,BlockDroid
+                ShotType=Normal
+                Speed=39
+                AverageRadius=420
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.15,1.30,1.45,1.60,1.75,1.90,2.05
+                ShotsPerTurn=1
+                ArcadeType=IMHO-9000
+                MiningFactor=1
+                kCost=38
+                AverageSize=140
+                TechLevel=8
+                InventTechLevel=Industrial_Laser
+                StoreAvailability=NotSold
+                ShotEffectPath=Weapon.13
+                ShotEffectPalette=5
+                SplashEffectPath=Weapon.AuraEffect
+                MissileExplosionEffectPath=
+            }
+            klissan_hellwave ~{
+                BaseGun=Vertix
+                MinDamage=25
+                MaxDamage=42
+                DamageSet=Energy,Decelerate,Magnetic
+                ShotType=AreaDamage
+                Speed=46
+                AverageRadius=327
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.25,1.40,1.80,2.20,2.60,3.00
+                ShotsPerTurn=1
+                ArcadeType=Vertix
+                MiningFactor=3
+                kCost=76
+                AverageSize=260
+                TechLevel=9
+                InventTechLevel=Industrial_Laser
+                StoreAvailability=NotSold
+                ShotEffectPath=Weapon.13
+                ShotEffectPalette=4
+                SplashEffectPath=Weapon.13
+                MissileExplosionEffectPath=
+            }
+            klissan_antimatter ~{
+                BaseGun=Industrial_Laser
+                MinDamage=26
+                MaxDamage=32
+                DamageSet=Energy,BonusToDamaged
+                ShotType=Splash
+                Speed=57
+                AverageRadius=290
+                SecondaryDamageRadius=125
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.20,1.30,1.40,1.60,1.90,2.30
+                ShotsPerTurn=1
+                ArcadeType=Atomic_Vision
+                MiningFactor=2
+                kCost=42
+                AverageSize=80
+                TechLevel=6
+                InventTechLevel=Industrial_Laser
+                StoreAvailability=NotSold
+                ShotEffectPath=Weapon.9
+                ShotEffectPalette=10
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            klissan_nihiler ~{
+                BaseGun=Vertix
+                MinDamage=15
+                MaxDamage=35
+                DamageSet=Energy,Acid,DropCargo
+                ShotType=Normal
+                Speed=52
+                AverageRadius=400
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.25,1.40,1.80,2.20,2.60,3.00
+                ShotsPerTurn=1
+                ArcadeType=Flux
+                MiningFactor=2
+                kCost=35
+                AverageSize=60
+                TechLevel=6
+                InventTechLevel=Industrial_Laser
+                StoreAvailability=NotSold
+                ShotEffectPath=Weapon.8
+                ShotEffectPalette=6
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            klissan_moldikvink ~{
+                BaseGun=Wave_Phaser
+                MinDamage=7
+                MaxDamage=8
+                DamageSet=Splinter,Decelerate,Undefendable,BonusToDamaged
+                ShotType=Normal
+                Speed=74
+                AverageRadius=270
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.15,1.20,1.25,1.30,1.50,1.80
+                ShotsPerTurn=5
+                ArcadeType=Fragmentation_Cannon
+                MiningFactor=4
+                kCost=45
+                AverageSize=60
+                TechLevel=9
+                InventTechLevel=Industrial_Laser
+                StoreAvailability=NotSold
+                ShotEffectPath=Weapon.8
+                ShotEffectPalette=7
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            klissan_stunner ~{
+                BaseGun=Missile_Launcher
+                MinDamage=2
+                MaxDamage=14
+                DamageSet=Energy,Decelerate,Magnetic
+                ShotType=Chain2
+                Speed=79
+                AverageRadius=345
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.15,1.30,1.45,1.60,1.75,1.90,2.05
+                ShotsPerTurn=3
+                ArcadeType=Electronic_Cutter
+                MiningFactor=3
+                kCost=33
+                AverageSize=40
+                TechLevel=6
+                InventTechLevel=Industrial_Laser
+                StoreAvailability=NotSold
+                ShotEffectPath=Weapon.7
+                ShotEffectPalette=4
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            klissan_burster ~{
+                BaseGun=Industrial_Laser
+                MinDamage=15
+                MaxDamage=45
+                DamageSet=Splinter,DropCargo
+                ShotType=Normal
+                Speed=99
+                AverageRadius=325
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.20,1.30,1.40,1.60,1.90,2.30
+                ShotsPerTurn=1
+                ArcadeType=Flow_Blaster
+                MiningFactor=3
+                kCost=24
+                AverageSize=60
+                TechLevel=5
+                InventTechLevel=Industrial_Laser
+                StoreAvailability=NotSold
+                ShotEffectPath=Weapon.6
+                ShotEffectPalette=4
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            klissan_protomissile ~{
+                BaseGun=Vertix
+                MinDamage=5
+                MaxDamage=40
+                DamageSet=Missile,Decelerate,ReduceEngine
+                ShotType=Torpedo
+                Speed=19
+                AverageRadius=650
+                SecondaryDamageRadius=65
+                MissileRadius=850
+                MissileMinSpeed=100
+                MissileMaxSpeed=1500
+                MissileChanceToBeHit=70
+                mWeaponDamage=1.00,1.10,1.25,1.40,1.80,2.20,2.60,3.00
+                ShotsPerTurn=1
+                ArcadeType=Missile_Launcher
+                MiningFactor=6
+                kCost=45
+                AverageSize=36
+                TechLevel=7
+                InventTechLevel=Industrial_Laser
+                StoreAvailability=NotSold
+                ShotEffectPath=Weapon.3
+                ShotEffectPalette=9
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=Weapon.MissileHit
+            }
+            klissan_laser ~{
+                BaseGun=Vertix
+                MinDamage=20
+                MaxDamage=30
+                DamageSet=Energy,ScanBonus
+                ShotType=Normal
+                Speed=81
+                AverageRadius=375
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.25,1.40,1.80,2.20,2.60,3.00
+                ShotsPerTurn=1
+                ArcadeType=Disintegrator
+                MiningFactor=1
+                kCost=30
+                AverageSize=20
+                TechLevel=3
+                InventTechLevel=Industrial_Laser
+                StoreAvailability=NotSold
+                ShotEffectPath=Weapon.10
+                ShotEffectPalette=4
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            klissan_capacer ~{
+                BaseGun=Vertix
+                MinDamage=4
+                MaxDamage=16
+                DamageSet=Missile,Shock,ReduceEngine
+                ShotType=Normal
+                Speed=69
+                AverageRadius=330
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.25,1.40,1.80,2.20,2.60,3.00
+                ShotsPerTurn=2
+                ArcadeType=Caphasitor
+                MiningFactor=2
+                kCost=25
+                AverageSize=26
+                TechLevel=3
+                InventTechLevel=Industrial_Laser
+                StoreAvailability=NotSold
+                ShotEffectPath=Weapon.16
+                ShotEffectPalette=4
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+        }
+        Missile ^{
+            klissan_protomissile ^{
+                Name=Clot
+                Text=A self-propelled homing clot of energy from the klissan's Protomatrix.
+            }
+        }
+        Name ^{
+            klissan_antimatter=Antimatter Multiplicator
+            klissan_burster=Augerbar
+            klissan_capacer=Gravicollector
+            klissan_cluster=Iconoclast
+            klissan_emitter=Indemit
+            klissan_hellwave=Wave Asynthesizer
+            klissan_laser=Ion Deformator
+            klissan_moldikvink=Kwinkgun
+            klissan_nargun=Nargun Blade
+            klissan_nihiler=Nihiler
+            klissan_protomissile=Protomatrix
+            klissan_splitter=Splitter
+            klissan_stunner=Dimorphic Stunner
+        }
+        OriginalWeaponType ~{
+            Industrial_Laser=1
+            Fragmentation_Cannon=2
+            Flux=3
+            Missile_Launcher=4
+            Treton=5
+            Wave_Phaser=6
+            Flow_Blaster=7
+            Electronic_Cutter=8
+            Multiresonator=9
+            Atomic_Vision=10
+            Disintegrator=11
+            Turbogravitron=12
+            IMHO-9000=13
+            Vertix=14
+            Torpedo_Tube=15
+            Esodapher=16
+            Caphasitor=17
+            Lirecron=18
+        }
+        Text ^{
+            klissan_antimatter=Shoots a clot of antimatter that deals <MinDamage> to <MaxDamage><Bonus> damage to an area within <Radius> radius. Detonation is especially susceptible to already damaged targets.
+            klissan_burster=Disperses compressed spiraling clots of antimatter capable of literally drilling through any material surface. The clots deal <MinDamage> to <MaxDamage><Bonus> units of damage and pierce the target's cargo hold while remaining stable within a radius of <Radius>.
+            klissan_capacer=Hits the target with high-energy projectiles that create a reverse gravitational pull in the immediate detonation area, but are perceived by the hull as rocket projectiles. Deals <CntAttacks>x(<MinDamage>-<MaxDamage><Bonus>) units of damage within a radius of <Radius>.
+            klissan_cluster=An unexplored weapon capable of generating a microsingularity entry point directly in a target's hull. Inflicts from <MinDamage> to <MaxDamage><Bonus> damage within <Radius> radius. Spontaneously causing an anomaly in key systems of the ship's equipment causes enormous collateral damage, leading to the infliction of many negative effects. In addition, the cannon is used for drilling asteroids because it does not damage valuable minerals.
+            klissan_emitter=Charges the target with an unstable stream of energy until the accumulated charge results in an inevitable detonation, dealing <MinDamage>-<MaxDamage><Bonus> units of damage within <Radius> radius. When a charged object is destroyed, the residual charge spreads to nearby ships.
+            klissan_hellwave=Generates an energy wave that deforms molecular structures at a maximum distance of <Radius> and deals <MinDamage>-<MaxDamage><Bonus> damage. Temporal anomaly slows the target and causes electromagnetic damage.
+            klissan_laser=Discharges a stream of charged particles dealing <MinDamage>-<MaxDamage><Bonus> units of damage within <Radius> radius. The charge is amplified when the defense is pierced by the scanner.
+            klissan_moldikvink=Strikes the target with a burst of <color=255,240,100>five</color> protoplasmic blobs heated to state of ionized gas, each of which deals <color=255,240,100>8</color>-<color=255,240,100>10</color> damage. Prolonged fire stifles enemy maneuvers, and hitting an already-damaged section of the hull greatly increases overall damage. Clots are capable of reaching distance of <Radius> before cooling down.
+            klissan_nargun=An unanalysable hybrid of turbogravir technology and Machpella's Eye. Energy retention is narrowed, causing the shot to deal <MinDamage>-<MaxDamage><Bonus> units of pure damage, but its range cannot exceed <Radius>.
+            klissan_nihiler=Deals <MinDamage>-<MaxDamage><Bonus> damage within <Radius> radius, striking the target with transformed protoplasmic clots that corrodes any armor. The ship's hold is especially prone to this damage.
+            klissan_protomissile=Hits the target with a homing clot of energy, similar in signature to the not yet fully understood Absolute Matrix waves, but affecting only the ship's engine. The projectile deals <MinDamage>-<MaxDamage><Bonus> units of damage within <Radius> radius.<br> Number of salvos: <Count>/<MaxCount>.
+            klissan_splitter=Sprays biologically active spores that quite literally eat spaceship's structures, dealing <MinDamage> to <MaxDamage><Bonus> damage withing <Radius> radius.
+            klissan_stunner=Hits a small area with spores, spraying billions of aggressive microorganisms, slowing down the target and causing enormous damage to equipment and hull plating, dealing <CntAttacks>x(<MinDamage>-<MaxDamage><Bonus>) units of damage at up to <Radius> distance. If there are two targets in the kill zone the damage is distributed between them, if there is only one target it receives additional damage.
+        }
+    }
+}
+MicroModuls ~{
+    ShuKlissan_MutenokHull ^{
+        Cost=200
+        CustomTag=Mutenok
+        Equipments=Hull
+        FragilityEnergy=120
+        FragilityMissile=45
+        FragilitySplinter=105
+        HullGraphSize=75
+        KindGraph=Klissan5
+        LockedAcryn=3
+        Name=</color><Type> hull klissan <color=15,252,15>"Mutenok"</color>
+        NonSearchable=1
+        Priority=10
+        Special=1
+        bonSpeed=200
+    }
+    ShuKlissan_RogitHull ^{
+        Cost=300
+        CustomTag=Rogit
+        Equipments=Hull
+        FragilityEnergy=110
+        FragilityMissile=57
+        FragilitySplinter=85
+        HullGraphSize=83
+        KindGraph=Klissan4
+        LockedAcryn=3
+        Name=</color><Type> hull klissan <color=15,252,15>"Rogit"</color>
+        NonSearchable=1
+        Priority=10
+        Special=1
+        bonMass=50
+        bonSpeed=100
+        bonWEnergy=4
+        bonWSplinter=6
+    }
+    ShuKlissan_KatauriHull ^{
+        Cost=400
+        CustomTag=Katauri
+        Equipments=Hull
+        FragilityEnergy=75
+        FragilityMissile=70
+        FragilitySplinter=130
+        HullGraphSize=115
+        KindGraph=Klissan3
+        LockedAcryn=3
+        Name=</color><Type> hull klissan <color=15,252,15>"Katauri"</color>
+        NonSearchable=1
+        Priority=10
+        Special=1
+        bonMass=70
+        bonWMissile=5
+        bonWRadius=25
+    }
+    ShuKlissan_NondusHull ^{
+        Cost=550
+        CustomTag=Nondus
+        Equipments=Hull
+        FragilityEnergy=140
+        FragilityMissile=80
+        FragilitySplinter=75
+        HullGraphSize=140
+        KindGraph=Klissan2
+        LockedAcryn=3
+        Name=</color><Type> hull klissan <color=15,252,15>"Nondus"</color>
+        NonSearchable=1
+        Priority=10
+        Special=1
+        bonDef=3
+        bonMass=80
+        bonWEnergy=6
+        bonWSplinter=10
+    }
+    ShuKlissan_EgemonHull ^{
+        Cost=800
+        CustomTag=Egemon
+        Equipments=Hull
+        FragilityEnergy=85
+        FragilityMissile=80
+        FragilitySplinter=150
+        HullGraphSize=168
+        KindGraph=Klissan1
+        LockedAcryn=3
+        Name=</color><Type> hull klissan <color=15,252,15>"Egemon"</color>
+        NonSearchable=1
+        Priority=10
+        Special=1
+        bonDroid=5
+        bonHull=1
+        bonMass=100
+        bonSpeed=-50
+        bonWRadius=15
+    }
+    ShuKlissan_GigasHull ^{
+        Cost=800
+        CustomTag=Gigas
+        Equipments=Hull
+        FragilityEnergy=85
+        FragilityMissile=80
+        FragilitySplinter=150
+        HullGraphSize=168
+        KindGraph=Klissan6
+        LockedAcryn=3
+        Name=</color><Type> hull klissan <color=15,252,15>"Gigas"</color>
+        NonSearchable=1
+        Priority=10
+        Special=1
+        bonDroid=5
+        bonHull=1
+        bonMass=100
+        bonSpeed=-50
+        bonWRadius=15
+    }
+    ShuKlissan_Gvidest1 ^{
+        Cost=150
+        CustomTag=k_engine_1
+        Fragility=110
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Gvidest I</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Engine speed: <bonSpeed>
+        TextReplace=<color=248,252,248>Allows to fly up to <Speed> million kilometers per day and make a <Parsec> parsec hyperjump.</color>
+        bonSpeed=20
+    }
+    ShuKlissan_Gvidest2 ^{
+        Cost=190
+        CustomTag=k_engine_2
+        Fragility=90
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Gillnozzles II</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Engine speed: <bonSpeed>
+        TextReplace=<color=248,252,248>Allows to fly up to <Speed> million kilometers per day and make a <Parsec> parsec hyperjump.</color>
+        bonSpeed=30
+    }
+    ShuKlissan_Gvidest3 ^{
+        Cost=230
+        CustomTag=k_engine_3
+        Fragility=70
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Gillnozzles III</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Engine speed: <bonSpeed>
+        TextReplace=<color=248,252,248>Allows to fly up to <Speed> million kilometers per day and make a <Parsec> parsec hyperjump.</color>
+        bonSpeed=45
+    }
+    ShuKlissan_Ondest1 ^{
+        Cost=150
+        CustomTag=k_fueltanks_1
+        Fragility=110
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Ondest I</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Jumping range: <bonJump>
+        TextReplace=<color=248,252,248>Stores up to <Capacity> units of fuel. Filled to <Fuel> units.</color>
+        bonJump=2
+    }
+    ShuKlissan_Ondest2 ^{
+        Cost=190
+        CustomTag=k_fueltanks_2
+        Fragility=90
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Ondest II</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Jumping range: <bonJump>
+        TextReplace=<color=248,252,248>Stores up to <Capacity> units of fuel. Filled to <Fuel> units.</color>
+        bonJump=3
+    }
+    ShuKlissan_Ondest3 ^{
+        Cost=230
+        CustomTag=k_fueltanks_3
+        Fragility=70
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Ondest III</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Jumping range: <bonJump>
+        TextReplace=<color=248,252,248>Stores up to <Capacity> units of fuel. Filled to <Fuel> units.</color>
+        bonJump=4
+    }
+    ShuKlissan_Xifest1 ^{
+        Cost=150
+        CustomTag=k_repairrobot_1
+        Fragility=110
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Xifest I</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Droid effectiveness: <bonDroid>
+        TextReplace=<color=248,252,248>Replaces damaged parts of the hull, restoring <RecoverHitPoints> units of the hull per day.</color>
+        bonDroid=5
+    }
+    ShuKlissan_Xifest2 ^{
+        Cost=190
+        CustomTag=k_repairrobot_2
+        Fragility=90
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Xifest II</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Droid effectiveness: <bonDroid>
+        TextReplace=<color=248,252,248>Replaces damaged parts of the hull, restoring <RecoverHitPoints> units of the hull per day.</color>
+        bonDroid=7
+    }
+    ShuKlissan_Xifest3 ^{
+        Cost=230
+        CustomTag=k_repairrobot_3
+        Fragility=70
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Xifest III</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Droid effectiveness: <bonDroid>
+        TextReplace=<color=248,252,248>Replaces damaged parts of the hull, restoring <RecoverHitPoints> units of the hull per day.</color>
+        bonDroid=10
+    }
+    ShuKlissan_Vahtest1 ^{
+        Cost=150
+        CustomTag=k_cargohook_1
+        Fragility=110
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Vahtest I</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Gripper power: <bonHook>
+        TextReplace=<color=248,252,248>Grips objects up to <PickUpSize> units in size at a distance of <Radius>.</color>
+        bonHook=15
+    }
+    ShuKlissan_Vahtest2 ^{
+        Cost=190
+        CustomTag=k_cargohook_2
+        Fragility=90
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Vahtest II</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Gripper power: <bonHook>
+        TextReplace=<color=248,252,248>Grips objects up to <PickUpSize> units in size at a distance of <Radius>.</color>
+        bonHook=20
+    }
+    ShuKlissan_Vahtest3 ^{
+        Cost=230
+        CustomTag=k_cargohook_3
+        Fragility=70
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Vahtest III</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Gripper power: <bonHook>
+        TextReplace=<color=248,252,248>Grips objects up to <PickUpSize> units in size at a distance of <Radius>.</color>
+        bonHook=30
+    }
+    ShuKlissan_Jewlest1 ^{
+        Cost=150
+        CustomTag=k_defgenerator_1
+        Fragility=110
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Jewlest I</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        TextReplace=<color=248,252,248>Dissipates up to <Percent>% of the damage dealt and generates a ship's mass-reducing field.</color>
+        bonMass=-5
+    }
+    ShuKlissan_Jewlest2 ^{
+        Cost=190
+        CustomTag=k_defgenerator_2
+        Fragility=90
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Jewlest II</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        TextReplace=<color=248,252,248>Dissipates up to <Percent>% of the damage dealt and generates a ship's mass-reducing field.</color>
+        bonMass=-7
+    }
+    ShuKlissan_Jewlest3 ^{
+        Cost=230
+        CustomTag=k_defgenerator_3
+        Fragility=70
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Jewlest III</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Ship mass: <bonMass><clr>%<clrEnd>
+        TextReplace=<color=248,252,248>Dissipates up to <Percent>% of the damage dealt and generates a ship's mass-reducing field.</color>
+        bonMass=-10
+    }
+    ShuKlissan_Glandest1 ^{
+        Cost=150
+        CustomTag=k_radar_1
+        Fragility=110
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Glandest I</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Firing range: <bonWRadius>
+        TextReplace=<color=248,252,248>Finds and analyzes objects up to <Radius> and provides better targeting for all installed weapons.</color>
+        bonWRadius=10
+    }
+    ShuKlissan_Glandest2 ^{
+        Cost=190
+        CustomTag=k_radar_2
+        Fragility=90
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Glandest II</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Firing range: <bonWRadius>
+        TextReplace=<color=248,252,248>Finds and analyzes objects up to <Radius> and provides better targeting for all installed weapons.</color>
+        bonWRadius=15
+    }
+    ShuKlissan_Glandest3 ^{
+        Cost=230
+        CustomTag=k_radar_3
+        Fragility=70
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Glandest III</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Firing range: <bonWRadius>
+        TextReplace=<color=248,252,248>Finds and analyzes objects up to <Radius> and provides better targeting for all installed weapons.</color>
+        bonWRadius=20
+    }
+    ShuKlissan_Naksest1 ^{
+        Cost=150
+        CustomTag=k_scaner_1
+        Fragility=110
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Naksest I</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=All weapons damage: <bonWEnergy>
+        TextReplace=<color=248,252,248>Scans objects with a protective field of less than <Percent>%, revealing the vulnerabilities of the hull.</color>
+        bonWEnergy=2
+        bonWMissile=2
+        bonWSplinter=2
+    }
+    ShuKlissan_Naksest2 ^{
+        Cost=190
+        CustomTag=k_scaner_2
+        Fragility=90
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Naksest II</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=All weapons damage: <bonWEnergy>
+        TextReplace=<color=248,252,248>Scans objects with a protective field of less than <Percent>%, revealing the vulnerabilities of the hull.</color>
+        bonWEnergy=3
+        bonWMissile=3
+        bonWSplinter=3
+    }
+    ShuKlissan_Naksest3 ^{
+        Cost=230
+        CustomTag=k_scaner_3
+        Fragility=70
+        KindGraph=Klissan
+        LockedAcryn=3
+        Name=</color><color=15,252,15>Naksest III</color>
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=All weapons damage: <bonWEnergy>
+        TextReplace=<color=248,252,248>Scans objects with a protective field of less than <Percent>%, revealing the vulnerabilities of the hull.</color>
+        bonWEnergy=5
+        bonWMissile=5
+        bonWSplinter=5
+    }
+    ShuKlissan_Potentia ^{
+        BMSpawnCondition=CurTurn() > GShuKlissanFirstStart + 93
+        Color=62,137,62
+        Cost=150
+        Equipments=FuelTank,Engine,Radar,Scaner,Droid,Hook,DefGenerator,Hull
+        Fragility=133
+        KindGraph=Spore
+        Name=Potentia
+        NamePrefix=Spore colony
+        Owner=Klissan,NonKling
+        Priority=25
+        RacialRestriction=1
+        Size=150
+        Text=Klissan spore colony. Reveals the special potential of <clr>klissan<clrEnd> equipment, increasing its positive effects <clr>2<clrEnd> times.
+        Text=<clr><clrEnd>
+        Text=Acryn bonuses: <clr>+100%<clrEnd>
+        Text=Reliability: <clr>-25%<clrEnd>
+        Text=Cost: <clr>+50%<clrEnd>
+        Text=Size: <clr>+50%<clrEnd>
+        bonExtraAkrinEff=100
+    }
+    ShuKlissan_Cyanonia ^{
+        BMSpawnCondition=CurTurn() > GShuKlissanFirstStart + 93
+        Color=62,137,62
+        Cost=100
+        Equipments=WEnergy,WSplinter,WMissile,FuelTank,Engine,Radar,Scaner,Droid,Hook,DefGenerator,Hull
+        Fragility=100
+        KindGraph=Spore
+        Name=Cyanonia
+        NamePrefix=Spore colony
+        Owner=Klissan,NonKling
+        Priority=35
+        RacialRestriction=1
+        Size=100
+        Text=Klissan spore colony. Unlocks the special potential of any <clr>klissan<clrEnd> equipment, increasing efficiency.
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWEnergy>
+        Text=Missile weapons damage: <bonWEnergy>
+        Text=Hull armor: <bonHull>
+        Text=Engine speed: <bonSpeed>
+        Text=Fuel tank capacity: <bonFuel>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=Droid effectiveness: <bonDroid>
+        Text=Gripper power: <bonHook>
+        Text=Shield generator: <bonDef>%
+        bonDef=6
+        bonDroid=20
+        bonFuel=15
+        bonHook=50
+        bonHull=5
+        bonRadar=600
+        bonScan=5
+        bonSpeed=50
+        bonWEnergy=15
+        bonWMissile=20
+        bonWSplinter=20
+    }
+    ShuKlissan_Bubble ^{
+        BMSpawnCondition=CurTurn() > GShuKlissanFirstStart + 93
+        Color=62,137,62
+        Cost=100
+        Equipments=Engine
+        Fragility=76
+        KindGraph=Spore
+        Name=Bubble
+        NamePrefix=Spore colony
+        Owner=Klissan,NonKling
+        Priority=55
+        RacialRestriction=1
+        Size=100
+        Text=Klissan spore colony. Initiates the growth of a miniature version of the <clr>klissan<clrEnd> hyperbubble generator, greatly increasing maximum jump range and overall strength. The mass of the new module, however, negatively affects engine performance in normal space.
+        Text=<clr><clrEnd>
+        Text=Jumping range: <bonJump>
+        Text=Reliability: <clr>+30%<clrEnd>
+        Text=Engine speed: <bonSpeed>
+        bonJump=30
+        bonSpeed=-150
+    }
+    ShuKlissan_Chasia ^{
+        BMSpawnCondition=CurTurn() > GShuKlissanFirstStart + 93
+        Color=62,137,62
+        Cost=100
+        Equipments=Engine
+        Fragility=100
+        KindGraph=Spore
+        Name=Chasia
+        NamePrefix=Spore colony
+        Owner=Klissan,NonKling
+        Priority=55
+        RacialRestriction=1
+        Size=100
+        Text=Klissan spore colony. Enriches the protoplasm supplied to the <clr>klissan<clrEnd> engine, which has a significant stimulating effect.
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        bonSpeed=200
+    }
+    ShuKlissan_Velhmust ^{
+        BMSpawnCondition=CurTurn() > GShuKlissanFirstStart + 93
+        Color=62,137,62
+        Cost=100
+        Equipments=FuelTank,Radar,Scaner
+        Fragility=133
+        KindGraph=Spore
+        Name=Velhmust
+        NamePrefix=Spore colony
+        Owner=Klissan,NonKling
+        Priority=55
+        RacialRestriction=1
+        Size=100
+        Text=Klissan spore colony. Transforms excesses of organic elements in <clr>basic klissan<clrEnd> equipment, increasing general productivity, but decresing reliability.
+        Text=<clr><clrEnd>
+        Text=Fuel tank capacity: <bonFuel>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=Reliability: <clr>-25%<clrEnd>
+        bonFuel=30
+        bonRadar=1500
+        bonScan=15
+    }
+    ShuKlissan_Nivelia ^{
+        BMSpawnCondition=CurTurn() > GShuKlissanFirstStart + 93
+        Color=62,137,62
+        Cost=130
+        Equipments=FuelTank,Radar,Scaner,Droid,Hook,DefGenerator
+        Fragility=83
+        KindGraph=Spore
+        Name=Nivelia
+        NamePrefix=Spore colony
+        Owner=Klissan,NonKling
+        Priority=55
+        RacialRestriction=1
+        Size=100
+        Text=Klissan spore colony. It grows into the energy system of <clr>klissan<clrEnd> equipment and sprays a layer of cooling bioreagents that protects the equipment from overheating, thus stabilizing its operation and increasing its durability. However, the additional unstable layer makes it more difficult to repair the equipment, increasing its overall cost. Because of the massive energy exchange, it is incompatible with the ship's weapons and engine.
+        Text=<clr><clrEnd>
+        Text=Fuel tank capacity: <bonFuel>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=Gripper power: <bonHook>
+        Text=Shield generator: <bonDef>%
+        Text=Reliability: <clr>+20%<clrEnd>
+        Text=Cost: <clr>+30%<clrEnd>
+        bonDef=10
+        bonFuel=10
+        bonHook=150
+        bonRadar=1000
+        bonScan=12
+    }
+    ShuKlissan_Plasmalemma ^{
+        BMSpawnCondition=CurTurn() > GShuKlissanFirstStart + 93
+        Color=62,137,62
+        Cost=100
+        Equipments=WEnergy
+        Fragility=100
+        KindGraph=Spore
+        Name=Plasmalemma
+        NamePrefix=Spore colony
+        Owner=Klissan,NonKling
+        Priority=55
+        RacialRestriction=1
+        Size=100
+        Text=Klissan spore colony. Converts some of the inefficiently used power of <clr>klissan<clrEnd> energy weapons, maximizing their performance.
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        bonWEnergy=37
+    }
+    ShuKlissan_Fungusia ^{
+        BMSpawnCondition=CurTurn() > GShuKlissanFirstStart + 93
+        Color=62,137,62
+        Cost=100
+        Equipments=WSplinter
+        Fragility=100
+        KindGraph=Spore
+        Name=Fungusia
+        NamePrefix=Spore colony
+        Owner=Klissan,NonKling
+        Priority=55
+        RacialRestriction=1
+        Size=100
+        Text=Klissan spore colony. Used on <clr>klissan<clrEnd> fragmentation weapons, dispersing the remains of protocoloniums transported by fire and detonating on impact with the target.
+        Text=<clr><clrEnd>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        bonWSplinter=40
+    }
+    ShuKlissan_Askia ^{
+        BMSpawnCondition=CurTurn() > GShuKlissanFirstStart + 93
+        Color=62,137,62
+        Cost=100
+        Equipments=WMissile
+        Fragility=100
+        KindGraph=Spore
+        Name=Acskia
+        NamePrefix=Spore colony
+        Owner=Klissan,NonKling
+        Priority=55
+        RacialRestriction=1
+        Size=100
+        Text=Klissan spore colony. When placed on a <clr>klissan<clrEnd> missile weapon, it produces spore sacs placed on each projectile fired. When the missiles detonate, they release active bio-elements outward, increasing damage and weakening armor. At the same time, the additional mass carried by the ammunition can affect its maneuverability.
+        Text=<clr><clrEnd>
+        Text=Additional effect: <clr>armor weakening<clrEnd>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Missile speed: <bonMissileSpeed>
+        WeaponMods=Acid
+        bonMissileSpeed=-300
+        bonWMissile=35
+    }
+    ShuKlissan_Regenerative ^{
+        BMSpawnCondition=CurTurn() > GShuKlissanFirstStart + 93
+        Color=62,137,62
+        Cost=100
+        Equipments=Droid
+        Fragility=100
+        KindGraph=Spore
+        Name=Regenerative
+        NamePrefix=Spore colony
+        Owner=Klissan,NonKling
+        Priority=55
+        RacialRestriction=1
+        Size=100
+        Text=Klissan spore colony. Applied to <clr>klissan<clrEnd> droids, creating conditions for protoplasmic membrane growth, greatly increasing the productivity of repair systems.
+        Text=<clr><clrEnd>
+        Text=Droid effectiveness: <bonDroid>
+        bonDroid=30
+    }
+    ShuKlissan_Combishell ^{
+        BMSpawnCondition=CurTurn() > GShuKlissanFirstStart + 93
+        Color=62,137,62
+        Cost=100
+        Equipments=Hull
+        Fragility=100
+        KindGraph=Spore
+        Name=Combishell
+        NamePrefix=Spore colony
+        Owner=Klissan,NonKling
+        Priority=55
+        RacialRestriction=1
+        Size=100
+        Text=Klissan spore colony. When placed on the <clr>klissan<clrEnd> hull, it covers it with a layer of rapidly hardening regenerating protoplasm.
+        Text=<clr><clrEnd>
+        Text=Hull armor: <bonHull>
+        bonHull=8
+    }
+    ShuKlissan_Recapacit ^{
+        BMSpawnCondition=CurTurn() > GShuKlissanFirstStart + 93
+        Color=62,137,62
+        Cost=100
+        Equipments=Hull
+        Fragility=120
+        KindGraph=Spore
+        Name=Recapacit
+        NamePrefix=Spore colony
+        Owner=Klissan,NonKling
+        Priority=55
+        RacialRestriction=1
+        Size=140
+        Text=Klissan spore colony. Builds up protoplasmic walls on the <clr>klissan<clrEnd> hull, creating extra space. The protection of such modules is rather low, which affects the overall resistance to damage.
+        Text=<clr><clrEnd>
+        Text=Hull size: <clr>+40%<clrEnd>
+        Text=Damage susceptibility: <clr>+20%<clrEnd>
+    }
+    ShuKlissan_MachpellaHellWave ^{
+        Cost=500
+        CustomTag=MachpellaGun
+        Fragility=200
+        LockedAcryn=3
+        Name=Hell Wave
+        NonSearchable=1
+        Owner=Kling
+        Priority=0
+        ShotVisual=44
+        Special=1
+        Text=<color=248,252,248>Unique Wave asynthetizer of <clr>Machpella<clrEnd>, nicknamed among the fighters against the Klissans no other way than </color><color=0,191,255>"Hell Wave"</color><color=248,252,248>, which terrifies anyone who manages to witness its use. Using the old klissan technology of total annihilation, this weapon does monstrous damage, burning through hull armor and destabilizing all ship systems. The stresses created by the Wave asynthesizer make it impossible for it to function for long outside of klissan ships. </color> <br> <br>
+        Text=Charisma skill: <bonSkill5>
+        Text=Leadership skill: <bonSkill6>
+        Text=<clr>Damages target equipment<clrEnd>
+        Text=<clr>Reduces the target's armor<clrEnd>
+        Text=<clr>Slows target on hit<clrEnd>
+        Text=(scanner power must exceed target's defense)
+        WeaponMods=NoDelta,Destruct,Decelerate,Acid
+        bonSkill5=1
+        bonSkill6=1
+    }
+}
+Planet ^{
+    Klissan ^{
+        Info ^{
+            TextAboutPlanet=Resident race: <Race>
+            TextAboutPlanet=Under klissan control
+            TextAboutPlanet=Landing impossible
+        }
+    }
+}
+Script ^{
+    Mod_ShuKlissan ^{
+        111=It was not the easiest of trials, but you succeeded, Ranger! The klissan lair has been completely destroyed, and the Pirate Clan, implicated in the gruesome story of trying to tame Machpella, has been decapitated and annihilated. We've already figured out who was the main cause of all this mayhem - <clr>Dalani Alakai<clrEnd>, who was considered as part of the "find and destroy" task for the Coalition's special forces. The clearly insane scientist had been trying to promote his idea of controlling the klissans for a long time, and was arrested for it. The special agents searched for him for years, and now it turned out that it was the renegades, led by their new Baron, who harbored the madman. You can well understand why we couldn't allow this technology to exist. It had to be done, <Player>, and we are grateful to you for eliminating the effects of perhaps the most atrocious of our failures. Your name, like that of all those who participated in the storming of the secret pirate base, will forever go down in Coalition history.
+        112=<Player>, even though we killed three heads at once, eliminating the pirate clan, putting an end to the klissan threat, and at the same time exposing Admiral Durdym's corruption by catching him trying to warn the senior Clan leaders about the impending assault, which was directly overseen by the Galactic Council, the dominator threat has not gone anywhere. But you, for your impossible efforts, deserve a retirement. It will give you a long peaceful life, and the Galactic Council personally offers you, as well as all participants in the assault, their own mansion in the most elite resort regions. You will no longer have to take care of anything, and it is your right to accept this gift right now.
+        113=<Player>, in the course of this operation we killed three heads simultaneously, destroying the pirate clan, putting an end to the klissan threat and at the same time exposing Admiral <clr>Durdym<clrEnd>'s corruption by catching him while trying to warn the Clan top leaders about an impending assault, overseen directly by the Galactic Council.<br>And, after such a successful operation, we can finally exhale in peace, confidently declaring that <clr>Galaxy has been liberated<clrEnd>. All major threats have been eliminated, and the remnants of all three sides of the conflict will be dealt with by our brave warriors in a matter of months. This is our hour, this is the hour of the Unity of the Five Races!<br>You, as a deserving warrior, deserve a pension. Retirement will give you a long peaceful life, and the Galactic Council personally offers you, as well as all participants in the assault, a mansion of your own in the most elite resort regions. It is your right to decide what to do with your life, but you must accept this gift without further delay, immediately after the Victory Concert.
+        114=Well done, <Player>, not a trace of Machpella is left! The entire klissan army detonated just twenty-four hours after the mothership was dismantled, and from then on, the threat posed by the renegade scientist is just another page in the history books. And much of the credit for that is undoubtedly yours, Ranger.
+        115=What's done is done, <Player>, we can't go back. This history will not be forgotten, and we will impose a serious ban on any research of this kind, so that the tragic events of the Second Klissan War will never be repeated in the future. Though we have used the tools of our enemies against themselves, the combat-ready remnants of the Clan remain like thorns in open space. Deprived of leadership but not combat power, they have broken into small gangs and continue to ravage captured worlds. Now we won't lose control as easily as our predecessors did, believe me. But we do not seek to impose any new difficulties on you, Ranger, your retirement is entirely deserved. The Galactic Council is even ready to provide you with your own elite mansion in one of the best resorts in the controlled part of inhabited space. However, you will get it for any decision you make. The only thing left is to put a few dozen signatures, and you can forget about all these working days.<br>
+        116=What's done is done, <Player>, we can't go back. This history will not be forgotten, and we will impose a serious ban on any research of this kind, so that the tragic events of the Second Klissan War will never be repeated in the future. And now that the thorns of the Pirate Clan have been removed and the dominators exterminated, there will be a time of peace, which hopefully will last as long as the universe itself will allow. Now we won't lose control as easily as our predecessors did, believe me. In the meantime, let's put aside all those unhealthy thoughts of a working days, and move on to a specially prepared banquet in celebration of win. <Player>, you're expected.
+        117=Well, that's it, Ranger, our boys are so far apart that there's actually nothing left of the remnants of the pirate thugs. There have been reports of lone ships hiding from the authorities, but my guess is that it will last exactly until they have no money left for fuel. The operation was a success. It couldn't have been more successful. But the miserable high command once again took all the credit for it... Well, at least your name keeps appearing on the front page of all their propaganda boasts. Well, the main thing is that this will only support the consolidation of the prevailing peace. And you'll get your reward, too - eliminating the last thorns that threaten the unity of the Five Races isn't like solving puzzles on unpopulated planets.
+        118=<Player>, great job. Congratulations, I think, are unnecessary here - we all know that your services to the Clan are trivially invaluable. The whole galaxy, little brother, the whole galaxy is ours now! Finally, no rotten Coalition, no mindless machines, nothing. Only the justice of our glorious brotherhood survived. And all thanks to the instrument you secured. Klissans are scary things, but staying on a leash will ensure the invulnerability of our power in this spiral arm.<br>Now that there are no enemies left, and the politicians serve the Clan faithfully, trembling at the potential devastation of their worlds by the klissan army - you, <Player>, are worthy to enjoy all the credit you deserve. Staying king of kings means you won't have to do anything at all except enjoy your new life. The galaxy will provide you with everything you could ever want. There's already a party in your honor for the entire sector, so it's time to have a good time after all the endless honest labor for the good of the common cause, hehe.
+        119=It was not the easiest of trials, but you succeeded, Ranger! The klissan lair has been completely destroyed, and the Pirate Clan, implicated in the gruesome story of trying to tame Machpella, has been decapitated and annihilated. We've already figured out who was the main cause of all this mayhem - <clr>Dalani Alakai<clrEnd>, who was considered as part of the "find and destroy" task before the Coalition's special forces. The clearly insane scientist had been trying to promote his idea of controlling the klissans for a long time, and was arrested for it. The special agents searched for him for years, and now it turned out that it was the renegades, led by their new Baron, who harbored the madman. You can well understand why we couldn't allow this technology to exist. It had to be done, <Player>, and we are grateful to you for eliminating the effects of perhaps the most atrocious of our failures. Your name, like that of all those who participated in the storming of the secret pirate base, will forever go down in Coalition history.
+        120=<Player>, in the course of this operation we killed three heads simultaneously, destroying the pirate clan, putting an end to the klissan threat and at the same time exposing Admiral <clr>Durdym<clrEnd>'s corruption by catching him while trying to warn the Clan top leaders about an impending assault, overseen directly by the Galactic Council.<br>And, after such a successful operation, we can finally exhale in peace, confidently declaring that <clr>Galaxy has been liberated<clrEnd>. All major threats have been eliminated, and the remnants of all three sides of the conflict will be dealt with by our brave warriors in a matter of months. This is our hour, this is the hour of the Unity of the Five Races!<br>You, as a deserving warrior, deserve a pension. Retirement will give you a long peaceful life, and the Galactic Council personally offers you, as well as all participants in the assault, a mansion of your own in the most elite resort regions. It is your right to decide what to do with your life, but you must accept this gift without further delay, immediately after the Victory Concert.
+        121=<Player>, even though we killed three heads at once, eliminating the pirate clan, putting an end to the klissan threat, and at the same time exposing Admiral Durdym's corruption by catching him trying to warn the senior Clan leaders about the impending assault, which was directly overseen by the Galactic Council, the dominator threat has not gone anywhere. Retirement will give you a long peaceful life, and the Galactic Council personally offers you, as well as all participants in the assault, their own mansion in the most elite resort regions. You will no longer have to take care of anything, and it is your right to accept this gift right now.
+        122=Congratulations, <Player>, on behalf of the entire pirate clan, on the worthy fulfillment of all the duties entrusted to the shoulders of the Supreme Baron! Now that the threat from the dominators has been minimized, we can engage in reforms aimed at strengthening pirate power and uniting all the planets under our control. So we suggest you, <Player>, as one of the brightest heroes of the last war, to change the cockpit for a stand of a politician! Think seriously about this proposal, because it opens up new horizons for you!
+        123=Congratulations, <Player>, on behalf of the entire pirate clan, on the worthy fulfillment of all the duties entrusted to the shoulders of the Supreme Baron! Your decisive purge of the ambiguous ranks created by the deceased Chushkach is impressive. Now that you have deservedly taken your new position, we can begin to work on reforms aimed at strengthening pirate power and uniting all the planets under our control. So we suggest you, <Player>, as one of the brightest heroes of the last war, to change the cockpit for a stand of a politician! Think seriously about this proposal, because it opens up new horizons for you!
+        126=That's right, <Player>, that's right. Only before he surrendered, the traitor had somehow blocked the nanite controls and activated the station's self-destruct system. Now the Machpella is out of control and in a static position, destroying everything within range of its guns. And as we speak, a large-scale enemy offensive is underway across the galaxy. We've never had to deal with so many klissans at once in this war - it looks like the rest of the flotilla has gone into battle. It's like the goddamn noughties have risen from the pages of history books.
+        127=You send a request for the status of the klissan fleet to the <clr>Handler<clrEnd>. Half a minute later, the following report appears in the onboard computer:<br><br>Z-TRANSMITTER CHARGE: <0> / 100<br>STATUS: <clr>Error 503<clrEnd><br>ATTACKING PHASE: <clr>Error 503<clrEnd><br>LOCATION: <clr>Error 503<clrEnd><br>TARGET SYSTEM: <clr>Error 503<clrEnd><br>MACHPELLA LOCATION: <clr>Error 404<clrEnd><br><br><clr>THE CONTROL SYSTEM IS MALFUNCTIONING, AUTOMATIC DIAGNOSTICS IS NOT POSSIBLE<clrEnd>
+        128=Ehhh, <Player>, not so long ago we were still fighting shoulder to shoulder against the Coalition and the Dominators, and now it's all part of history. A thousand klissans! It's a shame that there's not a single enemy left, the muzzles of the ship's cannons overgrown with cobwebs. Young people are tearing up peaceful ships, and we are already ashamed of such nonsense. Especially you, you're a pirate baron, after all...<br>So I completely understand and support your decision.
+        129=Specify the system that needs to be cleared of klissans.
+        130=The request has been relayed to the <clr>Handler<clrEnd>. The answer is yes. All klissans in the system will be destroyed.
+        131=Which of the additional studies are you interested in?
+        132=Specialists in this field are engaged in the revival of destroyed technology - <clr>Mental Communicator <clrEnd> - a device that allows you to get in touch with klissans. While collecting archival data and eyewitness testimonies of the device, scholars are also examining contemporary klissan scraps to get an idea of the metamorphosis that has occurred in their language during this time. This is the process you are invited to participate in.<br><br>We have <0> tons of material to collect before we learn the technology.
+        133=One additional direction is the development of the <clr>Z-Transmitter MK II<clrEnd>. This name is probably only familiar to you from ranger history courses, but the object itself is more than real - several examples have survived almost unscathed. The device is supposed to emit a gigantic high-frequency signal, reminiscent of the roar of a dying klissan. <br><br>But tests have shown that the sound wave has no effect on the klissans other than momentary confusion. Our scientists assume that over the past hundreds of years the klissans have developed an immunity, and are now trying to correct the pulse based on fresh data on the perception of the invaders.<br><br>We have <0> tons of material to collect before we learn the technology.
+        134=We are pleased to inform you that the first phase of research in this direction is coming to an end. Unfortunately, the side branches are handled by a small number of collaborators, and not all the material has been studied yet. <br><br>The approximate completion date is <0>. Return to the science base by then: you should definitely participate in the field trials.
+        135=Thank you for donating <0> tons of material! Your account has already been credited with <1> cr. as a thank you. <br>Experts predict that <2> tons of material must be accumulated before the next breakthrough.
+        136=On this day, <Player>, we finally succeeded in reviving the lost technology of the <clr>Mental Communicator!<clrEnd> We are proud to announce that the device, originally planned only as a means of communication, also allows <clr>scanning klissan ships<clrEnd>! <br><br>The first sample of the Communicator is already connected to your onboard computer. Remember, Ranger, that the Galaxy has already been saved once, so use it wisely.
+        137=Today, <Player>, we were able to restore and refine the <clr>Z-transmitter!<clrEnd> After many failed attempts, our experts have finally calibrated the unit so that a full wave of klissans will fly to its signal.<br><br>The device is already loaded into your cargo hold. We hope you will be able to correctly assess its power and direct the destructive power of the klissans against our common enemies, the Dominators and the Pirates.
+        139=[Signal transmission to the ship <0>... error 137<br>Trying again... error 137<br>Trying again... OK<br>Transmitting a signal to the ship <clr>Machpella<clrEnd>... error 508<br>Trying again... error 508<br>Trying again... error 508<br>Trying again... error 508<br>The probable cause of the error is <clr>signal blocked at the other end<clrEnd>]
+        140=[Transmitting the signal to the ship <clr>Machpella<clrEnd>... error 508<br>Trying again... error 508<br>Trying again... error 508<br>Trying again... error 508<br>The probable cause of the error is <clr>signal blocked at the other end<clrEnd>]<br>
+        141=Way to go, <Player>! By destroying the klissan brain center, you have officially put an end to the klissan invasion of our siral arm of the Galaxy. Surely this day will go down in history!<br>The next target is the <clr>Handler<clrEnd>. Let's finish the enemy off!
+        142=Thank you for your heroism, Ranger! Today, thanks to the genius of our scientists and your courage, we have ended the Third Klissan War and achieved a convincing victory over the pirate invaders. The surviving corsairs have been decapitated and demoralized, and it is now only a matter of time before all systems are finally cleared of their presence. All citizens of the Coalition salute you today! <br><br>But it's not time to celebrate yet! Our agents report that the station <clr>Handler<clrEnd> is hiding in the <clr>Nifigatz<clrEnd> system. We will provide you with full repairs, land at the station and move out immediately.
+        143=Ranger <0>, yes, yes, that's what you should be called, not some baron, though, as we've just learned, the pirates have recently given you that title officially. But that doesn't matter anymore. <br>I congratulate you on your victory! In one blow you defeated the pirate leader, Baron Chushkach, the corrupt Admiral Durdym, and the mad scientist Alakai. It's unbelievable! If I didn't know you were a ranger, I would have thought it was some kind of ridiculous accident. But no, you've proven yourself to be of the highest class. To gain the trust of the whole pirate community, to convince the whole Coalition that you have finally turned to robbery, and then to show your true face at the very moment when your actions could save the whole galaxy. <br>I got carried away with your praise, excuse me, your ears are already burning. <1>, today I do not offer any gifts for your actions, because even if I give you a billion credits - it will still be not enough to adequately evaluate your actions. And where do I get a billion, come to think of it. So I'm making you a unique offer. You can leave your ranger service and retire. We will provide you with new documents, a decent pension and a house, somewhere in a quiet picturesque place, and with the establishment of order in the Galaxy we will cope ourselves. Now that the pirates are psychologically broken and confused, they no longer dare to take over the Coalition systems. We've definitely got the better of them, and now all that's left is to capture and finish off the evil bandit individuals who are still alive. Pretending to be a pirate is no longer necessary. Forget about attacking peaceful ships and taking over star systems in favor of pirates. You no longer have to take those sins upon yourself. You have done your job, and you have done it well.
+        144=Yes, that is no longer necessary, and even more, it is absolutely out of the question. We know what a psychological ordeal it has been for you to fight your fellow Rangers and civilian ships, whom you had to destroy in order not to destroy your cover. If you like, we can even set you up with a course from the Maloq specialists. They are said to work miracles. After their chiropractic treatment, you won't even remember the turmoil you've been through.<br>Inspired by your exploits, newcomers are flocking to the recruiting grounds, so we have enough fresh meat to deal with the Dominators. Or you can go back to the front and prove that you're the best at destroying machines. Make up your mind, <0>.
+        145=Well done, <0>! You made a choice worthy of a real ranger! Indeed, how can one stand aside when there is an opportunity to bring the victory over the soulless machines even one day closer? And then you can already think about retirement with a house.
+        146=Well done, <0>! You made a choice worthy of a real ranger! Indeed, how can one stand aside when there is an opportunity to bring the victory over the soulless machines even one day closer? And the generals can wait.
+        147=Ranger <0>, it's finally you! We've been waiting for you! Allow me, on behalf of the entire network of Ranger Centers, to congratulate you on your complete victory over the pirate clan! You've done a great job in the task you've been given!<br>Unfortunately, while you bravely fought countless waves of pirates, Admiral Durdym managed to destroy Baron Chushkach and thus put an end to this vile pirate clan, and at a press conference held soon after, with journalists who "happened" to be nearby, the admiral said that it was all thanks to his "genius" leadership and "incomparable" bravery, but your name and services in the battle were not even mentioned. What a disgrace! Perhaps if you had not been so involved in the battle with the superior forces of the pirates and hurried to the station, everything would have been different and it would have been your name in the history books. But, as the proverb says, you can't take back what you had. But don't worry, we know who the real hero of this operation is! Your art of battle, <1>, has struck many respected generals, they are eager to read your report on the strategy of fighting the enemy, whose numerical advantage is difficult even to imagine. Pirate casualties numbered in the hundreds! If you wish to retire from ranger activity and settle somewhere far away from all that fuss, they are willing to assist you financially and provide you with a comfortable future, in exchange for your advice and knowledge of battle tactics. However, if you wish to continue your activities, we cannot stop you, but you will not have time to give out advice. What do you say?
+        148=Congratulations, <0>! From now on you are a real pirate baron. Wear this honorary title with the honor of a pirate of a new formation! <br>Today is a great day. How unfortunate that it is overshadowed by a sad event, the news of which reached here only an hour ago. Baron Chushkach, our leader and inspirer, was killed in action. If it were not for him, we would still be wandering around the cosmos in scattered groups and rejoicing in the crumbs that the Coalition allowed us to steal. It was he who brought us all together, reconciled the warring clans, and gave us the goal we almost reached. More than that, he built bridges of cooperation between the pirates and the official authorities of many star systems in the galaxy. Where once we used to steal and flee to escape the deserved retribution of the authorities, now the planetary rulers themselves share with us a share of their profits, for the services we provide them. It's a new stage in the evolution of the pirate community, no less, mark my words.<br>Baron Chushkach died, but you, <1>, are alive. And you have proved that you can be his worthy successor and continue his great cause. Your actions in today's battle confirmed this, and the pitiful cries of the jealous who try to besmirch your great name cannot affect our decision. Let them spread rumors in dark corners that it was you who killed Chushkach - we know that this is a black lie, and therefore we offer you, Baron, to be our new leader. <br>Keep in mind that such an offer is made only once in a lifetime.<br>Or you can make the biggest mistake of your life and go back to your miserable duties of destroying dominators. Your choice.
+        149=Yeah... That's the kind of thing we didn't expect from you, <0>. The guys are ready to celebrate, and you refused. Go back to your rusty tin cans if you like them better. I don't want to see you...
+        150=<0>, let me shake your hand. From now on, you are a true pirate baron. Wear this honorable title with honor! Not only did you help us repel the attack of the Coalition military forces, but you also took out Baron Chushkach. He was undoubtedly our leader, but the path he led us down was bringing us closer to the abyss by the minute. False successes in the field of cooperation with the rulers of the Coalition planets turned his head, and he began to turn us all from pirates into businessmen. He thought this was a new stage in the development of the pirate community, but in fact we pirates, free birds, should do what we like, not what the contracts with the corrupt rulers impose on us! We should rob, kill, party till we drop and obey no laws! This is our true way and today you reminded us of what we really are!<br>That's why, Baron <1>, we want to offer you to be our new leader! Say yes! Yo-ho-ho and a bottle of vtyquilla and all that! The voice of blood! I mean, after what we've offered you, are you really ready to go back to your dangerous and boring battles with the Dominators?
+        153=Disclosing information about combat developments is not standard practice, but we make an exception for rangers. <br>The current situation on front lines is following:<br><br>Coalition - <0>%<br>Dominators - <1>%<br>Pirates - <2>%<br><br>We are in total control of our arm of the Galaxy. In fact, <Player>, our sources report that all our enemies are defeated, and we're practically already celebrating victory today.
+        154=Disclosing information about combat developments is not standard practice, but we make an exception for rangers. <br>The current situation on front lines is following:<br><br>Coalition - <0>%<br>Dominators - <1>%<br>Pirates - <2>%<br><br>At this time we control about 90% of populated worlds. The enemy does not pose much of a threat; according to our estimates, we should liberate all captured systems as early as next year. <Player>, it is time to launch the final offensive!
+        155=Disclosing information about combat developments is not standard practice, but we make an exception for rangers. <br>The current situation on front lines is following:<br><br>Coalition - <0>%<br>Dominators - <1>%<br>Pirates - <2>%<br><br>Things are going well. The Rangers, combined with our armed forces, are slowly pushing enemy forces out of captured territories. Our technology at this point can successfully compete with the enemy's, and our weapons are effectively defeating their ships. So have faith, <Player>, in our victory! We are just now planning the liberation of the <3> system in <4> sector.
+        156=Disclosing information about combat developments is not standard practice, but we make an exception for rangers. <br>The current situation on front lines is following:<br><br>Coalition - <0>%<br>Dominators - <1>%<br>Pirates - <2>%<br><br>Recently, the initiative has been shifting from one side to the other. The enemies are reluctant to give up their positions, but the outcome is near. One side will prevail sooner or later, and hopefully the Coalition will win.<br>You, <Player>, can help us as much as you can by freeing up the <3> system in <4> sector.
+        157=Disclosing information about combat developments is not standard practice, but we make an exception for rangers. <br>The current situation on front lines is following:<br><br>Coalition - <0>%<br>Dominators - <1>%<br>Pirates - <2>%<br><br>At the moment we own only a small fraction of the mastered systems. This is a deplorable fact, as well as the fact that we are hopelessly losing.<br>A strategically important point for us is the <3> system (<4> sector). You must fly there, <Player>, and take part in combat operations.
+        158=Disclosing information about combat developments is not standard practice, but we make an exception for rangers. <br>The current situation on front lines is following:<br><br>Coalition - <0>%<br>Dominators - <1>%<br>Pirates - <2>%<br><br>At this moment, the situation on the fronts is terrible. Enemy forces are taking over system after system. <br>We are now going to take back the <3> system. If you, <Player>, want to take part in this operation, hurry up, as several rangers have already volunteered to participate in the liberation.
+        159=Disclosing information about combat developments is not standard practice, but we make an exception for rangers. <br>The current situation on front lines is following:<br><br>Coalition - <0>%<br>Dominators - <1>%<br>Pirates - <2>%<br><br>At this moment, the situation on the fronts is terrible. Enemy forces have already captured almost our entire arm of the galaxy. The surviving Rangers plan to launch an operation to free the <3> system. It's on people like you, <Player>, that we have all our hopes.
+        160=Disclosing information about combat developments is not standard practice, but we make an exception for rangers. <br>The current situation on front lines is following:<br><br>Coalition - <0>%<br>Dominators - <1>%<br>Pirates - <2>%<br>Klissans - <3>%<br><br>We are in total control of our arm of the Galaxy. In fact, <Player>, our sources report that all our enemies are defeated, and we're practically already celebrating victory today.
+        161=Disclosing information about combat developments is not standard practice, but we make an exception for rangers. <br>The current situation on front lines is following:<br><br>Coalition - <0>%<br>Dominators - <1>%<br>Pirates - <2>%<br>Klissans - <3>%<br><br>At this time we control about 90% of populated worlds. The enemy does not pose much of a threat; according to our estimates, we should liberate all captured systems as early as next year. <Player>, it is time to launch the final offensive!
+        162=Disclosing information about combat developments is not standard practice, but we make an exception for rangers. <br>The current situation on front lines is following:<br><br>Coalition - <0>%<br>Dominators - <1>%<br>Pirates - <2>%<br>Klissans - <3>%<br><br>Things are going well. The Rangers, combined with our armed forces, are slowly pushing enemy forces out of captured territories. Our technology at this point can successfully compete with the enemy's, and our weapons are effectively defeating their ships. So have faith, <Player>, in our victory! We are just now planning the liberation of the <4> system in <5> sector.
+        163=Disclosing information about combat developments is not standard practice, but we make an exception for rangers. <br>The current situation on front lines is following:<br><br>Coalition - <0>%<br>Dominators - <1>%<br>Pirates - <2>%<br>Klissans - <3>%<br><br>Recently, the initiative has been shifting from one side to the other. The enemies are reluctant to give up their positions, but the outcome is near. One side will prevail sooner or later, and hopefully the Coalition will win.<br>You, <Player>, can help us as much as you can by freeing up the <4> system in <5> sector.
+        164=Disclosing information about combat developments is not standard practice, but we make an exception for rangers. <br>The current situation on front lines is following:<br><br>Coalition - <0>%<br>Dominators - <1>%<br>Pirates - <2>%<br>Klissans - <3>%<br><br>At the moment we own only a small fraction of the mastered systems. This is a deplorable fact, as well as the fact that we are hopelessly losing.<br>A strategically important point for us is the <4> system (<5> sector). You must fly there, <Player>, and take part in combat operations.
+        165=Disclosing information about combat developments is not standard practice, but we make an exception for rangers. <br>The current situation on front lines is following:<br><br>Coalition - <0>%<br>Dominators - <1>%<br>Pirates - <2>%<br>Klissans - <3>%<br><br>At this moment, the situation on the fronts is terrible. Enemy forces are taking over system after system. <br>We are now going to take back the <4> system. If you, <Player>, want to take part in this operation, hurry up, as several rangers have already volunteered to participate in the liberation.
+        166=Disclosing information about combat developments is not standard practice, but we make an exception for rangers. <br>The current situation on front lines is following:<br><br>Coalition - <0>%<br>Dominators - <1>%<br>Pirates - <2>%<br>Klissans - <3>%<br><br>At this moment, the situation on the fronts is terrible. Enemy forces have already captured almost our entire arm of the galaxy. The surviving Rangers plan to launch an operation to free the <4> system. It's on people like you, <Player>, that we have all our hopes.
+        167=Our specialists analyzed the ownership of the systems and came up with the following results:<br><br>Coalition - <0>%<br>Dominators - <1>%<br>Pirates - <2>%<br>Klissans - <3>%
+        168=Our specialists analyzed the ownership of the systems and came up with the following results:<br><br>Coalition - <0>%<br>Dominators - <1>%<br>Pirates - <2>%
+        171=Back
+        173=Great!
+        174=Next
+        175=I'll do what I can!
+        176=I see
+        177=All right, I'll take your device. I promise to find Machpella and find out what's hidden behind this all
+        178=To the hangar
+        179=End of transmission
+        180=Wait, Dalani? So you were in the Coalition's service before this?
+        181=Buddy, you may not know it yet, but <clr>Chushkach<clrEnd> is gone. I make the rules here now.
+        182=It's hard to say, towards the end of the war, the enemies did begin to guess where the klissans might have come from and how to prepare them properly. But wait, Dalani? You were in the service of the Coalition before this?
+        183=Buddy, you may not know it yet, but <clr>Chushkach<clrEnd> is no longer in power. I make the rules here now.
+        184=And what is your interest in this, <clr>Alakai<clrEnd>? You wouldn't provide such a favor to the Clan without a personal interest, even considering they saved you from the gallows. Knowing Fae scholars, they wouldn't devote their entire lives to stupid revenge. Considering you're clearly not immune to the number of, um, accidental casualties that take place in every devastating klissan attack.
+        185=Okay, <clr>Alakai<clrEnd>, I like your approach. As the new Supreme Baron, I'll let you continue your experiments. But you'll have to limit yourself - we have no more enemies left, so stay here and shoot skeet. If you're happy with these conditions, we'll definitely be friends. But, just in case, keep in mind that if I order you to attack something, you'll have to jump up and provide me with decent reinforcements.
+        186=Okay, <clr>Alakai<clrEnd>, I like your approach. As the new Supreme Baron, I'll let you continue your experiments. But from now on, you will attack only those systems that I personally order. You understand yourself, the chain of command in this gathering of maniacs and other dumbasses is of the utmost importance.
+        187=You still don't seem to understand. A new order will now reign here in the Clan. I, <0>, don't want to see any trace of the foolish and hasty decisions of the Baron's past that led to his untimely death. I'm sorry, but I've seen what these pets of yours are capable of. Your project is too dangerous, <clr>Alakai<clrEnd>. Have you considered what would happen if the klissans developed immunity to nanites? With all the upgrades you've given them, they'd kill the entire Clan. I'm sorry, but you're gonna have to call it quits. Our elite teams will begin dismantling the station and cleaning up the klissan remnants immediately.
+        188=So long, <clr>Alakai<clrEnd>, and remember, if you even think about turning those pets of yours against the Clan, the backlash won't be long in coming.
+        189=Wait, Dalani? So you were in the Coalition's service before this?
+        190=Indeed, Chushkach failed even with that trump card up his sleeve. It will be a long time before he is free, if he will be freed at all.
+        191=The Dominator threat really still hasn't completely disappeared, and few would want to see more senseless deaths in this war. I'll let you keep your lab until the Dominators are completely eliminated, <clr>Alakai<clrEnd>, but keep in mind that once you're done with the machines, you'll have to shut down the project.
+        192=You're too naive, <clr>Alakai<clrEnd>. Did you really think I'd let you stay where you are after all you've done? Do you know how many innocent souls your experiments put to death, scumbag? You didn't take into account anybody, military or civilian, you even killed your own people who got in your way. So why the hell should I let you get away with it? Even if I agree to your terms, there's no guarantee you won't want to get away with wiping the life out of several of the capital planets of the Arm. No, my friend, you will pay for everything, here and now.
+        193=Maybe so, maybe not. But, you know, <clr>Alakai<clrEnd>, if I kill you, I'm no better than you are. Take your pets and get the hell off our arm. I don't care what happens to you, but from now on you're an outcast with no place in the restored unity of the five races. You have two weeks to get out of here, or you'll be dealt with otherwise.
+        194=So long, <clr>Alakai<clrEnd>, and remember, I'm watching you. If you think you're up to some kind of flashy trick, your base will be blown apart faster than you can open another portal.
+        195=All right, all right, damn it. I'll take care of it. I can't help it. And you'd better have a better reward this time than a bunch of second-level micromodules, gentlemens.
+        196=Start the attack
+        197=End
+        198=That's right!
+        199=Happy to help
+        200=I do not have any klissan material in my cargo bay
+        201=Did you really succeed? Is Alakai captured?
+        202=Let me guess, you want me to go and do all the dirty work for you now?
+        208=I was just doing my job
+        209=You've got to be kidding me. Going through all this just to run away from the battlefield? Well, no, I can't sleep easy knowing the toasters keep slaughtering us in packs. You can sit on your asses on the home front all you want, but I'm going back to the front now!
+        210=Thank you, I have no right to refuse. Show me what you have in store for me.
+        211=It was a shame to kill her, really. Machpella was subject to someone else's will... who knows what she was really thinking? Who knows how her fellow creatures might react to it? If only there was a way to study those damned nanites...
+        212=I hope you're right... well, let's not waste any time.
+        213=Resign! Ha! I've laughed more from lone pirate raids on flagships stacked with anti-spacecraft guns up to their doozies than I have from your oddball humor. I didn't burn through all those years just to run away from the battlefield. And it's not my policy to leave a case half-finished. I won't rest as long as there is atleast one more of the clan's bastards sailing through the space. All you little rats, have a nice stay.
+        214=You're right, I've been through enough. All these endless battles don't go away. I don't know what awaits us all on the horizon, but I've already played my part in this whole spectacle. Bring your documents.
+        215=It was too easy. Without a sensible command, most of the pirates had turned into simple maniacs behind panels with big red buttons - in short, children. Strong, armed to the teeth, but stupid, straightforward, and damn naive. I don't consider this last job to be anything supernatural, but I still accept your congratulations. Our goal now is to preserve this blood-gained peace for future generations, isn't it?
+        216=Yeah, they got what they deserved. Every last one of them. It's a bit sad to part with the war, but I think we'll find some more competition. Now lead the way, my friend, let's have a good time! No one can resist the might of the Pirate Brotherhood!
+        217=I was just doing my job.
+        218=I can't rest peacefully at the resorts while the Ranger Brothers die. I'm going back to the front.
+        219=You know, you're right. I'm tired of all these space battles. I'll leave it to my space colleagues. Following the example of our warriors, they will surely take out the Dominators.
+        220=I agree, I'm tired of wandering the cosmic expanse, I want to retire!
+        221=No way, our unity is still threatened by too many external enemies, my friend. What do you think I am, the Supreme Baron, or some kind of backstabbing rat? That's right. So long, I'm going back to the front. Before I've emptied another stockpile of vtyquilla, I'll be shoveling them all clean, mark my words.
+        222=That's a great idea. I've got a lot to do, but now let's relax a little bit!
+        223=Can't be more precise
+        224=Summon Machpella
+        225=Give the zero-order
+        226=Additional research
+        227=Mental Communicator
+        228=Z-Transmitter MK II
+        229=To the main study
+        230=Happy to help
+        231=All systems
+        232=Summon Machpella (<0> days)
+        233=Roger that, I'm on my way
+        234=So I don't have to take over the Coalition systems anymore?
+        235=Yes, I agree. Always preferred fishing more than killing dominators.
+        236=No, I can't live in peace while the Dominators destroy civilians. I'm going back to the front.
+        237=Right.
+        238=Of course, I agree to be the new leader!
+        239=I would rather concentrate my efforts on destroying the dominators.
+        240=Bye.
+        241=Of course I agree! Pour it!
+        242=The dominators are too serious of a threat to simply brush it aside and forget about it. I must do my duty.
+        243=Roger that
+        244=Got it
+        248= Gigas
+        250=You put your trusty ship in eternal rest and started your own trading enterprise. Even though you didn't solve all the mysteries of the klissans by simply erasing such an unpredictable threat from the game board, it was probably the best decision for the whole galaxy. Every now and then clashes broke out in different systems with dominator underdogs, most of them settling on hidden planetary bases that defied surface reconnaissance, but they were quickly suppressed by the military and political power of the Coalition, united as never before. And the madman Alakai was simply forgotten, like a nightmare never to be repeated. Your Ranger knowledge was well suited to successfully organize the ambitious projects you undertook, first in one system and later in the entire star sector, and you soon had an entire trading empire under your control, surpassing even the famous Caragon Post in terms of demand. <br> <br>    Fourteen years later, from the moment you replaced the cockpit with a desk full of papers, you haven't encountered anything that resembled war, except the occasional pirate attack. Only occasionally did you return to your ship, which had long since lost its former technological relevance, nostalgic for those times. Even in the distant future, when you passed the ownership of your new corporation into the hands of your young successor, you understood - your life, at last, became full-fledged. At times the only thing that bothered you was that even fifty years later, the Coalition's scouts came across miniature dominator bases on various uninhabited planets, seemingly completely devoid of any sense of belonging to a certain series. They were by no means technologically ahead of the Coalition, but surprisingly, they were hardly behind, with no visible collective connection whatsoever. But you knew - after all those years, it couldn't have made any difference, could it?
+        251=But history was in no hurry to end there. In the future, many historians will argue about what was the root cause of all further events, and the consequences of whose decisions were nevertheless to blame. The exiled <clr>Alakai<clrEnd>, who traveled to the neighboring arm of the Galaxy, settled in the abandoned Eltan colonies, the Gaalian settlements that had been ravaged by the klissans before the war. So, using ancient but working equipment, <clr>Alakai<clrEnd> rebuilt his laboratory and, as if nothing had happened, continued his experiments, capturing and subduing three more Machpellas in twenty years. The years of loneliness were slowly but surely eating away at the feyan's mind from the inside, and, thirty years later, he returned from his shameful failure in Tortugatz - obsessed with a thirst for revenge. The four Machpellas, with a truly incalculable fleet of klissans behind them-the military of the Coalition, which had not long ago disposed of all its enemies and had not yet fully regained its fighting power, simply could not oppose anything. In a matter of years, the klissans had wiped out everything the Five Races had called themselves, leaving chaos, anarchy, and worlds scorched to the ground. Eventually, the Special Forces tracked down and eliminated the mad scientist by activating a self-destruct protocol on all klissan flotillas under their control, and the war ended as abruptly as it had begun. But the fire that spread across the galaxy was unstoppable - the struggle for resources, power, and simple survival would bury the formerly united worlds in the abyss of endless internecine strife, and the Coalition would never be able to fully recover.
+        252=<PlayerFull>, you must urgently arrive at the nearest functioning pirate station.
+        253=The device redirected a klissan hyperspace stream into your system. Enemy reacted to the sabotage and sent additional reinforcements. The next redirection may occur in <0> days.
+        280=Reconquest
+        281=Coordinates of system <0> sent to CAFIC. <br>Response: "This is the captain of the military base <clr>Reconquest<clrEnd>. Eliminate as many enemy units as possible. Hold on until reinforcements arrive."
+        282=The generator automatically sent the coordinates of the system <0> through the secret CAFIC communication channel. Having mentally cursed the device, you continued piloting, when suddenly you received a message on the same channel. <br>Answer: "This is Captain of secret military base Reconquest. We never doubted you. Eliminate as many enemy units as possible. Hold on until reinforcements arrive."
+        283=I would like to contribute to anti-klissan research
+        284=Hand in a batch of protoplasm: <0> tons for <1> nodes.
+        285=How can I help the Coalition in the war against klissans?
+        286=Klissan management
+        287=Tell me about the course of military operations
+        288=Tell me in details about the military developments on fronts
+        293=<PlayerFull>, you are hereby instructed to report to the nearest ranger center immediately. <br>Dress uniform, please!
+        294=It took years to study the reasons for the klissans' return, and, just as importantly, the nature of their current semi-mechanical metamorphosis. Only to realize that once again the pirates were behind it all. Trained by Rachekhan's bitter experiences leading up to the Klissan War, the corsairs went much further than their predecessor, using the writings of the renegade Dalani Alakai, who had gone on the run for his scientific work on the use of nanites capable of overriding the Klissan life-form.
+        295=To say that you made a significant contribution to the end of the war in favor of the Coalition is to say nothing. Having personally influenced all the key events that led to the total and unquestionable collapse of both the Dominators and the Pirates, you became an almost instant favorite as soon as most of the documents, which no longer needed to be kept secret, reached the public press. For the next few years your face was constantly on the screens and in the newspapers, and a couple of books were even written about your career as a Ranger. On top of that, you were constantly being asked to be a showman and a politician. However, it seemed to you at once that it is one and the same profession, but for some reason called differently. So you politely but firmly rejected all offers of this kind. <br> <br>    When peace in the inhabited arm of the galaxy was finally established and no longer threatened, the Ranger Corps was honorably disbanded in a lavish ceremony that honored all those who had fought. You were invited to be the master of ceremonies, and you were glad to see old comrades with whom you had often fought shoulder to shoulder. <br> <br>    Most of the former Rangers returned to civilian life, and some, especially the hot guys, you offered to work together again and founded an elite security agency. After a couple of years, the whole galaxy knew about your firm and the quality of your services, after which you were literally flooded with orders. No pirates or extremists could match the skills of your employees, former fighters of the Coalition. You quickly secured a comfortable livelihood, but you were the head of the firm until your old age, and you retired as a highly respected figure.
+        296=After eliminating the klissan and dominator threats simultaneously, you've had your share of fame. However, the appearance of your face on every screen in the galaxy led to your ship being attacked a few days later by a well-organized group of pirate liquidators, and you miraculously survived. Realizing that the pirates would never leave in peace the one who uncovered their insidious plans and decapitated the organization, you made the decision to simply disappear. The Coalition's special services staged a collision between your ship and a large asteroid and then gave the Coalition hero a lavish funeral, which you watched live on the stereovisor.<br> <br>    New documents and a new name, as well as a large bank account, gave you the freedom to choose your future destiny. Now you could rest in the best interstellar resorts until the end of time. Or, alternatively, accept the offer of the commander of the Coalition intelligence service and become a mentor to the new generation of special agents. And you could also take up writing memoirs in the style of a fantasy novel or learn to play the ancient human instrument - the accordion...<br> <br>    But one day you happened to be near the building of a special military training center, you saw a poster: "The Galaxy needs Space Rangers!", which helped you make the final decision...
+        299=Handler and Machpella's secret facility are subject to immediate destruction.
+        300=The Machpella has been successfully eliminated. You may leave the secret sector.
+        301=It took years to study the reasons for the klissans' return, and, just as importantly, the nature of their current semi-mechanical metamorphosis. Only to realize that once again the pirates were behind it all. Trained by Rachekhan's bitter experiences leading up to the Klissan War, the corsairs went much further than their predecessor, using the writings of the renegade Dalani Alakai, who had gone on the run for his scientific work on the use of nanites capable of overriding the Klissan life-form.<br>    As a result of a successful operation personally overseen by the Galactic Council, the Handler facility, from which manipulation of the nanite-infested Machpella was carried out, was destroyed along with it. At the last moment, Handler's crew activated the station's self-destruct system itself, unable to carry the cargo imposed upon them - as a result, nothing remained of Alakai's research but scattered atomic dust. Nothing could survive the simultaneous detonation of ten quark bombs, laid down as a failsafe in case of unforeseen circumstances.<br>    You retired with dignity, enjoying a peaceful life and proudly watching the reports in Galanet as your colleagues dismantled one dominator brain center after another. Sadly, that peace was short-lived - soon after the combined forces of the Coalition had staged a Second Gralgar, driving the remnants of the Dominators there, huge deposits of disodium were discovered on the planet where your mansion was located, giving the entire system a sudden, significant strategic significance. The Dominator counterattack of desperation was not long in coming, and soon you found yourself in the midst of invaded territories. Unable to watch the toasters scorch the megalopolises standing in the fields, the ranger in you reawakened and you joined the local resistance, soon dying heroically while protecting a group of civilians from Dominator combat robots determined to install another factory at the location of your hideout. Since then, the name <0> will forever remain in the ages, carved into the Heroes Memorial of the planet that, albeit briefly, became your new home.
+        302=It took years to study the reasons for the klissans' return, and, just as importantly, the nature of their current semi-mechanical metamorphosis. Only to realize that once again the pirates were behind it all. Trained by Rachekhan's bitter experiences leading up to the Klissan War, the corsairs went much further than their predecessor, using the writings of the renegade Dalani Alakai, who had gone on the run for his scientific work on the use of nanites capable of overriding the Klissan life-form.<br>    As a result of your swift attack on the unprepared Alakai for the instant response, the Handler facility from which the nanite-infested Machpella was manipulated was destroyed along with it. At the last moment, Handler's crew activated the station's self-destruct system itself, unable to carry the cargo imposed upon them - leaving nothing but scattered atomic dust from Alakai's research. Nothing could survive the simultaneous detonation of ten quark bombs, laid down as a failsafe in case of unforeseen circumstances.<br>    You retired with dignity, enjoying a peaceful life and proudly watching the reports in Galanet as your colleagues dismantled one dominator think tank after another. Sadly, that peace was short-lived-soon after the Coalition's combined forces had staged a Second Gralgar, driving the rest of the Dominators into it-the discovery of vast deposits of disodium on the planet where your mansion was located gave the entire system a sudden strategic importance. The Dominator counterattack of desperation was not long in coming, and soon you found yourself in the midst of invaded territories. Unable to watch the toasters scorch the megalopolises standing in the fields, the ranger in you reawakened and you joined the local resistance, soon dying heroically while protecting a group of civilians from Dominator combat robots determined to install another factory at the location of your hideout. Since then, the name <0> will forever remain in the ages, carved into the Heroes Memorial of the planet that, albeit briefly, became your new home.
+        315=Enslave the Galaxy.
+        316=Urgently arrive at the nearest Ranger Center.
+        317=It took years to study the reasons for the klissans' return, and, just as importantly, the nature of their current semi-mechanical metamorphosis. Only to realize that once again the pirates were behind it all. Trained by Rachekhan's bitter experiences leading up to the Klissan War, the corsairs went much further than their predecessor, using the writings of the renegade Dalani Alakai, who had gone on the run for his scientific work on the use of nanites capable of overriding the Klissan life-form.<br>As a result of a successful operation personally overseen by the Galactic Council, the Handler facility, from which manipulation of the nanite-infested Machpella was carried out, was destroyed along with it. At the last moment, Handler's crew activated the station's self-destruct system itself, unable to carry the cargo imposed upon them - as a result, nothing remained of Alakai's research but scattered atomic dust. Nothing could survive the simultaneous detonation of ten quark bombs, laid down as a failsafe in case of unforeseen circumstances. But the fun part is just beginning - after all, a dominator threat awaits you, and it's about time someone put an end to it, once and for all! Onward and upward!
+        318=Eliminate the pirate threat.
+        319=It took years to study the reasons for the klissans' return, and, just as importantly, the nature of their current semi-mechanical metamorphosis. Only to realize that once again the pirates were behind it all. Trained by Rachekhan's bitter experiences leading up to the Klissan War, the corsairs went much further than their predecessor, using the writings of the renegade Dalani Alakai, who had gone on the run for his scientific work on the use of nanites capable of overriding the Klissan life-form.<br>As a result of your swift attack on the unprepared Alakai for the instant response, the Handler facility from which the nanite-infested Machpella was manipulated was destroyed along with it. At the last moment, Handler's crew activated the station's self-destruct system itself, unable to carry the cargo imposed upon them - leaving nothing but scattered atomic dust from Alakai's research. Nothing could survive the simultaneous detonation of ten quark bombs, laid down as a failsafe in case of unforeseen circumstances.
+        320=After careful consideration, you agreed to lead the pirate community. In order to do so, however, you had to leave the ranks of the Space Rangers, and give up all the benefits and privileges granted to every veteran who bravely defended the interests of the Coalition.<br> <br>    In return, you were given the opportunity to bring back the days of the former pirate romance, which you successfully realized. Thanks to you the word of honor of a noble pirate has regained its former value!<br> <br>    Despite your controversial reputation, you have lived a long and happy life, enjoying great respect not only among your fellow brothers, but also among those who fought with them. And legends of your bravery and justice were passed from generation to generation not only with the help of the latest technical devices, but also as in the good old days: from man to maloq, and from maloq to all the rest with a help of pelengs, of course, for a fee. Except that this didn't apply to the dominators, who usually didn't accept any payment, and weren't in a hurry to pay either. That didn't save them from defeat, though - using the Coalition military as a human shield, your people managed to get in the dominators' rear lines and eliminate all their remaining main centers, proving once and for all that both in strength and spirit, pirate romance trumped them all.
+        321=You made the decision to destroy Alakai, deeming him too dangerous. The rest of the pirates supported your decision, thereby only strengthening the authority of the new Supreme Baron - after all, the Pirate Clan speaks best in the language of strength, which you managed to demonstrate absolutely unprecedented.
+        322=You put your trusty ship in eternal rest and took on organizational work for the benefit of the pirate clan. Though you did not become a pirate baron, your ranger knowledge was highly relevant to the successful organization of the ambitious projects you undertook, first within one pirate planet and later within the entire star sector. <br> <br>    Fourteen years after you left your cockpit for your cluttered office desk, you were nominated for planetary governor and won the election in the first round, with an overwhelming margin of victory. After serving in that post until your retirement, you ceded your seat to a younger contender and retired to tell your grandchildren on long winter evenings how you fought the dominators and the hundreds of other fascinating stories that happened to you in your rich Ranger past.
+        323=Once again you have accepted an offer that was hard to refuse. By agreeing to lead the pirates, you have finally broken with your past, in which you were one of the heroes of the galaxy - the Space Ranger. You were deemed dead by your command, paying your family the compensation owed in the amount of <0> cr.<br> <br>    In your new life you have developed a lot of activity, taking the course of further integration of the pirate community into the official circles of power. Using such tools as bribes, threats, blackmail and physical elimination, you almost managed to take over the leadership of the Coalition. And now, when you already felt yourself without five minutes of a gray cardinal or even emperor of the galaxy, a hired killer aptly crossed out your claim to supreme power. The name of the customer remains unknown.<br> <br>    But do not get upset: at least you got into the galactic encyclopedia!
+        324=Attention, citizens of the Galaxy! Whatever flag you fly, under whomever command you serve, please listen to us, the personnel of the <clr>Handler<clrEnd> station, who have been spawning hordes of klissans all this time! <br> We've had enough! We are tired. Tired of these crazy experiments, tired of the consequences created by a supreme power obsessed with its own ambition! The whole thing is madness, and it has been madness from the beginning. <br> Our leader, <clr>Alakai<clrEnd>, was striving for his childhood dream. His morals were just as... childish. We didn't give it much thought, for all of us it was just a game... another mystery that we sought at all costs to solve. Except, really, for what? <br> We felt it would turn out that way, but we were too weak to resist. Anyone who disagreed was immediately destroyed. But we are no longer afraid. We will redeem ourselves to the millions who suffered, and to those we tried to subdue. <br> Listen up, our time is running out! We destroyed the madman, but he managed to activate the station's self-destruct system. We can't escape. No escape pods were provided in the construction of the secret object. Therefore, we will take the last mention of the possibility of controlling the klissans with us to the grave. This is a weapon that should not exist, and we will end it here and now. <br> Goodbye.
+        325=With power beyond the dreams of the late Chushkach, the Pirate Clan soon established complete and unrestrained control over every inhabited corner of the galaxy, under your wise and sensitive guidance, of course. The further evolution of the klissans surpassed all possible expectations, and soon the organic armada had easily surpassed the level that only a Blazer could achieve. Nothing in the Galaxy was capable of withstanding such power, and all the pieces on the game board except your own were literally swept away.<br>    The Alakai project flourished under your wing, as did the scientist himself, who became the second most powerful person in the Clan - nothing else prevented him from making a full-scale experiment on humanoids and sometimes entire colonies, which served him as a kind of a testing ground.<br>    Your success was unstoppable - after another few years of eradicating rebel movements and imposing order within the newly invaded Galaxy, you finally achieved your main goal, establishing total control with your person at the head. But unfortunately, your success played against you - such a concentration of power in the hands of one man's position immediately made him a prime target for countless rivals, and one day Alakai, bribed by the former Dzuhallagh - now one of the most famous pirate syndicates - sent a new army of klissans that turned your luxurious warship into atomic dust in less than a few hours. Thus ended the story of the great ranger who led the new world order-quickly, ignominiously, and without a chance to respond, and your place was soon taken by Alakai himself, playing the role of a public puppet in the hands of the behind-the-scenes organizers of all the madness.<br>    You were no longer destined to see this, but the totalitarian society formed by your conquering achievements soon turned into one big cash cow, being mercilessly and relentlessly slaughtered by the supreme leadership. And your name - it was simply forgotten.
+        326=<0>
+        329=Visit the nearest pirate base immediately.
+        330=Enslave the Galaxy
+        331=<Player>! <br> We know who you sympathize with and what you seek, but our scouts recently found further circumstantial evidence linking the klissan invasion to the pirates: certain technologies used in the klissan equipment bear some conceptual similarities to those that have fallen into the hands of the Clan. It's too early to say anything for sure, but we urge you to do your best preliminary research on the threat you're about to face. If our assumptions are even partially correct, it is suicidal to face the dual threat unprepared. Perhaps our science base network research teams can help you in this difficult matter.
+        347=Unidentified hostile ships have been detected in the <0> system. All ships transiting this system are advised to change course.
+        348=Unknown ship
+        349=Kharn
+        350=You send a request for the status of the klissan fleet to the <clr>Handler<clrEnd>. Half a minute later the following report appears in the onboard computer:<br><br>SUBPORTAL GENERATOR CHARGE: <0> / <clr>100<clrEnd><br>STATUS: <1><br>ATTACKING PHASE: <2><br>LOCATION: <3><br>TARGETED SYSTEM: <4><br>THE LOCATION OF THE MACHPELLA: <5><br>
+        351=<br>
+        352=Happy to help!
+        356=Hell Wave
+        357=Machpella
+        358=Handler
+        359=<Player>, let me congratulate you on your victory! The Blazer, Keller and Terron series of dominators have been defeated, as have the pirates. This time the Interstellar Coalition forces have won a convincing victory. Also, do not forget that along with the Clan, the madman Alakai was defeated and banished. You have allowed him to leave this arm of the Galaxy, so it is unlikely that he will be able to assert himself anytime soon, even if he wanted to. All five allied races: maloqs, pelengs, humans, faeyans, and gaalians salute you today! The work of the Ranger Centers will soon be discontinued. The Galactic Council thanks all Rangers and asks that you surrender your badges. Some of the Rangers will retire, and the most desperate will be able to join the Coalition armed forces. The choice is always yours, <Player>. And now let me invite you to a celebratory concert, dedicated to the victory of the Coalition forces over the enemy! And don't worry, there will be no pompous pageantry, ridiculous awards and insincere speeches. After all, the modesty of the Rangers is known to all. That's why the concert will be special, beautiful and stylish, worthy of real heroes!
+        360=Well done, <Player>, the Clan has been defeated, and Alakai is no longer a threat. We've been hunting him for years, but ironically it was a pirate who was the persona non grata. Well, don't look at me like that, you were very good in your role, especially when you stormed that corrupt Durdym's lair, like a real cutthroat. As for Alakai... should you have let him just walk away? I have a bad feeling about this. Your optimism isn't shared by the Galactic Council. <0>, you are expected at a banquet where you will receive your reward in person from the Galactic Council - an impressive sum of money and a mansion at one of the best resorts in the galaxy. Yes, you heard right, the Council has finally appreciated the work done, so you can go to a well-deserved retirement. Wouldn't you agree? Then follow me.
+        361=Yes, I agree.
+        362=We are happy to bring you the fact that both the dominators and organized crime stndicate are dead. The Blazer, Keller and Terron series of dominators are no longer a threat, nor are the pirates. The Interstellar Coalition forces have won a convincing victory this time. All five allied races: Maloqs, Pelengs, Humans, Fayans, and Gaalians salute you today!!! Also, let us not forget that along with the clan, the madman Alakai was defeated and banished. The work of the Ranger Centers will soon be discontinued. The Galactic Council thanks all Rangers and asks that they surrender their badges. Some of the Rangers will retire, and the most desperate can join the ranks of the Coalition armed forces. The choice is always yours, <Player>. Thank you! Farewell.
+        363=Yes, the goal has been reached and the time of peace has come. We invite you to attend a festive concert dedicated to the victory of the Coalition forces over the Dominators!<br>And don't worry, there will be no pompous pomp, ridiculous awards and insincere speeches. After all, the modesty of the Rangers is known to all. That's why the concert will be special, beautiful and stylish, worthy of real heroes!
+        364=I understand your anger. But you must also understand that we are not to blame for the end of the war. It's your victory, <Player>!<br>All we can do is invite you to a celebration concert dedicated to the Great Victory!<br>And don't worry, there will be no pompous pomp, ridiculous awards and insincere speeches. After all, the modesty of the Rangers is known to all. That's why the concert will be special, beautiful and stylish, worthy of real heroes!
+        365=It's great, <Player>, that you're looking to the future with optimism. You must have a great future!<br>Let me invite you to a festive concert dedicated to the victory of the Coalition forces over the Dominators! And don't worry, there will be no pompous pomp, ridiculous awards, and insincere speeches. After all, the modesty of the Rangers is known to all. Therefore, the concert will be special, beautiful and stylish, worthy of real heroes!
+        366=Thank you for your trust. I never have thought I'd regret the end of the war...
+        367=Damn your peace! I didn't fight to die in my bed!
+        368=Glad the war is over. I have other interests in life as well.
+        369=Well, you've got me intrigued. Okay, I'm going to the concert!
+        370=Oh, if I knew that it would all end like this, I would fight way more. Okay, go ahead with your opera!
+        60=You can turn in klissan equipment and remains at the department's branch, and we will pay double for the latter. By donating materials you are contributing to the making of <clr>discovery<clrEnd> - getting us some theoretical knowledge and, eventually, a complete study of the klissans. You may also be interested in side research aimed at the study of auxiliary anti-klissan devices.<br>So far we have made <0> discoveries. According to expert predictions, we need to accumulate <1> tons of material before the next breakthrough.
+        61=Great news, Ranger! Thanks to the efforts of our department and the steady flow of research material, we have been able to make our first significant breakthrough in the study of the returning klissan threat. <br><br>First of all, all of our speculation that the branch of klissan evolution that we are dealing with today is fundamentally different from the one the Coalitions met at the dawn of the last millennium is exactly confirmed. <br>We don't fully understand how the new klissan grouping system works, but apparently - this Machpella, to facilitate management of its own organs, doesn't use direct communication, but resorts to so-called <clr>neurolinks<clrEnd> - intermediate nodes that serve a kind of administrative role. Don't be fooled by the relatively small number of attackers, <Player> - neurolinks allow Machpella to maintain many times larger potential fleets than its standard variation, and operate them in the remotest parts of the Galaxy without the slightest coordination disruption. When confronted by the enemy, we strongly recommend attacking these nodes first, otherwise the effectiveness of a counterattack can be called into question. <br><br>Based on the analysis of the basic functionality of the examined klissan material, as well as comparing the damage on the hulls of our ships, we were able to figure out some principles of the new line of enemy guns, here is a list of what our scientists were able to confirm:<br>- the number of currently known klissan weapons varies between ten and fifteen types;<br>- some klissan ships possess armor-piercing weapons that bypass the protective field and hull defenses;<br>- most klissan weapons have additional functions, such as equipment damage, electromagnetic radiation, deceleration, often in various combinations;<br>- klissans have only one type of missile weapon, the Protomatrix, used by the Katauri ships.
+        62=Thank you for donating <0> tons of material! Your account has already been credited with <1> cr. as a thank you.<br>Experts predict that <2> tons of material must be accumulated before the next breakthrough.
+        63=We are pleased to inform you that the efforts of our department for the study of klissans have not been in vain and we have achieved some successes. First of all, our scientists were able to understand the nuances and functionality of the modern structure of klissans. We have made a number of unique discoveries, but in some areas we have achieved exceptional success. <br><br>You have probably been in black holes and have an understanding of how the portal function of neurolinks works, don't you? In a hyperspace clot inside a wormhole, there is always an exit leading to a certain point in space. Unlike the klissans, we have only learned to predict where this exit will lead - they have full control over the process of creating and stabilizing the wormhole and are able to send their ships wherever they want. For this purpose, their bodies have special organs, peculiar nerve centers, that create a subspace wave that corrects the direction of the wormhole. <br><br>After many attempts, we were able to create a <clr>portal device<clrEnd> using parts of these organs, and if our calculations are correct, you can use it to stabilize the reverse flow of the klissan wormhole before the neurolink and exit it into the system that is the invasion base. That's most likely where you'll run into their mothership, the <clr>Machpella<clrEnd>.
+        64=Nevertheless, during the last war we were able to connect the biological equipment of the klissans to the systems of our ships. Despite the general alien structure of the klissans' bodies, some of their organs are simple enough to be studied and adapted for use on our ships. However, we cannot be sure whether these organs function to their full potential on our starships, or whether the klissans have them working in some other way as well, but at least we can achieve a working symbiosis.<br>In fact, your task remains the same - try to shoot down as many enemies as possible and bring us as many materials as possible to study. We can use absolutely everything you can get: some parts of the klissans are already familiar to us and you can try to put them on your starship, but the unexplored fragments are of special value to us.
+        65=Unfortunately, the current situation with the appearance of klissan ships in our worlds is still completely unclear, as are the detailed circumstances of the entire incident. Despite the fact that two centuries ago, during the Second Klissan War, the Rangers, with the help of an advanced scientific development - the Mental Communicator - were able to establish contact with the klissan brain center and resolve the conflict peacefully, now their ships have again invaded our space. They attack other starships without warning for no apparent reason. It is also worth noting that the on-board computers are marking the klissan ships as pirate ships due to their absence from the databases.  <br>Unfortunately, we were unable to locate the person responsible for the Machpella attacks, but our analytical departments are now working hard to resolve the issue.
+        66=However, as it turned out during several encounters with invaders, their structure has changed considerably - the klissans actively use semi-mechanical equipment, and the old organs have either died out or fundamentally transformed, changing the main function. Whether this is the result of two hundred years of evolution or outside interference is unknown.<br>One of the main features of the "new" klissans is that they create large nests in space - neurolinks - to incubate new ships and regenerate old ones. These structures pose a great danger to both system inhabitants and pilots, so their elimination is encouraged.
+        67=Right now, the best way to help the Coalition in this struggle seems to be to donate the klissan materials to scientific bases for further study. Only by getting to know the enemy can we win this war.
+        68=In the two hundred years since the last war, the klissans have evolved, and their ships may look virtually identical to the data in our archives, but we have seen firsthand that this wave of klissans is quite different from the branch the Coalition encountered three centuries ago. Their structure is more perfect, and their technology is in many ways superior to anything we have ever encountered before. Most importantly, the structure of this race is crystalline rather than protein-based, shattering nearly all our assumptions about them as organic beings. Even the simplest processes in their bodies are completely alien and incomprehensible to us, and we can only try to describe them by selecting analogous or similar terms from our language. The working principle of the klissan equipment in general remains a mystery of all mysteries to us.
+        69=But that's not all. In the course of our research, we discovered another modest nuance.<br><br>As you probably know, the protoplasm of klissan is a cluster of crystalline structures that act as "ship cells". And in absolutely all specimens we distinguished one regular similarity - <clr>protoplasm turned out to be infected with a lot of nanites of biomechanical origin. <clrEnd>We assume that it could be some kind of virus launched by the civilization, which the klissan scouts might have encountered. It is likely that this is the true cause of their previously unexplained aggression.<clrEnd> <br><br>In addition, we assume the process is reversible - the biomechanisms do not damage the klissan crystals, but merely parasitize on them, enslaving the klissan ships. Ranger, if our hunch is confirmed and the contagion can be eradicated, follow the voice of reason and <clr>try to find a way to resolve the conflict peacefully<clrEnd>.
+        70=Counting on you, <Player>, and good luck!
+        71=Mr. Supreme Baron, I kindly ask you to arrive to the <clr>Handler<clrEnd> station as soon as possible. There is a matter requiring your intervention. All details on the spot.
+        72=Well, pirate laws are notorious for the fact that they can be changed at will, whenever they want. They wouldn't force me to give up my old rank, and on the contrary, encouraged it far more decently than the Galactic Council did. When I devised the mechanism of luring one of the <clr>Machpellas<clrEnd> into a trap, I was facing an immediate life sentence, and the maloq government was advocating shooting without trial altogether. Where did you think a scientist would go in such a hopeless situation? Naturally, I contacted the pirate clan, and after reading the technical documentation for my modest project, the Khans was immediately enthusiastic. What could be better than a klissan fleet potentially unlimited in size, subdued by specially designed nanites and ready to ensure its master's undisputed dominance in space? This information quickly reached Baron <clr>Chushkach<clrEnd>, and he simply could not pass up such an opportunity.
+        73=Greetings aboard the secret <clr>Handler<clrEnd> station, <0>. The first thing you'll probably want to do is to grab your blaster, but trust me, you won't lose anything by letting me explain myself. As you've probably guessed by now - the pirate clan is indeed involved in the appearance of the klissans in our galaxy. More precisely, personally, I am Dalani <clr>Alakai<clrEnd>, the chief director and ideological inspirer of this project. As you can see, we've been quite successful indeed - by launching device based on the principle of the Z-Transmitter, we've successfully thrown dust in the eyes of the whole Arm, forcing the Coalition to chase a false shadow for a long time. Not without the help of klissan intervention, my new superiors managed to hold out for such a long time. But, unfortunately, it did not save them from their own incompetence.
+        74=Greetings aboard the secret <clr>Handler<clrEnd> station, Baron. As you may have already guessed - the pirate clan is indeed involved in the appearance of the klissans in our galaxy arm. More precisely, personally me, and I am Dalani<clr>Alakai<clrEnd>, the chief director and the ideological inspirer of this project. And, as you can see, we've actually made quite a bit of progress - by launching device based on the Z-Transmitter principle, we've successfully thrown dust in the eyes of the whole Arm, forcing the Coalition searchers to chase a false shadow. It's hard to deny the effectiveness of the project in our case - there is only one side in the galaxy now - none of the Clan's enemies has ever managed to oppose us, not the ruthless machines, not the rotten Coalition, which pretends to be a benefactor - no one. None of this would have been possible on such short notice without... outside intervention. But today, the Clan undoubtedly reigns supreme in this Arm.
+        75=Greetings aboard the secret <clr>Handler<clrEnd> station, Baron. As you may have already guessed - the pirate clan is indeed involved in the appearance of the klissans in our galaxy arm. More precisely, personally me, and I am Dalani<clr>Alakai<clrEnd>, the chief director and the ideological inspirer of this project. And, as you can see, we've actually made quite a bit of progress - by launching device based on the Z-Transmitter principle, we've successfully thrown dust in the eyes of the whole Arm, forcing the Coalition searchers to chase a false shadow. Thanks to the klissan intervention, the Clan still maintains an undeniable advantage in this war - even if we get pinned down, the legals will never figure out the coordinates of <clr>Tortugatz<clrEnd> and we will always be able to prepare a crushing retaliatory strike.
+        76=Come now, pirate laws don't restrict our long-standing services, on the contrary, they encourage them far more decently than those miserly men of yours in the Galactic Council. When I devised the mechanism for luring one of the Machpellas into a trap, I was facing immediate life imprisonment, and the maloq government was in favor of immediate execution. Where did you think a scientist would go in such a hopeless situation? Naturally, I contacted the pirate clan, and after reading the technical documentation for my modest project, the team of Khans was immediately enthusiastic. What could be better than a klissan fleet potentially unlimited in size, subdued by specially designed nanites and ready to ensure its master's undisputed dominance in space? This information quickly reached Baron <clr>Chushkach<clrEnd>, and he simply could not pass up such an opportunity.
+        77=Yes, of course, Baron. I only hope we can reach an understanding. There is still a rotten presence of the enemies of the Clan in the galaxy, and the support of the klissans can provide us with a trump card that will ensure an end to the threat to the well-being and prosperity of the Clan today. Enemies who have never fully determined where the klissans came from in the first place won't even know what it was.
+        78=Yes, of course, Baron. I only hope we can reach an understanding. It's impossible not to recognize the merits of the project, since we are now heroes and liberators of an oppressed people, aren't we? And believe me, this is just the beginning. If I can complete the second phase of the project, the Clan will be able to realize the long-held dream of the incapable Coalition and expand its reach beyond the home galactic arm.
+        79=You think too badly of me, Baron. As a true member of the scientific contingent of the Pirate Clan, I do not pursue anything but science. Casualties? Collateral damage? Admittedly, you've rarely been interested in them on the road to power, either. So I guess you and I have a certain degree of unity in this matter.
+        80=You think too badly of me, Baron. As a true member of the scientific contingent of the Pirate Clan, I do not pursue anything but science. Casualties? Collateral damage? Admittedly, you've rarely been interested in them on the road to power, either. So I guess you and I have a certain degree of unity in this matter.
+        81=Thank you for your invaluable moral support, Baron. I foresaw your decision and prepared in advance a transmitter with which you can mark the system for the next attack - all you have to do is send a signal and a wormhole will soon open in the target system. You will be able to use the device from the ship's bridge. Unfortunately, some technical limitations will prevent you from launching more than one neurolink at a time, but trust me - with the power and evolutionary potential of the klissan army, it will be enough for you.
+        82=I admit that I bet on a dark horse this time, <0>, and I'm ready to atone for my sins to the Coalition. My project has come a long way since it began, and, contrary to the fears of the Council, it has been more than successful. Even, somehow, getting out of control - <clr>Machpella<clrEnd> will not live long, as the system of self-destruction, built into the nanites, within three months without receiving a control signal from my side, will work automatically.
+        83=Whatever you may think of me, I am not after fame, power, or even material reward. I am only interested in science, and only in results. I think you realized a long time ago, as you made your way to the top of the Clan, that sometimes you have to sacrifice a little for a great thing. There are no more enemies of the Coalition in the galaxy, but even under laboratory conditions I can still achieve a lot. I assure you, <0>, the horizons opening up before us today will help in the technological development of the Coalition more than once - I'm not talking about understanding the nature of klissans in particular.
+        84=Whatever you may think of me, I am not after fame, power, or even material reward. I am only interested in science, and only in results. I think you realized a long time ago, as you made your way to the top of the Clan, that sometimes you have to sacrifice a little for a great thing. There is still a dominator presence in the galaxy, and if you allow me to continue my research, I am ready to immediately redirect all available project power to help the Coalition fight the endlessly replicating toasters. Please, let me use my last chance.
+        85=I can't thank you enough, Ranger. You'll see, I'll prove that my work deserves to live. Especially for this occasion, I have prepared a transmitter that you can use to mark the system for the next attack - all you have to do is send a signal and a wormhole will soon open in the target system. You will be able to use the device from the ship's bridge. Unfortunately, some technical limitations will prevent you from launching more than one neurolink at a time, but trust me - with the power and evolutionary potential of the klissan army, it will be enough for you.
+        86=Ranger <Player>, I implore you to arrive to the <clr>Handler<clrEnd> station as soon as possible. With you as the new Supreme Baron, I have one thing I want to discuss with you.
+        87=Welcome, <Player>, aboard the Ranger Center <0>. And we've got some great news for you - the plan was a success! Today will be the official day of victory over the returning klissan threat, and your name, Ranger, will live on in history forever. After you convincing Alakai that he was safe, you intelligently applied the results of his unethical experiments against the Coalition's latest enemies, our military developed and carried out the plan to capture the scientist that has just been brilliantly executed.
+        89=Specify the system to attack.
+        90=The request has been relayed to the <clr>Handler<clrEnd>. The answer is affirmative. Klissan fleet sent to the specified system.
+        91=Ranger <Player>, the enemy science station <clr>Handler<clrEnd> is getting away from under our noses! Immediately blow up the facility, take prisoners if possible.
+        92=Way to go, <Player>! By destroying the secret facility, you put an end to the lives of the many vile traitors who set the klissans against us for their own interests. Surely this day will go down in history!<br>The next target is <clr>Machpella<clrEnd>. Let's finish the enemy off!
+        93=Thank you for your heroism, Ranger! Today, thanks to the brilliance of our scientists and your bravery, we have ended the Third Klissan War and achieved a convincing victory over the pirate invaders. The surviving corsairs have been decapitated and demoralized, and it is now only a matter of time before all systems are finally cleared of their presence. All the citizens of the Coalition salute you today! Head to the nearest Ranger Center for your well-deserved reward.
+        94=Today is a very special day, Ranger! Our research department has managed to pass a key milestone in the study of klissans, and we are happy to report that a new <clr>breakthrough<clrEnd> has been achieved at science station. <br>The news of the day is undoubtedly the report on the study of the functionality of klissan equipment - we collected enough samples to form a clear understanding of what their equipment was designed for, at least initially. Here's a list of everything we were able to find out: <br>- Gvidest (engine) has an increased power, and consequently develops a high speed<br>- Ondest (fuel tank) effectively feeds hyperfuel, providing a longer jumping range<br>- Xifest (droid) is significantly faster than other models, patching holes faster<br>- Vahtest (gripper) due to flow capacity outperforms other grippers in pulling speed<br>- Jewlest (shield generator) generates an additional microfield that reduces the mass of the ship<br>- Glandest (radar) helps to point a weapon at the target, increasing the maximum range of attack<br>- Naksest (scanner) searches for weaknesses in the hull of the enemy, increasing the damage inflicted<br><br>Importantly, the klissan equipment, like the weapons, is not composed entirely of organic parts. We were unable to confirm some speculation last time, and have kept this information secret, but our new enemy appears to be using the very real machinery. So far, we can't say for sure whether this is the result of natural evolution, or the result of outside interference. Based on the fact that the previous Machpella has been around for centuries and has been slow to change even when faced with Coalition technology, we can assume anything, up to and including dominator or pirate influence. Perhaps it <clr>would be worth checking from the inside<clrEnd> by getting in touch with representatives of both sides, but that's entirely up to you - it's possible that implementation would prove even more dangerous and time-consuming than direct research.<br><br>Keep up the good work, Ranger, we are faced with a serious riddle, with very serious potential consequences if we don't solve it in time.
+        95=We have news for you, <Player>. This time your merits are not even mentioned in small print at the end of the report, but in main credits. <br>A new <clr>breakthrough<clrEnd> in klissan research allowed us to make an invaluable contribution to the theory of fighting the klissan threat - we finally confirmed the klissans' class features and created a step-by-step simulation of combat in outer space, recreating it from a chain of fragments of real events. In this way, we not only understood the basics of klissan combat tactics, but also identified the vulnerabilities of each of the ships.<br> <br>Interestingly, the crystal shell of many types of klissan ships is modified to <clr>deflect the damage of one or another specialized type of weapon<clrEnd>, which, in total, creates an extremely stable formation of ships that can cover each other. This is probably the main reason why our military, accustomed to dealing with things straightforwardly and quickly, is far from always having time to retreat from the battlefield. It's also worth noting that thanks to their very modest size and impressive reflexes, <clr>klissans have the ability to dodge shots<clrEnd>. <br>We have made a detailed list of what we have been able to discover, use the information wisely, Ranger. <br><br>- Mutenok: 120%-80%-20% susceptibility (E-F-R), 40% chance of dodge<br>- Rogit: 115%-70%-27% susceptibility, 30% chance to dodge, special ability - increase damage as they are more damaged<br>- Katauri: 60%-130%-35% susceptibility, 22% chance to dodge, special ability - chance to deal critical damage<br>- Nondus: 130%-60%-42% susceptibility, 14% chance to dodge, special ability - explosion on severe hull damage<br>- Egemon: 70%-120%-50% susceptibility, 10% chance to dodge, special ability - multiple gun turrets capable of counterattack<br><br>Based on this information, our department recommends using at least two gun configurations simultaneously: an energy weapon and a fragmentation weapon. But even such a modest luxury can not afford everyone, while not clogging up all the free space in the hold, so act according to circumstances, and do not forget about your duties, <Player>, to win - our common duty!
+        97=Ranger, we can't even spare one fighter in this situation. The klissans are targeting the population! They're burning out planets, do you understand that, or don't you?! All of our special ops teams are busy building defenses!
+        98=Good work, <Player>, we will take the protoplasm and increase your personal node account. The value of the account is <0> nodes.<br>In addition, you have grown in our ranking. Continue to add to our stock of nodes and protoplasm.
+        99=Stand down in pursuit of enemy station! The object made a hyperjump to unknown coordinates, special services will deal with it later.<br>Next target is <clr>Machpella<clrEnd>. Sweep the system clean of invaders!
+        AwardsList ^{
+            Artifacts ^{
+                10=ArtHull
+                11=ArtFuel
+                12=ArtSpeed
+                13=ArtPower
+                14=ArtRadar
+                15=ArtScaner
+                16=ArtDroid
+                16=ArtNano
+                18=ArtHook
+                19=ArtDef
+                20=ArtAnalyzer
+                21=ArtMiniExpl
+                22=ArtAntigrav
+                23=ArtTransmitter
+                24=ArtBomb
+                25=ArtTranclucator
+                26=ArtDefToEnergy
+                27=ArtEnergyPulse
+                28=ArtEnergyDef
+                29=ArtSplinter
+                30=ArtDecelerate
+                31=ArtMissileDef
+                32=ArtForsage
+                33=ArtWeaponToSpeed
+                34=ArtGiperJump
+                35=ArtBlackHole
+                36=ArtDefToArms1
+                37=ArtDefToArms2
+                38=ArtArtefactor
+                39=ArtBio
+                40=ArtPDTurret
+                41=ArtFastRacks
+            }
+            Programs ^{
+                10=SelfDestruction
+                11=Disconnection
+                5=Intercom
+                6=Shipwreck
+                7=WeaponBlocking
+                8=Insanity
+                9=Shock
+            }
+        }
+        KlissanRemainsCount=8
+        SporesGiveList ^{
+            1=ShuKlissan_Potentia
+            10=ShuKlissan_Regenerative
+            11=ShuKlissan_Combishell
+            12=ShuKlissan_Recapacit
+            2=ShuKlissan_Cyanonia
+            3=ShuKlissan_Bubble
+            4=ShuKlissan_Chasia
+            5=ShuKlissan_Velhmust
+            6=ShuKlissan_Nivelia
+            7=ShuKlissan_Askia
+            8=ShuKlissan_Fungusia
+            9=ShuKlissan_Plasmalemma
+            Count=12
+        }
+    }
+}
+ShipCharacterNone ^{
+    00=34,	33,	33,	Unknown
+}
+ActCodeBlocksList ^{
+    ShuKlissan_KvinkgunShot ^{
+        00=[t_OnWeaponShot|]
+        01=dword target = ScriptItemActObject1();
+        02=if(ObjectType(target) > 5) exit;
+        03=ScriptItemActParam(Rnd(8, 10));
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            Dodge ^{
+                Description=The actcode of "dodging" klissan
+                Icon=1
+                Name=Dodge
+                OnActCode ^{
+                    01=dword cur_ship = ScriptItemActShip();
+                    02=if(!fun_init)
+                    03 ^{
+                        01=unknown PortionInDiapason = ImportedFunction('UtilityFunctions', 'PortionInDiapason');
+                        02=int fun_init = 1;
+                    }
+                    04=int chance = PortionInDiapason(ShipSubType(cur_ship), 1, 5, 10, 30);
+                    05=int bonus = 40 + GalaxyTechLevel() * 12;
+                    06=chance = (chance * bonus) / 100;
+                    07=if(Rnd(1, 100) <= chance) ScriptItemActParam(0);
+                }
+                OnActCodeTypes=t_OnTakingDamageEn,t_OnTakingDamageSp,t_OnTakingDamageMi
+            }
+            Dodge_bonus ^{
+                Description=The "dodge" klissan actcode with an increased chance of success
+                Icon=1
+                Name=Dodge
+                OnActCode ^{
+                    01=dword cur_ship = ScriptItemActShip();
+                    02=if(!fun_init)
+                    03 ^{
+                        01=unknown PortionInDiapason = ImportedFunction('UtilityFunctions', 'PortionInDiapason');
+                        02=int fun_init = 1;
+                    }
+                    04=int chance = PortionInDiapason(ShipSubType(cur_ship), 1, 5, 17, 55);
+                    05=int bonus = 40 + GalaxyTechLevel() * 12;
+                    06=chance = (chance * bonus) / 100;
+                    07=if(Rnd(1, 100) <= chance) ScriptItemActParam(0);
+                }
+                OnActCodeTypes=t_OnTakingDamageEn,t_OnTakingDamageSp,t_OnTakingDamageMi
+            }
+            Egemon_armor ^{
+                Description=Actcode for egemon counterattack. Allows an egemon to counterattack an enemy with a suitable range and unbroken cannon with a [12 + number_of_guns * 6]% chance for each enemy hit on the egemon.
+                Icon=1
+                Name=Egemon counterattack
+                OnActCode ^{
+                    01=dword attacker = ScriptItemActObject1();
+                    02=if(ObjectType(attacker) == 7) exit;
+                    03=if(HullHP(attacker) <= 100) exit;
+                    04=dword cur_ship = ScriptItemActShip();
+                    05=int dmg = ScriptItemActParam();
+                    06=float chance = ShipCntWeapon(cur_ship) * 8 + 10;
+                    07=if(!fun_init)
+                    08 ^{
+                        01=unknown PortionInDiapason = ImportedFunction('UtilityFunctions', 'PortionInDiapason');
+                        02=int fun_init = 1;
+                    }
+                    09=chance = chance * PortionInDiapason(HullDamage(cur_ship), 20, 100, 0.5, 1.5);
+                    10=chance = max(15, (chance * dmg * 0.02));
+                    11=if(Rnd(1, 100) <= chance)
+                    12 ^{
+                        01=if(ShipInScript(attacker, 0))
+                        02 ^{
+                            01=if(ShipCustomFaction(attacker) == 'Klissan') exit;
+                        }
+                        03=if(!ShipInNormalSpace(attacker)) exit;
+                        04=int dist = Dist(cur_ship, attacker);
+                        05=int add_range = ShipSpecialBonuses(cur_ship, bonWRadius, 'Total');
+                        06=dword gun = 0;
+                        07=for(int i = 1; i <= ShipCntWeapon(cur_ship); i = i + 1)
+                        08 ^{
+                            01=gun = ShipWeapon(cur_ship, i);
+                            02=if(!gun) continue;
+                            03=if(ItemIsBroken(gun))
+                            04 ^{
+                                01=gun = 0;
+                                02=continue;
+                            }
+                            05=if(GetEquipmentStats(gun, 3) == 2)
+                            06 ^{
+                                01=gun = 0;
+                                02=continue;
+                            }
+                            07=if(GetEquipmentStats(gun, 2) + add_range < dist)
+                            08 ^{
+                                01=gun = 0;
+                                02=continue;
+                            }
+                        }
+                        09=if(gun)
+                        10 ^{
+                            01=FireWeapon(cur_ship, attacker, gun);
+                            02=
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnTakingDamageEn,t_OnTakingDamageSp,t_OnTakingDamageMi
+            }
+            Immortal ^{
+                Description=This should be removed later.
+                Icon=0
+                Name=
+            }
+            Katauri_attack ^{
+                Description=Actcode on the katauri's crit. Allows you to do half damage with any non-missile shot with 25% chance, and if the target has less than half HP - double damage with 33% chance.
+                Icon=1
+                Name=Katauri crit
+                OnActCode ^{
+                    01=dword target = ScriptItemActObject1();
+                    02=if(ObjectType(target) == 5)
+                    03 ^{
+                        01=if(HullDamage(target) > 50)
+                        02 ^{
+                            01=int low_hp = 1;
+                            02=int chance = 33;
+                        }
+                        03=else chance = 25;
+                    }
+                    04=if(Rnd(1, 100) <= chance)
+                    05 ^{
+                        01=if(low_hp) ScriptItemActParam(2 * ScriptItemActParam());
+                        02=else ScriptItemActParam(round(1.5 * ScriptItemActParam()));
+                    }
+                }
+                OnActCodeTypes=t_OnWeaponShot
+            }
+            KlissanComm ^{
+                Description=A device that allows you to scan the klissan and get in touch with their brain center.
+                Icon=553
+                Name=Mental Communicator
+            }
+            Klissan_damage ^{
+                Description=
+                Icon=1
+                Name=
+            }
+            Nondus_shield ^{
+                Description=Actcode for the Nondus Shield. The shield blocks all damage dealt to the ship and has a strength of 30-40% of the Nondus's HP reserve. When it falls, it deals damage equal to the last Nondus had recieved to all ships within 250 radius, doubled.
+                Icon=1
+                Name=Nondus shield
+                OnActCode ^{
+                    01=dword cur_ship = ScriptItemActShip();
+                    02=if(HullDamage(cur_ship) >= 80)
+                    03 ^{
+                        01=if(!fun_init)
+                        02 ^{
+                            01=unknown PortionInDiapason = ImportedFunction('UtilityFunctions', 'PortionInDiapason');
+                            02=int fun_init = 1;
+                        }
+                        03=dword cur_star = ShipStar(cur_ship);
+                        04=int is_visable = (ShipStar(Player()) == cur_star && ShipInNormalSpace(Player()));
+                        05=int dmg = 0;
+                        06=for(int i = 0; i < StarShips(cur_star); i = i + 1)
+                        07 ^{
+                            01=dword attacker = StarShips(cur_star, i);
+                            02=int dist = Dist(attacker, cur_ship);
+                            03=if(dist > 275) continue;
+                            04=dmg = PortionInDiapason(dist, 0, 255, 1000, 0);
+                            05=if(ShipType(attacker) == 'Klissan') dmg = round(0.10 * dmg);
+                            06=if(is_visable)
+                            07 ^{
+                                01=ShowEffect('Weapon.NoGraph', 0, attacker, cur_ship, dmg, 0, 0, 255,0,0);
+                            }
+                            08=DealDamageToShip(attacker, cur_ship, dmg, 2, 0);
+                        }
+                        08=if(is_visable)
+                        09 ^{
+                            01=ShowEffect('Weapon.Kamikaze', 0, attacker, cur_ship, 0, 0, 0, 0,0,0);
+                        }
+                        10=ShipDestroy(cur_ship, 1);
+                    }
+                }
+                OnActCodeTypes=t_OnGettingWeaponHit
+            }
+            Plague ^{
+                Description=Disease spread by klissans. It affects the skin, limbs, face, respiratory tract, and nervous system, externally resulting in ugly lesions on the patient's body. The disease usually lasts a short time, but is not treatable by conventional means. Piloting skills are severely impaired, and social skills are lost altogether.
+                Icon=1
+                Name=Klissan Leprosy
+                OnActCode ^{
+                    01=dword cur_ship = ScriptItemActShip();
+                    02=ShipSpecialBonuses(cur_ship, bonSkill1, ShipSpecialBonuses(cur_ship, bonSkill1) - 2);
+                    03=ShipSpecialBonuses(cur_ship, bonSkill2, ShipSpecialBonuses(cur_ship, bonSkill2) - 2);
+                    04=ShipSpecialBonuses(cur_ship, bonSkill3, ShipSpecialBonuses(cur_ship, bonSkill3) - 2);
+                    05=ShipSpecialBonuses(cur_ship, bonSkill4, ShipSpecialBonuses(cur_ship, bonSkill4) - 6);
+                    06=ShipSpecialBonuses(cur_ship, bonSkill5, ShipSpecialBonuses(cur_ship, bonSkill5) - 6);
+                    07=ShipSpecialBonuses(cur_ship, bonSkill6, ShipSpecialBonuses(cur_ship, bonSkill6) - 6);
+                    08=if(Rnd(1, 100) <= 10)
+                    09 ^{
+                        01=ShipSpecialBonuses(cur_ship, bonSkill1, ShipSpecialBonuses(cur_ship, bonSkill1) + 2);
+                        02=ShipSpecialBonuses(cur_ship, bonSkill2, ShipSpecialBonuses(cur_ship, bonSkill2) + 2);
+                        03=ShipSpecialBonuses(cur_ship, bonSkill3, ShipSpecialBonuses(cur_ship, bonSkill3) + 2);
+                        04=ShipSpecialBonuses(cur_ship, bonSkill4, ShipSpecialBonuses(cur_ship, bonSkill4) + 6);
+                        05=ShipSpecialBonuses(cur_ship, bonSkill5, ShipSpecialBonuses(cur_ship, bonSkill5) + 6);
+                        06=ShipSpecialBonuses(cur_ship, bonSkill6, ShipSpecialBonuses(cur_ship, bonSkill6) + 6);
+                        07=if(cur_ship == Player())
+                        08 ^{
+                            01=NewsAdd('<color=255,240,100>"Klissan Leprosy"</color> retreated. It looks like you're healthy again.');
+                        }
+                        09=ShipDeleteCustomShipInfo(cur_ship, 'Plague');
+                    }
+                }
+                OnActCodeTypes=t_OnStep
+                OnActStepTypes=0
+            }
+            Plague_inflict ^{
+                Description=
+                Icon=1
+                Name=
+            }
+            Plague_inflict2 ^{
+                Description=
+                Icon=1
+                Name=
+                OnActCode ^{
+                    01=exit;
+                    02=dword target = ScriptItemActObject1();
+                    03=if(ObjectType(target) != 5) exit;
+                    04=if(ShipOwner(target) == Kling) exit;
+                    05=if(ShipInScript(target, 0))
+                    06 ^{
+                        01=if(ShipCustomFaction(target) == 'Klissan') exit;
+                    }
+                    07=if(CustomWeaponType(ScriptItemActObject2()) != 'klissan_emitter') exit;
+                    08=if(Rnd(1, 100) > 8) exit;
+                    09=ShipAddCustomShipInfo(target, 'Plague');
+                }
+                OnActCodeTypes=t_OnWeaponShot
+            }
+            Rogit_damage ^{
+                Description=The rogit damage actcode, gives a percentage bonus to damage the greater the percentage of HP missing.
+                Icon=1
+                Name=Rogit Damage
+                OnActCode ^{
+                    01=if(ObjectType(ScriptItemActObject1()) != 5) exit;
+                    02=float bonus = 200 - (100 - HullDamage(ScriptItemActShip()));
+                    03=bonus = bonus * 0.01;
+                    04=ScriptItemActParam(round(bonus * ScriptItemActParam()));
+                }
+                OnActCodeTypes=t_OnWeaponShot
+            }
+            ShuKlissan_ImmortalInfo ^{
+                Description=
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=ScriptItemActParam(0);
+                }
+                OnActCodeTypes=t_OnTakingDamage,t_OnTakingDamageEn,t_OnTakingDamageSp,t_OnTakingDamageMi
+            }
+            Transmitter ^{
+                Description=Provides the Z-Transmitter
+                Icon=1
+                Name=Z-Transmitter
+            }
+        }
+    }
+}
+ShipName ^{
+    Klissan ^{
+        1=Gastropoda
+        10=Jellyfish
+        100=Skiffir
+        101=Dudila
+        102=Sealob
+        103=Eggthief
+        104=Rabolep
+        105=Landskilt
+        106=Barrier
+        107=Bluric
+        108=Leukocyte
+        109=Machaon
+        11=Yellowbelly
+        110=Korzhik
+        111=Cthulhu
+        112=Nyarlathotep
+        113=Intoxigator
+        114=Chomper
+        115=Jodl
+        116=Nurglick
+        117=Broodling
+        118=Apokalis
+        119=Daggot
+        12=Yellowswing
+        120=Nihilodium
+        121=Birdling
+        13=Whirlpool
+        14=Hyroblood
+        15=Breeder
+        16=Zobber
+        17=Licekus
+        18=Kwazor
+        19=Kipshot
+        2=Golovan
+        20=Klisher
+        21=Xenod
+        22=Lomoduse
+        23=Mesostasis
+        24=Deadwalker
+        25=Mogiller
+        26=Preacher
+        27=Pressor
+        28=Puzan
+        29=Relaxer
+        3=Grassahach
+        30=Rigger
+        31=Rogozzer
+        32=Rohmory
+        33=Rocher
+        34=Rigva
+        35=Sabur
+        36=Sanatar
+        37=Swingator
+        38=Bluebelly
+        39=Blue-eye
+        4=Grach
+        40=Spirotech
+        41=Tendril
+        42=Snatcher
+        43=Trumpet
+        44=Skull
+        45=Tentacle
+        46=Tentacle
+        47=Warthog
+        48=Wicked
+        49=Breeder
+        5=Thunderbird
+        50=Royaler
+        51=Cranchman
+        52=Lungman
+        53=Elderly
+        54=Nogozhim
+        55=Roshen
+        56=Headman
+        57=Ordovik
+        58=Lagva
+        59=Licekwak
+        6=Grudan
+        60=Kolyvan
+        61=Boltogrom
+        62=Termodeus
+        63=Gidogryz
+        64=Shekel
+        65=Khryashek
+        66=Bzdishek
+        67=Dokatar
+        68=Squealer
+        69=Wanger
+        7=Gusal
+        70=Arkeboozer
+        71=Talwar
+        72=Vaskral
+        73=Accal
+        74=Permozoid
+        75=Potox
+        76=Letoon
+        77=Bahh
+        78=Zabralnik
+        79=Stonex
+        8=Gushchebur
+        80=Drishch
+        81=Dickovik
+        82=Cringer
+        83=Polyp
+        84=Dolbun
+        85=Sinepaletz
+        86=Belokur
+        87=Redshanker
+        88=Rattler
+        89=Bogeyman
+        9=Jabahar
+        90=Drubatur
+        91=Zaher
+        92=Peawn
+        93=Porozhner
+        94=Herod
+        95=Mantis
+        96=Parlaxer
+        97=Kultyap
+        98=Ramsamzam
+        99=Dumbwaiter
+        CntNames=121
+    }
+}
+ShipType ^{
+    Dominator ^{
+        Blazer ^{
+            Klissan1=Egemon
+            Klissan2=Nondus
+            Klissan3=Katauri
+            Klissan4=Rogit
+            Klissan5=Mutenok
+            None=
+        }
+        Keller ^{
+            Klissan1=Egemon
+            Klissan2=Nondus
+            Klissan3=Katauri
+            Klissan4=Rogit
+            Klissan5=Mutenok
+            None=
+        }
+        Terron ^{
+            Klissan1=Egemon
+            Klissan2=Nondus
+            Klissan3=Katauri
+            Klissan4=Rogit
+            Klissan5=Mutenok
+            None=
+        }
+    }
+    Fei ^{
+        Klissan=Nondus
+        None=
+    }
+    Gaal ^{
+        Klissan=Egemon
+        None=
+    }
+    Klissan ^{
+        1=Egemon
+        2=Nondus
+        3=Katauri
+        4=Rogit
+        5=Mutenok
+    }
+    Maloc ^{
+        Klissan=Mutenok
+        None=
+    }
+    Peleng ^{
+        Klissan=Rogit
+        None=
+    }
+    People ^{
+        Badass=
+        Klissan=Katauri
+        None=
+    }
+    TypeName ^{
+        Handler=Secret object
+        HandlerSmall=Handler
+        KB=Neurolink
+        KBSmall=NL
+        Klissan1=Klissan
+        Klissan2=Klissan
+        Klissan3=Klissan
+        Klissan4=Klissan
+        Klissan5=Klissan
+        Machpella=
+        MachpellaSmall=
+        None=Unknown
+    }
+}
+UselessItems ^{
+    KlissanRemains1 ^{
+        Cost=Big
+        Name=Physiopump
+        Owner=Kling
+        Size=12
+        Text=Pump for protoplasm distribution, sort of Klissan heart.
+    }
+    KlissanRemains2 ^{
+        Cost=Average
+        Name=Megacrawer
+        Owner=Kling
+        Size=9
+        Text=Serves for fermentation and distribution of nutrients in Klissan organism.
+    }
+    KlissanRemains3 ^{
+        Cost=Average
+        Name=Macrolfactor
+        Owner=Kling
+        Size=6
+        Text=Klissan sense organ for analysing chemical composition of the environment.
+    }
+    KlissanRemains4 ^{
+        Cost=Small
+        Name=Thermoswings
+        Owner=Kling
+        Size=4
+        Text=Klissan "eyes" picking up <color=255,240,100>Gillnozzles</color> radiation of other ships.
+    }
+    KlissanRemains5 ^{
+        Cost=Mini
+        Name=Hornshell
+        Owner=Kling
+        Size=1
+        Text=The remains of Klissan shell, a tough layer of specialised reflecting cells.
+    }
+    KlissanRemains6 ^{
+        Cost=Average
+        Name=Neurocentre
+        Owner=Kling
+        Size=5
+        Text=Serves as a brain, responsible for Klissan decision-making.
+    }
+    KlissanRemains7 ^{
+        Cost=Small
+        Name=Aerofilters
+        Owner=Kling
+        Size=12
+        Text=Intake and storage device for compressed gas, serves as Klissan lungs.
+    }
+    KlissanRemains8 ^{
+        Cost=Huge
+        Name=Bioslots
+        Owner=Kling
+        Size=25
+        Text=Megashell hollows in which Klissans can grow different weapons.
+    }
+    Usl_108 ^{
+        Cost=Average
+        Name=Antique pistol
+        Owner=Maloc
+        Size=1
+        Text=An ancient large-caliber semi-automatic pistol.
+    }
+    Usl_109 ^{
+        Cost=Small
+        Name=Faryuk-steeleater
+        Owner=Gaal
+        Size=1
+        Text=A mutated exotic plant.
+    }
+    Usl_110 ^{
+        Cost=Average
+        Name=Temporal neutronium
+        Owner=PirateClan
+        Size=10
+        Text=Enriched asteroid fuel.
+    }
+    Usl_111 ^{
+        Cost=Average
+        Name=Obliterator Х-11
+        Owner=Gaal
+        Size=70
+        Text=Stationary electromagnetic obliterator.
+    }
+    Usl_112 ^{
+        Cost=Small
+        Name=Plasma gun
+        Owner=Maloc
+        Size=3
+        Text=Compact (for a maloq) hand weapon.
+    }
+    Usl_113 ^{
+        Cost=Small
+        Name=Zergling
+        Owner=Maloc
+        Size=3
+        Text=Compact (for a maloq) hand weapon.
+    }
+    Usl_114 ^{
+        Cost=Average
+        Name=Negative comma module
+        Owner=None
+        Size=5
+        Text=A revolutionary source of energy.
+    }
+    kBlackHole ^{
+        Cost=Huge
+        Name=Macrophase shift generator
+        Owner=None
+        Size=10
+        Text=This device uses an artificial system of connected nerve centers and motor bases of the klissans and allows them to mimic the subspace impulses they use, leading to the stabilization of an initiated wormhole with fixed portal characteristics.
+    }
+    kTransmitter ^{
+        Cost=Big
+        Name=Z-Transmitter MK II
+        OnActCode ^{
+            01=dword cur_item = CurItem();
+            02=if(UselessItemData(cur_item, 1) < 100)
+            03 ^{
+                01=UselessItemData(cur_item, 1, UselessItemData(cur_item, 1) + 1);
+            }
+        }
+        OnActCodeTypes=t_OnStep
+        OnActStepTypes=11
+        OnUseCode ^{
+            01=if(UselessItemData(CurItem(), 1) < 100)
+            02 ^{
+                01=MessageBox('Not enough charge to summon the klissans.');
+                02=exit;
+            }
+            03=ShipAddCustomShipInfo(Player(), 'Transmitter', 'NoShow', Id(ShipStar(Player())) - 1);
+            04=MessageBox('Z-Transmitter MK II activated. Klissans will be arriving in the system soon.');
+            05=UselessItemData(CurItem(), 1, 0);
+        }
+        Owner=None
+        Size=5
+        Text=When used in space it generates frequencies that summon klissans. Charge energy: <Data1><color=255,240,100>%</color>.
+    }
+    secret_loot1 ^{
+        Cost=Big
+        Name=Bolvanter
+        Owner=None
+        Size=1
+        Text=It reeks of prayers and grotesque pathos.
+    }
+    secret_loot2 ^{
+        Cost=Huge
+        Name=Necronomicum
+        Owner=None
+        Size=1
+        Text=The Book of Lilliputians. Not to be read while intoxicated!
+    }
+    secret_loot3 ^{
+        Cost=Big
+        Name=A self-propelled satire
+        Owner=None
+        Size=50
+        Text=A tank running on bearded jokes.
+    }
+    secret_loot4 ^{
+        Cost=Huge
+        Name=Icecorn
+        OnActCode ^{
+            01=if(ScriptItemActShip() == Player()) PlayerImmunity(0);
+        }
+        OnActCodeTypes=t_OnStep
+        OnActStepTypes=11
+        Owner=None
+        Size=1
+        Text=Mystic merch.
+    }
+    secret_loot5 ^{
+        Cost=Big
+        Name=Kaar-Dan Skull
+        Owner=None
+        Size=1
+        Text=The remains of an ancient Gaalian shaman.
+    }
+}

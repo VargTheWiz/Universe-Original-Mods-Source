@@ -1,0 +1,10 @@
+Bm ~{
+    MsgPlayer ~{
+        2Galaxy_AlertA=Mods\ShusRangers\ShuHomeland\DATA\Msg\2Galaxy_Alert_A.gi
+        2Galaxy_AlertD=Mods\ShusRangers\ShuHomeland\DATA\Msg\2Galaxy_Alert_D.gi
+        2Galaxy_AlertN=Mods\ShusRangers\ShuHomeland\DATA\Msg\2Galaxy_Alert_N.gi
+    }
+}
+Script ~{
+    Mod_ShuHomeland=Mods\ShusRangers\ShuHomeland\DATA\Script\Mod_ShuHomeland.scr
+}

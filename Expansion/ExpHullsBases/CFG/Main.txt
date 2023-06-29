@@ -1,0 +1,21 @@
+Data ^{
+    Script ^{
+        Mod_ExpHullsBases=1,Script.Mod_ExpHullsBases
+    }
+    ScriptLibs ^{
+        Mod_ExpHullsBases=UtilityFunctions
+    }
+}
+ML ^{
+    RuinsTalk ^{
+        Panel ^{
+            StarFieldM ^{
+                Active=False
+                Name=StarFieldWB
+                Pos=0,0,900.5
+                Size=3325,1871
+                Sme=1024,768
+            }
+        }
+    }
+}

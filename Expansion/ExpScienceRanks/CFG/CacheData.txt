@@ -1,0 +1,48 @@
+Bm ~{
+    FormShip2 ~{
+        2BH_img=Mods\Expansion\ExpScienceRanks\DATA\FormShip2\BH_img.gi
+        2PR_SR=Mods\Expansion\ExpScienceRanks\DATA\FormShip2\RP_SR.gi
+        2SR1_img=Mods\Expansion\ExpScienceRanks\DATA\FormShip2\SciRank_3-4.gi
+        2SR2_img=Mods\Expansion\ExpScienceRanks\DATA\FormShip2\SciRank_5-6.gi
+        2SR3_img=Mods\Expansion\ExpScienceRanks\DATA\FormShip2\SciRank_7-8.gi
+        2SR4_img=Mods\Expansion\ExpScienceRanks\DATA\FormShip2\SciRank_9.gi
+    }
+    Items ~{
+        2Hull_MA_i=Mods\Expansion\ExpScienceRanks\DATA\Items\Hull\2Hull_MA_i.gi
+        2Hull_MA_s=Mods\Expansion\ExpScienceRanks\DATA\Items\Hull\2Hull_MA_s.gi
+        2Hull_MD_i=Mods\Expansion\ExpScienceRanks\DATA\Items\Hull\2Hull_MD_i.gi
+        2Hull_MD_s=Mods\Expansion\ExpScienceRanks\DATA\Items\Hull\2Hull_MD_s.gi
+        2Hull_MG_i=Mods\Expansion\ExpScienceRanks\DATA\Items\Hull\2Hull_MG_i.gi
+        2Hull_MG_s=Mods\Expansion\ExpScienceRanks\DATA\Items\Hull\2Hull_MG_s.gi
+    }
+    PanelSpace2 ~{
+        2MAA=Mods\Expansion\ExpScienceRanks\DATA\PanelSpace2\MA_A.gi
+        2MAD=Mods\Expansion\ExpScienceRanks\DATA\PanelSpace2\MA_D.gi
+        2MAH=Mods\Expansion\ExpScienceRanks\DATA\PanelSpace2\MA_H.gi
+        2MAN=Mods\Expansion\ExpScienceRanks\DATA\PanelSpace2\MA_N.gi
+        2MDA=Mods\Expansion\ExpScienceRanks\DATA\PanelSpace2\MD_A.gi
+        2MDD=Mods\Expansion\ExpScienceRanks\DATA\PanelSpace2\MD_D.gi
+        2MDH=Mods\Expansion\ExpScienceRanks\DATA\PanelSpace2\MD_H.gi
+        2MDN=Mods\Expansion\ExpScienceRanks\DATA\PanelSpace2\MD_N.gi
+        2MGA=Mods\Expansion\ExpScienceRanks\DATA\PanelSpace2\MG_A.gi
+        2MGD=Mods\Expansion\ExpScienceRanks\DATA\PanelSpace2\MG_D.gi
+        2MGH=Mods\Expansion\ExpScienceRanks\DATA\PanelSpace2\MG_H.gi
+        2MGN=Mods\Expansion\ExpScienceRanks\DATA\PanelSpace2\MG_N.gi
+    }
+    Ship ~{
+        MA=Mods\Expansion\ExpScienceRanks\DATA\Ship\M.hai
+        MAs=Mods\Expansion\ExpScienceRanks\DATA\Ship\Ms.hai
+        MD=Mods\Expansion\ExpScienceRanks\DATA\Ship\M.hai
+        MDs=Mods\Expansion\ExpScienceRanks\DATA\Ship\Ms.hai
+        MG=Mods\Expansion\ExpScienceRanks\DATA\Ship\M.hai
+        MGs=Mods\Expansion\ExpScienceRanks\DATA\Ship\Ms.hai
+    }
+    ShipP ~{
+        2MA=Mods\Expansion\ExpScienceRanks\DATA\ShipP\2MA.gi
+        2MD=Mods\Expansion\ExpScienceRanks\DATA\ShipP\2MD.gi
+        2MG=Mods\Expansion\ExpScienceRanks\DATA\ShipP\2MG.gi
+    }
+}
+Script ~{
+    Mod_ExpScienceRanks=Mods\Expansion\ExpScienceRanks\DATA\Script\Mod_ExpScienceRanks.scr
+}

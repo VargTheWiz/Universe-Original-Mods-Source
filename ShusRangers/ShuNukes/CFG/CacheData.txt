@@ -1,0 +1,39 @@
+Bm ~{
+    FormShip2 ~{
+        2AI_550=Mods\ShusRangers\ShuNukes\DATA\FormShip2\absorber.gi
+        2AI_550L=Mods\ShusRangers\ShuNukes\DATA\FormShip2\absorber_l.gi
+        2AI_551=Mods\ShusRangers\ShuNukes\DATA\FormShip2\nuke.gi
+        2AI_551L=Mods\ShusRangers\ShuNukes\DATA\FormShip2\nuke_l.gi
+        2AI_552=Mods\ShusRangers\ShuNukes\DATA\FormShip2\ecm.gi
+        2AI_552L=Mods\ShusRangers\ShuNukes\DATA\FormShip2\ecm_l.gi
+    }
+    Items ~{
+        2Wnovaa=data\Items\2W15a.gai
+        2Wnovai=data\Items\2W15i.gi
+        2Wnovas=data\Items\2W15s.gi
+    }
+    ItemsUseless ~{
+        2NeutronBomb_c=Mods\ShusRangers\ShuNukes\DATA\ItemsUseless\nbomb.gai
+        2NeutronBomb_s=Mods\ShusRangers\ShuNukes\DATA\ItemsUseless\nbomb.gi
+        2NovaTorpedo_s=Mods\ShusRangers\ShuNukes\DATA\ItemsUseless\nova.gi
+        2Nuke2_s=Mods\ShusRangers\ShuNukes\DATA\ItemsUseless\Nuke.gi
+        2Nuke_s=Mods\ShusRangers\ShuNukes\DATA\ItemsUseless\Nuke.gi
+    }
+    Missile ~{
+        wNova=Mods\ShusRangers\ShuNukes\DATA\Missile\Nuke.hai
+        wNova_2i=Mods\ShusRangers\ShuNukes\DATA\Missile\Nuke.gi
+        wNuke=Mods\ShusRangers\ShuNukes\DATA\Missile\Nuke.hai
+        wNuke_2i=Mods\ShusRangers\ShuNukes\DATA\Missile\Nuke.gi
+    }
+    Weapon ~{
+        ExplNova=Mods\ShusRangers\ShuNukes\DATA\Weapon\Nuke.gai
+        ExplNuke=Mods\ShusRangers\ShuNukes\DATA\Weapon\Nuke.gai
+    }
+}
+Sound ~{
+    Nuke=Mods\ShusRangers\ShuNukes\DATA\Sound\Nuke.wav
+    shotnova=sound\shot\shot15.wav
+}
+Script ~{
+    Mod_ShuNukes=Mods\ShusRangers\ShuNukes\DATA\Script\Mod_ShuNukes.scr
+}

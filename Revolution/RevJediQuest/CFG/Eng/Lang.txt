@@ -1,0 +1,56 @@
+Script ^{
+    Mod_RevJediQuest ~{
+        72=Hello, <0>. May the Force keep you! Let me make a request to you.
+        67=Let me introduce myself first. My name is Ivan Kenobenko. You see, <0>. I have one thing that I have sworn to keep safe and deliver to its true owner when he is ready to receive it. But for some reason, I can't keep it... And so I'm looking for a humanoid that could keep it.
+        14=That's right. I feel that only YOU can save it. It's hard to explain, but I KNOW it. I can't say anything specific about the item, but believe me, it is very important for the owner. I'm sure he'll pay all the expenses.
+        65=I'll throw it overboard now. Hold on, <0>. And please, keep your promise.
+        16=Hey, <0>! What's up?
+        22=Why so rude? We don't want to open fire. However, it's all up to you...
+        73=You may not be done with the dominators. If you die... because of some stupidity...
+        24=Keep calm, <0>. Everything will be fine. Now you just give us the little thing that someone <clr>Ivan Kenobenko<clrEnd> gave you. And then no one gets hurt.
+        74=You understand everything! And you only have five seconds left before your eventual death. Already four... three... two...
+        26=This is your last chance, <0>. Better give it to us. Life is more precious...
+        36=Hello. If I'm not mistaken, <0>?
+        37=Strange. Then I apologize for the inconvenience.
+        38=How glad I am to meet you! I've been looking for you. And I was sure that the Force would lead me to you!
+        39=Oh, sorry, I forgot to introduce myself. My name is Lux Skywalkers. I recently joined the Rangers. And the reason for my search... I'll try to explain. I'll start from afar. My home planet is ruled by a very powerful psycho, Darth Fludius. But he demands that everyone call him Emperor. So, all the inhabitants of the planet suffer greatly.
+        68=The thing is... Well, I had a dream... That only I can save our people. And I also dreamed that you had something for me... a weapon... my lightning sword... Tell me, has the Force not deceived me? Do you really have it?
+        42=Not at all! I am telling the truth! Wait! Don't disconnect! Not!....
+        75=Now we are doomed...
+        58=Thank you, <0>! I knew I could trust the Force completely!... I can feel it... I can feel it... She says I should give you something... Keep this artifact, I'm sure you'll need it. Farewell, <1>! Let the force be with you!
+        60=Of course I believe you. I threw it away, sold it, lost it... Are you taking me for an idiot!? Well, bring it here!
+        69=Wait, I'm scanning your ship.... So... Really, no! What, it turns out, you didn’t pretend to be in nature !? Really such an idiot!? And well, okay. Our customer, Darth Feder... Mader... Medvader... in general, it doesn't matter, ordered that no living witnesses be left.
+        64=Get outta here, I'll knock your horns off, radish!
+        17=Not up to your requests now. The galaxy must be saved!
+        18=Tell me. What's the request?
+        19=And of course I have to keep this thing? By the way, what is it?
+        76=Okay, I agree. Give me your bling, I'll keep it safe
+        21=Everything was fine until someone's unwashed face appeared on the screen. What do you want?
+        59=Hello to you too. Life is beautiful, soon I will finish with the dominators. What did you want?
+        27=I don't understand, what are you hinting at!?
+        28=I don't understand. What are you talking about?
+        29=Give? Ah, give away? *drow them in seven-story fucks*
+        70=I don't have it. Sold already. And now - try to catch up
+        77=I will not give you what is not yours. And don't you dare threaten me, otherwise I might get angry
+        78=Okay, so be it, take it
+        79=I don't know him. Mistake came out
+        80=Yes, that's me
+        48=Who are you and why were you looking for me?
+        49=Excuse me. And what do I have to do with it?
+        50=I saw through your plan. You want to lure this thing out of me too, well, no, you won't get it for anything!
+        81=You see, I lost it
+        84=The Force did not deceive you. I am the person you need. Take your sword!
+        83=It's like this... I lost it
+        63=But I actually lost it!
+    }
+}
+UselessItems ^{
+    LS ^{
+        Cost=Huge
+        Description=1
+        Name=Lightsaber
+        Owner=People
+        Size=1
+        Text=Jedi lightsaber. Blue.
+    }
+}

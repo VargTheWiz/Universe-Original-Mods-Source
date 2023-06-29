@@ -1,0 +1,472 @@
+Data ^{
+    SE ^{
+        Item ^{
+            ExpBlackMarket_SmugglersCompartment ^{
+                1Image=Bm.Container.2ExpBlackMarket_SmugglersCompartment
+                2Image=Bm.Container.2ExpBlackMarket_SmugglersCompartment
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+        }
+        Ruins ^{
+            BM ^{
+                Image=Bm.Ruins.BM
+                ImageI=GI,Bm.Ruins.BMi
+                ImageMap=GI,Bm.Ruins.MapBM
+                PosZ=Ruins
+            }
+        }
+        Ship ^{
+            Akrin ^{
+                SmugglerPeleng ^{
+                    2ImageP=GI,Bm.ShipP.2SmugglerPeleng
+                    Anim ^{
+                        0=1,[90,20-39]
+                        1=2,[90,40-59]
+                        Normal=5,[90,0-19]
+                    }
+                    AnimS ^{
+                        Normal=5,[90,0-20]
+                    }
+                    Image=Bm.Ship.SmugglerPeleng
+                    ImageMap=Bm.Ship.SpecialMap
+                    ImageS=Bm.Ship.SmugglerPelengs
+                    PanelPartnerImage=SmugglerPeleng
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=37,102
+                    Tail2=89,102
+                }
+            }
+        }
+        Sound ^{
+            Loop ^{
+                Ruins ^{
+                    BM ^{
+                        10=3000,Sound.LoopRuins01
+                    }
+                }
+            }
+            Rnd ^{
+                Ruins ^{
+                    BM ^{
+                    }
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_ExpBlackMarket_1=1,Script.Mod_ExpBlackMarket_1
+        Mod_ExpBlackMarket_2=1,Script.Mod_ExpBlackMarket_2
+    }
+    ScriptLibs ^{
+        Mod_ExpBlackMarket_1=UtilityFunctions
+        Mod_ExpBlackMarket_2=UtilityFunctions
+    }
+}
+ML ^{
+    EquipmentShop ^{
+        Panel ^{
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurn_Block ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Block
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Galaxy ^{
+        Panel ^{
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurn_Block ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Block
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+        }
+    }
+    GoodsShop ^{
+        Panel ^{
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurn_Block ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Block
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Hangar ^{
+        Panel ^{
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurn_Block ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Block
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Info ^{
+        Panel ^{
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurn_Block ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Block
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+        }
+    }
+    Rating ^{
+        Panel ^{
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurn_Block ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Block
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+        }
+    }
+    RuinsTalk ^{
+        Panel ^{
+            ExpBlackMarket ^{
+                Panel ^{
+                    Active=False
+                    Name=PanelPirateClanBM_Lock
+                    Panel ^{
+                        GAI ^{
+                            Active=False
+                            AlignX=Center
+                            AlignY=Center
+                            Frame=[75,0-99]
+                            Image=Bm.Gov.2PelengAnim0a
+                            ImageFirst=Bm.Gov.2PelengAnim0i
+                            Name=Panel_Anim0
+                            PBuf=True
+                            Pos=528,183,-2
+                            Size=304,690
+                            SkipImageUpdateRect=True
+                        }
+                        GAI ^{
+                            Active=False
+                            AlignX=Center
+                            AlignY=Center
+                            Frame=[75,0-99]
+                            Image=Bm.Gov.2PelengAnim1a
+                            ImageFirst=Bm.Gov.2PelengAnim1i
+                            Name=Panel_Anim1
+                            PBuf=True
+                            Pos=475,150,-2
+                            Size=384,723
+                            SkipImageUpdateRect=True
+                        }
+                        GAI ^{
+                            Active=False
+                            AlignX=Center
+                            AlignY=Center
+                            Frame=[75,0-99]
+                            Image=Bm.GovHD.PelengAnim0a
+                            ImageFirst=Bm.GovHD.PelengAnim0i
+                            Name=PanelHD_Anim0
+                            PBuf=True
+                            Pos=-150,-88,-2
+                            Size=480,903
+                            SkipImageUpdateRect=True
+                        }
+                        GAI ^{
+                            Active=False
+                            AlignX=Center
+                            AlignY=Center
+                            Frame=[75,0-99]
+                            Image=Bm.GovHD.PelengAnim1a
+                            ImageFirst=Bm.GovHD.PelengAnim1i
+                            Name=PanelHD_Anim1
+                            PBuf=True
+                            Pos=-150,-88,-2
+                            Size=480,903
+                            SkipImageUpdateRect=True
+                        }
+                        Image ^{
+                            Image=GI,Bm.FormRuins.2PBtable
+                            Name=Table
+                            Pos=-150,0,-3
+                            Size=1262,569
+                        }
+                        Name=PanelPirateClanBM
+                        Pos=0,0,800
+                        Size=1024,768
+                    }
+                    Pos=0,0,800
+                    Size=2000,2000
+                }
+            }
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurn_Block ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Block
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+            Panel ^{
+                GraphButton ^{
+                }
+                RuinsTalkBMButBlock ^{
+                    GraphButton ^{
+                        Active=False
+                        Help=Help.ButCaptain
+                        ImageDown=GI,Bm.PanelMain2.2GovD
+                        ImageNormal=GI,Bm.PanelMain2.2GovN
+                        ImageNormalA=GI,Bm.PanelMain2.2GovA
+                        Kind=Normal
+                        KindHit=Graph
+                        Name=PR_BMGovBlock
+                        OnPressCode ^{
+                            01=MessageBox(CT('Script.Mod_ExpBlackMarket_2.GovBlock'));
+                        }
+                        Pos=508,695,8
+                        Size=39,33
+                        Style=Style.GB.SoundNormal
+                    }
+                    GraphButton ^{
+                        Active=False
+                        Help=Help.ButShop
+                        ImageDown=GI,Bm.PanelMain2.2ShopD
+                        ImageNormal=GI,Bm.PanelMain2.2ShopN
+                        ImageNormalA=GI,Bm.PanelMain2.2ShopA
+                        Kind=Normal
+                        KindHit=Graph
+                        Name=PR_BMShopBlock
+                        OnPressCode ^{
+                            01=MessageBox(CT('Script.Mod_ExpBlackMarket_2.ShopBlock'));
+                        }
+                        Pos=596,695,8
+                        Size=41,33
+                        Style=Style.GB.SoundNormal
+                    }
+                }
+            }
+            Panel ^{
+            }
+            Panel ^{
+                GraphButton ^{
+                    Auto=Size
+                    ImageDisable=GI,Bm.FormGov2.2MemH
+                    ImageDown=GI,Bm.FormGov2.2MemD
+                    ImageNormal=GI,Bm.FormGov2.2MemN
+                    ImageNormalA=GI,Bm.FormGov2.2MemA
+                    Kind=Disable
+                    KindHit=Rect
+                    Name=UserMsgAdd
+                    Pos=370,396,1
+                    Style=Style.GB.SoundNormal
+                }
+                GraphButton ^{
+                    Disable=True
+                    ImageDisable=GI,Bm.FormGov2.2CloseH
+                    ImageDown=GI,Bm.FormGov2.2CloseD
+                    ImageNormal=GI,Bm.FormGov2.2CloseN
+                    ImageNormalA=GI,Bm.FormGov2.2CloseA
+                    Kind=Disable
+                    KindHit=Rect
+                    Name=ButFormClose
+                    Pos=295,570,1
+                    Size=78,37
+                    Style=Style.GB.SoundNormal
+                }
+                Image ^{
+                    Image=GI,Bm.FormGov2.2TWinB
+                    Pos=10,424,10
+                    Size=368,156
+                }
+                Image ^{
+                    Image=GI,Bm.FormGov2.2TWin
+                    Pos=0,0,6
+                    Size=411,620
+                }
+                Image ^{
+                    Image=GI,Bm.SB.2V1_UpH
+                    Pos=380,70,5
+                    Size=17,22
+                }
+                Image ^{
+                    Image=GI,Bm.SB.2V1_DownH
+                    Pos=380,363,5
+                    Size=17,22
+                }
+                Image ^{
+                    Image=GI,Bm.SB.2V1_UpH
+                    Pos=380,440,5
+                    Size=17,22
+                }
+                Image ^{
+                    Image=GI,Bm.SB.2V1_DownH
+                    Pos=380,526,5
+                    Size=17,22
+                }
+                Name=PanelTalk
+                PanelScrollBar ^{
+                    ActiveBarY=True
+                    ExternalSB=True
+                    Label ^{
+                        AlignX=Auto
+                        AlignY=Auto
+                        Name=TalkText
+                        Pos=0,0,0,w
+                        Size=345,338
+                        Style=Style.Label.2Normal
+                        TextColor=0,0,0
+                        WordWrap=True
+                    }
+                    MoveWorld=True
+                    Name=TextScroll
+                    Pos=25,67,4
+                    PosAutoBarY=False
+                    RectBarY=380,70,397,385
+                    Size=345,338
+                    StyleBarY=Style.ScrollBar.2V1
+                    UnlimitedWorld=False
+                }
+                PanelScrollBar ^{
+                    ActiveBarY=True
+                    ExternalSB=True
+                    MoveWorld=True
+                    Name=TalkPA
+                    Pos=12,440,9
+                    PosAutoBarY=False
+                    RectBarY=380,440,397,548
+                    Size=365,120
+                    StyleBarY=Style.ScrollBar.2V1
+                    UnlimitedWorld=False
+                }
+                Pos=59,75,9
+                Size=411,620
+            }
+        }
+    }
+    Ship ^{
+        Panel ^{
+            Name=MainPanel
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    EndTurn_Block ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.PanelMain2.2TurnH
+                            Name=RT_EndTurn_Block
+                            Pos=899,33,8
+                            PosAutoCorrection=True
+                            PosAutoCorrectionXCoef=1.0
+                            Size=125,49
+                        }
+                    }
+                }
+            }
+            Panel ^{
+            }
+            Panel ^{
+                Label ^{
+                }
+                Label ^{
+                    Name=StorageLabel
+                }
+                Panel ^{
+                    StorageLock ^{
+                        Image ^{
+                            Active=False
+                            Image=GI,Bm.FormShip2.StorageLockImage
+                            Name=StorageLockImage
+                            Pos=0,-2,10
+                            Size=168,62
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+Music ^{
+    BM ^{
+        1=Music\REV\nikinit_glubina_base_special.dat
+        10=Music\REV\nikinit_glubina_base_special.dat
+    }
+}

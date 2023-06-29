@@ -1,0 +1,1548 @@
+FormRuinsSB ^{
+    History ^{
+        SB=In addition, we study the effect of black holes.
+    }
+}
+MicroModuls ^{
+    350 ^{
+        LockedAcryn=3
+        Name=Assassin Hull
+    }
+    351 ^{
+        LockedAcryn=3
+        Name=Rock Hull
+    }
+    352 ^{
+        LockedAcryn=3
+        Name=Bolide Hull
+    }
+    353 ^{
+        AcrynLevel=1
+        AcrynSerie=Fast Hull I-IV
+        LevelsCount=4
+        Name=Fast Hull I
+        SerieLevel1=353
+        SerieLevel2=354
+        SerieLevel3=355
+        SerieLevel4=356
+    }
+    354 ^{
+        AcrynLevel=2
+        AcrynSerie=Fast Hull I-IV
+        LevelsCount=4
+        Name=Fast Hull II
+        SerieLevel1=353
+        SerieLevel2=354
+        SerieLevel3=355
+        SerieLevel4=356
+    }
+    355 ^{
+        AcrynLevel=3
+        AcrynSerie=Fast Hull I-IV
+        LevelsCount=4
+        Name=Fast Hull III
+        SerieLevel1=353
+        SerieLevel2=354
+        SerieLevel3=355
+        SerieLevel4=356
+    }
+    356 ^{
+        AcrynLevel=4
+        AcrynSerie=Fast Hull I-IV
+        LevelsCount=4
+        Name=Fast Hull IV
+        SerieLevel1=353
+        SerieLevel2=354
+        SerieLevel3=355
+        SerieLevel4=356
+    }
+    357 ^{
+        AcrynLevel=1
+        AcrynSerie=Invincible Hull I-IV
+        LevelsCount=4
+        Name=Invincible Hull I
+        SerieLevel1=357
+        SerieLevel2=358
+        SerieLevel3=359
+        SerieLevel4=360
+    }
+    358 ^{
+        AcrynLevel=2
+        AcrynSerie=Invincible Hull I-IV
+        LevelsCount=4
+        Name=Invincible Hull II
+        SerieLevel1=357
+        SerieLevel2=358
+        SerieLevel3=359
+        SerieLevel4=360
+    }
+    359 ^{
+        AcrynLevel=3
+        AcrynSerie=Invincible Hull I-IV
+        LevelsCount=4
+        Name=Invincible Hull III
+        SerieLevel1=357
+        SerieLevel2=358
+        SerieLevel3=359
+        SerieLevel4=360
+    }
+    360 ^{
+        AcrynLevel=4
+        AcrynSerie=Invincible Hull I-IV
+        LevelsCount=4
+        Name=Invincible Hull IV
+        SerieLevel1=357
+        SerieLevel2=358
+        SerieLevel3=359
+        SerieLevel4=360
+    }
+    361 ^{
+        AcrynLevel=1
+        AcrynSerie=Repair Hull I-IV
+        LevelsCount=4
+        Name=Repair Hull I
+        SerieLevel1=361
+        SerieLevel2=362
+        SerieLevel3=363
+        SerieLevel4=364
+    }
+    362 ^{
+        AcrynLevel=2
+        AcrynSerie=Repair Hull I-IV
+        LevelsCount=4
+        Name=Repair Hull II
+        SerieLevel1=361
+        SerieLevel2=362
+        SerieLevel3=363
+        SerieLevel4=364
+    }
+    363 ^{
+        AcrynLevel=3
+        AcrynSerie=Repair Hull I-IV
+        LevelsCount=4
+        Name=Repair Hull III
+        SerieLevel1=361
+        SerieLevel2=362
+        SerieLevel3=363
+        SerieLevel4=364
+    }
+    364 ^{
+        AcrynLevel=4
+        AcrynSerie=Repair Hull I-IV
+        LevelsCount=4
+        Name=Repair Hull IV
+        SerieLevel1=361
+        SerieLevel2=362
+        SerieLevel3=363
+        SerieLevel4=364
+    }
+    365 ^{
+        AcrynLevel=1
+        AcrynSerie=Myoplasmic Hull I-IV
+        LevelsCount=4
+        Name=Myoplasmic Hull I
+        SerieLevel1=365
+        SerieLevel2=366
+        SerieLevel3=368
+        SerieLevel4=368
+    }
+    366 ^{
+        AcrynLevel=2
+        AcrynSerie=Myoplasmic Hull I-IV
+        LevelsCount=4
+        Name=Myoplasmic Hull II
+        SerieLevel1=365
+        SerieLevel2=366
+        SerieLevel3=368
+        SerieLevel4=368
+    }
+    367 ^{
+        AcrynLevel=3
+        AcrynSerie=Myoplasmic Hull I-IV
+        LevelsCount=4
+        Name=Myoplasmic Hull III
+        SerieLevel1=365
+        SerieLevel2=366
+        SerieLevel3=368
+        SerieLevel4=368
+    }
+    368 ^{
+        AcrynLevel=4
+        AcrynSerie=Myoplasmic Hull I-IV
+        LevelsCount=4
+        Name=Myoplasmic Hull IV
+        SerieLevel1=365
+        SerieLevel2=366
+        SerieLevel3=368
+        SerieLevel4=368
+    }
+    369 ^{
+        AcrynLevel=1
+        AcrynSerie=Pygamore Hull I-IV
+        LevelsCount=4
+        Name=Pygamore Hull I
+        SerieLevel1=369
+        SerieLevel2=370
+        SerieLevel3=371
+        SerieLevel4=372
+    }
+    370 ^{
+        AcrynLevel=2
+        AcrynSerie=Pygamore Hull I-IV
+        LevelsCount=4
+        Name=Pygamore Hull II
+        SerieLevel1=369
+        SerieLevel2=370
+        SerieLevel3=371
+        SerieLevel4=372
+    }
+    371 ^{
+        AcrynLevel=3
+        AcrynSerie=Pygamore Hull I-IV
+        LevelsCount=4
+        Name=Pygamore Hull III
+        SerieLevel1=369
+        SerieLevel2=370
+        SerieLevel3=371
+        SerieLevel4=372
+    }
+    372 ^{
+        AcrynLevel=4
+        AcrynSerie=Pygamore Hull I-IV
+        LevelsCount=4
+        Name=Pygamore Hull IV
+        SerieLevel1=369
+        SerieLevel2=370
+        SerieLevel3=371
+        SerieLevel4=372
+    }
+    373 ^{
+        AcrynLevel=1
+        AcrynSerie=Myoplasmic Fuel Tank I-III
+        LevelsCount=3
+        Name=Myoplasmic Fuel Tank I
+        SerieLevel1=373
+        SerieLevel2=380
+        SerieLevel3=387
+    }
+    374 ^{
+        AcrynLevel=1
+        AcrynSerie=Myoplasmic Engine I-III
+        LevelsCount=3
+        Name=Myoplasmic Engine I
+        SerieLevel1=374
+        SerieLevel2=381
+        SerieLevel3=388
+    }
+    375 ^{
+        AcrynLevel=1
+        AcrynSerie=Myoplasmic Radar I-III
+        LevelsCount=3
+        Name=Myoplasmic Radar I
+        SerieLevel1=375
+        SerieLevel2=382
+        SerieLevel3=389
+    }
+    376 ^{
+        AcrynLevel=1
+        AcrynSerie=Myoplasmic Scanner I-III
+        LevelsCount=3
+        Name=Myoplasmic Scanner I
+        SerieLevel1=376
+        SerieLevel2=383
+        SerieLevel3=390
+    }
+    377 ^{
+        AcrynLevel=1
+        AcrynSerie=Myoplasmic Droid I-III
+        LevelsCount=3
+        Name=Myoplasmic Droid I
+        SerieLevel1=377
+        SerieLevel2=384
+        SerieLevel3=391
+    }
+    378 ^{
+        AcrynLevel=1
+        AcrynSerie=Myoplasmic Gripper I-III
+        LevelsCount=3
+        Name=Myoplasmic Gripper I
+        SerieLevel1=378
+        SerieLevel2=385
+        SerieLevel3=392
+    }
+    379 ^{
+        AcrynLevel=1
+        AcrynSerie=Myoplasmic Shield Generator I-III
+        LevelsCount=3
+        Name=Myoplasmic Shield Generator I
+        SerieLevel1=379
+        SerieLevel2=386
+        SerieLevel3=393
+    }
+    380 ^{
+        AcrynLevel=2
+        AcrynSerie=Myoplasmic Fuel Tank I-III
+        LevelsCount=3
+        Name=Myoplasmic Fuel Tank II
+        SerieLevel1=373
+        SerieLevel2=380
+        SerieLevel3=387
+    }
+    381 ^{
+        AcrynLevel=2
+        AcrynSerie=Myoplasmic Engine I-III
+        LevelsCount=3
+        Name=Myoplasmic Engine II
+        SerieLevel1=374
+        SerieLevel2=381
+        SerieLevel3=388
+    }
+    382 ^{
+        AcrynLevel=2
+        AcrynSerie=Myoplasmic Radar I-III
+        LevelsCount=3
+        Name=Myoplasmic Radar II
+        SerieLevel1=375
+        SerieLevel2=382
+        SerieLevel3=389
+    }
+    383 ^{
+        AcrynLevel=2
+        AcrynSerie=Myoplasmic Scanner I-III
+        LevelsCount=3
+        Name=Myoplasmic Scanner II
+        SerieLevel1=376
+        SerieLevel2=383
+        SerieLevel3=390
+    }
+    384 ^{
+        AcrynLevel=2
+        AcrynSerie=Myoplasmic Droid I-III
+        LevelsCount=3
+        Name=Myoplasmic Droid II
+        SerieLevel1=377
+        SerieLevel2=384
+        SerieLevel3=391
+    }
+    385 ^{
+        AcrynLevel=2
+        AcrynSerie=Myoplasmic Gripper I-III
+        LevelsCount=3
+        Name=Myoplasmic Gripper II
+        SerieLevel1=378
+        SerieLevel2=385
+        SerieLevel3=392
+    }
+    386 ^{
+        AcrynLevel=2
+        AcrynSerie=Myoplasmic Shield Generator I-III
+        LevelsCount=3
+        Name=Myoplasmic Shield Generator II
+        SerieLevel1=379
+        SerieLevel2=386
+        SerieLevel3=393
+    }
+    387 ^{
+        AcrynLevel=3
+        AcrynSerie=Myoplasmic Fuel Tank I-III
+        LevelsCount=3
+        Name=Myoplasmic Fuel Tank III
+        SerieLevel1=373
+        SerieLevel2=380
+        SerieLevel3=387
+    }
+    388 ^{
+        AcrynLevel=3
+        AcrynSerie=Myoplasmic Engine I-III
+        LevelsCount=3
+        Name=Myoplasmic Engine III
+        SerieLevel1=374
+        SerieLevel2=381
+        SerieLevel3=388
+    }
+    389 ^{
+        AcrynLevel=3
+        AcrynSerie=Myoplasmic Radar I-III
+        LevelsCount=3
+        Name=Myoplasmic Radar III
+        SerieLevel1=375
+        SerieLevel2=382
+        SerieLevel3=389
+    }
+    390 ^{
+        AcrynLevel=3
+        AcrynSerie=Myoplasmic Scanner I-III
+        LevelsCount=3
+        Name=Myoplasmic Scanner III
+        SerieLevel1=376
+        SerieLevel2=383
+        SerieLevel3=390
+    }
+    391 ^{
+        AcrynLevel=3
+        AcrynSerie=Myoplasmic Droid I-III
+        LevelsCount=3
+        Name=Myoplasmic Droid III
+        SerieLevel1=377
+        SerieLevel2=384
+        SerieLevel3=391
+    }
+    392 ^{
+        AcrynLevel=3
+        AcrynSerie=Myoplasmic Gripper I-III
+        LevelsCount=3
+        Name=Myoplasmic Gripper III
+        SerieLevel1=378
+        SerieLevel2=385
+        SerieLevel3=392
+    }
+    393 ^{
+        AcrynLevel=3
+        AcrynSerie=Myoplasmic Shield Generator I-III
+        LevelsCount=3
+        Name=Myoplasmic Shield Generator III
+        SerieLevel1=379
+        SerieLevel2=386
+        SerieLevel3=393
+    }
+    394 ^{
+        AcrynLevel=1
+        AcrynSerie=Pygamore Fuel Tank I-III
+        LevelsCount=3
+        Name=Pygamore Fuel Tank I
+        SerieLevel1=394
+        SerieLevel2=401
+        SerieLevel3=408
+    }
+    395 ^{
+        AcrynLevel=1
+        AcrynSerie=Pygamore Engine I-III
+        LevelsCount=3
+        Name=Pygamore Engine I
+        SerieLevel1=395
+        SerieLevel2=402
+        SerieLevel3=409
+    }
+    396 ^{
+        AcrynLevel=1
+        AcrynSerie=Pygamore Radar I-III
+        LevelsCount=3
+        Name=Pygamore Radar I
+        SerieLevel1=396
+        SerieLevel2=403
+        SerieLevel3=410
+    }
+    397 ^{
+        AcrynLevel=1
+        AcrynSerie=Pygamore Scanner I-III
+        LevelsCount=3
+        Name=Pygamore Scanner I
+        SerieLevel1=397
+        SerieLevel2=404
+        SerieLevel3=411
+    }
+    398 ^{
+        AcrynLevel=1
+        AcrynSerie=Pygamore Droid I-III
+        LevelsCount=3
+        Name=Pygamore Droid I
+        SerieLevel1=398
+        SerieLevel2=405
+        SerieLevel3=412
+    }
+    399 ^{
+        AcrynLevel=1
+        AcrynSerie=Pygamore Gripper I-III
+        LevelsCount=3
+        Name=Pygamore Gripper I
+        SerieLevel1=399
+        SerieLevel2=406
+        SerieLevel3=413
+    }
+    400 ^{
+        AcrynLevel=1
+        AcrynSerie=Pygamore Shield Generator I-III
+        LevelsCount=3
+        Name=Pygamore Shield Generator I
+        SerieLevel1=400
+        SerieLevel2=407
+        SerieLevel3=414
+    }
+    401 ^{
+        AcrynLevel=2
+        AcrynSerie=Pygamore Fuel Tank I-III
+        LevelsCount=3
+        Name=Pygamore Fuel Tank II
+        SerieLevel1=394
+        SerieLevel2=401
+        SerieLevel3=408
+    }
+    402 ^{
+        AcrynLevel=2
+        AcrynSerie=Pygamore Engine I-III
+        LevelsCount=3
+        Name=Pygamore Engine II
+        SerieLevel1=395
+        SerieLevel2=402
+        SerieLevel3=409
+    }
+    403 ^{
+        AcrynLevel=2
+        AcrynSerie=Pygamore Radar I-III
+        LevelsCount=3
+        Name=Pygamore Radar II
+        SerieLevel1=396
+        SerieLevel2=403
+        SerieLevel3=410
+    }
+    404 ^{
+        AcrynLevel=2
+        AcrynSerie=Pygamore Scanner I-III
+        LevelsCount=3
+        Name=Pygamore Scanner II
+        SerieLevel1=397
+        SerieLevel2=404
+        SerieLevel3=411
+    }
+    405 ^{
+        AcrynLevel=2
+        AcrynSerie=Pygamore Droid I-III
+        LevelsCount=3
+        Name=Pygamore Droid II
+        SerieLevel1=398
+        SerieLevel2=405
+        SerieLevel3=412
+    }
+    406 ^{
+        AcrynLevel=2
+        AcrynSerie=Pygamore Gripper I-III
+        LevelsCount=3
+        Name=Pygamore Gripper II
+        SerieLevel1=399
+        SerieLevel2=406
+        SerieLevel3=413
+    }
+    407 ^{
+        AcrynLevel=2
+        AcrynSerie=Pygamore Shield Generator I-III
+        LevelsCount=3
+        Name=Pygamore Shield Generator II
+        SerieLevel1=400
+        SerieLevel2=407
+        SerieLevel3=414
+    }
+    408 ^{
+        AcrynLevel=3
+        AcrynSerie=Pygamore Fuel Tank I-III
+        LevelsCount=3
+        Name=Pygamore Fuel Tank III
+        SerieLevel1=394
+        SerieLevel2=401
+        SerieLevel3=408
+    }
+    409 ^{
+        AcrynLevel=3
+        AcrynSerie=Pygamore Engine I-III
+        LevelsCount=3
+        Name=Pygamore Engine III
+        SerieLevel1=395
+        SerieLevel2=402
+        SerieLevel3=409
+    }
+    410 ^{
+        AcrynLevel=3
+        AcrynSerie=Pygamore Radar I-III
+        LevelsCount=3
+        Name=Pygamore Radar III
+        SerieLevel1=396
+        SerieLevel2=403
+        SerieLevel3=410
+    }
+    411 ^{
+        AcrynLevel=3
+        AcrynSerie=Pygamore Scanner I-III
+        LevelsCount=3
+        Name=Pygamore Scanner III
+        SerieLevel1=397
+        SerieLevel2=404
+        SerieLevel3=411
+    }
+    412 ^{
+        AcrynLevel=3
+        AcrynSerie=Pygamore Droid I-III
+        LevelsCount=3
+        Name=Pygamore Droid III
+        SerieLevel1=398
+        SerieLevel2=405
+        SerieLevel3=412
+    }
+    413 ^{
+        AcrynLevel=3
+        AcrynSerie=Pygamore Gripper I-III
+        LevelsCount=3
+        Name=Pygamore Gripper III
+        SerieLevel1=399
+        SerieLevel2=406
+        SerieLevel3=413
+    }
+    414 ^{
+        AcrynLevel=3
+        AcrynSerie=Pygamore Shield Generator I-III
+        LevelsCount=3
+        Name=Pygamore Shield Generator III
+        SerieLevel1=400
+        SerieLevel2=407
+        SerieLevel3=414
+    }
+    415 ^{
+        AcrynLevel=1
+        AcrynSerie=Transcendental Engine I-III
+        LevelsCount=3
+        Name=Transcendental Engine I
+        SerieLevel1=415
+        SerieLevel2=416
+        SerieLevel3=417
+    }
+    416 ^{
+        AcrynLevel=2
+        AcrynSerie=Transcendental Engine I-III
+        LevelsCount=3
+        Name=Transcendental Engine II
+        SerieLevel1=415
+        SerieLevel2=416
+        SerieLevel3=417
+    }
+    417 ^{
+        AcrynLevel=3
+        AcrynSerie=Transcendental Engine I-III
+        LevelsCount=3
+        Name=Transcendental Engine III
+        SerieLevel1=415
+        SerieLevel2=416
+        SerieLevel3=417
+    }
+    418 ^{
+        AcrynLevel=1
+        AcrynSerie=Upgraded Gripper I-III
+        LevelsCount=3
+        Name=Upgraded Gripper I
+        SerieLevel1=418
+        SerieLevel2=424
+        SerieLevel3=430
+    }
+    419 ^{
+        AcrynLevel=1
+        AcrynSerie=Upgraded Shield Generator I-III
+        LevelsCount=3
+        Name=Upgraded Shield Generator I
+        SerieLevel1=419
+        SerieLevel2=425
+        SerieLevel3=431
+    }
+    420 ^{
+        AcrynLevel=1
+        AcrynSerie=Upgraded Engine I-III
+        LevelsCount=3
+        Name=Upgraded Engine I
+        SerieLevel1=420
+        SerieLevel2=426
+        SerieLevel3=432
+    }
+    421 ^{
+        AcrynLevel=1
+        AcrynSerie=Upgraded Fuel Tank I-III
+        LevelsCount=3
+        Name=Upgraded Fuel Tank I
+        SerieLevel1=421
+        SerieLevel2=427
+        SerieLevel3=433
+    }
+    422 ^{
+        AcrynLevel=1
+        AcrynSerie=Upgraded Radar I-III
+        LevelsCount=3
+        Name=Upgraded Radar I
+        SerieLevel1=422
+        SerieLevel2=428
+        SerieLevel3=434
+    }
+    423 ^{
+        AcrynLevel=1
+        AcrynSerie=Upgraded Scanner I-III
+        LevelsCount=3
+        Name=Upgraded Scanner I
+        SerieLevel1=423
+        SerieLevel2=429
+        SerieLevel3=435
+    }
+    424 ^{
+        AcrynLevel=2
+        AcrynSerie=Upgraded Gripper I-III
+        LevelsCount=3
+        Name=Upgraded Gripper II
+        SerieLevel1=418
+        SerieLevel2=424
+        SerieLevel3=430
+    }
+    425 ^{
+        AcrynLevel=2
+        AcrynSerie=Upgraded Shield Generator I-III
+        LevelsCount=3
+        Name=Upgraded Shield Generator II
+        SerieLevel1=419
+        SerieLevel2=425
+        SerieLevel3=431
+    }
+    426 ^{
+        AcrynLevel=2
+        AcrynSerie=Upgraded Engine I-III
+        LevelsCount=3
+        Name=Upgraded Engine II
+        SerieLevel1=420
+        SerieLevel2=426
+        SerieLevel3=432
+    }
+    427 ^{
+        AcrynLevel=2
+        AcrynSerie=Upgraded Fuel Tank I-III
+        LevelsCount=3
+        Name=Upgraded Fuel Tank II
+        SerieLevel1=421
+        SerieLevel2=427
+        SerieLevel3=433
+    }
+    428 ^{
+        AcrynLevel=2
+        AcrynSerie=Upgraded Radar I-III
+        LevelsCount=3
+        Name=Upgraded Radar II
+        SerieLevel1=422
+        SerieLevel2=428
+        SerieLevel3=434
+    }
+    429 ^{
+        AcrynLevel=2
+        AcrynSerie=Upgraded Scanner I-III
+        LevelsCount=3
+        Name=Upgraded Scanner II
+        SerieLevel1=423
+        SerieLevel2=429
+        SerieLevel3=435
+    }
+    430 ^{
+        AcrynLevel=3
+        AcrynSerie=Upgraded Gripper I-III
+        LevelsCount=3
+        Name=Upgraded Gripper III
+        SerieLevel1=418
+        SerieLevel2=424
+        SerieLevel3=430
+    }
+    431 ^{
+        AcrynLevel=3
+        AcrynSerie=Upgraded Shield Generator I-III
+        LevelsCount=3
+        Name=Upgraded Shield Generator III
+        SerieLevel1=419
+        SerieLevel2=425
+        SerieLevel3=431
+    }
+    432 ^{
+        AcrynLevel=3
+        AcrynSerie=Upgraded Engine I-III
+        LevelsCount=3
+        Name=Upgraded Engine III
+        SerieLevel1=420
+        SerieLevel2=426
+        SerieLevel3=432
+    }
+    433 ^{
+        AcrynLevel=3
+        AcrynSerie=Upgraded Fuel Tank I-III
+        LevelsCount=3
+        Name=Upgraded Fuel Tank III
+        SerieLevel1=421
+        SerieLevel2=427
+        SerieLevel3=433
+    }
+    434 ^{
+        AcrynLevel=3
+        AcrynSerie=Upgraded Radar I-III
+        LevelsCount=3
+        Name=Upgraded Radar III
+        SerieLevel1=422
+        SerieLevel2=428
+        SerieLevel3=434
+    }
+    435 ^{
+        AcrynLevel=3
+        AcrynSerie=Upgraded Scanner I-III
+        LevelsCount=3
+        Name=Upgraded Scanner III
+        SerieLevel1=423
+        SerieLevel2=429
+        SerieLevel3=435
+    }
+    436 ^{
+        AcrynLevel=1
+        AcrynSerie=Biogenic Droid I-III
+        BioEquip=1
+        LevelsCount=3
+        Name=Biogenic Droid I
+        SerieLevel1=436
+        SerieLevel2=437
+        SerieLevel3=438
+    }
+    437 ^{
+        AcrynLevel=2
+        AcrynSerie=Biogenic Droid I-III
+        BioEquip=1
+        LevelsCount=3
+        Name=Biogenic Droid II
+        SerieLevel1=436
+        SerieLevel2=437
+        SerieLevel3=438
+    }
+    438 ^{
+        AcrynLevel=3
+        AcrynSerie=Biogenic Droid I-III
+        BioEquip=1
+        LevelsCount=3
+        Name=Biogenic Droid III
+        SerieLevel1=436
+        SerieLevel2=437
+        SerieLevel3=438
+    }
+    439 ^{
+        AcrynLevel=1
+        AcrynSerie=Nanobrolite Droid I-III
+        LevelsCount=3
+        Name=Nanobrolite Droid I
+        SerieLevel1=439
+        SerieLevel2=442
+        SerieLevel3=445
+    }
+    440 ^{
+        AcrynLevel=1
+        AcrynSerie=Nanobrolite Engine I-III
+        LevelsCount=3
+        Name=Nanobrolite Engine I
+        SerieLevel1=440
+        SerieLevel2=443
+        SerieLevel3=446
+    }
+    441 ^{
+        AcrynLevel=1
+        AcrynSerie=Nanobrolite Shield Generator I-III
+        LevelsCount=3
+        Name=Nanobrolite Shield Generator I
+        SerieLevel1=441
+        SerieLevel2=444
+        SerieLevel3=447
+    }
+    442 ^{
+        AcrynLevel=2
+        AcrynSerie=Nanobrolite Droid I-III
+        LevelsCount=3
+        Name=Nanobrolite Droid II
+        SerieLevel1=439
+        SerieLevel2=442
+        SerieLevel3=445
+    }
+    443 ^{
+        AcrynLevel=2
+        AcrynSerie=Nanobrolite Engine I-III
+        LevelsCount=3
+        Name=Nanobrolite Engine II
+        SerieLevel1=440
+        SerieLevel2=443
+        SerieLevel3=446
+    }
+    444 ^{
+        AcrynLevel=2
+        AcrynSerie=Nanobrolite Shield Generator I-III
+        LevelsCount=3
+        Name=Nanobrolite Shield Generator II
+        SerieLevel1=441
+        SerieLevel2=444
+        SerieLevel3=447
+    }
+    445 ^{
+        AcrynLevel=3
+        AcrynSerie=Nanobrolite Droid I-III
+        LevelsCount=3
+        Name=Nanobrolite Droid III
+        SerieLevel1=439
+        SerieLevel2=442
+        SerieLevel3=445
+    }
+    446 ^{
+        AcrynLevel=3
+        AcrynSerie=Nanobrolite Engine I-III
+        LevelsCount=3
+        Name=Nanobrolite Engine III
+        SerieLevel1=440
+        SerieLevel2=443
+        SerieLevel3=446
+    }
+    447 ^{
+        AcrynLevel=3
+        AcrynSerie=Nanobrolite Shield Generator I-III
+        LevelsCount=3
+        Name=Nanobrolite Shield Generator III
+        SerieLevel1=441
+        SerieLevel2=444
+        SerieLevel3=447
+    }
+    448 ^{
+        AcrynLevel=1
+        AcrynSerie=Ultraalloy Scanner I-III
+        LevelsCount=3
+        Name=Ultraalloy Scanner I
+        SerieLevel1=448
+        SerieLevel2=452
+        SerieLevel3=459
+    }
+    449 ^{
+        AcrynLevel=1
+        AcrynSerie=Ultraalloy Radar I-III
+        LevelsCount=3
+        Name=Ultraalloy Radar I
+        SerieLevel1=449
+        SerieLevel2=453
+        SerieLevel3=456
+    }
+    450 ^{
+        AcrynLevel=1
+        AcrynSerie=Ultraalloy Fuel Tank I-III
+        LevelsCount=3
+        Name=Ultraalloy Fuel Tank I
+        SerieLevel1=450
+        SerieLevel2=454
+        SerieLevel3=457
+    }
+    451 ^{
+        AcrynLevel=1
+        AcrynSerie=Ultraalloy Gripper I-III
+        LevelsCount=3
+        Name=Ultraalloy Gripper I
+        SerieLevel1=451
+        SerieLevel2=455
+        SerieLevel3=458
+    }
+    452 ^{
+        AcrynLevel=2
+        AcrynSerie=Ultraalloy Scanner I-III
+        LevelsCount=3
+        Name=Ultraalloy Scanner II
+        SerieLevel1=448
+        SerieLevel2=452
+        SerieLevel3=459
+    }
+    453 ^{
+        AcrynLevel=2
+        AcrynSerie=Ultraalloy Radar I-III
+        LevelsCount=3
+        Name=Ultraalloy Radar II
+        SerieLevel1=449
+        SerieLevel2=453
+        SerieLevel3=456
+    }
+    454 ^{
+        AcrynLevel=2
+        AcrynSerie=Ultraalloy Fuel Tank I-III
+        LevelsCount=3
+        Name=Ultraalloy Fuel Tank II
+        SerieLevel1=450
+        SerieLevel2=454
+        SerieLevel3=457
+    }
+    455 ^{
+        AcrynLevel=2
+        AcrynSerie=Ultraalloy Gripper I-III
+        LevelsCount=3
+        Name=Ultraalloy Gripper II
+        SerieLevel1=451
+        SerieLevel2=455
+        SerieLevel3=458
+    }
+    456 ^{
+        AcrynLevel=3
+        AcrynSerie=Ultraalloy Radar I-III
+        LevelsCount=3
+        Name=Ultraalloy Radar III
+        SerieLevel1=449
+        SerieLevel2=453
+        SerieLevel3=456
+    }
+    457 ^{
+        AcrynLevel=3
+        AcrynSerie=Ultraalloy Fuel Tank I-III
+        LevelsCount=3
+        Name=Ultraalloy Fuel Tank III
+        SerieLevel1=450
+        SerieLevel2=454
+        SerieLevel3=457
+    }
+    458 ^{
+        AcrynLevel=3
+        AcrynSerie=Ultraalloy Gripper I-III
+        LevelsCount=3
+        Name=Ultraalloy Gripper III
+        SerieLevel1=451
+        SerieLevel2=455
+        SerieLevel3=458
+    }
+    459 ^{
+        AcrynLevel=3
+        AcrynSerie=Ultraalloy Scanner I-III
+        LevelsCount=3
+        Name=Ultraalloy Scanner III
+        SerieLevel1=448
+        SerieLevel2=452
+        SerieLevel3=459
+    }
+    460 ^{
+        AcrynLevel=1
+        AcrynSerie=Kindhearted Lyakusha I-IV
+        LevelsCount=4
+        Name=Kindhearted Lyakusha Hull I
+        SerieLevel1=460
+        SerieLevel2=461
+        SerieLevel3=462
+        SerieLevel4=463
+    }
+    461 ^{
+        AcrynLevel=2
+        AcrynSerie=Kindhearted Lyakusha I-IV
+        LevelsCount=4
+        Name=Kindhearted Lyakusha Hull II
+        SerieLevel1=460
+        SerieLevel2=461
+        SerieLevel3=462
+        SerieLevel4=463
+    }
+    462 ^{
+        AcrynLevel=3
+        AcrynSerie=Kindhearted Lyakusha I-IV
+        LevelsCount=4
+        Name=Kindhearted Lyakusha Hull III
+        SerieLevel1=460
+        SerieLevel2=461
+        SerieLevel3=462
+        SerieLevel4=463
+    }
+    463 ^{
+        AcrynLevel=4
+        AcrynSerie=Kindhearted Lyakusha I-IV
+        LevelsCount=4
+        Name=Kindhearted Lyakusha Hull IV
+        SerieLevel1=460
+        SerieLevel2=461
+        SerieLevel3=462
+        SerieLevel4=463
+    }
+    464 ^{
+        AcrynLevel=1
+        AcrynSerie=Peaceful Corsair I-IV
+        LevelsCount=4
+        Name=Peaceful Corsair Hull I
+        SerieLevel1=464
+        SerieLevel2=465
+        SerieLevel3=466
+        SerieLevel4=467
+    }
+    465 ^{
+        AcrynLevel=2
+        AcrynSerie=Peaceful Corsair I-IV
+        LevelsCount=4
+        Name=Peaceful Corsair Hull II
+        SerieLevel1=464
+        SerieLevel2=465
+        SerieLevel3=466
+        SerieLevel4=467
+    }
+    466 ^{
+        AcrynLevel=3
+        AcrynSerie=Peaceful Corsair I-IV
+        LevelsCount=4
+        Name=Peaceful Corsair Hull III
+        SerieLevel1=464
+        SerieLevel2=465
+        SerieLevel3=466
+        SerieLevel4=467
+    }
+    467 ^{
+        AcrynLevel=4
+        AcrynSerie=Peaceful Corsair I-IV
+        LevelsCount=4
+        Name=Peaceful Corsair Hull IV
+        SerieLevel1=464
+        SerieLevel2=465
+        SerieLevel3=466
+        SerieLevel4=467
+    }
+    468 ^{
+        AcrynLevel=1
+        AcrynSerie=Conscientious Renegal I-IV
+        LevelsCount=4
+        Name=Conscientious Renegal Hull I
+        SerieLevel1=468
+        SerieLevel2=469
+        SerieLevel3=470
+        SerieLevel4=471
+    }
+    469 ^{
+        AcrynLevel=2
+        AcrynSerie=Conscientious Renegal I-IV
+        LevelsCount=4
+        Name=Conscientious Renegal Hull II
+        SerieLevel1=468
+        SerieLevel2=469
+        SerieLevel3=470
+        SerieLevel4=471
+    }
+    470 ^{
+        AcrynLevel=3
+        AcrynSerie=Conscientious Renegal I-IV
+        LevelsCount=4
+        Name=Conscientious Renegal Hull III
+        SerieLevel1=468
+        SerieLevel2=469
+        SerieLevel3=470
+        SerieLevel4=471
+    }
+    471 ^{
+        AcrynLevel=4
+        AcrynSerie=Conscientious Renegal I-IV
+        LevelsCount=4
+        Name=Conscientious Renegal Hull IV
+        SerieLevel1=468
+        SerieLevel2=469
+        SerieLevel3=470
+        SerieLevel4=471
+    }
+    472 ^{
+        AcrynLevel=1
+        AcrynSerie=Dandy Hull I-IV
+        LevelsCount=4
+        Name=Dandy Hull I
+        SerieLevel1=472
+        SerieLevel2=473
+        SerieLevel3=474
+        SerieLevel4=475
+    }
+    473 ^{
+        AcrynLevel=2
+        AcrynSerie=Dandy Hull I-IV
+        LevelsCount=4
+        Name=Dandy Hull II
+        SerieLevel1=472
+        SerieLevel2=473
+        SerieLevel3=474
+        SerieLevel4=475
+    }
+    474 ^{
+        AcrynLevel=3
+        AcrynSerie=Dandy Hull I-IV
+        LevelsCount=4
+        Name=Dandy Hull III
+        SerieLevel1=472
+        SerieLevel2=473
+        SerieLevel3=474
+        SerieLevel4=475
+    }
+    475 ^{
+        AcrynLevel=4
+        AcrynSerie=Dandy Hull I-IV
+        LevelsCount=4
+        Name=Dandy Hull IV
+        SerieLevel1=472
+        SerieLevel2=473
+        SerieLevel3=474
+        SerieLevel4=475
+    }
+    476 ^{
+        AcrynLevel=1
+        AcrynSerie=Ironclad Hull I-IV
+        LevelsCount=4
+        Name=Ironclad Hull I
+        SerieLevel1=476
+        SerieLevel2=477
+        SerieLevel3=478
+        SerieLevel4=479
+    }
+    477 ^{
+        AcrynLevel=2
+        AcrynSerie=Ironclad Hull I-IV
+        LevelsCount=4
+        Name=Ironclad Hull II
+        SerieLevel1=476
+        SerieLevel2=477
+        SerieLevel3=478
+        SerieLevel4=479
+    }
+    478 ^{
+        AcrynLevel=3
+        AcrynSerie=Ironclad Hull I-IV
+        LevelsCount=4
+        Name=Ironclad Hull III
+        SerieLevel1=476
+        SerieLevel2=477
+        SerieLevel3=478
+        SerieLevel4=479
+    }
+    479 ^{
+        AcrynLevel=4
+        AcrynSerie=Ironclad Hull I-IV
+        LevelsCount=4
+        Name=Ironclad Hull IV
+        SerieLevel1=476
+        SerieLevel2=477
+        SerieLevel3=478
+        SerieLevel4=479
+    }
+    480 ^{
+        AcrynLevel=1
+        AcrynSerie=Dumbo Hull I-IV
+        LevelsCount=4
+        Name=Dumbo Hull I
+        SerieLevel1=480
+        SerieLevel2=481
+        SerieLevel3=482
+        SerieLevel4=483
+    }
+    481 ^{
+        AcrynLevel=2
+        AcrynSerie=Dumbo Hull I-IV
+        LevelsCount=4
+        Name=Dumbo Hull II
+        SerieLevel1=480
+        SerieLevel2=481
+        SerieLevel3=482
+        SerieLevel4=483
+    }
+    482 ^{
+        AcrynLevel=3
+        AcrynSerie=Dumbo Hull I-IV
+        LevelsCount=4
+        Name=Dumbo Hull III
+        SerieLevel1=480
+        SerieLevel2=481
+        SerieLevel3=482
+        SerieLevel4=483
+    }
+    483 ^{
+        AcrynLevel=4
+        AcrynSerie=Dumbo Hull I-IV
+        LevelsCount=4
+        Name=Dumbo Hull IV
+        SerieLevel1=480
+        SerieLevel2=481
+        SerieLevel3=482
+        SerieLevel4=483
+    }
+    484 ^{
+        LockedAcryn=3
+        Name=Benevolent Lyakusha Hull
+    }
+    485 ^{
+        LockedAcryn=3
+        Name=Pacifist Corsair Hull
+    }
+    486 ^{
+        LockedAcryn=3
+        Name=Honest Renegal Hull
+    }
+    487 ^{
+        LockedAcryn=3
+        Name=Dandy Hull V
+    }
+    488 ^{
+        LockedAcryn=3
+        Name=Ironclad Hull V
+    }
+    489 ^{
+        LockedAcryn=3
+        Name=Dumbo Hull V
+    }
+    490 ^{
+        LockedAcryn=3
+        Name=Shadow of the Empire
+    }
+    491 ^{
+        LockedAcryn=3
+        Name=Hybrid Droid
+    }
+    492 ^{
+        LockedAcryn=3
+        Name=Hybrid Droid
+    }
+    493 ^{
+        LockedAcryn=3
+        Name=Hybrid Droid
+    }
+    494 ^{
+        LockedAcryn=3
+        Name=Hybrid Droid
+    }
+    495 ^{
+        LockedAcryn=3
+        Name=Hybrid Droid
+    }
+    496 ^{
+        LockedAcryn=3
+        Name=Hybrid Droid
+    }
+    497 ^{
+        LockedAcryn=3
+        Name=Hybrid Droid
+    }
+    498 ^{
+        LockedAcryn=3
+        Name=Acrynator
+    }
+    ExpScienceRanks_AcrynId ^{
+        CustomTag=ExpScienceRanks_AcrynId
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpScienceRanks_AcrynSeed ^{
+        CustomTag=ExpScienceRanks_AcrynSeed
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpScienceRanks_TickAttackMode ^{
+        Cost=100
+        CustomTag=ExpScienceRanks_TickAttackMode
+        Equipments=Hull
+        FragilityEnergy=100
+        FragilityMissile=100
+        FragilitySplinter=100
+        KindGraph=MA
+        LockedAcryn=3
+        Name=Mite: Combat Mode
+        NonSearchable=1
+        Priority=100
+        Size=100
+        Special=1
+        Text=<color=248,252,248>As soon as people, during the galactic conference on the study of black holes, saw the prototype of this body, they immediately dubbed it "Mite". The name was instantly assigned to the hull</color>
+        Text=<color=248,252,248>The only drawback of this almost perfect transformer ship is that the key hull openings are too close. This way:</color>
+        Text=<color=248,252,248>In <color> attack mode, <color=248,252,248>sheet armor plates are moved back from the gun bay, partially blocking the exhaust nozzles of the engine, due to which there is a slight decrease in its power, but at the same time, damage is increased.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Firing range: <bonWRadius>
+        Text=Engine speed: <bonSpeed>
+        bonSpeed=-150
+        bonWEnergy=8
+        bonWMissile=12
+        bonWRadius=50
+        bonWSplinter=12
+    }
+    ExpScienceRanks_TickDefenseMode ^{
+        Cost=100
+        CustomTag=ExpScienceRanks_TickDefenseMode
+        Equipments=Hull
+        FragilityEnergy=66
+        FragilityMissile=66
+        FragilitySplinter=66
+        KindGraph=MD
+        LockedAcryn=3
+        Name=Mite: Protective Mode
+        NonSearchable=1
+        Priority=100
+        Size=100
+        Special=1
+        Text=<color=248,252,248>As soon as people, during the galactic conference on the study of black holes, saw the prototype of this body, they immediately dubbed it "Mite". The name was instantly assigned to the hull</color>
+        Text=<color=248,252,248>The only downside to this near-perfect transformer ship is that the key hull openings are too close. This way:</color>
+        Text=<color=248,252,248>In the protection mode</color>, <color=248,252,248>the armor plates move forward, narrowing the gun embrasures, which greatly complicates the operation of the targeting system. It is no longer able to effectively find enemy vulnerabilities, which significantly reduces the damage done and slightly the firing range, but increases protection</color>
+        Text=<clr><clrEnd>
+        Text=Hull Armor: <bonHull>
+        Text=Droid effectiveness: <bonDroid>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Firing range: <bonWRadius>
+        bonDroid=25
+        bonHull=5
+        bonWEnergy=-8
+        bonWMissile=-12
+        bonWRadius=-50
+        bonWSplinter=-12
+    }
+    ExpScienceRanks_TickSpeedMode ^{
+        Cost=100
+        CustomTag=ExpScienceRanks_TickSpeedMode
+        Equipments=Hull
+        FragilityEnergy=125
+        FragilityMissile=125
+        FragilitySplinter=125
+        KindGraph=MG
+        LockedAcryn=3
+        Name=Mite: Speed Mode
+        NonSearchable=1
+        Priority=100
+        Size=100
+        Special=1
+        Text=<color=248,252,248>As soon as people, during the galactic conference on the study of black holes, saw the prototype of this body, they immediately dubbed it "Mite". The name was instantly assigned to the hull</color>
+        Text=<color=248,252,248>The only downside to this near-perfect transformer ship is that the key hull openings are too close. This way:</color>
+        Text=<color=248,252,248>In </color>hybrid <color=248,252,248>mode, the armor plates move apart a little to the sides, which allows to increase engine speed without compromising the weapon loadout system, but at the same time, the available damage suspectibility increases.</color>
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Jump range: <bonJump> parsecs.
+        bonJump=12
+        bonSpeed=150
+    }
+}
+RankScientific ^{
+    0 ^{
+        BlackHolesCount=0
+        Name=Enrollee
+        Text=A humanoid who somehow managed not to fly out of school, sometimes even valiantly demonstrating the spelling of his own name without errors. Sincerely proud of the fact that he mastered to read the composition of the shampoo in the bathroom. His brain, clean from informational waste, is completely ready to master knowledge in any field of science.
+    }
+    1 ^{
+        BlackHolesCount=2
+        Name=Student
+        Text=Lowest degree in Galascience. It is issued to everyone who at least once in their life has read something other than bullshit and knows how to add 2 + 2 at least on the third attempt. To maintain the degree, it is enough to wear horn-rimmed glasses once a day for an hour.
+    }
+    2 ^{
+        BlackHolesCount=4
+        Name=Bachelor
+        Text=This is the second degree in Galascience. It is so insignificant that even agrarian maloqs from can theoretically get it, on whose planets, by the way, this degree practically guarantees you the post of head of any research institute.
+    }
+    3 ^{
+        BlackHolesCount=7
+        Name=Master
+        Text=This is the third degree in Galascience. Means that your brains are already worth something. It's almost impossible to shortchange you in the store, and there are legends about how you deftly divide in a column!
+    }
+    4 ^{
+        BlackHolesCount=11
+        Name=Docent
+        Text=This is the fourth degree in Galascience. It is issued mainly not for the results of scientific research, but for the general zeal and adherence to the ideals of Galascience. For Galascience, the assistant professor is ready to tear anyone's jaws and gouge out their peepers.
+    }
+    5 ^{
+        BlackHolesCount=16
+        Name=Doc. Candidate
+        Text=Rationalist and master of scientific explanation. Able to create a plausible theory for almost any riddle of the universe. Starting from the mystery of sugar constantly disappearing from kafunitsry and ending with the phenomenon of endless student stupidity. Graphs and formulas that no one understands, including the author, are attached.
+    }
+    6 ^{
+        BlackHolesCount=22
+        Name=Doc. of Philosophy
+        Text=You know almost everything, about almost everything, but most importantly, you can explain it on your fingers to almost any humanoid. The honorary title is given for outstanding achievements in "unifying the unknown", dividing by 0 and cloning sheep.
+    }
+    7 ^{
+        BlackHolesCount=29
+        Name=Professor
+        Text=Proponent of the most daring, up to complete absurdity, theories and ideas. If it weren't for people like you, the galaxy would not have known about such unimaginable theories as:<br><clr><clrEnd><br>"Theory of Relativity"<br>"The Theory of Strings and Frets"<br>"The Theory of Improbability" "<br>"The Big Puff Theory"
+    }
+    8 ^{
+        BlackHolesCount=37
+        Name=Galasciencelogist
+        Text=Honorary member of the Galactic Academy of Sciences, indisputable authority! Your word is the law for any frail bespectacled man in a white coat, even if you are small and this word AGHHHRRRR!!!
+    }
+    FewHoles=black holes
+    NoPromo=<br><clr><clrEnd><br>The highest scientific title that can only be awarded to a simple humanoid.
+    OneHole=black hole
+    Promo=<br><clr><clrEnd><br>To receive a qualifying academic degree, you need to go to audition on the nearest scientific base.
+    SomeHoles=black holes
+    ToPromo=<br><clr><clrEnd><br>In order to obtain a passing academic degree, you must study more <Holes> <HolesDeclension>.
+}
+Script ^{
+    Mod_ExpScienceRanks ^{
+        137=Your ship's AI has assessed the current environment as safe and switched to <0> mode.
+        139=Your ship's AI has assessed the current situation as close to critical and switched to <0> mode.
+        185=What effect would you like to try on <0>?<br>At the moment, the chances of obtaining a defined level of acryne are as follows:<br>First level - <1>%<br>Second level - <2>%<br>Third level - <3>%
+        196=Available Operations:
+        228=Acrynation Experiment
+        229=Deacrynation Experiment
+        230=Your ship's AI assessed the danger of the current situation as acceptable and switched to <0> mode.
+        235=Hand over an unidentified equipment
+        241=Further
+        244=Choose another item for acrynation
+        297=<br>
+        299=The experiment was unsuccessful, and <0> was destroyed.<br>Don't say you weren't warned of this possibility.<br>As a consolation, I can say that a negative result is also a result. We did learn a few things, and in the future, the chance of luck will be already <1>%.<br>Also, the chances of getting a higher level of acryne have also slightly increased:<br>First level - <2>%<br>Second level - <3>%<br>Third level - <4>%
+        302=The experiment was successful, and you'll get <0> <1>.<br>We've also learned a few things, and in the future you'll have a chance of success of <2>%.<br>Also, the chances of getting a higher level Acryne have also slightly increased. :<br>First level - <3>%<br>Second level - <4>%<br>Third level - <5>%
+        304=I don't have any items of unidentified origin in my hold.
+        313=In your hold is a piece of equipment of unknown origin, of great scientific interest to us:<br><br><0><br>Which of these units do you intend to pass to our department?
+        321=Next time
+        322=Sorry for being so pushy. Thank you, <Player>. We are always glad to cooperate with you!
+        323=Means, it is necessary to get them, <Player>. Rangers have always taken care of our research efforts. We believe in you.
+        325=I couldn't have hoped for more!<br>I've been dreaming about it since the first time I was beaten at school and my glasses were broken
+        326=I changed my mind
+        333=So, how can I help you study the Black Holes?
+        342=You see, we are now engaged in the study of black holes and... Yes, yes, I know that we have a war with the dominators and all forces should be directed to the study of these steel guys, but believe me - everything is under control. The bulk of scientists are still working on the problem of dominators, and small groups are now conducting research in other areas. This approach allows you to continue to follow the path of scientific and technological progress even during a global galactic war. So, as I said, we are studying black holes. The Coalition has been dealing with this phenomenon for quite some time, even before the Klissan War, but we still know next to nothing about them. And the main reason for this is the almost complete lack of material - we simply have nothing to study. No one is particularly eager to climb into holes, uniting is insanely dangerous, the laws of physics of the normal world do not work there, hyperspace clots, namely, each hole goes into one of them, a completely unpredictable place and we know nothing at all about the mysterious ships that live there . In a word, the job is not easy. And so we decided that the best way in this situation would be to hire rangers and other free pilots. They would bring us material, and we would pay remuneration, and especially distinguished ones can even be given scientific degrees. Who knows, maybe someday one of the rangers will lead the Galactic Academy of Sciences?<br>So what? Would you like to join our task force of black hole researchers?
+        343=Well... no, no, no. However, the provisions remain in effect. If you decide to help us - the doors are always open... This is me figuratively, if anything. We have locks here and they are always closed, but we will open them for you.
+        344=No, it's better to do without such experiments for now, okay?<br>Instead, start bringing us material. The more actively you explore wormholes, the sooner you will receive scientific degrees, and with them access to new, secret technologies, valuable gifts, and of course social benefits. Didn't you know? We even have a dentist.
+        345=Department of acryne technologies
+        346=Why not? I have been fond of science since my childhood. At school, during chemistry lessons, I once tried to mix a composition that would give me super strength... At that time, it really didn’t work out very well, but now with my current knowledge and your equipment...
+        347=No, you know it's not for me. I specialize more in dominators, well, at worst - in pirates
+        348=Exploration of the Black Holes
+        349=, but you can choose the effect type
+        350=, however, like the type of effect
+        351=Manual control of Mite modes
+        352=Manual control mode: <0>
+        353=Turn off
+        354=Turn on
+        365=And now the most important thing.<br>This is top-secret information, but it is thanks to you that we have been able to achieve such incredible success in studying the technologies of unknown ships from hyperspace.<br>That is why you are honored to become a test pilot of a ship developed on the basis of these technologies. <br>It was assembled almost entirely from materials found in black holes, which made it possible to achieve a <clr>compatibility effect<clrEnd> with some artifacts that was previously not available for ordinary hulls.<br>A unique feature of this ship is movable armor. This ship is a <clr>transformer with advanced AI<clrEnd>. It constantly monitors many parameters and reacts almost instantly to changes in the situation.<br>Plus, there are <clr>three modes<clrEnd>:<br><br>In <clr> attack mode<clrEnd>, sheet armor plates are shifted back from the gun bay, partially blocking the output nozzles of the engine, due to which there is a slight decrease in its power, but at the same time the damage inflicted increases.<br><br>In the <clr>protection mode<clrEnd>, the armor plates move forward, which greatly complicates the operation of the targeting system. It is no longer able to effectively find enemy vulnerabilities, which significantly reduces the damage done and slightly the firing range, but increases protection<br><br>In <clr>hybrid mode<clrEnd>, the armor plates move slightly to the sides, which allows you to increase the speed of the engine without compromising the operation of the gun navigation system, but at the same time hindering the work of the repair droid.
+        372=The experiment was unsuccessful, and <0> was destroyed.<br>Don't say you weren't warned of this possibility.<br>As a consolation, I can say that a negative result is also a result. We did learn something, and in the future the probability of success will be already <1>%.
+        373=The experiment was successful, you get <0> and your personal nan-account is replenished with the weight of the removed acryne: <1>. <br>In addition, we have learned something, and in the future the probability of luck will be already <2>%.
+        374=Okay, but keep in mind that this is not a service, but an experiment. So <clr>no claims on its results are accepted<clrEnd>. <br>-----------------------------------------------<br>There is a strong <clr>probability<clrEnd> that attempting to remove acryn from equipment <clr>may destroy it<clrEnd>. <br>Now we estimate the chances of a successful result as <0>%<br>-----------------------------------------------<br>Perhaps <clr>with time<clrEnd> we will be able to calculate the necessary patterns, and <clr>the process will become more controlled<clrEnd>.<br>-----------------------------------------------<br>Don't forget that due to the removal of some elements, the weight of the equipment and the price <clr>is reduced by 10%<clrEnd>.
+        376=The experiment was successful, and you get <0>.<br>We also learned something, and in the future, the chance of success will be already <1>%.<br>Also, the chances of getting a higher level of acryne have also slightly increased:<br >First level - <2>%<br>Second level - <3>%<br>Third level - <4>%
+        378=We are always ready to accept any equipment of unknown origin for 80% of the cost. By the way, we pay <clr>four times as much<clrEnd> for artifacts, but we cannot take an artifact of the Tranclucator type.<br>The weight of the returned equipment is credited to your <clr>personal nan account<clrEnd>, from which you you can pay for experiments on <clr>applying acryn<clrEnd> to equipment and more.
+        379=Okay, but keep in mind that this is not a service, but an experiment. So no <clr>claims on its results are accepted<clrEnd>. <br>-----------------------------------------------<br>There is a strong <clr>probability<clrEnd> that attempting to apply acryn to equipment <clr>may destroy it<clrEnd>. <br>Now we estimate the chances of a successful result as <0>%<br>-----------------------------------------------<br>Also <clr>effect level<clrEnd> is not always predictable<1>.<br>Currently the odds are:<br>First level - <2>%<br>Second level - <3>%<br>Third level - <4>%<br>-----------------------------------------------<br><clr>The cost<clrEnd> of one experiment also depends on our progress in this area. But make no mistake, the higher the level of acryne we can put on the equipment, the more your account will be charged.<br>Currently, the cost of the experiment is <5> nan, and you have <6> on your account.<br>-----------------------------------------------<br>Maybe <clr>over time<clrEnd> we will be able to calculate the desired patterns, and <clr>the process will become more controlled<clrEnd>.<br>-----------------------------------------------<br>At the moment, we have completed <7> experiments on acrynation.<br>-----------------------------------------------<br>Do not forget that due to installation of new items, equipment weight and price <clr>increased by 10%<clrEnd>.
+        380=Thank you for your cooperation, <Player>! We are very pleased that you are interested in scientific research, please accept these <0> cr. as compensation for the risk. And also, according to our tariff, after the delivery of equipment for <1> tons, your personal nan-account is <2> nan.<br>Here is a list of what else we are interested in:<br><br><3><br>
+        381=Thank you for your cooperation, <Player>! We are very pleased that you are interested in scientific research, please accept these <0> cr. as compensation for the risk. And also, according to our tariff, after the delivery of equipment for <1> tons, your personal nan account is <2> nan.
+        382=Dyshot
+        383=Hybrid
+        384=Protection
+        385=Attack
+        386=turned on
+        387=turned off
+        388=You have already explored <0> Black Holes and therefore you have been awarded a new scientific degree <1>.<br>A solemn ceremony and presentation of a gift to you will be organized at any scientific base. <br>Until then, the count of the Black Holes you have studied is suspended.
+        389=Sorry, but we did not find suitable acryns for this equipment. Probably, it is simply impossible to acrynate it.
+        390=<0>
+        392=Take all unknown equipment
+        393=(equipped)
+        394=<clrEnd>Take
+        40=Glad to serve progress!
+        RankRiseCongrats=For your contribution to the study of the phenomenon of "black holes", you, <Player>, are awarded the degree #0#<br>#2#<br>#1#<br>#2#<br>And as a nice addition to the new title we gift you #3#.
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            Science_rank_infos ^{
+                Description=€нфошка длЯ закрытиЯ изображениЯ научного ранга у других кораблей на форме 'Ship' (если не игрок)
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=if(ScriptItemActionType(t_OnEnteringForm))
+                    02 ^{
+                        01=if(CurrentForm()=='Ship')InterfaceState('Ship','CustomRankImage_2',1);
+                    }
+                    03=else if(ScriptItemActionType(t_OnLeavingForm))
+                    04 ^{
+                        01=if(CurrentForm()=='Ship')InterfaceState('Ship','CustomRankImage_2',0);
+                    }
+                    05=else
+                    06 ^{
+                        01=int bonus=HullSpecial(ScriptItemActObject1());
+                        02=if(bonus>-1)
+                        03 ^{
+                            01=if(!findsubstr(BonusCustomTag(bonus),'ExpScienceRanks_Tick'))InterfaceState('StarMap','Klesh_main_panel',1);
+                            02=else InterfaceState('StarMap','Klesh_main_panel',0);
+                        }
+                        04=else InterfaceState('StarMap','Klesh_main_panel',0);
+                    }
+                }
+                OnActCodeTypes=t_OnEnteringForm,t_OnLeavingForm,t_OnPlayerChangeHull
+            }
+        }
+    }
+}

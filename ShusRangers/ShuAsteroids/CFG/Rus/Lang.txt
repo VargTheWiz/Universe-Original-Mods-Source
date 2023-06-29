@@ -1,0 +1,82 @@
+Asteroid ^{
+    Name=Астероид -<Number>-
+    Text=Содержание полезных руд достигает <Count> ед. Скорость астероида <Speed>.
+    kAsteroidMaxDamagePercent=40
+    kAsteroidMaxDamagePercentDef=30
+    kAsteroidMinDamagePercent=20
+    kAsteroidMinDamagePercentDef=10
+}
+MicroModuls ^{
+    ShuAsteroids_AstrohullDefGenerator1 ^{
+        AcrynLevel=1
+        AcrynSerie=Астрокорпусный генератор защиты I-III
+        Cost=150
+        CustomTag=ShuAsteroids_AstrohullDefGenerator
+        Equipments=DefGenerator
+        Fragility=100
+        KindGraph=Aster
+        LevelsCount=3
+        Name=Астрокорпусный генератор защиты I
+        Priority=10
+        Ruins=Any
+        SerieLevel1=ShuAsteroids_AstrohullDefGenerator1
+        SerieLevel2=ShuAsteroids_AstrohullDefGenerator2
+        SerieLevel3=ShuAsteroids_AstrohullDefGenerator3
+        Size=104
+        Special=1
+        Text=<color=248,252,248>Данный генератор был разработан с целью защиты кораблей, часто совершающих рейды сквозь крупные скопления <color=255,239,99>астероидов</color>. Встроенный в него астрокорбулятор создаёт антикинетическое поле, снижающее силу удара в момент столкновения корабля с другим космическим телом. В качестве побочного эффекта устройством генерируются частицы, заметно облегчающие корабль, что может оказаться крайне полезным для пилотов, ценящих своё время.</color>
+        Text=<clr><clrEnd>
+        Text=Урон от попадания астероида: <clr>-40%<clrEnd>
+        Text=Масса корабля: <bonMass><clr>%<clrEnd>
+        bonMass=-6
+        bonResistAsteroid=40
+    }
+    ShuAsteroids_AstrohullDefGenerator2 ^{
+        AcrynLevel=2
+        AcrynSerie=Астрокорпусный генератор защиты I-III
+        Cost=200
+        CustomTag=ShuAsteroids_AstrohullDefGenerator
+        Equipments=DefGenerator
+        Fragility=100
+        KindGraph=Aster
+        LevelsCount=3
+        Name=Астрокорпусный генератор защиты II
+        Priority=30
+        Ruins=Any
+        SerieLevel1=ShuAsteroids_AstrohullDefGenerator1
+        SerieLevel2=ShuAsteroids_AstrohullDefGenerator2
+        SerieLevel3=ShuAsteroids_AstrohullDefGenerator3
+        Size=102
+        Special=1
+        Text=<color=248,252,248>Данный генератор был разработан с целью защиты кораблей, часто совершающих рейды сквозь крупные скопления <color=255,239,99>астероидов</color>. Встроенный в него астрокорбулятор создаёт антикинетическое поле, снижающее силу удара в момент столкновения корабля с другим космическим телом. В качестве побочного эффекта устройством генерируются частицы, заметно облегчающие корабль, что может оказаться крайне полезным для пилотов, ценящих своё время.</color>
+        Text=<clr><clrEnd>
+        Text=Урон от попадания астероида: <clr>-60%<clrEnd>
+        Text=Масса корабля: <bonMass><clr>%<clrEnd>
+        bonMass=-8
+        bonResistAsteroid=60
+    }
+    ShuAsteroids_AstrohullDefGenerator3 ^{
+        AcrynLevel=3
+        AcrynSerie=Астрокорпусный генератор защиты I-III
+        Cost=250
+        CustomTag=ShuAsteroids_AstrohullDefGenerator
+        Equipments=DefGenerator
+        Fragility=100
+        KindGraph=Aster
+        LevelsCount=3
+        Name=Астрокорпусный генератор защиты III
+        Priority=50
+        Ruins=Any
+        SerieLevel1=ShuAsteroids_AstrohullDefGenerator1
+        SerieLevel2=ShuAsteroids_AstrohullDefGenerator2
+        SerieLevel3=ShuAsteroids_AstrohullDefGenerator3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Данный генератор был разработан с целью защиты кораблей, часто совершающих рейды сквозь крупные скопления <color=255,239,99>астероидов</color>. Встроенный в него астрокорбулятор создаёт антикинетическое поле, снижающее силу удара в момент столкновения корабля с другим космическим телом. В качестве побочного эффекта устройством генерируются частицы, заметно облегчающие корабль, что может оказаться крайне полезным для пилотов, ценящих своё время.</color>
+        Text=<clr><clrEnd>
+        Text=Урон от попадания астероида: <clr>-80%<clrEnd>
+        Text=Масса корабля: <bonMass><clr>%<clrEnd>
+        bonMass=-10
+        bonResistAsteroid=80
+    }
+}

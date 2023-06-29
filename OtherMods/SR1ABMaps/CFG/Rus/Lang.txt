@@ -1,0 +1,29 @@
+ABMap ^{
+    29 ^{
+        Access=1
+        Desc=Стандартный пузырь неправильной формы. Особо смелые пилоты могут покинуть его без боя, разбив заграждения.
+        Dif=1
+        Group=1
+        Image=Mods\OtherMods\SR1ABMaps\DATA\ABMap\02_1_V02.jpg
+        Map=ABMap.02_1_V02
+        Name=Синева
+    }
+    30 ^{
+        Access=1
+        Desc=Пространство, по форме отдалённо напоминающее аналогичное образование в келлерской чёрной дыре.
+        Dif=1
+        Group=1
+        Image=Mods\OtherMods\SR1ABMaps\DATA\ABMap\04_2_V01.jpg
+        Map=ABMap.04_2_V01
+        Name=Псевдошар
+    }
+    31 ^{
+        Access=1
+        Desc=Знаменитый замкнутый пузырь. Есть возможность экстренной эвакуации в случае непредвиденной опасности.
+        Dif=1
+        Group=1
+        Image=Mods\OtherMods\SR1ABMaps\DATA\ABMap\04_3_V03.jpg
+        Map=ABMap.04_3_V03
+        Name=Тор
+    }
+}

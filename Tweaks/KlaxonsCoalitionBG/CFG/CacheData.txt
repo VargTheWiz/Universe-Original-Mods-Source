@@ -1,0 +1,16 @@
+Bm ~{
+    City ~{
+        Fei=Mods\Tweaks\KlaxonsCoalitionBG\DATA\CityBG\2Fei.gi
+        Gaal=Mods\Tweaks\KlaxonsCoalitionBG\DATA\CityBG\2Gaal.gi
+        Maloc=Mods\Tweaks\KlaxonsCoalitionBG\DATA\CityBG\2Maloc.gi
+        Peleng=Mods\Tweaks\KlaxonsCoalitionBG\DATA\CityBG\2Peleng.gi
+        People=Mods\Tweaks\KlaxonsCoalitionBG\DATA\CityBG\2People.gi
+    }
+    Gov ~{
+        2FeiBGi=Mods\Tweaks\KlaxonsCoalitionBG\DATA\GovBG\2FeiBG.gi
+        2GaalBGi=Mods\Tweaks\KlaxonsCoalitionBG\DATA\GovBG\2GaalBG.gi
+        2MalocBGi=Mods\Tweaks\KlaxonsCoalitionBG\DATA\GovBG\2MalocBG.gi
+        2PelengBGi=Mods\Tweaks\KlaxonsCoalitionBG\DATA\GovBG\2PelengBG.gi
+        2PeopleBGi=Mods\Tweaks\KlaxonsCoalitionBG\DATA\GovBG\2PeopleBG.gi
+    }
+}

@@ -1,0 +1,38 @@
+Data ^{
+    SE ^{
+        Item ^{
+            NeutronBomb ^{
+                1Image=Bm.ItemsUseless.1NeutronBomb_c
+                2Image=Bm.ItemsUseless.2NeutronBomb_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+        }
+        Missile ^{
+            wNova ^{
+                PosZ=Missile
+            }
+            wNuke ^{
+                PosZ=Missile
+                Scale=1.75
+            }
+        }
+        Weapon ^{
+            MissileHit ^{
+                Palettes ^{
+                    15 ^{
+                        GAI=Bm.Weapon.ExplNuke
+                        SoundShot=Sound.Nuke
+                    }
+                    16 ^{
+                        GAI=Bm.Weapon.ExplNova
+                        SoundShot=Sound.Nuke
+                    }
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_ShuNukes=1,Script.Mod_ShuNukes
+    }
+}

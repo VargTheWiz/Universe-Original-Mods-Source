@@ -1,0 +1,146 @@
+Data ^{
+    SE ^{
+        Ship ^{
+            Akrin ^{
+                1 ^{
+                    PanelPartnerImage=1
+                }
+                2 ^{
+                    PanelPartnerImage=2
+                }
+                3 ^{
+                    PanelPartnerImage=3
+                }
+                A ^{
+                    PanelPartnerImage=A
+                }
+                B ^{
+                    PanelPartnerImage=B
+                }
+                C ^{
+                    PanelPartnerImage=C
+                }
+                D ^{
+                    PanelPartnerImage=D
+                }
+                E ^{
+                    PanelPartnerImage=E
+                    Tail1=30,95
+                    Tail2=95,95
+                }
+                F ^{
+                    PanelPartnerImage=F
+                }
+                G ^{
+                    PanelPartnerImage=G
+                }
+                H ^{
+                    PanelPartnerImage=H
+                }
+                I ^{
+                    PanelPartnerImage=I
+                }
+                J ^{
+                    PanelPartnerImage=J
+                }
+                K ^{
+                    PanelPartnerImage=K
+                }
+                L ^{
+                    PanelPartnerImage=L
+                }
+            }
+            Fei ^{
+                Diplomat ^{
+                    PanelPartnerImage=FeiD
+                }
+                Liner ^{
+                    PanelPartnerImage=FeiL
+                }
+                Transport ^{
+                    PanelPartnerImage=FeiT
+                }
+                Warrior ^{
+                    PanelPartnerImage=FeiW
+                }
+                WarriorBig ^{
+                    PanelPartnerImage=FeiBW
+                }
+            }
+            Gaal ^{
+                Diplomat ^{
+                    PanelPartnerImage=GaalD
+                }
+                Liner ^{
+                    PanelPartnerImage=GaalL
+                }
+                Transport ^{
+                    PanelPartnerImage=GaalT
+                }
+                Warrior ^{
+                    PanelPartnerImage=GaalW
+                }
+                WarriorBig ^{
+                    PanelPartnerImage=GaalBW
+                }
+            }
+            Maloc ^{
+                Diplomat ^{
+                    PanelPartnerImage=MalocD
+                }
+                Liner ^{
+                    PanelPartnerImage=MalocL
+                }
+                Transport ^{
+                    PanelPartnerImage=MalocT
+                }
+                Warrior ^{
+                    PanelPartnerImage=MalocW
+                }
+                WarriorBig ^{
+                    PanelPartnerImage=MalocBW
+                }
+            }
+            Peleng ^{
+                Diplomat ^{
+                    PanelPartnerImage=PelengD
+                }
+                Liner ^{
+                    PanelPartnerImage=PelengL
+                }
+                Transport ^{
+                    PanelPartnerImage=PelengT
+                }
+                Warrior ^{
+                    PanelPartnerImage=PelengW
+                }
+                WarriorBig ^{
+                    PanelPartnerImage=PelengBW
+                }
+            }
+            People ^{
+                Diplomat ^{
+                    PanelPartnerImage=PeopleD
+                }
+                Liner ^{
+                    PanelPartnerImage=PeopleL
+                }
+                Transport ^{
+                    PanelPartnerImage=PeopleT
+                }
+                Warrior ^{
+                    PanelPartnerImage=PeopleW
+                }
+                WarriorBig ^{
+                    PanelPartnerImage=PeopleBW
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_ExpHulls=1,Script.Mod_ExpHulls
+    }
+    ScriptLibs ^{
+        Mod_ExpHulls=UtilityFunctions
+    }
+}

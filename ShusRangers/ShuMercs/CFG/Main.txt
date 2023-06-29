@@ -1,0 +1,279 @@
+Data ^{
+    SE ^{
+        Ruins ^{
+            MB ^{
+                Image=Bm.Ruins.MB
+                ImageI=GI,Bm.Ruins.MBi
+                ImageMap=Bm.Ruins.MB_map
+                PosZ=Ruins
+            }
+        }
+        Ship ^{
+            Akrin ^{
+                FreeMercFei ^{
+                    2ImageP=GI,Bm.ShipP.FreeMercFei
+                    Anim ^{
+                        0=1,[70,20-69]
+                        Normal=2,[70,0-19]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-19]
+                    }
+                    Image=Bm.Ship.FreeMercFei
+                    ImageMap=Bm.Ship.FeiMap
+                    ImageS=Bm.Ship.FreeMercFeis
+                    PanelPartnerImage=FreeMercFei
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=58,109
+                    Tail2=67,109
+                }
+                FreeMercGaal ^{
+                    2ImageP=GI,Bm.ShipP.FreeMercGaal
+                    Anim ^{
+                        0=1,[70,20-59]
+                        Normal=2,[70,0-19]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-19]
+                    }
+                    Image=Bm.Ship.FreeMercGaal
+                    ImageMap=Bm.Ship.GaalMap
+                    ImageS=Bm.Ship.FreeMercGaals
+                    PanelPartnerImage=FreeMercGaal
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=23,111
+                    Tail2=104,111
+                }
+                FreeMercMaloc ^{
+                    2ImageP=GI,Bm.ShipP.FreeMercMaloc
+                    Anim ^{
+                        0=1,[70,31-50]
+                        Normal=2,[70,0-30]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-30]
+                    }
+                    Image=Bm.Ship.FreeMercMaloc
+                    ImageMap=Bm.Ship.MalocMap
+                    ImageS=Bm.Ship.FreeMercMalocs
+                    PanelPartnerImage=FreeMercMaloc
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=49,103
+                    Tail2=73,103
+                }
+                FreeMercPeleng ^{
+                    2ImageP=GI,Bm.ShipP.FreeMercPeleng
+                    Anim ^{
+                        0=1,[70,20-79]
+                        Normal=2,[70,0-19]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-19]
+                    }
+                    Image=Bm.Ship.FreeMercPeleng
+                    ImageMap=Bm.Ship.PelengMap
+                    ImageS=Bm.Ship.FreeMercPelengs
+                    PanelPartnerImage=FreeMercPeleng
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=57,103
+                    Tail2=68,103
+                }
+                FreeMercPeople ^{
+                    2ImageP=GI,Bm.ShipP.FreeMercPeople
+                    Anim ^{
+                        0=1,[70,33-65]
+                        Normal=2,[70,0-32]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-32]
+                    }
+                    Image=Bm.Ship.FreeMercPeople
+                    ImageMap=Bm.Ship.PeopleMap
+                    ImageS=Bm.Ship.FreeMercPeoples
+                    PanelPartnerImage=FreeMercPeople
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=32,98
+                    Tail2=95,98
+                }
+                MercFei ^{
+                    2ImageP=GI,Bm.ShipP.MercFei
+                    Anim ^{
+                        0=1,[70,50-75][70,26-28][70,76-96]
+                        Normal=2,[70,0-49]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-49]
+                    }
+                    Image=Bm.Ship.MercFei
+                    ImageMap=Bm.Ship.Merc_map
+                    ImageS=Bm.Ship.MercFeis
+                    PanelPartnerImage=MercFei
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=56,110
+                    Tail2=73,110
+                }
+                MercGaal ^{
+                    2ImageP=GI,Bm.ShipP.MercGaal
+                    Anim ^{
+                        0=1,[70,0-0][70,50-98]
+                        Normal=1,[70,0-49]
+                    }
+                    AnimS ^{
+                        Normal=1,[70,0-49]
+                    }
+                    Image=Bm.Ship.MercGaal
+                    ImageMap=Bm.Ship.Merc_map
+                    ImageS=Bm.Ship.MercGaals
+                    PanelPartnerImage=MercGaal
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=64,108
+                }
+                MercMaloc ^{
+                    2ImageP=GI,Bm.ShipP.MercMaloc
+                    Anim ^{
+                        0=1,[70,50-99]
+                        1=1,[70,50-50][70,100-148]
+                        Normal=2,[70,0-49]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-49]
+                    }
+                    Image=Bm.Ship.MercMaloc
+                    ImageMap=Bm.Ship.Merc_map
+                    ImageS=Bm.Ship.MercMalocs
+                    PanelPartnerImage=MercMaloc
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=49,98
+                    Tail2=69,98
+                }
+                MercPeleng ^{
+                    2ImageP=GI,Bm.ShipP.MercPeleng
+                    Anim ^{
+                        0=1,[70,50-99]
+                        1=1,[70,100-149]
+                        Normal=2,[70,0-49]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-49]
+                    }
+                    Image=Bm.Ship.MercPeleng
+                    ImageMap=Bm.Ship.Merc_map
+                    ImageS=Bm.Ship.MercPelengs
+                    PanelPartnerImage=MercPeleng
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=56,97
+                    Tail2=72,97
+                }
+                MercPeople ^{
+                    2ImageP=GI,Bm.ShipP.MercPeople
+                    Anim ^{
+                        0=1,[70,50-99]
+                        Normal=2,[70,0-49]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-49]
+                    }
+                    Image=Bm.Ship.MercPeople
+                    ImageMap=Bm.Ship.Merc_map
+                    ImageS=Bm.Ship.MercPeoples
+                    PanelPartnerImage=MercPeople
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=63,69
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=63,103
+                }
+                Merzenary ^{
+                    2ImageP=GI,Bm.ShipP.Merzenary
+                    Anim ^{
+                        Normal=1,[100,0-20]
+                    }
+                    AnimS ^{
+                        Normal=1,[100,0-20]
+                    }
+                    Image=Bm.Ship.Merzenary
+                    ImageMap=Bm.Ship.FeiMap
+                    ImageS=Bm.Ship.Merzenarys
+                    PanelPartnerImage=Merzenary
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=65,116
+                }
+            }
+        }
+        Sound ^{
+            Loop ^{
+                Ruins ^{
+                    MB ^{
+                        10=3000,Sound.LoopRuins03
+                    }
+                }
+            }
+            Rnd ^{
+                Ruins ^{
+                    MB ^{
+                    }
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_ShuMercs=1,Script.Mod_ShuMercs
+    }
+}
+Music ^{
+    MB ^{
+        1=Mods\ShusRangers\ShuMercs\DATA\Music\Craftor-Night_Courage.dat
+    }
+}

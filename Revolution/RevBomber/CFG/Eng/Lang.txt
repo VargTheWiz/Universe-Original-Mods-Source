@@ -1,0 +1,41 @@
+Script ^{
+    Mod_RevBomber ~{
+        44=I can <0> into one of the following systems:<br> - System <1>;<br> - System <2>;<br> - System <3>;<br> - System <4>;< br> - System <5>;<br> - System <6>;<br> - System <7>;<br> - System <8>;<br> - System <9>;<br> - System < 10>;<br> - System <11>;<br> - System <12>;<br> - System <13>;<br> - System <14>;<br> - System <15>;<br > - System <16>;<br> - System <17>;<br> - System <18>;<br> - System <19>;<br> - System <20>;<br> - System <21> ;<br><br>
+        45=Order received. Executing.
+        51=Autonomous Station - Tranclucator-181193M awaiting instructions!
+        52=How many days do I have to stay on the planet?<br>Currently, <0> days.
+        53=There are still <0> bombs left on board.<br>Attention! During installation, you will need to be close to the installation site, otherwise I will not be able to set the coordinates correctly! <br>I can plant a mini-bomb with one of two types of detonators.<br>Bombs with the first type of device will only explode when you tell me to detonate them. The distance is not limited.<br>The second type of detonator provides for setting a timer and adjusting it during installation. Thus, it is possible to set the detonation time for several days.
+        33=Quest accepted. Executing.
+        54=The timer is currently set to <0> days.<br>How many days would you like to set?
+        42=Command sent, activation process started
+        59=Due to technical reasons, the opening of the bubble is only possible in system <0>, after <1> days. Please contact your local dealer for more information.
+        48=Currently executing the current order. Contact your local dealer for more information
+        15=System <0>
+        26=Open a portal to another system, please
+        55=Stay there <0> days
+        50=Reduce residence time by <0> times
+        56=Increase residence time by <0> times
+        31=Back
+        35=Plant a miniature bomb
+        36=We will blow up remotely, so bet with the first type
+        37=Plant a bomb with a timer
+        57=No, we won't blow anything up yet
+        39=Set to <0> days
+        40=Increase time to explosion by <0> times
+        58=Reduce time to explosion by <0> times
+        43=Detonate the bomb
+        46=Hyper jump
+        60=Give order to take off
+        61=Landing at <0>
+    }
+}
+UselessItems ^{
+    dbomb ^{
+        Cost=Huge
+        Description=
+        Name=Канистра
+        Owner=Maloc
+        Size=1
+        Text=Miniature explosive, detonates remotely.
+    }
+}

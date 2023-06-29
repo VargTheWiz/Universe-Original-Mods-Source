@@ -1,0 +1,8 @@
+ABMap ~{
+    02_1_V02=Mods\OtherMods\SR1ABMaps\DATA\ABMap\02_1_V02.map
+    02_1_V02_=Mods\OtherMods\SR1ABMaps\DATA\ABMap\02_1_V02.opt
+    04_2_V01=Mods\OtherMods\SR1ABMaps\DATA\ABMap\04_2_V01.map
+    04_2_V01_=Mods\OtherMods\SR1ABMaps\DATA\ABMap\04_2_V01.opt
+    04_3_V03=Mods\OtherMods\SR1ABMaps\DATA\ABMap\04_3_V03.map
+    04_3_V03_=Mods\OtherMods\SR1ABMaps\DATA\ABMap\04_3_V03.opt
+}

@@ -1,0 +1,43 @@
+Music ~{
+    PB ^{
+        OuterMusic5=Mods\Tweaks\OuterMusic\DATA\Music\RedSector.dat
+    }
+    CB ^{
+        OuterMusic5=Mods\Tweaks\OuterMusic\DATA\Music\RedSector.dat
+    }
+    Nation ^{
+        Fei ^{
+            OuterMusic1=Mods\Tweaks\OuterMusic\DATA\Music\PurpleSector.dat
+        }
+        Gaal ^{
+            OuterMusic1=Mods\Tweaks\OuterMusic\DATA\Music\GreenSector.dat
+        }
+        None ^{
+            OuterMusic1=Mods\Tweaks\OuterMusic\DATA\Music\YellowSector.dat
+            OuterMusic1=Mods\Tweaks\OuterMusic\DATA\Music\PurpleSector.dat
+            OuterMusic1=Mods\Tweaks\OuterMusic\DATA\Music\BlueSector.dat
+            OuterMusic1=Mods\Tweaks\OuterMusic\DATA\Music\WhiteSector.dat
+        }
+        People ^{
+            OuterMusic1=Mods\Tweaks\OuterMusic\DATA\Music\The_Mystery_of_the_Third_Planet.dat
+        }
+    }
+    ArcadeBattle ^{
+        OuterMusic7=Mods\Tweaks\OuterMusic\DATA\Music\GraySector.dat
+    }
+    Robot ^{
+        OuterMusic1=Mods\Tweaks\OuterMusic\DATA\Music\RedSector.dat
+    }
+    Quest ^{
+        OuterMusic1=Mods\Tweaks\OuterMusic\DATA\Music\YellowSector.dat
+        OuterMusic1=Mods\Tweaks\OuterMusic\DATA\Music\BlueSector.dat
+        OuterMusic1=Mods\Tweaks\OuterMusic\DATA\Music\WhiteSector.dat
+    }
+    StarMap ^{
+        OuterMusic1=Mods\Tweaks\OuterMusic\DATA\Music\YellowSector.dat
+        OuterMusic1=Mods\Tweaks\OuterMusic\DATA\Music\PurpleSector.dat
+        OuterMusic1=Mods\Tweaks\OuterMusic\DATA\Music\GreenSector.dat
+        OuterMusic1=Mods\Tweaks\OuterMusic\DATA\Music\GraySector.dat
+        OuterMusic1=Mods\Tweaks\OuterMusic\DATA\Music\The_Mystery_of_the_Third_Planet.dat
+    }
+}

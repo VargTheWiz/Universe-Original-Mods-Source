@@ -1,0 +1,751 @@
+MicroModuls ^{
+    EvoMM_BigTank ^{
+        Cost=60
+        CustomTag=EvoMM_BigTank
+        Equipments=FuelTank
+        Name=Big-Tank
+        Owner=PirateClan
+        Priority=40
+        RacialRestriction=1
+        Size=140
+        Text=Level two micromodule. Replaces all smallest parts of fuel tank for cheaper and larger ones. Only suitable for <clr>pirate<clrEnd> fuel tanks.
+        Text=<clr><clrEnd>
+        Text=Fuel tank capacity: <bonFuel>
+        Text=Cost: <clr>-40%<clrEnd>
+        Text=Size: <clr>+40%<clrEnd>
+        bonFuel=15
+    }
+    EvoMM_Burn ^{
+        Cost=150
+        CustomTag=EvoMM_Burn
+        Equipments=WEnergy,WSplinter
+        Name=Burn
+        Owner=Maloc,Peleng,Fei,Gaal
+        Priority=5
+        Size=110
+        Text=Level one micromodule. Modifies the ammo and weapon targeting systems, increasing damage and range. Not compatible with missile weapons and <clr>human<clrEnd> equipment.
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Firing range: <bonWRadius>
+        Text=Cost: <clr>+50%<clrEnd>
+        Text=Size: <clr>+10%<clrEnd>
+        bonWEnergy=17
+        bonWRadius=55
+        bonWSplinter=25
+    }
+    EvoMM_Castironium ^{
+        Cost=120
+        CustomTag=EvoMM_Castironium
+        Equipments=Hull
+        Name=Chugunium
+        Owner=Fei,Gaal
+        Priority=1
+        Size=90
+        Text=Level one micromodule. Embeds krypton structures into hull, increasing it's defense and opening up afterburner slot. Structures take up some extra space on ship, decreasing ship's useful space, while cost increases. Only used for <clr>faeyan and gaalian<clrEnd> hulls.
+        Text=Hull armor: <bonHull>
+        Text=Hull size: <clr>-10%<clrEnd>
+        Text=Cost: <clr>+20%<clrEnd>
+        bonHull=9
+        bonSlotForsage=1
+    }
+    EvoMM_Cheater22 ^{
+        CustomTag=EvoMM_Cheater22
+        Equipments=Engine,WEnergy,WSplinter,WMissile
+        Name=Cheater-22
+        Owner=PirateClan,NonKling
+        Priority=10
+        RacialRestriction=1
+        Text=Level one micromodule. One of the experiments performed by pirates, about combining qualities of micromodules in teleporter. After combining micromodules "Burnz" and "Drover", smoke started coming out of the teleporter, and all values got stuck on number 22. <clr>Pirates<clrEnd> decided to not reset the settings, and generated a module with given parametrs.
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Firing range: <bonWRadius>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        bonJump=22
+        bonSpeed=22
+        bonWEnergy=22
+        bonWMissile=22
+        bonWRadius=22
+        bonWSplinter=22
+    }
+    EvoMM_ChwangStop ^{
+        Cost=125
+        CustomTag=EvoMM_ChwangStop
+        Equipments=Hook
+        Name=Chvang-Stop
+        Owner=PirateClan,NonKling
+        Priority=5
+        RacialRestriction=1
+        Text=Level one micromodule. Custom-built on order of gang of highly respected <clr>pirate<clrEnd> Lyakusha Chvang-Han for his 1000nd ship robbery. Improves the <clr>pirate gripper<clrEnd> performance and item pick up speed.
+        Text=<clr><clrEnd>
+        Text=Gripper power: <bonHook>
+        Text=Gripper ranger: <bonHookRadius>
+        Text=Gripper speed: <clr><bonHookMaxSpeed><clrEnd>
+        Text=Cost: <clr>+25%<clrEnd>
+        bonHook=55
+        bonHookMaxSpeed=2
+        bonHookMinSpeed=2
+        bonHookRadius=25
+    }
+    EvoMM_Clearing ^{
+        Cost=150
+        CustomTag=EvoMM_Clearing
+        Equipments=Hull,FuelTank,Engine,Radar,Scaner,Droid,Hook,DefGenerator
+        Name=Cliring
+        Priority=5
+        Text=Level one micromodule. Applies rare cliron material, which removes almost all the negative effects of <clr>acryn<clrEnd> on devices or hull.
+        Text=<clr><clrEnd>
+        Text=Negative acryns: <clr>-75%<clrEnd>
+        Text=Cost: <clr>+50%<clrEnd>
+        bonExtraAkrinPenalty=-75
+    }
+    EvoMM_Creed ^{
+        CustomTag=EvoMM_Creed
+        Equipments=Engine,Scaner,Radar
+        Name=Creed
+        Owner=Kling
+        Priority=35
+        RacialRestriction=1
+        Text=Level two micromodule. Adds into the navigational system of <clr>dominator<clrEnd> engines 5th element of hyperspace navigation, increasing speed and jumping range. When installed into dominator radar or scanner, causes retraction of the high frequency interference controller. Due to reduction in interference, performace is improved.
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump> pc.
+        Text=Radar range: <bonRadar> mln. km
+        Text=Scanner power: <bonScan>%
+        bonJump=7
+        bonRadar=1100
+        bonScan=8
+        bonSpeed=130
+    }
+    EvoMM_Dream ^{
+        Cost=125
+        CustomTag=EvoMM_Dream
+        Equipments=FuelTank,Droid,Hook,DefGenerator
+        Name=Dream
+        Owner=Kling
+        Priority=10
+        RacialRestriction=1
+        Text=Level one micromodule. Right after installation optimizes, replaces and modernizes <clr>dominator<clrEnd> equipment. The interactions are still not figured out, process is instantaneous and can't be explained. Maintaince of equipment like this is very hard and complex, and therefore more expensive.
+        Text=<clr><clrEnd>
+        Text=Fuel tank capacity: <bonFuel>
+        Text=Radar range: <bonRadar> mln. km
+        Text=Droid effectiveness: <bonDroid>
+        Text=Gripper power: <bonHook>
+        Text=Gripper ranger: <bonHookRadius>
+        Text=Shield generator: <bonDef>%
+        Text=Cost: <clr>+25%<clrEnd>
+        bonDef=8
+        bonDroid=35
+        bonFuel=30
+        bonHook=50
+        bonHookRadius=30
+        bonRadar=1400
+    }
+    EvoMM_Durasel ^{
+        Cost=120
+        CustomTag=EvoMM_Durasel
+        Equipments=WEnergy
+        Name=Durassel
+        Owner=Kling
+        Priority=70
+        RacialRestriction=1
+        Size=120
+        Text=Level three micromodule. Allows to significantly boost weapon damage by replacing weapon energy blocks for more heavy, powerful and thus more expensive ones. Due to increased scatter effect, weapon range is reduced. Compatible with <clr>dominator<clrEnd> equipment.
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Firing range: <bonWRadius>
+        Text=Cost: <clr>+20%<clrEnd>
+        Text=Size: <clr>+20%<clrEnd>
+        bonWEnergy=16
+        bonWRadius=-20
+    }
+    EvoMM_Duzer ^{
+        CustomTag=EvoMM_Duzer
+        Equipments=FuelTank
+        Name=Duuzer
+        Owner=Peleng
+        Priority=20
+        Text=Level one micromodule. <clr>Peleng<clrEnd>-developed micromodule for transforming most of fuel tank's space into a secret cargo hold without suspicious loss of volume. This micromodule was modified by coalition scientists to significantly decrease the fuel tank size. Unfortunately, it was not possible to combine it with non-peleng fuel tanks.
+        Text=<clr><clrEnd>
+        Text=Fuel tank capacity: <bonFuel>
+        bonFuel=25
+    }
+    EvoMM_Electromagnet ^{
+        CustomTag=EvoMM_Electromagnet
+        Equipments=WSplinter
+        Name=Electromagnet
+        Owner=Kling
+        Priority=30
+        RacialRestriction=1
+        Size=110
+        Text=Level one micromodule. Wraps electromagnetic coils around barrel of fragmentation weapons, accelerating projectiles, which allows the weapon to shoot much further. Acceleration also allows the projectile to penetrate armor slighly better. Additional battery and rail generator increase weapon size. Only used in <clr>dominator<clrEnd> fragmentation-type weapons.
+        Text=<clr><clrEnd>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Firing range: <bonWRadius>
+        Text=Size: <clr>+10%<clrEnd>
+        bonWRadius=65
+        bonWSplinter=10
+    }
+    EvoMM_Emikan ^{
+        CustomTag=EvoMM_Emikan
+        Equipments=Engine,Scaner
+        Name=Emican
+        Owner=Keller
+        Priority=10
+        RacialRestriction=1
+        Text=Level one micromodule. An AI-developed micromodule, based on multi-year experience bank of mass knowledge of work with <clr>engines<clrEnd> and <clr>scanners<clrEnd>. Only compatible with <clr>Keller<clrEnd> dominator series.
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump> pc.
+        Text=Scanner power: <bonScan>%
+        bonJump=10
+        bonScan=14
+        bonSpeed=150
+    }
+    EvoMM_Enterquad ^{
+        CustomTag=EvoMM_Enterquad
+        Equipments=Engine
+        Name=Enterquad
+        Priority=90
+        Text=Level three micromodule. Increases the engine speed by implementing a subquadratic fuel usage calculation system.
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        bonSpeed=50
+    }
+    EvoMM_Fascon ^{
+        CustomTag=EvoMM_Fascon
+        Equipments=Droid
+        Name=Fascon
+        Owner=Terron
+        Priority=10
+        RacialRestriction=1
+        Text=Level one micromodule. An AI-developed micromodule, based on multi-year experience bank of common knowledge of work with <clr>repair droids<clrEnd>. Only compatible with <clr>Terron<clrEnd> dominator series.
+        Text=<clr><clrEnd>
+        Text=Droid effectiveness: <bonDroid>
+        bonDroid=35
+    }
+    EvoMM_FoncerX ^{
+        Cost=120
+        CustomTag=EvoMM_FoncerX
+        Equipments=Engine
+        Name=Foncer-X
+        Owner=Kling
+        Priority=15
+        RacialRestriction=1
+        Text=Level one micromodule. Removes unnecessary parts of afterburner, causing harm to dominator engines, thus allowing afterburner to work constantly, but engine speed does not double, it increases by 150. Because of constant rejection, not compatible with any equipment other than from <clr>dominator<clrEnd> series.
+        Text=Level one micromodule. By effective reorganisiation of main reactive bursts in <clr>dominator engine<clrEnd> changes it's work mode from standart to sub-afterburner one. Negates inevitable lifetime drop with advanced use of principle of reverse inturbation.
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Cost: <clr>+20%<clrEnd>
+        bonSpeed=210
+    }
+    EvoMM_Foros ^{
+        Cost=20
+        CustomTag=EvoMM_Foros
+        Equipments=Engine
+        Fragility=77
+        Name=Foroz
+        Owner=Peleng,People,Fei,Gaal
+        Priority=55
+        Size=120
+        Text=Level two micromodule. Suitable for engines, constantly used in afterburner mode. Reduces maintaince costs, by attaching convenient but large diagnostics systems, along with systems providing fast access to all main nodes. Not compatible with <clr>maloc<clrEnd> engines, due to general stupidity of their engines construction.
+        Text=<clr><clrEnd>
+        Text=Reliability: <clr>+30%<clrEnd>
+        Text=Cost: <clr>-80%<clrEnd>
+        Text=Size: <clr>+20%<clrEnd>
+    }
+    EvoMM_Googlebot ^{
+        Cost=120
+        CustomTag=EvoMM_Googlebot
+        Equipments=Scaner
+        Name=Googlebot
+        Owner=Maloc
+        Priority=85
+        Text=Level three micromodule. Connects a <clr>maloq<clrEnd> scanner to the GuideNet network, giving access to weekly calibration and mandatory software updates.
+        Text=<clr><clrEnd>
+        Text=Scanner power: <bonScan>%
+        Text=Cost: <clr>+20%<clrEnd>
+        bonScan=5
+    }
+    EvoMM_Grab ^{
+        CustomTag=EvoMM_Grab
+        Equipments=Hook
+        Name=Grab
+        Owner=Maloc,Peleng,People,Fei
+        Priority=75
+        Size=120
+        Text=Level three micromodule. Developed by peleng scientist Sickpack Grabber, famous for his incredible, chronic and uncurable kleptomania. Known for stealing small, but very valuable items from long range. In act of rowdyism, Sickpack made this micromodule incompatible with <clr>gaalian<clrEnd> equipment.
+        Text=<clr><clrEnd>
+        Text=Gripper ranger: <bonHookRadius>
+        Text=Size: <clr>+20%<clrEnd>
+        bonHookRadius=20
+    }
+    EvoMM_Graviton ^{
+        Cost=140
+        CustomTag=EvoMM_Graviton
+        Equipments=Hull
+        Name=Graviton
+        Owner=PirateClan
+        Priority=31
+        RacialRestriction=1
+        Size=90
+        Text=Level two micromodule. <clr>Pirate<clrEnd> "scientists" have dissassembled the "Antigravitator" artifact down to the "Graviton" blocks, and with hammers, sledgehammers and someone's damned mum, have implemented it into their hulls. As a result, hull gravity and size are reduced.
+        Text=<clr><clrEnd>
+        Text=Hull gravity: <bonMass><clr>%<clrEnd>
+        Text=Cost: <clr>+40%<clrEnd>
+        Text=Size: <clr>-10%<clrEnd>
+        bonMass=-50
+    }
+    EvoMM_Inhibitor ^{
+        CustomTag=EvoMM_Inhibitor
+        Equipments=WEnergy,WSplinter,WMissile,Engine,FuelTank,Droid,Hook,DefGenerator,Scaner,Radar
+        Name=Inhibitor
+        Owner=None,NonKling
+        Priority=31
+        Text=Level two micromodule. Applies a coat of special substance, reducing the effects of harmful cosmic rays on <clr>unknown<clrEnd> equipment and thus improving it's performance.
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump> pc.
+        Text=Fuel tank capacity: <bonFuel>
+        Text=Radar range: <bonRadar> mln. km
+        Text=Scanner power: <bonScan>%
+        Text=Droid effectiveness: <bonDroid>
+        Text=Gripper power: <bonHook>
+        Text=Gripper ranger: <bonHookRadius>
+        Text=Shield generator: <bonDef>%
+        bonDef=3
+        bonDroid=11
+        bonFuel=9
+        bonHook=15
+        bonHookRadius=10
+        bonJump=3
+        bonRadar=450
+        bonScan=5
+        bonSpeed=30
+        bonWEnergy=10
+        bonWMissile=14
+        bonWSplinter=14
+    }
+    EvoMM_Inside ^{
+        CustomTag=EvoMM_Inside
+        Equipments=WMissile
+        Name=Inzide
+        Owner=Kling
+        Priority=40
+        RacialRestriction=1
+        Size=150
+        Text=Level two micromodule. Increases amount of ammo for <clr>dominator<clrEnd> missile weapons and equips it with an additional launching shafts. Modernized launcher system takes up extra size, equal to <clr>50<clrEnd>% of the device.
+        Text=Ammo: <bonAmmo>
+        Text=Missiles: <bonShots>
+        bonAmmo=20
+        bonShots=1
+    }
+    EvoMM_Ionizer ^{
+        CustomTag=EvoMM_Ionizer
+        Equipments=WMissile
+        Fragility=117
+        Name=Ionizer
+        Owner=Any
+        Priority=50
+        Text=Level two micromodule. Modifies loading mechanism of <clr>missile weapons<clrEnd> with ionisator by small price of reliability. After modification every missile ionises target's surface, making it more susceptible to any incoming damage.
+        Text=<clr><clrEnd>
+        Text=Additonal effect: <clr>ionization<clrEnd>
+        Text=Reliability: <clr>-15%<clrEnd>
+        WeaponMods=Shock
+    }
+    EvoMM_Junkometer ^{
+        Cost=40
+        CustomTag=EvoMM_Junkometer
+        Equipments=Radar
+        Name=Junkometer
+        Priority=90
+        Size=140
+        Text=Level three micromodule. Replaces the expensive, compact radar parts for cheap and large ones. As a result, radar takes up <clr>40<clrEnd>% more space and range is reduced by <clr>200<clrEnd>, but cost is also reduced by <clr>60<clrEnd>%.
+        Text=<clr><clrEnd>
+        Text=Cost: <clr>-60%<clrEnd>
+        Text=Radar range: <bonRadar> mln. km
+        Text=Size: <clr>+40%<clrEnd>
+        bonRadar=-200
+    }
+    EvoMM_Kishrobu ^{
+        CustomTag=EvoMM_Kishrobu
+        Equipments=Engine,Hull
+        Name=Kishrobu
+        Priority=31
+        Text=Level two micromodule. Adds afterburner option and opens remaining weapon slots, at the same time closing artifact, scanner and shield generator slots. When correctly installed into engine, rapid speed increase is observed, while jumping range is severely reduced.
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        bonJump=-10
+        bonSlotArt=-4
+        bonSlotDef=-1
+        bonSlotForsage=1
+        bonSlotScaner=-1
+        bonSlotWeapon=4
+        bonSpeed=150
+    }
+    EvoMM_LaserJet ^{
+        Cost=117
+        CustomTag=EvoMM_LaserJet
+        Equipments=W01
+        Fragility=115
+        Name=Laser-Jet
+        Owner=Any
+        Priority=70
+        Size=130
+        Text=Level three micromodule. Who said that <clr>industrial lasers<clrEnd> are useless?
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Firing range: <bonWRadius>
+        Text=Reliability: <clr>-15%<clrEnd>
+        Text=Cost: <clr>+15%<clrEnd>
+        Text=Size: <clr>+30%<clrEnd>
+        bonWEnergy=14
+        bonWRadius=20
+    }
+    EvoMM_Malocuscus ^{
+        Cost=125
+        CustomTag=EvoMM_Malocuscus
+        Equipments=Hull
+        Name=Littlebites
+        Owner=Maloc
+        Priority=50
+        Size=110
+        Text=Level two micromodule. Embeds a giant <clr>maloc<clrEnd> food generator into hull. However, what it generates is not enough for maloc-gluttons, which is why it's sometimes called "Little bites". Shield generator can be connected to the food generator.
+        Text=Hull size: <clr>+10%<clrEnd>
+        Text=Cost: <clr>+25%<clrEnd>
+        bonSlotDef=1
+    }
+    EvoMM_Military ^{
+        CustomTag=EvoMM_Military
+        Equipments=Hull
+        Name=Militarium
+        Owner=Fei
+        Priority=10
+        Size=85
+        Text=Level one micromodule. Fully transforms hull into a military type. Opens two weapon slots right away. If transformation goes well, opens up the droid and shield generator slots. Only usable for <clr>faeyan<clrEnd> hulls.
+        Text=Hull armor: <bonHull>
+        Text=Hull size: <clr>-15%<clrEnd>
+        bonHull=6
+        bonSlotDef=1
+        bonSlotDroid=1
+        bonSlotWeapon=2
+    }
+    EvoMM_Minimus ^{
+        Cost=110
+        CustomTag=EvoMM_Minimus
+        Equipments=Engine,Radar,Scaner,Droid,Hook,DefGenerator,FuelTank
+        Fragility=125
+        Name=Minimus
+        Owner=Kling
+        Priority=70
+        RacialRestriction=1
+        Size=55
+        Text=Level three micromodule. According to scientists, this module, created by dominators, was only supposed to be used in ship class "Shtip". Tests have shown that it decreases any equipment by 1/3, besides hull and weapons. Micromodule is inserted into the heavier nodes, replacing them with lighter ones. Equipment like this is working flat out and hard to repair, increasing it's cost. Micromodule has an identification system embedded, which still couldn't be hacked, therefore it can only be used in <clr>dominator<clrEnd> equipment.
+        Text=<clr><clrEnd>
+        Text=Size: <clr>-45%<clrEnd>
+        Text=Reliability: <clr>-20%<clrEnd>
+        Text=Cost: <clr>+10%<clrEnd>
+    }
+    EvoMM_Nahwaton ^{
+        CustomTag=EvoMM_Nahwaton
+        Equipments=Engine,FuelTank,Hook
+        Name=Grabaton
+        Owner=PirateClan
+        Priority=31
+        RacialRestriction=1
+        Text=Level two micromodule. Developed in exchange for life by captive faeyan, to allow <clr>pirates<clrEnd> grab large items at longer range. Rumors say, that micromodule's hidden ability to enable higher fuel tank capacity and engine jumping range, allowed the faeyan to jump to his home system while he was showing his micromodule's functionality to pirates.
+        Text=<clr><clrEnd>
+        Text=Jumping range: <bonJump> pc.
+        Text=Fuel tank capacity: <bonFuel>
+        Text=Gripper power: <bonHook>
+        Text=Gripper ranger: <bonHookRadius>
+        bonFuel=15
+        bonHook=25
+        bonHookRadius=20
+        bonJump=9
+    }
+    EvoMM_Nanotoid ^{
+        CustomTag=EvoMM_Nanotoid
+        Equipments=Droid
+        Name=Nanitoid
+        Owner=Kling
+        Priority=95
+        RacialRestriction=1
+        Text=Level three micromodule. Embeds a miniature manipulator into a repair droid. Droid performs hull repair more by <clr>10<clrEnd> in a day. Only works with <clr>dominator<clrEnd> droids due to existing block on advanced AI in Coalition's droids.
+        Text=<clr><clrEnd>
+        Text=Droid effectiveness: <bonDroid>
+        bonDroid=10
+    }
+    EvoMM_Navigator4_44 ^{
+        Cost=70
+        CustomTag=EvoMM_Navigator4_44
+        Equipments=Radar,WEnergy,WSplinter,Scaner
+        Name=Navigator v. 4.44
+        Owner=Kling
+        Priority=70
+        RacialRestriction=1
+        Size=120
+        Text=Level three micromodule. Installs new item detection and recognition systems, and long range guidance system for energy and fragmentation weapons. New systems are cheap and large, which has an effect on equipment cost and size. Only used in <clr>dominator<clrEnd> equipment due to architectural differences.
+        Text=<clr><clrEnd>
+        Text=Firing range: <bonWRadius>
+        Text=Radar range: <bonRadar> mln. km
+        Text=Scanner power: <bonScan>%
+        Text=Cost: <clr>-30%<clrEnd>
+        Text=Size: <clr>+20%<clrEnd>
+        bonRadar=444
+        bonScan=4
+        bonWRadius=44
+    }
+    EvoMM_Navitek ^{
+        CustomTag=EvoMM_Navitek
+        Equipments=WMissile
+        Name=Navitech
+        Owner=PirateClan
+        Priority=55
+        RacialRestriction=1
+        Size=130
+        Text=Level two micromodule. When attached to missile weapon, replaces the standard targeting system for a heavier navigational locator. This locator looks for most vulnerable spots in target's hull. Search happens in matter of seconds, after which locator sends missiles into identified breaches in hull. Navigational locator is compatible with <clr>pirate<clrEnd> produced equipment.
+        Text=<clr><clrEnd>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Size: <clr>+30%<clrEnd>
+        bonWMissile=25
+    }
+    EvoMM_Nebula ^{
+        CustomTag=EvoMM_Nebula
+        Equipments=Hull
+        Name=Nebula
+        Priority=70
+        Text=Level three micromodule. Covers hull in a cloud of electrified dust. Generates EMP interference, incompatible with scanner, and electrical field, which can slow down enemy fragmentation shots and missiles, discharges energy beams and blocks heat damage, thus increasing potential hull defense.
+        Text=Hull armor: <bonHull>
+        bonHull=3
+        bonSlotScan=-1
+    }
+    EvoMM_Oberon13 ^{
+        CustomTag=EvoMM_Oberon13
+        Equipments=Hull
+        Name=Oberon 13
+        Owner=PirateClan
+        Priority=70
+        RacialRestriction=1
+        Size=113
+        Text=Level three micromodule. Dismantles afterburner and scanner slots via transforming oberon-beam, increasing hull space. Because of strong energy bursts of the beam, a layer of hull armor is burned away. This beam is forbidden for use due to strongest radiation outbreaks, but for <clr>pirates<clrEnd>, everything is allowed.
+        Text=<clr><clrEnd>
+        Text=Hull size: <clr>+13%<clrEnd>
+        Text=Hull armor: <bonHull>
+        bonHull=-2
+    }
+    EvoMM_PP1111 ^{
+        CustomTag=EvoMM_PP1111
+        Equipments=Radar
+        Name=RR-1111
+        Owner=Peleng,People,Fei,Gaal
+        Priority=30
+        Size=130
+        Text=Level one micromodule. Embeds a compatible high-powered radar - RR-1111, which increases the power of main radar. Because RR-1111 requires a high-tech socket UUSB-6, it is not compatible with <clr>maloc<clrEnd> equipment.
+        Text=<clr><clrEnd>
+        Text=Radar range: <bonRadar> mln. km
+        Text=Size: <clr>+30%<clrEnd>
+        bonRadar=1111
+    }
+    EvoMM_Plasmer ^{
+        CustomTag=EvoMM_Plasmer
+        Equipments=Engine,WEnergy
+        Name=Plasmer
+        Owner=Kling
+        Priority=5
+        RacialRestriction=1
+        Size=120
+        Text=Level one micromodule. Cleans engine's fuel filters with processed plasma, speeding up circulation of fuel across all engine nodes. Also this micromodule is compatible with energy weapons - the plasma produced by module improves the thermoreactor and sticks all over the weapon barrel, imbuing the energy basis of the beam. Coalition equipment can't endure the increased load, created by plasma, while <clr>dominator<clrEnd> ones become heavier.
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump> pc.
+        Text=Size: <clr>+20%<clrEnd>
+        bonJump=17
+        bonSpeed=200
+        bonWEnergy=25
+    }
+    EvoMM_Pressor ^{
+        Cost=150
+        CustomTag=EvoMM_Pressor
+        Equipments=FuelTank
+        Name=Pressor
+        Owner=PirateClan
+        Priority=80
+        RacialRestriction=1
+        Text=Level three micromodule. Increases fuel tank capacity by implementing new fuel compression tech. This technology was copied by <clr>pirates<clrEnd> from a secret Coalition lab, which they have applied to their own equipment and immediatelly showed off as theirs development.
+        Text=<clr><clrEnd>
+        Text=Fuel tank capacity: <bonFuel>
+        Text=Cost: <clr>+50%<clrEnd>
+        bonFuel=15
+    }
+    EvoMM_Proberon ^{
+        CustomTag=EvoMM_Proberon
+        Equipments=WMissile
+        Name=Proberon
+        Owner=Blazer
+        Priority=25
+        RacialRestriction=1
+        Text=Level one micromodule. This is an AI-developed micromodule, based on longstanding mass of knowledge and experience on missile weapons. Only compatible with <clr>Blazer<clrEnd> dominator series.
+        Text=<clr><clrEnd>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Missile speed: <bonMissileSpeed>
+        bonMissileSpeed=300
+        bonWMissile=20
+    }
+    EvoMM_Prom ^{
+        CustomTag=EvoMM_Prom
+        Equipments=DefGenerator,Hook
+        Name=Prom
+        Owner=Kling
+        Priority=50
+        RacialRestriction=1
+        Size=140
+        Text=Level two micromodule. When installed in <clr>dominator<clrEnd> equipment, provides more balanced distribution of energy beams. Increasing size, promotes elimination of noise from shield generator's system nodes. When installed in gripper, replaces the power control system, making it less powerful in exchange for range.
+        Text=<clr><clrEnd>
+        Text=Shield generator: <bonDef>%
+        Text=Gripper ranger: <bonHookRadius>
+        Text=Gripper power: <bonHook>
+        Text=Size: <clr>+40%<clrEnd>
+        bonDef=6
+        bonHook=-30
+        bonHookRadius=45
+    }
+    EvoMM_Protonic ^{
+        CustomTag=EvoMM_Protonic
+        Equipments=WSplinter
+        Name=Protonic
+        Owner=Kling
+        Priority=75
+        RacialRestriction=1
+        Text=Level three micromodule. Increases weapon power by equipping the <clr>fragmentation<clrEnd> shots with encapsuled protons. Encapsuled protons interfere with targeting systems, reducing firing range. Only works on <clr>dominator<clrEnd> fragmentation weapons.
+        Text=<clr><clrEnd>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Firing range: <bonWRadius>
+        bonWRadius=-40
+        bonWSplinter=15
+    }
+    EvoMM_RobinBoom ^{
+        CustomTag=EvoMM_RobinBoom
+        Equipments=WSplinter
+        Name=Robin Boom
+        Priority=50
+        Text=Level two micromodule. Introduces advanced programm code - so-called "sniper" algorithm in <clr>fragmentation weapons<clrEnd>, which leads to nice improvement in weapon reaching distance.
+        Text=<clr><clrEnd>
+        Text=Firing range: <bonWRadius>
+        bonWRadius=40
+    }
+    EvoMM_RocketBoomgie ^{
+        Cost=200
+        CustomTag=EvoMM_RocketBoogie
+        Equipments=WMissile
+        Name=Rocket-Boomgie
+        Owner=Kling
+        Priority=15
+        RacialRestriction=1
+        Text=Level one micromodule. Developed by militant malocs even before the war with <clr>dominators<clrEnd>. Intended to only work with dominator missile weapons, significantly boosting their power and cost, due to embedded secret maloc explosive elements.
+        Text=<clr><clrEnd>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Cost: <clr>+100%<clrEnd>
+        bonWMissile=50
+    }
+    EvoMM_ScanTech ^{
+        Cost=110
+        CustomTag=EvoMM_ScanTech
+        Equipments=Scaner
+        Name=ScanTech
+        Owner=Kling
+        Priority=15
+        RacialRestriction=1
+        Size=75
+        Text=Level one micromodule. Connects the <clr>scanner<clrEnd> to the encrypted dominator network, boosting scanner power. Replaces scanner's encryption blocks for ones, more suspectible to impulses, making the scanner lighter and more expensive. Because of embedded "friend-foe" identification system, can only function in <clr>dominator<clrEnd> scanners.
+        Text=<clr><clrEnd>
+        Text=Scanner power: <bonScan>%
+        Text=Cost: <clr>+10%<clrEnd>
+        Text=Size: <clr>-25%<clrEnd>
+        bonScan=10
+    }
+    EvoMM_Scarf ^{
+        CustomTag=EvoMM_Scarf
+        Equipments=DefGenerator
+        Name=Scarf
+        Owner=Kling
+        Priority=70
+        RacialRestriction=1
+        Size=110
+        Text=Level three micromodule. Increases the power of interference filter for <clr>dshield generator<clrEnd>, adding a null level psi-shield controller. After activation, the controller takes extra space. Only used in <clr>dominator<clrEnd> shield generators.
+        Text=<clr><clrEnd>
+        Text=Shield generator: <bonDef>%
+        Text=Size: <clr>+10%<clrEnd>
+        bonDef=4
+    }
+    EvoMM_Tetron ^{
+        Cost=130
+        CustomTag=EvoMM_Tetron
+        Equipments=WMissile
+        Name=Tetron
+        Owner=Gaal
+        Priority=65
+        Size=150
+        Text=Level two micromodule. Fills the <clr>missile and torpedo<clrEnd> warheads with liquid tetrile, significantly boosting their power. Only <clr>gaalian<clrEnd> equipment is strong enough to have this micromodule attached. Alas, but tetrile generator increases weapon size and cost.
+        Text=<clr><clrEnd>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Cost: <clr>+30%<clrEnd>
+        Text=Size: <clr>+50%<clrEnd>
+        bonWMissile=30
+    }
+    EvoMM_Titanium ^{
+        Cost=120
+        CustomTag=EvoMM_Titanium
+        Equipments=Engine,FuelTank,Radar,Scaner,Droid,Hook,DefGenerator,WEnergy,WSplinter,WMissile
+        Fragility=83
+        Name=Titanium
+        Owner=Peleng,Maloc
+        Priority=75
+        Size=120
+        Text=Level three micromodule. Replaces the suspectible to wear and tear parts of <clr>maloc and peleng<clrEnd> equipment and weapons for new ones, made out of stronger alloy. Boosts equipment reliablity and increases it's size and cost, since new parts are expensive and heavy.
+        Text=<clr><clrEnd>
+        Text=Reliability: <clr>+20%<clrEnd>
+        Text=Cost: <clr>+20%<clrEnd>
+        Text=Size: <clr>+20%<clrEnd>
+    }
+    EvoMM_Unique ^{
+        CustomTag=EvoMM_Unique
+        Equipments=Hull
+        Fragility=130
+        Name=Whizkid
+        Priority=50
+        Text=Level two micromodule. Embeds into ship's onboard computer an hardware-software hybrid system, "Smart hull". This system allows to stabilize weapon targeting and effectively operate equipment. Main disadvantage - unstable peformance of the defense system, which significantly increases taken damage.
+        Text=<clr><clrEnd>
+        Text=Attack skill: <bonSkill1>
+        Text=Technical skill: <bonSkill3>
+        Text=Damage susceptibility: <clr>+30%<clrEnd>
+        bonSkill1=2
+        bonSkill3=2
+    }
+    EvoMM_Vampiric ^{
+        Cost=150
+        CustomTag=EvoMM_Vampiric
+        Equipments=W06,W09,W10
+        Fragility=117
+        Name=Vampiric
+        Priority=20
+        Text=Level one micromodule. Actively uses the debris of target's hull to restore it's own. All of weapon's energy circuits work in pre-critical condition, increasing the wear and tear of all parts, and decreasing weapon efficency. Only compatible with <clr>wave phaser<clrEnd>, <clr>multiresonator<clrEnd> and <clr>atomic vision<clrEnd>, favourite weapons of the micromodule developer.
+        Text=<clr><clrEnd>
+        Text=Additonal effect: <clr>Vampirism<clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Firing range: <bonWRadius>
+        Text=Reliability: <clr>-15%<clrEnd>
+        Text=Cost: <clr>+50%<clrEnd>
+        WeaponMods=Drain
+        bonWEnergy=-17
+        bonWRadius=-20
+        bonWSplinter=-17
+    }
+}

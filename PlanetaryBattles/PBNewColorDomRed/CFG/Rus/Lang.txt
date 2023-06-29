@@ -1,0 +1,3 @@
+RobotsMap ^{
+    NewColor=On
+}

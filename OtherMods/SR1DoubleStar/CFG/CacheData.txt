@@ -1,0 +1,9 @@
+Bm ~{
+    Star ~{
+        05=Mods\OtherMods\SR1DoubleStar\DATA\Star\Star05.gi
+        05a=Mods\OtherMods\SR1DoubleStar\DATA\Star\Star05.gai
+    }
+}
+Script ~{
+    Mod_SR1DoubleStar=Mods\OtherMods\SR1DoubleStar\DATA\Script\Mod_SR1DoubleStar.scr
+}

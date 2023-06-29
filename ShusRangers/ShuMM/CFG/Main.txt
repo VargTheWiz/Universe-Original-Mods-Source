@@ -1,0 +1,147 @@
+Data ^{
+    SE ^{
+        Missile ^{
+            wMissileLauncherTorpedo ^{
+                PosZ=Missile
+            }
+        }
+        Ship ^{
+            Akrin ^{
+                Furavan ^{
+                    2ImageP=GI,Bm.ShipP.2Furavan
+                    Anim ^{
+                        0=1,[100,40-59]
+                        Normal=5,[100,0-19]
+                    }
+                    AnimS ^{
+                        Normal=5,[100,0-19]
+                    }
+                    Image=Bm.Ship.Furavan
+                    ImageMap=Bm.Ship.FeiMap
+                    ImageS=Bm.Ship.Furavans
+                    PanelPartnerImage=Furavan
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=52,114
+                    Tail2=77,114
+                }
+                Pickuup ^{
+                    2ImageP=GI,Bm.ShipP.2Pickuup
+                    Anim ^{
+                        0=1,[70,20-39]
+                        Normal=3,[70,0-19]
+                    }
+                    AnimS ^{
+                        Normal=3,[70,0-19]
+                    }
+                    Image=Bm.Ship.Pickuup
+                    ImageMap=Bm.Ship.GaalMap
+                    ImageS=Bm.Ship.Pickuups
+                    PanelPartnerImage=Pickuup
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=23,113
+                    Tail2=105,113
+                }
+                Proudwing ^{
+                    2ImageP=GI,Bm.ShipP.2Proudwing
+                    Anim ^{
+                        Normal=5,[50,0-31]
+                    }
+                    AnimS ^{
+                        Normal=5,[50,0-31]
+                    }
+                    Image=Bm.Ship.Proudwing
+                    ImageMap=Bm.Ship.PeopleMap
+                    ImageS=Bm.Ship.Proudwings
+                    PanelPartnerImage=Proudwing
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=52,112
+                    Tail2=72,112
+                }
+                Rattletrop ^{
+                    2ImageP=GI,Bm.ShipP.2Rattletrop
+                    Anim ^{
+                        Normal=5,[100,0-19]
+                    }
+                    AnimS ^{
+                        Normal=5,[100,0-19]
+                    }
+                    Image=Bm.Ship.Rattletrop
+                    ImageMap=Bm.Ship.MalocMap
+                    ImageS=Bm.Ship.Rattletrops
+                    PanelPartnerImage=Rattletrop
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=50,118
+                    Tail2=78,118
+                }
+                Shmyakush ^{
+                    2ImageP=GI,Bm.ShipP.2Shmyakush
+                    Anim ^{
+                        0=2,[90,20-39]
+                        1=1,[90,40-62]
+                        Normal=3,[90,0-19]
+                    }
+                    AnimS ^{
+                        Normal=3,[90,0-19]
+                    }
+                    Image=Bm.Ship.Shmyakush
+                    ImageMap=Bm.Ship.PelengMap
+                    ImageS=Bm.Ship.Shmyakushs
+                    PanelPartnerImage=Shmyakush
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=55,113
+                    Tail2=73,113
+                }
+                Tauhit ^{
+                    2ImageP=GI,Bm.ShipP.2PeopleROld
+                    Anim ^{
+                        0=1,[70,50-99]
+                        Normal=2,[70,0-49]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-49]
+                    }
+                    Image=Bm.Ship.PeopleROld
+                    ImageMap=Bm.Ship.PeopleMap
+                    ImageS=Bm.Ship.PeopleROlds
+                    PanelPartnerImage=PeopleO
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=43,115
+                    Tail2=85,115
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_ShuMM=1,Script.Mod_ShuMM
+    }
+}

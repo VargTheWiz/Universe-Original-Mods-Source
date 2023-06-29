@@ -1,0 +1,460 @@
+FormInfo ^{
+    DoubleQuote="
+}
+Items ^{
+    Hull ^{
+        Text=Hull durability: <Size> (<MaxSize>) units, skin blocks up to <HitProtect> incoming damage.
+        Text=<clr><clrEnd>
+        Text=Damage susceptibility:<br>E:<FragilityE>%  F:<FragilityS>%  M:<FragilityM>%
+    }
+}
+MicroModuls ^{
+    ExpHulls_Bolide1 ^{
+        Cost=200
+        Equipments=Hull
+        Fragility=105
+        KindGraph=3
+        LockedAcryn=3
+        Name="Bolide" I
+        NonSearchable=1
+        Priority=10
+        Size=100
+        Special=1
+        Text=Engine speed: <bonSpeed> pt.
+        Text=Jumping range: <bonJump> pc.
+        Text=Radar range: <bonRadar> mil. km.
+        Text=Hull armor: <bonHull> pt.
+        bonHull=-2
+        bonJump=3
+        bonRadar=150
+        bonSlotArt=-2
+        bonSlotDef=-1
+        bonSlotWeapon=-2
+        bonSpeed=300
+    }
+    ExpHulls_Bolide2 ^{
+        Cost=300
+        Equipments=Hull
+        Fragility=105
+        KindGraph=3
+        LockedAcryn=3
+        Name="Bolide" II
+        NonSearchable=1
+        Priority=30
+        Size=100
+        Special=1
+        Text=Engine speed: <bonSpeed> pt.
+        Text=Jumping range: <bonJump> pc.
+        Text=Radar range: <bonRadar> mil. km.
+        Text=Hull armor: <bonHull> pt.
+        bonHull=-3
+        bonJump=3
+        bonRadar=250
+        bonSlotArt=-2
+        bonSlotDef=-1
+        bonSlotWeapon=-2
+        bonSpeed=350
+    }
+    ExpHulls_Bolide3 ^{
+        Cost=400
+        Equipments=Hull
+        Fragility=105
+        KindGraph=3
+        LockedAcryn=3
+        Name="Bolide" III
+        NonSearchable=1
+        Priority=50
+        Size=100
+        Special=1
+        Text=Engine speed: <bonSpeed> pt.
+        Text=Jumping range: <bonJump> pc.
+        Text=Radar range: <bonRadar> mil. km.
+        Text=Hull armor: <bonHull> pt.
+        bonHull=-5
+        bonJump=4
+        bonRadar=300
+        bonSlotArt=-2
+        bonSlotDef=-1
+        bonSlotWeapon=-2
+        bonSpeed=400
+    }
+    ExpHulls_Bolide4 ^{
+        Cost=500
+        Equipments=Hull
+        Fragility=105
+        KindGraph=3
+        LockedAcryn=3
+        Name="Bolide" IV
+        NonSearchable=1
+        Priority=70
+        Size=100
+        Special=1
+        Text=Engine speed: <bonSpeed> pt.
+        Text=Jumping range: <bonJump> pc.
+        Text=Radar range: <bonRadar> mil. km.
+        Text=Hull armor: <bonHull> pt.
+        bonHull=-5
+        bonJump=4
+        bonRadar=250
+        bonSpeed=300
+    }
+    ExpHulls_Bolide5 ^{
+        Cost=600
+        Equipments=Hull
+        Fragility=105
+        KindGraph=3
+        LockedAcryn=3
+        Name="Meteor"
+        NonSearchable=1
+        Priority=100
+        Size=100
+        Special=1
+        Text=Engine speed: <bonSpeed> pt.
+        Text=Jumping range: <bonJump> pc.
+        Text=Radar range: <bonRadar> mil. km.
+        Text=Hull armor: <bonHull> pt.
+        bonHull=-6
+        bonJump=7
+        bonRadar=550
+        bonSpeed=600
+    }
+    ExpHulls_Killer1 ^{
+        Cost=200
+        Equipments=Hull
+        Fragility=100
+        KindGraph=1
+        LockedAcryn=3
+        Name="Assasin" I
+        NonSearchable=1
+        Priority=10
+        Size=100
+        Special=1
+        Text=Attack skill: <bonSkill1>
+        Text=Energy weapons damage: <bonWEnergy> pt.
+        Text=Fragmentation weapons damage: <bonWSplinter> pt.
+        Text=Missile weapons damage: <bonWMissile> pt.
+        Text=Engine speed: <bonSpeed> pt.
+        Text=Mobility skill: <bonSkill2>
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        bonSkill1=1
+        bonSkill2=-1
+        bonSkill4=-1
+        bonSkill5=-1
+        bonSlotArt=-2
+        bonSlotForsage=-1
+        bonSlotScaner=-1
+        bonSpeed=50
+        bonWEnergy=7
+        bonWMissile=10
+        bonWSplinter=10
+    }
+    ExpHulls_Killer2 ^{
+        Cost=300
+        Equipments=Hull
+        Fragility=100
+        KindGraph=1
+        LockedAcryn=3
+        Name="Assasin" II
+        NonSearchable=1
+        Priority=30
+        Size=100
+        Special=1
+        Text=Attack skill: <bonSkill1>
+        Text=Energy weapons damage: <bonWEnergy> pt.
+        Text=Fragmentation weapons damage: <bonWSplinter> pt.
+        Text=Missile weapons damage: <bonWMissile> pt.
+        Text=Engine speed: <bonSpeed> pt.
+        Text=Mobility skill: <bonSkill2>
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        bonSkill1=1
+        bonSkill2=-1
+        bonSkill4=-1
+        bonSkill5=-1
+        bonSlotArt=-2
+        bonSlotForsage=-1
+        bonSlotScaner=-1
+        bonSpeed=75
+        bonWEnergy=8
+        bonWMissile=11
+        bonWSplinter=11
+    }
+    ExpHulls_Killer3 ^{
+        Cost=400
+        Equipments=Hull
+        Fragility=100
+        KindGraph=1
+        LockedAcryn=3
+        Name="Assasin" III
+        NonSearchable=1
+        Priority=50
+        Size=100
+        Special=1
+        Text=Attack skill: <bonSkill1>
+        Text=Energy weapons damage: <bonWEnergy> pt.
+        Text=Fragmentation weapons damage: <bonWSplinter> pt.
+        Text=Missile weapons damage: <bonWMissile> pt.
+        Text=Engine speed: <bonSpeed> pt.
+        Text=Mobility skill: <bonSkill2>
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        bonSkill1=1
+        bonSkill2=-1
+        bonSkill4=-1
+        bonSkill5=-1
+        bonSlotArt=-2
+        bonSlotForsage=-1
+        bonSlotScaner=-1
+        bonSpeed=100
+        bonWEnergy=9
+        bonWMissile=12
+        bonWSplinter=12
+    }
+    ExpHulls_Killer4 ^{
+        Cost=500
+        Equipments=Hull
+        Fragility=100
+        KindGraph=1
+        LockedAcryn=3
+        Name="Assasin" IV
+        NonSearchable=1
+        Priority=70
+        Size=100
+        Special=1
+        Text=Attack skill: <bonSkill1>
+        Text=Energy weapons damage: <bonWEnergy> pt.
+        Text=Fragmentation weapons damage: <bonWSplinter> pt.
+        Text=Missile weapons damage: <bonWMissile> pt.
+        Text=Engine speed: <bonSpeed> pt.
+        Text=Mobility skill: <bonSkill2>
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        bonSkill1=1
+        bonSkill2=-1
+        bonSkill4=-1
+        bonSkill5=-1
+        bonSpeed=75
+        bonWEnergy=6
+        bonWMissile=8
+        bonWSplinter=8
+    }
+    ExpHulls_Killer5 ^{
+        Cost=600
+        Equipments=Hull
+        Fragility=100
+        KindGraph=1
+        LockedAcryn=3
+        Name="Punisher"
+        NonSearchable=1
+        Priority=100
+        Size=100
+        Special=1
+        Text=Attack skill: <bonSkill1>
+        Text=Energy weapons damage: <bonWEnergy> pt.
+        Text=Fragmentation weapons damage: <bonWSplinter> pt.
+        Text=Missile weapons damage: <bonWMissile> pt.
+        Text=Engine speed: <bonSpeed> pt.
+        Text=Mobility skill: <bonSkill2>
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        bonSkill1=1
+        bonSkill2=-1
+        bonSkill4=-1
+        bonSkill5=-1
+        bonSpeed=150
+        bonWEnergy=12
+        bonWMissile=16
+        bonWSplinter=16
+    }
+    ExpHulls_Rock1 ^{
+        Cost=200
+        Equipments=Hull
+        Fragility=105
+        KindGraph=2
+        LockedAcryn=3
+        Name="Rock" I
+        NonSearchable=1
+        Priority=10
+        Size=100
+        Special=1
+        Text=Mobility skill: <bonSkill2>
+        Text=Technology skill: <bonSkill3>
+        Text=Hull armor: <bonHull> pt.
+        Text=Droid effectiveness: <bonDroid> pt.
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        Text=Engine speed: <bonSpeed> pt.
+        bonDroid=15
+        bonHull=1
+        bonSkill2=1
+        bonSkill3=1
+        bonSkill4=-2
+        bonSkill5=-1
+        bonSlotForsage=-1
+        bonSlotWeapon=-1
+        bonSpeed=-70
+    }
+    ExpHulls_Rock2 ^{
+        Cost=300
+        Equipments=Hull
+        Fragility=100
+        KindGraph=2
+        LockedAcryn=3
+        Name="Rock" II
+        NonSearchable=1
+        Priority=30
+        Size=100
+        Special=1
+        Text=Mobility skill: <bonSkill2>
+        Text=Technology skill: <bonSkill3>
+        Text=Hull armor: <bonHull> pt.
+        Text=Droid effectiveness: <bonDroid> pt.
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        Text=Engine speed: <bonSpeed> pt.
+        Text=Scanner power: <bonScan> pt.
+        bonDroid=20
+        bonHull=3
+        bonScan=-4
+        bonSkill2=1
+        bonSkill3=1
+        bonSkill4=-2
+        bonSkill5=-2
+        bonSlotForsage=-1
+        bonSlotWeapon=-1
+        bonSpeed=-90
+    }
+    ExpHulls_Rock3 ^{
+        Cost=400
+        Equipments=Hull
+        Fragility=95
+        KindGraph=2
+        LockedAcryn=3
+        Name="Rock" III
+        NonSearchable=1
+        Priority=50
+        Size=100
+        Special=1
+        Text=Mobility skill: <bonSkill2>
+        Text=Technology skill: <bonSkill3>
+        Text=Hull armor: <bonHull> pt.
+        Text=Droid effectiveness: <bonDroid> pt.
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        Text=Engine speed: <bonSpeed> pt.
+        Text=Radar range: <bonRadar> mil. km.
+        Text=Scanner power: <bonScan> pt.
+        bonDroid=25
+        bonHull=4
+        bonRadar=-600
+        bonScan=-4
+        bonSkill2=1
+        bonSkill3=1
+        bonSkill4=-1
+        bonSkill5=-2
+        bonSlotForsage=-1
+        bonSlotWeapon=-1
+        bonSpeed=-110
+    }
+    ExpHulls_Rock4 ^{
+        Cost=500
+        Equipments=Hull
+        Fragility=92
+        KindGraph=2
+        LockedAcryn=3
+        Name="Rock" IV
+        NonSearchable=1
+        Priority=70
+        Size=100
+        Special=1
+        Text=Mobility skill: <bonSkill2>
+        Text=Technology skill: <bonSkill3>
+        Text=Hull armor: <bonHull> pt.
+        Text=Droid effectiveness: <bonDroid> pt.
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        Text=Engine speed: <bonSpeed> pt.
+        Text=Radar range: <bonRadar> mil. km.
+        Text=Scanner power: <bonScan> pt.
+        bonDroid=15
+        bonHull=3
+        bonRadar=-600
+        bonScan=-4
+        bonSkill2=1
+        bonSkill3=1
+        bonSkill4=-1
+        bonSkill5=-2
+        bonSpeed=-80
+    }
+    ExpHulls_Rock5 ^{
+        Cost=600
+        Equipments=Hull
+        Fragility=90
+        KindGraph=2
+        LockedAcryn=3
+        Name="Fortress"
+        NonSearchable=1
+        Priority=100
+        Size=100
+        Special=1
+        Text=Mobility skill: <bonSkill2>
+        Text=Technology skill: <bonSkill3>
+        Text=Hull armor: <bonHull> pt.
+        Text=Droid effectiveness: <bonDroid> pt.
+        Text=Commerce skill: <bonSkill4>
+        Text=Charisma skill: <bonSkill5>
+        Text=Engine speed: <bonSpeed> pt.
+        Text=Radar range: <bonRadar> mil. km.
+        Text=Scanner power: <bonScan> pt.
+        bonDroid=30
+        bonHull=5
+        bonRadar=-600
+        bonScan=-5
+        bonSkill2=2
+        bonSkill3=1
+        bonSkill4=-1
+        bonSkill5=-1
+        bonSpeed=-100
+    }
+}
+HullType ^{
+    98 ^{
+        Name=Guugol
+        Text=Fast ranger hull. Publically voted as the best of 3302.
+    }
+}
+Script ^{
+    Mod_ExpHulls ^{
+        100=What!? How dare you to reject ours generous offer, when every one battleship counts?! We see, <Player>, high command had made a mistake choosing you...
+        101=Fly off on it right now then! Just remember, <Player>, when this pelvis wills apart in gunfight with the first snack'n'beer cargo ship - it was your choice!
+        102=I serve the galaxy!
+        103=Do not doubt!
+        110=<br> <br>Depends on your flying style you may choose from three different sizes of the hull, and we are, according to current combat situation, are able to craft next options:<br><br>1. With size of <0> pt. (<1> cr.)<br>2. With size of <2> (<3> cr.)<br>3. With size of <4> pt.(<5> cr.)<br><6><br>Well, <Player>, which one you'd like more?
+        112=<br> <br>Depends on your needs, you may choose from three different sizes. For now we can offer you this options:<br><br>1. With size of <0> pt. (<1> cr. and <2> nd.)<br>2. With size of <3> pt. (<4> cr. and <5> nd.)<br>3. With size of <6> pt. (<7> cr. and <8> nd.)<br><9><br>Which one you prefer?
+        114=<br> <br>If you need, you may choose one of three different sizes. Right now we can build those canakins:<br><br>1. With size of <0> pt. (<1> cr.)<br>2. With size of <2> (<3> cr.)<br>3. With size of <4> pt.(<5> cr.)<br><6><br>Well what, bro, what do you choose?
+        116=First size for <0> cr. and <1> nd.
+        117=Second size for <0> cr. and <1> nd.
+        118=Third size for <0> cr. and <1> nd.
+        120=Given your title, we can offer you a hull <0>:<br><1><br>
+        121=With current galaxy technological level we can construct a hull <0>:<br><1><br>
+        122=Your reputation among the gang allows you to order the hull <0>:<br><1><br>
+        24=Sure thing!
+        47=By the way, we just got confirmed some interesting acryn-related teories, thanks to which blueprints for unique experimental hull <0> were developed. Would you like to sponsor a prototype? Of course, with your spacefaring experiense we would be glad to count you as a test pilot, and with you being one of main sponsors - you get fully functioning hull.
+        58=<0>
+        71=First size for <0> cr.
+        72=Second size for <0> cr.
+        73=Third size for <0> cr.
+        79=Perhaps, I will fly on my pelvis for now
+        84=Next
+        87=I want to order the hull <0>
+        88=Also we recently found one small secret vault, and in this small secret vault we found one veeery interesting blueprintey. Obviously, we only copied it. So let's be fast and cough up a price for real serious pirate hull we call <0>, eh?
+        89=Ranger <Player>! According to your record files you counts as exemplary officer, and therefore you get special access to new secret technology - experimental military hull <0>. Keep in mind - it's confidential, every hull constucted individually, means it won't be cheap. But, ranger, what all those credits cost when we're talking about fate of entire galaxy?!
+        94=Not interested
+        95=Great choice, <PlayerFull>!<br>Soon our mechanics will finish the job and hull will be delivered in the warehouse, from where you can pick it up.<br>I hope this formidable ship will spread fear among the enemies of Coalition!
+        96=Good decision, <PlayerFull>!<br>Soon it will be done by the best of ours. When ready, check out the warehouse, you'll find your new bird parked and ready.<br>And send some thunder on these warriors-dumbass, will you? Dudes tried their best actually!
+        97=None, thank you
+        98=Wise choice, <PlayerFull>.<br>Soon your order will be ready and delivered to the warehouse, where you can pick it any time you want.<br>Let this high-tech hull greatly serve the cause of progress!
+        99=How, don't you want to help to noble cause of the science? Too bad, <Player> - very, very regretfully..
+    }
+}

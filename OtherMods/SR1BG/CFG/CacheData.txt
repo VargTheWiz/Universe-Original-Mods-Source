@@ -1,0 +1,13 @@
+Bm ~{
+    BGO ~{
+        bg87=Mods\OtherMods\SR1BG\DATA\BGObj\bg87.gai
+        bg88=Mods\OtherMods\SR1BG\DATA\BGObj\bg88.gai
+        bg89=Mods\OtherMods\SR1BG\DATA\BGObj\bg89.gai
+        bg90=Mods\OtherMods\SR1BG\DATA\BGObj\bg90.gai
+        bg91=Mods\OtherMods\SR1BG\DATA\BGObj\bg91.gai
+        bg92=Mods\OtherMods\SR1BG\DATA\BGObj\bg92.gai
+    }
+}
+Script ~{
+    Mod_SR1BG=Mods\OtherMods\SR1BG\DATA\Script\Mod_SR1BG.scr
+}

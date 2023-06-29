@@ -1,0 +1,13 @@
+Bm ~{
+    FormCount2 ~{
+        2KindCredits=Mods\Expansion\ExpBK\DATA\NumberBox\2KindCredits.gi
+    }
+    MsgPlayer ~{
+        2NewsA=Mods\Expansion\ExpBK\DATA\Msg\2NewsA.gi
+        2NewsD=Mods\Expansion\ExpBK\DATA\Msg\2NewsD.gi
+        2NewsN=Mods\Expansion\ExpBK\DATA\Msg\2NewsN.gi
+    }
+}
+Script ~{
+    Mod_ExpBK=Mods\Expansion\ExpBK\DATA\Script\Mod_ExpBK.scr
+}

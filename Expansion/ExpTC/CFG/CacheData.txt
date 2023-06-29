@@ -1,0 +1,53 @@
+Bm ~{
+    Container ~{
+        2NuggetAsteroid_0=Mods\Expansion\ExpTC\DATA\Items\Container\Gold_16.gai
+        2NuggetAsteroid_1=Mods\Expansion\ExpTC\DATA\Items\Container\Gold_20.gai
+        2NuggetAsteroid_2=Mods\Expansion\ExpTC\DATA\Items\Container\Gold_25.gai
+        2NuggetAsteroid_3=Mods\Expansion\ExpTC\DATA\Items\Container\Gold_32.gai
+        2NuggetAsteroid_4=Mods\Expansion\ExpTC\DATA\Items\Container\Gold_38.gai
+    }
+    FormRuins ~{
+        2Empty_table=Mods\Expansion\ExpTC\DATA\FormRuins\empty_table.gi
+        2TCbg=Mods\Expansion\ExpTC\DATA\FormRuinsBG\2TCbg.gi
+    }
+    Items ~{
+        2Hull_ExperimentalHull_a=Mods\Expansion\ExpTC\DATA\Items\Hull\ExperimentalHull_a.gai
+        2Hull_ExperimentalHull_i=Mods\Expansion\ExpTC\DATA\Items\Hull\ExperimentalHull_i.gi
+        2Hull_ExperimentalHull_s=Mods\Expansion\ExpTC\DATA\Items\Hull\ExperimentalHull_s.gi
+        2Hull_Lifeboat_i=Mods\Expansion\ExpTC\DATA\Items\Hull\Lifeboat_i.gi
+        2Hull_Lifeboat_s=Mods\Expansion\ExpTC\DATA\Items\Hull\Lifeboat_s.gi
+        2NuggetAsteroid0_s=Mods\Expansion\ExpTC\DATA\Items\Gold_16.gi
+        2NuggetAsteroid1_s=Mods\Expansion\ExpTC\DATA\Items\Gold_20.gi
+        2NuggetAsteroid2_s=Mods\Expansion\ExpTC\DATA\Items\Gold_25.gi
+        2NuggetAsteroid3_s=Mods\Expansion\ExpTC\DATA\Items\Gold_32.gi
+        2NuggetAsteroid4_s=Mods\Expansion\ExpTC\DATA\Items\Gold_38.gi
+    }
+    PanelSpace2 ~{
+        2ExperimentalHullA=Mods\Expansion\ExpTC\DATA\PanelSpace2\ExperimentalHullA.gi
+        2ExperimentalHullD=Mods\Expansion\ExpTC\DATA\PanelSpace2\ExperimentalHullD.gi
+        2ExperimentalHullH=Mods\Expansion\ExpTC\DATA\PanelSpace2\ExperimentalHullH.gi
+        2ExperimentalHullN=Mods\Expansion\ExpTC\DATA\PanelSpace2\ExperimentalHullN.gi
+        2LifeboatA=Mods\Expansion\ExpTC\DATA\PanelSpace2\LifeboatA.gi
+        2LifeboatD=Mods\Expansion\ExpTC\DATA\PanelSpace2\LifeboatD.gi
+        2LifeboatH=Mods\Expansion\ExpTC\DATA\PanelSpace2\LifeboatH.gi
+        2LifeboatN=Mods\Expansion\ExpTC\DATA\PanelSpace2\LifeboatN.gi
+    }
+    Ruins ~{
+        MapTC=Mods\Expansion\ExpTC\DATA\Ruins\MapTC.gi
+        TC=Mods\Expansion\ExpTC\DATA\Ruins\TC.gai
+        TCi=Mods\Expansion\ExpTC\DATA\Ruins\TC.gi
+    }
+    Ship ~{
+        ExperimentalHull=Mods\Expansion\ExpTC\DATA\Ship\ExperimentalHull.hai
+        ExperimentalHulls=Mods\Expansion\ExpTC\DATA\Ship\ExperimentalHull.hai
+        Lifeboat=Mods\Expansion\ExpTC\DATA\Ship\Lifeboat.hai
+        Lifeboats=Mods\Expansion\ExpTC\DATA\Ship\Lifeboat.hai
+    }
+    ShipP ~{
+        2ExperimentalHull=Mods\Expansion\ExpTC\DATA\ShipP\ExperimentalHull.gi
+        2Lifeboat=Mods\Expansion\ExpTC\DATA\ShipP\Lifeboat.gi
+    }
+}
+Script ~{
+    Mod_ExpTC=Mods\Expansion\ExpTC\DATA\Script\Mod_ExpTC.scr
+}

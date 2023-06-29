@@ -1,0 +1,25 @@
+Bm ~{
+    Items ~{
+        2WPlasmaGunArmoloca=Mods\Expansion\ExpPlasmaGun\DATA\Items\PlasmaGun_a.gai
+        2WPlasmaGunArmoloci=Mods\Expansion\ExpPlasmaGun\DATA\Items\PlasmaGun_i.gi
+        2WPlasmaGunArmolocs=Mods\Expansion\ExpPlasmaGun\DATA\Items\PlasmaGun_s.gi
+        2WPlasmaGunDiphrodea=Mods\Expansion\ExpPlasmaGun\DATA\Items\PlasmaGun_a.gai
+        2WPlasmaGunDiphrodei=Mods\Expansion\ExpPlasmaGun\DATA\Items\PlasmaGun_i.gi
+        2WPlasmaGunDiphrodes=Mods\Expansion\ExpPlasmaGun\DATA\Items\PlasmaGun_s.gi
+        2WPlasmaGunInvolutea=Mods\Expansion\ExpPlasmaGun\DATA\Items\PlasmaGun_a.gai
+        2WPlasmaGunInvolutei=Mods\Expansion\ExpPlasmaGun\DATA\Items\PlasmaGun_i.gi
+        2WPlasmaGunInvolutes=Mods\Expansion\ExpPlasmaGun\DATA\Items\PlasmaGun_s.gi
+        2WPlasmaGunJavitora=Mods\Expansion\ExpPlasmaGun\DATA\Items\PlasmaGun_a.gai
+        2WPlasmaGunJavitori=Mods\Expansion\ExpPlasmaGun\DATA\Items\PlasmaGun_i.gi
+        2WPlasmaGunJavitors=Mods\Expansion\ExpPlasmaGun\DATA\Items\PlasmaGun_s.gi
+        2WPlasmaGunLiphocarusa=Mods\Expansion\ExpPlasmaGun\DATA\Items\PlasmaGun_a.gai
+        2WPlasmaGunLiphocarusi=Mods\Expansion\ExpPlasmaGun\DATA\Items\PlasmaGun_i.gi
+        2WPlasmaGunLiphocaruss=Mods\Expansion\ExpPlasmaGun\DATA\Items\PlasmaGun_s.gi
+        2WPlasmaGuna=Mods\Expansion\ExpPlasmaGun\DATA\Items\PlasmaGun_a.gai
+        2WPlasmaGuni=Mods\Expansion\ExpPlasmaGun\DATA\Items\PlasmaGun_i.gi
+        2WPlasmaGuns=Mods\Expansion\ExpPlasmaGun\DATA\Items\PlasmaGun_s.gi
+    }
+}
+Script ~{
+    Mod_ExpPlasmaGun=Mods\Expansion\ExpPlasmaGun\DATA\Script\Mod_ExpPlasmaGun.scr
+}

@@ -1,0 +1,33 @@
+Bm ~{
+    PanelSpace2 ~{
+        2ExpPanel_image=Mods\Expansion\ExpPanel\DATA\PanelSpace2\Add_panel_image.gi
+        2HPbar=Mods\Expansion\ExpPanel\DATA\PanelSpace2\HPbar.gi
+        2HPbar_s=Mods\Expansion\ExpPanel\DATA\PanelSpace2\HPbar_2.gi
+        2HPbar_s_r=Mods\Expansion\ExpPanel\DATA\PanelSpace2\HPbar_3.gi
+        2SetFirstA=Mods\Expansion\ExpPanel\DATA\PanelSpace2\SetFirstA.gi
+        2SetFirstC=Mods\Expansion\ExpPanel\DATA\PanelSpace2\SetFirstC.gi
+        2SetFirstD=Mods\Expansion\ExpPanel\DATA\PanelSpace2\SetFirstD.gi
+        2SetLastA=Mods\Expansion\ExpPanel\DATA\PanelSpace2\SetLastA.gi
+        2SetLastC=Mods\Expansion\ExpPanel\DATA\PanelSpace2\SetLastC.gi
+        2SetLastD=Mods\Expansion\ExpPanel\DATA\PanelSpace2\SetLastD.gi
+        2Set_Butt_A=Mods\Expansion\ExpPanel\DATA\PanelSpace2\Set_Button_A.gi
+        2Set_Butt_C=Mods\Expansion\ExpPanel\DATA\PanelSpace2\Set_Button_C.gi
+        2Set_Butt_D=Mods\Expansion\ExpPanel\DATA\PanelSpace2\Set_Button_D.gi
+        2fix_but_a=Mods\Expansion\ExpPanel\DATA\PanelSpace2\fix_but_a.gi
+        2fix_but_n=Mods\Expansion\ExpPanel\DATA\PanelSpace2\fix_but_n.gi
+        2fix_info_image=Mods\Expansion\ExpPanel\DATA\PanelSpace2\fix_info_image.gi
+        2grab_aster_A=Mods\Expansion\ExpPanel\DATA\PanelSpace2\grab_aster_A.gi
+        2grab_aster_D=Mods\Expansion\ExpPanel\DATA\PanelSpace2\grab_aster_D.gi
+        2grab_aster_N=Mods\Expansion\ExpPanel\DATA\PanelSpace2\grab_aster_N.gi
+        2kl_but_d=Mods\Expansion\ExpPanel\DATA\PanelSpace2\klesh_D.gi
+        2kl_but_g=Mods\Expansion\ExpPanel\DATA\PanelSpace2\klesh_G.gi
+        2kl_but_n=Mods\Expansion\ExpPanel\DATA\PanelSpace2\klesh_N.gi
+        2kl_but_r=Mods\Expansion\ExpPanel\DATA\PanelSpace2\klesh_R.gi
+        2kl_but_y=Mods\Expansion\ExpPanel\DATA\PanelSpace2\klesh_Y.gi
+        2klesh_add_panel=Mods\Expansion\ExpPanel\DATA\PanelSpace2\klesh_add_panel.gi
+        TurnBrakeOff_Ind=Mods\Expansion\ExpPanel\DATA\PanelSpace2\TurnBrakeOff_Ind.gi
+    }
+}
+Script ~{
+    Mod_ExpPanel=Mods\Expansion\ExpPanel\DATA\Script\Mod_ExpPanel.scr
+}

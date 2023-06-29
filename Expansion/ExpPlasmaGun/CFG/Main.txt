@@ -1,0 +1,28 @@
+Data ^{
+    SE ^{
+        Weapon ^{
+            1 ^{
+                Palettes ^{
+                    0 ^{
+                    }
+                    1 ^{
+                    }
+                    2 ^{
+                    }
+                    3 ^{
+                    }
+                    4 ^{
+                        Color0=1.0,1.0,1.0
+                        Color1=1.0,1.0,1.0
+                        Color2=1.0,1.0,1.0
+                        GAI=Bm.Weapon.W09
+                        SoundShot=Sound.WeapPlasma
+                    }
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_ExpPlasmaGun=1,Script.Mod_ExpPlasmaGun
+    }
+}

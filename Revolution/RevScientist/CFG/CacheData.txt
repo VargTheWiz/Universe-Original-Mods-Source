@@ -1,0 +1,9 @@
+Bm ~{
+    ItemsUseless ~{
+        2Capsule_c=Mods\Revolution\RevScientist\DATA\ItemsUseless\Capsule.gai
+        2Capsule_s=Mods\Revolution\RevScientist\DATA\ItemsUseless\Capsule.gi
+    }
+}
+Script ~{
+    Mod_RevScientist=Mods\Revolution\RevScientist\DATA\Script\Mod_RevScientist.scr
+}

@@ -1,0 +1,8 @@
+Bm ~{
+    PanelSpace2 ~{
+        2RadarJamming=Mods\Evolution\EvoJamming\DATA\PanelSpace2\Jamming.gai
+    }
+}
+Script ~{
+    Mod_EvoJamming=Mods\Evolution\EvoJamming\DATA\Script\Mod_EvoJamming.scr
+}

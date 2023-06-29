@@ -1,0 +1,37 @@
+Bm ~{
+    ItemsUseless ~{
+        2PahanCard_s=Mods\ShusRangers\ShuQuest\DATA\ItemsUseless\2PahanCard.gi
+        2PahanMap_s=Mods\ShusRangers\ShuQuest\DATA\ItemsUseless\2PahanMap.gi
+        2secret_loot1_s=Mods\ShusRangers\ShuQuest\DATA\ItemsUseless\loot1.gi
+        2secret_loot2_s=Mods\ShusRangers\ShuQuest\DATA\ItemsUseless\loot2.gi
+        2secret_loot3_s=Mods\ShusRangers\ShuQuest\DATA\ItemsUseless\loot3.gi
+        2secret_loot4_s=Mods\ShusRangers\ShuQuest\DATA\ItemsUseless\loot4.gi
+        2secret_loot5_s=Mods\ShusRangers\ShuQuest\DATA\ItemsUseless\loot5.gi
+    }
+    PQI ~{
+        Admiral=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\Admiral.jpg
+        Count=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\Count.jpg
+        Countess=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\Countess.jpg
+        Dead=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\Dead.jpg
+        Fei=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\Fei.jpg
+        Fei2=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\Fei2.jpg
+        Fly=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\ShuQuest_04.jpg
+        Gaal=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\Gaal.jpg
+        Human=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\Human.jpg
+        Mal1=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\Mal1.jpg
+        Maloc2=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\Mal2.jpg
+        Peleng=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\Pel1.jpg
+        Prince=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\Prince.jpg
+        Ship=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\Ship.jpg
+        ShuQuest_01=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\ShuQuest_01.jpg
+        ShuQuest_02=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\ShuQuest_02.jpg
+        fen1=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\fen1.jpg
+        fen2=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\fen2.jpg
+        fen3=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\fen3.jpg
+        fen4=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\fen4.jpg
+        fen5=Mods\ShusRangers\ShuQuest\DATA\Quest\Img\fen5.jpg
+    }
+}
+Script ~{
+    Mod_ShuQuest=Mods\ShusRangers\ShuQuest\DATA\Script\Mod_ShuQuest.scr
+}

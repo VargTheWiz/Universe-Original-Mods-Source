@@ -1,0 +1,10 @@
+Bm ~{
+    Micromoduls ~{
+        2MMDiscountMM_25_Set=Mods\ShusRangers\ShuBK\DATA\Micromoduls\DiscountMM_25.gi
+        2MMDiscountMM_50_Set=Mods\ShusRangers\ShuBK\DATA\Micromoduls\DiscountMM_50.gi
+        2MMDiscountMM_75_Set=Mods\ShusRangers\ShuBK\DATA\Micromoduls\DiscountMM_75.gi
+    }
+}
+Script ~{
+    Mod_ShuBK=Mods\ShusRangers\ShuBK\DATA\Script\Mod_ShuBK.scr
+}

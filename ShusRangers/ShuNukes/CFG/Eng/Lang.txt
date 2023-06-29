@@ -1,0 +1,447 @@
+Artefacts ^{
+    ArtScaner ^{
+        OnUseCode ^{
+            01=dword s;
+            02=dword first = 0;
+            03=dword second = 0;
+            04=dword third = 0;
+            05=str stroka = 'The following ships with nuclear weapons have been detected in the system:';
+            06=for(int i = 0; i < StarShips(ShipStar(Player())); i = i + 1)
+            07 ^{
+                01=s = StarShips(ShipStar(Player()), i);
+                02=if(ShipFindCustomShipInfoByType(s, 'NpcNuke') == -1) continue;
+                03=stroka = stroka + CT('Script2.perenos') + '<clr>' + Name(s) + '<clrEnd>';
+                04=if(!first) first = s;
+                05=else if(!second) second = s;
+                06=else if(!third) third = s;
+            }
+            08=if(first) Ether(7, 'ArtScaner', stroka, first, second, third);
+            09=else Ether(7, 'ArtScaner', 'No ships with nuclear weapons have been detected in the system.');
+            10=Sound('Sound.NewMsg');
+        }
+        Text=The calculating power of the scanner is increased by <clr>10%<clrEnd>. Increases the amount of information obtained about ships.
+        Text=When activated, it scans the system for nuclear weapons, making a list of all ships with warheads.
+    }
+}
+Items ^{
+    Weapon ^{
+        Missile ^{
+            Nova ^{
+                Name=Nova-torpedo
+                Text=A warhead with destructive power
+            }
+            Nuke ^{
+                Name=Nuclear missile
+                Text=Missile carrying nuclear warhead
+            }
+        }
+        Name ^{
+            nova=A plug for nova-torpedo cos it works this way. You won't see this anywhere else.
+        }
+        Text ^{
+            Text=String not found
+        }
+    }
+}
+MicroModuls ~{
+    ShuNukes_Nuke ^{
+        CustomTag=NukeAcryn
+        Equipments=W15
+        LockedAcryn=3
+        MissileGraph=Nuke
+        Name=TAC-16
+        NonSearchable=1
+        Owner=Any
+        Priority=0
+        ShotVisual=15
+        Special=1
+        WeaponMods=Shock,Magnetic,Destruct,BlockWeapon,BlockDroid,DropCargo,Decelerate,BonusToDamaged
+    }
+    ShuNukes_Nova ^{
+        CustomTag=NovaAcryn
+        Equipments=W15
+        LockedAcryn=3
+        MissileGraph=Nova
+        Name=
+        NonSearchable=1
+        Owner=Any
+        Priority=0
+        ShotVisual=15
+        Special=1
+        WeaponMods=Acid,Destruct,BlockWeapon,BlockDroid,DropCargo,Decelerate,BonusToDamaged,Magnetic,ReduceEngine,ScanBonus
+    }
+}
+Script ^{
+    Mod_ShuNukes ^{
+        16=9 May
+        17=23 February
+        18=What kind of nuclear weapons?
+        19=Bro, we recently had some curious pieces of nuclear weapons brought in to the Dominion, would you like to see them?
+        20=I want to buy the RL-3
+        21=You, brother, will probably be interested in the new model of the nuclear bombshell. Would you like to take a look at it?
+        22=I would like to recharge a nuclear weapon
+        23=I want to buy an absorber
+        24=Would you like to buy an absorber as well?
+        25=Show me your nuclear weapons
+        27=We are convinced that you will also be interested in the third version of the RL launcher.
+        28=I'm interested in recharging a nuclear weapon
+        29=I wish to install nuclear weapons into the base
+        30=At our rates, one warhead for your model would cost <0> cr. Your unit's ammunition is <1>/<2>, you can get another <3> missiles this year. So, how many projectiles will you take?
+        31=Sorry, <Player>, but your limit for now is exceeded. Our databases are being updated on <clr>February 23rd<clrEnd> and <clr>May 9th<clrEnd> - come back then.
+        32=Well, let me see... One shell for your baby costs <0> cr, and it's loaded with <1> missiles out of <2>. We can now offer you <3> pieces of warheads, so decide how many nukes you want to load.
+        33=Pardon me, brother, but we can't spare all the nukes. Come back sometime around <0> when the next shipment is due.
+        34=You have reached the required rank, and are entitled to access weapon of mass destruction adapted for use in space. The latest in technology is the RL-2 launcher, capable of carrying up to three homing missiles simultaneously. After years of trying to recreate dominator torpedoes, we finally found the perfect solution to the problem, and replaced the missile's combat stuffing, guided by the shot-and-not-remember system, with a tactical nuclear warhead. The weapon is not cheap, and the intrigues of the pirate clan, which stole the technology in the early stages of development, does not improve matters, but believe me, it is worth it. <br>Use tactical missiles wisely- we are constantly improving their hardware, but by order of the Galactic Council we have the right to allocate no more than <clr>two<clrEnd> ammunition per half-year to each interested pilot. <br>The installation itself will cost you, as a free pilot, <0> cr. Try to understand us, <Player>, we have to pay for all insurance in case you misuse nuclear weapons. <br>Be true to the Ranger cause, and apply these little messengers of death, comparable to the power of quark bombs, to the fight against the enemies of the vast people of the Coalition!
+        35=Okay, colleague, you've already built up enough credibility that we can talk to you face-to-face. How's life as a pirate? Are the crowds of all sorts of scum on your tail bothering you? Don't worry, we've found the perfect solution to that - nukes! Hehe. A launcher capable of carrying up to three TAC-16 class homing missiles at once, fresh from the Coalition's egghead blueprints. They have been trying to recreate dominator torpedoes for years, and I must admit, for once in their lives they came up with something truly ingenious - they replaced the combat stuffing of the missile, guided by the shot-and-not-remember system with a tactical nuclear warhead. Of course, it is not cheap, and you can't use it in space because of the inefficiency of nuclear weapons in a vacuum, but the guidance system usually makes up for it. <br>Unfortunately, our stockpile is not as extensive as we would like, and we cannot allocate more than <clr>two<clrEnd> missiles per semester to each big-bang brother allowed. <br>The setup itself will cost you <0> cr. Not much, yes, but just imagine how many peddlers you can take out at once! <br>Be a good girl, and point this baby in the right direction. There is no enemy who escapes the ruinous presence of the pirate clan!
+        37=The station is currently equipped with a model <clr>RL-2M MK I<clrEnd> launcher capable of launching one nuclear charge every <0> days. In <1> cr. we can upgrade to the <clr>RL-2M MK II<clrEnd>, which would reduce the delay before the next attack to <2> days.
+        38=The station is currently equipped with a model <clr>RL-2M MK II<clrEnd> launcher capable of launching one nuclear charge every <0> days. In <1> cr. we can upgrade to the <clr>RL-2M MK III<clrEnd>, which would reduce the delay before the next attack to <2> days.
+        39=The station is currently equipped with a model <clr>RL-2M MK III<clrEnd> launcher capable of launching one nuclear charge every <0> days. It is the best tactical stationary nuclear system available today.
+        40=So here it is, the creation of our best engineers - <clr>Absorber<clrEnd>. It is a ballistic fire countermeasures system capable of neutralizing 80% of the damage from a nuclear warhead hit by dissipating localized energy in a vacuum. Does not work on conventional missiles due to low energy potential for localization. It will take approximately <0> days to reload after each localization. Such a thing will cost you a good <1> cr., but putting your reputation as a steward on the line, you won't regret this choice for sure.
+        42=Ranger, as far as we know, you are an active user of the RL-2 launcher. After some deliberation, the Command has decided to entrust you with the unique RL-3. <br>Unlike the standard model, the RL-3 has a <0> missile capacity, and thanks to the use of dominator energy packs, it only takes <1> days to charge! We will give you this miracle of engineering for <2> cr. <br>I understand, not a small amount, but a giant tactical advantage in space doesn't seem that bad! Isn't that right, <Player>?
+        43=As alkaris whispered to me, <Player>, you're very fond of all things nuclear and missile, particularly the RL-2 launcher. Ho-ho, you were smashing those cops - you should have seen it! <br>Demand creates supply, brother, and we have something to offer even to such a seasoned pirate. <br>We are proud to present you with the terrifying, scary, ruthless, and insanely dangerous RL-3! "With a capacity of <0> warheads and a <1> day charge, the RL-3 will allow you to wreak havoc and destruction in triplicate, boo-hoo-hoo! According to the assurances of our specialists, this aggregate also gives you a plus to the respect among the right guys. <br>You can start wreaking havoc on all inhabited and not-so- inhabited worlds right now for only <2> cr. An offer that is impossible to refuse, isn't it?
+        44=Is that so? All right...
+        45=Give me one nuke for <0> cr.
+        46=Not at all, it's too expensive.
+        47=I'll take two missiles for <0> cr.
+        48=I will buy one missile for <0> cr.
+        49=Give me two! Paying <0> cr.
+        50=I don't need any nukes
+        51=Now that's a real weapon! I'll take it!
+        52=I'm convinced! Give me your apparatus!
+        53=I'm not paying that kind of money for that baby rattle!
+        54=I'm not interested in that
+        55=All right, go ahead
+        56=Stand down
+        57=Way to go
+        58=No, I'm not interested in that at the moment
+        59=It's nice to be able to feel safe once in a while
+        60=Load three for <0> cr.
+        61=Three missiles for <0> cr.
+        62=Four would be just fine. <0> cr.
+        63=Well, load five. <0> cr. already transferred
+        64=Six warheads and no less! <0> cr.
+        65=Four warheads, <0> cr.
+        66=Five missiles for <0> cr.
+        67=Load six at once, I am paying <0> cr.
+        68=That's right, Ranger, our base falls under a special order of the Galactic Council on "Limited Controlled Proliferation of Tactical Nuclear Weapons for Countering External Threats" and we have the ability to install additional defense systems. In such turbulent times, it certainly won't be unnecessary.<br>We are glad that you are interested in funding this subject; having nuclear weapons aboard the station will greatly enhance the station's ability to stand up for itself in the event of a critical situation.<br>Installing the primary systems will cost <0> cr. - so we can launch one warhead every <1> days. Don't worry, the <clr>Galactic Council will cover the cost of the munitions<clrEnd> - it's up to you to commit to it.
+        69=It's good that you decided to help us with this, brother. Having nuclear weapons aboard our station will surely make the cops wonder whether it's worth raiding us - we'll blow them all to bits!<br>Installing basic systems will cost you <0> cr. - so we can launch one warhead every <1> days. Don't worry, the <clr>Pirate Brotherhood will take care of all the ammo costs<clrEnd>, all you have to do is encourage the Supreme Lyakushas to take this step.
+        70=Purchase a Point field amplifier
+        71=We recently set up mass production of Point field amplifiers, would you like to take a look?
+        72=The Point field amplifier is a device we invented primarily for protection against surprise attacks from dominators. Our design interacts directly with the shield generator, greatly enhancing the protective field at the intended point of impact for a short period of time. This allows you to absorb all incoming damage up to 50% of the time, up to five times a day. <br>However, the amplifier can only prevent small and medium damage, and if significant damage is received, the device goes off so that it does not destroy the shield generator with part of the ship from inside.<br><br>It will cost you <0> cr to install a Point field amplifier. Shall we install it?
+        73=Too expensive and unreliable. I'll do fine without it
+        74=All right, let's begin the installation
+        75=For Rangers with the rank of <clr>Captain<clrEnd> we offer unique nuclear weapons. I think you, <Player>, would be interested in this.
+        76=<0>
+        78=Exit
+        79=Choose target:
+        80=No enemy ships detected in flying range
+        81=Launch was cancelled
+        82=The rocket is launching after target <0>
+    }
+}
+Script2 ^{
+    perenos=<br>
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            Absorber ^{
+                Description=A ballistic fire countermeasures system capable of neutralizing 80% of the damage from a nuclear warhead hit by dissipating localized energy in a vacuum. Does not work on conventional missiles due to low energy potential for localization. <br>Charge: <Data1>/30
+                Icon=550
+                Name=Absorber
+                OnActCode ^{
+                    01=int charge=0;
+                    02=dword info=CurInfo();
+                    03=dword ship=ScriptItemActShip();
+                    04=int i=ShipCustomShipInfoData(0,info,1);
+                    05=if(ShipOwner(ship)==5 && !ShipSubType(ship)) charge=4;
+                    06=else charge=1;
+                    07=if(ScriptItemActionType(t_OnStep,11) && i<30) ShipCustomShipInfoData(0,info,1,i+charge);
+                    08=if(i<30) exit;
+                    09=if(i>30) ShipCustomShipInfoData(0,info,1,30);
+                    10=if(ScriptItemActionType(t_OnTakingDamageMi))
+                    11 ^{
+                        01=if(ScriptItemActParam()<255) exit;
+                        02=else
+                        03 ^{
+                            01=ScriptItemActParam(ScriptItemActParam()/5);
+                            02=ShipCustomShipInfoData(0,info,1,0);
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnStep,t_OnTakingDamageMi
+                OnActStepTypes=11
+            }
+            BossNuke2 ^{
+                Description=
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=dword info=CurInfo();
+                    02=dword ship=ScriptItemActShip();
+                    03=if(ShipGetBad(ship))
+                    04 ^{
+                        01=if(CurTurn()<ShipCustomShipInfoData(0,info,1)) exit;
+                        02=if(!ShipInNormalSpace(ship)) exit;
+                        03=dword target=ShipGetBad(ship);
+                        04=if(Dist(ship,target)>1000 || !ShipInNormalSpace(target) || target==ship || ShipStar(target)!=ShipStar(ship)) exit;
+                        05=if(ship==Terron())
+                        06 ^{
+                            01=if(DomikProgramm(ship)==4) exit;
+                        }
+                        07=if(HullDamage(ship)<50) exit;
+                        08=ShipCustomShipInfoData(0,info,1,CurTurn()+Rnd(4,6));
+                        09=dword rocket=SpawnMissile(ShipStar(ship),target,CoordX(ship),CoordY(ship),Angle(target,ship),200+65*GalaxyTechLevel(),300+85*GalaxyTechLevel(),700+GalaxyTechLevel()*50,t_Weapon15,-1,FindBonusByNameInCfg('ShuNukes_Nuke'));
+                        10=MissileOwner(rocket,ship);
+                    }
+                }
+                OnActCodeTypes=t_OnStep
+                OnActStepTypes=11
+            }
+            BossNuke3 ^{
+                Description=
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=dword info=CurInfo();
+                    02=dword ship=ScriptItemActShip();
+                    03=if(ShipGetBad(ship))
+                    04 ^{
+                        01=if(CurTurn()<ShipCustomShipInfoData(0,info,1)) exit;
+                        02=if(!ShipInNormalSpace(ship)) exit;
+                        03=dword target=ShipGetBad(ship);
+                        04=if(Dist(ship,target)>1000 || !ShipInNormalSpace(target) || target==ship || ShipStar(target)!=ShipStar(ship)) exit;
+                        05=if(ship==Terron())
+                        06 ^{
+                            01=if(DomikProgramm(ship)==4) exit;
+                        }
+                        07=if(HullDamage(ship)<75) exit;
+                        08=ShipCustomShipInfoData(0,info,1,CurTurn()+Rnd(3,6));
+                        09=dword rocket=SpawnMissile(ShipStar(ship),target,CoordX(ship),CoordY(ship),Angle(target,ship),200+65*GalaxyTechLevel(),300+85*GalaxyTechLevel(),700+GalaxyTechLevel()*50,t_Weapon15,-1,FindBonusByNameInCfg('ShuNukes_Nuke'));
+                        10=MissileOwner(rocket,ship);
+                    }
+                }
+                OnActCodeTypes=t_OnStep
+                OnActStepTypes=11
+            }
+            ECM ^{
+                Description=A powerful device that dissipates any damage to the hull with a 50% probability. It loses its charge in the process. If you receive more than 200 damage it overloads and loses all charges. <br>Charge: <Data1>/5
+                Icon=552
+                Name=Point field amplifier
+                OnActCode ^{
+                    01=dword info=CurInfo();
+                    02=dword ship=ScriptItemActShip();
+                    03=if(!ShipProtectability(ship)) exit;
+                    04=int i=ShipCustomShipInfoData(0,info,1);
+                    05=if(ScriptItemActionType(t_OnStep,11) && i<5) ShipCustomShipInfoData(0,info,1,i+1);
+                    06=if(ScriptItemActionType(t_OnTakingDamageEn) || ScriptItemActionType(t_OnTakingDamageSp) || ScriptItemActionType(t_OnTakingDamageMi))
+                    07 ^{
+                        01=if(ScriptItemActParam()>=255) ShipCustomShipInfoData(0,info,1,0);
+                        02=i=ShipCustomShipInfoData(0,info,1);
+                        03=if(!i) exit;
+                        04=else if(Rnd(0,1)) ScriptItemActParam(0);
+                        05=ShipCustomShipInfoData(0,info,1,i-1);
+                    }
+                }
+                OnActCodeTypes=t_OnStep,t_OnTakingDamageEn,t_OnTakingDamageSp,t_OnTakingDamageMi
+                OnActStepTypes=11
+            }
+            NpcNuke ^{
+                Description=There are nuclear warheads on the ship.
+                Icon=551
+                Name=Nuclear weapons
+                OnActCode ^{
+                    01=dword info=CurInfo();
+                    02=dword ship=ScriptItemActShip();
+                    03=if(ShipGetBad(ship))
+                    04 ^{
+                        01=if(CurTurn()<ShipCustomShipInfoData(0,info,1)) exit;
+                        02=if(!ShipInNormalSpace(ship)) exit;
+                        03=dword target=ShipGetBad(ship);
+                        04=if(!ShipInNormalSpace(target) || target==ship || ShipStar(target)!=ShipStar(ship)) exit;
+                        05=if(ShipOwner(ship)==5)
+                        06 ^{
+                            01=if(DomikProgramm(ship)==4) exit;
+                            02=if(DomikProgramm(ship)==7) exit;
+                            03=if(DomikProgramm(ship)==11) exit;
+                        }
+                        07=int radar;
+                        08=int allow=0;
+                        09=if(ShipOwner(ship)==Kling && !ShipSubType(ship)) radar=10000;
+                        10=else radar=ShipRadarRange(ship);
+                        11=if(Dist(ship,target)>500 && !radar || Dist(ship,target)>1000) exit;
+                        12=if(HullDamage(ship)>70) allow=1;
+                        13=if(ShipStrengthInAverageRanger(target)>=ShipStrengthInAverageRanger(ship)*2) allow=1;
+                        14=if(allow)
+                        15 ^{
+                            01=int charge=ShipCustomShipInfoData(0,info,2);
+                            02=ShipCustomShipInfoData(0,info,1,CurTurn()+charge);
+                            03=dword rocket=SpawnMissile(ShipStar(ship),target,CoordX(ship),CoordY(ship),Angle(target,ship),200+65*GalaxyTechLevel(),300+85*GalaxyTechLevel(),700+GalaxyTechLevel()*50,t_Weapon15,-1,FindBonusByNameInCfg('ShuNukes_Nuke'));
+                            04=MissileOwner(rocket,ship);
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnStep
+                OnActStepTypes=11
+            }
+            RuinsNuke ^{
+                Description=There are nuclear warheads on the station.
+                Icon=551
+                Name=Nuclear weapons
+                OnActCode ^{
+                    01=dword info=CurInfo();
+                    02=dword ship=ScriptItemActShip();
+                    03=if(ShipGetBad(ship))
+                    04 ^{
+                        01=if(CurTurn()<ShipCustomShipInfoData(0,info,1)) exit;
+                        02=if(!ShipInNormalSpace(ship)) exit;
+                        03=dword target=ShipGetBad(ship);
+                        04=if(Dist(ship,target)>1000) exit;
+                        05=int allow=ShipCustomShipInfoData(0,info,2);
+                        06=if(allow)
+                        07 ^{
+                            01=if(allow==1) ShipCustomShipInfoData(0,info,1,CurTurn()+20);
+                            02=else if(allow==2) ShipCustomShipInfoData(0,info,1,CurTurn()+10);
+                            03=else ShipCustomShipInfoData(0,info,1,CurTurn()+5);
+                            04=dword rocket=SpawnMissile(ShipStar(ship),target,CoordX(ship),CoordY(ship),Angle(target,ship),200+65*GalaxyTechLevel(),300+85*GalaxyTechLevel(),700+GalaxyTechLevel()*50,t_Weapon15,-1,FindBonusByNameInCfg('ShuNukes_Nuke'));
+                            05=MissileOwner(rocket,ship);
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnStep
+                OnActStepTypes=11
+            }
+        }
+        ShuNukes_BlockNukes ^{
+            Description=Ship info who should not get any nukes
+            Icon=0
+            Name=
+        }
+    }
+}
+ShuNukes ^{
+    Nuke=Yes
+}
+UselessItems ^{
+    NeutronBomb ^{
+        Cost=Big
+        Name=Neutron bomb
+        OnActCode ^{
+            01=ScriptItemActParam(Rnd(1200,1600));
+        }
+        OnActCodeTypes=t_OnItemHit
+        Owner=None
+        Size=20
+        Text=Neutron weapons that remain terrifyingly effective even in airless space.
+    }
+    NovaTorpedo ^{
+        Cost=Huge
+        Name=Nova-torpedo
+        OnActCode ^{
+            01=if(CurrentForm() == 'StarMap')
+            02 ^{
+                01=if(UselessItemData(CurItem(),3))
+                02 ^{
+                    01=UselessItemData(CurItem(),3,0);
+                    02=dword ship=BuyTranclucator(PlanetPirateClan());
+                    03=ShipType(ship,'ShuNukes_SelectTargetNova');
+                    04=SetName(ship,'');
+                    06=ShipSetCoords(ship,CoordX(Player()),CoordY(Player()));
+                    07=Dialog(ship);
+                }
+            }
+        }
+        OnActCodeTypes=t_OnEnteringForm
+        OnUseCode ^{
+            01=if(!ShipInNormalSpace(Player())) MessageBox('This item can only be used in outer space');
+            02=else if(!ShipRadarRange(Player())) MessageBox('There is no radar installed on the ship');
+            05=else
+            06 ^{
+                01=UselessItemData(CurItem(),3,1);
+                02=ScriptItemActParam(1);
+            }
+        }
+        Owner=None
+        Size=100
+        Text=Heavy Nova-class mass destruction weapon capable of devastating an entire region of a star system. Deals up to <clr>5000<clrEnd> damage within <clr>700<clrEnd> radius.
+    }
+    Nuke ^{
+        Cost=Huge
+        Name=RL-2 launcher
+        OnActCode ^{
+            01=if(ScriptItemActionType(t_OnStep,11) && UselessItemData(CurItem(),2)<5) UselessItemData(CurItem(),2,UselessItemData(CurItem(),2)+1);
+            02=else
+            03 ^{
+                01=if(CurrentForm() == 'StarMap')
+                02 ^{
+                    01=if(UselessItemData(CurItem(),3))
+                    02 ^{
+                        01=UselessItemData(CurItem(),3,0);
+                        02=dword ship=BuyTranclucator(PlanetPirateClan());
+                        03=ShipType(ship,'ShuNukes_SelectTargetNuke');
+                        04=SetName(ship,'');
+                        06=ShipSetCoords(ship,CoordX(Player()),CoordY(Player()));
+                        07=Dialog(ship);
+                    }
+                }
+            }
+        }
+        OnActCodeTypes=t_OnStep,t_OnEnteringForm
+        OnActStepTypes=11
+        OnUseCode ^{
+            01=if(!ShipInNormalSpace(Player())) MessageBox('This item can only be used in outer space');
+            02=else if(!ShipRadarRange(Player())) MessageBox('There is no radar installed on the ship');
+            03=else if(!UselessItemData(CurItem(),1)) MessageBox('No nuclear warheads');
+            04=else if(UselessItemData(CurItem(),2)<5) MessageBox('The launcher is charging');
+            05=else
+            06 ^{
+                01=UselessItemData(CurItem(),3,1);
+                02=ScriptItemActParam(1);
+            }
+        }
+        Owner=None
+        Size=60
+        Text=Launches a nuclear warhead that does an enormous amount of damage to the area at a distance no greater than the radar range.
+        Text=Ammo: <Data1>/<color=255,240,100>4</color>
+        Text=Charge: <Data2>/<color=255,240,100>5</color>
+    }
+    Nuke2 ^{
+        Cost=Huge
+        Name=RL-3 launcher
+        OnActCode ^{
+            01=if(ScriptItemActionType(t_OnStep,11) && UselessItemData(CurItem(),2)<2) UselessItemData(CurItem(),2,UselessItemData(CurItem(),2)+1);
+            02=else
+            03 ^{
+                01=if(CurrentForm() == 'StarMap')
+                02 ^{
+                    01=if(UselessItemData(CurItem(),3))
+                    02 ^{
+                        01=UselessItemData(CurItem(),3,0);
+                        02=dword ship=BuyTranclucator(PlanetPirateClan());
+                        03=ShipType(ship,'ShuNukes_SelectTargetNuke');
+                        04=SetName(ship,'');
+                        06=ShipSetCoords(ship,CoordX(Player()),CoordY(Player()));
+                        07=Dialog(ship);
+                    }
+                }
+            }
+        }
+        OnActCodeTypes=t_OnStep,t_OnEnteringForm
+        OnActStepTypes=11
+        OnUseCode ^{
+            01=if(!ShipInNormalSpace(Player()))MessageBox('This item can only be used in outer space');
+            02=else if(!ShipRadarRange(Player()))MessageBox('There is no radar installed on the ship');
+            03=else if(!UselessItemData(CurItem(),1))MessageBox('No nuclear warheads');
+            04=else if(UselessItemData(CurItem(),2)<2)MessageBox('The launcher is charging');
+            05=else
+            06 ^{
+                01=UselessItemData(CurItem(),3,1);
+                02=ScriptItemActParam(1);
+            }
+        }
+        Owner=None
+        Size=60
+        Text=Launches a nuclear warhead that does an enormous amount of damage to the area at a distance no greater than the radar range.
+        Text=Ammo: <Data1>/<color=255,240,100>6</color>
+        Text=Charge: <Data2>/<color=255,240,100>2</color>
+    }
+}

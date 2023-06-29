@@ -1,0 +1,134 @@
+MicroModuls ^{
+    ShuMiniBoss_MarauderHull ^{
+        Cost=200
+        Equipments=Hull
+        ImitatedHullType=Pirate
+        KindGraph=G3
+        LockedAcryn=3
+        Name=</color><Type> hull Marauder
+        NonSearchable=1
+        Special=1
+    }
+}
+Script ^{
+    Mod_ShuMiniBoss ^{
+        103=Ha ha ha! I didn't think you valued your life so cheaply! So I will cease to respect myself if I accept such an insignificant amount from you!
+        104=I don't think my people will like this offer. We spent a lot of time and effort looking for your person, so if I were you, I would fork out for a more serious amount ...
+        105=You're kidding, you bastard! Guys, shot this dog down!
+        113=Bah! Another student of the legendary school of assassins master <clr>Lachance<clrEnd>, yes, I can recognize this signature anywhere! And what could you need from me?
+        114=Well, now you'll find out why you shouldn't have joined those "few".
+        115=<br>
+        117=Crazy Jack
+        119=<PlayerFull>, do you know what the brotherhood does to apostates? Not? Well now you know!
+        120=I am your worst nightmare!
+        122=I represent my client, not the entire pirate clan. Even if you're innocent, I've already been paid for your head, and I'm an executive.<br>
+        123=I passed your request on to the ataman, it looks like he was really wrong about you. He is ready to agree with you halfway for a modest amount of <0> cr.
+        124=Don't doubt, the ataman keeps his word.
+        125=Who are you and what do you want from me?
+        126=Yes, I am no longer bound by the oaths of brotherhood, so I can smash your ship to pieces with a clear conscience!
+        127=What the hell is this?! I have already paid for the return of the ranger rank, I was told that there would be no problems with the clan about this!
+        128=In that case, I will exterminate you first, then I will get to your customer if he does not calm down and continues to send assassins to me.
+        129=I assure you, your employer is wrong. If I were the spy of the Coalition, we would not be trying to resolve this issue peacefully now. I can compensate your contract, as a sign of goodwill and loyalty to the pirates, of course.
+        130=You know, I've changed my mind. It will be easier to get rid of you here and now.
+        131=I'm happy with this option. I hope that there will be no such misunderstandings between us in the future.
+        133=Do you know what happens to those who annoy me for nothing? Not? Well now you know!
+        134=<Player>! I have a very important request for you. Rangers must help each other out!
+        138=Thank you, <Player>! I'll try to reach the nearest planet. If I have time, I will certainly go on a well-deserved rest.<br>
+        139=You're kind of suspicious for a ranger, and your name isn't on the rankings either. Feel free to explain.
+        140=Unfortunately, I don't have time for this. Seek help from someone else.
+        141=Let's say I believe you. State your request.
+        142=I don't trust your story. Forced to refuse.
+        143=Good. I recorded the location of the module in the onboard computer.
+        144=Sorry, but it's not in my plans to search for a strange thing in the enemy system.
+        146=I am <clr>Crazy Jack<clrEnd>! One of the most famous liquidators. One of our chieftains did not like that after such success in the clan you went over to the coalition mongrels for no apparent reason. Something tells me that you are definitely working for them, and at the same time digging for us! That is why I was ordered to exterminate you.
+        147=I work for the department of researches dominator's logic. Our activities are overseen by the Military Coalition Council with the support of scientists, and this, as you understand, is associated with some secrecy, especially when it comes to working with experimental developments, such as a camouflage device. For this reason, my name was removed from the rating.<br>My last task was to observe the battles between the <clr>"blazer"<clrEnd> and <clr>"keller"<clrEnd> series dominators in sector <0>. The command was interested in both the behavior of individual ships and their coordination during the battle, but I was forced to prematurely interrupt my mission.
+        148=The mission went according to plan for several months, but an unexpected torpedo hit damaged fragile electronics, leaving my ship uncloaked. It's not designed for combat at all, so my only chance of survival was to escape.<br>The Observation Module is very valuable, and my chances of survival were slim, so I decided to drop it on a desert planet <0>. As you can see, I miraculously managed to survive, but the dominators may follow at any moment. Even if I die, my work must not go to waste! Go to system <1> and find the module there, then transfer it to the nearest science base.
+        149=Find a memory module on planet <0> in system <1> and deliver it to the nearest science base.
+        151=Thank you
+        152=I have an interesting find for you
+        153=Let's take a look at your find. Amazing! <Player>, you have done us a great favor. As a token of our gratitude, let me give you a small cash reward of <0> cr.<br>That's not all. We have downloaded the following programs to your on-board computer:<br>Intercom. Number of copies: <clr>5<clrEnd> pcs.<br>Disctress signal. Number of copies: <clr>3<clrEnd> pieces<br><clr>
+        17=Neural communication network error.<br>Possible cause: failure of directive control channel of autonomous unit <0>.<br>Prior failure directive: extermination of <1>.<br>Troubleshooting service unavailable, possible cause: personality matrix corruption < 2>.<br>Logical Overwrite: Execution of a directive that preceded a malfunction, followed by self-destruction of an autonomous combat unit.
+        18=Slototron
+        19=Autonomous unit <0>.<br>Manufacturer: Trinn United.<br>Personality Matrix Restart... Attention, personality matrix restart is not possible. <br>Reason: critical damage. The diagnostic system is corrupted. Further analysis is not possible.
+        20=<0>
+        22=Crystals
+        23=Personality matrix error. The incoming request could not be processed.
+        24=Warning, you do not have sufficient rights to perform this action. The subsequent restart of the systems will entail the complete self-destruction of an autonomous combat unit. Priority denied.
+        25=Autonomous unit <0>.<br>Manufacturer: Trinn United.<br>Loading log-file...<br>Log-file not available, possible reason: damage to the crystal drive of the autonomous unit at the time of logical overwrite.
+        26=Autonomous unit <0>.<br>Manufacturer: Trinn United.<br>Preliminary repairs completed. The new crystal has been installed.<br>Restarting the personality matrix... attention, restarting the personality matrix is not possible. <br>Reason: critical damage. The diagnostic system is corrupted. Further analysis is not possible.
+        27=I didn't think I'd find you here, <PlayerFull>. But it looks like I got lucky this time. Nothing personal, colleague. I think, as a professional, you will understand me.
+        28=It's an honor for a layman to fall at the hands of one of us, ranger. You should be proud of yourself. Many in this galaxy desire your death, but only a few dare to realize their ideas.
+        29=Don't want to fight? I expected more from you, with your reputation. Keep in mind that several customers are paying for you at the same time, and I will not back down.
+        33=You live up to your reputation, <PlayerFull>. I accept your offer. I don't care if the money is dirty or not, but I won't sell you information about my customers either. You don't even have to try.
+        35=Now you will know what real pain is.
+        52=I'm afraid I don't have that kind of money.
+        63=Okay, let's try again. I have new parts for you. Take and replace the necessary parts from this dominator trinket into your personality matrix and restart.
+        64=Stop talking, piece of iron, I've seen those before. Get ready to go to your fucking assembler hell!
+        65=Start restart
+        66=Show log file
+        67=Who gave you such a directive?
+        68=Exit to main menu
+        69=I have spare parts for you. Replace the damaged crystal with the one I have in the hold.
+        72=Look who you're attacking, boy, I'm hitting all your nozzles right now.
+        73=Listen, I don't have time for this, can we settle things amicably?
+        74=I can be accused of many things, but certainly not of narrow-mindedness. I've heard a lot about your office's exploits, mercenary, and the notorious joint operation with the "Tell a Friend a Friend" agency. And I don't want to get into conflict with you.
+        75=I will pay more.
+        76=You missed your chance, hired dog.
+        79=These prices make it easier for me to kill you and use your scraps to pay for repairs, you bastard.
+        80=I will pay one and a half times more.
+        81=I will twice times more, consider it as a donation to the cause of the Lungless Salamander.
+        82=I'm afraid I won't have enough money...
+        83=As you say.
+        84=This arrangement does not suit me.
+        87=Good <0> cr. is promised for your head, and not a credit less.
+        88=The guns are ready for battle, all systems are normal, energy indicators are within the allowable load, I'm going to the target.
+        89=I will pay the same amount and you and I will part ways peacefully.
+        90=Additional maintenance underway...<br>Restarting the personality matrix...attention, a dominator virus has been detected! Multiple damage to the subsystems has been recorded!<br>Starting the formatting process. <br>Restarting the personality matrix... <br>Critical error! <br>All systems have failed!<br>0Ghs-25 JKsWBY.. <br>lkt9ghjt01rec...
+    }
+    ShuMiniBoss_PiratesHunt ^{
+        100=Your rapid rise through the ranks of our Brotherhood has not gone unnoticed. By order of the head, we rummaged through your past and found something interesting: <br><PlayerFull>, although you are a pirate, you are in no hurry to live by the rules. You killed many of our colleagues, whether they were loyal to the Clan or not, the craft is the same for all. And many still cannot forgive you for this. You don't think that forgery of documents will surely hide you from those who forge them?<br>According to our data, you killed at least <0> pirates, we won't leave that to you!
+        101=You know, you're good!<br>I relayed this request to the address, and he fully supported it.<br>We'll leave you behind if you donate <0> cr to the gang's cause.
+        102=Nice to deal with you! Get out of here while we're good.
+        110=What impudence! I'll have to teach you a lesson in good manners! Too bad it happened to you.
+        111=I see you guys are tough. It's better to combine, so I'm ready to back up my "friendship" with a round sum.
+        112=I guess repairs after the fight will be cheaper than squandering my blood credits to some brats, haha.
+        39=What's the problem, lil bro?
+        52=I'm afraid I don't have that kind of money.
+        55=With pleasure! Only more frequent before the start of firing, a whole armed force can move...
+        61=I am transferring the required amount to the account.
+        97=Ha, <PlayerFull>, would you like to participate in the new shooting range of our pakhan? As a moving target, of course.
+        98=Don't worry, <Player>, we'll put your money to good use.
+        99=That's the end, <Player>! Your rotten trough has a meeting with the junkyard today!
+    }
+    ShuMiniBoss_WarriorsHunt ^{
+        106=Destroy? What can you possibly care about me?
+        107=You must be joking. It's some kind of mistake.
+        108=Wait! I'm really innocent! I can prove it...
+        109=I have been thinking about leaving this dark path for a long time. Having embarked on this path, I did many bad deeds, which I now regret. Although your colleagues cannot be returned, I believe that it is not too late to improve and start acting for the good of the Coalition.<br> Please give me a second chance, I am ready to send my money to the military budget of the Coalition!
+        118=During these dark times, when the galaxy is at war, you, <PlayerFull>, have managed to destroy at least <0> Coalition warships!<br> You shouldn't think you can get away with it! Now you have to answer for your crimes, such unprincipled and immoral killers have no place in our civilized society.
+        40=Go away, you bastard.
+        42=And you are funny. But I'll kill you first anyway.
+        43=Well, congratulations, you have revealed me. But keep in mind, martinets, that this will be a new Pandora's box for you.
+        45=I see that you are humanoids of business, and you will not talk in vain. We can still resolve this matter peacefully.
+        46=Name your price.
+        50=That's true. I just wanted to let you know that this sentence is passed on you.
+        52=I'm afraid I don't have that kind of money.
+        53=I've changed my mind, I'm sick of you. I will destroy you all myself.
+        54=I agree.
+        6=You have nothing to offer us. The death sentence is not subject to appeal.
+        85=Keep in mind that our department is keeping a close eye on your activities. If you do anything else illegal, you're done.
+        9=Remember, if you break your word, we will come for you again. And then there will be no salvation.
+        92=A couple of shots and one less nefarious pirate. Say hello to Rachekhan, <Player>!!!
+        93=We have found you, <PlayerFull>. You are one of the most wanted and dangerous criminals in the galaxy, so the military tribunal instructed us to destroy you!
+        95=There can be no mistake. It is useless to hide behind false documents, we have our own people in pirate bases - it will not be difficult for them to find you.<br> You will not be able to fool our brains!
+        96=If it were my will, <Player>, I would have killed you long ago. But, now I received an order from the command to consider your proposal in connection with the difficult situation on the fronts.<br> So be it, we are ready to accept <0> cr from you as compensation for what you have done.
+    }
+}
+ShipType ^{
+    People ^{
+        Marauder=Marauder
+    }
+    TypeName ^{
+        Marauder=Marauder
+    }
+}

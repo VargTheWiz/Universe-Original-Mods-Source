@@ -1,0 +1,141 @@
+Data ^{
+    Script ^{
+        Mod_ExpPanelPlus=1,Script.Mod_ExpPanelPlus
+    }
+}
+ML ^{
+    Number ^{
+        Panel ~{
+            Panel ^{
+                Image ^{
+                }
+                Image ^{
+                }
+                Image ^{
+                }
+                Image ^{
+                    Image=GI,Bm.FormCount2.2KindEmpty
+                    Name=Kind1
+                    Pos=31,113,11
+                    Size=218,30
+                }
+            }
+        }
+    }
+    Ship ^{
+        Panel ^{
+            Panel ^{
+            }
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    Panel ^{
+                        UseTransmittersButton ^{
+                            GraphButton ^{
+                                Active=False
+                                Help=FormShip.UseTransmitters
+                                ImageDown=GI,Bm.FormShip2.UseTransmittersD
+                                ImageNormal=GI,Bm.FormShip2.UseTransmittersN
+                                ImageNormalA=GI,Bm.FormShip2.UseTransmittersA
+                                Kind=Normal
+                                KindHit=Rect
+                                Name=UseTransmitters
+                                OnPressCode ^{
+                                    01=dword YesNo=0;
+                                    02=dword TCharge=0;
+                                    03=dword HowMuch=0;
+                                    04=str WordCor='';
+                                    05=for(dword i=1;i<ArrayDim(ReadyTrans);i=i+1)
+                                    06 ^{
+                                        01=TCharge=TCharge+ItemCharge(ReadyTrans[i]);
+                                        02=if(i>1 && i<5)WordCor=CT("Main.Mod_ExpPanelPlus.Quant2-4");
+                                        03=if(i>4)WordCor=CT("Main.Mod_ExpPanelPlus.Quant5+");
+                                    }
+                                    07=if(WordCor=='')
+                                    08 ^{
+                                        01=if(MessageBoxYesNo(Format(CT("Main.Mod_ExpPanelPlus.OnPressQuestionOne"),"<0>",Name(ShipStar(Player())),"<1>",TCharge))==1)
+                                        02 ^{
+                                            01=OnUseCodeTransmitter(ReadyTrans[1],0);
+                                            02=Sound('Sound.UseATrans');
+                                            03=if(TCharge>=1000)WordCor=CT("Main.Mod_ExpPanelPlus.RUN");
+                                            04=MessageBox(Format(CT("Main.Mod_ExpPanelPlus.OnUseTrans"),"<0>",Name(ShipStar(Player())))+WordCor);
+                                            05=InterfaceState('Ship','UseTransmitters',0);
+                                            06=InterfaceState('Ship','UseTransmittersButtonHitBox',0);
+                                        }
+                                    }
+                                    09=else
+                                    10 ^{
+                                        01=InterfaceState('Ship','UseTransmitters',0);
+                                        02=HowMuch=NumberBox('Bm.Items.2ArtTransmitter_s',CT("Main.Mod_ExpPanelPlus.QuestionHowMany"),1,ArrayDim(ReadyTrans)-1,ArrayDim(ReadyTrans)-1,'',ArrayDim(ReadyTrans)-1);
+                                        03=InterfaceState('Ship','UseTransmitters',1);
+                                        04=if(HowMuch>=1)
+                                        05 ^{
+                                            01=TCharge=0;
+                                            02=for(i=1;i<HowMuch+1;i=i+1)
+                                            03 ^{
+                                                01=if(i>1 && i<5)WordCor=CT("Main.Mod_ExpPanelPlus.Quant2-4");
+                                                02=if(i>4)WordCor=CT("Main.Mod_ExpPanelPlus.Quant5+");
+                                                03=TCharge=TCharge+ItemCharge(ReadyTrans[i]);
+                                            }
+                                            04=if(HowMuch==1)YesNo=MessageBoxYesNo(Format(CT("Main.Mod_ExpPanelPlus.OnPressQuestionOne"),"<0>",Name(ShipStar(Player())),"<1>",TCharge));
+                                            05=if(HowMuch>1)YesNo=MessageBoxYesNo(Format(CT("Main.Mod_ExpPanelPlus.OnPressQuestionMany"),"<0>",HowMuch,"<1>",WordCor,"<2>",Name(ShipStar(Player())),"<3>",TCharge));
+                                            06=if(YesNo==1)
+                                            07 ^{
+                                                01=for(i=1;i<HowMuch+1;i=i+1)
+                                                02 ^{
+                                                    01=OnUseCodeTransmitter(ReadyTrans[i],0);
+                                                }
+                                                03=Sound('Sound.UseATrans');
+                                                04=WordCor='';
+                                                05=if(TCharge>=1000)WordCor=CT("Main.Mod_ExpPanelPlus.RUN");
+                                                06=if(TCharge>=2000)WordCor=CT("Main.Mod_ExpPanelPlus.TooMuch");
+                                                07=MessageBox(Format(CT("Main.Mod_ExpPanelPlus.OnUseTrans"),"<0>",Name(ShipStar(Player())))+WordCor);
+                                                08=if(HowMuch==ArrayDim(ReadyTrans)-1)
+                                                09 ^{
+                                                    01=InterfaceState('Ship','UseTransmitters',0);
+                                                    02=InterfaceState('Ship','UseTransmittersButtonHitBox',0);
+                                                }
+                                                10=else
+                                                11 ^{
+                                                    01=ArrayClear(ReadyTrans);
+                                                    02=for(i=0;i<ShipArts(Player());i=i+1)
+                                                    03 ^{
+                                                        01=if(ItemType(ShipArts(Player(),i))==t_ArtefactTransmitter)
+                                                        02 ^{
+                                                            01=if(ItemCharge(ShipArts(Player(),i))>=100)
+                                                            02 ^{
+                                                                01=ArrayAdd(ReadyTrans,ShipArts(Player(),i));
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                Pos=384,462,1
+                                Size=53,31
+                                Style=Style.GB.SoundNormal
+                            }
+                        }
+                    }
+                }
+            }
+            Panel ^{
+            }
+            Panel ^{
+                UseTransmittersButtonHitBox ^{
+                    Panel ^{
+                        Name=UseTransmittersButtonHitBox
+                        Pos=571,499
+                        PosAutoCorrection=True
+                        PosAutoCorrectionXCoef=0.5
+                        PosAutoCorrectionYCoef=0.5
+                        Size=53,31
+                    }
+                }
+            }
+        }
+    }
+}

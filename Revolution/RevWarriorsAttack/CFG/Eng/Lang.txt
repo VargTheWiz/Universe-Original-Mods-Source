@@ -1,0 +1,5 @@
+Script ^{
+    Mod_RevWarriorsAttack ~{
+        D1=Informing you, our squad is going to make free the <Star> system. The command allocated quark bombs for these purposes. The start of the operation is scheduled for <Date>.<br>We would be glad if you will join the operation.
+    }
+}

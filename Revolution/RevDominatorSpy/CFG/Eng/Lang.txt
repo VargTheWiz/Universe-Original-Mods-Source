@@ -1,0 +1,66 @@
+Script ^{
+    Mod_RevDominatorSpy ~{
+        34=In system <0> find ship <1> and spy on it. Fill at least <2>% of probe memory.
+        82=<0><br><1>:<2>:<3><br>Probe has written information to <4>% of memory.<br>Free space: <5>%
+        83=<0><br><1>:<2>:<3><br>Probe memory full! It's time to return to the scientific base.
+        57=Weapon 5: N/A<br>
+        58=Weapon 5: <0> (damage <1>-<2> units, range <3> units), level: <4>, weight: <5> tons, cost: <6> cr, durability: <7>%<br>
+        59=Weapon 4: N/A<br>
+        60=Weapon 4: <0> (damage <1>-<2> units, range <3> units), level: <4>, weight: <5> tons, cost: <6> cr, durability: <7>%<br>
+        61=Weapon 3: N/A<br>
+        62=Weapon 3: <0> (damage <1>-<2> units, range <3> units), level: <4>, weight: <5> tons, cost: <6> cr, durability: <7>%<br>
+        63=Weapon 2: N/A<br>
+        64=Weapon 2: <0> (damage <1>-<2> units, range <3> units), level: <4>, weight: <5> tons, cost: <6> cr, durability: <7>%<br>
+        65=Weapon 1: N/A<br>
+        66=Weapon 1: <0> (damage <1>-<2> units, range <3> units), level: <4>, weight: <5> tons, cost: <6> cr, durability: <7>%<br>
+        67=Scanner: N/A<br>
+        68=Scanner: <0> (power <1>%), level: <2>, weight: <3> tons, cost: <4> cr, durability: <5>%<br>
+        69=Radar: N/A<br>
+        70=Radar: <0> (range <1> million km), level: <2>, weight: <3> tons, cost: <4> cr, durability: <5>%<br>
+        71=Shield Generator: N/A<br>
+        72=Shield generator: <0> (protection <1>%), level: <2>, weight: <3> tons, cost: <4> cr, durability: <5>%<br>
+        73=Gripper: N/A<br>
+        74=Gripper: <0> (power <1> units, range <2> units), level: <3>, weight: <4> tons, cost: <5> cr, durability: <6>%<br>
+        75=Droid: N/A<br>
+        76=Droid: <0> (efficiency <1> units), level: <2>, weight: <3> tons, cost: <4> cr, durability: <5>%<br>
+        77=Fuel tank: N/A<br>
+        78=Fuel tank: <0> (capacity <1> units), level: <2>, weight: <3> tons, cost: <4> cr, durability: <5>%<br>
+        79=Engine: N/A<br>
+        80=Engine: <0> (speed <1> units, jump <2> parsec), level: <3>, weight: <4> tons, cost: <5> cr, durability: <6>%<br>
+        81=<br>Hull: <0> (armor <1>), level: <2>, structure: <3>/<4>, cost: <5> cr<br>
+        35=<Player>, hello. Are you interested in scientific research? Do you want to get some money for almost nothing?
+        28=Greetings to you, small-armed creature named <Player>. Ranger of you so far is useless, merchant, too. You take care of business, all sorts of robberies and murders. Then you will quickly become a respected member of society. I know what I'm talking about!<br>
+        29=<Player>, what do you want? Enough already gouging my trough!
+        84=As you know, the network of science stations is currently actively studying dominators. Our specialists are working on the creation of anti-dominator programs, which, as you know, are very helpful in the fight against dominators. However, it is very difficult to decipher the information contained in the nodes, since they use a completely incomprehensible principle of the internal data structure. Dominators stepped forward in terms of data encryption much further than the Coalition. But still, we managed to decipher something and even understand how dominators exchange data! The fact is that encrypted information takes up a huge amount of memory. If these data are used in one robot or ground complex, there are no difficulties. But the remote transmission of such a volume of information would slow down the "ordinary" dominators too much, whose effectiveness without receiving orders is noticeably lower. That is why encryption occurs only after data is received.<br>We were able to find out that in some systems, large dominator ships act as a connection point, that is, they are an intermediate link between the brain center of the series and smaller machines. It is these "radio stations" that interest us.
+        85=No way! You will have to spy on him a little. How? With a probe. But here is the next difficulty: dominators all detect almost all probe models known to us. The exception is Pelengian. Their design has remained unchanged since the Klisan War, however, they are still more than effective.<br>Let's get down to business. In order to track the dominator, you will need a probe. We know that a suspicious vessel <0> will soon arrive at the scientific base. Almost certainly, pelengs decided to spy on us again. Every year they send one of their spies to us, this is already a tradition!<br>So, you need to get the probe by any means. Destroying a ship is highly undesirable, pelengs wont let you go freely. You can scare the spy with a couple of shots, it is unlikely he wants to die because of some kind of probe. Once you have the probe, you will need to deliver it to system <1>. According to our data, the transmitting ship is <2>. You need to collect information on at least <3>% of the probe's memory and bring it here, to <4>.
+        86=These are already your problems. You can destroy them all, you can fly in camouflage... By the way, <0> will not show any activity, since we were able to remotely load its CPU with meaningless directives. Despite this, the dominator still operates in transmitter mode. Be careful, <1> can recover at any moment. It can also be "awakened" by some external factors, such as damage to the skin. In this case, grab the probe and fly away from there as quickly as possible.
+        49=Give it here! How whom? Probe! So, copy the information quickly...<br><Player>, immediately grab this probe and fly away from the base, drop it there. We forgot about the self-destruct mechanism! By my count, there are <0> days left before the explosion! Fly, then we'll deal with your money.
+        50=Ranger! You are well done! You helped the coalition! Thank you! If all the rangers are so fearless, no dominators will be able to interfere with us! Your reward is <0> cr.
+        87=No way! You will have to spy on him a little. How? With a probe. But here is the next difficulty: dominators all detect almost all probe models known to us. The exception is Pelengian Their design has remained unchanged since the Klisan War, however, they are still more than effective.<br>Let's get down to business. In order to track the dominator, you need a probe. Fortunately, we have it. You will need to deliver the probe to system <0>. According to our data, the transmitting ship is <1>. You need to collect information on at least <2>% of the probe's memory and bring it here to <3>.
+        45=No, I'm not interested
+        53=The scientific base here gave me your plans. I don't know how she knew about them, I'm only interested in your cargo. Throw away the probe before it's too late
+        47=I'm interested, of course. But more reward
+        19=And I will have to destroy this robot?
+        20=What about the other dominators?
+        48=Please wait, all data will be collected soon
+        40=Flying out
+        51=Thank you for the reward
+    }
+}
+UselessItems ^{
+    OperatedProbe ^{
+        Cost=Mini
+        Description=Performs various tracking tasks, controlled both from a nearby ship and from a remote command center.
+        Name=Remote-controlled recon probe
+        Owner=Peleng
+        Size=10
+        Text=Pelengian spy probe.
+    }
+    SB_scaner ^{
+        Cost=Big
+        Name=PIRS-scanner
+        Owner=None
+        Size=15
+        Text=Portable Infiltrating Scattering Scanner - special development of the network of scientific centers of the Coalition. It is a compact version of powerful military scanners used for reconnaissance of enemy systems and tracking the actions of pilots. Distinctive ability - such a scanner can bypass the protective field of any power and display detailed information about the state of the ship. The disadvantage compared to the older version is the limited range - the PIRS can only scan the nearest ship within a radius of 750 units.
+    }
+}

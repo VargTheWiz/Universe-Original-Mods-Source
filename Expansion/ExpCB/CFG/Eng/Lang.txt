@@ -1,0 +1,112 @@
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            CBSoldMMChainInfos ^{
+                Icon=1
+                Name=Infobox for remembering all MM sold to the player from chains on the dominion
+                OnActCode ^{
+                    01=if(!(CurTurn() % 57))
+                    02 ^{
+                        01=dword cur_info = CurInfo();
+                        02=ShipCustomShipInfoData(0, cur_info, 1, 0);
+                        03=ShipCustomShipInfoData(0, cur_info, 2, 0);
+                        04=ShipCustomShipInfoData(0, cur_info, 3, 0);
+                    }
+                }
+                OnActCodeTypes=t_OnStep
+                OnActStepTypes=0
+            }
+        }
+    }
+}
+FormRuins ^{
+    CB ^{
+        ShuffleTeleport ^{
+            CBAfterConfirm=All right, let's turn on the generator! The course to the <FlyToStar> system is set. And you, <Player>, go to the hangar and then towards the stars.
+            CBAfterNoConfirm=People don't do that, bro. We have already prepared everything here, the reactor was started, and you killed the fun. Next time you will press the buttons yourself!
+            CBAfterRefuse=Well, sorry, that is all that is available right now. We here ourselves do not really understand how this damn system chooses. Nanotechnology is not the same as shooting at shopkeepers!
+            CBCancelTeleport=Are you sure? We will not refund your money anyway.
+            CBChoseDestination=Right now we can offer you the following routes:
+            CBConfirmation=Setting course to the <ToStar> system for <Cost> cr. Is everything right?
+            CBNoInHyper=Are you crazy, <Player>? Wait until we get out of hyperspace, and only then stick your head to the generator. If there is still energy left in it, of course.
+            CBNoPath=Sorry, there are no routes available at the moment.
+            CancelNo=I'm, probably, want to think a bit more
+            ToList=System <ToStar> (<Dist> parsec), <Cost> cr.
+            ToStar=To the system <ToStar>, <Cost> cr.
+        }
+        TakeNod ^{
+            BuyCashIn=Exchange <Cost> nodes for micromodule <Name>
+            BuyCashInPlusCount=Exchange <Cost1> nodes from the cargo hold and <Cost2> nodes from the node-account for the <Name> micromodule
+            BuyCount=Exchange <Cost> nodes from node-account to micromodule <Name>
+            CBAfterBuy=Fine! The payment has been successfully made, and the <Name> micromodule has been loaded into your cargo hold.
+            CBAfterBuy=You can go enjoy the new thing.
+            CBAfterPlayerNo=Well, look, don’t whine later that we didn’t offer ...
+            CBAfterPlayerNo=We are, of course, not the rangers center here, but the micromodules are the most real.
+            CBAnswerEnd=Now you have <CurNod> nodes in cash and more <BaseNod> nodes on your account, and your pirate discount, according to our honest but conservative estimates, is <Discount><clr>%<clrEnd>.
+            CBAnswerMM=. <Name> micromodule
+            CBAnswerMMCost1=Module cost: <Cost> nodes
+            CBAnswerMMCost2=When paying from a node account: <Cost> nodes
+            CBAnswerStart=It's possible. We have some channels where we regularly get the newest and coolest micromodules, however, as I said, we do not give them away for free. If there are not enough nodes in the cargo hold and in the storage, then the missing number will be "removed" directly from your node account. With a commission, of course.
+            CBAnswerStart=By the way, we provide discounts only to real pirates - that is not a market here:<Text>
+            CBOffer=And also, if you are interested, we can fit you nice micromodules in exchange for a pack of crispy nodes. Yes, I know that they are not really crispy, but we still need them, and cool micromodules for a normal pirate will definitely not be superfluous, right?
+            PlayerNo=No, huh. I changed my mind
+            PlayerRequest=I need micromodules
+        }
+    }
+    PB ^{
+        Program ^{
+            NodCost=Cost: <Cost> nodes
+            PBStart=All our programs comply with the <clr>CopyRight<clrEnd> law, which means "correctly copied". We are ready to give you a "correct" copy of any program for dominator nodes, keeping in mind your pirate discount in <Percent><clr>%<clrEnd>.
+            PBStart=Nodes will be taken from your cargo hold (<NodTrum> nodes), and if there are not enough of them, then our "specialists" will remove the missing amount from your node account (<NodAcc> nodes). Here is our price list, choose:<br>
+            PlayerOk=Exchange <Nod> nodes for <Text>
+        }
+    }
+}
+Script ^{
+    Mod_ExpCB ^{
+        103=No, I changed my mind
+        104=Remove nodes from node account
+        109=How many nodes to remove?
+        128=The operation was successful. The nodes are already loaded into your cargo hold.
+        136=Well, whatever you want. I wish you good luck in "cashing out" the nodes from the dominators.
+        141=</color>Find out the number of warships, you say? It is possible.<br>We have enough whistle-blowers on every planet controlled by the Coalition, so the presence of its military forces is reported to us daily, one might say, firsthand.<br>However, you yourself understand that it is not profitable to provide such information for free.<br >Given your authority in our movement, let's say... <0> cr. for today's summary. The number of views until the end of the day is unlimited.
+        143=<0>
+        144=Back
+        149=On a mission
+        150=In the hangar
+        151=Status:
+        152=Type: <0>
+        16=<br>
+        163=Militia
+        174=<br>Militias: <0>
+        179=<br>- <color=255,0,0>Defenseless</color> -
+        191=</color><clrEnd>System: <0><br>Sector: <1><br>Warrior ships: <color=255,0,0>0</color>
+        192=</color><clrEnd>System: <0><br>Sector: <1><br>Warrior ships: <2>
+        196=<br>Elite warriors: <0>
+        197=<br>Warriors: <0>
+        198=Elite warrior
+        199=Warrior
+        200=Planet: <0>
+        202=In system
+        205=<0><1>
+        207=</color>From the heart! Just don't worry, this money will go well to ensure the work of the intelligence network. We are strict with corruption.<br>
+        208=More about the system
+        209=More about the system <color=0,50,200>Vitta Pry.</color>
+        210=Vitta Pryonis
+        212=</color>System: <0><br>Sector: <1><br><br><br>
+        213=</color><br><br><br><color=255,0,0>System is defenseless!</color>
+        214=No, well, you are not impudent at all, ok?! For this data, many of our scouts gave their lives, by the way! Maybe...
+        215=No, it's kinda pricey
+        219=</color>Buy the latest intelligence report
+        222=<color=0,50,200>Total in the system</color>
+        238=Here is a complete summary of all combat-ready Coalition warships for today:<br> <br><0><br> <br>Total in the Galaxy: <1>
+        239=Of course, your piracy, here is a complete summary of all combat-ready Coalition warships for today:<br> <br><0><br> <br>Total in the Galaxy: <1>
+        243=Provide me with full information on the size of the coalition fleet
+        244=I want to order a DDoS attack on the network of ranger centers
+        249=<br>Dreadnoughts: <0>
+        251=Dreadnought
+        252=<br>Battleships: <0>
+        253=Battleship
+        DDoS_Info=During a DDoS attack, our hackers can gain temporary access node account of any ranger, and nodes can be quietly moved to another location. You don’t need to know what we will do with the transferred currency and where we get the real nodes from.<br>What you should know is that for security reasons, all transfers from account to account are made in the form of microtransactions strictly according to <clr >1<clrEnd> node. Accordingly, the more nodes you want to um... "remove", the longer we will have to finish, and this, as you understand, is additional risks.<br>In general, each removed node will cost you <Cost> cr. By the way, the hackers report that your node account now has <NodeAccount> nd.
+    }
+}

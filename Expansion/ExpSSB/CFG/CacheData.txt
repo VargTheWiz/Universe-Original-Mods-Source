@@ -1,0 +1,54 @@
+Bm ~{
+    FormRuins ~{
+        2Empty_table=Mods\Expansion\ExpSSB\DATA\FormRuins\empty_table.gi
+        2SSBbg=Mods\Expansion\ExpSSB\DATA\FormRuinsBG\2SSBbg.gi
+    }
+    FormShip2 ~{
+        2CH_P_A=Mods\Expansion\ExpSSB\DATA\FormShip2\CargoHook_pulsar_A.gi
+        2CH_P_D=Mods\Expansion\ExpSSB\DATA\FormShip2\CargoHook_pulsar_D.gi
+        2CH_P_N=Mods\Expansion\ExpSSB\DATA\FormShip2\CargoHook_pulsar_N.gi
+        2DG_P_A=Mods\Expansion\ExpSSB\DATA\FormShip2\DefGenerator_pulsar_A.gi
+        2DG_P_D=Mods\Expansion\ExpSSB\DATA\FormShip2\DefGenerator_pulsar_D.gi
+        2DG_P_N=Mods\Expansion\ExpSSB\DATA\FormShip2\DefGenerator_pulsar_N.gi
+        2DR_P_A=Mods\Expansion\ExpSSB\DATA\FormShip2\RepairRobot_pulsar_A.gi
+        2DR_P_D=Mods\Expansion\ExpSSB\DATA\FormShip2\RepairRobot_pulsar_D.gi
+        2DR_P_N=Mods\Expansion\ExpSSB\DATA\FormShip2\RepairRobot_pulsar_N.gi
+        2PIP=Mods\Expansion\ExpSSB\DATA\FormShip2\PIP_image.gi
+        2RD_P_A=Mods\Expansion\ExpSSB\DATA\FormShip2\Radar_pulsar_A.gi
+        2RD_P_D=Mods\Expansion\ExpSSB\DATA\FormShip2\Radar_pulsar_D.gi
+        2RD_P_N=Mods\Expansion\ExpSSB\DATA\FormShip2\Radar_pulsar_N.gi
+        2SC_P_A=Mods\Expansion\ExpSSB\DATA\FormShip2\Scaner_pulsar_A.gi
+        2SC_P_D=Mods\Expansion\ExpSSB\DATA\FormShip2\Scaner_pulsar_D.gi
+        2SC_P_N=Mods\Expansion\ExpSSB\DATA\FormShip2\Scaner_pulsar_N.gi
+        2WP_P_A=Mods\Expansion\ExpSSB\DATA\FormShip2\WP_pulsar_A.gi
+        2WP_P_D=Mods\Expansion\ExpSSB\DATA\FormShip2\WP_pulsar_D.gi
+        2WP_P_N=Mods\Expansion\ExpSSB\DATA\FormShip2\WP_pulsar_N.gi
+    }
+    Items ~{
+        2blinker_s=Mods\Expansion\ExpSSB\DATA\Items\blinker.gi
+        2galo_s=Mods\Expansion\ExpSSB\DATA\Items\galoproektor.gi
+        2ppb_caller_art_s=Mods\Expansion\ExpSSB\DATA\Items\Arts\2PPB_caller.gi
+        2pulsar_s=Mods\Expansion\ExpSSB\DATA\Items\Arts\pulsar.gi
+    }
+    ItemsUseless ~{
+        2Zond_s=Mods\Expansion\ExpSSB\DATA\ItemsUseless\Zond.gi
+    }
+    Ruins ~{
+        MapSSB=Mods\Expansion\ExpSSB\DATA\Ruins\MapSSB.gi
+        SSB=Mods\Expansion\ExpSSB\DATA\Ruins\SSB.gai
+        SSBi=Mods\Expansion\ExpSSB\DATA\Ruins\SSB.gi
+    }
+    Ship ~{
+        Zond=Mods\Expansion\ExpSSB\DATA\Ship\Zond.hai
+        Zonds=Mods\Expansion\ExpSSB\DATA\Ship\Zonds.hai
+    }
+    ShipP ~{
+        2Zond=Mods\Expansion\ExpSSB\DATA\ShipP\Zond.gi
+    }
+    Teleport ~{
+        Out_256_30=Mods\Expansion\ExpSSB\DATA\Teleport\TeleportOut_256_30.gai
+    }
+}
+Script ~{
+    Mod_ExpSSB=Mods\Expansion\ExpSSB\DATA\Script\Mod_ExpSSB.scr
+}

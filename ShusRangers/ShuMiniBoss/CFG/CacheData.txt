@@ -1,0 +1,21 @@
+Bm ~{
+    PanelSpace2 ~{
+        2G3A=Mods\ShusRangers\ShuMiniBoss\DATA\PanelSpace2\2G3A.gi
+        2G3D=Mods\ShusRangers\ShuMiniBoss\DATA\PanelSpace2\2G3D.gi
+        2G3H=Mods\ShusRangers\ShuMiniBoss\DATA\PanelSpace2\2G3H.gi
+        2G3N=Mods\ShusRangers\ShuMiniBoss\DATA\PanelSpace2\2G3N.gi
+    }
+    Ship ~{
+        G3=Mods\ShusRangers\ShuMiniBoss\DATA\Ship\G3.hai
+        G3s=Mods\ShusRangers\ShuMiniBoss\DATA\Ship\G3_s.hai
+    }
+    ShipP ~{
+        G3=Mods\ShusRangers\ShuMiniBoss\DATA\ShipP\G3.gi
+    }
+}
+Script ~{
+    Mod_ShuMiniBoss=Mods\ShusRangers\ShuMiniBoss\DATA\Script\Mod_ShuMiniBoss.scr
+    ShuMiniBoss_PiratesHunt=Mods\ShusRangers\ShuMiniBoss\DATA\Script\ShuMiniBoss_PiratesHunt.scr
+    ShuMiniBoss_WarriorsHunt=Mods\ShusRangers\ShuMiniBoss\DATA\Script\ShuMiniBoss_WarriorsHunt.scr
+    spawntransport=Mods\ShusRangers\ShuMiniBoss\DATA\Script\spawntransport.scr
+}

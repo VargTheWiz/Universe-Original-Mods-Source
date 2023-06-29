@@ -1,0 +1,3 @@
+Script ~{
+    Mod_RevRangersArts=Mods\Revolution\RevRangersArts\DATA\Script\Mod_RevRangersArts.scr
+}

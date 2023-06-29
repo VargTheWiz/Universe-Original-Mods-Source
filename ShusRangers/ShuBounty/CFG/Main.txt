@@ -1,0 +1,15 @@
+Data ^{
+    SE ^{
+        Item ^{
+            Usl_EscapePod ^{
+                1Image=Bm.ItemsUseless.1Usl_EscapePod_c
+                2Image=Bm.ItemsUseless.2Usl_EscapePod_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+        }
+    }
+    Script ^{
+        Mod_ShuBounty=1,Script.Mod_ShuBounty
+    }
+}

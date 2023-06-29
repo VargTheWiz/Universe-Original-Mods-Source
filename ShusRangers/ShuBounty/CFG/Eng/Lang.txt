@@ -1,0 +1,174 @@
+Script ^{
+    Mod_ShuBounty ~{
+        110=Blocked credit card
+        114=As you know, <Player>, there's a pirate war going on, and the rangers who try to fight the interventionists tend to get nothing but casualties, which causes the prestige of fighting with the clan to drop dramatically.<br><br>CAFIC decided to pay bonuses to free pilots for the heads of pirates. At the moment, the bounty on a bandit's head is <0> cr., but the reward can vary depending on the strength of the pirate. A modest sum of <1> cr is paid for helping to eliminate a pirate.
+        116=The money paid by the command for the destruction of pirates, for convenience, can also be received through the <clr>West-Uni<clrEnd> payment service, you can access it from the navigator of your ship. As a commission, the service charges only <0>% of the transfer amount.<br><br>For your information, when you join a pirate clan, your account stops receiving the bounty for the heads of pirates, and the amount already accumulated is reset. The command does not like traitors.
+        117=Keep it up, <Player>! Pirates Downed Fee of <0> has already been transferred to your account.
+        118=As you certainly know, <Player>, the pirates are now at war with the Coalition. But the problem is that many pirates, especially small bandits and renegade rangers, until a few years ago considered that their sacred duty is to plunder civilians, and no one wanted to take such risks as fighting the warriors.<br><br>Our authorities argued among themselves, and decided that this would not work, they said. To increase the prestige of "military piracy", we have introduced a small bonus for killing warriors and rangers. Now it is <0> cr. per head of warrior and <1> cr. per ranger, but the "price" can vary depending on the strength of the target. For helping to kill a warrior we give <2> cr., for a ranger we give <3> cr.
+        119=At the moment we did not notice any serious activity from the pirates, so the command decided to temporarily suspend the payment of rewards for the heads of pirates. You are dismissed.
+        120=For convenience, you can get money, which we unfasten for the heads of cops servants, not only at our base, but also instantly, using the <clr>West-Uni<clrEnd> service. You can access it from the ship's bridge. However, they grab <0>% of the reward for themselves, so sometimes itРІР‚в„ўs better not to be lazy and take the whole amount.<br><br>Oh, yeah, I almost forgot: when you switch sides, the money for shooting the "good guys" no longer drops into your wallet. The pirates don't welcome traitors.
+        121=Well done, <Player>. The money, <0> cr., is already in your account.
+        122=Sorry buddy, but there's nothing left of the Coalition, so we decided to stop giving out bounties for fighting the cops. If there are any lone rangers left, they are no longer a threat anyway.<br><br>For those who still have rewards left over, we decided to give half of them back. In your case, the amount is <0> cr. Take this money, and thank you from all our clan for helping us in the war.
+        123=Sorry buddy, but there's nothing left of the Coalition, so we decided to stop giving out bounties for fighting the cops. If there are any lone rangers left, they are no longer a threat anyway.
+        124=I'm sorry, my friend, but our clan has lost all its former greatness, and no more money is allocated for rewards. You're on your own for now, brother.
+        125=<0> cistern of <1> tons
+        126=Pirates
+        127=Unknown
+        128=Dominators
+        129=Gaals
+        130=Faeyans
+        131=Humans
+        132=Pelengs
+        133=Maloqs
+        134=Have you, <Player>, thought about the fact that space is increasingly littered with debris, abandoned equipment, and minerals?<br>Cisterns are the most common in space, so we and "Greenspace", a Gaalian space protection organization, decided to start collecting them. Thus, we get both fuel for recycling and a much cleaner space.<br>Rangers, as the most free and multi-tasking pilots, are actively recruited to collect cisterns throughout the arm of the Galaxy. Cisterns are exchanged at the rate "<0> capacity unit to <1> node-account unit". <br>Due to the inability to provide nodes to everyone who wants them, we set a limit of <2> nd., which is reset anually. In addition, when a ranger reaches the limit, he is given a micromodule. The next limit reset is scheduled for <3>.<br>At this point you can get <4> more nd.<br>Would you, Ranger, like to give us a few cisterns?
+        135=You handed over a cistern with a capacity of <0> units, your node account is credited with <1> nd. You've already received <2> nd. as your allowance, there are <3> nd. left.<br>Would you like to give us a few more tanks, Ranger?
+        136=Thank you, Ranger, for helping our cause. This year you gave us <0> cisterns with a total volume of <1> units. of fuel.<br>As a reward, we give you a micromodule <2>. Don't forget to participate next year!
+        139=Well, well... Let me check the database...<br>...<br>I'm sorry, your limit is currently exhausted. The next limit reset is scheduled for <0>, come back later.
+        140=Boho-lan
+        141=Olania
+        142=Cobra
+        143=Shrakan
+        144=Baduba
+        145=Life Capsule, in which lies
+        146=<Player>, the use of life capsules by pilots is now gaining momentum. This device often saves individuals after dangerous battles, catapulting them to a virtual standstill of all life processes.<br>The main problem with such capsules is the high risk to humanoid health. After a long stay in suspended state, a pilot can be seriously injured or weakened.<br>For the aforementioned reason, we take similar capsules and provide medical assistance to victims. The procedure is sponsored by the Galactic Council, making it possible to provide the rescued with a basic set of equipment.<br>Perhaps you brought the patients in yourself? For each humanoid we will pay <clr>one and a half times<clrEnd> more than the cost of the capsule, except for <clr>pirates<clrEnd> - for them we only pay <clr>quarter times<clrEnd> more.
+        147=<Player>, the use of life capsules by pilots is now gaining momentum. This device often saves individuals after dangerous battles, catapulting them to a virtual standstill of all life processes.<br>The main problem with such capsules is the high risk to humanoid health. After a long stay in suspended state, a pilot can be seriously injured or weakened.<br>For the aforementioned reason, we take similar capsules and provide medical assistance to victims. The procedure is supported by the pirate clan, which allows you to supply the brought at least some set of equipment.<br>Perhaps you brought the patients in yourself? For each humanoid we will pay <clr>a quarter<clrEnd> more than price of capsule. The exception is the pirates - for them we have to give <clr>one and a half times<clrEnd> more..
+        148=Thank you for saving a priceless life, <Player>! Your account is rewarded with <0> cr. Don't you have any more capsules to exchange?
+        149=Crystals? Very good! A wide variety of gemstones and formations are always at a premium. Okay, now let's see what you have...<br>...<br>You have <0>crystals on board. With a markup out of respect for your trading reputation (<1>%), we're willing to take the goods for <2> cr. Well, deal?
+        150=<Player>, you don't have any crystals to exchange. Come back next time you find something on uninhabited planets.
+        151=Unblock the credit card, you say? Well, we've got experts on this stuff, let's see if you've got a lot of it...<br>...<br>We opened on your trough <0> cards, the amount of savings on them - <1> cr. The commission of our dominion is <2>%, as a result you will get <3> cr. Transfer?
+        152=Our best guys found only one card on your ship, registered to <Player>. Come back when you get more cards.
+        179=We have marked the items in your hold that are of particular interest to us. We are ready to purchase each at triple the price.
+        185=Thanks!
+        186=Next
+        187=Roger that
+        188=Alright
+        189=Thank you too!
+        190=Is that so? All right...
+        191=No, thanks
+        192=Glad to help
+        197=I don't have any lifepods in the cargo
+        198=Hand over the crystals
+        199=Not now
+        200=Got it
+        201=Make the transfer
+        202=I'm not selling anything
+        204=Life Capsule, in which lies the captain of the liner
+        205=Life Capsule, in which lies the captain of the transport
+        206=Life Capsule, in which lies the diplomat
+        207=Life Capsule, in which lies a pirate
+        208=Life Capsule, in which lies the ranger
+        209=We also offer rangers and other pilots an exchange of cisterns for units of the node account.
+        50=Life Capsule, in which lies the captain of the liner <0>. Must be taken to the nearest Medical Center.
+        51=Life Capsule, in which lies the captain of the transport <0>. Must be taken to the nearest Medical Center.
+        52=Life Capsule, in which lies the diplomat <0>. Must be taken to the nearest Medical Center.
+        53=Life Capsule, in which lies a pirate <0>. Must be taken to the nearest Medical Center.
+        54=Life Capsule, in which lies the ranger <0>. Must be taken to the nearest Medical Center.
+        55=Mohonal
+        56=Ashian
+        57=Bootlegger
+        58=Chhasha
+        59=Hardor
+        60=Pleocan
+        61=Pioleptida
+        62=Astroliner
+        63=Pachryamba
+        64=Aralita
+        65=Oveon
+        66=Menaken
+        67=Hauler
+        68=Cheska
+        69=Kargas
+        70=Galit
+        71=Dalani
+        72=Consul
+        73=Liancher
+        74=Rart
+        75=Renegal
+        76=Phantom
+        77=Corsair
+        78=Lyakusha
+        79=Bambay
+        80=Traitor
+        81=Ranger
+        83=Tell me more about the bounty
+        84=For your information, we have introduced a bounty on the heads of military and rangers. Don't miss your chance to earn it.
+        85=I want my reward
+        86=By the way, bro, we've got <0> cr. here for you, as a bonus for fighting the cops. Would you like to take the money?
+        87=Why couldn't I collect money for murders?
+        88=By order of the CAFIC, we reward rangers for killing pirates. You, too, have the opportunity to get a bounty on the heads of these scoundrels.
+        89=Tell me about the pirate bounty
+        90=I want to get a reward for pirates
+        91=According to the order of the CAFIC, we reward rangers for killing pirates. A bonus of <0> cr is now available for you.
+        92=Why couldn't I collect the pirate bounty?
+        93=Hand over life capsules
+        94=I want to sell crystals
+        95=Unblock credit cards
+        96=I want to exchange cisterns
+        98=Sell unique items
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            ShuBountyNoCapsule ^{
+                Description=Info for the ship, that is not supposed to be issued a life capsule.
+                Icon=1
+                Name=--
+            }
+        }
+    }
+}
+UselessItems ^{
+    Crystal ^{
+        Cost=Huge
+        Description=
+        Name=Crystals
+        Owner=None
+        Size=1
+        Text=Expensive crystals suitable for use in jewelry. Particularly interesting for the network of <color=255,240,100>Business centers</color>.
+    }
+    Dust ^{
+        Cost=Huge
+        Description=
+        Name=Hyperdust
+        OnUseCode ^{
+            01=if(MessageBoxYesNo('Take hyperdust?'))
+            02 ^{
+                01=ShipHealthFactor(Player(),15,ShipHealthFactor(0,15)*Rnd(9,20)/10);
+                02=Ether(0,'','<clr>Hyperdust<clrEnd> has been successfully injected into your body.');
+                03=if(FindItemInShip(Player(),CurItem())>0)FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                04=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            }
+        }
+        Owner=None
+        Size=1
+        Text=A powerful stimulant.
+    }
+    ShuBounty_Crystals ^{
+        Cost=Huge
+        Description=
+        Name=Crystals
+        Owner=None
+        Size=1
+        Text=Expensive crystals suitable for use in jewelry. Particularly interesting for the network of <color=255,240,100>Business centers</color>.
+    }
+    Usl_72 ^{
+        OnUseCode ^{
+            01=ShipMoney(Player(), ShipMoney(Player()) + ItemCost(CurItem()));
+            02=Sound('Sound.Buy');
+            03=if(~FindItemInStorage(CurItem())) FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+            04=else FreeItem(GetItemFromShip(Player(), CurItem()));
+        }
+    }
+    Usl_74 ^{
+        Cost=Huge
+    }
+    Usl_EscapePod ^{
+        Cost=Average
+        Description=
+        Name=Life Capsule
+        Owner=None
+        Size=1
+        Text=Used to evacuate a ship in distress.
+    }
+}

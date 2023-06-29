@@ -1,0 +1,104 @@
+Data ^{
+    Race ^{
+        Color ^{
+            Asteroid=255,255,255
+        }
+        Emblem ^{
+            2Asteroid=Alpha,Bm.Race.Emblem.2None
+        }
+    }
+    SE ^{
+        Missile ^{
+            wMissile_Asteroid_blue ^{
+                PosZ=Missile
+                Scale=1.8
+            }
+            wMissile_Asteroid_green ^{
+                PosZ=Missile
+                Scale=1.8
+            }
+            wMissile_Asteroid_red ^{
+                PosZ=Missile
+                Scale=1.8
+            }
+            wMissile_Asteroid_violet ^{
+                PosZ=Missile
+                Scale=1.8
+            }
+            wMissile_Asteroid_white ^{
+                PosZ=Missile
+                Scale=1.8
+            }
+            wMissile_Asteroid_yellow ^{
+                PosZ=Missile
+                Scale=1.8
+            }
+            wMissile_Average_item ^{
+                PosZ=Missile
+            }
+            wMissile_Big_item ^{
+                PosZ=Missile
+            }
+            wMissile_Discharged_EMP_bomb ^{
+                PosZ=Missile
+            }
+            wMissile_Discharged_Stun_bomb ^{
+                PosZ=Missile
+            }
+            wMissile_EMP_bomb ^{
+                PosZ=Missile
+            }
+            wMissile_Fuel_tank ^{
+                PosZ=Missile
+            }
+            wMissile_Maloq_stool ^{
+                PosZ=Missile
+            }
+            wMissile_Quark_bomb ^{
+                PosZ=Missile
+            }
+            wMissile_Small_item ^{
+                PosZ=Missile
+            }
+            wMissile_Stun_bomb ^{
+                PosZ=Missile
+            }
+            wMissile_Urine_tank ^{
+                PosZ=Missile
+            }
+        }
+        Ship ^{
+            Akrin ^{
+                KillerAsteroid ^{
+                    1ImageP=GI,Bm.ShipP.KillerAsteroid
+                    2ImageP=GI,Bm.ShipP.KillerAsteroid
+                    Anim ^{
+                        0=1,[70,0-80]
+                        Normal=2,[70,0-80]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-80]
+                    }
+                    Image=Bm.Ship.KillerAsteroid
+                    ImageMap=Bm.ShipP.KillerAsteroid_map
+                    ImageS=Bm.Ship.KillerAsteroid_s
+                    PosZ=ShipLow
+                    SizeImage=128,128
+                    SizeLarge=150
+                    SizeSmall=115
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=6,6
+                    StateTime=2000
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_ExpPhysGun=1,Script.Mod_ExpPhysGun
+        Mod_ExpPhysGun_AfterQuestDone=0,Script.Mod_ExpPhysGun_AfterQuestDone
+    }
+    ScriptLibs ^{
+        Mod_ExpPhysGun=UtilityFunctions
+    }
+}

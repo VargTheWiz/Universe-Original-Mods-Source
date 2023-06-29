@@ -1,0 +1,129 @@
+Data ^{
+    SE ^{
+        Ruins ^{
+            Flagship ^{
+                Image=Bm.Ruins.Flagship
+                ImageI=GI,Bm.Ruins.Flagshipi
+                ImageMap=GI,Bm.Ruins.MapMC
+                PosZ=Ship
+            }
+        }
+        Ship ^{
+            Akrin ^{
+                RebelFei ^{
+                    2ImageP=GI,Bm.ShipP.2RebelFei
+                    Anim ^{
+                        0=1,[70,50-75][70,26-28][70,76-96]
+                        Normal=2,[70,0-49]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-49]
+                    }
+                    Image=Bm.Ship.RebelFei
+                    ImageMap=Bm.Ship.RebelMap
+                    ImageS=Bm.Ship.RebelFeis
+                    PanelPartnerImage=RebelFei
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=56,110
+                    Tail2=73,110
+                }
+                RebelGaal ^{
+                    2ImageP=GI,Bm.ShipP.2RebelGaal
+                    Anim ^{
+                        0=1,[70,0-0][70,50-98]
+                        Normal=1,[70,0-49]
+                    }
+                    AnimS ^{
+                        Normal=1,[70,0-49]
+                    }
+                    Image=Bm.Ship.RebelGaal
+                    ImageMap=Bm.Ship.RebelMap
+                    ImageS=Bm.Ship.RebelGaals
+                    PanelPartnerImage=RebelGaal
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=64,108
+                }
+                RebelMaloc ^{
+                    2ImageP=GI,Bm.ShipP.2RebelMaloc
+                    Anim ^{
+                        0=1,[70,50-99]
+                        1=1,[70,50-50][70,100-148]
+                        Normal=2,[70,0-49]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-49]
+                    }
+                    Image=Bm.Ship.RebelMaloc
+                    ImageMap=Bm.Ship.RebelMap
+                    ImageS=Bm.Ship.RebelMalocs
+                    PanelPartnerImage=RebelMaloc
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=49,98
+                    Tail2=69,98
+                }
+                RebelPeleng ^{
+                    2ImageP=GI,Bm.ShipP.2RebelPeleng
+                    Anim ^{
+                        0=1,[70,50-99]
+                        1=1,[70,100-149]
+                        Normal=2,[70,0-49]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-49]
+                    }
+                    Image=Bm.Ship.RebelPeleng
+                    ImageMap=Bm.Ship.RebelMap
+                    ImageS=Bm.Ship.RebelPelengs
+                    PanelPartnerImage=RebelPeleng
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=56,97
+                    Tail2=72,97
+                }
+                RebelPeople ^{
+                    2ImageP=GI,Bm.ShipP.2RebelPeople
+                    Anim ^{
+                        0=1,[70,50-99]
+                        Normal=2,[70,0-49]
+                    }
+                    AnimS ^{
+                        Normal=2,[70,0-49]
+                    }
+                    Image=Bm.Ship.RebelPeople
+                    ImageMap=Bm.Ship.RebelMap
+                    ImageS=Bm.Ship.RebelPeoples
+                    PanelPartnerImage=RebelPeople
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=63,69
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=63,103
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_ShuRebellion=1,Script.Mod_ShuRebellion
+    }
+}

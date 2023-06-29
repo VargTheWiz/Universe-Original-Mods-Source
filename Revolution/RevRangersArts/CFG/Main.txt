@@ -1,0 +1,5 @@
+Data ^{
+    Script ^{
+        Mod_RevRangersArts=1,Script.Mod_RevRangersArts
+    }
+}

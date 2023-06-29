@@ -1,0 +1,21 @@
+Data ~{
+    Script ^{
+        Mod_RevColonization=1,Script.Mod_RevColonization
+    }
+    SE ^{
+        Item ^{
+            RevColonization_protoplasm ^{
+                1Image=Bm.ItemsUseless.1RevColonization_protoplasm_c
+                2Image=Bm.ItemsUseless.2RevColonization_protoplasm_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+            RevColonization_satellite_su ^{
+                1Image=Bm.ItemsUseless.1RevColonization_satellite_su_c
+                2Image=Bm.ItemsUseless.2RevColonization_satellite_su_c
+                ImageMap=Bm.Container.Map0
+                PosZ=Item
+            }
+        }
+    }
+}

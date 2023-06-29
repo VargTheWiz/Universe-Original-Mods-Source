@@ -1,0 +1,3 @@
+Script ~{
+    Mod_RevWarriorsAttack=Mods\Revolution\RevWarriorsAttack\DATA\Script\Mod_RevWarriorsAttack.scr
+}

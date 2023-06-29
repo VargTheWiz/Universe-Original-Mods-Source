@@ -1,0 +1,28 @@
+Script ^{
+    Mod_RevScientist ~{
+        12=<Player>, it's me again. Actually, the present is ready: I reconstructed the handheld phaser from memory, and now it's yours. I'll toss it in the airlock now, and you fly over and pick it up near the base.<br>See you soon!
+        13=No, I don't need all that. I have an escape pod. I need to cut it up, it's jammed.
+        28=Yes, alive, you could say... In a couple of days, come back for your reward. And while I'm recovering and getting settled in a new place.
+        30=Doctor, are you okay?
+        31=You are at a pirate base, <Player>. In this place there aren't any laws, so you can easily conduct your business without fear. We practice free trade of drugs and weapons. Be sure to take a look at the gear we've got for sale.<br>And if you're interested in some of our special services...<br>For the right price, we'll change your race or even equip you with anti-dominator programs.
+        32=Is this the one in the hold? It's interesting. And so expensive! Shall we open it carefully?
+        33=Done. Get the "prisoner" out of there.
+        34=You ask a lot of questions. Drink up!
+        35=Don't cheat, or I will turn you in to the military quickly!
+        36=Annihilation
+        38=Breaking news!<br> There was an explosin in <0> system today resulting in destruction of <1> science station. According to experts, initial investigation points at fuel tank explosion being the reason behind this.
+        41=Handheld phaser
+        42=News from the scientific community:<br> <0> in <1> system was officially renamed to <2>! The scientists, of course, are going to devote the next couple of days to the synthesis of alcohol-containing substances, which are subsequently planned to be used to clean ultra-precision equipment, so the antidominator research is suspended. According to our analysts' calculations, renaming the station has cost the Interstellar Coalition <3> cr.
+        43=Aaaaah!!! I've been sitting in the damn thing for two days, and it doesn't seem to open from the inside or outside! Take me... No, the military will lock me up or even shoot me for what I did... Take me to the pirate base. For that, I'll give you... Shit, there's nothing... Uh... Ah, you'll get a cool gun. Shit, shit, shit! There's no feedback in this tin can... In short, Ranger, I hope you are greedy - help me, and I'll help you... I'm in an escape pod. At the place where the <clr>science station<clrEnd> <0>... was...
+    }
+}
+UselessItems ^{
+    Capsule ^{
+        Cost=Huge
+        Description=
+        Name=Escape pod
+        Owner=People
+        Size=1
+        Text=Used to evacuate ship before it's destruction.
+    }
+}

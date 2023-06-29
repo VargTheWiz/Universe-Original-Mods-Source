@@ -1,0 +1,163 @@
+Items ^{
+    Weapon ^{
+        CustomWeapon ~{
+            StatsVersion ^{
+                ExpPlasmaGun=19.07.2020
+            }
+            PlasmaGun ~{
+                BaseGun=Industrial_Laser
+                MinDamage=18
+                MaxDamage=36
+                DamageSet=Energy
+                ShotType=Normal
+                Speed=60
+                AverageRadius=250
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.20,1.30,1.40,1.60,1.90,2.30
+                ShotsPerTurn=3
+                ArcadeType=Flow_Blaster
+                MiningFactor=4
+                kCost=150
+                AverageSize=250
+                TechLevel=5
+                InventTechLevel=Wave_Phaser
+                StoreAvailability=CoalitionOnly
+                ShotEffectPath=Weapon.1
+                ShotEffectPalette=4
+                SplashEffectPath=Weapon.0
+                MissileExplosionEffectPath=
+            }
+        }
+        Name ^{
+            PlasmaGun=Plasmagun
+        }
+        OriginalWeaponType ~{
+            Industrial_Laser=1
+            Fragmentation_Cannon=2
+            Flux=3
+            Missile_Launcher=4
+            Treton=5
+            Wave_Phaser=6
+            Flow_Blaster=7
+            Electronic_Cutter=8
+            Multiresonator=9
+            Atomic_Vision=10
+            Disintegrator=11
+            Turbogravitron=12
+            IMHO-9000=13
+            Vertix=14
+            Torpedo_Tube=15
+            Esodapher=16
+            Caphasitor=17
+            Lirecron=18
+        }
+        Text ^{
+            PlasmaGun=Strikes the target with a projectile consisting of ionized gas, heated to the state of plasma, and inflicting <CntAttacks>x(<MinDamage>-<MaxDamage>)<Bonus> damage within a radius of <Radius>.
+        }
+    }
+}
+MicroModuls ^{
+    ExpPlasmaGun_Armoloc ^{
+        Cost=120
+        Equipments=PlasmaGun
+        KindGraph=Armoloc
+        Name=Armoloc
+        OnPlanets=1
+        Priority=10
+        Ruins=Any
+        ShotVisual=4
+        Size=110
+        Special=1
+        Text=<color=248,252,248>Weapon with Armoloc modification capable of disabling the target's weapons control channel concentrator with high-precision shots, for some time depriving the enemy of the ability to return fire.</color>
+        Text=<clr><clrEnd>
+        Text=<clr>Weapon <clrEnd> lock chance is inversely proportional to target's hull size
+        Text=Scanner power: <bonScan> pt.
+        Text=(requires scanner's power to exceed target's defense in order <br>to apply the bonus)
+        WeaponMods=BlockWeapon
+        bonScan=-1
+    }
+    ExpPlasmaGun_Diphrode ^{
+        Cost=120
+        Equipments=PlasmaGun
+        KindGraph=Diphrode
+        Name=Diphrode
+        OnPlanets=1
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=10
+        Ruins=Any
+        ShotVisual=1
+        Size=110
+        Special=1
+        Text=<color=248,252,248>Serial set of modified gun assemblies and software improvements named Diphrode, which increases the power of weapons of any type.</color>
+        Text=<clr><clrEnd>
+        Text=Damage bonus: <clr>+15%<clrEnd>
+        Text=Scanner power: <bonScan> pt.
+        Text=(requires scanner's power to exceed target's defense in order <br>to apply the bonus)
+        WeaponMods=ScanBonus
+        bonScan=-1
+    }
+    ExpPlasmaGun_Involute ^{
+        Cost=150
+        Equipments=PlasmaGun
+        Fragility=80
+        KindGraph=Involute
+        Name=Involute
+        OnPlanets=1
+        Priority=10
+        Ruins=Any
+        ShotVisual=0
+        Size=70
+        Special=1
+        Text=<color=248,252,248>The next stage in the development of the Plasmagun. By reducing the rate of fire, it was possible to achieve a significant increase in the reliability of the gun. In addition, the modified power plant turned out to be noticeably lighter, and the plasma streams released from it became more powerful and retained their penetrating power longer. </color>
+        Text=<clr><clrEnd>
+        Text=Bonus to damage: <clr>+15<clrEnd> pt.
+        Text=Firing range: <clr>+80<clrEnd> pt.
+        Text=Fire rate: <clr>-1<clrEnd>
+        TextOld=<color=248,252,248>The next stage in the development of the Plasmagun. The modified energy reactor is much more expensive and overheats faster, but in return it increases the rate of fire, firing range, and also reduces the weight of the gun.</color>
+        bonAttacks=-1
+        bonWEnergy=15
+        bonWRadius=80
+    }
+    ExpPlasmaGun_Javitor ^{
+        Cost=120
+        Equipments=PlasmaGun
+        KindGraph=Javitor
+        Name=Javitor
+        OnPlanets=1
+        Priority=10
+        Ruins=Any
+        ShotVisual=3
+        Size=110
+        Special=1
+        TText=<color=248,252,248>Designed for the precise shooting of repair robots, the Javitor weaponry allows you to fire along the trajectory of the droid, thereby gaining a chance to block the enemy ship from repairing during the battle.</color>
+        Text=<clr><clrEnd>
+        Text=Chance to block <clr>droid<clrEnd> is inversely proportional to target's hull size
+        Text=Scanner power: <bonScan> pt.
+        Text=(requires scanner's power to exceed target's defense in order <br>to apply the bonus)
+        WeaponMods=BlockDroid
+        bonScan=-1
+    }
+    ExpPlasmaGun_Liphocarus ^{
+        Cost=120
+        Equipments=PlasmaGun
+        KindGraph=Liphocarus
+        Name=Liphocarus
+        OnPlanets=1
+        Priority=10
+        Ruins=Any
+        ShotVisual=2
+        Size=110
+        Special=1
+        Text=<color=248,252,248>The weaponry upgraded under the Liphocarus project deals additional damage to damaged targets using the mechanism of sequential ultra-precise firing into hull holes.</color>
+        Text=<clr><clrEnd>
+        Text=Damage bonus: <clr>up to +33%<clrEnd>
+        Text=Scanner power: <bonScan> pt.
+        Text=(requires scanner's power to exceed target's defense in order <br>to apply the bonus)
+        WeaponMods=BonusToDamaged
+        bonScan=-1
+    }
+}

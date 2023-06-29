@@ -1,0 +1,38 @@
+Bm ~{
+    Items ~{
+        2WDom_bursta=Mods\ShusRangers\ShuDomiksPlus\DATA\Items\Dom_bursta.gai
+        2WDom_bursti=Mods\ShusRangers\ShuDomiksPlus\DATA\Items\Dom_bursti.gi
+        2WDom_bursts=Mods\ShusRangers\ShuDomiksPlus\DATA\Items\Dom_bursts.gi
+        2WDom_dual_lasera=Mods\ShusRangers\ShuDomiksPlus\DATA\Items\Dom_dual_lasera.gai
+        2WDom_dual_laseri=Mods\ShusRangers\ShuDomiksPlus\DATA\Items\Dom_dual_laseri.gi
+        2WDom_dual_lasers=Mods\ShusRangers\ShuDomiksPlus\DATA\Items\Dom_dual_lasers.gi
+        2WDom_lasera=Mods\ShusRangers\ShuDomiksPlus\DATA\Items\Dom_lasera.gai
+        2WDom_laseri=Mods\ShusRangers\ShuDomiksPlus\DATA\Items\Dom_laseri.gi
+        2WDom_lasers=Mods\ShusRangers\ShuDomiksPlus\DATA\Items\Dom_lasers.gi
+        2WDom_lighta=Mods\ShusRangers\ShuDomiksPlus\DATA\Items\Dom_lighta.gai
+        2WDom_lighti=Mods\ShusRangers\ShuDomiksPlus\DATA\Items\Dom_lighti.gi
+        2WDom_lights=Mods\ShusRangers\ShuDomiksPlus\DATA\Items\Dom_lights.gi
+        2WDom_miniguna=Mods\ShusRangers\ShuDomiksPlus\DATA\Items\Dom_miniguna.gai
+        2WDom_miniguni=Mods\ShusRangers\ShuDomiksPlus\DATA\Items\Dom_miniguni.gi
+        2WDom_miniguns=Mods\ShusRangers\ShuDomiksPlus\DATA\Items\Dom_miniguns.gi
+        2WDom_rocketa=Mods\ShusRangers\ShuDomiksPlus\DATA\Items\Dom_rocketa.gai
+        2WDom_rocketi=Mods\ShusRangers\ShuDomiksPlus\DATA\Items\Dom_rocketi.gi
+        2WDom_rockets=Mods\ShusRangers\ShuDomiksPlus\DATA\Items\Dom_rockets.gi
+    }
+    Missile ~{
+        wDom_rocket=Mods\ShusRangers\ShuDomiksPlus\DATA\Missile\Mini-torpeda.hai
+        wDom_rocket_2i=Mods\ShusRangers\ShuDomiksPlus\DATA\Missile\Mini-torpeda.gi
+    }
+    Weapon ~{
+        Dom_light=Mods\ShusRangers\ShuDomiksPlus\DATA\Weapon\Dom_light.gai
+        Minishot=Mods\ShusRangers\ShuDomiksPlus\DATA\Weapon\Minishot.gai
+    }
+}
+Script ~{
+    Mod_ShuDomiksPlus=Mods\ShusRangers\ShuDomiksPlus\DATA\Script\Mod_ShuDomiksPlus.scr
+}
+Sound ~{
+    Dom_light=Mods\ShusRangers\ShuDomiksPlus\DATA\Sound\Dom_light.wav
+    Dom_minigun=Mods\ShusRangers\ShuDomiksPlus\DATA\Sound\Dom_minigun.wav
+    shotDom_rocket=sound\shot\shot03.wav
+}

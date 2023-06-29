@@ -1,0 +1,5 @@
+Bm ~{
+    PanelMain2 ~{
+        2Space=DATA\Mods\Expansion\ExpInfoCenter\DATA\PanelMain2\Space_long.gi
+    }
+}

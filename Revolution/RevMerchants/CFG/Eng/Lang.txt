@@ -1,0 +1,65 @@
+Script ^{
+    Mod_RevMerchants ~{
+        40=A competitor from another guild delivered the shipment before you. You have been fined <0> cr.
+        81=The contract with <0> has expired.
+        82=<0><br>Mission failed. <br>You are fined <1> cr.
+        86=You have failed <0> of our assignments, <Player>, and as per your contract, you are now fired.
+        66=Your ship, <Player>, has been damaged.<br>In accordance with your contract with <0>, you are entitled to insurance in the amount of <1> cr.
+        83=<0> days until contract expires.<br>Place of contract is <1><br>Current task:<br><2><br><3> days left until completion<br>Pay in <4> days<br>Estimated salary <5> cr.<br>Total completion: <6>.
+        1=We welcome you, Ranger <Player>, to our business center <0>.<br>Would you like to take out a loan, open a savings account, establish an inheritance, sponsor the development of the latest weapons, or commission a market analysis of goods?<br>Anyway, you have arrived at the address.<br>Also, only today we are ready to offer you, <Player>, a job in our transport service.
+        92=Your right, <Player>, but please note that a more nimble carrier may take this seat.<br>In the meantime, you can use one of our services.
+        91=First, a little background would be helpful.<br>As you know, the Global Business Center Network was founded in <clr>2258<clrEnd>. Back then, a business center was a small branch on a planet or space base that provided only highly specialized services, such as transferring small amounts and property insurance. The bet was made on the profitability and payback of the centers, which should have served as an impetus for the development of the network. Thus, the system had to develop itself and provide for itself, in fact. However, the development was too slow, and there was no influx of customers. Our network began to work at a loss. And then, in 3262, the Supreme Council made a fateful decision - to divide the entire network into two opposing guilds - <clr>Purple<clrEnd> and <clr>Green<clrEnd>, the colors of which symbolized the orientation of the services provided to a particular race. This step turned out to be more than justified. The emerging competition between the guilds and the granting of almost complete independence to them in their actions made it possible to speed up the process of developing a network of business centers hundreds of times and increase the turnover in our arm of the Galaxy in general. The result is obvious: we have our own space stations, we finance space research, thanks to us three new sectors were opened! Thanks to us, the Galactic Map has been updated for the first time since the year 3000!
+        69=But more to the point. Our base belongs to the <clr>Greens<clrEnd> guild. Our guild is known in the financial world as a cutting edge and always pushing organization. However, recently the trade turnover has exceeded the expected volumes and we have become critically short of cargo ships. It is their work that we want to offer you, <Player>. We offer you to conclude a contract with us for a certain period, during which you will have to follow our instructions and deliver the goods to the designated points. You will receive insurance in case of damage to your ship, as well as wages every <clr>thirty<clrEnd> calendar days. But you will also have responsibilities, which include unquestioning obedience to orders and following instructions. Just as the planet-customer may reward you for premature delivery of cargo, so you may be fined for missed deadlines.<br>But do not forget about competition. All your competitors will be from the guild <clr>Purple<clrEnd>, our opponents. Be careful, the members of this guild are fast and very often resort to the help of planetary governments, because of which our relations with them deteriorate.<br>Now I will tell you a little about the working conditions for us. The main task, of course, will be the transportation of goods. Depending on how much earlier you deliver the goods than a competitor, your wages will be increased. If a competitor arrives before you, this will be reflected in the amount received at the end of the month. Although competitors are not always found. However, we give complete freedom in terms of liquidating a competitor.<br>So, <Player>, are you ready to move on to the procedure for signing a contract?
+        87=The contract of employment includes the following provisions:<br>----------------------------------<br>1. The ranger <Player>, hereinafter referred to as the courier, undertakes to exactly fulfill the orders set by the management of the business center <0>, hereinafter referred to as the authorities, on time<br>2. The authorities provide the courier with property insurance, namely the ship. The concept of "ship" does not include equipment such as fuel tanks, engines, navigation systems, weapons, artifacts and additional equipment.<br>3. The management undertakes to pay wages to the courier every 30 (thirty) calendar days. The courier's salary depends on the following factors: <br> - speed of execution - in case of premature execution of the task, the courier's salary increases proportionally, in case of failure to meet deadlines, fines are charged<br> - competitiveness - in case a competitor arrives with a similar product at the same destination , the courier's salary can be reduced, otherwise it can be increased<br> - the number of completed tasks in thirty calendar days<br>4. The attitudes of planetary governments regarding manufacturing transactions do not change with respect to the courier, except for actions that go beyond the purchase and sale of consumer goods<br>5. The courier cannot prematurely terminate the contract with the authorities or independently renew it. The authorities can terminate the contract with the courier unilaterally, without paying insurance and wages<br>6. If more than 3 (three) instructions from the Administration are not fulfilled, the Courier is fired without the right to be reinstated.<br>7. The contract term is <clr>360<clrEnd> standard days.<br>----------------------------------<br><1>     Business Center Captain <2><br><3>     ranger <Player <br><br><br>
+        71=Excellent! Now we are one team!<br>So, your status as a courier is displayed on the hint panel with the icon of the current task.<br>The current task itself is displayed with a similar icon located next to the previous one.<br>And here is the text of your first task:<br><0>
+        80=But more to the point. Our base belongs to the <clr>Purple<clrEnd> guild. It was our guild that first began hiring pilots of transport ships, providing them with decent pay and social guarantees. However, recently the trade turnover has exceeded the expected volumes and we have become critically short of cargo ships. It is their work that we want to offer you, <Player>. We offer you to conclude a contract with us for a certain period, during which you will have to follow our instructions and deliver the goods to the designated points. You will receive insurance in case of damage to your ship, as well as wages every <clr>thirty<clrEnd> calendar days. But you will also have responsibilities, which include unquestioning obedience to orders and following instructions. Just as the planet-customer may reward you for premature delivery of cargo, so you may be fined for missed deadlines.<br>But do not forget about competition. All your competitors will be from the guild <clr>The Greens<clrEnd>, our opponents. Be careful: this guild often uses the services of pirates.<br>Now I will tell you a little about the working conditions for us. The main task, of course, will be the transportation of goods. Depending on how much earlier you deliver the goods than a competitor, your wages will be increased. If a competitor arrives before you, this will be reflected in the amount received at the end of the month. Although competitors do not always meet.<br>So, <Player>, are you ready to move on to the contract signing procedure?
+        16=<Player>, great! You delivered the goods on time!<br>
+        17=<Player>, you have delivered the goods, and much ahead of schedule! Accept a modest bonus of <0> credits!
+        72=Oh Ranger <Player>! Come in! Your harsh appearance suggests that you do not allow dominators to live in peace. Now let's check with the information from the ranger centers...<br>Well, well... Not bad, not bad...<br>But it could be much better.<br>You need to get moving.<br>
+        57=Ah, yes, of course, we were warned. Now the goods will be loaded onto your ship by our specially trained movers.
+        84=<Player>, great! You delivered the goods on time!
+        35=Look what you want! We don't have enough minerals. But alcohol is even less. Listen, <Player>, don't you have alcohol with you, huh? At least a couple of bottles, and we would thank you with minerals.
+        42=You're a bitch, <Player>. If it wasn't for the Commander's birthday, you would never have traded a ton of alcohol for two hundred minerals. Okay. Go, there the droids have already loaded the goods. Fly away from here, so that my eyes do not see you, redneck!
+        50=Nice day today, isn't it, <Player>?
+        73=Ah, yes, we were warned. I have to warn you that the weapons are very old and explosive. So if something suddenly explodes in your hold - do not be alarmed, it was your cargo. Just in case, we will download a cargo state analyzer to your computer, and if it starts to explode, the program itself will initiate its ejection into the airlock.<br>The loading process has begun. Will be completed in <0> hours, approx. In the meantime, I advise you to take a walk around our capital and visit the Museum of Archaeological Finds. Today there is an exhibition of Holy Grails from different planets.
+        85=<Player>, you are alive! Thank God! Well done, you delivered a dangerous cargo for recycling. The remaining ammunition will be unloaded from your ship now.<br>And to you, as a consolation for suffering, we decided to present <0> cr.
+        58=Ah yes, thank you <Player>, we really appreciate it!
+        89=Your right, <Player>, we will no longer offer this type of quest.
+        78=Logout
+        8=I would like to know more about the job
+        9=Next
+        10=I need time to think
+        12=Confirm the conclusion of the contract
+        13=Understood, already leaving
+        23=No problem
+        29=Actually, I came here to get <0> damage. equipment under contract with <1>
+        30=Bye
+        31=You're welcome
+        34=Actually, I came here to get <0> damage. food products under an agreement with <1>
+        37=Actually, I came to load <0> tons of minerals
+        74=No, I don't have alcohol. I will try to find
+        88=Yeah, I have <0> bottles in my hold. But I'll only give you one bottle. Give me minerals. All <1> tons
+        44=And it was a pleasure doing business with you. See you!
+        45=Actually, I came to pick up <0> units. alcohol under contract with <1><br>
+        46=Actually, I came here to get <0> damage. luxury contract with <1>
+        76=Yes, the weather is great. But I actually flew in for a decommissioned weapon. I've been ordered to take <0> tons of this rubbish from you.
+        77=Thank you, I will definitely visit
+        56=Glad to help. It will be necessary to undermine something else - just whistle
+        59=Thank you, goodbye
+        60=No thanks, it's just my job
+        61=Actually, I brought you <0> food. luxury contract with <1>
+        62=Actually, I arrived on a mission <0>
+        11=Yes, let's get started already
+        90=I refuse
+    }
+}
+UselessItems ^{
+    dbomb ^{
+        Cost=Huge
+        Description=
+        Name=Canister
+        Owner=Maloc
+        Size=1
+        Text=Miniature explosive, detonates remotely.
+    }
+}

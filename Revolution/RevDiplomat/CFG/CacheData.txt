@@ -1,0 +1,9 @@
+Bm ~{
+    ItemsUseless ~{
+        2Capsule_c=Mods\Revolution\RevDiplomat\DATA\ItemsUseless\Capsule.gai
+        2Capsule_s=Mods\Revolution\RevDiplomat\DATA\ItemsUseless\Capsule.gi
+    }
+}
+Script ~{
+    Mod_RevDiplomat=Mods\Revolution\RevDiplomat\DATA\Script\Mod_RevDiplomat.scr
+}

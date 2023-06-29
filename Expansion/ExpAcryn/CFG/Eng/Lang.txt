@@ -1,0 +1,2446 @@
+FormInfo ^{
+    MM02=Fuel Tanks
+    Mod_ExpAcryn_ether=With a slight click, the locks of the case opened and you eagerly looked inside. To your regret, only the most ordinary tablet with some obscure information was found inside the case:<br><clr><clrEnd><br>----------------------------------------------------<br><color=0,50,200>Trion equipment modification</color><br>----------------------------------------------------<br>Energy weapons damage: <color=0,50,200>+10</color><br>Splinter weapons damage: <color=0,50,200>+12</color><br>Misile weapons damage: <color=0,50,200>+16</color><br>Engine speed: <color=0,50,200>+50</color><br>Radar range: <color=0,50,200>+300</color> mln. km.<br>Hull armor: <color=0,50,200>+2</color><br>-------------------------------<br>Maloqs: <color=255,0,0>commerce</color><br>Pelengs: <color=255,0,0>leadership</color><br>People: <color=255,0,0>technology</color><br>Fae: <color=255,0,0>mobility</color><br>Gaals: <color=255,0,0>attack</color><br><clr><clrEnd>
+    Mod_ExpAcryn_ether2=----------------------------------------------------<br><color=0,50,200>Trion equipment modification</color><br>----------------------------------------------------<br>Energy weapons damage: <color=0,50,200>+10</color><br>Splinter weapons damage: <color=0,50,200>+12</color><br>Misile weapons damage: <color=0,50,200>+16</color><br>Engine speed: <color=0,50,200>+50</color><br>Radar range: <color=0,50,200>+300</color> mln. km.<br>Hull armor: <color=0,50,200>+2</color><br>-------------------------------<br>Maloqs: <color=255,0,0>commerce</color><br>Pelengs: <color=255,0,0>leadership</color><br>People: <color=255,0,0>technology</color><br>Fae: <color=255,0,0>mobility</color><br>Gaals: <color=255,0,0>attack</color><br><clr><clrEnd>
+    br=<br>
+}
+Formuls ^{
+    Answ_1 ^{
+        1=1
+        10=-3
+        11=-9
+        12=1
+        13=0
+        14=0
+        15=3
+        2=15
+        3=3
+        4=-1
+        5=-1
+        6=6
+        7=5
+        8=1
+        9=17
+    }
+    Frm_1 ^{
+        1=Ln(e)
+        10=2^5+10x=2
+        11=3x+6^2=9
+        12=4/8-100*2+200.5
+        13=Ln(e)-cos(360)
+        14=sin(90)+7x=1
+        15=ln(8)/ln(2)
+        2=(10+15x)'
+        3=x^3=27
+        4=x^2+2x+1=0
+        5=cos(180)
+        6=2+2*2^2/2
+        7=5!-115+5x=30
+        8=cos(360)*2x=2
+        9=(9^2+4)/5
+        count=15
+    }
+}
+Smb ^{
+    1=a
+    10=j
+    11=k
+    12=l
+    13=m
+    14=n
+    15=o
+    16=p
+    17=q
+    18=r
+    19=s
+    2=b
+    20=t
+    21=u
+    22=v
+    23=w
+    24=x
+    25=y
+    26=z
+    27=/
+    28=&
+    29=@
+    3=c
+    30=%
+    4=d
+    5=e
+    6=f
+    7=g
+    8=h
+    9=i
+}
+MicroModuls ^{
+    ExpAcryn_DomAcryn ^{
+        CustomTag=Akrin_dom_ship
+        Equipments=FuelTank,Engine,Radar,Scaner,Droid,Hook,DefGenerator,WEnergy,WSplinter,WMissile
+        LockedAcryn=3
+        NonSearchable=1
+        Owner=Kling
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>Unknown equipment modification of <color=255,240,100>dominators</color>. To activate additional properties, you need a colossal power source, which is available on board only for <color=255,240,100>Bertors</color>.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Hull armor: <bonHull>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Droid effectiveness: <bonDroid>
+        Text=Shield generator: <bonDef>%
+        bonDef=5
+        bonDroid=10
+        bonHull=3
+        bonRadar=250
+        bonSpeed=100
+        bonWEnergy=15
+        bonWMissile=20
+        bonWSplinter=15
+    }
+    ExpAcryn_DomMalocAcryn ^{
+        Cost=350
+        CustomTag=ExpAcryn_ship_maloc
+        LockedAcryn=3
+        NonSearchable=1
+        Owner=Kling
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>Unknown equipment modification of <color=255,240,100>dominators</color>. To activate additional properties, you need a colossal power source, which is available on board only for <color=255,240,100>Bertors</color>.</color>
+    }
+    ExpAcryn_FeiDefGenerator1 ^{
+        Cost=350
+        CustomTag=Fakrin_3_6
+        Equipments=DefGenerator
+        KindGraph=Fakrin_DEF1
+        LockedAcryn=3
+        Name=Trion Shield Generator
+        NonSearchable=1
+        Owner=Fei
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>Text=<color=248,252,248>Experimental trion modification of equipment, recreated by prominent scientists of the Coalition using the latest dominator technologies which improves the performance of almost all onboard systems. The extreme degree of manufacturability and complexity of the <color=255,240,100>faeyan</color> approach to engineering was reflected in the trion equipment they assembled in all its glory. To maintain the additional properties of this equipment in a constantly active state, it requires regular coordination from the brain of a living humanoid, however, unlike the complex facet structure of the brain of <color=255,240,100>Fae</color>, the brain of representatives of other races is not able to maintain the same high level of required multitasking.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Mobility skill: <bonSkill2>
+        bonHull=2
+        bonRadar=300
+        bonSkill2=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_FeiDefGenerator2 ^{
+        Cost=350
+        CustomTag=Fakrin_3_6_2
+        Equipments=DefGenerator
+        KindGraph=Fakrin_DEF2
+        LockedAcryn=3
+        Name=Trion Shield Generator
+        NonSearchable=1
+        Owner=Fei
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. The extreme degree of manufacturability and complexity of the <color=255,240,100>faeyan</color> approach to engineering was reflected in the trion equipment they assembled in all its glory. To maintain the additional properties of this equipment in a constantly active state, it requires regular coordination from the brain of a living humanoid, however, unlike the complex facet structure of the brain of <color=255,240,100>Fae</color>, the brain of representatives of other races is not able to maintain the same high level of required multitasking.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Mobility skill: <bonSkill2>
+        bonHull=2
+        bonRadar=300
+        bonSkill2=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_FeiDroid ^{
+        Cost=350
+        CustomTag=Fakrin_3_4
+        Equipments=Droid
+        KindGraph=Fakrin_DRD
+        LockedAcryn=3
+        Name=Trion Droid
+        NonSearchable=1
+        Owner=Fei
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. The extreme degree of manufacturability and complexity of the <color=255,240,100>faeyan</color> approach to engineering was reflected in the trion equipment they assembled in all its glory. To maintain the additional properties of this equipment in a constantly active state, it requires regular coordination from the brain of a living humanoid, however, unlike the complex facet structure of the brain of <color=255,240,100>Fae</color>, the brain of representatives of other races is not able to maintain the same high level of required multitasking.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Mobility skill: <bonSkill2>
+        bonHull=2
+        bonRadar=300
+        bonSkill2=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_FeiEngine ^{
+        Cost=350
+        CustomTag=Fakrin_3_1
+        Equipments=Engine
+        KindGraph=Fakrin_EG
+        LockedAcryn=3
+        Name=Trion Engine
+        NonSearchable=1
+        Owner=Fei
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. The extreme degree of manufacturability and complexity of the <color=255,240,100>faeyan</color> approach to engineering was reflected in the trion equipment they assembled in all its glory. To maintain the additional properties of this equipment in a constantly active state, it requires regular coordination from the brain of a living humanoid, however, unlike the complex facet structure of the brain of <color=255,240,100>Fae</color>, the brain of representatives of other races is not able to maintain the same high level of required multitasking.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Mobility skill: <bonSkill2>
+        bonHull=2
+        bonRadar=300
+        bonSkill2=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_FeiFuelTank ^{
+        Cost=350
+        CustomTag=Fakrin_3_0
+        Equipments=FuelTank
+        KindGraph=Fakrin_FT
+        LockedAcryn=3
+        Name=Trion Fuel Tank
+        NonSearchable=1
+        Owner=Fei
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. The extreme degree of manufacturability and complexity of the <color=255,240,100>faeyan</color> approach to engineering was reflected in the trion equipment they assembled in all its glory. To maintain the additional properties of this equipment in a constantly active state, it requires regular coordination from the brain of a living humanoid, however, unlike the complex facet structure of the brain of <color=255,240,100>Fae</color>, the brain of representatives of other races is not able to maintain the same high level of required multitasking.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Mobility skill: <bonSkill2>
+        bonHull=2
+        bonRadar=300
+        bonSkill2=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_FeiHook ^{
+        Cost=350
+        CustomTag=Fakrin_3_5
+        Equipments=Hook
+        KindGraph=Fakrin_HK
+        LockedAcryn=3
+        Name=Trion Gripper
+        NonSearchable=1
+        Owner=Fei
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. The extreme degree of manufacturability and complexity of the <color=255,240,100>faeyan</color> approach to engineering was reflected in the trion equipment they assembled in all its glory. To maintain the additional properties of this equipment in a constantly active state, it requires regular coordination from the brain of a living humanoid, however, unlike the complex facet structure of the brain of <color=255,240,100>Fae</color>, the brain of representatives of other races is not able to maintain the same high level of required multitasking.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Mobility skill: <bonSkill2>
+        bonHull=2
+        bonRadar=300
+        bonSkill2=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_FeiRadar ^{
+        Cost=350
+        CustomTag=Fakrin_3_2
+        Equipments=Radar
+        KindGraph=Fakrin_RAD
+        LockedAcryn=3
+        Name=Trion Radar
+        NonSearchable=1
+        Owner=Fei
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. The extreme degree of manufacturability and complexity of the <color=255,240,100>faeyan</color> approach to engineering was reflected in the trion equipment they assembled in all its glory. To maintain the additional properties of this equipment in a constantly active state, it requires regular coordination from the brain of a living humanoid, however, unlike the complex facet structure of the brain of <color=255,240,100>Fae</color>, the brain of representatives of other races is not able to maintain the same high level of required multitasking.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Mobility skill: <bonSkill2>
+        bonHull=2
+        bonRadar=300
+        bonSkill2=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_FeiScaner ^{
+        Cost=350
+        CustomTag=Fakrin_3_3
+        Equipments=Scaner
+        KindGraph=Fakrin_SC
+        LockedAcryn=3
+        Name=Trion Scanner
+        NonSearchable=1
+        Owner=Fei
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. The extreme degree of manufacturability and complexity of the <color=255,240,100>faeyan</color> approach to engineering was reflected in the trion equipment they assembled in all its glory. To maintain the additional properties of this equipment in a constantly active state, it requires regular coordination from the brain of a living humanoid, however, unlike the complex facet structure of the brain of <color=255,240,100>Fae</color>, the brain of representatives of other races is not able to maintain the same high level of required multitasking.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Mobility skill: <bonSkill2>
+        bonHull=2
+        bonRadar=300
+        bonSkill2=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_Fragility50Plus ^{
+        Cost=200
+        Equipments=Any
+        Fragility=66
+        LockedAcryn=3
+        Name=TrionicFragility_50_plus
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    ExpAcryn_GaalDefGenerator1 ^{
+        Cost=350
+        CustomTag=Fakrin_4_6
+        Equipments=DefGenerator
+        KindGraph=Fakrin_DEF1
+        LockedAcryn=3
+        Name=Trion Shield Generator
+        NonSearchable=1
+        Owner=Gaal
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Having discovered the extraordinary properties of the trion equipment, <color=255,240,100>Gaals</color> immediately declared them a manifestation of the miracle of the great universal balance and imposed protection from the uninitiated into the ancient sacrament of the predominance of the primary over the secondary on the activation of these properties. Once, a maloq asked a <color=255,240,100>gaal</color> a question about what this sacrament is, in response to which he received only a riddle: "The answer is as simple as a wall, but as complex as a starry sky". Then the maloq fled and, hit his head on the wall with all his foolishness, after which he saw stars in his eyes and decided that he had comprehended a great truth.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Attack skill: <bonSkill1>
+        bonHull=2
+        bonRadar=300
+        bonSkill1=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_GaalDefGenerator2 ^{
+        Cost=350
+        CustomTag=Fakrin_4_6_2
+        Equipments=DefGenerator
+        KindGraph=Fakrin_DEF2
+        LockedAcryn=3
+        Name=Trion Shield Generator
+        NonSearchable=1
+        Owner=Gaal
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Having discovered the extraordinary properties of the trion equipment, <color=255,240,100>Gaals</color> immediately declared them a manifestation of the miracle of the great universal balance and imposed protection from the uninitiated into the ancient sacrament of the predominance of the primary over the secondary on the activation of these properties. Once, a maloq asked a <color=255,240,100>gaal</color> a question about what this sacrament is, in response to which he received only a riddle: "The answer is as simple as a wall, but as complex as a starry sky". Then the maloq fled and, hit his head on the wall with all his foolishness, after which he saw stars in his eyes and decided that he had comprehended a great truth.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Attack skill: <bonSkill1>
+        bonHull=2
+        bonRadar=300
+        bonSkill1=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_GaalDroid ^{
+        Cost=350
+        CustomTag=Fakrin_4_4
+        Equipments=Droid
+        KindGraph=Fakrin_DRD
+        LockedAcryn=3
+        Name=Trion Droid
+        NonSearchable=1
+        Owner=Gaal
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Having discovered the extraordinary properties of the trion equipment, <color=255,240,100>Gaals</color> immediately declared them a manifestation of the miracle of the great universal balance and imposed protection from the uninitiated into the ancient sacrament of the predominance of the primary over the secondary on the activation of these properties. Once, a maloq asked a <color=255,240,100>gaal</color> a question about what this sacrament is, in response to which he received only a riddle: "The answer is as simple as a wall, but as complex as a starry sky". Then the maloq fled and, hit his head on the wall with all his foolishness, after which he saw stars in his eyes and decided that he had comprehended a great truth.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Attack skill: <bonSkill1>
+        bonHull=2
+        bonRadar=300
+        bonSkill1=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_GaalEngine ^{
+        Cost=350
+        CustomTag=Fakrin_4_1
+        Equipments=Engine
+        KindGraph=Fakrin_EG
+        LockedAcryn=3
+        Name=Trion Engine
+        NonSearchable=1
+        Owner=Gaal
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Having discovered the extraordinary properties of the trion equipment, <color=255,240,100>Gaals</color> immediately declared them a manifestation of the miracle of the great universal balance and imposed protection from the uninitiated into the ancient sacrament of the predominance of the primary over the secondary on the activation of these properties. Once, a maloq asked a <color=255,240,100>gaal</color> a question about what this sacrament is, in response to which he received only a riddle: "The answer is as simple as a wall, but as complex as a starry sky". Then the maloq fled and, hit his head on the wall with all his foolishness, after which he saw stars in his eyes and decided that he had comprehended a great truth.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Attack skill: <bonSkill1>
+        bonHull=2
+        bonRadar=300
+        bonSkill1=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_GaalFuelTank ^{
+        Cost=350
+        CustomTag=Fakrin_4_0
+        Equipments=FuelTank
+        KindGraph=Fakrin_FT
+        LockedAcryn=3
+        Name=Trion Fuel Tank
+        NonSearchable=1
+        Owner=Gaal
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Having discovered the extraordinary properties of the trion equipment, <color=255,240,100>Gaals</color> immediately declared them a manifestation of the miracle of the great universal balance and imposed protection from the uninitiated into the ancient sacrament of the predominance of the primary over the secondary on the activation of these properties. Once, a maloq asked a <color=255,240,100>gaal</color> a question about what this sacrament is, in response to which he received only a riddle: "The answer is as simple as a wall, but as complex as a starry sky". Then the maloq fled and, hit his head on the wall with all his foolishness, after which he saw stars in his eyes and decided that he had comprehended a great truth.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Attack skill: <bonSkill1>
+        bonHull=2
+        bonRadar=300
+        bonSkill1=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_GaalHook ^{
+        Cost=350
+        CustomTag=Fakrin_4_5
+        Equipments=Hook
+        KindGraph=Fakrin_HK
+        LockedAcryn=3
+        Name=Trion Gripper
+        NonSearchable=1
+        Owner=Gaal
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Having discovered the extraordinary properties of the trion equipment, <color=255,240,100>Gaals</color> immediately declared them a manifestation of the miracle of the great universal balance and imposed protection from the uninitiated into the ancient sacrament of the predominance of the primary over the secondary on the activation of these properties. Once, a maloq asked a <color=255,240,100>gaal</color> a question about what this sacrament is, in response to which he received only a riddle: "The answer is as simple as a wall, but as complex as a starry sky". Then the maloq fled and, hit his head on the wall with all his foolishness, after which he saw stars in his eyes and decided that he had comprehended a great truth.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Attack skill: <bonSkill1>
+        bonHull=2
+        bonRadar=300
+        bonSkill1=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_GaalRadar ^{
+        Cost=350
+        CustomTag=Fakrin_4_2
+        Equipments=Radar
+        KindGraph=Fakrin_RAD
+        LockedAcryn=3
+        Name=Trion Radar
+        NonSearchable=1
+        Owner=Gaal
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Having discovered the extraordinary properties of the trion equipment, <color=255,240,100>Gaals</color> immediately declared them a manifestation of the miracle of the great universal balance and imposed protection from the uninitiated into the ancient sacrament of the predominance of the primary over the secondary on the activation of these properties. Once, a maloq asked a <color=255,240,100>gaal</color> a question about what this sacrament is, in response to which he received only a riddle: "The answer is as simple as a wall, but as complex as a starry sky". Then the maloq fled and, hit his head on the wall with all his foolishness, after which he saw stars in his eyes and decided that he had comprehended a great truth.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Attack skill: <bonSkill1>
+        bonHull=2
+        bonRadar=300
+        bonSkill1=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_GaalScaner ^{
+        Cost=350
+        CustomTag=Fakrin_4_3
+        Equipments=Scaner
+        KindGraph=Fakrin_SC
+        LockedAcryn=3
+        Name=Trion Scanner
+        NonSearchable=1
+        Owner=Gaal
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Having discovered the extraordinary properties of the trion equipment, <color=255,240,100>Gaals</color> immediately declared them a manifestation of the miracle of the great universal balance and imposed protection from the uninitiated into the ancient sacrament of the predominance of the primary over the secondary on the activation of these properties. Once, a maloq asked a <color=255,240,100>gaal</color> a question about what this sacrament is, in response to which he received only a riddle: "The answer is as simple as a wall, but as complex as a starry sky". Then the maloq fled and, hit his head on the wall with all his foolishness, after which he saw stars in his eyes and decided that he had comprehended a great truth.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Attack skill: <bonSkill1>
+        bonHull=2
+        bonRadar=300
+        bonSkill1=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_MalocDefGenerator1 ^{
+        Cost=350
+        CustomTag=Fakrin_0_6
+        Equipments=DefGenerator
+        KindGraph=Fakrin_DEF1
+        LockedAcryn=3
+        Name=Trion Shield Generator
+        NonSearchable=1
+        Owner=Maloc
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Assembling by <color=255,240,100>Maloqs</color> has left its rough mark in the form of a large and very tight red lever that needs to be turned to activate all the additional properties of this equipment. Being an elementary action for <color=255,240,100>maloq</color>, for other races, turning the damn switch turns into a serious athletic test, extremely rarely ending in success. Simply put, all the additional properties of this equipment become available only to "red-skinned intellectuals".</color></color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Commerce skill: <bonSkill4>
+        bonHull=2
+        bonRadar=300
+        bonSkill4=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_MalocDefGenerator2 ^{
+        Cost=350
+        CustomTag=Fakrin_0_6_2
+        Equipments=DefGenerator
+        KindGraph=Fakrin_DEF2
+        LockedAcryn=3
+        Name=Trion Shield Generator
+        NonSearchable=1
+        Owner=Maloc
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Assembling by <color=255,240,100>Maloqs</color> has left its rough mark in the form of a large and very tight red lever that needs to be turned to activate all the additional properties of this equipment. Being an elementary action for <color=255,240,100>maloq</color>, for other races, turning the damn switch turns into a serious athletic test, extremely rarely ending in success. Simply put, all the additional properties of this equipment become available only to "red-skinned intellectuals".</color></color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Commerce skill: <bonSkill4>
+        bonHull=2
+        bonRadar=300
+        bonSkill4=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_MalocDroid ^{
+        Cost=350
+        CustomTag=Fakrin_0_4
+        Equipments=Droid
+        KindGraph=Fakrin_DRD
+        LockedAcryn=3
+        Name=Trion Droid
+        NonSearchable=1
+        Owner=Maloc
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Assembling by <color=255,240,100>Maloqs</color> has left its rough mark in the form of a large and very tight red lever that needs to be turned to activate all the additional properties of this equipment. Being an elementary action for <color=255,240,100>maloq</color>, for other races, turning the damn switch turns into a serious athletic test, extremely rarely ending in success. Simply put, all the additional properties of this equipment become available only to "red-skinned intellectuals".</color></color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Commerce skill: <bonSkill4>
+        bonHull=2
+        bonRadar=300
+        bonSkill4=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_MalocEngine ^{
+        Cost=350
+        CustomTag=Fakrin_0_1
+        Equipments=Engine
+        KindGraph=Fakrin_EG
+        LockedAcryn=3
+        Name=Trion Engine
+        NonSearchable=1
+        Owner=Maloc
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Assembling by <color=255,240,100>Maloqs</color> has left its rough mark in the form of a large and very tight red lever that needs to be turned to activate all the additional properties of this equipment. Being an elementary action for <color=255,240,100>maloq</color>, for other races, turning the damn switch turns into a serious athletic test, extremely rarely ending in success. Simply put, all the additional properties of this equipment become available only to "red-skinned intellectuals".</color></color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Commerce skill: <bonSkill4>
+        bonHull=2
+        bonRadar=300
+        bonSkill4=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_MalocFuelTank ^{
+        Cost=350
+        CustomTag=Fakrin_0_0
+        Equipments=FuelTank
+        KindGraph=Fakrin_FT
+        LockedAcryn=3
+        Name=Trion Fuel Tank
+        NonSearchable=1
+        Owner=Maloc
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Assembling by <color=255,240,100>Maloqs</color> has left its rough mark in the form of a large and very tight red lever that needs to be turned to activate all the additional properties of this equipment. Being an elementary action for <color=255,240,100>maloq</color>, for other races, turning the damn switch turns into a serious athletic test, extremely rarely ending in success. Simply put, all the additional properties of this equipment become available only to "red-skinned intellectuals".</color></color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Commerce skill: <bonSkill4>
+        bonHull=2
+        bonRadar=300
+        bonSkill4=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_MalocHook ^{
+        Cost=350
+        CustomTag=Fakrin_0_5
+        Equipments=Hook
+        KindGraph=Fakrin_HK
+        LockedAcryn=3
+        Name=Trion Gripper
+        NonSearchable=1
+        Owner=Maloc
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Assembling by <color=255,240,100>Maloqs</color> has left its rough mark in the form of a large and very tight red lever that needs to be turned to activate all the additional properties of this equipment. Being an elementary action for <color=255,240,100>maloq</color>, for other races, turning the damn switch turns into a serious athletic test, extremely rarely ending in success. Simply put, all the additional properties of this equipment become available only to "red-skinned intellectuals".</color></color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Commerce skill: <bonSkill4>
+        bonHull=2
+        bonRadar=300
+        bonSkill4=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_MalocRadar ^{
+        Cost=350
+        CustomTag=Fakrin_0_2
+        Equipments=Radar
+        KindGraph=Fakrin_RAD
+        LockedAcryn=3
+        Name=Trion Radar
+        NonSearchable=1
+        Owner=Maloc
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Assembling by <color=255,240,100>Maloqs</color> has left its rough mark in the form of a large and very tight red lever that needs to be turned to activate all the additional properties of this equipment. Being an elementary action for <color=255,240,100>maloq</color>, for other races, turning the damn switch turns into a serious athletic test, extremely rarely ending in success. Simply put, all the additional properties of this equipment become available only to "red-skinned intellectuals".</color></color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Commerce skill: <bonSkill4>
+        bonHull=2
+        bonRadar=300
+        bonSkill4=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_MalocScaner ^{
+        Cost=350
+        CustomTag=Fakrin_0_3
+        Equipments=Scaner
+        KindGraph=Fakrin_SC
+        LockedAcryn=3
+        Name=Trion Scanner
+        NonSearchable=1
+        Owner=Maloc
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Assembling by <color=255,240,100>Maloqs</color> has left its rough mark in the form of a large and very tight red lever that needs to be turned to activate all the additional properties of this equipment. Being an elementary action for <color=255,240,100>maloq</color>, for other races, turning the damn switch turns into a serious athletic test, extremely rarely ending in success. Simply put, all the additional properties of this equipment become available only to "red-skinned intellectuals".</color></color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Commerce skill: <bonSkill4>
+        bonHull=2
+        bonRadar=300
+        bonSkill4=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PelengDefGenerator1 ^{
+        Cost=350
+        CustomTag=Fakrin_1_6
+        Equipments=DefGenerator
+        KindGraph=Fakrin_DEF1
+        LockedAcryn=3
+        Name=Trion Shield Generator
+        NonSearchable=1
+        Owner=Peleng
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Designed by <color=255,240,100>Pelengs</color>, the system for activating additional properties of this equipment requires the introduction of a special biometric radio-digital nanokey, available only to representatives of this secretive and distrustful race. The only question that remains unclear is why <color=255,240,100>Pelengs</color> needed to hide the functionality of the equipment, which had actually been stolen twice already, first from the Dominators, and then from the inventor races of the Coalition.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Leadership skill: <bonSkill6>
+        bonHull=2
+        bonRadar=300
+        bonSkill6=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PelengDefGenerator2 ^{
+        Cost=350
+        CustomTag=Fakrin_1_6_2
+        Equipments=DefGenerator
+        KindGraph=Fakrin_DEF2
+        LockedAcryn=3
+        Name=Trion Shield Generator
+        NonSearchable=1
+        Owner=Peleng
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Designed by <color=255,240,100>Pelengs</color>, the system for activating additional properties of this equipment requires the introduction of a special biometric radio-digital nanokey, available only to representatives of this secretive and distrustful race. The only question that remains unclear is why <color=255,240,100>Pelengs</color> needed to hide the functionality of the equipment, which had actually been stolen twice already, first from the Dominators, and then from the inventor races of the Coalition.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Leadership skill: <bonSkill6>
+        bonHull=2
+        bonRadar=300
+        bonSkill6=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PelengDroid ^{
+        Cost=350
+        CustomTag=Fakrin_1_4
+        Equipments=Droid
+        KindGraph=Fakrin_DRD
+        LockedAcryn=3
+        Name=Trion Droid
+        NonSearchable=1
+        Owner=Peleng
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Designed by <color=255,240,100>Pelengs</color>, the system for activating additional properties of this equipment requires the introduction of a special biometric radio-digital nanokey, available only to representatives of this secretive and distrustful race. The only question that remains unclear is why <color=255,240,100>Pelengs</color> needed to hide the functionality of the equipment, which had actually been stolen twice already, first from the Dominators, and then from the inventor races of the Coalition.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Leadership skill: <bonSkill6>
+        bonHull=2
+        bonRadar=300
+        bonSkill6=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PelengEngine ^{
+        Cost=350
+        CustomTag=Fakrin_1_1
+        Equipments=Engine
+        KindGraph=Fakrin_EG
+        LockedAcryn=3
+        Name=Trion Engine
+        NonSearchable=1
+        Owner=Peleng
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Designed by <color=255,240,100>Pelengs</color>, the system for activating additional properties of this equipment requires the introduction of a special biometric radio-digital nanokey, available only to representatives of this secretive and distrustful race. The only question that remains unclear is why <color=255,240,100>Pelengs</color> needed to hide the functionality of the equipment, which had actually been stolen twice already, first from the Dominators, and then from the inventor races of the Coalition.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Leadership skill: <bonSkill6>
+        bonHull=2
+        bonRadar=300
+        bonSkill6=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PelengFuelTank ^{
+        Cost=350
+        CustomTag=Fakrin_1_0
+        Equipments=FuelTank
+        KindGraph=Fakrin_FT
+        LockedAcryn=3
+        Name=Trion Fuel Tank
+        NonSearchable=1
+        Owner=Peleng
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Designed by <color=255,240,100>Pelengs</color>, the system for activating additional properties of this equipment requires the introduction of a special biometric radio-digital nanokey, available only to representatives of this secretive and distrustful race. The only question that remains unclear is why <color=255,240,100>Pelengs</color> needed to hide the functionality of the equipment, which had actually been stolen twice already, first from the Dominators, and then from the inventor races of the Coalition.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Leadership skill: <bonSkill6>
+        bonHull=2
+        bonRadar=300
+        bonSkill6=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PelengHook ^{
+        Cost=350
+        CustomTag=Fakrin_1_5
+        Equipments=Hook
+        KindGraph=Fakrin_HK
+        LockedAcryn=3
+        Name=Trion Gripper
+        NonSearchable=1
+        Owner=Peleng
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Designed by <color=255,240,100>Pelengs</color>, the system for activating additional properties of this equipment requires the introduction of a special biometric radio-digital nanokey, available only to representatives of this secretive and distrustful race. The only question that remains unclear is why <color=255,240,100>Pelengs</color> needed to hide the functionality of the equipment, which had actually been stolen twice already, first from the Dominators, and then from the inventor races of the Coalition.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Leadership skill: <bonSkill6>
+        bonHull=2
+        bonRadar=300
+        bonSkill6=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PelengRadar ^{
+        Cost=350
+        CustomTag=Fakrin_1_2
+        Equipments=Radar
+        KindGraph=Fakrin_RAD
+        LockedAcryn=3
+        Name=Trion Radar
+        NonSearchable=1
+        Owner=Peleng
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Designed by <color=255,240,100>Pelengs</color>, the system for activating additional properties of this equipment requires the introduction of a special biometric radio-digital nanokey, available only to representatives of this secretive and distrustful race. The only question that remains unclear is why <color=255,240,100>Pelengs</color> needed to hide the functionality of the equipment, which had actually been stolen twice already, first from the Dominators, and then from the inventor races of the Coalition.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Leadership skill: <bonSkill6>
+        bonHull=2
+        bonRadar=300
+        bonSkill6=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PelengScaner ^{
+        Cost=350
+        CustomTag=Fakrin_1_3
+        Equipments=Scaner
+        KindGraph=Fakrin_SC
+        LockedAcryn=3
+        Name=Trion Scanner
+        NonSearchable=1
+        Owner=Peleng
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. Designed by <color=255,240,100>Pelengs</color>, the system for activating additional properties of this equipment requires the introduction of a special biometric radio-digital nanokey, available only to representatives of this secretive and distrustful race. The only question that remains unclear is why <color=255,240,100>Pelengs</color> needed to hide the functionality of the equipment, which had actually been stolen twice already, first from the Dominators, and then from the inventor races of the Coalition.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Leadership skill: <bonSkill6>
+        bonHull=2
+        bonRadar=300
+        bonSkill6=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PeopleDefGenerator1 ^{
+        Cost=350
+        CustomTag=Fakrin_2_6
+        Equipments=DefGenerator
+        KindGraph=Fakrin_DEF1
+        LockedAcryn=3
+        Name=Trion Shield Generator
+        NonSearchable=1
+        Owner=People
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. When assembling this equipment, resourceful <color=255,240,100>People</color> introduced a technical restriction on the activation of additional properties, which can only be removed by correctly guessing a number of images displayed on the control panel. Nine random illustrations describing the highlights of the general history and culture of the Earth, interspersed with scenes from popular science fiction films, are displayed in a 3 by 3 table, and present no difficulty in guessing for any more or less educated <color=255,240,100> human</color>, which definitely cannot be said about representatives of other races.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Technology skill: <bonSkill3>
+        bonHull=2
+        bonRadar=300
+        bonSkill3=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PeopleDefGenerator2 ^{
+        Cost=350
+        CustomTag=Fakrin_2_6_2
+        Equipments=DefGenerator
+        KindGraph=Fakrin_DEF2
+        LockedAcryn=3
+        Name=Trion Shield Generator
+        NonSearchable=1
+        Owner=People
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. When assembling this equipment, resourceful <color=255,240,100>People</color> introduced a technical restriction on the activation of additional properties, which can only be removed by correctly guessing a number of images displayed on the control panel. Nine random illustrations describing the highlights of the general history and culture of the Earth, interspersed with scenes from popular science fiction films, are displayed in a 3 by 3 table, and present no difficulty in guessing for any more or less educated <color=255,240,100> human</color>, which definitely cannot be said about representatives of other races.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Technology skill: <bonSkill3>
+        bonHull=2
+        bonRadar=300
+        bonSkill3=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PeopleDroid ^{
+        Cost=350
+        CustomTag=Fakrin_2_4
+        Equipments=Droid
+        KindGraph=Fakrin_DRD
+        LockedAcryn=3
+        Name=Trion Droid
+        NonSearchable=1
+        Owner=People
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. When assembling this equipment, resourceful <color=255,240,100>People</color> introduced a technical restriction on the activation of additional properties, which can only be removed by correctly guessing a number of images displayed on the control panel. Nine random illustrations describing the highlights of the general history and culture of the Earth, interspersed with scenes from popular science fiction films, are displayed in a 3 by 3 table, and present no difficulty in guessing for any more or less educated <color=255,240,100> human</color>, which definitely cannot be said about representatives of other races.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Technology skill: <bonSkill3>
+        bonHull=2
+        bonRadar=300
+        bonSkill3=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PeopleEngine ^{
+        Cost=350
+        CustomTag=Fakrin_2_1
+        Equipments=Engine
+        KindGraph=Fakrin_EG
+        LockedAcryn=3
+        Name=Trion Engine
+        NonSearchable=1
+        Owner=People
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. When assembling this equipment, resourceful <color=255,240,100>People</color> introduced a technical restriction on the activation of additional properties, which can only be removed by correctly guessing a number of images displayed on the control panel. Nine random illustrations describing the highlights of the general history and culture of the Earth, interspersed with scenes from popular science fiction films, are displayed in a 3 by 3 table, and present no difficulty in guessing for any more or less educated <color=255,240,100> human</color>, which definitely cannot be said about representatives of other races.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Technology skill: <bonSkill3>
+        bonHull=2
+        bonRadar=300
+        bonSkill3=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PeopleFuelTank ^{
+        Cost=350
+        CustomTag=Fakrin_2_0
+        Equipments=FuelTank
+        KindGraph=Fakrin_FT
+        LockedAcryn=3
+        Name=Trion Fuel Tank
+        NonSearchable=1
+        Owner=People
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. When assembling this equipment, resourceful <color=255,240,100>People</color> introduced a technical restriction on the activation of additional properties, which can only be removed by correctly guessing a number of images displayed on the control panel. Nine random illustrations describing the highlights of the general history and culture of the Earth, interspersed with scenes from popular science fiction films, are displayed in a 3 by 3 table, and present no difficulty in guessing for any more or less educated <color=255,240,100> human</color>, which definitely cannot be said about representatives of other races.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Technology skill: <bonSkill3>
+        bonHull=2
+        bonRadar=300
+        bonSkill3=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PeopleHook ^{
+        Cost=350
+        CustomTag=Fakrin_2_5
+        Equipments=Hook
+        KindGraph=Fakrin_HK
+        LockedAcryn=3
+        Name=Trion Gripper
+        NonSearchable=1
+        Owner=People
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. When assembling this equipment, resourceful <color=255,240,100>People</color> introduced a technical restriction on the activation of additional properties, which can only be removed by correctly guessing a number of images displayed on the control panel. Nine random illustrations describing the highlights of the general history and culture of the Earth, interspersed with scenes from popular science fiction films, are displayed in a 3 by 3 table, and present no difficulty in guessing for any more or less educated <color=255,240,100> human</color>, which definitely cannot be said about representatives of other races.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Technology skill: <bonSkill3>
+        bonHull=2
+        bonRadar=300
+        bonSkill3=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PeopleRadar ^{
+        Cost=350
+        CustomTag=Fakrin_2_2
+        Equipments=Radar
+        KindGraph=Fakrin_RAD
+        LockedAcryn=3
+        Name=Trion Radar
+        NonSearchable=1
+        Owner=People
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. When assembling this equipment, resourceful <color=255,240,100>People</color> introduced a technical restriction on the activation of additional properties, which can only be removed by correctly guessing a number of images displayed on the control panel. Nine random illustrations describing the highlights of the general history and culture of the Earth, interspersed with scenes from popular science fiction films, are displayed in a 3 by 3 table, and present no difficulty in guessing for any more or less educated <color=255,240,100> human</color>, which definitely cannot be said about representatives of other races.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Technology skill: <bonSkill3>
+        bonHull=2
+        bonRadar=300
+        bonSkill3=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PeopleScaner ^{
+        Cost=350
+        CustomTag=Fakrin_2_3
+        Equipments=Scaner
+        KindGraph=Fakrin_SC
+        LockedAcryn=3
+        Name=Trion Scanner
+        NonSearchable=1
+        Owner=People
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>An experimental trion modification of equipment, recreated by prominent Coalition scientists using the latest dominator technologies which improves the performance of almost all onboard systems. When assembling this equipment, resourceful <color=255,240,100>People</color> introduced a technical restriction on the activation of additional properties, which can only be removed by correctly guessing a number of images displayed on the control panel. Nine random illustrations describing the highlights of the general history and culture of the Earth, interspersed with scenes from popular science fiction films, are displayed in a 3 by 3 table, and present no difficulty in guessing for any more or less educated <color=255,240,100> human</color>, which definitely cannot be said about representatives of other races.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Technology skill: <bonSkill3>
+        bonHull=2
+        bonRadar=300
+        bonSkill3=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PirateClanDefGenerator1 ^{
+        Cost=350
+        CustomTag=Fakrin_5_6
+        Equipments=DefGenerator
+        KindGraph=Fakrin_DEF1
+        LockedAcryn=3
+        Name=Trion Shield Generator
+        NonSearchable=1
+        Owner=PirateClan
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>Top-secret joint technology of three races, stolen by the fourth, sold by the fifth, and finally obtained by the "sixth". Additional equipment properties are activated by unique, randomly changing codes known only to some high-ranking members of the <color=255,240,100>pirate clan</color>.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Charisma skill: <bonSkill5>
+        bonHull=2
+        bonRadar=300
+        bonSkill5=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PirateClanDefGenerator2 ^{
+        Cost=350
+        CustomTag=Fakrin_5_6_2
+        Equipments=DefGenerator
+        KindGraph=Fakrin_DEF2
+        LockedAcryn=3
+        Name=Trion Shield Generator
+        NonSearchable=1
+        Owner=PirateClan
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>Top-secret joint technology of three races, stolen by the fourth, sold by the fifth, and finally obtained by the "sixth". Additional equipment properties are activated by unique, randomly changing codes known only to some high-ranking members of the <color=255,240,100>pirate clan</color>.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Charisma skill: <bonSkill5>
+        bonHull=2
+        bonRadar=300
+        bonSkill5=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PirateClanDroid ^{
+        Cost=350
+        CustomTag=Fakrin_5_4
+        Equipments=Droid
+        KindGraph=Fakrin_DRD
+        LockedAcryn=3
+        Name=Trion Droid
+        NonSearchable=1
+        Owner=PirateClan
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>Top-secret joint technology of three races, stolen by the fourth, sold by the fifth, and finally obtained by the "sixth". Additional equipment properties are activated by unique, randomly changing<br>codes, known only to some high-ranking<br>members of the <color=255,240,100>pirate clan</color>.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Charisma skill: <bonSkill5>
+        bonHull=2
+        bonRadar=300
+        bonSkill5=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PirateClanEngine ^{
+        Cost=350
+        CustomTag=Fakrin_5_1
+        Equipments=Engine
+        KindGraph=Fakrin_EG
+        LockedAcryn=3
+        Name=Trion Engine
+        NonSearchable=1
+        Owner=PirateClan
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>Top-secret joint technology of three races, stolen by the fourth, sold by the fifth, and finally obtained by the "sixth". Additional equipment properties are activated by unique, randomly changing codes known only to some high-ranking members of the <color=255,240,100>pirate clan</color>.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Charisma skill: <bonSkill5>
+        bonHull=2
+        bonRadar=300
+        bonSkill5=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PirateClanFuelTank ^{
+        Cost=350
+        CustomTag=Fakrin_5_0
+        Equipments=FuelTank
+        KindGraph=Fakrin_FT
+        LockedAcryn=3
+        Name=Trion Fuel Tank
+        NonSearchable=1
+        Owner=PirateClan
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>Top-secret joint technology of three races, stolen by the fourth, sold by the fifth, and finally obtained by the "sixth". Additional equipment properties are activated by unique, randomly changing codes known only to some high-ranking members of the <color=255,240,100>pirate clan</color>.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Charisma skill: <bonSkill5>
+        bonHull=2
+        bonRadar=300
+        bonSkill5=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PirateClanHook ^{
+        Cost=350
+        CustomTag=Fakrin_5_5
+        Equipments=Hook
+        KindGraph=Fakrin_HK
+        LockedAcryn=3
+        Name=Trion Gripper
+        NonSearchable=1
+        Owner=PirateClan
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>Top-secret joint technology of three races, stolen by the fourth, sold by the fifth, and finally obtained by the "sixth". Additional equipment properties are activated by unique, randomly changing codes known only to some high-ranking members of the <color=255,240,100>pirate clan</color>.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Charisma skill: <bonSkill5>
+        bonHull=2
+        bonRadar=300
+        bonSkill5=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PirateClanRadar ^{
+        Cost=350
+        CustomTag=Fakrin_5_2
+        Equipments=Radar
+        KindGraph=Fakrin_RAD
+        LockedAcryn=3
+        Name=Trion Radar
+        NonSearchable=1
+        Owner=PirateClan
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>Top-secret joint technology of three races, stolen by the fourth, sold by the fifth, and finally obtained by the "sixth". Additional equipment properties are activated by unique, randomly changing codes known only to some high-ranking members of the <color=255,240,100>pirate clan</color>.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Charisma skill: <bonSkill5>
+        bonHull=2
+        bonRadar=300
+        bonSkill5=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+    ExpAcryn_PirateClanScaner ^{
+        Cost=350
+        CustomTag=Fakrin_5_3
+        Equipments=Scaner
+        KindGraph=Fakrin_SC
+        LockedAcryn=3
+        Name=Trion Scanner
+        NonSearchable=1
+        Owner=PirateClan
+        Priority=0
+        RacialRestriction=1
+        Special=1
+        Text=<color=248,252,248>Top-secret joint technology of three races, stolen by the fourth, sold by the fifth, and finally obtained by the "sixth". Additional equipment properties are activated by unique, randomly changing codes known only to some high-ranking members of the <color=255,240,100>pirate clan</color>.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Splinter weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Engine speed: <bonSpeed>
+        Text=Radar range: <bonRadar> mln. km.
+        Text=Hull armor: <bonHull>
+        Text=Charisma skill: <bonSkill5>
+        bonHull=2
+        bonRadar=300
+        bonSkill5=-1
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=16
+        bonWSplinter=12
+    }
+}
+Script ^{
+    Mod_ExpAcryn ^{
+        147=<br>
+        255=days
+        256=Active radiation release<br>end in
+        257=There is no radiation, the energy core <color=255,240,100>can be taken</color> on board.
+        258=Energy core
+        259=Active energy core
+        266=Wow! That's luck! Thanks <Player>, we don't have a case of this color yet. Oh, stop, after all, there is already a case of this color - throw it into space ... Wait, what are you doing?! A case, not a ranger, a ranger can still come in handy!<br>Okay, jokes aside. We have had this information for a long time, but we still do not have the necessary materials. Do you understand, <Player>, how cunningly this world works? To make these modifications, we need materials created by the Coalition and the dominators. To do this, in turn, it is necessary to destroy the <clr>flagships<clrEnd> and <clr>bertors<clrEnd>. The first is for the Coalition to finally become generous and pay for the production of modifications to strengthen their ships, some of which we will steal, and the second - to collect the missing parts that can be obtained exclusively from the dominators themselves. To start "production" it will be enough for us to destroy <clr>six<clrEnd> ships of any type.<br>So, are you going to get down to business, or will you refuse like all the other "applicants" for unique goodies?
+        288=Oh really? Well, since <Player> himself says that this is something valuable, then, apparently, it is so, ahaha!<br>Well, show me what you have there, but hurry up.
+        290=Here is a secret military case for you! Well, what do you say to that, huh?
+        291=I do not like your intonation, I'd better leave this information to myself
+        294=Oh, come what may! I will take up this case, what documents should I sign?
+        296=Sign over there on that long black box that looks like a coffin. Beneath his own name engraved on the top.<br>Okay, just kidding. You promised, and therefore, you will be obliged to fulfill. We are strict with this.
+        298=Well, well, good luck. You're going to be the most secret-informed oaf in the galaxy, ahaha!
+        300=No thanks, my life is more precious to me
+        305=I completely agree with you, I am on it!
+        306=No, it sounds too dangerous
+        311=A brave decision, <Player>, I respect you! Come back as soon as you get some up-to-date intelligence for us.<br>By the way, you don't have to take the information to us. We'll relay your mission information to the rest of the <clr>Peleng<clrEnd> flagships, so you don't have to waste time searching.
+        319=Keep it up, <Player>! I feel that these dominators will soon be dancing in the sight of your formidable cannons!<br>By the way, it is not necessary to bring the assembled modifications to us. We'll relay your quest information to the rest of the <clr>Maloq<clrEnd> flagships so you don't have to waste time searching.
+        322=I have information that will definitely interest you.
+        323=I want to discuss the details of my task
+        326=I would like to receive a special task
+        330=I need a cloaking device
+        333=Program launch: <color=0,50,200>Detacher</color>
+        335=And what did you instruct me to do there, remind me?
+        337=Thank you from the bottom of my heart, you helped me out!
+        339=What so interresting thigs do you have there? I also want to!
+        347=Your ship is too far. Come closer, then we will talk.
+        349=Ah, so you are <Player>? We have already been waiting for you! Some people even thought that you gave this top-secret information to the pirates. Well, let's see what you brought us...<br>Hmm, so this is what our new <0> and <1> will look like, impressive!
+        35=<0>
+        358=Hey boss, meet the hero! Your job was done to perfection!
+        359=Cloaking Device, series <0> for <1> cr.
+        360=Cloaking Device, series <clr>Terronoid<clrEnd> (<0> cr.)
+        361=Cloaking Device, series <clr>Kelleroid<clrEnd> (<0> cr.)
+        362=Cloaking Device, series <clr>Blazeroid<clrEnd> (<0> cr.)
+        366=In that case, stop taking away our precious time for the defense of the Coalition!
+        368=Congratulations, you are now <clr>Captain<clrEnd>. To get the next rank, you need to score <clr>700<clrEnd> points, so don't relax, you still have to grow and grow. However, you, <Player>, already show great promise and may soon become one of the best pilots.<br>To help you with this, we are handing over <0> in excellent condition to you!<br>So long you're here, do a little errand. It is necessary to deliver classified information to the nearest flagship. Is the command clear?
+        370=I changed my decision, over and out
+        372=I changed my decision, I do not need camouflage
+        375=Thank you, over and out
+        379=Thank you, but I would like to buy more cloaking devices
+        380=Great, our technicians have downloaded programs to activate the cloaking device into your on-board computer.<br>By the way, you know that this camouflage remains active even after changing the hull, right? It's my job to warn you.
+        384=Thanks, now on to other things.
+        385=Thank you, but I need to know something else
+        386=Understood, end of connection
+        388=Well, it was not easy, but I got the job done
+        390=Oh, it seems that I accidentally unloaded it into the storage, i will bring it in now
+        391=Increase counter of items/data needed for a quest (test function)
+        393=Quest item/data counter increased by <0>. You need to dial another <1>
+        397=Your recon probe has successfully <color=255,240,100>completed</color> collecting data from the current target, but the bertor has detected a leak and activated <color=255,240,100>high security protocols</color>. Further receipt of any information from this bertor is not possible.
+        399=On this mission, I would really need some kind of camouflage.
+        402=I have no reason to refuse. Our entire stock of cloaking devices is at your complete disposal... As long as you have credits, of course:<br><0><br><1><br><2><br>Choose, but quickly. We are still on combat duty.
+        404=Ahem... Yes, yes - it was such a joke, of course... Over and out
+        406=Ha! Put top-secret developments in the hands of some ranger? Hmm... Well, if you help us, then sure enough, one copy may be retired due to a technical inconsistency.<br>Have you ever seen a bertor? Are you familiar with the kligs? Things have gotten worse for them lately. The Dominators somehow found out about the existence of acryn and created their own version of the modifications.
+        409=Why should we not give? Wi will give! Although not for free.<br>Here is a list of available cloaking devices and prices officially approved by the higher command:<br><0><br><1><br><2><br>Choose, but only quickly. We are still on combat duty.
+        410=Thank you for the honor
+        413=Honor and glory to the defender of the Galaxy!
+        416=Better give them my polite spit in the face - I am done with your tasks
+        423=Excellent work, <Player>! The information obtained by you will be used exclusively for noble purposes, do not hesitate! We have not forgotten about your reward. I am proud to place this <0> in your heroic hands!
+        435=You should not be doing this, <Player>. The eyes of <clr>Dzuhallag<clrEnd> are long, but the arms are even longer.<br>I wish you a good rest.
+        436=Okay, I will get for you some more information, but this time will definitely be the last
+        437=And what exactly do you want to know?
+        439=Mission accomplished, I would like to receive my reward
+        442=Well thanks, I will make a note
+        443=By the way, I highly recommend you ask flagships of <clr>other races<clrEnd> about similar tasks. They are still hopelessly behind us in the field of trionics, so it's time to lend a hand to them. In the future, there will certainly be an occasion to remind them of their debt
+        445=So be it, I will collect some more data, but will not you provide the hero with cloaking device?
+        447=Once again, I sincerely congratulate you on this outstanding triumph! Today you definitely deserve these congratulations.
+        448=Trion Shield Generator
+        449=Trion Gripper
+        450=Trion Droid
+        451=Trion Scanner
+        452=Trion Radar
+        453=Trion Engine
+        454=Trion Fuel Tank
+        456=By the way, we just received an urgent request from <clr>Dzuhallag<clrEnd>. It seems that the data you collected was not enough for them, and they asked me to tell you that if you agree to perform another "run" on the Dominator systems, then they will intercede for the issuance of <0> to you and even promise a small <clr>bonus<clrEnd> in addition. This time it's official.<br>So, will you help our valiant intelligence to scan <clr>five<clrEnd> more enemy Bertors or convey your polite refusal to them? Just keep in mind that in <clr>Dzuhallag<clrEnd> they don't like rejections. Especially polite rejections.
+        458=Okay, but just hurry up.
+        460=Many thanks!
+        461=Well, of course! Scan a few more bertors and you will be free like... ahem... ranger.<br>Like last time, the collected data must be delivered to any <clr>Peleng<clrEnd> flagship. Good luck.
+        469=Well, in this case, you will not receive new modifications from us. Worst wishes.
+        470=What kind of task are we talking about? Oh, I seem to remember. You are the ranger that passed the Coalition's test of loyalty, right? Well, there will be a task for you, just listen carefully:
+        473=No, come on, over and out.
+        475=So you are the ranger who helped our comrades get information about new dominator technology? We have already heard, yes. Well, we obviously can’t get help in this matter, so listen to the task:
+        476=Have you changed your mind yet? Well then, listen here, I won’t repeat it for the third time:
+        477=Well, you're a rare idiot, <Player>! If only you could bring it back in three hundred years!<br>Anyway, take this case out of my sight and get out of here yourself. You are moron, damn it!
+        479=Okay, okay, I'm leaving, don't yell!
+        480=Oh, <Player>, what a moron you are...<br>Well, get the hell out of the station! Fast, damn it!!! Morons like you shouldn't be allowed near normal humanoids at all!
+        481=This all sounds pretty lousy, but how exactly can I help you?
+        483=Do not hesitate, I will complete the task!
+        484=I was ordered to hand over this secret case to the nearest flagship.
+        485=What?!! Scared of a fight? Shame on you, you pathetic coward! Get out of my sight - you are nothing!
+        486=What?! Hide from the enemy?! Ahahaha!!!<br>Well, <Player>, well done, made me laugh! You should perform in the "Crooked Stool"! Ahaha!
+        489=samples of unknown dominator modifications
+        490=samples of unknown dominator modifications
+        491=sample of unknown dominator modification
+        495=Ah, here he is - our national hero! Glory to ranger <Player>! Glory to the hero of the Coalition!<br>Here is the well-deserved reward: <0> and, as we promised, a small bonus - <clr>a set to replace the blocking system<clrEnd> in the trion device. The set is surprisingly easy to use, and the instructions with pictures are attached there, so you will figure it out.
+        496=Oh, it will be hard for you to develop science ... Okay, I will bring more samples, so be it
+        501=Oh, no need to thank me!
+        502=In general, <Player>, thank you from the bottom of my heart! I don't even know what our science would do without you.
+        503=Of course I will ask! And Pelengs especially
+        504=By the way, I highly recommend you ask flagships of <clr>other races<clrEnd> about similar tasks. That is why the muzzles of the Pelengs will stretch out when they will find out that in the field of trionics they were bypassed by malocs, ahaha!
+        507=Trion Shield Generator
+        508=Trion Gripper
+        509=Trion Scanner
+        510=Trion Radar
+        511=Trion Engine
+        512=Trion Fuel Tank
+        516=ide!
+        519=Great job, <Player>! Thanks to these samples, we will be able to create our own series of the latest modifications and finally prove to the Galaxy that maloqs are also capable of scientific breakthroughs! Today you have rendered an invaluable service to our race!<br>Here is your reward - <0>, one of our first prototypes. Use it with pr
+        523=Well, get out of here then! We don't need your help! And without you, we will collect new samples, we'll just wait for the next military operation.
+        524=Thank you, <Player>, we will not forget your service! Deliver mod samples to any <clr>Maloq<clrEnd> flagship, but please, as soon as possible. Otherwise, we have already driven all the scientists into one laboratory, and if they are not urgently occupied with something, then, you see, they will kill each other in disputes over who has a bigger head.
+        527=You are our savior! Glory to Ranger <Player>! Hail to the greatest warrior in the galaxy!<br>Here is your well-deserved reward, warrior: <0> and, as we promised, something else - a <clr>set to replace the interlock system<clrEnd> in the trion device. The instructions for the set are written for maloqs, so you will have to use your brains a little, but I think you can handle it. And don't worry, this time we didn't send the samples in the K-Boom capsule, instead we used the newest Peleng SSS-Whole. We are monitoring its telemetry, now it is just crossing the border of the Peleng system - it is flying around the dangerous zone of gravity of our planet.
+        531=What now?! Oh no, go to hell with your insecure capsules and armored heads!
+        532=Great job, ranger! But where is the <clr>reconfigured localizer<clrEnd> given to you?<br>This outstanding device will be studied at our most advanced universities. It will help raise hundreds of generations of the greatest scientists of the Galaxy as the best example of the scientific genius of the Maloq race!
+        536=Immensely glad to hear this, but where is our <clr>intelligence probe <clrEnd> filled with valuable data?
+        540=But wait, we've just received terrible news! The unmanned transport capsule that was supposed to deliver the samples you obtained to the planet with the scientists crashed on landing. All cargo on board is lost! Oh, woe to us! I've been telling these engineers for a long time that the K-Boom capsules are not safe and need to be replaced as soon as possible!<br>Yes, it looks like our plans for the prosperity of Maloq science will remain dreams, except perhaps... Hey, <Player>, you already know how to mine these modifications. Be our friend, go get another batch, huh? <clr>Five<clrEnd> bertors - <clr>five<clrEnd> samples, and hurry. And we'll give you <0> for it, and <clr>something<clrEnd> in addition. Well, agree, damn you!
+        547=Ha! Well, no, I will not! Kill these bertors yourself
+        55=Over and out
+        550=bertors
+        551=bertor
+        552=bertor
+        553=No problem. According to our information, you still have <0> <1> to get, using the hacking program <clr>Detacher<clrEnd> provided to you for this purpose.
+        555=energy cores of bertor
+        556=energy cores of bertor
+        557=energy core of bertor
+        560=Eh, we only die once! I will get you cores
+        568=Thank you very much! I'm flattered to the core
+        570=We were very happy to do business with you. I hope after the war I will still have a chance to have a glass or two with you.
+        571=Thank you very much! I will definitely ask
+        572=And by the way, I highly recommend asking flagships of <clr>other races<clrEnd> about similar tasks. I suppose with your new reputation, they would kill to have you to study trionics there.
+        574=And while you are here, won't you agree to do one more task? The thing is, our business dealings with other races would really benefit from a little "push" of goodwill right now. I am talking about a valuable gift, which would ideally fit one of the power cores you got. The only problem is that all of the <clr>Earth Science Council<clrEnd> has already confiscated all the nuclei that were brought in for lab tests, so we desperately need new working samples now.<br>Would you agree, <Player>, to get us some more <clr>five<clrEnd> bertor energy cores? Of course, upon completion of the task, you will be rewarded in the form of <0> and a small <clr>bonus<clrEnd> in addition. What will you say, ranger?
+        576=Wonderful job! With samples of Dominator power sources, our scientists will be able to find a cheap replacement for the power sources of our own ships. And here's your reward, <Player>: optimized for power from the ship's standard power grids <0>.
+        577=Of course, <Player>, we understand. Few are ready to risk their lives for the good of others at a time when the fate of the entire Galaxy and organic life literally hangs in the balance.
+        578=Your straightforwardness leaves me no choice! Five additional energy cores will be delivered on time
+        583=No, that's enough for me, over and out
+        587=Critical energy core failure detected, emergency reset procedure initiated.
+        588=Malware <clr>Detacher<clrEnd> detected. Enhanced security protocols are activated.
+        589=Wow, got some already, huh? We'll probably take it with us so you don't litter your cargo hold.<br>According to our information, you still have <0> <1> to get.
+        590=Ha! Diplomacy? Diplomacy is not for me! Better send them the head of a penchecrakus, and personally I'm going to spend the hard-earned money on drinking
+        593=And we have it! True, we cannot provide it for free, because rangers are not officially part of the coalition fleet.<br>In general, here is a list of available cloaking devices and prices officially approved by higher command:<br><0><br><1><br><2><br>Choose, but only quickly. We are still on combat duty.
+        594=According to our records, you are allowed full access to the <clr>Chameleon<clrEnd> military camouflage technology. However, we cannot provide it for free, because rangers are not officially part of the coalition fleet.<br>In general, here is a list of available camouflage devices and prices officially approved by the higher command:<br><0><br><1><br><2><br>Choose, but only quickly. We are still on combat duty.
+        596=It's a necessary thing, of course, but I'm not ready to take such a risk, sorry
+        597=Well, everything is clear. Let's find another ranger for this case. But you, <Player>, should still be ashamed!
+        599=Well, you're right - we need diplomacy now more than ever, but can I at least get a couple of free camouflages before leaving for the second dangerous mission?
+        602=Of course, <Player>. Here are three camouflage devices for you, one for each dominator series. If this is not enough for you, then, unfortunately, you will have to pay extra:<br><0><br><1><br><2><br>Well, will you buy more camouflages?
+        603=Hip-hip! Hooray for the Defender of the Galaxy!<br>You did it, <Player>, congratulations! Congratulations and it is my pleasure to present you with this <0> along with a <clr>set to replace the interlock system<clrEnd> in a trion device. The kit is extremely easy to use, but that's not all your reward. I personally requested our galactic embassy that, along with the delivery of the energy core, they also inform representatives of other races of the name of the hero who obtained it. Yes, yes, from now on you are the Hero, <Player>, and very soon the whole Coalition will know about it!
+        604=Thanks, I'll be really happy
+        606=Well, run, run, coward. You still don't run much.
+        607=flagships or bertors
+        608=flagships or bertors
+        609=flagship or bertor
+        610=What, have you already forgotten? Well, let me remind you, it's not bad.<br>You, <Player>, need to blow up another <0> <1>. Who exactly you will kill - finally, it doesn't matter.
+        615=It was not easy for me, but another victory - I completed the task
+        616=Eh, I'll hit these bastards one more time, so much so that this time they will definitely remember!
+        619=This is the way I like it! Thank you very much, as they say!
+        621=Well, okay, so be it, for the sake of brotherhood I will do it
+        624=Well done, <Player>, real man! The entire Coalition is already crumbling, another decisive blow and who the hell will stop us! And by the way, here is your reward - <0>, and the boys asked to thank separately.<br>Well, are you ready for the last blow? The task is still the same: destroy <clr>six<clrEnd> of any flagships or bertors. The supply of new equipment is already in full swing, but something is still missing and it is precisely these gaps that you have to fill.<br>In general, <Player>, once again all hope is on you. If you can do it - we will show you honor and honor not like a child.
+        625=I got tired specifically, but I still completed the task, where is my reward?
+        628=Yes, I see you, a real genius in your field, <Player>. Without irony, I say that none of us would have coped with such a task. Your accomplishments will be written into the textbooks of pirate history as soon as we take over the galaxy and are finally able to write them. In the meantime, here's your reward: <0> and a <clr>hardened trion parts set<clrEnd> to go with it.<br>Enjoy your well-deserved fame, pirate. And by the way, our brothers will now be provided with new modifications until the end of the war, don't worry about that.
+        632=All clear
+        633=Well, be quiet, why are you yelling? It's not convenient for us to rake up such information at all, after all, even coalition spies can hang around here.<br>You'd better fly with this suitcase straight to the nearest dominion. The guys there are serious, they will certainly figure out what's that.
+        634=Just look what I brought you - a real secret military case!
+        642=<color=255,240,100>Message from the spy bot: </color><br>Master, <0> made a transition to another system. Mission failed. Please wait and take me on board.
+        645=<color=255,240,100>Message from the spy bot: </color><br>Master, <0> has been destroyed. Mission failed. Please wait and take me on board.
+        647=<color=255,240,100>Message from the spy bot: </color><br>Master, your disguise has been revealed. Mission failed. Please wait and take me on board.
+        649=<color=255,240,100>Message from the spy bot: </color><br>Master, dominators found traces of hacking. Your disguise has been revealed. Please wait and take me on board.
+        652=Having docked, the <color=255,240,100>spybot</color> did not detect <color=255,240,100>R.D.P.C.</color> in your hold and activated anti-theft self-destruction, which seriously damaged most of the vital on-board systems. You are barricaded in the cockpit with only a few hours left to live.<br>The life of a great ranger is coming to an end.
+        653=Master, the mission is going according to plan. Should I stop the mission?
+        655=Yes, the mission is cancelled.
+        656=Yes, yes, I see. Submit this code...
+        658=Master, I'm going back to your ship. Please wait and take me on board.
+        659=I do, master! The mission has been terminated. Please wait and take me on board.
+        66=No, keep going
+        661=Attention! Dominators have found traces of hacking and revealed your camouflage!
+        663=<color=255,240,100>Message from the spy bot: </color><br>Master, you entered an invalid boarding code. I'm being reprogrammed. Mission failllle S d fg dFGd fgSdljL4k saazc zi3h 2k-14n 23j8BNkfGn 34ofns mXQn34 gEdL434 5eRg et-34 dfgME4t34g e48853 34594
+        665=Master, relaying the incoming signal to you:<br><0><br>What should I send in response?
+        666=Hmm, I don't understand. Try this one...
+        670=<br>Identification: <0><br>Action: <clr>Boarding request<clrEnd><br>Verification: <clr>Boarding code<clrEnd><br>Algorithm: <1><br>Answer: <clr>Waiting for a response...<clrEnd><br>
+        673=<color=255,240,100>Message from the spy bot: </color><br>Mission completed. The collected information has been moved to storage. I'm going into standby mode.
+        675=Enter boarding code
+        676=Code sent. The docking gate opens. I'm going to make a landing.
+        685=Ah, this is just wonderful! Give us our <clr>R.D.P.C.<clrEnd> as soon as possible and we will immediately start analyzing the collected data!
+        688=Well, at least I can't accuse you of irrationality. Enjoy your existence, but remember - you failed science.
+        698=What's wrong with you, I did all this just for the sake of science
+        699=Also, let me express my personal gratitude to you. Not everyone would dare to risk their lives again to correct the mistakes of others.
+        703=A categorical no! Your gaps are your problem. And the distant prospects of galactic science do not excite me even more so
+        705=Trion Shield Generator
+        706=Trion Gripper
+        707=Trion Droid
+        708=Trion Scanner
+        709=Trion Radar
+        710=Trion Engine
+        711=Trion Fuel Tank
+        713=Magnificent work! With this information, we will finally be able to recreate the latest Dominator technology and prepare our own series of devices that will change our galaxy forever in the future! Well, they also will hasten the end of the war, of course.<br>As for you, we hope you will appreciate this <0>. This is only a prototype so far, but scientists assure that all the functions of a serial device have already been introduced into the design.
+        718=It is definitely possible, <Player>. Here's your choice of cloacing devices at our official rates:<br><0><br><1><br><2><br>So, what do you choose?
+        719=I would like to purchase a few more spare camouflages from you, if possible.
+        724=Scientific progress for me is above personal safety - I'm on it
+        728=Decent decision. In case of an unfavorable outcome, your potential self-sacrifice will not be forgotten.<br>We hand over <clr>R.D.P.C.<clrEnd> and the minimum required set of cloaking devices, one for each series. And if there are not enough camouflages, then you can always buy the missing number from us. And by the way, it is not necessary to return the extracted data to us. We'll relay your mission information to the other <clr>Faeyan<clrEnd> flagships so you don't have to waste time searching.
+        729=Perhaps I would like to purchase additional camouflages right now
+        730=Well, of course. However, we can sell them only at prices officially approved by the higher command:<br><0><br><1><br><2><br>What do you choose?
+        734=Of course. According to our information, you need to extract information from <0> <1>, using the <clr>R.D.P.C.<clrEnd> given to you for this purpose.
+        738=In that case, we'll immediately reload <clr>R.D.P.C.<clrEnd> with newer versions of spybots, as well as give you twice the amount of camouflage devices, two per series.<br>Do you need anything else?
+        741=Amazing! You not only fulfilled, but exceeded our entire plan! The data you brought back contains partial blueprints of things we couldn't even imagine. It seems that in the technical field, the Dominators outperformed our scientists much more than we thought. That's what a synthetic mind means!<br>Oh, that's right, you're expecting a reward for your work. Accept this <0> and <clr>set to replace the interlock system<clrEnd> in the trion device. It will allow you to easily adapt any trion development of our coalition colleagues to your own needs.
+        742=Well, since we are talking about colleagues, I strongly recommend giving their flagships a small visit. It is highly probable that their trion research has not progressed that far at all. I'm sure they'll be happy to accept a helping hand from you.
+        743=I'm afraid that the chance of surviving during such a mission is absolutely unacceptable for me
+        745=By the way, would you like to serve science one more time? The fact is that the <clr>R.D.P.C.<clrEnd> constructors made a couple of minor mistakes when programming the algorithms for the behavior of spy robots. Some of the data they were supposed to extract from the bertors is corrupted.<br>You will need to do another "run" to extract data from the <clr>five<clrEnd> other bertors to make sure you fill in the gaps. For this you will of course be rewarded with <0> and another small <clr>gift<clrEnd> that is currently undergoing lab testing.<br>What say you, <Player>? Are you ready to put your life on the line for the bright future of galactic science once again?
+        746=Well, it's sad, but your position is quite clear to me. I can't stop you any longer.
+        747=Certainly! The light of enlightenment is more precious to me than the light at the end of the tunnel of my own existence
+        748=No, this is exactly what I needed. I'm going to do the mission
+        750=Don't even think about refusing this award! This is less than we could pay you for your work.
+        751=In that case, I will certainly visit them. And thank you very much for the award!
+        756=Attention! The dominators were attracted by the strange behavior of the bertor, and the data passed by the <color=255,240,100>asynchronous convector</color> clearly pointed to you. Your camouflage has been revealed!
+        758=Attention! <color=255,240,100>Asynchronous convector</color> is not on board. Further transmission of data is not possible and the bertor is no longer subordinate to you.
+        760=Bertor <0> is captured by <color=255,240,100>asynchronous convector</color>. Don't move more than <color=255,240,100>250</color> mln. km. from it, otherwise the connection will be broken.
+        762=Attention! Data transmission of <color=255,240,100>asynchronous convector</color> is not possible at a distance greater than <color=255,240,100>250</color> mln. km. The captured bertor got free and activated <color=255,240,100>high security protocols</color>. It looks like you won't be able to capture it again.
+        764=I order you to jump into another system
+        765=dLKh fg cgbf gbFDngb vgbPOeQr et 87t 3yGMGh gh N 45t3 1 34B egIUrth 34383mn g fAfSn zWNer wErtkewTN e rt2 p Ery1
+        768=Cancel jump, over and out
+        774=st8asxtg2k23j42k<br>StArrrrt t0 EXEcutttt 0rderzzz...<br>hNsdljl4k,saAzc zi3h 2k-18n 23jk4nBKfgn 14ofns, mDFn24 gedL34 5eRg et-73 dfGme4t57g
+        775=Klissan
+        776=Pirates
+        777=Terronoids
+        778=Kelleroids
+        779=Blazeroids
+        780=Coalition
+        782=n42kuHDn2 iU3hkw bsDGwd<br>Wa1t1ng f0 inpu040Fuuut Oo0f cF0100ordinates...
+        785=101kb10kb1ssd_ojl1n0nl0ns<br>Ident1iFikazzion: <clr>Obffjekt <Player><clrEnd><br>Order: <clr>CZo0OoO0OOoZperation<clrEnd><br>StAZZZate: <clr>WaiTINg f0RR ordErZZZ...<clrEnd>
+        786=011ks38kB1sTd_ojl12rnl6mu<br>IdentZq1ifiQtion: <clr>Obfljekt <Player><clrEnd><br>Order: <clr>CooperrrRati0n<clrEnd><br>St444te: <clr>juM0110Mping inT0 sYsteeeem <0>...<clrEnd>
+        787=Course to
+        789=ErRr! ERr010or!<br>No SyStEEms found Zuit4ble fOOr th04Ae jumP!
+        793=Well, peace in the galaxy sometimes requires desperate sacrifices, and therefore I agree, even if by doing so I sign my own death warrant
+        795=It's a pity that you perceive this task as the ravings of a mad maloq, but I can't force you to change your mind. Go, enjoy life... As long as it is still in the Galaxy.
+        796=I see that you brought good news, but I don't see the <clr>asynchronous convector<clrEnd> filled with dominator data. Tell me, <Player>, didn't you lose him on the way to us from the joy that suddenly fell on your mind?
+        798=In no case! I just accidentally forgot it in one storage, but I'll be right back as soon as possible
+        800=bertor memory blocks
+        801=bertor memory blocks
+        802=bertor memory block
+        804=Well, in general, I got you five more blocks of memory. Now show me dominator's soul!
+        805=Clear. In that case, there is nothing else for us to talk about. I wish you good luck in your future aimless existence. Heretic.
+        806=Yes, sure! This will be the greatest discovery since the invention of technology to create hyperspatial bubbles!
+        808=No, this is exactly what I needed.So I will begin my great mission
+        816=Well, thank you very much for that
+        817=Thank you humbly
+        818=and may the <clr>Creator<clrEnd> be with you!
+        819=Okay, I'll visit them. And thank you for not cheating with my award
+        821=Pff! That's what you need, you fly for these blocks! You was going to look for the soul of the dominators? Ha!
+        826=This is the right attitude! Fingers crossd for you, we will be waiting for good news.<br>In addition to the <clr>Detacher<clrEnd>, we load five copies of the <clr>Intercom<clrEnd> program into your on-board computer, because without them you will not be able to establish normal contact with the Bertors. And by the way, it is not necessary to bring the energy cores to us. We'll relay your mission information to the rest of the <clr>human<clrEnd> flagships so you don't have to waste time searching.
+        827=Thank you very much for this. Building friendships is essential during this challenging time for the Galaxy.<br>Like last time, five copies of <clr>Intercom<clrEnd> are already loaded on your on-board computer. The assembled power cores can be delivered to any <clr>human<clrEnd> flagship. And remember - we believe in you, <Player>.
+        832=Are you crazy or what?! I can’t even understand what you want from me, and it’s even more difficult to survive in all this!
+        833=You are brave and wise, <Player>. I really hope that right now we are not sending you to your death, but this mission is too important to refuse it.<br>We are passing into your hands the <clr>asynchronous convector<clrEnd>, as well as the necessary set of camouflage devices, two each for each series, and five copies of the <clr>Intercom<clrEnd> program to establish contact with the bertors. And if there are not enough camouflages, then you can always buy the missing number from us. And by the way, it is not necessary to return the extracted data to us. We'll relay your mission information to the other <clr>gaalian<clrEnd> flagships so you don't have to waste time searching.
+        834=Of course <Player>. According to our data, you need to load <clr>asynchronous convector<clrEnd> with <0> <1> more.
+        835=Yes, yes, of course. According to our records, you still have <0> <1> to bring. And don't forget to put on the <clr>reconfigured localizer<clrEnd> when you're bashing those freaks.
+        836=Wow, already brought something, right? Give this to us, so that your cargo hold is not clogged.<br>According to our information, you still have <0> <1> to bring. And don't forget to put on the <clr>reconfigured localizer<clrEnd> when you're bashing those freaks.
+        837=Of course <Player>. According to our information, you need to scan <0> <1> more with the <clr>recon rrobe<clrEnd> given to you.
+        846=Although not, perhaps my current cloaking devices will be quite enough for me
+        853=and let him help in the second part of the mission prepared for you by the stars. Yes, don't be surprised. In fact, your task is not over yet.<br>The data you provided will only be enough for us to understand some of the basic technical features of the Dominators, but to truly defeat them, we need to understand much more... We need to understand their mechanical <clr>soul<clrEnd>.<br>You, <Player>, have been privileged to obtain the final missing pieces we need to fully understand the synthetic nature of these pitiless constructs. In total, we need <clr>five<clrEnd> additional <clr>memory blocks<clrEnd> of bertor to comprehend this secret knowledge, which, in the future, can put an end to the whole war! So, are you willing to take upon yourself the execution of this great plan?
+        854=So go, <Player>! Go and bring this hidden machine knowledge into our hungry hands!<br>Just give us a minute first to clear the <clr>asynchronous convector<clrEnd>'s memory and send you the camouflage devices and copies of <clr>Intercom<clrEnd> you need for the mission. .<br>Do you need anything else?
+        855=I'm sorry, what are you talking about? What kind of soul? Oh, I think I understand... You're the ranger that one of our crazy captain sent on an idiotic mission to search for data to comprehend the "soul of the dominators." Honestly, I thought it was just a tale. Well, who in their right mind would come up with the idea of risking their live to find the soul of a robot? After all, everyone knows that the decision <clr>of the Great Convention of June 13, 3295<clrEnd> was recognized as the complete absence of a soul in any synthetic mind. Before him, too many gaals simply refused to fight the invaders, not wanting to join the killing of other creatures, even mechanical ones. And so that you don't feel so offended, here's <0> and <clr>a set to replace the interlock system<clrEnd> in the trion device in addition. After all, you served our race excellently.
+        857=I also recommend flying to the flagships of other races. They may also have a job for you in the field of trionics.
+        858=This outcome was predetermined by the <clr>Universe<clrEnd> itself. <clr>The Universe<clrEnd> gives us a chance to defeat an unnatural enemy, and we will not miss this chance. The data you obtained for us will help us to create new equipment that will as powerful as the dominator samples.<br>And by the way, we were able to recreate something based on the data from the memory block we found earlier. So accept this <0> as a gift,
+        859=This is well done, this is our way! And as for goodies, we have a simple system here: you did the job - you got the award, so, <Player>, we give you <0>.<br>Well, since you are a brainy guy, then come on then, don't slow down. At the same pace, you will blow up <clr>six<clrEnd> more ships and we will have even more new equipment, and this will have a big blow to our enemies. I know that I ask a lot, but you must also understand me. In order for the clan to win, you need to use any available means.<br>In short, <clr>six<clrEnd> any flagships or bertors from you - one more <clr>Trion device<clrEnd> from us. You can start.
+        865=Trion Droid
+        873=<0>You, <Player>, are tasked with destroying at least <clr>five<clrEnd> enemy bertors and extracting five samples of <clr>unknown dominator modifications<clrEnd> from them. How to extract? For this purpose, the great minds of Maloqs have reconfigured the artifact <clr>"Blast Wave Localizer"<clrEnd>, so that now it will save only those modifications.<br>Well, do you have the courage to smash five bertors into atoms?
+        874=<0>You, <Player>, will have to spy for the benefit of science in general and the Peleng race in particular.<br>Our specialists will provide you with a reconnaissance probe, which is designed specifically for scanning dominator bertors. All you have to do is make sure that the Bertor does not leave the probe's coverage area until it has collected all the necessary information. Unfortunately, our probe also has a small flaw: it cannot scan a damaged bertor, since the dominator activates additional protection during the repair. Therefore, it is especially important that during the scanning process, the hull of the bertor remains <clr>in perfect condition<clrEnd>. Your task will be considered completed as soon as you have fully scanned <clr>five<clrEnd> different bertors. There is a prize for your efforts - <1>.<br>Scouting for secrets in the middle of the lair of a merciless enemy, it's so much fun, isn't it, <Player>?<br>
+        875=<0>Some time ago, our scientists made an extremely important discovery. It turns out that unknown dominator modifications aboard each bertor feed eight powerful <clr>energy cores<clrEnd>. You, <Player>, are entrusted with the responsible task of extracting <clr>five<clrEnd> of these cores, for which a special hacker program <clr>Detacher<clrEnd> will be loaded into your on-board computer.<br>Activate <clr>Detacher<clrEnd> is necessary at the moment when the bertor's hull is damaged in the amount of at least <clr>40%<clrEnd>, but not more than <clr>60%<clrEnd> of its total structure. It is at this point that the dominator's security systems will be most vulnerable to a hacker attack. Also, when activating the program, you will need to keep your ship at a distance of no more than <clr>250<clrEnd> mln. km. from bertor for some time, in order to avoid losses during the transmission of the code. Shortly after activating the <clr>Detacher<clrEnd>, bertor will receive an alarm and will eject one of its energy cores. Unfortunately, it is impossible to pick up the core immediately after it is dropped by bertor. Radiation emitted by the core during operation will have an absolutely lethal effect on a representative of any intelligent race, so you will have to <clr>wait<clrEnd> a few days before the core, disconnected from the onboard network, automatically stops generating energy and throwing streams of deadly particles outside. This is a difficult mission, but we are ready to give you <1> as a reward.<br>Yes, we are well aware that this task involves the highest risk, but you must agree that obtaining valuable information about our enemy is definitely worth it.
+        876=<0>You, <Player>, could make a tangible contribution to our scientific research. The fact is that we are extremely interested in studying of bertors, but at the current stage we need additional information, which you can help us to obtain.<br>You will be provided with a special device - <clr>R.D.P.C.<clrEnd> that launches a <clr>spybot<clrEnd> into outer space. The spybot is partially assembled from dominator wreckage and looks exactly like a klig, but is actually a modified Tranclucator. It's goal is to find the Bertor, make a landing, and extract the necessary data directly from it's internal memory unit, but don't worry, the robot itself will do it for you. However, hangar boarding codes of bertor change randomly, and you will need to use <clr>R.D.P.C.<clrEnd> again to decrypt them. Otherwise dominators simply will not let you to get close to their mother ship. In order to complete the research, we need to get information from <clr>five<clrEnd> different bertors.<br>And by the way, in case you did not understand, this task involves a huge risk to your life, but you won't be stopped by such trifles, right?<br>
+        877=<0>We have known for a long time that dominators of different series exchange information with each other, even if they don't do it very willingly. And now you, <Player>, will be able to confirm it yourself!<br>Quite by chance, after one of the fiercest dominator battles, we discovered <clr>memory block<clrEnd> of bertor. This block contained information about, so to speak, the "life activity" of the dominator, as well as direct evidence that this block is one of the first to self-destruct when the bertor receives serious damage from ships that do not belong to the "race" of Dominators. Therefore, your task will be to destroy the bertor of one Dominator series by the dominators of the other series.<br>For this non-trivial task, we have invented an <clr>asynchronous convector<clrEnd> that will overload the control systems of bertor, as a result of which it will be forced to execute an order to move to star system that you indicate to him. Before that, though, you will have to sneak as close as possible to this giant and give the <clr>asynchronous convector<clrEnd> a chance to take partial control of its actions. Well, all that remains for you to do after that is to give the jump order to the bertor, jump after him, before that changing the camouflage to the appropriate Dominator series, and watch how real dominators do all the dirty work for you. Most importantly, do not forget to pick up the surviving memory block of the destroyed bertor after their fight. <clr>Five<clrEnd> samples should be enough to complete the analysis.<br>Oh, and by the way, there's no point in bringing back the memory blocks themselves. Among other things, the asynchronous convector is configured to automatically transfer all the information it contains.<br>So, <Player>, what will be your decision?
+        878=Arxes
+        90=Yes sir!
+        FeiMission=Customer - <clr>Coalition<clrEnd>  Fleet  (<clr>fae<clrEnd>)<br><clr><clrEnd><br>You, <Player>, could make a tangible contribution to our scientific research. The fact is that we are extremely interested in studying bertors, but at the current stage we need additional information, which you can help us to obtain.<br>You will be provided with a special device - <clr>R.D.P.C.<clrEnd> that launches a <clr>spybot<clrEnd> into outer space. The spy is partially assembled from dominator wreckage and looks exactly like a klig, but is actually a modified tranclucator. It's goal is to find bertor, dock to it, and extract the necessary data directly from its internal memory unit, but don't worry, the robot will do it for you automatically. However, bertor's hangar boarding codes change randomly, and you'll need to use <clr>R.D.P.C.<clrEnd> again to decrypt them. Of course, to hide your presence in the system, you must use a camouflage device, otherwise dominators will not let you get close to their mother ship. In order to complete the research, we need to get information from <clr>five<clrEnd> different burthors.<br>And by the way, in case you didn't understand, this task involves a huge risk to your life, but you won't be stopped by such trifles, right?
+        FeiMission2=Customer - <clr>Coalition<clrEnd>  Fleet  (<clr>fae<clrEnd>)<br><clr><clrEnd><br>By the way, would you like to serve science one more time? The fact is that <clr>R.D.P.C.<clrEnd> constructors made a couple of minor mistakes when programming algorithms for the behavior of spy robots. Some of data they were supposed to extract from the bertors is corrupted.<br>You will need to do another "run" to extract data from the <clr>five<clrEnd> other bertors to make sure you fill in gaps. For this, of course, you will be rewarded with #ItemName# and another small <clr>gift<clrEnd> that is currently undergoing lab testing.<br>What will you say, <Player>? Are you ready to put your life on the line for the bright future of galactic science once again?
+        GaalMission=Customer - <clr>Coalition<clrEnd>  Fleet  (<clr>gaals<clrEnd>)<br><clr><clrEnd><br>We have known for a long time that dominators of different series exchange information with each other, even if they don't do it very willingly. And now you, <Player>, will be able to confirm it yourself!<br>Quite by chance, after one of the fiercest dominator battles, we discovered <clr>memory block<clrEnd> of bertor. This block contained information about, so to speak, the "life activity" of the dominator, as well as direct evidence that this block is one of the first to self-destruct when the bertor receives serious damage from ships that do not belong to the "race" of Dominators. Therefore, your task will be to destroy the bertor of one Dominator series by the dominators of the other series.<br>For this non-trivial task, we have invented an <clr>asynchronous convector<clrEnd> that will overload the control systems of bertor, as a result of which it will be forced to execute an order to move to star system that you indicate to him. Before that, though, you will have to sneak as close as possible to this giant and give the <clr>asynchronous convector<clrEnd> a chance to take partial control of its actions. Well, all that remains for you to do after that is to give the jump order to the bertor, jump after him, before that changing the camouflage to the appropriate Dominator series, and watch how real dominators do all the dirty work for you. Most importantly, do not forget to pick up the surviving memory block of the destroyed bertor after their fight. <clr>Five<clrEnd> samples should be enough to complete the analysis.<br>Oh, and by the way, there's no point in bringing back the memory blocks themselves. Among other things, the asynchronous convector is configured to automatically transfer all the information it contains.<br>So, <Player>, what will be your decision?
+        GaalMission2=Customer - <clr>Coalition<clrEnd>  Fleet  (<clr>gaals<clrEnd>)<br><clr><clrEnd><br>The data you provided will only be enough for us to understand some of the basic technical features of the Dominators, but to truly defeat them, we need to understand much more... We need to understand their mechanical <clr>soul<clrEnd>.<br>You, <Player>, have been privileged to obtain the final missing pieces we need to fully understand the synthetic nature of these pitiless constructs. In total, we need <clr>five<clrEnd> additional <clr>memory blocks<clrEnd> of bertor to comprehend this secret knowledge, which, in the future, can put an end to the whole war! So, are you willing to take upon yourself the execution of this great plan?
+        MalocMission=Customer - <clr>Coalition<clrEnd>  Fleet  (<clr>maloqs<clrEnd>)<br><clr><clrEnd><br>You, <Player>, are tasked with destroying at least <clr>five<clrEnd> enemy bertors and extracting five samples of <clr>unknown dominator modifications<clrEnd> from them. How to extract? For this purpose, the great minds of Maloqs have reconfigured the artifact <clr>"Blast Wave Localizer"<clrEnd>, so that now it will save only those modifications.<br>Well, do you have the courage to smash five bertors into atoms?
+        MalocMission2=Customer - <clr>Coalition<clrEnd>  Fleet  (<clr>maloqs<clrEnd>)<br><clr><clrEnd><br>But wait, we've just received terrible news! The unmanned transport capsule that was supposed to deliver the samples you obtained to the planet with the scientists crashed on landing. All cargo on board is lost! Oh, woe to us! I've been telling these engineers for a long time that the K-Boom capsules are not safe and need to be replaced as soon as possible!<br>Yes, it looks like our plans for the prosperity of Maloq science will remain dreams, except perhaps... Hey, <Player>, you already know how to mine these modifications. Be our friend, go get another batch, huh? <clr>Five<clrEnd> bertors - <clr>five<clrEnd> samples, and hurry. And we'll give you #ItemName# for it, and <clr>something <clrEnd> in addition. Well, agree, damn you!
+        MissionAccomplished=<color=0,255,0>Mission succesfully completed</color><br>
+        MissionFailed=<color=255,0,0>Mission failed</color><br>
+        MissionIsActive=<color=255,240,100>Mission in progress</color><br>
+        PelengMission=Customer - <clr>Coalition<clrEnd>  Fleet  (<clr>pelengs<clrEnd>)<br><clr><clrEnd><br>You, <Player>, will have to spy for the benefit of science in general and the Peleng race in particular.<br>Our specialists will provide you with a reconnaissance probe, which is designed specifically for scanning dominator bertors. All you have to do is make sure that the Bertor does not leave the probe's coverage area until it has collected all the necessary information. Unfortunately, our probe also has a small flaw: it cannot scan a damaged bertor, since the dominator activates additional protection during the repair. Therefore, it is especially important that during the scanning process, the hull of the bertor remains <clr>in perfect condition<clrEnd>. Your task will be considered completed as soon as you have fully scanned <clr>five<clrEnd> different bertors. There is a prize for your efforts - <1>.<br>Scouting for secrets in the middle of the lair of a merciless enemy, it's so much fun, isn't it, <Player>?
+        PelengMission2=Customer - <clr>Coalition<clrEnd>  Fleet  (<clr>pelengs<clrEnd>)<br><clr><clrEnd><br>By the way, we just received an urgent request from <clr>Dzuhallag<clrEnd>. It seems that the data you collected was not enough for them, and they asked me to tell you that if you agree to perform another "run" on the Dominator systems, then they will intercede for the issuance of #ItemName# to you and even promise a small <clr>bonus<clrEnd> on top. This time it's official.<br>So, will you help our valiant intelligence to scan <clr>five<clrEnd> more enemy Bertors or convey your polite refusal to them? Just keep in mind that in <clr>Dzuhallag<clrEnd> they don't like rejections. Especially polite rejections.
+        PeopleMission=Customer - <clr>Coalition<clrEnd>  Fleet  (<clr>humans<clrEnd>)<br><clr><clrEnd><br>Some time ago, our scientists made an extremely important discovery. It turns out that unknown dominator modifications aboard each bertor feed eight powerful <clr>energy cores<clrEnd>. You, <Player>, are entrusted with the responsible task of extracting <clr>five<clrEnd> of these cores, for which a special hacker program <clr>Detacher<clrEnd> will be loaded into your on-board computer.<br>Activate <clr>Detacher<clrEnd> is necessary at the moment when the bertor's hull is damaged in the amount of at least <clr>40%<clrEnd>, but not more than <clr>60%<clrEnd> of its total structure. It is at this point that the dominator's security systems will be most vulnerable to a hacker attack. Also, when activating the program, you will need to keep your ship at a distance of no more than <clr>250<clrEnd> mln. km. from bertor for some time, in order to avoid losses during the transmission of the code. Shortly after activating the <clr>Detacher<clrEnd>, bertor will receive an alarm and will eject one of its energy cores. Unfortunately, it is impossible to pick up the core immediately after it is dropped by bertor. Radiation emitted by the core during operation will have an absolutely lethal effect on a representative of any intelligent race, so you will have to <clr>wait<clrEnd> a few days before the core, disconnected from the onboard network, automatically stops generating energy and throwing streams of deadly particles outside. This is a difficult mission, but we are ready to give you <1> as a reward.<br>Yes, we are well aware that this task involves the highest risk, but you must agree that obtaining valuable information about our enemy is definitely worth it.
+        PeopleMission2=Customer - <clr>Coalition<clrEnd>  Fleet  (<clr>humans<clrEnd>)<br><clr><clrEnd><br>And while you are here, won't you agree to do one more task? The thing is, our business dealings with other races would really benefit from a little "push" of goodwill right now. I am talking about a valuable gift, which would ideally fit one of the power cores you got. The only problem is that all of the <clr>Earth Science Council<clrEnd> has already confiscated all the nuclei that were brought in for lab tests, so we desperately need new working samples now.<br>Would you agree, <Player>, to get us some more <clr>five<clrEnd> bertor energy cores? Of course, upon completion of the task, you will be rewarded in the form of #ItemName# and a small <clr>bonus<clrEnd> on top. What will you say, ranger?
+        PirateMission=Customer - <clr>pirate clan<clrEnd><br><clr><clrEnd><br>Wow! That's luck! Thanks <Player>, we don't have a case of this color yet. Oh, stop, after all, there is already a case of this color - throw it into space ... Wait, what are you doing?! A case, not a ranger, a ranger can still come in handy!<br>Okay, jokes aside. We have had this information for a long time, but we still do not have the necessary materials. Do you understand, <Player>, how cunningly this world works? To make these modifications, we need materials created by the Coalition and the dominators. To do this, in turn, it is necessary to destroy the <clr>flagships<clrEnd> and <clr>bertors<clrEnd>. The first is for the Coalition to finally become generous and pay for the production of modifications to strengthen their ships, some of which we will steal, and the second - to collect the missing parts that can be obtained exclusively from the dominators themselves. To start "production" it will be enough for us to destroy <clr>six<clrEnd> ships of any type.<br>So, are you going to get down to business, or will you refuse like all the other "applicants" for unique goodies?
+        PirateMission2=Customer - <clr>pirate clan<clrEnd><br><clr><clrEnd><br>Well, since you are a brainy guy, then come on then, don't slow down. At the same pace, you will blow up <clr>six<clrEnd> more ships and we will have even more new equipment, and this will have a big blow to our enemies. I know that I ask a lot, but you must also understand me. In order for the clan to win, you need to use any available means.<br>In short, <clr>six<clrEnd> any flagships or bertors from you - one more <clr>Trion device<clrEnd> from us. You can start.
+        PirateMission3=Customer - <clr>pirate clan<clrEnd><br><clr><clrEnd><br>Well, are you ready for the last blow? The task is still the same: destroy <clr>six<clrEnd> of any flagships or bertors. The supply of new equipment is already in full swing, but something is still missing and it is precisely these gaps that you have to fill.<br>In general, <Player>, once again all hope is on you. If you can do it - we will show you honor and honor not like a child.
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        Chameleon ^{
+            Detect=Attention! The enemies have guessed that you are not a real dominator!<br>Camouflage will not deceive them now.
+        }
+        CustomInfos ^{
+            ExpAcryn_GaalQuest_BertorInfo ^{
+                Description=Bertor's information box for dropping a memory block after death (hidden)
+                Icon=911
+                Name=
+                OnActCode ^{
+                    01=dword tdwd;
+                    02=dword tdwd2;
+                    03=dword tdwd3;
+                    04=dword tdwd4;
+                    05=if(ScriptItemActionType(t_OnDeath))
+                    06 ^{
+                        01=tdwd3 = CurInfo();
+                        02=tdwd4 = ScriptItemActShip();
+                        03=dword star = ShipStar(tdwd4);
+                        04=if(ShipStar(Player()) == star)
+                        05 ^{
+                            01=if(StarCustomFaction(star) == '')
+                            02 ^{
+                                01=if(PlayerChameleonCurType() == StarSeries(star))
+                                02 ^{
+                                    01=if(!PlayerChameleonDetected(StarSeries(star)))
+                                    02 ^{
+                                        01=if(ShipCustomShipInfoData(0, tdwd3, 1) > ShipCustomShipInfoData(0, tdwd3, 2) && ShipCustomShipInfoData(0, tdwd3, 1) > ItemSize(ShipItems(tdwd4, 0)) / 2)
+                                        02 ^{
+                                            01=GFlagGaalTempVar = 5;
+                                            02=tdwd = CreateQuestItem('ExpAcryn_BertorMemoryBlock_' + ItemSubrace(ShipItems(tdwd4, 0)));
+                                            03=LinkItemToScript(tdwd, GetValueFromScript('Mod_ExpAcryn', 'Q_item2'));
+                                            04=if(ItemOnActCode(tdwd) != '') ItemOnActCode(tdwd, '');
+                                            05=if(ItemOnUseCode(tdwd) != '') ItemOnUseCode(tdwd, '');
+                                            06=ItemSize(tdwd, 3);
+                                            07=ItemOwner(tdwd, Kling);
+                                            08=ItemSubrace(tdwd, ItemSubrace(ShipItems(tdwd4, 0)));
+                                            09=ShipAddDropItem(tdwd4, tdwd);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    07=else
+                    08 ^{
+                        01=tdwd3 = CurInfo();
+                        02=tdwd4 = ScriptItemActObject1();
+                        03=if(ObjectType(tdwd4) == 5)
+                        04 ^{
+                            01=if(ShipTypeN(tdwd4) == t_Kling || tdwd4 == Player()) ShipCustomShipInfoData(0, tdwd3, 1, ShipCustomShipInfoData(0, tdwd3, 1) + ScriptItemActParam());
+                            02=else ShipCustomShipInfoData(0, tdwd3, 2, ShipCustomShipInfoData(0, tdwd3, 2) + ScriptItemActParam());
+                        }
+                        05=else if(ObjectType(tdwd4) == 7)
+                        06 ^{
+                            01=if(MissileOwner(tdwd4))
+                            02 ^{
+                                01=if(ShipTypeN(MissileOwner(tdwd4)) == t_Kling || MissileOwner(tdwd4) == Player()) ShipCustomShipInfoData(0, tdwd3, 1, ShipCustomShipInfoData(0, tdwd3, 1) + ScriptItemActParam());
+                                02=else ShipCustomShipInfoData(0, tdwd3, 2, ShipCustomShipInfoData(0, tdwd3, 2) + ScriptItemActParam());
+                            }
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnTakingDamageEn,t_OnTakingDamageSp,t_OnTakingDamageMi,t_OnDeath
+            }
+            ExpAcryn_block_infos ^{
+                Description=Bertor activated enhanced security protocols. External access to the logical core and memory blocks is no longer possible.
+                Icon=911
+                Name=Enhanced security protocols
+                OnActCode ^{
+                    01=if(ScriptItemActionType(t_OnStep, 11))
+                    02 ^{
+                        01=if(!ShipCustomShipInfoData(0, CurInfo(), 1)) ShipCustomShipInfoData(0, CurInfo(), 1, CurTurn() + 182);
+                        02=if(ShipCustomShipInfoData(0, CurInfo(), 1) < CurTurn())
+                        03 ^{
+                            01=NoTalkToShip(ScriptItemActShip(), 0);
+                            02=ShipDeleteCustomShipInfo(ScriptItemActShip(), 'ExpAcryn_block_infos');
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnStep
+                OnActStepTypes=11
+            }
+            ExpAcryn_maloc_q_infos ^{
+                Description=Info box for 100% drop of unknown modifications for the task of maloqs
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=if(ScriptItemActionType(t_OnStep, 0))
+                    02 ^{
+                        01=ShipCustomShipInfoTextData(0, CurInfo(), 3, '');
+                    }
+                    03=if(ScriptItemActionType(t_OnStep, 11))
+                    04 ^{
+                        01=if(HullDamage(ScriptItemActShip()) < 40) ShipDeleteCustomShipInfo(ScriptItemActShip(), 'ExpAcryn_maloc_q_infos');
+                    }
+                    05=if(ScriptItemActionType(t_OnTakingDamageEn) || ScriptItemActionType(t_OnTakingDamageSp) || ScriptItemActionType(t_OnTakingDamageMi))
+                    06 ^{
+                        01=dword attacker = ScriptItemActObject1();
+                        02=if(ScriptItemActObject1() != Player())
+                        03 ^{
+                            01=if(ObjectType(attacker) != 7) exit;
+                            02=if(MissileOwner(attacker) != Player()) exit;
+                        }
+                        04=if(ScriptItemActParam() < HullHP(ScriptItemActShip())) exit;
+                        05=ShipCustomShipInfoTextData(0, CurInfo(), 3, 'Drop');
+                    }
+                    07=if(ScriptItemActionType(t_OnDeath))
+                    08 ^{
+                        01=if(ShipCustomShipInfoTextData(0, CurInfo(), 3) == 'Drop')
+                        02 ^{
+                            01=int i = 0;
+                            02=int bon = FindBonusByCustomTag('Akrin_dom_ship');
+                            03=dword item = 0;
+                            04=dword ship = ScriptItemActShip();
+                            05=for(i = ShipItems(ship) - 1; i > 0; i = i - 1)
+                            06 ^{
+                                01=item = ShipItems(ship, i);
+                                02=if(EqSpecial(item) == -1) continue;
+                                03=if(EqSpecial(item) != bon) continue;
+                                04=GetItemFromShip(ship, FindItemInShip(ship, item));
+                                05=str item_name = Name(item);
+                                06=EqSpecial(item, FindBonusByCustomTag('ExpAcryn_ship_maloc'));
+                                07=SetName(item, item_name);
+                                08=ShipAddDropItem(ship, item);
+                                09=break;
+                            }
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnStep,t_OnTakingDamageEn,t_OnTakingDamageSp,t_OnTakingDamageMi,t_OnDeath
+                OnActStepTypes=0,11
+            }
+            ExpAcryn_mimi_player_infos ^{
+                Description=Sends an emergency signal to the Bertor to reset a supposedly faulty energy core.
+                Icon=3
+                Name=Detacher
+            }
+        }
+    }
+}
+Artefacts ^{
+    CustomArtefacts ^{
+        ExpAcryn_RetunnedBlastWaveLocalizer ^{
+            Broken=(repair required)
+            BrokenInBattle=Attention! During the battle, the reconfigured blast wave localizer was hit and damaged. Repair required.
+            BrokenInUse=As a result of long operation, too much cosmic dust clogged into the reconfigured blast wave localizer, and it began to malfunction.
+            Name=Reconfigured blast wave localizer
+            OnActCode ^{
+                01=if(ScriptItemActionType(t_OnWeaponShot2) || ScriptItemActionType(t_OnMissileShot2))
+                02 ^{
+                    01=if(!ItemDurability(CurItem())) exit;
+                    02=dword ship = ScriptItemActObject1();
+                    03=if(ShipTypeN(ship) != t_Kling) exit;
+                    04=if(ShipSubType(ship) != 6) exit;
+                    05=if(HullDamage(ship) >= 60) ShipAddCustomShipInfo(ship, 'ExpAcryn_maloc_q_infos', 'NoShow');
+                }
+            }
+            OnActCodeTypes=t_OnWeaponShot2,t_OnMissileShot2
+            Size=10
+            Text=Keeps the equipment of unknown <color=255,240,100>dominator</color> modification when bertor is destroyed.
+        }
+    }
+}
+SpyNames ~{
+    1=Fisher
+    2=Solid
+    3=Archer
+    Count=3
+}
+UselessItems ^{
+    ExpAcryn_BertorMemoryBlock_0 ^{
+        Cost=Average
+        Name=Bertor memory block
+        NameEmpty=Empty bertor memory block
+        OnActCode ^{
+            01=if(ExpAcrynQuestStatus == 4)
+            02 ^{
+                01=dword cur_item = CurItem();
+                02=dword tdwd;
+                03=if(!UselessItemData(cur_item, 1))
+                04 ^{
+                    01=if(FindItemInShip(Player(), cur_item) > -1)
+                    02 ^{
+                        01=if(ItemIn(GetValueFromScript('Mod_ExpAcryn', 'Q_item'), Player()))
+                        02 ^{
+                            01=tdwd = ScriptItemToItem(GetValueFromScript('Mod_ExpAcryn', 'Q_item'));
+                            02=if(UselessItemData(tdwd, 1) < 100)
+                            03 ^{
+                                01=UselessItemData(tdwd,1,UselessItemData(tdwd,1)+20);
+                                02=if(UselessItemData(tdwd,1)>100)UselessItemData(tdwd,1,100);
+                                03=SetName(cur_item,CT('UselessItems.'+EquipmentImageName(cur_item)+'.NameEmpty'));
+                                04=UselessItemText(cur_item,CT('UselessItems.'+EquipmentImageName(cur_item)+'.TextEmpty'));
+                                05=ItemCost(cur_item,ItemCost(cur_item)/4);
+                                06=NewsAdd(CT('UselessItems.'+EquipmentImageName(cur_item)+'.TextLoaded'));
+                                07=UselessItemData(cur_item,1,1);
+                                08=if(ItemInScript(cur_item)==1)ReleaseItemFromScript(cur_item);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        OnActCodeTypes=t_OnStep
+        OnActStepTypes=11
+        Owner=Kling
+        Size=3
+        Text=It contains detailed information about the entire "life activity" of bertor.
+        TextEmpty=All information from this memory block has been transferred to the <color=255,240,100>asynchronous convector</color>.
+        TextLoaded=All information from the bertor's memory block was successfully transferred to the <color=255,240,100>asynchronous convector</color>.
+    }
+    ExpAcryn_BertorMemoryBlock_1 ^{
+        Cost=Average
+        Name=Bertor memory block
+        NameEmpty=Empty bertor memory block
+        OnActCode ^{
+            01=if(ExpAcrynQuestStatus==4)
+            02 ^{
+                01=dword cur_item=CurItem();
+                02=dword tdwd;
+                03=if(!UselessItemData(cur_item,1))
+                04 ^{
+                    01=if(FindItemInShip(Player(),cur_item)>-1)
+                    02 ^{
+                        01=if(ItemIn(GetValueFromScript('Mod_ExpAcryn','Q_item'),Player()))
+                        02 ^{
+                            01=tdwd=ScriptItemToItem(GetValueFromScript('Mod_ExpAcryn','Q_item'));
+                            02=if(UselessItemData(tdwd,1)<100)
+                            03 ^{
+                                01=UselessItemData(tdwd,1,UselessItemData(tdwd,1)+20);
+                                02=if(UselessItemData(tdwd,1)>100)UselessItemData(tdwd,1,100);
+                                03=SetName(cur_item,CT('UselessItems.'+EquipmentImageName(cur_item)+'.NameEmpty'));
+                                04=UselessItemText(cur_item,CT('UselessItems.'+EquipmentImageName(cur_item)+'.TextEmpty'));
+                                05=ItemCost(cur_item,ItemCost(cur_item)/4);
+                                06=NewsAdd(CT('UselessItems.'+EquipmentImageName(cur_item)+'.TextLoaded'));
+                                07=UselessItemData(cur_item,1,1);
+                                08=if(ItemInScript(cur_item)==1)ReleaseItemFromScript(cur_item);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        OnActCodeTypes=t_OnStep
+        OnActStepTypes=11
+        Owner=Kling
+        Size=3
+        Text=It contains detailed information about the entire "life activity" of bertor.
+        TextEmpty=All information from this memory block has been transferred to the <color=255,240,100>asynchronous convector</color>.
+        TextLoaded=All information from the bertor's memory block was successfully transferred to the <color=255,240,100>asynchronous convector</color>.
+    }
+    ExpAcryn_BertorMemoryBlock_2 ^{
+        Cost=Average
+        Name=Bertor memory block
+        NameEmpty=Empty bertor memory block
+        OnActCode ^{
+            01=if(ExpAcrynQuestStatus==4)
+            02 ^{
+                01=dword cur_item=CurItem();
+                02=dword tdwd;
+                03=if(!UselessItemData(cur_item,1))
+                04 ^{
+                    01=if(FindItemInShip(Player(),cur_item)>-1)
+                    02 ^{
+                        01=if(ItemIn(GetValueFromScript('Mod_ExpAcryn','Q_item'),Player()))
+                        02 ^{
+                            01=tdwd=ScriptItemToItem(GetValueFromScript('Mod_ExpAcryn','Q_item'));
+                            02=if(UselessItemData(tdwd,1)<100)
+                            03 ^{
+                                01=UselessItemData(tdwd,1,UselessItemData(tdwd,1)+20);
+                                02=if(UselessItemData(tdwd,1)>100)UselessItemData(tdwd,1,100);
+                                03=SetName(cur_item,CT('UselessItems.'+EquipmentImageName(cur_item)+'.NameEmpty'));
+                                04=UselessItemText(cur_item,CT('UselessItems.'+EquipmentImageName(cur_item)+'.TextEmpty'));
+                                05=ItemCost(cur_item,ItemCost(cur_item)/4);
+                                06=NewsAdd(CT('UselessItems.'+EquipmentImageName(cur_item)+'.TextLoaded'));
+                                07=UselessItemData(cur_item,1,1);
+                                08=if(ItemInScript(cur_item)==1)ReleaseItemFromScript(cur_item);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        OnActCodeTypes=t_OnStep
+        OnActStepTypes=11
+        Owner=Kling
+        Size=3
+        Text=It contains detailed information about the entire "life activity" of bertor.
+        TextEmpty=All information from this memory block has been transferred to the <color=255,240,100>asynchronous convector</color>.
+        TextLoaded=All information from the bertor's memory block was successfully transferred to the <color=255,240,100>asynchronous convector</color>.
+    }
+    Mod_ExpAcryn_case ^{
+        Cost=Small
+        Name=Case with secret information
+        OnUseCode ^{
+            01=if(UselessItemData(CurItem(),3)>=3 || UselessItemData(CurItem(),2)==1)MessageBox(CT('FormInfo.Mod_ExpAcryn_ether2'));
+            02=if(UselessItemData(CurItem(),3)<3 && UselessItemData(CurItem(),2)!=1)
+            03 ^{
+                01=if(MessageBoxYesNo('The small screen of the case flashed the phrase:'+CT('FormInfo.br')+' '+CT('FormInfo.br')+'<color=0,50,200>What is the final Answer to the Ultimate Question of Life, The Universe, and Everything?</color>'+CT('FormInfo.br')+' '+CT('FormInfo.br')+'Would you like to enter an answer?'))
+                02 ^{
+                    01=UselessItemData(CurItem(),3,UselessItemData(CurItem(),3)+1);
+                    02=str answ=TextBox('Your answer:');
+                    03=if(lowercase(answ)=='42')
+                    04 ^{
+                        01=MessageBox(CT('FormInfo.Mod_ExpAcryn_ether'));
+                        02=UselessItemData(CurItem(),2,1);
+                    }
+                    05=else MessageBox('Your answer is wrong!');
+                }
+            }
+        }
+        Owner=Maloc
+        Size=1
+        Text=A case with secret information protected by a complex password. Must be delivered to the nearest <color=255,240,100>flagship</color>.
+    }
+    Mod_ExpAcryn_feiitem ^{
+        Cost=Average
+        Name=R.D.P.C.
+        OnActCode ^{
+            01=if(HullHP(Player())>0)
+            02 ^{
+                01=if(ItemInScript(CurItem())==1)
+                02 ^{
+                    01=if(EtherState('ExpAcryn_quest_3')>-1)
+                    02 ^{
+                        01=str missionNum='';
+                        02=if(GetValueFromScript('Mod_ExpAcryn','fl_array',ExpAcrynQuestStatus,1)!=1)missionNum='2';
+                        03=Ether(5,'ExpAcryn_quest_3',CT('Script.Mod_ExpAcryn.MissionFailed')+Format(CT('Script.Mod_ExpAcryn.FeiMission'+missionNum),'#ItemName#',GetValueFromScript('Mod_ExpAcryn','addItemName')));
+                    }
+                    03=for(int i=0;i<GalaxyStars();i=i+1)
+                    04 ^{
+                        01=dword tdwd=GalaxyStar(i);
+                        02=if(StarOwner(tdwd)!=0)continue;
+                        03=for(int j=0;j<StarPlanets(tdwd);j=j+1)
+                        04 ^{
+                            01=dword tdwd2=StarPlanets(tdwd,j);
+                            02=if(PlanetOwner(tdwd2)!=ExpAcrynQuestStatus)continue;
+                            03=RelationToRanger(tdwd2,Player(),RelationToRanger(tdwd2,Player())-75);
+                            04=if(RelationToRanger(tdwd2,Player())<10)RelationToRanger(tdwd2,Player(),10);
+                        }
+                    }
+                    05=GFlagFeiTempVar=0;
+                    06=ExpAcrynQuestStatus=7;
+                }
+            }
+        }
+        OnActCodeTypes=t_OnItemDestroy
+        OnUseCode ^{
+            01=if(ShipInNormalSpace(Player()))
+            02 ^{
+                01=if(UselessItemData(CurItem(),1)>=100)
+                02 ^{
+                    01=MessageBox('Information storage blocks are full. Deliver the device to any <color=0,50,200>faeyan</color> flagship.');
+                    02=exit;
+                }
+                03=if(GFlagFeiTempVar!=0 && GFlagFeiTempVar!=10)
+                04 ^{
+                    01=MessageBox('Spybot is already active');
+                    02=exit;
+                }
+                05=if(!UselessItemData(CurItem(),2))
+                06 ^{
+                    01=MessageBox('You ran out of spy robots');
+                    02=exit;
+                }
+                07=int tint=1000000;
+                08=int tint2=0;
+                09=dword tdwd;
+                10=dword tdwd2;
+                11=dword tdwd3;
+                12=dword tdwd4;
+                13=for(int i=0;i<StarShips(ShipStar(Player()));i=i+1)
+                14 ^{
+                    01=tdwd2=StarShips(ShipStar(Player()),i);
+                    02=if(ShipTypeN(tdwd2)!=t_Kling)continue;
+                    03=if(ShipCustomFaction(tdwd2)!='')continue;
+                    04=if(!ShipInNormalSpace(tdwd2))continue;
+                    05=if(Dist(tdwd2,Player())<=tint)
+                    06 ^{
+                        01=tint=Dist(tdwd2,Player());
+                        02=tdwd3=tdwd2;
+                    }
+                    07=if(ShipSubType(tdwd2)!=6)continue;
+                    08=if(ShipFindCustomShipInfoByType(tdwd2,'ExpAcryn_block_infos')!=-1)
+                    09 ^{
+                        01=tint2=-1;
+                        02=continue;
+                    }
+                    10=if(ShipInScript(tdwd2))continue;
+                    11=if(ItemSubrace(ShipItems(tdwd2,0))==PlayerChameleonCurType() && !PlayerChameleonDetected(ItemSubrace(ShipItems(tdwd2,0))))tint2=3+ItemSubrace(ShipItems(tdwd2,0));
+                    12=if(ItemSubrace(ShipItems(tdwd2,0))!=PlayerChameleonCurType())tint2=1;
+                    13=if(ItemSubrace(ShipItems(tdwd2,0))==PlayerChameleonCurType() && PlayerChameleonDetected(ItemSubrace(ShipItems(tdwd2,0))))tint2=2;
+                    14=tdwd4=tdwd2;
+                }
+                15=if(tint2<=0)
+                16 ^{
+                    01=if(tint2==0)MessageBox('No bertors in this system');
+                    02=else MessageBox('The system does not have bertors that suitable for'+CT('FormInfo.br')+'spy');
+                    03=exit;
+                }
+                17=else if(tint2==1)
+                18 ^{
+                    01=if(PlayerChameleonCurType()==-1)MessageBox('Before launching the spy robot, you must activate the camouflage');
+                    02=else MessageBox('Your camouflage does not match the required dominator series');
+                }
+                19=else if(tint2==2)MessageBox('Your camouflage is revealed, it is impossible to launch a spy robot');
+                20=else if(tint2>=3)
+                21 ^{
+                    01=int range=ShipRadarRange(tdwd3);
+                    02=if(range>2500)range=2500;
+                    03=if(Dist(tdwd3,Player())>range)
+                    04 ^{
+                        01=tdwd2=ShipStar(Player());
+                        02=tint=StarSeries(tdwd2);
+                        03=StarSeries(tdwd2,tint2-3);
+                        04=tdwd=BuyDomikExtremal(StarPlanets(tdwd2,0),7);
+                        05=NoDropToShip(tdwd,1);
+                        06=StarSeries(tdwd2,tint);
+                        07=SetName(tdwd,CT('SpyNames.'+Rnd(1,CT('SpyNames.Count')))+' -'+Rnd(10,99)+'-');
+                        08=TransferShip(tdwd,tdwd2);
+                        09=ShipSetCoords(tdwd,CoordX(Player())-50,CoordY(Player())-50);
+                        10=GFlagFeiTempVar=tdwd;
+                        11=tdwd=GetItemFromVault('Mod_ExpAcryn_Semerenka');
+                        12=CreateActCodeEvent(t_OnStep,tdwd,GFlagFeiTempVar,0,0,0);
+                        13=OrderFollowShip(GFlagFeiTempVar,tdwd4,0);
+                        14=GFlagFeiTempVar=tdwd4;
+                        15=CreateActCodeEvent(t_OnStep,tdwd,GFlagFeiTempVar,0,0,1);
+                        16=PutItemInVault('Mod_ExpAcryn_Semerenka',tdwd);
+                        17=GFlagFeiTempVar=1;
+                        18=UselessItemData(CurItem(),2,UselessItemData(CurItem(),2)-1);
+                        19=Sound('Sound.UseATranc');
+                        20=MessageBox('Spybot successfully launched and sent to <color=0,50,200>'+Name(tdwd4)+'</color>');
+                    }
+                    05=else MessageBox('You are too close to the dominator ships, it is not possible to launch a spybot');
+                }
+            }
+            03=else MessageBox(CT('FormShip.UseOnlyInSpace'));
+        }
+        Owner=Fei
+        Size=50
+        Text=Robotic decryption portable complex or<color=255,240,100>R.D.P.C.</color> Serves for quick assembly of <color=255,240,100>spybots</color> from pre-prepared spare parts, as well as for storing information collected by them. Contains various programs and complex algorithms for <color=255,240,100>decryption</color> of dominator codes.
+        Text=<clr><clrEnd>
+        Text=Available to launch spy robots: <Data2>.
+        Text=Information storage blocks are full on: <color=255,240,100><Data1>%</color>
+    }
+    Mod_ExpAcryn_gaalitem ^{
+        Cost=Average
+        Name=Asynchronous convector
+        OnActCode ^{
+            01=if(HullHP(Player()) > 0)
+            02 ^{
+                01=if(ItemInScript(CurItem())==1)
+                02 ^{
+                    01=if(EtherState('ExpAcryn_quest_4') > -1)
+                    02 ^{
+                        01=str missionNum = '';
+                        02=if(GetValueFromScript('Mod_ExpAcryn','fl_array',ExpAcrynQuestStatus, 1) != 1) missionNum = '2';
+                        03=Ether(5, 'ExpAcryn_quest_4', CT('Script.Mod_ExpAcryn.MissionFailed') + Format(CT('Script.Mod_ExpAcryn.GaalMission' + missionNum), '#ItemName#', GetValueFromScript('Mod_ExpAcryn', 'addItemName')));
+                    }
+                    03=for(int i = 0; i < GalaxyStars(); i = i + 1)
+                    04 ^{
+                        01=dword tdwd = GalaxyStar(i);
+                        02=if(StarOwner(tdwd) != 0) continue;
+                        03=for(int j = 0; j < StarPlanets(tdwd); j = j + 1)
+                        04 ^{
+                            01=dword tdwd2 = StarPlanets(tdwd, j);
+                            02=if(PlanetOwner(tdwd2) != ExpAcrynQuestStatus) continue;
+                            03=RelationToRanger(tdwd2, Player(), RelationToRanger(tdwd2, Player()) - 75);
+                            04=if(RelationToRanger(tdwd2, Player()) < 10) RelationToRanger(tdwd2, Player(), 10);
+                        }
+                    }
+                    05=GFlagGaalTempVar = 0;
+                    06=ExpAcrynQuestStatus = 7;
+                }
+            }
+        }
+        OnActCodeTypes=t_OnItemDestroy
+        Owner=Gaal
+        Size=25
+        Text=Passes a chaotic stream of data mixed with malicious code to the nearest bertor. As a result of this sabotage, the dominator loses the opportunity to use its attack protocols, and also opens a "window" for receiving a command to <color=255,240,100>relocation</color>. In addition, the convector acts as a temporary <color=255,240,100>storage</color> for the collected dominator data.
+        Text=<clr><clrEnd>
+        Text=Blocks of information storage are filled on: <color=255,240,100><Data1>%</color>
+    }
+    Mod_ExpAcryn_item_1 ^{
+        Cost=Small
+        Name=Set for replacement of interlock system in <br>trion equipment
+        OnActCode ^{
+            01=if(ScriptItemActionType(t_OnCheckingUsability))
+            02 ^{
+                01=dword itemCh=ScriptItemActObject1();
+                02=if(EqSpecial(itemCh)==-1)exit;
+                03=if(substr(BonusCustomTag(EqSpecial(itemCh)),0,6)!='Fakrin')exit;
+                04=int akrin_raceCh=substr(BonusCustomTag(EqSpecial(itemCh)),7,1);
+                05=if(akrin_raceCh==ShipOwner(Player()))exit;
+                06=ScriptItemActParam(1);
+            }
+            03=if(ScriptItemActionType(t_OnAnotherItem))
+            04 ^{
+                01=dword item=ScriptItemActObject1();
+                02=if(EqSpecial(item)==-1)exit;
+                03=if(substr(BonusCustomTag(EqSpecial(item)),0,6)!='Fakrin')exit;
+                04=int akrin_race=substr(BonusCustomTag(EqSpecial(item)),7,1);
+                05=if(akrin_race==ShipOwner(Player()))
+                06 ^{
+                    01=MessageBox('<color=0,50,200>Interlock system</color> of additional features of this equipment <color=0,50,200>matches</color> with the race of the pilot and does not need to be replaced.');
+                    02=exit;
+                }
+                07=if(akrin_race!=ShipOwner(Player()))
+                08 ^{
+                    01=str akrin_tag;
+                    02=if(ShipOwner(Player())<5)akrin_tag='Fakrin_'+ShipOwner(Player())+substr(BonusCustomTag(EqSpecial(item)),8,4);
+                    03=if(ShipOwner(Player())>5)akrin_tag='Fakrin_5'+substr(BonusCustomTag(EqSpecial(item)),8,4);
+                    04=if(MessageBoxYesNo('Are you sure you want to replace <color=0,50,200>interlock system</color> to <color=0,50,200>'+DeleteTags(Name(item))+'</color>?'))
+                    05 ^{
+                        01=EqSpecial(item,-1);
+                        02=EqSpecial(item,FindBonusByCustomTag(akrin_tag));
+                        03=ScriptItemActParam(1);
+                    }
+                }
+            }
+        }
+        OnActCodeTypes=t_OnCheckingUsability,t_OnAnotherItem
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+        Size=1
+        Text=Disposable kit for modification of trion equipment. It contains universal keys for hacking, as well as a complete set of blocking systems that prevent the activation of additional properties of <color=255,240,100>trion</color> equipment. Allows to change the blocking system <color=255,240,100>for the current race of the pilot</color>.
+    }
+    Mod_ExpAcryn_item_2 ^{
+        Cost=Small
+        Name=High strength Trion parts set
+        OnActCode ^{
+            01=if(ScriptItemActionType(t_OnCheckingUsability))
+            02 ^{
+                01=dword itemCh=ScriptItemActObject1();
+                02=if(EqSpecial(itemCh)==-1)exit;
+                03=if(substr(BonusCustomTag(EqSpecial(itemCh)),0,6)!='Fakrin')exit;
+                04=ScriptItemActParam(1);
+            }
+            03=if(ScriptItemActionType(t_OnAnotherItem))
+            04 ^{
+                01=dword item=ScriptItemActObject1();
+                02=if(EqSpecial(item)==-1)exit;
+                03=if(substr(BonusCustomTag(EqSpecial(item)),0,6)!='Fakrin')exit;
+                04=if(MessageBoxYesNo('Are you sure you want to set <color=0,50,200>High strength Trion parts</color> to <color=0,50,200>'+DeleteTags(Name(item))+'</color>?'))
+                05 ^{
+                    01=ItemExtraSpecialsAddByType(item,FindBonusByName('TrionicFragility_50_plus'));
+                    02=ScriptItemActParam(1);
+                }
+            }
+        }
+        OnActCodeTypes=t_OnCheckingUsability,t_OnAnotherItem
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+        Size=1
+        Text=Disposable kit for modification of trion equipment. A number of standard factory parts are replaced with parts of increased strength, which allows you to increase the service life of any <color=255,240,100>trion</color> equipment <color=255,240,100>one and a half times</color>.
+    }
+    Mod_ExpAcryn_mimi ^{
+        Cost=Average
+        Name=Energy core
+        OnActCode ^{
+            01=if(ScriptItemActionType(t_OnItemPickUp))
+            02 ^{
+                01=if(UselessItemData(CurItem(),1))
+                02 ^{
+                    01=OrderNone(ScriptItemActShip());
+                    02=OrderLock(ScriptItemActShip(),1);
+                    03=UselessItemData(CurItem(),3,1);
+                    04=UselessItemText(CurItem(),CT('UselessItems.Mod_ExpAcryn_mimi.Text'));
+                }
+                03=else UselessItemText(CurItem(),CT('UselessItems.Mod_ExpAcryn_mimi.Text'));
+            }
+            03=if(ScriptItemActionType(t_OnStep,0))
+            04 ^{
+                01=if(UselessItemData(CurItem(),3)==-100)
+                02 ^{
+                    01=CustomLose('As soon as the doors of the cargo airlock slammed behind the energy core, deadly radiation, not much inferior in strength to stellar radiation, generously sprayed all the compartments, temporarily turning your ship into a terrible likeness of an atomic oven. You are dead, <Player>, and now all the glory goes to the other rangers! But your name will be permanently included in the list of war heroes, and the family will receive the required insurance in the amount of <Money> cr.');
+                }
+            }
+            05=if(ScriptItemActionType(t_OnStep,11))
+            06 ^{
+                01=if(UselessItemData(CurItem(),3))
+                02 ^{
+                    01=UselessItemData(CurItem(),3,-100);
+                }
+            }
+        }
+        OnActCodeTypes=t_OnItemPickUp,t_OnStep
+        OnActStepTypes=0,11
+        Owner=Kling
+        Size=25
+        Text=One of the eight main energy sources of the bertor. Among other things, it provides energy to unknown modifications of dominator equipment.
+    }
+    Mod_ExpAcryn_zond ^{
+        Cost=Average
+        Name=Peleng recon probe
+        OnActCode ^{
+            01=if(ScriptItemActionType(t_OnItemPickUp))
+            02 ^{
+                01=UselessItemData(CurItem(),3,-1);
+                02=if(UselessItemData(CurItem(),2)==100)UselessItemData(CurItem(),2,0);
+            }
+            03=else if(ScriptItemActionType(t_OnDropItemFixed))
+            04 ^{
+                01=UselessItemData(CurItem(),3,Id(ShipStar(ScriptItemActShip())));
+            }
+            05=else
+            06 ^{
+                01=if(HullHP(Player())>0)
+                02 ^{
+                    01=if(ItemInScript(CurItem())==1)
+                    02 ^{
+                        01=if(EtherState('ExpAcryn_quest_1')>-1)
+                        02 ^{
+                            01=str missionNum='';
+                            02=if(GetValueFromScript('Mod_ExpAcryn','fl_array',ExpAcrynQuestStatus,1)!=1)missionNum='2';
+                            03=Ether(5,'ExpAcryn_quest_1',CT('Script.Mod_ExpAcryn.MissionFailed')+Format(CT('Script.Mod_ExpAcryn.PelengMission'+missionNum),'#ItemName#',GetValueFromScript('Mod_ExpAcryn','addItemName')));
+                        }
+                        03=for(int i=0;i<GalaxyStars();i=i+1)
+                        04 ^{
+                            01=dword tdwd=GalaxyStar(i);
+                            02=if(StarOwner(tdwd)!=0)continue;
+                            03=for(int j=0;j<StarPlanets(tdwd);j=j+1)
+                            04 ^{
+                                01=dword tdwd2=StarPlanets(tdwd,j);
+                                02=if(PlanetOwner(tdwd2)!=ExpAcrynQuestStatus)continue;
+                                03=RelationToRanger(tdwd2,Player(),RelationToRanger(tdwd2,Player())-75);
+                                04=if(RelationToRanger(tdwd2,Player())<10)RelationToRanger(tdwd2,Player(),10);
+                            }
+                        }
+                        05=ExpAcrynQuestStatus=7;
+                    }
+                }
+            }
+        }
+        OnActCodeTypes=t_OnItemPickUp,t_OnDropItemFixed,t_OnItemDestroy
+        Owner=Peleng
+        Size=25
+        Text=Scans the nearest <color=255,240,100>intact bertor</color>. Disguised as space debris and equipped with a system for absorbing outgoing radiation, due to which it is of no interest<br>even for dominators.
+        Text=<br> <br>Collected information about the current target: <color=255,240,100><Data2>%</color>
+        Text=Information storage blocks are full on: <color=255,240,100><Data1>%</color>
+    }
+}

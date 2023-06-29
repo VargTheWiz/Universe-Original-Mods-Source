@@ -1,0 +1,12 @@
+BV ^{
+    OnStart ^{
+        Mod_AltStart ^{
+            01=ScriptRun(ShipStar(Player()), GetShipPlanet(Player()), 'Mod_AltStart');
+        }
+    }
+}
+Data ^{
+    Script ^{
+        Mod_AltStart=1,Script.Mod_AltStart
+    }
+}

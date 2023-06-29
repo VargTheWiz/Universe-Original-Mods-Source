@@ -1,0 +1,17 @@
+Bm ~{
+    FormShip2 ~{
+        2AI_619=Mods\Expansion\ExpHullsBases\DATA\Infos\PowerCore.gi
+        2AI_619L=Mods\Expansion\ExpHullsBases\DATA\Infos\PowerCore_L.gi
+        2AI_888=Mods\Expansion\ExpHullsBases\DATA\Infos\PortalGen.gi
+        2AI_888L=Mods\Expansion\ExpHullsBases\DATA\Infos\PortalGen_L.gi
+    }
+}
+Sound ~{
+    PG_Activation=Mods\Expansion\ExpHullsBases\DATA\Sounds\Activation.wav
+    PG_Deactivation=Mods\Expansion\ExpHullsBases\DATA\Sounds\Deactivation.wav
+    PG_InWork=Mods\Expansion\ExpHullsBases\DATA\Sounds\InWork.wav
+    PG_PortalOpening=Mods\Expansion\ExpHullsBases\DATA\Sounds\PortalOpening.wav
+}
+Script ~{
+    Mod_ExpHullsBases=Mods\Expansion\ExpHullsBases\DATA\Script\Mod_ExpHullsBases.scr
+}

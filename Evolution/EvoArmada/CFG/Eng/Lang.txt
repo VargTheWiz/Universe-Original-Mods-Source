@@ -1,0 +1,635 @@
+MicroModuls ^{
+    EvoArmada_BertorDomHull ^{
+        Cost=5500
+        Equipments=Hull
+        Fragility=80
+        LockedAcryn=3
+        Name=</color><Type> hull dominator
+        NonSearchable=1
+        Owner=Kling
+        Priority=0
+        Size=300
+        Special=1
+        Text=<color=248,252,248>Giant heavyarmored spacecraft carrier usually compared to Coalition Linkor class warship. Besides Klig fireships launching can repair or empower all nearby dominator ships.</color>
+    }
+    EvoArmada_CoalitionBattleshipHull ^{
+        Cost=5500
+        Equipments=Hull
+        Fragility=90
+        LockedAcryn=3
+        Name=</color><Type> hull linkor
+        NonSearchable=1
+        Owner=Maloc,Peleng,People,Fei,Gaal,NonKling
+        Priority=0
+        Special=1
+        Text=<color=248,252,248>Mighty battleship, developed especially for fierce long-range firefight. Building only one costs to slim military budget of Coalition a lot, and its loss - even way more.</color>
+        bonMass=25
+        bonSlotForsage=-1
+    }
+    EvoArmada_CorvettePirateClan ^{
+        Cost=1500
+        Equipments=Hull
+        Fragility=80
+        KindGraph=PirateCorvette
+        LockedAcryn=3
+        Name=</color><Type> hull corvette
+        NonSearchable=1
+        Owner=PirateClan,NonKling
+        Priority=0
+        Special=1
+        Text=<color=248,252,248>While this Corvette is strong enough to destroy any middle-sized ship, his size still does not allow to fight back with actual flagships. At the same time even small corvette group very easily could be the last what most Coualition starsystem defences will see.</color>
+        bonMass=25
+        bonSlotForsage=-1
+    }
+    EvoArmada_DreadnoughtFei ^{
+        Cost=7500
+        Equipments=Hull
+        Fragility=80
+        KindGraph=DreadnoughtFei
+        LockedAcryn=3
+        Name=</color><Type> hull dreadnought
+        NonSearchable=1
+        Owner=Fei,NonKling
+        Priority=0
+        Special=1
+        Text=<color=248,252,248>One of greatest ships of the Coalition, pride and glory of United Galaxy Fleet. Inspires awe in the hearts of Coalition ship crews and doom in souls of its enemies.</color>
+        bonMass=50
+        bonSlotForsage=-1
+    }
+    EvoArmada_DreadnoughtGaal ^{
+        Cost=7500
+        Equipments=Hull
+        Fragility=80
+        KindGraph=DreadnoughtGaal
+        LockedAcryn=3
+        Name=</color><Type> hull dreadnought
+        NonSearchable=1
+        Owner=Gaal,NonKling
+        Priority=0
+        Special=1
+        Text=<color=248,252,248>One of greatest ships of the Coalition, pride and glory of United Galaxy Fleet. Inspires awe in the hearts of Coalition ship crews and doom in souls of its enemies.</color>
+        bonMass=50
+        bonSlotForsage=-1
+    }
+    EvoArmada_DreadnoughtMaloc ^{
+        Cost=7500
+        Equipments=Hull
+        Fragility=70
+        KindGraph=DreadnoughtMaloc
+        LockedAcryn=3
+        Name=</color><Type> hull dreadnought
+        NonSearchable=1
+        Owner=Maloc,NonKling
+        Priority=0
+        Special=1
+        Text=<color=248,252,248>One of greatest ships of the Coalition, pride and glory of United Galaxy Fleet. Inspires awe in the hearts of Coalition ship crews and doom in souls of its enemies.</color>
+        bonMass=50
+        bonSlotForsage=-1
+    }
+    EvoArmada_DreadnoughtPeleng ^{
+        Cost=7500
+        Equipments=Hull
+        Fragility=70
+        KindGraph=DreadnoughtPeleng
+        LockedAcryn=3
+        Name=</color><Type> hull dreadnought
+        NonSearchable=1
+        Owner=Peleng,NonKling
+        Priority=0
+        Special=1
+        Text=<color=248,252,248>One of greatest ships of the Coalition, pride and glory of United Galaxy Fleet. Inspires awe in the hearts of Coalition ship crews and doom in souls of its enemies.</color>
+        bonMass=50
+        bonSlotForsage=-1
+    }
+    EvoArmada_DreadnoughtPeople ^{
+        Cost=7500
+        Equipments=Hull
+        Fragility=70
+        KindGraph=DreadnoughtPeople
+        LockedAcryn=3
+        Name=</color><Type> hull dreadnought
+        NonSearchable=1
+        Owner=People,NonKling
+        Priority=0
+        Special=1
+        Text=<color=248,252,248>One of greatest ships of the Coalition, pride and glory of United Galaxy Fleet. Inspires awe in the hearts of Coalition ship crews and doom in souls of its enemies.</color>
+        bonMass=50
+        bonSlotForsage=-1
+    }
+    EvoArmada_EquantorDomHull ^{
+        Cost=3500
+        Equipments=Hull
+        Fragility=90
+        LockedAcryn=3
+        Name=</color><Type> hull dominator
+        NonSearchable=1
+        Owner=Kling
+        Priority=0
+        Size=225
+        Special=1
+        Text=<color=248,252,248>Heavy artillery dominator ship, usually even stronger than the Coalition Cruiser class military ships. Specializes on long-range energy weapons.</color>
+        bonMass=25
+    }
+    EvoArmada_ExtraSpecialsLineBreak ^{
+        Equipments=Any
+        ExText=<clr><clrEnd>
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+    EvoArmada_FrigatePirateClan ^{
+        Cost=2500
+        Equipments=Hull
+        Fragility=80
+        KindGraph=PirateFrigate
+        LockedAcryn=3
+        Name=</color><Type> hull frigate
+        NonSearchable=1
+        Owner=PirateClan,NonKling
+        Priority=0
+        Special=1
+        Text=<color=248,252,248>Big multicannon ship, which with some excused terms can fight even in linear battle with artillery ships. But poor funds of the pirate brotherhood does not allow to build those ships in serial manner, so their efficiency in mass combat action is not really that high.</color>
+        bonMass=75
+        bonSlotForsage=-1
+    }
+    EvoArmada_GalleonPirateClan ^{
+        Cost=3500
+        Equipments=Hull
+        Fragility=80
+        KindGraph=PirateGalleon
+        LockedAcryn=3
+        Name=</color><Type> hull galleon
+        NonSearchable=1
+        Owner=PirateClan,NonKling
+        Priority=0
+        Special=1
+        Text=<color=248,252,248>Massive heavyarmored ship with excellent (in pirate terms) weapons. Best what "admiralty" of disunited pirate bands can offer to its improvised fleet.</color>
+        bonMass=100
+        bonSlotForsage=-1
+    }
+    EvoArmada_KligDomHull ^{
+        Cost=200
+        Equipments=Hull
+        Fragility=85
+        LockedAcryn=3
+        Name=</color><Type> hull dominator
+        NonSearchable=1
+        Owner=Kling
+        Priority=0
+        Special=1
+        Text=<color=248,252,248>Tiny and highly maneuverable dominator fireship. Rapidly approaches and explode himself if adversary ship is cleanly supperior in size or firepower. Clearly high threat in groups despite having little to none of actual weapons. One of main weapons of the Bertor carriers.</color>
+    }
+    EvoArmada_MenocDomHull ^{
+        Cost=500
+        Equipments=Hull
+        LockedAcryn=3
+        Name=</color><Type> hull dominator
+        NonSearchable=1
+        Owner=Kling
+        Priority=0
+        Special=1
+        Text=<color=248,252,248>Light uiversal dominator interceptor, whose main tasks are battle initiation and pursuit before main force could arrive.</color>
+    }
+    EvoArmada_ShtipDomHull ^{
+        Cost=500
+        Equipments=Hull
+        Fragility=90
+        LockedAcryn=3
+        Name=</color><Type> hull dominator
+        NonSearchable=1
+        Owner=Kling
+        Priority=0
+        Special=1
+        Text=<color=248,252,248>Fast and compact dominator scoutship. Usually first to attack adversaries. Low-powered and has pretty small hull, but in some situations and in groups poses a serious threat.</color>
+    }
+    EvoArmada_SmershDomHull ^{
+        Cost=750
+        Equipments=Hull
+        Fragility=120
+        LockedAcryn=3
+        Name=</color><Type> hull dominator
+        NonSearchable=1
+        Owner=Kling
+        Priority=0
+        Special=1
+        Text=<color=248,252,248>Heavy dominatoor inreceptor specialised in long-range assault. Has a lot of firepower but usually lacks defence, so prefers to keep at the very limit of firing range.</color>
+    }
+    EvoArmada_UrgantDomHull ^{
+        Cost=1250
+        Equipments=Hull
+        Fragility=80
+        LockedAcryn=3
+        Name=</color><Type> hull dominator
+        NonSearchable=1
+        Owner=Kling
+        Priority=0
+        Size=150
+        Special=1
+        Text=<color=248,252,248>Large assault dominator ship, close with its capabilities to Corvette class military ship. Prefers close encounters.</color>
+    }
+    EvoArmada_bonDef ^{
+        Equipments=Any
+        ExText=Shield generator: <bonDef> pt.
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonDef=1
+    }
+    EvoArmada_bonDefHidden ^{
+        Equipments=Any
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonDef=1
+    }
+    EvoArmada_bonDroid ^{
+        Equipments=Any
+        ExText=Droid effectiveness: <bonDroid> pt.
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonDroid=1
+    }
+    EvoArmada_bonDroidHidden ^{
+        Equipments=Any
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonDroid=1
+    }
+    EvoArmada_bonHull ^{
+        Equipments=Any
+        ExText=Hull armor: <bonHull> pt.
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonHull=1
+    }
+    EvoArmada_bonSpeed ^{
+        Equipments=Any
+        ExText=Engine speed: <bonSpeed> pt.
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonSpeed=1
+    }
+    EvoArmada_bonWEnergy ^{
+        Equipments=Any
+        ExText=Energy weapons damage: <bonWEnergy> pt.
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonWEnergy=1
+    }
+    EvoArmada_bonWEnergyHidden ^{
+        Equipments=Any
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonWEnergy=1
+    }
+    EvoArmada_bonWMissile ^{
+        Equipments=Any
+        ExText=Missile weapons damage: <bonWMissile> pt.
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonWMissile=1
+    }
+    EvoArmada_bonWMissileHidden ^{
+        Equipments=Any
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonWMissile=1
+    }
+    EvoArmada_bonWRadius ^{
+        Equipments=Any
+        ExText=Firing range: <bonWRadius> pt.
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonWRadius=1
+    }
+    EvoArmada_bonWRadiusHidden ^{
+        Equipments=Any
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonWRadius=1
+    }
+    EvoArmada_bonWSplinter ^{
+        Equipments=Any
+        ExText=Fragmentation weapons damage: <bonWSplinter> pt.
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonWSplinter=1
+    }
+    EvoArmada_bonWSplinterHidden ^{
+        Equipments=Any
+        LockedAcryn=3
+        NonSearchable=1
+        Priority=0
+        Special=1
+        bonWSplinter=1
+    }
+    ShuDomiks_BertorDomHull ^{
+        Cost=250
+        LockedAcryn=3
+        NonSearchable=1
+        Size=300
+        Special=1
+    }
+    ShuDomiks_EquantorDomHull ^{
+        Cost=200
+        LockedAcryn=3
+        NonSearchable=1
+        Size=225
+        Special=1
+    }
+    ShuDomiks_KligDomHull ^{
+        Cost=75
+        LockedAcryn=3
+        NonSearchable=1
+        Special=1
+    }
+    ShuDomiks_MenocDomHull ^{
+        Cost=100
+        LockedAcryn=3
+        NonSearchable=1
+        Special=1
+    }
+    ShuDomiks_ShtipDomHull ^{
+        Cost=100
+        LockedAcryn=3
+        NonSearchable=1
+        Special=1
+    }
+    ShuDomiks_SmershDomHull ^{
+        Cost=100
+        LockedAcryn=3
+        NonSearchable=1
+        Special=1
+    }
+    ShuDomiks_UrgantDomHull ^{
+        Cost=125
+        LockedAcryn=3
+        NonSearchable=1
+        Size=150
+        Special=1
+    }
+}
+Script ^{
+    Mod_EvoArmada ^{
+        DreadnoughtWasLaunched0=Recently the authorities of the planet <Planet> of <Star> system have reported the launch of a new <color=0,50,200>Raghnardoom</color> <Dreadnought>. Honor and glory to the <color=0,50,200>maloq</color> warriors behind whose broad backs the entire galactic sector of <Sector> will be reliably protected from the enemy!
+        DreadnoughtWasLaunched1=An urgent report from the <Star> system! An <color=0,50,200>Usheechwank</color> <Dreadnought> has just been launched from the planet <Planet>. Good luck to our <color=0,50,200>pelengian</color> colleagues in bringing a touch of real justice to the lives of inhabitants of the <Sector> sector!
+        DreadnoughtWasLaunched2=Today from the space shipyards of the planet <Planet> from system <Star> was launched <color=0,50,200>Dreadnought</color> <Dreadnought>. Let's wish good luck to the brave defenders of <color=0,50,200>humanity</color>, in their hands is now the safety and prosperity of whole galactic sector <Sector>!
+        DreadnoughtWasLaunched3=The high-tech automated spaceport of the <Planet> planet of <Star> system proudly reported the launch of new <color=0,50,200>Ecelefar</color> <Dreadnought>. As the captain of the new <color=0,50,200>faeyan</color> vessel wittily observed in his public speech, "Nothing should stand in the way of technical progress, especially embodied in a multi-ton warmachine of destruction and laced with a fair bit of supremacy of superior intelligence over the barbaric aggression of irrational life forms!"
+        DreadnoughtWasLaunched3=Let's wish the best of luck to the brave faeyan warriors in their honorable mission of maintaining law and order and defending the entire galactic sector <Sector>!
+        DreadnoughtWasLaunched4=Chaotical disruption of the universal equilibrium caused by the grave wartime aura has forced the Gaalian Convention to launch an actual combat <color=0,50,200>Nohozikar</color> <Dreadnought> from the planet <Planet> in <Star> system. The next resolution of the Convention was to declare today as a date of national mourning due to the excessive aggression of the entire <color=0,50,200>Gaalian</color> populace against space harmony of the <Sector> sector.
+        DreadnoughtWasLaunched4=We, with faithful pacifists, will honor the memory and remember the fates of all ill-wishers who would recklessly stand in the way of rigorous peacekeeping of this superior warship anathema!
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            Dreadnought_Infos ^{
+                Description=NoShow
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=dword cur_ship = ScriptItemActShip();
+                    02=for(int i = 1; i < ArrayDim(GDreadnoughtArray); i = i + 1)
+                    03 ^{
+                        01=if(Id(StarToCon(ShipStar(cur_ship))) == GDreadnoughtArray[i])
+                        02 ^{
+                            01=ArrayDelete(GDreadnoughtArray, i);
+                            02=arraychange(GDreadnoughtArray, 7);
+                            03=GDreadnoughtArray[0] = GDreadnoughtArray[0] - 1;
+                            04=break;
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnDeath
+            }
+            EvoArmada_CapitalShipInfos ^{
+                Description=РРЅС„РѕС€РєР° РґР»СЏ РїРµСЂРµСЃС‡С‘С‚Р° С‡РёСЃР»Р° РґРѕРї. Р·Р°Р»РїРѕРІ РїСЂРё СЃС‚СЂРµР»СЊР±Рµ РєСЂСѓРїРЅС‹С… РєРѕСЂР°Р±Р»РµР№ РїРѕ Р±РѕР»РµРµ РјРµР»РєРёРј СЃСѓРґР°Рј
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=dword ship = ScriptItemActShip();
+                    02=if(!ship) exit;
+                    03=if(!ScriptItemActParam())
+                    04 ^{
+                        01=if(ShipInNormalSpace(ship))
+                        02 ^{
+                            01=if(ShipGetBad(ship))
+                            02 ^{
+                                01=dword cur_info = 0;
+                                02=for(int i = 1; i <= 5; i = i + 1)
+                                03 ^{
+                                    01=dword gun = ShipWeapon(ship, i);
+                                    02=if(gun)
+                                    03 ^{
+                                        01=dword target = WeaponTarget(gun);
+                                        02=if(target)
+                                        03 ^{
+                                            01=if(ObjectType(target) == 5)
+                                            02 ^{
+                                                01=int target_attacks = ShipSpecialBonuses(target, bonAttacks);
+                                                02=if(!target_attacks)
+                                                03 ^{
+                                                    01=cur_info = CurInfo();
+                                                    02=break;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    04=else break;
+                                }
+                                04=if(cur_info)
+                                05 ^{
+                                    01=int add_attacks = ShipCustomShipInfoData(0, cur_info, 1);
+                                    02=int attacks_penalty = ShipSkill(ship, 'AccuracyCur') - ShipSkill(target, 'MobilityCur');
+                                    03=if(attacks_penalty < 0)
+                                    04 ^{
+                                        01=add_attacks = add_attacks + attacks_penalty;
+                                        02=if(add_attacks < 0) add_attacks = 0;
+                                    }
+                                    05=ShipSpecialBonuses(ship, bonAttacks, add_attacks);
+                                }
+                            }
+                        }
+                    }
+                    05=else
+                    06 ^{
+                        01=add_attacks = ShipCustomShipInfoData(0, CurInfo(), 1);
+                        02=ShipSpecialBonuses(ship, bonAttacks, add_attacks);
+                    }
+                }
+                OnActCodeTypes=t_OnStep
+                OnActStepTypes=0,11
+            }
+            GunBatteryLabelsSwitcher ^{
+                Description=NoShow
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=str form = CurrentForm();
+                    02=if(form == 'Ship' || form == 'Scaner')
+                    03 ^{
+                        01=dword ship = FormCurShip();
+                        02=int attacks_count = ShipSpecialBonuses(ship, bonAttacks);
+                        03=if(attacks_count > 0)
+                        04 ^{
+                            01=for(int i = 1; i <= 5; i = i + 1)
+                            02 ^{
+                                01=if(ShipEqInSlot(ship, t_Weapon1, i))
+                                02 ^{
+                                    01=InterfaceText(form, 'GunBatteryLabelSlot' + i, 'x' + (attacks_count + 1));
+                                    03=InterfaceState(form, 'GunBatteryLabelSlot' + i, 1);
+                                }
+                                03=else
+                                04 ^{
+                                    01=InterfaceState(form, 'GunBatteryLabelSlot' + i, 0);
+                                }
+                            }
+                        }
+                        05=else
+                        06 ^{
+                            01=for(i = 1; i <= 5; i = i + 1)
+                            02 ^{
+                                01=InterfaceState(form, 'GunBatteryLabelSlot' + i, 0);
+                            }
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnEnteringForm,t_OnReEnteringForm,t_OnScan
+            }
+            GunBatteryLabelsSwitcherForRuinsBlyat ^{
+                Description=NoShow
+                Icon=0
+                Name=РџРѕС‚РѕРјСѓ С‡С‚Рѕ СЃРѕР±С‹С‚РёСЏ РѕС‚РєСЂС‹С‚РёСЏ/Р·Р°РєСЂС‹С‚РёСЏ С„РѕСЂРјС‹ СЃСЂР°Р±Р°С‚С‹РІР°СЋС‚ С‚РѕР»СЊРєРѕ РґР»СЏ С‚РѕРіРѕ РєРѕСЂР°Р±Р»СЏ, РЅР° РєРѕС‚РѕСЂРѕРј РѕРЅРё РІРёСЃСЏС‚, РёРЅР°С‡Рµ Р±С‹ Р±С‹Р»Рѕ СЃР»РёС€РєРѕРј РїСЂРѕСЃС‚Рѕ
+                OnActCode ^{
+                    01=str form = CurrentForm();
+                    02=if(form == 'Ship')
+                    03 ^{
+                        01=dword ship = FormCurShip();
+                        02=int attacks_count = ShipSpecialBonuses(ship, bonAttacks);
+                        03=if(attacks_count > 0)
+                        04 ^{
+                            01=for(int i = 1; i <= 5; i = i + 1)
+                            02 ^{
+                                01=if(ShipEqInSlot(ship, t_Weapon1, i))
+                                02 ^{
+                                    01=InterfaceText(form, 'GunBatteryLabelSlot' + i, 'x' + (attacks_count + 1));
+                                    03=InterfaceState(form, 'GunBatteryLabelSlot' + i, 1);
+                                }
+                                03=else
+                                04 ^{
+                                    01=InterfaceState(form, 'GunBatteryLabelSlot' + i, 0);
+                                }
+                            }
+                        }
+                        05=else
+                        06 ^{
+                            01=for(i = 1; i <= 5; i = i + 1)
+                            02 ^{
+                                01=InterfaceState(form, 'GunBatteryLabelSlot' + i, 0);
+                            }
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnEnteringForm,t_OnReEnteringForm
+            }
+            PirateGalleon_Infos ^{
+                Description=NoShow
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=dword cur_ship = ScriptItemActShip();
+                    02=for(int i = 1; i < ArrayDim(GGalleonArray); i = i + 1)
+                    03 ^{
+                        01=if(Id(StarToCon(ShipStar(cur_ship))) == GGalleonArray[i])
+                        02 ^{
+                            01=ArrayDelete(GGalleonArray, i);
+                            02=arraychange(GGalleonArray, 5);
+                            03=GGalleonArray[0] = GGalleonArray[0] - 1;
+                            04=break;
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnDeath
+            }
+        }
+    }
+}
+Artefacts ^{
+    ArtTranclucator ^{
+        OnUseCode ^{
+            0=dword cur_tranc;
+            00=if(!IsScriptActive('Mod_EvoTranc'))
+            000 ^{
+                01=cur_tranc = OnUseCodeTranclucator();
+                02=if(ShipFindCustomShipInfoByType(cur_tranc, 'GunBatteryLabelsSwitcherForRuinsBlyat') == -1)
+                03 ^{
+                    01=ShipAddCustomShipInfo(cur_tranc, 'GunBatteryLabelsSwitcherForRuinsBlyat');
+                }
+            }
+        }
+    }
+}
+ShipType ^{
+    Fei ^{
+        Dreadnought=Ecelefar
+        PirateCorvette=Corvette
+        PirateFrigate=Frigate
+        PirateGalleon=Galleon
+    }
+    Gaal ^{
+        Dreadnought=Nohozikar
+        PirateCorvette=Corvette
+        PirateFrigate=Frigate
+        PirateGalleon=Galleon
+    }
+    Maloc ^{
+        Dreadnought=Raghnardoom
+        PirateCorvette=Corvette
+        PirateFrigate=Frigate
+        PirateGalleon=Galleon
+    }
+    Peleng ^{
+        Dreadnought=Usheechwank
+        PirateCorvette=Corvette
+        PirateFrigate=Frigate
+        PirateGalleon=Galleon
+    }
+    People ^{
+        Dreadnought=Dreadnought
+        PirateCorvette=Corvette
+        PirateFrigate=Frigate
+        PirateGalleon=Galleon
+    }
+    TypeName ^{
+        Dreadnought=Dreadnought
+        PirateCorvette=Corvette
+        PirateFrigate=Frigate
+        PirateGalleon=Galleon
+        WarriorBig=Linkor
+    }
+}

@@ -1,0 +1,8 @@
+Bm ~{
+    ItemsUseless ~{
+        2dbomb_s=Mods\Revolution\RevMerchants\DATA\ItemsUseless\2dbomb.gi
+    }
+}
+Script ~{
+    Mod_RevMerchants=Mods\Revolution\RevMerchants\DATA\Script\Mod_RevMerchants.scr
+}

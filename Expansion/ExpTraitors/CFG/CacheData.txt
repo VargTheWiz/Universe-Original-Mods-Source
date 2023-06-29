@@ -1,0 +1,48 @@
+Bm ~{
+    Items ~{
+        2Hull_PirateClan_R_a=Mods\Expansion\ExpTraitors\DATA\Items\Hull\2Hull_PirateClan_R_a.gai
+        2Hull_PirateClan_R_i=Mods\Expansion\ExpTraitors\DATA\Items\Hull\2Hull_PirateClan_R_i.gi
+        2Hull_PirateClan_R_s=Mods\Expansion\ExpTraitors\DATA\Items\Hull\2Hull_PirateClan_R_s.gi
+        2Hull_PirateClan_R_s=Mods\Expansion\ExpTraitors\DATA\Items\Hull\2Hull_PirateClan_R_s.gi
+        2Hull_RangerP_a=Mods\Expansion\ExpTraitors\DATA\Items\Hull\2Hull_PirateClan_R_a.gai
+        2Hull_RangerP_i=Mods\Expansion\ExpTraitors\DATA\Items\Hull\2Hull_PirateClan_R_i.gi
+        2Hull_RangerP_s=Mods\Expansion\ExpTraitors\DATA\Items\Hull\2Hull_PirateClan_R_s.gi
+    }
+    ItemsUseless ~{
+        2ExpTraitors_PirateParrot_s=Mods\Expansion\ExpTraitors\DATA\Items\Useless\Parrot.gi
+    }
+    PanelMain2 ~{
+        2TurnH=Mods\Expansion\ExpTraitors\DATA\Buttons\2TurnH.gi
+    }
+    PanelSpace2 ~{
+        2RangerPirateA=Mods\Expansion\ExpTraitors\DATA\PanelSpace2\RangerPirateA.gi
+        2RangerPirateD=Mods\Expansion\ExpTraitors\DATA\PanelSpace2\RangerPirateD.gi
+        2RangerPirateH=Mods\Expansion\ExpTraitors\DATA\PanelSpace2\RangerPirateH.gi
+        2RangerPirateN=Mods\Expansion\ExpTraitors\DATA\PanelSpace2\RangerPirateN.gi
+    }
+    Race ~{
+        Emblem ~{
+            2PirateClanPirateClan=data\Race\PirateClan.png
+        }
+    }
+    Ship ~{
+        PirateClanR=Mods\Expansion\ExpTraitors\DATA\Ship\ranger_pirate.hai
+        PirateClanRs=Mods\Expansion\ExpTraitors\DATA\Ship\ranger_pirates.hai
+    }
+    ShipP ~{
+        2PirateClanR=Mods\Expansion\ExpTraitors\DATA\ShipP\PirateClanR.gi
+    }
+}
+Sound ~{
+    ParrotPhrase1=Mods\Expansion\ExpTraitors\DATA\Sounds\ParrotPhrase1.wav
+    ParrotPhrase2=Mods\Expansion\ExpTraitors\DATA\Sounds\ParrotPhrase2.wav
+    ParrotPhrase3=Mods\Expansion\ExpTraitors\DATA\Sounds\ParrotPhrase3.wav
+    ParrotPhrase4=Mods\Expansion\ExpTraitors\DATA\Sounds\ParrotPhrase4.wav
+    ParrotPhrase5=Mods\Expansion\ExpTraitors\DATA\Sounds\ParrotPhrase5.wav
+    ParrotPhrase6=Mods\Expansion\ExpTraitors\DATA\Sounds\ParrotPhrase6.wav
+}
+Script ~{
+    Mod_ExpTraitors=Mods\Expansion\ExpTraitors\DATA\Script\Mod_ExpTraitors.scr
+    PC_final=Mods\Expansion\ExpTraitors\DATA\Script\PC_final.scr
+    PC_part0=Mods\Expansion\ExpTraitors\DATA\Script\PC_part0.scr
+}

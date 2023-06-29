@@ -1,0 +1,54 @@
+Script ^{
+    Mod_SR1RedSkullPart1 ^{
+        0=Sherlock
+        1=Hi brother. What's up?
+        10=Leave me alone.
+        11=I'm not "brother", I'm an honest ranger.
+        12=You're talking through your hat. I've never heard of the Kittons.
+        13=That's right, assassination is my speciality.
+        14=This must be some mistake. I'm a respectable ranger <PlayerFull>.
+        15=You're quite right, I'm Red Skull, terror of the space. Now get out of here if you want to live.
+        16=No, I've never met anyone named Red Skull. I want you to find him as soon as possible.
+        17=Well, then I'll put my cards on the table. Red Skull in person. It was a great pleasure for me to kill this idiot Kitton's family. If you don't want to follow them, get out of here!
+        2=Glad for you. You've done a great job with those Kittons. I really admired your skill and professionalism!
+        3=Hey, take it easy. I'm your biggest fan. I can't but admire the way you removed those Kittons.
+        4=Yeah? Aren't you the notorious pirate Red Skull?
+        5=Dammit, I've made a mess of it again. Third time, and no results. Let's then at least, get acquainted. Ronny Malkovich, detective. I'm working undercover, trying to find a scoundrel named Red Skull who killed the whole family of my client Kitton. I heard he changed his name and became a ranger, and has been seen not far from here.
+        6=Got it, got it! I'm already leaving. Nice talking to you.
+        7=Thanks. If you find out anything about Red Skull, please find me. My client can't wait to kill him with his own hands. I only hope he doesn't do something stupid. Good luck.
+        8=Excuse me, but I'm in a hurry. Good-bye.
+        9=Everything's fine, brother.
+    }
+    Mod_SR1RedSkullPart2 ^{
+        0=Jack Kitton
+        1=At last, I've found you, Red Skull! Prepare to die!
+        10=Well, you've been to a plastic surgeon and changed your face. So what? You mafia people do it a hundred times a day. Die, scum!
+        11=I'm not Red Skull. Probably, you've been misinformed.
+        12=If you want trouble, I am the right person. Red Skull doesn't forgive insults.
+        13=Wait, let's settle this peacefully. Why do you want my death?
+        14=This is a misunderstanding. I'm not Red Skull and I don't even know anyone with this name. Your detective must have made a mistake.
+        15=How can I persuade you to stop this senseless slaughter? How much do you want to stop?
+        16=I sympathise with you, but you should look for the murderer of your family somewhere else. I'm not Red Skull!
+        17=You have got the wrong guy. Look closely, do I really look like Red Skull?
+        2=Red Skull, you are the murderer of my family. I've been looking for you for a long time. My detective who has been working undercover in this system has figured you out. And you'll be punished like all of your friends, or my name's not Jack Kitton.
+        3=I'll send you to your grave, Red Skull! Thanks to my detective who found you. I have a surprise for you!
+        4=I'm avenging my family whom you killed two years ago. My detective who has been working undercover in this system has figured you out. I became a ranger because of that and badly want to meet you face to face. Now you will die!
+        5=Shut your trap and prepare to die, Red Skull!
+        6=Recharge your guns you scum, I'm not going to talk to you!
+        7=I'm not going to talk to you, you monster Red Skull! You cheated me two years ago, trapped me and set your gang on me. I had a narrow escape. Now I won't believe your fairy-tales. Die!!!
+        8=You can't buy me, Red Skull! I know you are a mean character; you think that money is everything. But you are wrong: there are things that money can't buy. I'll carry out the sentence, so at least die like a man!
+        9=Don't you dare mention my family! You murderer, dirty mafia dog, you have no idea what sympathy and mercy are. I'm just one of the many people in the Galaxy dreaming of your death, but it'll be I who will kill you. Even if I die, you'll go with me.
+    }
+    Mod_SR1RedSkullPart3 ^{
+        0=Red skull
+        1=I'm Red Skull!!! Prepare to die, you weakling!
+        2=You know too much <PlayerFull>, you must die. Red Skull always cleans up after himself.
+        3=Once I had the pleasure of killing the Kittons who owed me lots of money. Kitton himself almost got me; but I took care of him a couple of days ago. I did the same thing to the spy he hired to find me. Kitton had always been an idiot. Now you'll join him!
+        4=Oh <PlayerFull>, how can you be so naive! I'll only rest now when your skull floats in open space.<br>
+        5=There you are, little <PlayerFull> has decided to show his teeth! Alright, let's see who wins.
+        6=I don't get it… What's the problem?
+        7=I've heard much about you, you scum. Now I'll rid the Galaxy of you.
+        8=Please, spare me, no one will ever know from me about the Kittons or Red Skull.
+        9=And maybe it will be you who will join them?
+    }
+}

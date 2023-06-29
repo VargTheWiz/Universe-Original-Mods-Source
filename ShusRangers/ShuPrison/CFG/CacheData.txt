@@ -1,0 +1,3 @@
+Script ~{
+    Mod_ShuPrison=Mods\ShusRangers\ShuPrison\DATA\Script\Mod_ShuPrison.scr
+}

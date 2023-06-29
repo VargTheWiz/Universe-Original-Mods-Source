@@ -1,0 +1,77 @@
+Bm ~{
+    FormLoadAB ~{
+        LoadHyperA=Mods\Tweaks\SR2RebootMenu\DATA\FormLoadAB\LoadHyperA.png
+        LoadHyperD=Mods\Tweaks\SR2RebootMenu\DATA\FormLoadAB\LoadHyperD.png
+        LoadHyperN=Mods\Tweaks\SR2RebootMenu\DATA\FormLoadAB\LoadHyperN.png
+    }
+    FormLoadRobot ~{
+        2LoadQuestA=Mods\Tweaks\SR2RebootMenu\DATA\FormLoadRobot\2LoadQuestA.png
+        2LoadQuestD=Mods\Tweaks\SR2RebootMenu\DATA\FormLoadRobot\2LoadQuestD.png
+        2LoadQuestN=Mods\Tweaks\SR2RebootMenu\DATA\FormLoadRobot\2LoadQuestN.png
+        2LoadRobotA=Mods\Tweaks\SR2RebootMenu\DATA\FormLoadRobot\2LoadRobotA.png
+        2LoadRobotD=Mods\Tweaks\SR2RebootMenu\DATA\FormLoadRobot\2LoadRobotD.png
+        2LoadRobotN=Mods\Tweaks\SR2RebootMenu\DATA\FormLoadRobot\2LoadRobotN.png
+    }
+    FormMain2 ~{
+        2AnimMain=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2AnimMain.gi
+        2ButAboutA=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2ButAboutA.png
+        2ButAboutD=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2ButAboutD.png
+        2ButAboutN=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2ButAboutN.png
+        2ButExitA=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2ButExitA.png
+        2ButExitD=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2ButExitD.png
+        2ButExitN=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2ButExitN.png
+        2ButLoadA=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2ButLoadA.png
+        2ButLoadD=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2ButLoadD.png
+        2ButLoadN=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2ButLoadN.png
+        2ButNewA=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2ButNewA.png
+        2ButNewD=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2ButNewD.png
+        2ButNewN=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2ButNewN.png
+        2ButRecordsA=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2ButRecordsA.png
+        2ButRecordsD=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2ButRecordsD.png
+        2ButRecordsN=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2ButRecordsN.png
+        2ButSettingsA=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2ButSettingsA.png
+        2ButSettingsD=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2ButSettingsD.png
+        2ButSettingsN=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2ButSettingsN.png
+        2Robot1=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2Robot1.png
+        2Robot2=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2Robot2.png
+        2Robot3=Mods\Tweaks\SR2RebootMenu\DATA\FormMain2\2Robot3.png
+    }
+    FormMain3 ~{
+        2BG=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\2bg.png
+        2ButAchA=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\2ButAchA.png
+        2ButAchD=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\2ButAchD.png
+        2ButAchN=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\2ButAchN.png
+        2Caption=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\2Caption.png
+        2Planet=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\1Planet.png
+        2Ship1=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\2Ship1.gi
+        2Ship2=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\2Ship2.gi
+        2Ship3=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\2Ship3.gi
+        2ShipA1=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\2Ship1.gai
+        2ShipA2=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\2Ship2.gai
+        2ShipA3=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\2Ship3.gai
+        AnimGaalShip=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\Gaal_Empty2.gi
+        AnimGaalShip01=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\Gaal_Empty.gi
+        AnimGaalShip01A=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\Gaal_Empty.gai
+        AnimGaalShip02=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\Gaal_Empty.gi
+        AnimGaalShip02A=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\Gaal_Empty.gai
+        AnimGaalShip03=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\Gaal_Empty.gi
+        AnimGaalShip03A=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\Gaal_Empty.gai
+        AnimGaalShipA=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\Gaal_Empty2.gai
+        CaptionBlur=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\CaptionBlur.gi
+        CaptionLarge=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\CaptionLarge.gi
+        Circle=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\Circle.png
+        MicroText=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\MicroText.png
+        Sub=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\Sub.gi
+        SubLarge=Mods\Tweaks\SR2RebootMenu\DATA\FormMain3\SubLarge.gi
+    }
+    FormMenu2 ~{
+        AchievementsA=Mods\Tweaks\SR2RebootMenu\DATA\FormMenu2\AchievementsA.png
+        AchievementsD=Mods\Tweaks\SR2RebootMenu\DATA\FormMenu2\AchievementsD.png
+        AchievementsN=Mods\Tweaks\SR2RebootMenu\DATA\FormMenu2\AchievementsN.png
+    }
+    FormMods ~{
+        ModsA=Mods\Tweaks\SR2RebootMenu\DATA\FormMods\2ModsA.png
+        ModsD=Mods\Tweaks\SR2RebootMenu\DATA\FormMods\2ModsD.png
+        ModsN=Mods\Tweaks\SR2RebootMenu\DATA\FormMods\2ModsN.png
+    }
+}

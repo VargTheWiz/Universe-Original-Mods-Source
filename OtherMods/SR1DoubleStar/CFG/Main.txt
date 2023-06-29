@@ -1,0 +1,27 @@
+Data ^{
+    SE ^{
+        Star ^{
+            05 ^{
+                Anim=Bm.Star.05a
+                Image=GI,Bm.Star.05
+                ImageMap=Bm.Star.MapStar1
+                PosZ=Star
+                SmeImage=250,250
+                SmeImageMap=8,8
+            }
+        }
+    }
+    Script ^{
+        Mod_SR1DoubleStar=1,Script.Mod_SR1DoubleStar
+    }
+    Star ^{
+        05 ^{
+            DamageRadius=300
+            Priority=10
+            Radius=250
+            SEGraph=Star.05
+            SEProcess=Process.Normal
+            SafeRadius=310
+        }
+    }
+}

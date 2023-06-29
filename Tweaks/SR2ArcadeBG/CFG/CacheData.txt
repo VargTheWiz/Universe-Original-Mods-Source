@@ -1,0 +1,8 @@
+Bm ~{
+    FormAB2 ~{
+        2bg1=Mods\Tweaks\SR2ArcadeBG\DATA\FormAB2\2bg1.gai
+        2bg2=Mods\Tweaks\SR2ArcadeBG\DATA\FormAB2\2bg2.gai
+        2bg3=Mods\Tweaks\SR2ArcadeBG\DATA\FormAB2\2bg3.gai
+        2bg4=Mods\Tweaks\SR2ArcadeBG\DATA\FormAB2\2bg4.gai
+    }
+}

@@ -1,0 +1,4 @@
+Script ~{
+    Mod_ShuPirates=Mods\ShusRangers\ShuPirates\DATA\Script\Mod_ShuPirates.scr
+    Mod_ShuPirates_BlackHole=Mods\ShusRangers\ShuPirates\DATA\Script\Mod_ShuPirates_BlackHole.scr
+}

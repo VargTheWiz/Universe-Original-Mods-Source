@@ -1,0 +1,5 @@
+FormRuins ^{
+    WB ^{
+        HyperJumpVideo=Mods\Tweaks\KlaxonsStationsBG\DATA\FormRuinsBG\hyper.vdo,Hyper2
+    }
+}

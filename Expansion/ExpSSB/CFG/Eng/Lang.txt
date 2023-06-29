@@ -1,0 +1,711 @@
+Artefacts ^{
+    CustomArtefacts ^{
+        blinker ^{
+            Broken=(repair required)
+            BrokenInBattle=Blinker's fragile hull cracked in the midst of the battle. The device no longer functions.
+            BrokenInUse=Blinker has already been working intermittently for quite a long time, but today it finally broke down.
+            Name=Blinker
+            OnActCode ^{
+                01=dword charge;
+                02=if(!charge) charge=CurTurn();
+                03=if(ScriptItemActionType(t_OnStep,11))
+                04 ^{
+                    01=if(ItemDurability(CurItem()) && CustomArtData(CurItem(),1)<2500)
+                    02 ^{
+                        01=if(ItemIsInUse(CurItem()))CustomArtData(CurItem(),1,CustomArtData(CurItem(),1)+Rnd(10,15));
+                        02=if(CustomArtData(CurItem(),1)>2500)CustomArtData(CurItem(),1,2500);
+                    }
+                }
+                05=else if(ScriptItemActionType(t_OnShowingItemInfo))
+                06 ^{
+                    01=if(ItemDurability(CurItem()))
+                    02 ^{
+                        01=if(charge!=CurTurn() && charge)
+                        02 ^{
+                            01=if(FindItemInStorage(CurItem())<0)
+                            02 ^{
+                                01=for(int i=0;i<CurTurn()-charge;i=i+1)CustomArtData(CurItem(),1,CustomArtData(CurItem(),1)+Rnd(0,10));
+                                02=if(CustomArtData(CurItem(),1)>2500)CustomArtData(CurItem(),1,2500);
+                            }
+                            03=charge=CurTurn();
+                        }
+                    }
+                }
+                07=else if(ScriptItemActionType(t_OnEnteringForm))
+                08 ^{
+                    01=if(CustomArtData(CurItem(),2)==1)
+                    02 ^{
+                        01=if(CurrentForm()=='StarMap')
+                        02 ^{
+                            01=StarMapCenterView(CoordX(Player()),CoordY(Player()));
+                            02=CustomArtData(CurItem(),2,0);
+                        }
+                    }
+                }
+            }
+            OnActCodeTypes=t_OnStep,t_OnEnteringForm,t_OnShowingItemInfo
+            OnActStepTypes=11
+            OnUseCode ^{
+                01=if(ShipInNormalSpace(Player()) && ItemDurability(CurItem())<=5)
+                02 ^{
+                    01=MessageBox('The artifact will not withstand activation, it needs repair.');
+                    02=exit;
+                }
+                03=if(ShipInNormalSpace(Player()) && ItemDurability(CurItem())>5)
+                04 ^{
+                    01=if(ItemDurability(ShipEqInSlot(Player(),t_FuelTanks))<=5)
+                    02 ^{
+                        01=MessageBox('The fuel tank will not withstand the load.');
+                        02=exit;
+                    }
+                    03=if(ItemDurability(ShipEqInSlot(Player(),t_Engine))<=5)
+                    04 ^{
+                        01=MessageBox('The engine will not withstand the load.');
+                        02=exit;
+                    }
+                    05=if(!ShipEqInSlot(Player(),t_FuelTanks))
+                    06 ^{
+                        01=MessageBox('The ship has no fuel tank.');
+                        02=exit;
+                    }
+                    07=if(!ShipEqInSlot(Player(),t_Engine))
+                    08 ^{
+                        01=MessageBox('The ship has no engine.');
+                        02=exit;
+                    }
+                    09=if(CustomArtData(CurItem(),1)<100)
+                    10 ^{
+                        01=MessageBox('Not enough charge.');
+                        02=exit;
+                    }
+                    11=float temp_float=CustomArtData(CurItem(),1);
+                    12=int temp_int_3=CoordX(Player())+temp_float*sin((ShipAngle(Player())*pi)/180.0);
+                    13=int temp_int_4=CoordY(Player())-temp_float*cos((ShipAngle(Player())*pi)/180.0);
+                    14=ShowStaticEffect('TeleportOut_256_30',CoordX(Player()),CoordY(Player()));
+                    15=ShowStaticEffect('TeleportOut_256_30',temp_int_3,temp_int_4);
+                    16=OrderNone(Player());
+                    17=ItemDurability(CurItem(),ItemDurability(CurItem())-5);
+                    18=ShipSetCoords(Player(),temp_int_3,temp_int_4);
+                    19=ItemDurability(ShipEqInSlot(Player(),t_FuelTanks),ItemDurability(ShipEqInSlot(Player(),t_FuelTanks))-5);
+                    20=ItemDurability(ShipEqInSlot(Player(),t_Engine),ItemDurability(ShipEqInSlot(Player(),t_Engine))-5);
+                    21=CustomArtData(CurItem(),1,0);
+                    22=CustomArtData(CurItem(),2,1);
+                    24=ScriptItemActParam(1);
+                }
+                05=if(!ShipInNormalSpace(Player()))MessageBox(CT('FormShip.UseOnlyInSpace'));
+            }
+            Size=8
+            Text=A space-time energy transducer capable of creating "tunnels of absolute nothing". Powered by the dark energy of the universe, not yet fully understood by scientists. However, thanks to the integrated transformer, it can also be charged from a standard power generator when installed on a ship, charging itself twice faster.
+            Text=When used in space, it creates a "tunnel", <Data1> million km long, in which space-time in the classical sense is completely absent. Moving through this "tunnel" does not take time, but "absolute nothing" creates a powerful negative thrust, causing the engine and tank to work at the limit.
+        }
+        galo ^{
+            Broken=(repair required)
+            BrokenInBattle=An enemy shot hit the holoprojector directly, knocking it out of action.
+            BrokenInUse=The holoprojector has fulfilled its warranty rate. The device needs to be repaired.
+            Name=Holoprojector
+            OnActCode ^{
+                01=dword charge;
+                02=if(!charge) charge=CurTurn();
+                03=if(ScriptItemActionType(t_OnStep,11))
+                04 ^{
+                    01=if(ItemDurability(CurItem()) && CustomArtData(CurItem(),1)<1000)
+                    02 ^{
+                        01=if(ItemIsInUse(CurItem()))CustomArtData(CurItem(),1,CustomArtData(CurItem(),1)+5);
+                        02=if(CustomArtData(CurItem(),1)>1000)CustomArtData(CurItem(),1,1000);
+                    }
+                }
+                05=else
+                06 ^{
+                    01=if(ItemDurability(CurItem()))
+                    02 ^{
+                        01=if(charge!=CurTurn() && charge)
+                        02 ^{
+                            01=if(FindItemInStorage(CurItem())<0)
+                            02 ^{
+                                01=for(int i=0;i<CurTurn()-charge;i=i+1)CustomArtData(CurItem(),1,CustomArtData(CurItem(),1)+Rnd(0,5));
+                                02=if(CustomArtData(CurItem(),1)>1000)CustomArtData(CurItem(),1,1000);
+                            }
+                            03=charge=CurTurn();
+                        }
+                    }
+                }
+            }
+            OnActCodeTypes=t_OnStep,t_OnShowingItemInfo
+            OnActStepTypes=11
+            OnUseCode ^{
+                01=if(ShipInNormalSpace(Player()) && ItemDurability(CurItem())<=5)MessageBox('The artifact will not withstand activation, it needs repair.');
+                02=if(ShipInNormalSpace(Player()) && ItemDurability(CurItem())>5)
+                03 ^{
+                    01=if(CustomArtData(CurItem(),1)<100)MessageBox('Not enough charge.');
+                    02=if(CustomArtData(CurItem(),1)>=100)
+                    03 ^{
+                        01=dword curship=0;
+                        02=int i=0;
+                        03=int j=0;
+                        04=dword temp_dword_2=StarPlanets(GalaxyStar(0),3);
+                        05=int temp_int=0;
+                        06=int temp_int_2=CustomArtData(CurItem(),1)/100;
+                        07=unknown galo_tranc;
+                        08=galo_tranc=newarray(1);
+                        09=dword temp_dword=0;
+                        10=float temp_float=2;
+                        11=if(temp_int_2==1)temp_int_2=2;
+                        12=if(temp_int_2>=10)temp_int_2=12;
+                        13=for(i=0;i<temp_int_2;i=i+1)
+                        14 ^{
+                            01=curship=BuyTranclucator(temp_dword_2);
+                            02=ItemSize(ShipItems(curship,0),ItemSize(ShipItems(Player(),0)));
+                            03=SetName(curship,ShipName(Player()));
+                            04=ShipType(curship,ShipType(Player()));
+                            05=ShipOwner(curship,ShipOwner(Player()));
+                            06=ItemOwner(ShipItems(curship,0),ItemOwner(ShipItems(Player(),0)));
+                            07=NoTargetToShip(curship,1);
+                            08=NoDropToShip(curship);
+                            09=NoScanToShip(curship,1);
+                            10=NoTalkToShip(curship,1);
+                            11=AddItemToShip(curship,CreateEquipment(t_DefGenerator,1,1,1));
+                            12=ArrangeItems(curship);
+                            13=for(j=0;j<ShipItems(curship);j=j+1)
+                            14 ^{
+                                01=temp_dword=ShipItems(curship,j);
+                                02=if(ItemType(temp_dword)==t_Engine) SetEquipmentStats(temp_dword,GetEquipmentStats(ShipEqInSlot(Player(),t_Engine),0),0);
+                                03=if(ItemType(temp_dword)==t_Hull) SetEquipmentStats(temp_dword,GetEquipmentStats(ShipItems(Player(),0),0),0);
+                                04=if(ItemType(temp_dword)==t_DefGenerator) SetEquipmentStats(temp_dword,GetEquipmentStats(ShipEqInSlot(Player(),t_DefGenerator),0),0);
+                            }
+                            15=Chameleon(curship,Chameleon(Player(),'GraphName'));
+                            16=TransferShip(curship,ShipStar(Player()));
+                            17=ArrayAdd(galo_tranc,curship);
+                            18=ShipAddCustomShipInfo(curship,'SelfDestroy','NoShow',temp_int_2+Rnd(1,temp_int_2));
+                            19=ShipAngle(curship,ShipAngle(Player()));
+                            20=ShipRepairEq(curship);
+                            21=if((i+2)%2==0)ShipSetCoords(curship,CoordX(Player())-temp_float*20.0*sin(((ShipAngle(Player())+30.0)*pi)/180.0),CoordY(Player())+temp_float*20.0*cos(((ShipAngle(Player())+30.0)*pi)/180.0));
+                            22=if((i+2)%2==1)ShipSetCoords(curship,CoordX(Player())-temp_float*20.0*sin(((ShipAngle(Player())-30.0)*pi)/180.0),CoordY(Player())+temp_float*20.0*cos(((ShipAngle(Player())-30.0)*pi)/180.0));
+                            23=if((i+2)%2==1)temp_float=temp_float+2;
+                            24=OrderMove(curship,CoordX(curship)+300.0*sin((ShipAngle(curship)*pi)/180.0),CoordY(curship)-300.0*cos((ShipAngle(curship)*pi)/180.0),1);
+                        }
+                        15=for(i=0;i<StarShips(ShipStar(Player()));i=i+1)
+                        16 ^{
+                            01=curship=StarShips(ShipStar(Player()),i);
+                            02=if(RelationToRanger(curship,Player())<10)
+                            03 ^{
+                                01=temp_int=Rnd(1,ArrayDim(galo_tranc)-1);
+                                02=if(ShipOrderObj(curship)==Player()) ShipSetBad(curship,galo_tranc[temp_int]);
+                                03=for(j=1;j<ArrayDim(galo_tranc);j=j+1) ShipSetBad(galo_tranc[j],curship);
+                            }
+                        }
+                        17=CustomArtData(CurItem(),1,0);
+                        18=ItemDurability(CurItem(),ItemDurability(CurItem())-5);
+                        19=ScriptItemActParam(1);
+                    }
+                }
+                04=if(!ShipInNormalSpace(Player()))MessageBox(CT('FormShip.UseOnlyInSpace'));
+            }
+            Size=8
+            Text=Solid hologram projector equipped with a heavy duty quantifier scanner. Able to create compacted holographic copies of even very large objects. When installed on a ship, it is powered by the main power generator. When installed on a ship, the charge is replenished 2 times faster.
+            Text=When used in space, creates copies of the parent ship that serve as a distraction to the enemy. The lifetime of holograms and their number depends on the charge.
+            Text=Accumulated charge: <Data1> / <color=255,240,100>1000</color>
+        }
+        ppb_caller_art ^{
+            Broken=(repair required)
+            BrokenInBattle=In the heat of battle, the subspace communicator has been broken.
+            BrokenInUse=The subspace communicator is worn out and in need of repair.
+            Name=Subspace communicator
+            OnActCode ^{
+                01=dword charge;
+                02=if(!charge) charge=CurTurn();
+                03=if(ScriptItemActionType(t_OnStep,11))
+                04 ^{
+                    01=if(ItemDurability(CurItem()) && CustomArtData(CurItem(),1)<100)
+                    02 ^{
+                        01=if(ItemIsInUse(CurItem()))CustomArtData(CurItem(),1,CustomArtData(CurItem(),1)+1);
+                        02=if(CustomArtData(CurItem(),1)>100)CustomArtData(CurItem(),1,100);
+                    }
+                }
+                05=else if(ScriptItemActionType(t_OnShowingItemInfo))
+                06 ^{
+                    01=if(ItemDurability(CurItem()))
+                    02 ^{
+                        01=if(charge!=CurTurn() && charge)
+                        02 ^{
+                            01=if(FindItemInStorage(CurItem())<0)
+                            02 ^{
+                                01=for(int i=0;i<CurTurn()-charge;i=i+1)CustomArtData(CurItem(),1,CustomArtData(CurItem(),1)+1);
+                                02=if(CustomArtData(CurItem(),1)>100)CustomArtData(CurItem(),1,100);
+                            }
+                            03=charge=CurTurn();
+                        }
+                    }
+                }
+                07=else if(ScriptItemActionType(t_OnEnteringForm))
+                08 ^{
+                    01=if(CurrentForm() == 'StarMap')
+                    02 ^{
+                        01=if(CustomArtData(CurItem(),2)==1)
+                        02 ^{
+                            01=CustomArtData(CurItem(),2,0);
+                            02=dword temp_dword=BuyPirate(StarPlanets(GalaxyStar(4),0));
+                            03=ShipType(temp_dword,'t_Head');
+                            04=SetName(temp_dword,'X24 - 0.547');
+                            05=ShipFace(temp_dword,1);
+                            06=ShipSetCoords(temp_dword,CoordX(Player()),CoordY(Player()));
+                            07=Dialog(temp_dword);
+                        }
+                    }
+                }
+            }
+            OnActCodeTypes=t_OnStep,t_OnEnteringForm,t_OnShowingItemInfo
+            OnActStepTypes=11
+            OnUseCode ^{
+                01=if(!ShipInNormalSpace(Player()))MessageBox(CT('FormShip.UseOnlyInSpace'));
+                02=if(!ShipInNormalSpace(Player()))exit;
+                03=if(CustomArtData(CurItem(),3)>=CurTurn())MessageBox('No answer. It looks like something is interfering with signal.');
+                04=if(CustomArtData(CurItem(),3)<CurTurn())
+                05 ^{
+                    01=CustomArtData(CurItem(),2,1);
+                    02=ScriptItemActParam(1);
+                }
+            }
+            Size=1
+            Text=A powerful transmitter capable of sending a signal into subspace. When installed on a ship, the charge is replenished 2 times faster.
+            Text=When <clr>installed on ship<clrEnd> and used in space, opens a hypertunnel through which Object X24 - 0.547 travels to the location of the signal.
+            Text=Accumulated charge: <Data1>%
+        }
+        pulsar ^{
+            Broken=(repair required)
+            BrokenInBattle=The design of the pulsar could not withstand the overload of space combat. The device is unusable and needs to be repaired.
+            BrokenInUse=The pulsar's software triggered the creation of a side time vortex that caused a closed chrono-collapse in the device. It is necessary to update the software and restore the normal temporal flow.
+            Name=Pulsar
+            OnActCode ^{
+                00=dword target_item=0;
+                01=dword charge;
+                02=if(!charge) charge=CurTurn();
+                03=if(ScriptItemActionType(t_OnStep,11))
+                04 ^{
+                    01=if(ItemDurability(CurItem()) && CustomArtData(CurItem(),1)<2000)
+                    02 ^{
+                        01=if(ItemIsInUse(CurItem()))CustomArtData(CurItem(),1,CustomArtData(CurItem(),1)+5);
+                        02=if(CustomArtData(CurItem(),1)>2000)CustomArtData(CurItem(),1,2000);
+                    }
+                }
+                05=if(ScriptItemActionType(t_OnShowingItemInfo))
+                06 ^{
+                    01=if(ItemDurability(CurItem()))
+                    02 ^{
+                        01=if(charge!=CurTurn() && charge)
+                        02 ^{
+                            01=if(FindItemInStorage(CurItem())<0)
+                            02 ^{
+                                01=for(int i=0;i<CurTurn()-charge;i=i+1)CustomArtData(CurItem(),1,CustomArtData(CurItem(),1)+Rnd(0,5));
+                                02=if(CustomArtData(CurItem(),1)>2000)CustomArtData(CurItem(),1,2000);
+                            }
+                            03=charge=CurTurn();
+                        }
+                    }
+                }
+                07=if(ScriptItemActionType(t_OnItemDeEquip))
+                08 ^{
+                    00=target_item=IdToItem(CustomArtTextData(CurItem(),2));
+                    01=if(CurrentForm()=='Ship')
+                    02 ^{
+                        01=if(FormCurShip()==Player())InterfaceState('Ship','pulsar_panel',0);
+                        02=if(CustomArtData(CurItem(),3)!=0 && ShipFindCustomShipInfoByType(Player(),'pulsar_infos')>=0)
+                        03 ^{
+                            00=if(ItemType(target_item)==t_RepairRobot)ShipSpecialBonuses(Player(),bonDroid,ShipSpecialBonuses(Player(),bonDroid)-CustomArtData(CurItem(),2));
+                            01=if(ItemType(target_item)==t_CargoHook)ShipSpecialBonuses(Player(),bonHook,ShipSpecialBonuses(Player(),bonHook)-CustomArtData(CurItem(),2));
+                            02=if(ItemType(target_item)==t_Radar)ShipSpecialBonuses(Player(),bonRadar,ShipSpecialBonuses(Player(),bonRadar)-CustomArtData(CurItem(),2));
+                            03=if(ItemType(target_item)==t_Scaner)ShipSpecialBonuses(Player(),bonScan,ShipSpecialBonuses(Player(),bonScan)-CustomArtData(CurItem(),2));
+                            04=if(ItemType(target_item)==t_DefGenerator)ShipSpecialBonuses(Player(),bonDef,ShipSpecialBonuses(Player(),bonDef)-CustomArtData(CurItem(),2));
+                            05=InterfaceState('Ship',CustomArtTextData(CurItem(),3)+'_A',0);
+                            06=InterfaceState('Ship',CustomArtTextData(CurItem(),3),1);
+                            07=CustomArtData(CurItem(),2,0);
+                            08=CustomArtData(CurItem(),3,0);
+                            09=CustomArtTextData(CurItem(),1,'');
+                            10=CustomArtTextData(CurItem(),2,'');
+                            11=CustomArtTextData(CurItem(),3,'');
+                            12=ShipDeleteCustomShipInfo(Player(),'pulsar_infos');
+                        }
+                    }
+                    03=if(CurrentForm()=='StarMap')
+                    04 ^{
+                        00=if(ShipFindCustomShipInfoByType(Player(),'pulsar_infos')>=0)
+                        01 ^{
+                            00=if(!ItemIsInUse(CurItem()))InterfaceState('Ship','pulsar_panel',0);
+                            01=if(ItemType(target_item)==t_RepairRobot)ShipSpecialBonuses(Player(),bonDroid,ShipSpecialBonuses(Player(),bonDroid)-CustomArtData(CurItem(),2));
+                            02=if(ItemType(target_item)==t_CargoHook)ShipSpecialBonuses(Player(),bonHook,ShipSpecialBonuses(Player(),bonHook)-CustomArtData(CurItem(),2));
+                            03=if(ItemType(target_item)==t_Radar)ShipSpecialBonuses(Player(),bonRadar,ShipSpecialBonuses(Player(),bonRadar)-CustomArtData(CurItem(),2));
+                            04=if(ItemType(target_item)==t_Scaner)ShipSpecialBonuses(Player(),bonScan,ShipSpecialBonuses(Player(),bonScan)-CustomArtData(CurItem(),2));
+                            05=if(ItemType(target_item)==t_DefGenerator)ShipSpecialBonuses(Player(),bonDef,ShipSpecialBonuses(Player(),bonDef)-CustomArtData(CurItem(),2));
+                            06=InterfaceState('Ship',CustomArtTextData(CurItem(),3)+'_A',0);
+                            07=InterfaceState('Ship',CustomArtTextData(CurItem(),3),1);
+                            08=CustomArtData(CurItem(),2,0);
+                            09=CustomArtData(CurItem(),3,0);
+                            10=CustomArtTextData(CurItem(),1,'');
+                            11=CustomArtTextData(CurItem(),2,'');
+                            12=CustomArtTextData(CurItem(),3,'');
+                            13=ShipDeleteCustomShipInfo(Player(),'pulsar_infos');
+                        }
+                    }
+                }
+                09=if(ScriptItemActionType(t_OnEnteringForm))
+                10 ^{
+                    00=if((CurrentForm()=='Ship' && FormCurShip()==Player()))
+                    01 ^{
+                        00=if(!ItemIsInUse(CurItem()))InterfaceState('Ship','pulsar_panel',0);
+                        01=else InterfaceState('Ship','pulsar_panel',1);
+                    }
+                }
+                11=if(!ItemIsInUse(CurItem()))exit;
+                12=int offer=0;
+                13=if(CustomArtData(CurItem(),3)==1 && ItemDurability(CurItem())>12)
+                14 ^{
+                    01=if(CurrentForm()!='Ship')
+                    02 ^{
+                        01=target_item=IdToItem(CustomArtTextData(CurItem(),2));
+                        02=if(target_item)
+                        03 ^{
+                            01=if(ItemIsInUse(target_item) && ItemDurability(target_item)>=20 && CustomArtData(CurItem(),1)>75)
+                            02 ^{
+                                01=CustomArtData(CurItem(),2,GetEquipmentStats(target_item,0)/2);
+                                02=CustomArtData(CurItem(),3,10);
+                                03=if(ItemType(target_item)==t_RepairRobot)ShipSpecialBonuses(Player(),bonDroid,ShipSpecialBonuses(Player(),bonDroid)+CustomArtData(CurItem(),2));
+                                04=if(ItemType(target_item)==t_CargoHook)ShipSpecialBonuses(Player(),bonHook,ShipSpecialBonuses(Player(),bonHook)+CustomArtData(CurItem(),2));
+                                05=if(ItemType(target_item)==t_Radar)ShipSpecialBonuses(Player(),bonRadar,ShipSpecialBonuses(Player(),bonRadar)+CustomArtData(CurItem(),2));
+                                06=if(ItemType(target_item)==t_Scaner)ShipSpecialBonuses(Player(),bonScan,ShipSpecialBonuses(Player(),bonScan)+CustomArtData(CurItem(),2));
+                                07=if(ItemType(target_item)==t_DefGenerator)ShipSpecialBonuses(Player(),bonDef,ShipSpecialBonuses(Player(),bonDef)+CustomArtData(CurItem(),2));
+                            }
+                        }
+                    }
+                }
+                15=if(CustomArtData(CurItem(),3)==10)
+                16 ^{
+                    03=if(ScriptItemActionType(t_OnScan))
+                    04 ^{
+                        01=target_item=IdToItem(CustomArtTextData(CurItem(),2));
+                        02=if(target_item)
+                        03 ^{
+                            01=if(ItemType(target_item)==t_Scaner)
+                            02 ^{
+                                01=if(ItemIsInUse(target_item) && ItemDurability(target_item)>=20 && CustomArtData(CurItem(),1)>75 && ItemDurability(CurItem())>12)
+                                02 ^{
+                                    01=ItemDurability(target_item,ItemDurability(target_item)-Rnd(10,20));
+                                    02=ItemDurability(CurItem(),ItemDurability(CurItem())-Rnd(5,10));
+                                    03=CustomArtData(CurItem(),1,CustomArtData(CurItem(),1)-Rnd(40,75));
+                                }
+                                03=if(ItemIsInUse(target_item) && (ItemDurability(target_item)<20 || CustomArtData(CurItem(),1)<=75 || ItemDurability(CurItem())<=12))offer=1;
+                            }
+                        }
+                    }
+                    05=if(ScriptItemActionType(t_OnWeaponShot))
+                    06 ^{
+                        01=target_item=IdToItem(CustomArtTextData(CurItem(),2));
+                        02=if(target_item==ScriptItemActObject2())
+                        03 ^{
+                            01=if(ObjectType(ScriptItemActObject1())==5 || ObjectType(ScriptItemActObject1())==4)
+                            02 ^{
+                                01=if(ItemDurability(target_item)>=20 && CustomArtData(CurItem(),1)>75 && ItemDurability(CurItem())>12)
+                                02 ^{
+                                    01=ItemDurability(target_item,ItemDurability(target_item)-Rnd(10,20));
+                                    02=ItemDurability(CurItem(),ItemDurability(CurItem())-Rnd(5,10));
+                                    03=CustomArtData(CurItem(),1,CustomArtData(CurItem(),1)-Rnd(40,75));
+                                    04=ScriptItemActParam(ScriptItemActParam()+(ScriptItemActParam()*60)/100);
+                                }
+                            }
+                        }
+                    }
+                }
+                17=if(CustomArtData(CurItem(),3)==11)
+                18 ^{
+                    01=if(ScriptItemActionType(t_OnTakingDamage) || ScriptItemActionType(t_OnTakingDamageEn) || ScriptItemActionType(t_OnTakingDamageSp) || ScriptItemActionType(t_OnTakingDamageMi))
+                    02 ^{
+                        01=if(ScriptItemActParam()<=CustomArtData(CurItem(),1) && ItemDurability(CurItem())>5)
+                        02 ^{
+                            01=CustomArtData(CurItem(),1,CustomArtData(CurItem(),1)-ScriptItemActParam());
+                            02=ScriptItemActParam(0);
+                            03=ItemDurability(CurItem(),ItemDurability(CurItem())-Rnd(2,5));
+                        }
+                        03=if(ScriptItemActParam()>CustomArtData(CurItem(),1) && ItemDurability(CurItem())>5)
+                        04 ^{
+                            01=ScriptItemActParam(ScriptItemActParam()-CustomArtData(CurItem(),1));
+                            02=CustomArtData(CurItem(),3,0);
+                            03=ItemDurability(CurItem(),ItemDurability(CurItem())-Rnd(2,5));
+                        }
+                    }
+                    03=if(ScriptItemActionType(t_OnStep,11))
+                    04 ^{
+                        01=CustomArtData(CurItem(),3,0);
+                        02=ShipDeleteCustomShipInfo(Player(),'pulsar_infos');
+                    }
+                }
+                19=if(CustomArtData(CurItem(),3)==10)
+                20 ^{
+                    01=if(ScriptItemActionType(t_OnStep,11))
+                    02 ^{
+                        01=target_item=IdToItem(CustomArtTextData(CurItem(),2));
+                        02=if(ItemType(target_item)<t_Weapon1)
+                        03 ^{
+                            01=ItemDurability(target_item,ItemDurability(target_item)-Rnd(10,20));
+                            02=ItemDurability(CurItem(),ItemDurability(CurItem())-Rnd(5,10));
+                            03=CustomArtData(CurItem(),1,CustomArtData(CurItem(),1)-Rnd(40,75));
+                        }
+                        04=if(target_item)
+                        05 ^{
+                            01=if(!ItemIsInUse(target_item) || ItemDurability(target_item)<20 || CustomArtData(CurItem(),1)<=75)offer=1;
+                        }
+                        06=if(!target_item)offer=1;
+                        07=if(ItemDurability(CurItem())<12)offer=1;
+                    }
+                }
+                21=if(ScriptItemActionType(t_OnItemEquip) && CurrentForm()=='Ship')
+                22 ^{
+                    01=if(FormCurShip()==Player())InterfaceState('Ship','pulsar_panel',1);
+                }
+                23=if(offer==1)
+                24 ^{
+                    01=target_item=IdToItem(CustomArtTextData(CurItem(),2));
+                    02=offer=0;
+                    03=if(ItemType(target_item)==t_RepairRobot)ShipSpecialBonuses(Player(),bonDroid,ShipSpecialBonuses(Player(),bonDroid)-CustomArtData(CurItem(),2));
+                    04=if(ItemType(target_item)==t_CargoHook)ShipSpecialBonuses(Player(),bonHook,ShipSpecialBonuses(Player(),bonHook)-CustomArtData(CurItem(),2));
+                    05=if(ItemType(target_item)==t_Radar)ShipSpecialBonuses(Player(),bonRadar,ShipSpecialBonuses(Player(),bonRadar)-CustomArtData(CurItem(),2));
+                    06=if(ItemType(target_item)==t_Scaner)ShipSpecialBonuses(Player(),bonScan,ShipSpecialBonuses(Player(),bonScan)-CustomArtData(CurItem(),2));
+                    07=if(ItemType(target_item)==t_DefGenerator)ShipSpecialBonuses(Player(),bonDef,ShipSpecialBonuses(Player(),bonDef)-CustomArtData(CurItem(),2));
+                    08=InterfaceState('Ship',CustomArtTextData(CurItem(),3)+'_A',0);
+                    09=InterfaceState('Ship',CustomArtTextData(CurItem(),3),1);
+                    10=CustomArtData(CurItem(),2,0);
+                    11=CustomArtData(CurItem(),3,0);
+                    12=CustomArtTextData(CurItem(),1,'');
+                    13=CustomArtTextData(CurItem(),2,'');
+                    14=CustomArtTextData(CurItem(),3,'');
+                    15=ShipDeleteCustomShipInfo(Player(),'pulsar_infos');
+                }
+            }
+            OnActCodeTypes=t_OnStep,t_OnItemEquip,t_OnItemDeEquip,t_OnScan,t_OnWeaponShot,t_OnTakingDamage,t_OnTakingDamageEn,t_OnTakingDamageSp,t_OnTakingDamageMi,t_OnShowingItemInfo,t_OnEnteringForm
+            OnActStepTypes=11
+            OnUseCode ^{
+                01=int temp_int=0;
+                02=if(ShipFindCustomShipInfoByType(Player(),'pulsar_infos')>=0)
+                03 ^{
+                    01=temp_int=1;
+                    02=MessageBox('The pulsar is synchronized with other equipment.');
+                }
+                04=if(CustomArtData(CurItem(),1)<200 && temp_int==0)
+                05 ^{
+                    01=temp_int=2;
+                    02=MessageBox('Not enough charge.');
+                }
+                06=if(ItemDurability(CurItem())<10 && temp_int==0)
+                07 ^{
+                    01=temp_int=3;
+                    02=MessageBox('The pulsar will not withstand the load, repair is required.');
+                }
+                08=if(temp_int!=0)exit;
+                09=if(temp_int==0 && CustomArtData(CurItem(),1)>200 && CustomArtData(CurItem(),3)==0)
+                10 ^{
+                    00=if(MessageBoxYesNo('Activate protection mode?'))
+                    01 ^{
+                        01=CustomArtData(CurItem(),3,11);
+                        02=ShipAddCustomShipInfo(Player(),'pulsar_infos','NoShow');
+                    }
+                }
+            }
+            Size=10
+            Text=A dark energy reactor that operates on the principle of deploying subspaces and searching for temporary reserves that contradict the timing of the cosmos. The experimental sample accelerates the course of physical processes in a closed volume, thereby bringing the operation of almost any device to a qualitatively new level. When installed on a ship, the charge is replenished 2 times faster.
+            Text=Use: Projects the structure of the ship into other possible outcomes of the universe, choosing the most vulnerable parts and scanning their future, which allows you to bypass causality and unnaturally increase the protection of the hull.
+            Text=Charge: <Data1> / <color=255,240,100>2000</color>
+        }
+    }
+}
+FormInfo ^{
+    ForsageEQ=Feeds a pulsar charge to EQP, increasing efficiency by VAR. In this case, the EQP wears out quickly.
+    ForsageWP=Applies a pulsar charge to weapons, increasing damage by 60%. In this case, the equipment wears out quickly.
+    br=<br>
+    kov="
+    td_otstup=<td=200>
+}
+MicroModuls ^{
+    ExpSSB_Fragility20Plus ^{
+        Cost=200
+        Equipments=Any
+        Fragility=83
+        LockedAcryn=3
+        Name=Fragility_20_plus
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+}
+Script ^{
+    Mod_ExpSSB ^{
+        110=Get updated data
+        142=<br>
+        143=<0><br>What artifact would you like to donate for study?
+        144=I don't have unnecessary artifacts
+        145=Thank you for your cooperation. For <0> tons of artifacts you get <1> cr.
+        147=Upgrade artifact
+        148=I won't improve anything
+        151=Next
+        153=How is research progressing?
+        155=Ask about probe research results
+        156=Hand in surviving fragments of hyperspace probes
+        157=Take all unnecessary artifacts
+        158= (tranclucator)
+        160=</color>Artifact type:             studied on:
+        161=Yes, we have been waiting for you. Unfortunately, we did not manage to find out much: the equipment did not survive the quantum modulation to which we subjected it. However, we were able to recover some information from the probes' memory blocks. This data is most similar to the planned route, it contains the coordinates of star systems and time frames.
+        162=<color=255,0,0>Mission failed.</color>
+        163=Research station <0> has been destroyed
+        164=Message from research station <0>: probes research completed.
+        165=Having successfully dealt with the probes that attacked you in hyperspace, you picked up their surviving parts on the ship. Undamaged equipment can be delivered to the scientific base in order to find out the reasons for the aggression of the probes. Or you may not worry too much and sell it for parts!
+        167=Are you claiming to have been attacked by the probes in hyperspace? It's really interesting, usually either pirates or so-called "aliens" are operating there. Thank you so much for giving us a new riddle, ranger! We will do our best to solve it. I think, first, the integral-corpuscular scanning, then...<br>Ah, excuse me, I digress. Come back in a few days, we will surely be able to tell you more about this interesting phenomenon!
+        168=Yes, we have been waiting for you. Unfortunately, we did not manage to find out much: the equipment did not survive the quantum modulation to which we subjected it. However, we were able to recover some information from the probes' memory blocks. This data most closely resembles a planned route, showing star system coordinates and timelines.<br>Last coordinates point to system <0>, while their associated time slot is ending in a few weeks. There is nothing more we can tell you, <1>.<br>If I were you, I would definitely visit this star system before the deadline expires. Whatever it is, it must be of great scientific importance!
+        170=I changed my mind
+        175=Go away
+        176=<color=0,255,0>Mission completed.</color><br>Having successfully dealt with the probes that attacked you in hyperspace, you picked up their surviving parts on the ship. Undamaged equipment can be delivered to the scientific base in order to find out the reasons for the aggression of the probes. Or you may not worry too much and sell it for parts!
+        177=Then I go there immediately
+        178=Yes, we have been waiting for you. Unfortunately, we did not manage to find out much: the equipment did not survive the quantum modulation to which we subjected it. However, we were able to recover some information from the probes' memory blocks. This data most closely resembles a planned route, showing star system coordinates and timelines.<br>Last coordinates point to system <0>, while their associated time slot is ending in a few weeks. There is nothing more we can tell you, <1>.<br>If I were you, I would definitely visit this star system before the deadline expires. Whatever it is, it must be of great scientific importance!
+        181=Yes
+        183=I changed my mind
+        186=<0>
+        187=Over and out
+        188=I would like to use your services
+        205=
+        207=Mite modernization
+        208=No
+        216=<clrEnd>You have not yet helped in the study of artifacts.
+        218=, will close:
+        220=Maybe you need some help inside wormholes?
+        221=</color>The charge of the communicator is not enough to open a black hole.
+        222=</color>Our probes have stumbled upon something valuable, but they are being interfered with by unknown ships. Get this situation under control.
+        223=Okay. And thanks to your supply of additional material, we have made another discovery. As a thank you, let me give you a unique artifact created using new technologies.
+        224=Thank you
+        225=Subspace travel
+        226=We have not studied this type of equipment. Bring us more artifacts for research.
+        228=Which micromodule would you like to use for alignment?
+        230=I see
+        231=You have selected <0> and micromodule <1> for alignment. Is everything right?
+        232=Usually unknown equipment is not compatible with micromodules due to technology conflicts, however, artifacts have a much lower conflict, which is why they partially work on our equipment. The more we study the artifacts you brought back, the more we can offer.<br>Choose unknown equipment to combine with the micromodule.
+        238=</color>Your communicator does not have enough charge to open the hypertunnel.
+        239=</color>We're on our way.
+        240=What an interesting example. No scanners, biotic, mental or technological, could detect any anomalies. Clean work... We're lucky we managed to capture the object alive. Perhaps an autopsy can show how the Aliens managed to create such a perfect system of disguise.
+        242=Incredible! The object is able to speak the galactic language! Double lucky he's alive! Perhaps we will be able to establish contact, how much we can learn from him! I'm afraid, colleagues, the autopsy is a little delayed. Security, get the object to the containment chamber!
+        244=Hmm... There really is a record of such a ranger and your biometrics match exactly. Okay, let's say I believe this version, but that doesn't explain your strange ship.
+        248=Stop-stop-stop, what kind of autopsy?!
+        249=I'm not going to any cell, egghead! I'm not an "alien", I'm just an ordinary ranger.
+        250=I'm telling you! I am a ranger! My name is <0>, you can check the rating!
+        251=Coalition scientists designed this hull. A research stations network launched a project of studying black holes, and this hull is result of the research. I received an experimental sample as a thank-you for helping scientists to get materials.
+        252=Are you going to erase my memory?!
+        253=Okay, I agree to cooperate.
+        254=Ranger? Interesting... I'm afraid your ship says otherwise. The materials from which it is built and the technologies used in it are not available to the Coalition, and even more so to ordinary rangers.
+        255=Interestingly, it means that they nevertheless decided to study black holes ... Well, sooner or later it had to happen, but we expected that their research would lead nowhere, so we did not pay attention to it, but this is how it turned out... The ship was built... Perhaps the decisive factor here was the help of rangers like you. I think you can help us. It's good, I hate to erase the memory, patients scream like that... Horror.
+        256=Certainly. Do you have any idea where you are? This base is a secret government facility, only a select few know about our existence, even the highest ranks are not all aware. We must guard our privacy, say thank you that we have this technology, otherwise we would have to eliminate all random pilots. You are lucky, we will not do this with you. I think one way or another you can help us, especially now that most of our probes have been destroyed. By the way, do you know what happened to them? Not? Well, in any case, our defense is now greatly weakened and if there will be a new attack, we will need any help.
+        258=Object <clr>X-24&1/2<clrEnd> is online.
+        259=We can replace old parts with more compact and reliable ones, which will reduce the weight and wear of the artifact, but will double the price.<br>Here is a list of what we can improve:<br><0>
+        260=Our station is equipped with a record-breaking hypergenerator, which allows you to almost instantly move to any part of the galaxy. But we can reduce the size of the field to the size of your hull, which will allow you to move you wherever you want. By the way, where do you want to go?
+        261=But this service is not free, some parts of the generator are irretrievably destroyed as a result of operation. Our cost will be approximately <0> cr.<br>So, start preparing for your move? It will not take much time.
+        263=Get information about opened black holes
+        264=</color>No hyperspace anomalies detected.
+        265=<clrEnd>Anomalies were found in the following systems:
+        266=<clrEnd>The return to subspace is scheduled in one day. If you do not want to be in hyperspace for the next couple of months, then I advise you to hurry up.
+        267=<clrEnd>Return to subspace is scheduled in two days. If you do not want to be in hyperspace for the next couple of months, then I advise you to hurry up.
+        268=<clrEnd>Return to subspace is scheduled in three days. If you do not want to be in hyperspace for the next couple of months, then I advise you to hurry up.
+        270=Fine. We will give you a special communicator, with which you can get to our station from anywhere in the galaxy. It does take some time to recharge though. As a reward for cooperation, our station will provide you with access to a number of unique services. Rest assured, our experts are really capable of doing miracles, you will not be disappointed.<br>So, we agreed. Most importantly, remember: it is strictly prohibited to disclose information about our existence. If leak will happen, we will have no choice but to stop our cooperation and erase your memory, as well as everyone who learns of our existence. Believe me, we like this outcome no more than you.
+        271=Leave the station
+        272=</color>The hyperspace tunnel is open, we'll be waiting for you for three days.
+        276=Thank you for your help in investigating unknown equipment, in return you will receive <0> cr. for the lost artifact.
+        278=<clrEnd>You are in a Subspace Base. Our location is strictly confidential, as the most brilliant minds from all over the galaxy conduct their research here, which makes this station truly invaluable. Would you like to help us in scientific research by sharing artifacts? Or maybe you would like to make your non-standard equipment more durable? You could also act as a tester of our most secret latest technologies.
+        279=<color=0,255,0>Mission completed.</color><br>Yes, we have been waiting for you. Unfortunately, we did not manage to find out much: the equipment did not survive the quantum modulation to which we subjected it. However, we were able to recover some information from the probes' memory blocks. This data is most similar to the planned route, it contains the coordinates of star systems and time frames. The last coordinates point to the <0> system, while the time interval associated with them is coming to an end in a few weeks. There is nothing more we can tell you, <1>. If I were you, I would definitely visit this star system before the deadline came to an end. Whatever it is, it must be of great scientific importance!
+        281=Our specialists have developed a modification of your unique hull. Changes in the composition of the skin material will make it more durable. The internal systems will also be re-equipped, as a result of which the volume of the entire ship will change.<br>Yes, the new materials will cost you <0> cr.<br>Do you agree?
+        282=All types
+        283=Missile weapon
+        284=Fragmentation weapon
+        285=Energy weapon
+        286=Radar
+        287=Scanner
+        288=Shield generator
+        289=Gripper
+        290=Repair droid
+        291=Fuel tank
+        292=Engine
+        293=Hull
+        294=The last coordinates point to the <0> system, while the time interval associated with them is coming to an end in a few weeks. There is nothing more we can tell you, <1>.
+        295=Weapon
+        59=You have selected:<br>Artifact name: <0>.<br>Artifact weight: <1> tons.<br>Artifact price: <2> cr.<br>Artifact type: <3>.
+        61=Submit an artifact for study
+        62=Refuse
+        63=Agree
+        64=Match equipment with micromodule
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            Immortal ^{
+                Description=
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=ScriptItemActParam(0);
+                }
+                OnActCodeTypes=t_OnTakingDamage,t_OnTakingDamageEn,t_OnTakingDamageSp,t_OnTakingDamageMi
+            }
+            SelfDestroy ^{
+                Description=To destroy holograms
+                Icon=2
+                Name=Self-destruction
+                OnActCode ^{
+                    01=int infos = ShipFindCustomShipInfoByType(ScriptItemActShip(), 'SelfDestroy');
+                    02=int infos_var_1 = ShipCustomShipInfoData(ScriptItemActShip(), infos, 1);
+                    03=int shot;
+                    04=if(ScriptItemActionType(t_OnStep))
+                    05 ^{
+                        01=if(ScriptItemActParam() == 11)
+                        02 ^{
+                            01=if(infos_var_1 == 0)
+                            02 ^{
+                                01=if(ShipStar(ScriptItemActShip()) == ShipStar(Player()))ShowEffect('Weapon.MissileHit', 5, ScriptItemActShip(), ScriptItemActShip(), 0, 0, 0, 0, 0, 0);
+                                02=HullHP(ScriptItemActShip(), 0);
+                            }
+                            03=else if(infos_var_1 > 0)
+                            04 ^{
+                                01=ShipCustomShipInfoData(ScriptItemActShip(), infos, 1, infos_var_1 - 1);
+                            }
+                        }
+                        03=else
+                        04 ^{
+                            01=if(ShipOrder(ScriptItemActShip()) == 6)
+                            02 ^{
+                                01=shot = Rnd(0, 10);
+                                02=if(Dist(ScriptItemActShip(), ShipOrderObj(ScriptItemActShip())) <= 300 && ShipStar(ScriptItemActShip()) == ShipStar(Player()) && shot >= 5)ShowEffect('Weapon.0', 1, ShipOrderObj(ScriptItemActShip()), ScriptItemActShip(), 0, 0, 0, 0, 0, 0);
+                            }
+                        }
+                    }
+                    06=else ScriptItemActParam(0);
+                }
+                OnActCodeTypes=t_OnStep,t_OnTakingDamage,t_OnTakingDamageEn,t_OnTakingDamageSp,t_OnTakingDamageMi
+                OnActStepTypes=1,2,3,4,5,6,7,8,9,10,11
+            }
+            pulsar_infos ^{
+                Description=--
+                Icon=1
+                Name=--
+            }
+        }
+    }
+}
+ShipType ^{
+    Gaal ^{
+        t_Head=Object
+    }
+    TypeName ^{
+        SSB=Object
+        SSBSmall=SSB
+        t_Head=
+    }
+}
+UselessItems ^{
+    Zond ^{
+        Cost=Huge
+        Name=Wreck of unidentified probes
+        Owner=None
+        Size=18
+        Text=All you managed to detect, after a strange attack of probes.
+    }
+}

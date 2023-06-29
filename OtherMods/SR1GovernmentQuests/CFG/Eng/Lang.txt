@@ -1,0 +1,1336 @@
+Quest ~{
+    DefShip ^{
+        59 ^{
+            End=Excellent operation! We have detected three Pelengan agents engaged in sabotage. We will certainly continue our "Invisible eye" project, and sign contracts with such cool guys as you. And now, here is your <Money> cr.
+            GovernmentAward=Reward,Points,Artefact
+            InThisSystem=No
+            PlanetRace=Maloc
+            ShipType=Pirate
+            Start=Planet <FromPlanet> is the home of mega-corporation "Qalagon", the leader in Maloqi military technologies. For some time now they have been working on the project "Invisible eye", the essence of which is collecting information under pirate cover. Our agents work on the pirate ship <Ship>. We cannot ensure their safety by giving them a Draqar escort since this will immediately cause suspicion. However, if a pirate like you, <Player>, travels with it, there will be no questions asked.
+            Start=We know that our guys are in trouble and we are ready to offer you a good reward if this ship stays whole until <Date>.
+            Status=Pirate
+        }
+        60 ^{
+            End=Thank you for defending our master Dragit from the daring pirates, <Player>! We made a wise decision in choosing you, despite your pirate reputation. This money, <Money> cr is the reward for your bravery.
+            GovernmentAward=Reward,Points
+            InThisSystem=Yes
+            PlanetRace=Maloc
+            ShipType=Diplomat
+            Start=Rart(a diplomat) Niqcher Dragit is the master of the Baduba-ren school, which teaches the art of combat with the baduba, a stone club. He has his own practice and gives lessons on different planets throughout the Galaxy. Recently, the representatives of Gozok style, a Pelengan school of mud fighting, have challenged master Dragit. They have suggested several fights in different places of his choosing. If he wins over half of these fights, the Gozok school will officially recognise its defeat by Baduba-ren.
+            Start=So far, all has gone well for our master, but we fear some trick on the part of the Pelengs. They lure Dragit into a trap and kill him. We are ready to pay you <Money> cr if for <Day> days you will guard our master's ship, <Ship>.
+            Status=Any
+        }
+        61 ^{
+            End=Brilliant, <Player>! You successfully protected <Ship>, our important person is safe. As promised we have transferred <Money> cr to your account.
+            GovernmentAward=Reward,Points
+            InThisSystem=No
+            PlanetRace=People
+            ShipType=Diplomat
+            Start=Our diplomatic ship <Ship> carrying a very important person, was attacked by pirates in the system of <InStar>. We cannot tell you who this person is as it is top secret. When the vessel departed we wisely provided it with a guard ship, but it got severely damaged in a fight with pirates and had to return to base. We are urgently seeking other pilots who wish to go to the system of <InStar> where <FullShip> is currently located and work as its escort till <Date>. We are willing to pay you <Money> cr for this work.
+            Status=Any
+        }
+        62 ^{
+            End=Our ambassador is alive due to your efforts, <Player>. Please accept our gratitude and <Money> cr which is being transferred to your personal account.
+            GovernmentAward=Reward,Points,Artefact
+            InThisSystem=Yes
+            PlanetRace=People
+            ShipType=Diplomat
+            Start=According to our intelligence reports there will be an attempt to assassinate our ambassador. We are looking for a military pilot, like you <Player>, who will guard him for the next <Day> days. If you agree we will give you a contract worth <Money> cr, and you can start guarding the ship <Ship> immediately.
+            Status=Warrior
+        }
+        63 ^{
+            End=Great <Player>, excellent work: the liner is in working order and Mikhail Gorpukk is still spilling the beans on his accomplices. We are paying you <Money> cr from the modest budget of <FromPlanet>. We hope that in the future you will become a law-abiding citizen and will never again be engaged in illegal activity.
+            GovernmentAward=Reward,Points,Artefact
+            InThisSystem=Yes
+            PlanetRace=People
+            ShipType=Liner
+            Start=Not long ago a passenger liner <Ship> left our planet. Apart from ordinary passengers it carries a famous smuggler Mikhail Gorpukk, who is facing 216 years imprisonment. Our liner will visit a few planets where we are organising identification parades for his accomplices. We are afraid that the pirates, who are still at large, will attempt to destroy the ship.
+            Start=Naturally we know that you are a pirate, <Player>. However, we believe that for the hefty sum of <Money> cr you can still serve our community and protect the liner. The contract will be considered complete if the ship stays alive till <Date>.
+            Status=Pirate
+        }
+        64 ^{
+            End=You have completed this difficult task most admirably. You've protected the trucker <Ship> and have earned your reward of <Money> cr. You have done great service to the economy of <FromPlanet>. We have decided to start investigation of the recent incidents.
+            GovernmentAward=Reward,Points,Artefact
+            InThisSystem=Yes
+            PlanetRace=People
+            ShipType=Transport
+            Start=Insurance company "Willie and Maxie", dealing in the star ship business, are nearly bankrupt. Quite recently not one but several ships they insured were destroyed by pirates and as a result the company had to pay up. This is a major blow to their business. At the moment their executives believe that the ship owners do this on purpose, sending their ships to dangerous spots so that they can get good compensation for the destruction of their old ships. Willie & Maxie have received good reports about you and are ready to propose a contract to the value of <Money> cr, to guard the trucker <Ship>, which has just been insured for a huge sum, till <Date>. At present, this ship is in our system.
+            Status=Trader
+        }
+        65 ^{
+            End=The composer and producer association of <FromPlanet> expresses its gratitude for your work. Please take your reward of <Money> cr. Don't forget to listen to our beautiful music. Remember, beauty will save the Galaxy! And now the cruising astroliner <Ship> will continue  on its way without your help.
+            GovernmentAward=Reward,Points
+            InThisSystem=Yes
+            PlanetRace=People
+            ShipType=Liner
+            Start=Tomorrow an annual song festival the "Galaxy of melodies" is starting, which is traditionally held aboard the cruising astroliner <Ship>. All the best artists from our system will assemble on the ship and then it will visit some planets where traditional musical events will be held, all within the framework of the festival. The flight will be concluded by awarding prizes in seven categories. We do not want anything to interfere with the creative atmosphere of the festival, so we need to think about security. We are offering you a contract to protect the ship for <Day> days, after which you will get <Money> cr. The ship has already started its journey and you will have to catch it up.
+            Status=Any
+        }
+        66 ^{
+            End=Ship <Ship> and its owner are grateful for your protection. The Galaxy certainly needs more pilots like you, <Player>. Here is your <Money> cr.
+            GovernmentAward=Reward,Points
+            InThisSystem=Yes
+            PlanetRace=People
+            ShipType=Diplomat
+            Start=Honorary citizen of <FromPlanet>, Sir Arseni Joshua Villier, a member of the Chamber in inter racial conflicts called the Order of the Blue Legion has departed on consular ship <Ship> on private business. He recently survived an assassination attempt that cost him his right hand and left eye, and now he believes it is necessary to hire a bodyguard, an experienced space pilot with his own armed ship. So, Sir Villier is willing to pay <Money> cr to such a pilot if he and his ship is kept safe till <Date>. You can adjust the time frame if you want to change the sum of reward.
+            Status=Warrior
+        }
+        67 ^{
+            End=Excellent undercover work, <Player>! The Prime Minister is alive and nobody even suspected he was aboard the <Ship>.
+            End=Your money, <Money> cr, has already been transferred to your account!
+            GovernmentAward=Reward,Points,Artefact
+            InThisSystem=Yes
+            PlanetRace=People
+            ShipType=Diplomat
+            Start=Our prime minister Alessano Velasques is travelling incognito aboard the consular ship <Ship>. He is planning several visits to the neighbouring systems, but at the moment he is still here. We have no right to interfere with his privacy by sending an official escort. Now <Player>, as a renowned warrior, you are ideal for this role. No one is going to suspect you are guarding his ship the <Ship> if you just follow it and pretend to be trading. You are entrusted with two tasks. Firstly, to preserve the Minister's identity, and secondly, provide him with sufficient protection for <Day> days. We hope the generous reward of <Money> cr will suffice.
+            Status=Warrior
+        }
+        68 ^{
+            End=<Player>, you have completed the contract for protecting our foundation representatives. Here is the <Money> cr we promised. Don't forget to make a donation to aid the poor children in the Galaxy!
+            InThisSystem=Yes
+            PlanetRace=People
+            ShipType=Diplomat
+            Start=Very soon a Congress of the Galactic charitable foundation called "Children are the Galaxy's Future" (CGF) will be starting. Two of our citizens who are foundation representatives in the system of <FromStar> will be taking part in it. Our planet isn't very socially secure, so the work of this organisation is really important to us. That's why we wouldn't want our representatives to suffer from a robbery.
+            Start=To put it briefly, you must guard ship <Ship> which is carrying our representatives. You are a military fighter with considerable experience, so you are certainly suitable for this task. CGF Foundation is offering you a contract to the value of <Money> cr, according to which you must guard the ship until <Date>; however, we will consider other terms. Are you interested?
+            Status=Any
+        }
+        69 ^{
+            End=You have defended the ship <Ship> and we are very grateful to you for this. Our technological know-how and valuable cargo have suffered <clr>0.02<clrEnd>% damage, which is within limits for this class of ship. We are happy to give you <Money> cr as your reward. We hope you are pleased with this sum.
+            GovernmentAward=Reward,Points
+            InThisSystem=No
+            PlanetRace=Fei
+            ShipType=Transport
+            Start=Our advanced multifunctional transport ship <Ship> is being attacked with a frequency that belies belief. Upon conducting painstaking research we have found out who is behind these actions. You see, we have built the ship using the most advanced technology for transporting and storing perishable foods, and these have attracted the interest of certain shadowy figures. The ship has already evaded capture and destruction several times, but at the moment it is once again being attacked in the system of <InStar>. Can you escort the transport till <Date>? If you complete the mission successfully, you will get <Money> cr as your reward upon your return to <FromPlanet>.
+            Status=Any
+        }
+        70 ^{
+            End=Very well, <Player>! You have completed the contract for guarding <Ship>. Even though we have incurred heavy losses in this transaction, we are paying you <Money> cr as your reward. As you can see, we are a respectable law-abiding organisation. If you are ever summoned to court as a witness, we would like you to confirm this.
+            GovernmentAward=Reward,Points
+            InThisSystem=Yes
+            PlanetRace=Fei
+            ShipType=Transport
+            Start=We have signed a contract with "Tokma" corporation to supply it with certain goods, unfortunately our transport ship was totally destroyed by smugglers, who took the cargo and sold it to "Tokma" at a bargain price. The corporation has taken us to court, even though it did in fact get the shipment. We have every reason to believe that the smugglers are on Tokma's payroll.
+            Start=The court has ruled that we must make a second delivery, and if it is successful, we will not have to pay a large penalty. So we must deliver the goods and do it as soon as possible, since, according to the same ruling, the size of the penalty is dependent on the delay. We are going to hire an escort for our transport. Thus, <Player>, your mission is to guard <Ship> for <Day> days. The transport is in the vicinity of this planet. We will discuss your reward after the mission.
+            Status=Any
+        }
+        71 ^{
+            End=You are a brave guy, <Player>! Our agent is still alive! Even though we still have not located the Gaalian base (could it be that it doesn't exist?), you have completed your contract. We never go back on our word! <Money> cr has been transferred to your account. And please don't talk about this operation. Otherwise we will have to publish the file we have on you, which is full of things you certainly won't want made public.
+            GovernmentAward=Reward,Points
+            InThisSystem=No
+            PlanetRace=Maloc
+            ShipType=Pirate
+            Start=Intelligence has reported that a top-secret Gaalian base operates in the system of <InStar> under an invisible screen, which is impossible to destroy by conventional weapons. That's why we have equipped a kamikaze agent who will blast the base from his pirate ship. He has already reached <InStar>. However, he has a problem: the base co-ordinates appear to be wrong. We are now working on the issue, meanwhile our agent is pretending to be a pirate on his ship <Ship>. You must guard this ship for <Day> days and help it in your favourite business, that of piracy! We will pay you well for this service when the term ends.
+            Status=Pirate
+        }
+        72 ^{
+            End=<Player>, you are a great fighter: our ship <Ship> has stayed intact. We feel that the sum of <Money> cr is certainly worth your service.
+            GovernmentAward=Reward,Points
+            InThisSystem=No
+            PlanetRace=Fei
+            ShipType=Diplomat
+            Start=Our dalani Ulgenar Voyi, who is very much respected by our people, has suddenly departed on his official ship <Ship> to an unknown destination. We suspect that he is being blackmailed, in fact we are almost certain of this since he has not told us the purpose of this flight, which is the normal practice in all Faeyan embassies. Therefore, our wise leaders have taken the decision to take a certain risk and hire a bodyguard to secretly escort his ship. We know that you have considerable military experience, so we are offering you <Money> cr if his ship <Ship> stays whole till <Date>. At the moment the dalani is in the system of <InStar>, but we know nothing of his plans.
+            Status=Warrior
+        }
+        73 ^{
+            End=We are pleased you helped us, dalani Ramaeki has remained in good health. The people of <FromPlanet> owe you a great debt. <Money> cr ase promised is rightfully yours.
+            GovernmentAward=Reward,Points,Artefact
+            InThisSystem=No
+            PlanetRace=Fei
+            ShipType=Diplomat
+            Start=Dalani Olgus Ramaeki is one of our most respected and wisest leaders. To our great sorrow, we have got some quite reliable information that certain corrupt circles have taken the decision to assassinate him, since he has interfered with their plans many times already.
+            Start=At the moment dalani Ramaeki is on board the <Ship>, in the system of <InStar>. We have no time to look for qualified bodyguards so we are ready to pay a reward of <Money> cr even to such an inexperienced trader as you, and ask you to protect the dalani's ship for <Day> days. It is highly probable that during this time unknown criminals will attack our leader. <Player>, if you believe you are worthy of this mission please take it.
+            Status=Trader
+        }
+        74 ^{
+            End=Over the <Day>-day period our ship <Ship> has been safe, you've done a grand job, <Player>. We value such work. You have earned your <Money> cr.
+            GovernmentAward=Reward,Points
+            InThisSystem=No
+            PlanetRace=Fei
+            ShipType=Liner
+            Start=Our highly developed planet has vast resources and is engaged in important research. We very much regret that other races are attempting espionage: just yesterday we caught and deported yet another Pelengan spy. We have now developed a new project. We have built a new experimental starship <Ship>, which is currently being used for experiments in accelerated hyperspace entry in the system of <InStar>. After the first run, the ship must come here for refuelling. We won't disclose any of our plans for its movement, but it will probably make another series of jumps. As a neutral party, you, <Player>, are suitable to guard this starship till <Date>. Our organisation is quite well off and is ready to pay you <Money> cr upon the successful completion of the contract, in <Day> days.
+            Status=Any
+        }
+        75 ^{
+            End=Bravo, <Player>! Your colleague <Ship> has just contacted us saying that he is absolutely fine. It was after <Date>. <Money> cr is a decent compensation for your effort and we are glad to pay it to you.
+            InThisSystem=Yes
+            PlanetRace=Fei
+            ShipType=Ranger
+            Start=Our planet has a factory that produces high-energy chrystalloids. This undermines the position of our less fortunate competitors, and they have started hiring pirates to bring down our transports. As a result of this we have already lost two transports carrying chrystalloids.
+            Start=We have decided to react. We have hired professional ranger <Ship> to transport the goods. The second part of the plan is to hire another pilot, an experienced fighter who would protect the trader. This is what we want you, <Player> for. You will not know the other ranger's destination, the only thing we can tell you is that he must visit several planets. Follow him at a respectable distance and only help him if he is in direct danger. If ranger <Ship> stays alive till <Date>, you will get <Money> cr.
+            Status=Any
+        }
+        76 ^{
+            End=The commission in planetary ecology problems is grateful to you, <Player>, for protecting the life of our inspector. You are paid a reward of <Money> cr. We are very pleased that the environmental issues are as close to your heart as they are to ours.
+            GovernmentAward=Reward,Points
+            InThisSystem=Yes
+            PlanetRace=Fei
+            ShipType=Diplomat
+            Start=A regional commission on planetary ecology problems has just finished its working session on our planet. Normally on completion of such sessions scheduled inspections of the most ecologically impaired planets, which are abundant in this part of the Galaxy, are carried out. These planets are usually socially unstable too, they do not have enough police and visiting them presents a certain risk, varying from 15 to 75 per cent. You are a qualified fighter and the ecology foundation of <FromPlanet> is offering you a contract for <Day> days to guard our inspector, who is now aboard the diplomatic ship <Ship>. While the ship is still in this system if you agree to our conditions, the task will start immediately.
+            Status=Any
+        }
+        77 ^{
+            End=We have rightly trusted you, <Player>. Ship <Ship> is whole and sound. We have already transferred <Money> cr into your account. Your actions show that for you justice is a real thing and not just an abstract notion. But you have to agree that we still have a long way to go for everyone in the Galaxy to share this view.
+            GovernmentAward=Reward,Points,Artefact
+            InThisSystem=Yes
+            PlanetRace=Gaal
+            ShipType=Liner
+            Start=Our passenger ship <Ship> is frequently and persistently attacked by some criminal elements. We do not know their identity, however its captain has reported numerous attacks. Only his courage and great experience have allowed him to preserve both the ship and his life.
+            Start=Not long ago, when departing, he asked us to hire him a qualified bodyguard. Having considered all the factors we decided it was a sensible request. We need an experienced fighter, proficient in space combat. <Player>, you are just the man for the job. Currently <Ship> is located nearby, in the system of <InStar>, and your mission is to guard it till <Date>. Don't forget to return to <FromPlanet> after this, only then will you get your compensation, <Money> cr.
+            Status=Warrior
+        }
+        78 ^{
+            End=<Player> we are grateful to you for guarding transport <Ship> and we are transferring <Money> cr into your account. Possibly we will soon make everyone believe that <Ship> is just an ordinary transport, nothing more. But at the moment we can only regret that there is still distrust and suspicion in the Galaxy.
+            GovernmentAward=Reward,Points,Artefact
+            InThisSystem=Yes
+            PlanetRace=Gaal
+            ShipType=Transport
+            Start=We have a transport ship <Ship>, which was built using some new construction technology. This has made Pelengan intelligence think that the <FullShip> is a spy base disguised as a trading ship. We have failed to make them realise it is an experimental design and nothing more than that. This makes us seriously concerned for the ship's security, since the connection between Pelengan intelligence and pirates is self-evident. At the same time, we cannot hire someone with considerable military experience to protect it because all such pilots are listed in Pelengan intelligence files and this will only confirm to them that we are hiding something. That is why we have passed through information that the shipment will be completed by two vessels, <Ship> and a hired transport. <Player>, you are ideally suited for this role since you are listed as a trader and are unlikely to arouse suspicion.
+            Start=So, we are offering you a contract to guard the transport till <Date> and promise to pay you <Money> cr for this mission.
+            Status=Trader
+        }
+        79 ^{
+            End=Excellent, you have completed the contract by protecting the life of our worker. The bureau pays you <Money> cr from its budget. Clean space is an important condition for peace and harmony. It pleases us to know that you, as well as many others, realise that only by mutual effort can we can achieve prosperity for the whole Galaxy, our common home.
+            GovernmentAward=Reward,Points,Artefact
+            InThisSystem=Yes
+            PlanetRace=Gaal
+            ShipType=Pirate
+            Start=The humanitarian bureau in space waste recycling has signed a contract with pirate <Ship>, who has undertaken to collect all space waste impeding normal navigation. Thus, we are killing two birds with one stone: on the one hand a pirate is engaged in a socially commendable business, on the other hand we are clearing space that is being shamelessly polluted by his former colleagues. We offer you <Player>, as a ranger well known for peaceful inclinations, to ensure that the pirate <Ship> can carry out his work unhindered, by shielding him from assaults by his former mates. They are sure to try and kill him for turning his back on pirate principles. And, should <Ship> suddenly remember his old ways and start attacking peaceful ships, try to avoid casualties. In this case, we guarantee you a decent reward, <Money> cr. Contract term is <Day> days.
+            Status=Trader
+        }
+        80 ^{
+            End=Very well, <Player>, protecting transport <Ship> was no problem to you. All our fears were unfounded. Please take your <Money> cr. We are looking forward to doing further business with you.
+            GovernmentAward=Reward,Points,Artefact
+            InThisSystem=Yes
+            PlanetRace=Gaal
+            ShipType=Transport
+            Start=Our oveon <FullShip> is a transport vessel built using ultramodern technology. This has become known to the Maloqi espionage corporation "Qalagon". We cannot influence them by diplomatic action, and we believe it unnecessary to use force since this will lead to regrettable casualties. But we are still seriously concerned that "Qalagon" can organise a company of saboteurs or hire pirates to destroy our transport. We have tried to placate this organisation in every way, even done it certain favours, but still we do not trust them. And the destruction of this ship will be a great loss to us, in every sense of the word.
+            Start=The work is in fact very simple: ensure the security of the ship till <Date>. It is currently here, in the system of <InStar>, and will soon make a series of jumps to other systems. If the vessel stays intact until the date mentioned, you can count on the reward of <Money> cr.
+            Status=Any
+        }
+        81 ^{
+            End=Congratulations <Player>, you have successfully completed the contract! Liner <Ship> was saved only due to your effort. The <Money> cr we promised you is already in your account. We sincerely hope that this contract will become the first small step on your long way to a clear conscience.
+            GovernmentAward=Reward,Points,Artefact
+            InThisSystem=Yes
+            PlanetRace=Gaal
+            ShipType=Liner
+            Start=Dear <Player>! We have heard a lot about your deeds, which don't speak well of your wisdom or depth of world perception. You are a pirate, but maybe you would like to try doing some legitimate business?
+            Start=The contract we want to propose to you is this. Liner <Ship> is currently in this system. You will get <Money> cr if this ship moves safely on its route for <Day> days. Upon completion of this contract you will not only earn your fee honestly and legally, but also your image will improve with all the honest citizens of the Galaxy. Think carefully about it, <Player>.
+            Status=Pirate
+        }
+        82 ^{
+            End=<Player>, we have to admit that you are one talented bodyguard. <Money> cr is yours. Your protegee, ranger <Ship> is still alive! Do you think he is now proficient enough with his ship not to need any guards? After all, every Maloq must know how to protect himself.
+            GovernmentAward=Reward,Points
+            InThisSystem=Yes
+            PlanetRace=Maloc
+            ShipType=Ranger
+            Start=Our planet's hero, the noble Rart <Ship> has recently expressed a wish to become a ranger. As his humble subjects, we cannot but admire his courage and bravery. He has innumerable merits, but he has no experience with military ships. Sir <Ship> is a true Maloq and thinks it's cowardly to use guards. But we are worried for him. That's why we have decided to hire another ranger to discreetly protect him. <Player>, you have a good reputation so we are hiring you. So ensure Rart is safe till <Date>. After this you can return to <FromPlanet> and get your reward of, <Money> cr. Later we may find another ranger to take over.
+            Status=Any
+        }
+        83 ^{
+            End=You have completed the contract to guard the trading vessel <Ship>. We've just received a money transfer and we are paying you 30 per cent, <Money> cr. Please accept this with the compliments of security agency "Menacing Axe".
+            GovernmentAward=Points
+            InThisSystem=Yes
+            PlanetRace=Maloc
+            ShipType=Transport
+            Start=We represent a security agency called "Menacing Axe". The captain of a trading vessel <Ship>, which is full of junk, has paid us to guard him. But, our draqars and agents are all busy on other missions. And, honestly, we have no desire to guard a simple trader, it's really below our dignity. That's why we have decided to hire a private individual. Maybe, as a trader, you will feel a professional affinity and help a colleague? If you take this mission and complete it successfully, so that <FullShip> survives until <Date>, we will share the money that we get from the captain with you. Right now, the ship is waiting in this system.
+            Status=Trader
+        }
+        84 ^{
+            End=Brilliant, <Player>! Our liner <Ship> was still communicating on <Date>. So you have earned your <Money> cr, and the liner can now get on with its work.
+            GovernmentAward=Reward,Points,Artefact
+            InThisSystem=Yes
+            PlanetRace=Maloc
+            ShipType=Liner
+            Start=Have you ever heard of a ship named <Ship>? Everybody thinks it's an ordinary passenger liner. But in fact it's a disguised mobile research laboratory. It takes samples of stellar particles from different star systems. Now, we have got intelligence information that Rachekhan's pirates are getting very interested in it.
+            Start=So, <Player>, you can do us a big favour if you agree to protect our liner till <Date>. We promise to pay you <Money> cr. Are you taking the mission, or do we need to look for someone else more experienced?
+            Status=Any
+        }
+        85 ^{
+            End=Our transport <Ship> is in great condition, and this is all due to you, <Player>! We are paying you a large amount, <Money> cr, for this operation! Suggest you put this cash out of sight very quickly. And do your best not to get caught by the anti-corruption authorities.
+            InThisSystem=Yes
+            PlanetRace=Peleng
+            ShipType=Transport
+            Start=We have here a suggestion for you, how shall we put it... of a special nature. Fiscal auditors have finally left our planet and we want to use this moment to improve our financial state. We have entrusted our money to a captain on an ordinary transport vessel, <Ship>. His task is to deliver the cash, under the cover of transporting normal cargo.
+            Start=We would like to be sure that this ship is whole and sound till <Date>. If you guard it we will pay you a part of our profits. Maybe even a very large part. So, umm, <Player>, are you taking this mission?
+            Status=Any
+        }
+        86 ^{
+            End=You have completed the contract, and we are transferring <Money> cr to your account. Unfortunately even before you arrived, the transport had surrendered its cargo to the pirates. Therefore, we are taking the GPU to court and you will soon be asked to participate as our witness.
+            InThisSystem=No
+            PlanetRace=Peleng
+            ShipType=Transport
+            Start=Our planet <FromPlanet> is known in the whole Galaxy by its quality ready-made foods prepared from the legs of Vygakh monster beetles. Not long ago, our planet sent transport <Ship> with a cargo of this delicacy to the system of <InStar>. When it had almost reached its destination, it was approached by representatives of GreenPeace Universal (GPU), disguised as pirates. Well it turns out they are actually real gangsters and not animal rights activists. At gunpoint they demanded the surrender of our cargo of delicacies, which caused us great loss.
+            Start=A cartel dealing in the breeding of valuable beetles is ready to finance any pilot in possession of a fighting ship, who, in turn, is ready to ensure the safety of  the <Ship> over <Day> days. If you see anyone attacking our vessel, just shoot them on sight! The more of these low lives you blast, the more money you will get.
+            Status=Any
+        }
+        87 ^{
+            End=It's so good to see such a display of community spirit, <Player>! Had it not been for you, <FullShip> probably wouldn't have lived till <Date>.
+            End=Your reward for the operation is <Money> cr.
+            GovernmentAward=Reward,Artefact
+            InThisSystem=No
+            PlanetRace=Peleng
+            ShipType=Pirate
+            Start=In the system of <InStar> a much respected pilot, in fact your pirate colleague, operates on a ship called <Ship>. He is engaged in the most honourable business of robbing Human transports and shooting down Faeyan passenger ships. Recently we got a Mayday signal from him. Some idiots, probably from the anti-terrorist squad, or maybe just competitors, are giving him a hard time. And it's a pity because he is a very respectable citizen and a hero of <FromPlanet>.
+            Start=We have heard that all pirates are brothers and are always glad to help one other. Is this true? If <Ship> survives until at least <Date>, you will earn the gratitude of our community. Well, maybe, we will think of something else to reward you...
+            Status=Pirate
+        }
+        88 ^{
+            End=You have completed your task, <Player>. Captain Rakhoncha was still alive on the date fixed in the contract, <Date>. His relatives send you their gratitude, together with the reward, <Money> cr. That's all these poor devils have managed to come up with.
+            GovernmentAward=Reward,Points
+            InThisSystem=Yes
+            PlanetRace=Peleng
+            ShipType=Transport
+            Start=There is a transport named <Ship> in our system now, probably you've already seen it. Captain Rakhoncha is in charge of it, he's very green and inexperienced. So the relatives and friends of this guy are so worried for his life that they are offering money to hire a personal bodyguard for him. You have a nice little opportunity here to make some money. The main condition is to guard the ship till <Date>; then you will get all the money Rakhoncha's friends and relatives have scraped together. We have given up looking for someone from the military and are ready to hire anyone, even a trader like you, just to get rid of his family who have been pestering our office for a whole week.
+            Status=Trader
+        }
+        Count=89
+    }
+    DefSystem ^{
+        56 ^{
+            End=Here is your <Money> cr, <Player>. The Maloqs are very grateful. You have gained our respect. Best of luck in the future.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Maloc
+            Start=Most of our best fighters have gone to the All-Maloq Police Games. Rookies, who cannot even be trusted guarding traders, currently patrol the system. <Player>, we demand that you start patrolling our stellar space. If no civilian ship is destroyed before <Date>, your mission will be complete and we will pay you <Money> cr.
+            Status=Any
+        }
+        57 ^{
+            End=We are pleased with the order you have brought to our glorious system. The money is in your account already. All the <Money> cr, up to the last penny. Even though you are a pirate <Player>, you have earned our respect.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Maloc
+            Start=Most honourable pirate <Player>! We are turning to you, even though you are engaged in illegal business.
+            Start=The thing is that the system of <FromStar> is currently attempting to enter the Association of Uranium Oil Producers. But these bureaucrats from the revisionary committee are telling us that we are not up to standard regarding flight safety. And we can forget about joining the Association until we improve. That's why we will pay good money to those who ensure the safety of all civilian ships. <Money> cr will be yours if you see that no civilian ship is damaged in our system for <Day> days.
+            Status=Pirate
+        }
+        58 ^{
+            End=Most commendable, <Player>, you have done some good work, and your reward is <Money> cr. Thank you for collaborating with the government of <FromStar>, the only legitimate power here. It would be good if other local pirates recognised that, too. Piracy is all very well, but everyone should still respect authority.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Peleng
+            Start=Ummm, <Player>, if you want to earn good money, we've got a job offer here, ideally suited to a real pirate like you. Our military department is losing control over the system, because of the numerous pirates that feed there. If this continues they will start doing serious damage to our wonderful economy. That is why we have decided to teach them a lesson and to hire the best pirate, that is you <Player>, so that you can shoot down all the other pirates in the system and prevent attacks on civilian ships till <Date>. We believe that then the government authority will be seen as having taken control of the situation, and you will get more money than you've ever dreamed of.
+            Status=Pirate
+        }
+        59 ^{
+            End=Dear <Player>, you have successfully completed the contract and we are quite satisfied with your work. Now the security of our system has been established, we are able to launch a full-scale espionage campaign. Your reward, <Money> cr, is already on your account.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Peleng
+            Start=Dear <Player>, we need you to do something for us over the next <Day> days. Due to the need to conduct a military investigation we need to create a security zone in the system of <FromStar>, which would guarantee safe passage for all civilian ships, regardless of their race. We need to be 100 per cent sure since even the smallest incident is bound to result in a diplomatic scandal, which we do not want at the moment. It is not to our advantage to spoil relations with any of the Commonwealth members now, um, yes, would you believe it... Of course, when the investigation is over the activity of our free entrepreneurs will be restored to its previous levels. We know that you are an experienced warrior and we are ready to offer you <Money> cr for this service.
+            Status=Warrior
+        }
+        60 ^{
+            End=Dear <Player>, you have successfully carried out the contract to patrol the system of <FromStar>; according to clause 4 of your contract the Ministry of Defence of <FromPlanet> pays you <Money> cr. Your co-operation is highly valued.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=People
+            Start=Human military doctrine, chapter 5, paragraph 23, promotes the use of external specialists in law enforcement. Accordingly, the Ministry of Defence of <FromPlanet> invites applications from military pilots to patrol the star system. The contact clauses are as follows:
+            Start= 1) Patrolling area: the system of <FromStar>;
+            Start= 2) Term: until <Date>, inclusively;
+            Start= 3) Contract void if: a civilian ship is destroyed within patrolling area;
+            Start= 4) Pay: <Money> cr upon return to <FromPlanet>;
+            Start= 5) Notes: the contractor can propose an alternative date for completion.
+            Status=Warrior
+        }
+        61 ^{
+            End=Dear <Player>, this <Money> cr is rightfully yours. Your co-operation is invaluable to us.
+            End=The Galaxy needs more businessmen like you, so purposeful and defending their interests by actions and not just words.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=People
+            Start=The system of <FromStar> suffers from raging pirates. Just a few minutes ago a transport was destroyed that was carrying equipment for a new plant that is being built on our planet. As a result we are suffering horrendous losses.
+            Start=Several experienced warriors have turned us down. But you, <Player>, are a businessman and therefore must fully appreciate the importance of normal commerce. We will pay you a reward and will be really grateful if until <Date> no civilian ship comes to harm in the system!
+            Status=Trader
+        }
+        62 ^{
+            End=We are very much impressed by your readiness to help, <Player>. According to the contract we are paying you <Money> cr for your work. A zero rate of destroyed civilian ships is the best proof that our system is safe for everybody. We only wish the traders would be convinced by that.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=People
+            Start=The public information agency has announced a list of the safest systems inhabited by Humans. Unfortunately according to this list the system of <FromStar> is nowhere near the top ten! After this publication we losing investments from our system, and it is getting worse and worse.
+            Start=We have already built two new centres for training patrol pilots; however some time will elapse before they complete their course. That is why the contract we intend to sign with you is for <Day> days, after which we will pay you <Money> cr. Pirates must destroy no civilian ship while it is in force.
+            Status=Any
+        }
+        63 ^{
+            End=Law enforcement departments of the planet of <FromPlanet> express their sincere gratitude and in recognition of your effort in ensuring the security of the system of <FromStar> are paying you <Money> cr. You have helped us a lot, <Player>. Soon new fighters will complete their training and we will be back to full strength.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=People
+            Start=A few weeks ago our system witnessed a tragedy: a group of patrolling ships on a special mission were destroyed. This was a devastating blow to our military strength, and the pirates are completely out of control.
+            Start=So now we have to resort to enlisting help from private military pilots. <Player>, we are ready to sign a contract with you for the value of <Money> cr, in return for which you will ensure that all civilian ships are safe until <Date>.
+            Status=Warrior
+        }
+        64 ^{
+            End=Dear <Player>, you have proved you are a qualified military pilot. The system of <FromStar> was completely secure during your patrol, no civilian ship has suffered any harm. The remuneration, <Money> cr, has already been transferred to your personal account.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=People
+            Start=Company "Al Shamakh" which produces weapons for private ships, has recently opened its office in our system. It is an official organisation, apparently law-abiding, however our intelligence clearly suggests that it is collaborating with pirates by secretly shipping them arms. They are doing the same thing here, and we are already witnessing a gradual increase in crime. In order to ensure the safety of civilian ships we have no other option left but to ask private pilots for help.
+            Start=<Player>, we will pay you <Money> cr if until <Date> our system is violence-free. Well, you can of course, shoot pirates, but don't make any mistakes.
+            Status=Warrior
+        }
+        65 ^{
+            End=<Player>, thank you for your help. We have transferred <Money> cr to your account according to the contract.
+            End=We have just received another threat, but now it is clear it is empty: the Reevairs have nothing to put up against such brave guys like you. We hope you will amend your ways and do no more robbery.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=People
+            Start=Have you ever heard of the Reevair gangster family? It is one of the most ruthless and cruel criminal clans in the Galaxy. Here, in the system of <FromStar>, this group feels so secure that they have even started blackmailing our police.
+            Start=We must do something to check the activity of the Reevair family in our system. That's why we have decided to fool them and hire an experienced pirate from outside the clan. <Player>, you are just the person we need, so we are offering you <Money> cr for patrolling our system till <Date>. You will get the money if no civilian ship is destroyed during this term, so forget your pirate's habits for <Day> days.
+            Status=Pirate
+        }
+        66 ^{
+            End=Excellent, <Player>! You have proved to be a real law enforcer by removing all pirates in the system of <FromStar>. You have earned a personal thank you from the <FromPlanet> government, and also a reward of <Money> cr.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Fei
+            Start=In our latest government meeting a decision was reached to tighten the procedure for fighting criminal activity in the system of <FromStar>. We are a highly developed peaceful civilisation who is prepared to give an appropriate response when our security is challenged by the lawless renegades of the Galaxy.
+            Start=Therefore all pilots who wish to do so, including you <Player>, can sign a contract with us for destroying all pirate ships interfering in any way with the activity of civilians in our system. If no civilian ship is destroyed until <Date> you will get <Money> cr.
+            Status=Any
+        }
+        67 ^{
+            End=It is most commendable, <Player>, that you hold the law, which is of course the base and source of prosperity, in such respect. Over the time of your patrol not a single civilian ship was harmed!
+            End=The reward of <Money> cr has already been transferred to your account.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Fei
+            Start=The system of <FromStar> has always been considered a safe and hospitable place, with trading and diplomatic activity as the source of well-being for all members of the community. It is to our greatest regret that this has been changing recently, and piracy has reared its ugly head. We are not going to endure this and we will use all the resources available to us to fight the pirates. That is why we are turning to you as a ranger who values the peaceful way of life!
+            Start=<Player>, if you patrol the system of <FromStar> till <Date>, so that no civilian ship falls victim to violence, we will pay you <Money> cr.
+            Status=Trader
+        }
+        68 ^{
+            End=You've been successful, <Player>, congratulations. You have guarded our system admirably. We are transferring <Money> cr to your account.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Maloc
+            Start=Dear <Player>, such an experienced warrior as you will be honoured to accept our mission. The system of <FromStar> is drowning in corruption. Some Maloqs in high places (no names at this point) have started collaborating with pirates, offering them refuge and trading benefits. As a result, piracy has grown out of control. Space shipments have gone down. All this is simply crippling us. There are criminals everywhere. It is up to you, <Player>, who must stop it. We are paying you <Money> cr if you enforce the law in this system for at least <Day> days and make sure no civilian ship comes to any harm.
+            Status=Any
+        }
+        69 ^{
+            End=Thank you for guarding our system, <Player>. If was a pleasure to witness your resolve and spirit.
+            End=<FromPlanet> government has voted to transfer <Money> cr to your account. It is good pay for your work.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Fei
+            Start=According to our laws, private pilots cannot take part in law enforcement activity. However, the pirates have become so impudent recently that we have been forced to pass an amendment to our Defence Articles, which means there is a possibility to enlist experienced private fighters.
+            Start=<Player>, if you hate pirates and share our peaceful outlook, you can start patrolling the system of <FromStar>. And if no civilian ship is destroyed in our system until <Date>, your co-operation will be financially rewarded. However, we will take no responsibility if you make any enemies as a consequence of this mission.
+            Status=Warrior
+        }
+        70 ^{
+            End=Dear <Player>, you have completed your task very well and have earned your <Money> cr. No civilian ship was harmed during your patrol! You should consider changing your specialisation and become a military pilot? However, there is already enough violence in the Galaxy. Perhaps you should remain as you are, a wise and peaceful trader.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Fei
+            Start=Planet <FromPlanet> is planning an extremely important event, a seminar on the issues of nutrition and health. We are expecting the arrival of many important and much respected people, and therefore we need to boost security in the whole system. We know that you do not normally specialise in such operations, however, we believe the task is within your abilities. We also believe that the reward of <Money> cr will be attractive enough. Our main condition is that no civilian ship is destroyed in the system until <Date>, no matter what race it belongs to. If you agree to enforce this, <Money> cr is yours.
+            Status=Trader
+        }
+        71 ^{
+            End=Excellent, <Player>, we knew that we could count on you. The system of <FromStar> is secure, and we hope that our business activity will start growing again. The sum of <Money> cr has been transferred to your account.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Fei
+            Start=Our system of <FromStar> is facing ruin. Not so long ago just after the take off several trading ships were destroyed. We are currently analysing the causes of these incidents, but it will take us some time to process all the data. Currently our trading activity has been brought to a halt by the negative attitude of our traditional business partners. Civilian ships are now rare visitors here, while pirates feel like they actually own the system. <Player>, we want you to take on patrolling our space, and if the civilian ships are safe until <Day>, we guarantee to pay you <Money> cr.
+            Status=Warrior
+        }
+        72 ^{
+            End=Thank you for excellent work, <Player>. The high level of security in our system, which we have achieved with your help, has been noted and is appreciated. <Money> cr has already been transferred to your account.
+            End=Due to your efforts, our system is in order. So heed the greatest Knowledge on the Nature of Creation! It will inspire your soul and enlighten your mind!
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Fei
+            Start=Very soon planet <FromPlanet> will act as a host to the greatest minds of the Galaxy, who will then share their Transcendental Knowledge on the Nature of Creation. None of these venerable minds must come to any harm, that is why we are firmly resolved to have the highest standards of space flight security.
+            Start=Our government is proposing a contract to guard our system till <Date>. We will pay you <Money> cr when you return to <FromPlanet>, but only if no civilian ship is destroyed in the system over the term of the contract.
+            Status=Any
+        }
+        73 ^{
+            End=Dear <Player>, you have honestly earned this <Money> cr. During your patrol no civilian ship was harmed!
+            End=You have an opportunity for amnesty and rehabilitation, but only if you behave as a law-abiding citizen. Just follow the way to improvement, and we will be glad that there is one less pirate in the Galaxy.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Gaal
+            Start=We are aware of your criminal activity, <Player>. However, we think that you might want to apply your energy to some more reputable activity than piracy; that's why we are ready to give you a chance because we have not abandoned hope that the likes of you can change. Your work will be law enforcement. If no civilian ship is destroyed in the system of <FromStar> until <Date>, we will pay <Money> cr.
+            Status=Pirate
+        }
+        74 ^{
+            End=Ranger <Player>, you have done excellent work, guarding peace and stability in our system! In the name of the <FromPlanet> government let me give you <Money> cr. Use the money so that it brings good to all citizens of the Galaxy. But don't be too greedy, this can have an unwanted effect on your moral standing.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Gaal
+            Start=Gaalian planet <FromPlanet>, like all other Gaalian colonies, is following the way of peaceful development,. We encourage business and diplomacy. Therefore, we are concerned with the activity of certain ships that operate outside the limits of the law. We are reluctant to interfere with them directly since this may cause diplomatic incidents. But we believe you would be equally concerned that the safe transportation of goods is under serious threat. Therefore we ask you to commence preventive action in our system. We can pay you <Money> cr from our specialised fund for peace needs, which you will get if you become the guard of peace and stability in our system till <Date>.
+            Status=Warrior
+        }
+        75 ^{
+            End=The tests have gone very well, largely due to your efforts, <Player>. Civilian ships are relatively safe, and we will soon start new test flights.
+            End=We hope that <Money> cr will compensate you for your time and we ask you to continue acting according to non-violent principles.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Gaal
+            Start=Let me outline briefly the essence of our problem. We have developed a new passenger ship, which we want to test here in the system of <FromStar>. We need to ensure flight security before the tests, and not just for the prototype but all the other ships in the system. Dangerous situations in the vicinity can have a negative effect on the test results and even lower the performance of our test pilots. Ranger, we are asking you to ensure our system's security till <Date> for the reward of <Money> cr. No civilian ship must be destroyed.
+            Status=Any
+        }
+        76 ^{
+            End=<Player>, your work is excellent. During your patrol not a single civilian ship was shot down. It's a fact!
+            End=We are glad to pay <Money> cr to someone who defends law and order so diligently. You must agree that these are the cornerstones of any society that wishes to achieve success. We wish every success to you, too.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Gaal
+            Start=The system of <FromStar> has been infiltrated by some extremely dangerous and immoral subjects, who have started building a criminal organisation. We very much regret these developments and would like to ask you, ranger <Player>, to rid our system of pilots who do not wish to be constrained by the law. You can use your weapons, but only if absolutely necessary. If all civilian ships are safe in our system till <Date>, we will be pleased to pay you <Money> cr for your service.
+            Status=Any
+        }
+        77 ^{
+            End=Our Tourism Development Committee is much grateful to you, <Player>, and is rewarding you with <Money> cr. No civilian ship was destroyed during your mission.
+            End=Make sure you visit our tourist facility, you will see our wonderful flora, fauna and will witness Gaalian culture in action. The guides are all renowned Magisters, including the Great Magister, who is on duty at weekends.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Gaal
+            Start=Some time ago we opened a wonderful new tourist facility on planet <FromPlanet>. Isn't it wonderful that more and more Commonwealth citizens are able to appreciate Gaalian culture, listen to lessons of ancient thinkers and admire the beauty of nature? But in order to achieve all this, our system must be known as a sufficiently safe place. You will get <Money> cr in <Day> days if pirates harm no civilian ship in our system.
+            Status=Trader
+        }
+        78 ^{
+            End=<Player>, you have proved you are firmly on the side of law and order. No civilian ship was destroyed during your patrol. If <Money> cr can even further increase your appreciation of these values, we are glad to give it to you.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Gaal
+            Start=We have signed a number of lucrative trade contracts with our neighbours, but unfortunately, due to the low security in our system not all of the ships reach their destination.
+            Start=Dear ranger <Player>, your reward will be <Money> cr if you enforce the law here until <Date>, so that we will not be blamed if some civilian ship visiting our system is destroyed. This is necessary to maintain good relations with our neighbours.
+            Status=Any
+        }
+        79 ^{
+            End=You have worked hard, <Player>! Corporal Brashir expresses his sincerest gratitude. We believe the bureaucrats from High Command will notice how safe our system has become and restore him to his position. And maybe, he will even get promoted.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Maloc
+            Start=Dear <Player>, we are contacting you following the request from a brigade corporal Nurg Brashir. This corporal is responsible for flight safety in the system of <FromStar>. Not so long ago the High Command issued an order for his retirement on the grounds of poor quality work. And this is after fifty years of faithful service for <FromPlanet>! This is a direct humiliation of an officer's dignity! Looks like the only chance for him to stay in the army is to prove that he can do his duty.
+            Start=So <Player>, Corporal Brashir will pay you <Money> cr from his personal savings if you improve the security in the system till <Date>. He trusts you, so don't let him down.
+            Status=Warrior
+        }
+        80 ^{
+            End=Well, <Player>, you are really a cool guy! Please stay and see the fireworks and take part in the Goodwill Games.
+            End=And an unexpected gift! We are transferring <Money> cr to your account. Money is always welcome.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Maloc
+            Start=Maloqs from <FromStar> know the value of courage and military skill. When we see a renowned warrior we cannot but honour him! Most honourable <Player>, we are awarding you with the responsibility of guarding our system. Many Maloqs would give their right arm to be in your shoes. So start patrolling our system at once. Remember that it will last till <Date> and no civilian ship must be destroyed over this period. And when you return, we will have fireworks and Goodwill Games in your honour!
+            Status=Warrior
+        }
+        81 ^{
+            End=Many thanks, <Player>. We are glad to pay valiant warriors, even such huge sums as <Money> cr. Use the money in a noble way, get yourself some new guns.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Maloc
+            Start=Not long ago a Human trader visited our system and was accidentally killed. So, in every corner of the Galaxy Humans are now saying that our system is unsafe! This is a complete lie from cowardly disgusting humans who value their lives more than their honour!
+            Start=But this slander is already taking its toll. We are being refused shipments of machinery and medicines. That's why we have decided to put an end to it. From now and till <Date> you <Player> will be completely responsible for the safety of all civilian ships in this system. You will have a generous reward, but if you slip and let a ship get blown up, you will only get our contempt.
+            Status=Warrior
+        }
+        82 ^{
+            End=Unbelievable! You have, indeed, managed to stop all piracy in our system. What a pity...
+            End=Oh, well, still, our system has not seen such a hero for many years. We must admit that you are much tougher than you seem. Sir Gonzapok gives you his warmest regards and the sum of <Money> cr that you get for the days spent patrolling.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Peleng
+            Start=Honourable Gonzapok, our general manager in collecting cargo and finance in space, intends to prove that pirate ships working under his guidance are the most experienced in the Galaxy. In order for everyone to bow to his authority, Gonzapok is betting a large sum of money that no one can stand in the way of his guys when they are doing business. Lots of rangers have tried to get the money, but all in vain. Maybe, you'd like to give it a try?
+            Start=The actual sum that you get depends on how many days you manage to defend the civilian ships. If you hold out for <Day> days and keep Gonzapok's pirates in check, preventing them from blowing up ships, he will admit defeat!
+            Status=Any
+        }
+        83 ^{
+            End=Oh, <Player>, this is simply wonderful, no ship was destroyed in our system! Our ruler Khetrix is now much better. Half an hour ago when a Maloqi transport was destroyed in the vicinity, he didn't even throw himself from the balcony yelling "Klissans!". This is more than we had hoped for. Please take your well-deserved <Money> cr.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Peleng
+            Start=The ruler of our planet, Shakh Khetrix, has fallen victim to a horrible illness, paranoidal delirium. He suffers from hallucinations, he sees Klissans around every corner. No sooner has one of our brave pirates blown up some passing ship, Khetrix starts shouting that it was a Klissan attack and tries to persuade everyone to commit suicide! His illness is getting worse, and very soon he will be completely unable to distinguish between reality and fiction. Doctors say that he can still recover, but only if there are no further disturbances.
+            Start=That is why we are ready to pay you <Money> cr so that until <Date> our system remains peaceful and safe for all civilian ships, even aliens. We hope this will give enough time for Khetrix to calm down and start his recovery.
+            Status=Pirate
+        }
+        84 ^{
+            End=Noble <Player>, we are quite pleased with your efforts, and, ah well, we are transferring <Money> cr to your account. Though, on the other hand, we feel sorry for our pirates. Life without danger, just peaceful existence, what can be worse?
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Peleng
+            Start=Dear <Player>, our system has always had lots of pirates, who, as you know, are the most venerated class of Pelengan society. But not so long ago we were visited by representatives of some Galactic Anti-Terrorist Commission. These snobs have presented us with an ultimatum! Either we ensure that our system security is up to galactic standards, or we face the consequences of a trade embargo... Horrible!
+            Start=You <Player> are a peaceful type, so maybe you will agree to help us? All you need to do is to see to it that over the <Day>-day period no civilian ships are destroyed in our system.
+            Status=Trader
+        }
+        85 ^{
+            End=You have been performing well, yes, wonderfully, all these <Day> days and have not let the other pirates shoot down a single civilian ship!
+            End=Here is your prize, <Player>, <Money> cr. We are always glad to see you on <FromPlanet>.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Peleng
+            Start=Our system <FromStar> currently holds its traditional annual Best Pirate tournament, and you have a wonderful opportunity to take part in it. According to the rules, which have remained unchanged for 120 years, any pilot with his own ship can enter the contest. He is opposed by other pirates, who act according to the best Pelengan traditions by attacking transports and other civilians. The contestant's task is to prevent the destruction of civilian ships over the duration of the round (<Day> days) and also shoot as many other pirates as possible! Exciting, isn't it! Best of luck to you, <Player>!
+            Status=Pirate
+        }
+        Count=86
+    }
+    KillShip ^{
+        65 ^{
+            End=This scum, ranger <Ship> is dead! Now we can tell you what it was all about. The thing is, this ranger visited <FromPlanet> before. We gave him a mission to guard our mobile laboratory for breeding super-Maloqsa. But instead of guarding the laboratory he stole the research in order to sell it to the Faeyans. If they had got hold of those we would certainly have faced sanctions from them, the Gaalians and possibly the humans. But now the problem is solved and our records have perished with the criminal. We can only express our gratitude and give you <Money> cr. We will continue our research into breeding super-Maloqs in our new laboratory.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Maloc
+            ShipRace=Any
+            ShipType=Ranger
+            Start=<Player>, you dirty trader, you must immediately go to the system of <InStar>. Find ranger <Ship>. Destroy his ship immediately. If you manage to do it before <Date>, you will get <Money> cr. Don't ask any questions. We can only tell you the reason for such urgency after the successful completion of the task.
+            Status=Trader
+        }
+        66 ^{
+            End=Criminal <Ship> is dead, long live <Player> who has brought him to justice! <Money> cr is a generous reward for your courage and recklessness. We very much value such display of the best Maloqi qualities.
+            GovernmentAward=Reward,Points
+            PlanetRace=Maloc
+            ShipRace=Fei
+            ShipType=Ranger
+            Start=Most esteemed warrior <Player>, we demand that you, as an honest pilot, destroy a dangerous criminal, ranger <Ship>. This Faeyan has long been engaged in robbery, attacking innocent Maloqi transports. Many planets already want him. As a civilised world that allows the death penalty we give you the right to become his executioner. Nobody asks you to torture or humiliate him. Just destroy him together with his ship by <Date>. It's not important whether you do it yourself or use somebody else. But it is vital that the criminal is punished according to this sentence. Don't worry about the money, you will be generously rewarded.
+            Status=Warrior
+        }
+        67 ^{
+            End=On behalf of the wisest Shakh Kangshis, let me express my sincerest thanks for your help. Transport <Ship> is destroyed, the mission is complete. <Money> cr is yours, and the fortune of Shakh Kangshis has doubled!
+            GovernmentAward=Artefact
+            PlanetRace=Peleng
+            ShipRace=Peleng
+            ShipType=Transport
+            Start=<Player>, such a hard-edged and sophisticated pilot as you will be delighted to accept the deal we are offering. Our leader, the great Shakh Kangshis has made a bet with the ship building firm "Tsot". This questionable organisation takes much pride in its new transport <Ship>, built according to some ultra-modern technology and states that it is next to impossible to locate and destroy it. Then our Shakh, the wisest and most magnificent Kangshis laid down a huge sum, betting that this transport will be destroyed in <Day> days by our best pirate ships. So you can have great fun in destroying this transport, and also earn a lump sum of <Money> cr into the bargain.
+            Status=Pirate
+        }
+        68 ^{
+            End=You've completed the mission beautifully! But unfortunately, there were no thieves on <Ship>. Actually, they never left our planet and were arrested a couple of days after you left. So you shouldn't have really destroyed that ship. However we respect honest work and cannot leave you unrewarded. Please take <Money> cr and you are now free to go.
+            GovernmentAward=Artefact
+            PlanetRace=Peleng
+            ShipRace=Any
+            ShipType=Liner
+            Start=You see, <Player>, we have long been working with the Maloqi military corporation "Qalagon", selling it military developments, erm, borrowed from somebody else, of course. Recently some papers were stolen that confirmed our involvement. If the thief publishes them, we will lose a good client. So we really must find the perpetrators and prevent distribution of this information.
+            Start=We have found out that it is 67% certain the thieves have left our planet on the passenger liner <Ship>, going to the system of <InStar>. You must find and destroy it. Of course some civilians will die and it is far from certain that the guys are on-board, but still our security and reputation must be our primary concern. Your reward will be more than anything you can imagine. We give you <Day> days for that.
+            Status=Pirate
+        }
+        69 ^{
+            End=Thank you for you help, <Player>. George Canningham and the crew of his ship have vanished.
+            End=Everything is wonderful! We hope that there won't be anyone wishing to take his place now, and our ships will increase their influence in space. The Intelligence service of <FromPlanet> expresses its gratitude and pays you a reward of <Money> cr.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Peleng
+            ShipRace=People
+            ShipType=Diplomat
+            Start=Some human named George Canningham is coming here for negotiations with our government in order to cut the number of our pirate ships. Really! How mean! If Human diplomacy is successful, our honour and good name will be at risk. We have to take action, carefully and quietly. Canningham has recently departed for the system of <InStar> on consular ship <Ship>, and we must take this opportunity.
+            Start=<Player>, will you undertake to eliminate him before <Date>? If you agree, we will pay you <Money> cr. Just try to do a nice, clean job, and implicate the Faeyans if possible, in the best Pelengan tradition.
+            Status=Any
+        }
+        70 ^{
+            End=Very well, <Player>, we see you have managed to annihilate this Maloq, <Ship>. We have always maintained that any crime against Pelengan military forces entails certain punishment. It's good that you have carried this out.
+            End=Your reward: <Money> cr. It was so difficult to get this money together, but don't thank us!
+            GovernmentAward=Reward,Points
+            PlanetRace=Peleng
+            ShipRace=Maloc
+            ShipType=Ranger
+            Start=We want to punish a Maloqi ranger <Ship> for his unheard of insolence. A few days ago, here in the system of <FromStar>, this person attacked our military patrol! But by the time our fleet took off he disappeared in the direction of <InStar>. As you well understand, we cannot just forget about this horrendous incident. We are paying good money to the person who finds and destroys this ranger in <Day> days.
+            Start=<Player>, if you take this mission, beware! <Ship> is an experienced fighter and the task is not going to be easy.
+            Status=Any
+        }
+        71 ^{
+            End=Bravo, <Player>! Here is your <Money> cr for destroying ship <Ship> and for helping our economy. Believe us, "Chapungash" supplies only the best quality goods. If everyone was sensible and bought only its goods, there would be no necessity to spill blood. We are the most peace-loving race in the Galaxy.
+            PlanetRace=Peleng
+            ShipRace=Gaal
+            ShipType=Transport
+            Start=Trading firm "Chapungash", based on our planet, has long-term and well-established commercial ties with the planets in the system of <InStar>. But now a Faeyan competitor has appeared, with the ridiculous name of "Cagliostro", which bribes the Gaalian ships. We do not want this tendency to develop and so we have worked out a plan to undermine the trading of our competitors.
+            Start=We have no doubts concerning your talents, <Player>, so we ask you to remove one of the Gaalians bribed by "Cagliostro". If over the next <Day> you destroy the Gaalian transport <Ship>, we will pay you very good money.
+            Status=Any
+        }
+        72 ^{
+            End=The crew of liner <Ship> is now in heaven, and your reward <Player> is <Money> cr.
+            End=The special services of planet <FromPlanet> are grateful for your help. We hope that now the Faeyans will do just what we expect them to, something silly, so that we can give them a good hiding. And of course their apologies will be no good!
+            GovernmentAward=Reward,Artefact
+            PlanetRace=Peleng
+            ShipRace=Fei
+            ShipType=Liner
+            Start=<Player>, if you are interested in some good business and have few moral scruples, we can work together. At the moment we want to create a diversion by pushing the Faeyans into some unfriendly acts towards us. This will allow us to take action against them, the details of which are irrelevant. The task is to provoke them, and for this we need a pilot who is good enough to destroy the Faeyan liner <Ship>, which is currently in the system of <InStar>. If you do it by <Date>, you will get <Money> cr. We are sure you'll manage this, especially taking into account the amount of money on offer.
+            Status=Any
+        }
+        73 ^{
+            End=Very well, <Player>, Missing Tooth is finally resting in peace. Your reward is <Money> cr. Probably we should consider hiring you as a mobile executioner.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=People
+            ShipRace=Any
+            ShipType=Pirate
+            Start=We have a contract for a pilot with nerves of steel. The well-known maniac and terrorist, Missing Tooth, has been recently spotted by one of our ships. The police and special agents of our planet have been looking for him for a long time. Now we know he is conducting criminal activities on the ship <Ship> in the system of <InStar>. We are ready to pay you <Money> cr, provided the craft is destroyed in <Day> days. Should you be unsuccessful we will have to turn to another pilot.
+            Status=Any
+        }
+        74 ^{
+            End=Pelengan pirate <Ship> has been successfully destroyed. Thank you for your co-operation, <Player>, and here is your <Money> cr.
+            End=Peaceful resolution of conflicts is one of the most important modern issues.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=People
+            ShipRace=Peleng
+            ShipType=Pirate
+            Start=<Player>, we are asking you to help us destroy the Pelengan pirate ship <Ship>. Not long ago this gangster attacked and destroyed our ambassador, a representative on a humanitarian mission to the system of <InStar>. He was going to complete negotiations to end a military conflict but as a result the talks were suspended.
+            Start=We have reason to believe that a Pelengan terrorist group is behind all this. We intend to destroy the pirate and are ready to pay you <Money> cr if you undertake to complete the operation in <Day> days.
+            Status=Warrior
+        }
+        75 ^{
+            End=Pelengan pirate ship <Ship> has been successfully destroyed. Congratulations, <Player>! Your reward is <Money> cr.
+            End=We are sorry to inform you that he has managed to forward the papers. And now the terrorist organisation "Shagash Rogz" has obtained a horrible weapon. So the war against terrorism has only just begun.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=People
+            ShipRace=Peleng
+            ShipType=Pirate
+            Start=A short time ago we held a congress on the issue of illegal production of psychotropic arms. During one of the sessions all the papers were stolen. We have discovered that one of the participants named Khucharan, a Pelengan citizen, is in fact a spy stealing information. We have intercepted his Pelengan consular ship, but then discovered that Khucharan had changed for a faster pirate vessel <Ship> and is going to the system of <InStar>.
+            Start=<Player>, your task is to find and destroy Khucharan. It is possible that we are too late and the papers have reached our competitors, but that is no concern of yours. You must destroy <Ship> by <Date> and then return to <FromPlanet> to get your reward.
+            Status=Any
+        }
+        76 ^{
+            End=Pirate <Ship> has been successfully destroyed. Many thanks, <Player>!
+            End=Relatives of the victims have pooled their finances to give you a worthy reward of <Money> cr. Thanks again.
+            PlanetRace=People
+            ShipRace=Any
+            ShipType=Pirate
+            Start=We are looking for the pirate ship <Ship> which has committed several abhorrent crimes, such as attacking defenceless passenger liners. People of our planet and many others have been mourning the victims for several days now. Among them was a group of children going to a summer camp. The senselessness of this crime is simply appalling. Our fighters have not managed to capture the pirates.
+            Start=<Player>, you are a famous warrior. Are you ready to enforce the law and destroy those pirates? If so, please take off at once. Relatives of the victims will compensate you for your efforts if <Ship> is destroyed by <Date>.
+            Status=Warrior
+        }
+        77 ^{
+            End=Transport <Ship> is destroyed! You have completed your mission <Player>.  We are paying you <Money> cr from our budget. Let this be a lesson to those who want to pick on our soldiers.
+            PlanetRace=Maloc
+            ShipRace=Fei
+            ShipType=Transport
+            Start=We have an emergency here, <Player>! The Commander of fighter draqars says some Faeyan transport <Ship> fired at our convoy whilst it was landing on <FromPlanet>. When the fighters took off again, this Faeyan escaped to the system of <InStar>. Unfortunately, we cannot pursue him beyond the boundaries of our system since we have a peace agreement with the Faeyans.
+            Start=However, <Player>, for you as a pirate this awkward law is no problem. If we pay you <Money> cr could you kill this Faeyan for us by <Date>. It's very good money for you as for us our honour is at stake.
+            Status=Pirate
+        }
+        78 ^{
+            End=Good work, <Player>! Pirate ship <Ship> has been successfully destroyed.
+            End=Court authorities of <FromPlanet> express their gratitude. The reward of <Money> cr is yours. Let law and order prevail in the Galaxy!
+            GovernmentAward=Reward
+            PlanetRace=People
+            ShipRace=Any
+            ShipType=Pirate
+            Start=The Supreme Court of <FromPlanet> has pronounced a death sentence for a pirate nicknamed Gackon (also known as Arnagipp, Flier-Minosaur and Magonnie), who is now aboard his legendary ship the <Ship>. He has been accused of several grave crimes including robbery, murder and terrorism. Unfortunately our law enforcement cannot bring him to justice since he is normally resident in the system of  <InStar>, which is part of a special zone. So we are paying good money, namely <Money> cr to the person who kills him in <Day> days.
+            Status=Any
+        }
+        79 ^{
+            End=Thank you for your co-operation, <Player>. Bungar Dogis is dead. We are pleased to deal with such an efficient pilot. Just as promised, we are transferring a decent sum of <Money> cr to your account.
+            GovernmentAward=Points
+            PlanetRace=People
+            ShipRace=Maloc
+            ShipType=Transport
+            Start=Tax police of the planet of <FromPlanet> offer a top-secret contract to locate and destroy a financial criminal, Bungar Dogis. He is a Maloqi businessman who has persistently evaded taxes for the last two years. Recently we decided to give him an official warning. However he then committed an even greater crime killing our representatives and escaping on the ship <Ship>.
+            Start=It is possible that Dogis is simply insane, but in any case according to our law his activities mean capital punishment. This business is somewhat dirty, so we are asking for your assistance as a ranger with a not-so-perfect past. If you kill the criminal before <Date> you will get good money for his head.
+            Status=Pirate
+        }
+        80 ^{
+            End=You did it, <Player>! The ship <Ship> is destroyed.
+            End=And even though we cannot help grieving for our compatriot who turned bad,  we are glad that space has become a somewhat better place. In this case the well-being of the community was more important than the well-being of an individual.
+            GovernmentAward=Reward,Points
+            PlanetRace=Fei
+            ShipRace=Fei
+            ShipType=Transport
+            Start=One of our convicts serving a term of labour correction asked us if he could work on board one of the transports, the menaken <Ship>. We were very pleased with his praiseworthy intention and appointed him as a mechanic. But then tragedy struck: this guy killed everybody on board in the system of <InStar>, but continued trading as if nothing happened.
+            Start=We are a gentle race, but in this case we have decided to use brutal methods. <Player>, you are a pirate, so you will have no problems in destroying this ship. We are ready to pay you <Money> cr if you do this before <Date>.
+            Status=Pirate
+        }
+        81 ^{
+            End=<Player>, you have completed your mission and destroyed ranger <Ship>. We are giving you <Money> cr for defending the interests of our people.
+            End=We really hope that the Maloqs are going to appreciate our action and negotiations will be renewed.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Fei
+            ShipRace=Fei
+            ShipType=Ranger
+            Start=A few weeks ago we had a visit from a Maloqi ambassador. The meeting was extremely important for both parties and was completed successfully. We have signed a treaty on the division of the territories. After the meeting the ambassador departed from <FromPlanet> on his personal spacecraft. But he didn't get far. One of our own people, ranger <Ship>, attacked the ship, while it was still in the ionosphere, without warning. We were so surprised by this that we were unable to capture the criminal. And now as a result of this the Maloqs have cancelled the whole treaty.
+            Start=<Player>, you are a law-abiding citizen and as such it is your duty to find and destroy this ranger before <Date>. This is the only way to placate the Maloqs and make sure they enter further negotiations. Your services will be handsomely rewarded.
+            Status=Trader
+        }
+        82 ^{
+            End=Thank you for your help, <Player>! Cato Manzoni is now dead, and rightfully so.
+            End=We highly value your dedication and are transferring <Money> cr to you account, according to our agreement.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Fei
+            ShipRace=People
+            ShipType=Ranger
+            Start=<Player>, are you aware that there are impostors among the rangers? And that ranger <Ship> is one of them?  It is really an Earth citizen Cato Manzoni. He was captured by our patrols during a robbery of a peaceful transport. He was subsequently sentenced to a term in a corrective settlement. But recently he escaped and we managed to trace him to the space port where a corpse of ranger <Ship> was found.
+            Start=We are asking you to find and kill the impostor. Your pay will be <Money> cr if he is destroyed before <Date>.
+            Status=Any
+        }
+        83 ^{
+            End=Yes, <Player>, we know that you were late and <clr>Anieni<clrEnd> was destroyed. However, pirate <Ship> didn't live to see this day so we consider your mission complete and are paying you <Money> cr. Thank you for your help, <Player>.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Fei
+            ShipRace=Peleng
+            ShipType=Pirate
+            Start=We have received a SOS signal from transport <clr>Anieni<clrEnd>.  It reports that it is being attacked by a group of pirates lead by <Ship> in the system of <InStar>. <Player>, your task is to go there, find our transport and help it out. If you don't find it, and this is very likely, then we are asking you to avenge it by destroying the pirates' leader. If you do it in <Day> days, you can count on us paying you <Money> cr on your return.
+            Status=Warrior
+        }
+        84 ^{
+            End=<Player>, you have saved thousands of lives. The deadly cargo of transport <Ship> has perished together with the ship. Don't you feel a deep moral satisfaction? However, <Money> cr cannot be unwelcome. We are sure that you will use this money wisely.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Gaal
+            ShipRace=Peleng
+            ShipType=Transport
+            Start=We have found out that Pelengan terrorist group "Shagash Rogz" is planning a terrorist act using a super toxic gas Nergon-354. It is common knowledge that this gas cannot be located by any scanner, however, we have good information that a shipment of this gas is on board the transport <Ship> going to the system of <InStar>.
+            Start=We have no idea what plans "Shagash Rogz" has concerning the movement of his deadly cargo, but we do know that it must be destroyed. Will you undertake to destroy it by <Date>? If so, get to work and come back for your money when you are done.
+            Status=Any
+        }
+        85 ^{
+            End=<Player>, thank you for helping us out of this trouble. Citizen Garoo is now history and ranger <Ship> is gone and forgotten. Unfortunately, there are criminals even among the Gaalians. But they are very rare. Anyway <Money> cr is a good reward for your effort.
+            GovernmentAward=Reward,Artefact
+            PlanetRace=Gaal
+            ShipRace=Peleng
+            ShipType=Ranger
+            Start=Some time ago we granted a ranger's license to our citizen Garoo. But instead of fighting Klissans she had an operation to change her race, became a Peleng and even changed her gender! Why would she want to become a male? Anyway, now she has adopted the name of ranger <Ship> and is using forged papers made on a pirate base.
+            Start=We hate violence and were ready to pardon her. But recently we found out that she has joined a gang which robs and destroys civilian ships! <Player>, you too are a pirate and have no scruples. Destroy her before <Date> and we will reward you well.
+            Status=Pirate
+        }
+        86 ^{
+            End=What have you done, <Player>!? You have destroyed the wrong ship! Sure enough, you destroyed liner <Ship> and completed the contract, but the ship was innocent! It was just some space yacht to which the pirates attached their beacons when they knew we were going to destroy them. So, innocent people have died and the criminals are still alive!
+            End=If you have any conscience, you must go and pay your respects to the victims' relatives. On our part, we have declared a day of national mourning and will pay 100.000 cr to all the victims' families. However, for punctual completion of the contract we are paying you <Money> cr. What a dreadful incident!
+            PlanetRace=Gaal
+            ShipRace=People
+            ShipType=Liner
+            Start=Are you aware of the fact that the Gaalians are taking Zeta-Crack, a drug that is having a devastating effect on the health of the whole nation? And now we have finally uncovered who created this problem. It is the human Nikolay Kozlov who came here last year as a tourist. He was the first to smuggle this dope to the planet and offered it to the most influential people, assuring them that it was a treatment for pain.
+            Start=We know that at present Kozlov is on board liner <Ship>. The liner is just a front for a drug dealers' den. We are offering you a great contract for <Day> days and <Money> cr.
+            Status=Any
+        }
+        87 ^{
+            End=<Player>, thank you for your help. The criminal is dead and justice has been served. Even though we don't like to see anyone killed, we cannot leave unpunished the gross violation of our rights, especially the most important of them, the right to life. Please take <Money> cr for your service.
+            GovernmentAward=Reward,Artefact
+            PlanetRace=Gaal
+            ShipRace=Any
+            ShipType=Pirate
+            Start=We are pleased to see you want to guard justice, <Player>! Are you interested in finding out what you can do right now? Just a few days ago a pirate <Ship> destroyed two of our transports in the system of <InStar>. We believe such action is deplorable and our intention is to punish the criminal. We will pay you <Money> cr if you do it before <Date> and come back to <FromPlanet>. <Player>, you of course understand what we want you to do?
+            Status=Warrior
+        }
+        88 ^{
+            End=Thank you, <Player>. We are pleased that ranger <Ship> will no longer violate our Maloqi laws. So, <Money> cr is yours. But be careful not to repeat his mistakes, otherwise we will have to hire someone to remove you.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Maloc
+            ShipRace=Any
+            ShipType=Ranger
+            Start=Some ranger named <Ship> has visited our planet recently. For a long time he has been annoying us with his daring smuggling. We wanted to give him a last chance, but he has again traded a large quantity of Maloqi beetle legs on the black market. Now our patience has reached its end. We pronounced him a criminal and even sent several draqars to deal with him, but he managed to disappear.
+            Start=We believe that he must still be punished and will pay you <Money> cr if you arrange so that we never see <Ship> again. The details are up to you, you have <Day> days for this mission.
+            Status=Any
+        }
+        89 ^{
+            End=Thank you, <Player>, for removing the transport <Ship>, this standard-bearer of alcoholism. It is possible, of course, that he was innocent, but surely other humans will now fear our wrath!
+            End=These humans are all alcoholics. Well, if not all of them, then the vast majority. It is so disgusting! Had it not been for us the Galaxy would long have drowned in alcohol. Oh, yes, and here is <Money> cr for your work.
+            GovernmentAward=Reward
+            PlanetRace=Maloc
+            ShipRace=People
+            ShipType=Transport
+            Start=You probably know how the Maloqi civilisation feels about alcohol. What terrible harm it does to the morals of our youth! The planet in the system of <FromStar> has started a campaign, "Say No To Booze", the goal of which is to restrict and possibly completely cut out the flow of alcohol in the system. In the framework of this campaign we are financing liquidation of the most persistent alcohol vendors. We have data that human transports are at the forefront of this trade. We have decided to make an example of one of them and destroy them!
+            Start=<Player>, your task it to destroy transport <Ship> before <Date>. It has recently been sighted in the system of <InStar>. And we believe that the purpose is to get more disgusting goods. Find and kill him, <Player>! Dirty work is nothing new to you, is it?
+            Status=Pirate
+        }
+        90 ^{
+            End=<Player>, you have honourably completed your contract! The <Money> cr we promised is already in your account.
+            End=Oh yes, and the ghastly ranger <Ship> is no more. We wish there were no such men among the Maloqs, then we would have achieved our high ideals a long time ago.
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Maloc
+            ShipRace=Maloc
+            ShipType=Ranger
+            Start=One of our rangers <Ship> has long been a disgrace to the entire Maloqi race. He constantly dabbles in trade and has no regard for our values. Any true Maloq spits just hearing his name. And what's more, he constantly humiliates other Maloqs! Certainly, most of his victims are pirates. But how can a Maloq be so intolerant to his own courageous brothers? It is abominable!
+            Start=<Player>, we want you to destroy this maniac. Find him and kill him. Try to do it slowly so that he suffers before he dies. You have until <Date>, and your reward will be <Money> cr.
+            Status=Warrior
+        }
+        91 ^{
+            End=Well <Player>, now you can be proud of yourself. Diplomat <Ship> is destroyed, and you have <Money> cr in your pocket.
+            End=Don't you love this work? We hope you have now realised what blood tastes like and you will never be just a trader again. Waging war is so much more interesting. War is the foundation of the universe!
+            GovernmentAward=Reward,Points,Artefact
+            PlanetRace=Maloc
+            ShipRace=Gaal
+            ShipType=Diplomat
+            Start=Dear <Player>! How can you be a trader? Don't you feel ashamed? Just for once, try to do something worthy of a real man.
+            Start=We have a nice little job for you. Not long ago, some Gaalian visited our planet and did lots of brainwashing. He was telling everybody that peace and purification is the universal foundation. To put it short, he was seducing our youth and calling our people to peace. Just as we decided to eliminate him, he found out and escaped to the system of <InStar>. So, if you are flying in that direction, maybe you could find that diplomat and give him a red wreath from  <FromPlanet>. Ha, ha. If you destroy the <Ship> before <Date>, you will get <Money> cr from our youth fund.
+            Status=Trader
+        }
+        92 ^{
+            End=Most commendable, <Player>! We have been trying to remove this terrorist for such a long time, but he would constantly, yes, constantly slip through our fingers. You are really a brave warrior. Oh, yes, we promised you a nice lump sum... Ummm, you see, we have certain financial difficulties at the moment... unforeseen government expenses, hungry children you know... We hope you will understand. In fact, we will pay you... for instance, <Money> cr. It's not too bad given the current economic situation.
+            End=The sponsor of this project was trading house "Chuken Duk" with offices on many planets, including <FromPlanet>. All kinds of consumer goods for smallest prices!
+            PlanetRace=Peleng
+            ShipRace=Any
+            ShipType=Pirate
+            Start=We urgently need a real superman with an iron grip! We are offering contracts to the value of 100.000 cr and more! Do you want to get this large sum of money, ranger? You only need to find and kill the greatest criminal of the Galaxy who is terrorising many, many planets with his ship the <Ship>. You must do it before <Date> or we will find someone else.
+            Start=The sponsor of this project is a trading house the "Chuken Duk" with offices on many planets, including <FromPlanet>. All kinds of consumer goods for the smallest prices! Wonderful, mmm!
+            Status=Any
+        }
+        93 ^{
+            End=Wonderful, <Player>! The diplomatic ship <Ship> is destroyed, here is your <Money> cr. Now we have good reason to believe that the conflict between the Maloqs and Faeyans will start anew. Of course, there is still a lot of work to be done in this direction! But that's what diplomacy is for, right?
+            GovernmentAward=Reward,Artefact
+            PlanetRace=Peleng
+            ShipRace=Fei
+            ShipType=Diplomat
+            Start=Ah <Player>, so are you ready to get your hands dirty with a diplomat's blood? Good! We can offer you a lucrative contract! You must find and remove the Faeyan diplomat Uligon Kessi in <Day> days. Just listen to what he's been engaged in and you will be as outraged as us. He is at present on board the ship <Ship> conducting negotiations to end an armed conflict between the Faeyans and Maloqs! This is most unfortunate! Our espionage services have put so much effort in cultivating this conflict, and now this little diplomat can spoil everything by this abhorrent peace initiative! We guarantee you a generous reward!
+            Status=Pirate
+        }
+        94 ^{
+            End=Many thanks for your co-operation <Player>. Liner <Ship> is destroyed and rumours of your action will reach far beyond our system. This is wonderful to see such consensus amongst the pirate brotherhood. Death for death, tooth for tooth, eye for eye. And here is your <Money> cr, honestly earned.
+            GovernmentAward=Reward,Artefact
+            PlanetRace=Peleng
+            ShipRace=Fei
+            ShipType=Liner
+            Start=Dear <Player>! We have long been watching your deeds, and now we wish to offer you a very attractive deal. Some may think it is dirty work, but certainly not you being such a renowned pirate! It's a big job - to destroy one of the Faeyan ships! This is our revenge for killing our famous pirate Khert. Our vengeance will once again affirm the principles of noble piracy which some still doubt.
+            Start=Our action is to destroy their civilian liner <Ship>. You will blow it up with passengers, crew and cargo. You must do it before <Date>, and we will make it worth your while. Pelengs are true to their word.
+            Status=Pirate
+        }
+        Count=95
+    }
+    SendLetter ~{
+        87 ^{
+            End=Thank you for the message, <Player>. It will enable our military forces to complete their current manoeuvres. <Money> cr is yours.
+            FromRace=Maloc
+            GovernmentAward=Reward,Points
+            Start=Dear <Player>, you must take off immediately and go to the system of <ToStar>. You will deliver a secret message to the planet of <ToPlanet>, which is intended for the local Maloqi Galactic defence corps. If you do it before <Date>, you will get a small reward. The message is top secret, so if taken prisoner, you must immediately destroy it. This mission is so important that if you fail you will be considered an enemy of our people.
+            Status=Warrior
+            SysName=Usl_0
+            ToRace=Maloc
+        }
+        88 ^{
+            End=We are very pleased to see our device arrive intact, <Player>! It is a very valuable piece of technology. We use it for executions. A field is mined and criminals are taken there. A most effective and ecologically clean method. We only hope we will never have to use it on you.
+            End=Here is <Money> cr for being quick.
+            FromRace=Maloc
+            Start=<Player>, we want you to deliver this package to planet <ToPlanet> in the system of <ToStar>. It is a miniature explosive device designed for mining. We have packed it so that it will easily fit under your seat, so don't worry about space. Our partners will wait for it till <Date>. If you are too slow delivering it, then forget about <Money> cr.
+            Status=Any
+            SysName=Usl_1
+            ToRace=Maloc
+        }
+        89 ^{
+            End=Oh, I've been waiting for you <Player>! Thanks for delivering this excellent Pelengan liquor. You see it's so hard to get quality goods when they are illegal. So you have to find a way.
+            End=I'd like this transaction to remain confidential. I will gladly reward your understanding and silence with <Money> cr.
+            FromRace=Peleng
+            GovernmentAward=Artefact
+            Start=Dear <Player>, we are offering you a nice little job. One of Maloqi representatives on planet <ToPlanet> in the system of <ToStar> has ordered us to deliver some illegal goods, a collection of vintage wines from the best Pelengan manufacturers. You know, of course, that Maloqs are ruthless to alcohol smugglers, so the box is disguised as a nitrogen purification device. Our client works for local government and he will meet you in person. Your punctuality is vital, you must go there and supply the goods on time, otherwise the client will be replaced by another official and you won't be able to make the delivery. We can arrange that our client will be waiting for you for <Day> days.
+            Status=Any
+            SysName=Usl_10
+            ToRace=Maloc
+        }
+        90 ^{
+            End=Dear <Player>, I've been waiting for you for a long time. Here's your <Money> cr. Try not to attract attention to yourself here on <ToPlanet> so that nobody finds out about our dealings.
+            FromRace=Peleng
+            Start=Dear <Player>, your help would be extremely valued by the Pelengan secret service organisation "Shagash Rogz". At the moment we are engaged in the dangerous but lucrative business of discrediting Gaalian diplomats. We won't waste our time explaining to you all the fine points of Galactic politics since they can only be comprehended by a fourth-generation Pelengan spy. All you need to know is that you must deliver some discrediting information to a Gaalian government centre.
+            Start=This case must be delivered to planet <ToPlanet> (the system of <ToStar>) and given to our agent in the government centre, who is actually a Peleng surgically modified to look like a Gaalian. He will then deposit the information into the Gaalian databases, so that in a few days it will be made public in the Galactic news program on the first gigachannel. The case must reach the destination no later than  <Date>, this is due to the schedule of our agent.
+            Status=Pirate
+            SysName=Usl_11
+            ToRace=Gaal
+        }
+        91 ^{
+            End=Oh, <Player>, you have delivered the anthem from planet <FromPlanet>! This is so nice of you. Let <Money> cr be your reward.
+            End=...
+            End=Hmmm, the tape is crumpled... What, you played it on your rusty tape recorder?! What a disaster. Well, don't despair, most Fayeans have so little knowledge of Human music that they will think it sounds normal.
+            FromRace=People
+            Start=Planets <FromPlanet> and <ToPlanet> are taking part in a twinning scheme and have achieved a substantial degree of economic and cultural integration. To honour our friendship, poets and composers from our planet have written an anthem, "Let the Peaceful Galaxy Prosper", which glorifies the efforts of our people to establish peace and harmony. We have already held a presentation ceremony, and now a similar event will be held on planet <ToPlanet> (the system of <ToStar>).
+            Start=They now have everything ready, but they need a tape with the anthem delivered. This is what we want you to do, <Player>. You should deliver the tape as fast as possible. If you undertake to deliver the tape in <Day> days, you will receive <Money> cr on arrival.
+            Status=Any
+            SysName=Usl_12
+            ToRace=Fei
+        }
+        92 ^{
+            End=Yeah, I see, here's the package with the goods, <Player>...
+            End=Ummm, hmmm...
+            End=Three bugs are missing...
+            End=You say, they crawled away? Well, it happens sometimes, not to worry. These ultra-modern Human models can run and hide to prevent themselves from being spotted. I'm sure those three are now somewhere in your ship, already switched on to surveillance mode. Well, I'm sure they will serve us well, too.
+            End=After subtracting the cost of the missing three bugs, we are transferring <Money> cr to your account.
+            FromRace=People
+            GovernmentAward=Points
+            Start=Dear <Player>, you can be of service to our intelligence. Our friends the Gaalians are our allies. Everybody knows that. But unfortunately we cannot trust anyone and so we regretfully have to literally cover their government buildings with our bugs. Gaalians are ingenious guys and constantly scan their premises and remove our detectors. To cut a long story short: on <ToPlanet> in the system of <ToStar> their counterintelligence has managed to uncover and arrest our Gaalian resident who pressed by their interrogators told them the location of our bug cache.
+            Start=We need to deliver a package of replacement bugs to our reserve agent. Our agent will wait for you in a government building for <Day> days, but will need to go to his hiding place afterwards. If you are late, the contract is void and you won't get <Money> cr.
+            Status=Pirate
+            SysName=Usl_13
+            ToRace=Gaal
+        }
+        93 ^{
+            End=I see, you've brought the old smoking pipe of our ambassador. He will be most thankful, it was a gift from his grandfather. <Money> cr should compensate your travel expenses...
+            End=But what is this thing inside the pipe? A metal bug! Looks like these stupid Faeyans have put a surveillance device into it. An outrage! Oh, never mind we'll take it out and throw it away.
+            FromRace=Fei
+            Start=Dear <Player>, if it's not too much trouble, could you take a small box to planet <ToPlanet> in the system of <ToStar>? The box contains a device belonging to a Human ambassador. He accidentally left it in our ceremonial garden. If you deliver the box in <Day> days you are bound to get a good reward.
+            Start=We are quite interested in this device and have studied it closely. Humans call this object "a smoking pipe" and it serves to conclude peace agreements. However, humans greatly overestimate its functionality. In fact, our experiments have shown how useless it is and we have decided to improve it. Our experts in mental brain diagnostics have designed an additional device that will ensure the mental equilibrium of negotiating parties. The device is installed into the pipe and now it will work for at least 500 years. We are pleased to return a fully functioning device to its owner.
+            Status=Any
+            SysName=Usl_14
+            ToRace=People
+        }
+        94 ^{
+            End=Wonderful, it's the lost sword of Professor O'Sakk! He will be most delighted.
+            End=Dear <Player>, on behalf of the History society I express their gratitude and give you this modest reward of <Money> cr. We are not a rich organisation, but in this case we are pleased to pay your expenses.
+            FromRace=People
+            GovernmentAward=Points
+            Start=Dear <Player>, we need your services as a delivery pilot. Not long ago we had a visit from a famous martial arts teacher and antiques collector, Professor Harry O'Sakk from planet <ToPlanet> (the system of <ToStar>). He brought a valuable item from his personal collection to be displayed at our exhibition, a genuine 14th century Damascus sword. To our deep regret the sword was stolen from the exhibition, we searched in vain, so Professor O'Sakk got the insurance money and departed. But three days ago our services finally managed to recover the sword, and now we would like you to return it to its owner. It is a very valuable item, so we will insure it while it's in transit, till <Date>. Is this acceptable to you? If you deliver the sword on time, you can count on a reward from the government of <ToPlanet>. If not, your pay will be used to compensate the insurance claim.
+            Status=Any
+            SysName=Usl_15
+            ToRace=People
+        }
+        95 ^{
+            End=Dear <Player>, many thanks for delivering Calkitte. It is a most valuable mineral and we are hoping for some breakthroughs in our research with it. We had already given up ever getting this delivery, nobody wanted to do it once they were warned that Calkitte is extremely radioactive and toxic... In fact, it emits intensive alpha, gamma and absolutely deadly kappa radiation, none of which can be effectively screened, its toxic fumes penetrate any cover, and our attempts to...
+            End=Ah well, you must be bored by this lecture. Oh yes, here is <Money> cr to show our gratitude.
+            FromRace=People
+            GovernmentAward=Reward
+            Start=We always have a mission for a fast ship owner. We are asking you to take this package to planet <ToPlanet> (the system of <ToStar>). The recipients are our colleagues from the Faeyan Mineralogy Centre. They are investigating mineral structures there and have expressed a great interest in our research. The package contains Calkitte, a valuable mineral that can only be found on our planet. The Centre needs the sample as soon as possible since it is planning a seminar which cannot be held until they have the package. We want to sign a contract with you because we believe you will do it faster than the mail companies. We will send a message to our colleagues that the sample will be delivered before <Date> and we hope you will be able to stick to that otherwise the contract will be void.
+            Status=Trader
+            SysName=Usl_16
+            ToRace=Fei
+        }
+        96 ^{
+            End=Dear <Player>! The management of the Galactic exhibition "MicroExpo" is mightily impressed by such a speedy delivery of the elastide sphere and pays you <Money> cr in accordance with your contract.
+            End=The model is so tiny but so complete! You can even make out the leaves on the trees! Unbelievable!
+            FromRace=People
+            GovernmentAward=Points
+            Start=Our miniaturisation experts have recently produced a model of our planet within a microscopic elastide sphere only two microns in diameter. This model is going to be presented at an exhibition featuring micro samples on planet <ToPlanet> in the system of <ToStar>. This is extremely important for the development of our industry since its presentation will enable us to sign some very lucrative contracts.
+            Start=The problem is that the ship carrying the sample was attacked by pirates and it had to surrender the sphere with the rest of the cargo. The ship is fine, but it won't be able to come back for the replacement and deliver it in time. We trust you with this contract because you have such a fast ship. If the package is delivered within <Day> days, you will be paid <Money> cr.
+            Status=Any
+            SysName=Usl_17
+            ToRace=People
+        }
+        97 ^{
+            End=Dear <Player>! "Express Galaxy" is most grateful to you for delivering the parcels and hopes that <Money> cr will compensate you your travel expenses.
+            End=However, we are warning you that you mustn't even dream of becoming a competitor of a super monopoly like us.
+            FromRace=Fei
+            Start=The Faeyan division of the Galactic mail service "Express Galaxy" has problems with cargo flow, especially when items go such far away and therefore expensive destinations. You are an experienced haulier so you could help us by delivering a few parcels to the system of <ToStar>, where they are expected on planet <ToPlanet>.
+            Start=We believe it necessary to remind you that our service is the fastest and the most popular in the Galaxy. You must uphold our image by delivering the cargo in <Day> days, upon which our representative will pay you <Money> cr.
+            Status=Trader
+            SysName=Usl_18
+            ToRace=Any
+        }
+        98 ^{
+            End=Thank you for the samples, <Player>, they are very valuable to us. If our preliminary estimates are correct, we will soon be able to create more efficient weapons for beating the Klissans. Let's pray we will live to see this day.
+            End=We believe <Money> cr is a good sum for your efforts.
+            FromRace=Fei
+            GovernmentAward=Artefact
+            Start=Our bio engineering laboratories have developed a substance that can infiltrate any living being and enter a symbiotic relationship with its tissues. Our colleagues from planet <ToPlanet> (the system of <ToStar>) have become extremely interested in the substance, which, quite possibly, will substantially advance our knowledge of Klissans. If its not too much trouble, please deliver our samples to them. Unfortunately, the substance is very unstable and the molecular structure is easily ruined. That is why the sooner it is delivered the better. In order for the substance to reach the laboratory in an acceptable condition, we must agree on how long the delivery will take. We suggest <Day> days, and then your pay will be <Money> cr.
+            Status=Any
+            SysName=Usl_19
+            ToRace=Fei
+        }
+        99 ^{
+            End=You are on time, <Player>! Had it been any longer the Klissans would have relocated to another sector and this information would be worthless.Take your <Money> cr. Your services aren't worth any more than that.
+            FromRace=Maloc
+            Start=You have an opportunity to help free the Galaxy from Klissan invasion. This matter is very serious, just like any other Maloqi mission. We are giving you a package containing information on the latest Klissan movements. The information is so secret that we cannot transfer it through the normal channels. We are reluctant to send couriers because they are always being attacked. The information must be given to the military co-ordination centre in the system of <ToStar>. Their headquarters are on <ToPlanet>. This is where the package must go. Bear in mind that the data has a date of expiry. After a couple of months it will be useless. That's why we need a prompt delivery. We are telling <ToPlanet> that you will deliver the data before <Date>. If you fail, in future we will treat you as an enemy.
+            Status=Warrior
+            SysName=Usl_2
+            ToRace=Maloc
+        }
+        100 ^{
+            End=Dear <Player>, many thanks for the timely delivery of the gala-scenes, and here is your <Money> cr.
+            End=The film will be released some time in July next year and you must see it, it's going to be the best super-action feature for years. By the way, do you know what kind of device we need to view these discs? I'm afraid we haven't got a gadget to view them. But that's just like Faeyans, they invent something new and keep the technology to themselves...
+            FromRace=Fei
+            Start=We are now making a huge galablockbuster, "Demise of 47th Planet", in co-operation with media holding "EuroCinemaTron". Here on <FromPlanet> we have been shooting some scenery and we need to transfer the recordings to the studios on planet <ToPlanet> in the system of <ToStar>. Please take these microdiscs there. Our colleagues are waiting for them to incorporate into the film. If you do it before <Date>, they will pay you <Money> cr, this has already been arranged.
+            Status=Any
+            SysName=Usl_20
+            ToRace=People
+        }
+        101 ^{
+            End=Thank you for carrying the ashes of Assiruis Daedalus. He was an honorary citizen of planet <ToPlanet>, everybody respected and loved him. Can you hear the cries in the streets? Thousands of people have come to mourn him. Please stay for the funeral service as a special guest. And here is your payment, <Money> cr.
+            FromRace=Fei
+            GovernmentAward=Reward
+            Start=A short time ago something devastating happened on our planet. An accident took away the life of the Human ambassador Assirius Daedalus who was representing a charity mission from planet <ToPlanet>. According to his will, we cremated his body and now we need someone to carry his remains to his home world, to the system of <ToStar>. Dear <Player>, this small urn will not take up much space on your ship. We have already told the relatives what happened and they will hold a funeral service as soon as they get the ashes. It is up to you to decide how fast you can deliver them. But a term of <Day> days seems to us quite acceptable.
+            Status=Any
+            SysName=Usl_21
+            ToRace=People
+        }
+        102 ^{
+            End=Oh, It is you, <Player>? Thank you for the parcel. I hope this hasn't been too much trouble. This package is quite important to me, there are a few souvenirs from planet <FromPlanet> in it. Please accept this <Money> cr as a token of my gratitude.
+            FromRace=Fei
+            Start=Dear <Player>, I have a personal request for you. If you are going to the system of <ToStar>, please take a small package with souvenirs to planet <ToPlanet>. If you can do it I will send a message to my friend from the local government and he will wait for you until <Date>. He will then pay you for the delivery. Will you do it? By asking you to do this I am showing a great deal of trust. Do not ask about payment. You will certainly get some money as a reward, but only upon delivery of the parcel. We Faeyans never tell lies.
+            Status=Any
+            SysName=Usl_22
+            ToRace=Fei
+        }
+        103 ^{
+            End="Express Galaxy" is grateful for your help <Player>. As you can see, even the most reliable companies can have incidents, but it doesn't mean that they are incompetent. Here is your <Money> cr, and we are taking the cargo from you.
+            FromRace=Fei
+            Start=Galactic mailing service "Express Galaxy" has encountered an unexpected problem. Someone has stolen all the hyper-fuel from the reservoirs on this wonderful planet. Now we have to send the most urgent cargo and letters with private ships. <Player>, we are asking you to deliver a load of parcels to planet <ToPlanet> (the system of <ToStar>). We value our image, so we only deal with experienced hauliers who can adhere to our tight time frames. You have <Day> days for this delivery, and when it's complete you will get <Money> cr.
+            Status=Trader
+            SysName=Usl_23
+            ToRace=Gaal
+        }
+        104 ^{
+            End=Dear <Player>, chemical corporation "Yellow skies" is grateful for this valuable cargo. We hope <Money> cr will compensate you.
+            End=This substance is going to be very useful. By the way, your head has swollen. Must be a sign of a brain tumour!
+            End=But how can it be, you would never have opened the container. Or would you?
+            FromRace=Gaal
+            Start=Are you by any chance going to the system of <ToStar>? If so, you must take a container with a carcinogenic substance. Humans who are studying treatments for brain tumours have requested it. Don't worry, it's absolutely safe! The substance is urgently needed on planet <ToPlanet>. Of course, you understand how important it is to deliver it as soon as possible.
+            Start=So, off you go! You will get good money if you do it before <Date>. Nobody would want the substance after that.
+            Status=Any
+            SysName=Usl_24
+            ToRace=People
+        }
+        105 ^{
+            End=Well, we thank you for this delivery <Player>, even though our own transport has been ready to depart.
+            End=Naturally, we are not going to treat our citizens for free. These stupid Gaalians have no business sense. We are better off re-selling the device to the Maloqs, they are ready to pay any price for their health. And here is your <Money> cr. Charity is all very well, but good money is never unwelcome.
+            FromRace=Gaal
+            Start=Ranger <Player>, if you go to the system of <ToStar>, please deliver a parcel to planet <ToPlanet>. It is a device for clearing Pelengan blood of carbon dioxide which they have ordered from us. The device has been ready for a while but the transport that the Pelengs promised to send is late. So we have decided to send the device with a private ship. It is not so safe, of course, since some of the pilots may steal the valuable cargo. But you have a good service record so we trust you with this mission. Please deliver this device on time, no later than <Date>.
+            Start=Charitable Medical Bureau of planet <FromPlanet> is a non-governmental charity aiming to support all initiatives for improving medical services of backward worlds. "All kinds of technological and chemical-bacteriological research undertaken for free".
+            Status=Trader
+            SysName=Usl_25
+            ToRace=Peleng
+        }
+        106 ^{
+            End=Oh <Player>, you have brought us the treasured baduba of Rart Gromargidus! We have been unjust to our partners the Gaalians in suspecting them of theft. But maybe they hid it on purpose to study it first and then return it? This baduba, after all, is made of a top-secret type of stone.
+            End=The reward of <Money> cr has already been transferred to your account.
+            FromRace=Gaal
+            GovernmentAward=Reward,Points,Artefact
+            Start=Ranger <Player>, we are offering you a fairly sensitive mission. We have had a visit from a famous Maloqi Rart Gromargidus from planet  <ToPlanet> (the system of <ToStar>). Even though our laws forbid the import or export of any weapons, we sometimes make an exception for VIP's. Thus, Sir Gromargidus had with him an ancestral stone baduba club. But upon his departure we found the baduba in his bathroom, where he had apparently left it. Now Sir Gromargidus is suspecting us of theft. We would have been glad to return his possession to Rart, but the problem is that taking any kind of weapon from our planet is a crime. On the other hand, we have no wish to quarrel with the Maloqs.
+            Start=Since you are already on the wrong side of law, could you possibly sneak the baduba through our customs and deliver it to the Maloqs by <Date>? You will be paid well on planet <ToPlanet>!
+            Status=Pirate
+            SysName=Usl_26
+            ToRace=Maloc
+        }
+        107 ^{
+            End=Many thanks for the card. Please take <Money> cr as your reward. Have you opened the card, by the way? Oh, you've missed a lot then. It's really great.
+            FromRace=Gaal
+            Start=Close Human friends of our Great Magister live on planet <ToPlanet> in the system of <ToStar>. The distance is great and they don't see each other that often. If you go to that sector, could you deliver a Christmas card before <Date>? It is an extremely expensive super-multimedia card with solar panels, and we will be really upset if it doesn't arrive on time. However, we believe that since you've got such a fast ship, this will be no problem to you.
+            Status=Trader
+            SysName=Usl_27
+            ToRace=People
+        }
+        108 ^{
+            End=<Player>, thank you for your help in delivering the parcels. We have heard about the sudden illness of our pilot and we are very pleased that you were ready to offer assistance. Here is your <Money> cr.
+            FromRace=Gaal
+            GovernmentAward=Reward,Points
+            Start=We are representing the Galactic mailing service "Express Galaxy". One of our pilots has fallen ill with venous polyoglittis. It is a disease contracted only by Gaalians, other races are immune to it. We are really upset and alarmed and are going to quarantine the whole mailing base.
+            Start=However, we still have our contractual responsibilities and do not wish to pay fines for late deliveries. Can you help us by taking two parcels to the system of <ToStar>, planet <ToPlanet>? If you deliver them in <Day> days, you will get <Money> cr from our representatives. Since the parcels are heavily insured, if you fail to deliver them on time the fines will be enormous. We are counting on you.
+            Status=Any
+            SysName=Usl_28
+            ToRace=Gaal
+        }
+        109 ^{
+            End=What a wonderful device! Our scientists have been working on something similar for ages, with no success!
+            End=It's a glorious gift and we are immediately transferring <Money> cr to your account. Please be so kind as to accept it.
+            FromRace=Gaal
+            GovernmentAward=Reward,Points,Artefact
+            Start=Ranger <Player>, please do us a favour, deliver this brain stimulator to planet <ToPlanet> in the system of <ToStar>. It has been specifically developed for the Fayean brain. It is a gift that we wish to present to our Fayean friends. It is going to be most useful in their meditation exercises, since it relieves neurone charge and stimulates frontal brain zones. The Fayeans will soon be holding their annual meeting on the issue of Transcendental Knowledge and we want you to deliver the gift as soon as possible. If you do it in <Day> days, you will get <Money> cr on your arrival. Alternatively, you will get nothing if it is delivered late.
+            Status=Any
+            SysName=Usl_29
+            ToRace=Fei
+        }
+        110 ^{
+            End=Ooh, at last we've got a container for breeding Ragobamian toads! Our friends the Maloqs are so clever. These wonderful animals are ideal for planting bugs and spitting poison at political opponents. Thanks for the delivery <Player>, and here's your <Money> cr.
+            FromRace=Maloc
+            Start=<Player>, you are a true pirate, but do not overlook the possibility to make easy money legally. Here's a rare opportunity for you. You need to deliver a big crate to planet <ToPlanet> in the system of <ToStar>. Do not ask us what's inside, it's none of your business. We can only say that it is not radioactive, infectious, toxic or hazardous to your health. The Pelengs are very much interested in it. If you deliver the crate by <Date> they will pay you <Money> cr.
+            Status=Pirate
+            SysName=Usl_3
+            ToRace=Peleng
+        }
+        111 ^{
+            End=Thanks for the delivery <Player>, and take your <Money> cr. It's much better to do business with you than with those monopolists from mail networks. We have a very low opinion of traders and similar good-for-nothing types, but sometimes they are indispensable. Can you believe it, while you were on your way, "Express" raised its tariffs even more!
+            FromRace=Maloc
+            Start=Ranger <Player>, your mission is as follows. This disgusting agency, "Express Galaxy" has extortionate tariffs for interplanetary haulage. They are so high that hardly anyone uses them these days. Of course, they are aware of it, but still the prices won't go down. Anyway we are better off paying a private pilot like you. Some parcels need to be delivered to the system of <ToStar>, to planet <ToPlanet>. If you do it before <Date>, your reward will be <Money> cr. This is exactly half of what "Express" would have charged us. But for you it's good money, isn't it?
+            Status=Trader
+            SysName=Usl_4
+            ToRace=Any
+        }
+        112 ^{
+            End=Great, the samples are in perfect condition! You are a brave pilot, so we will gladly pay you <Money> cr. Just imagine, one flame-thrower "Gron-DoRM" can destroy a whole infantry regiment.
+            End=Well, it hasn't been tested yet... But don't worry, we have a whole group of Gaalian prisoners here. We've heard that they are very heat-resistant creatures. We'll test that feature as well!
+            FromRace=Maloc
+            GovernmentAward=Reward,Points,Artefact
+            Start=Our advanced military plants have developed a unique weapon that is likely to revolutionise the Maloqi military industry. It's a super compact infrared flame thrower "Gron-DoRM". We need to send two experimental samples to the system of <ToStar>, planet <ToPlanet>. There we are conducting additional field trials. Unfortunately, our competitors have found out about this new model. As a result we have lost two transports carrying the samples. You are a decent and well-known warrior whom we respect. Therefore, we ask that you deliver these samples for us. We think our competitors will not notice you and so the shipment will be delivered before <Date>. If not, you won't get <Money> cr.
+            Status=Warrior
+            SysName=Usl_5
+            ToRace=Maloc
+        }
+        113 ^{
+            End=At last the priceless Challis has been found! Many thanks <Player>, we had lost all hope to see it ever again... Oh, wait, what's the matter with you? Your back is all white! It looks like you've been cursed by the Challis after all. Too bad. You will certainly be killed very soon. Well, maybe at least this <Money> cr will cheer you up.
+            FromRace=Peleng
+            GovernmentAward=Points
+            Start=Dear <Player>, you can do us a favour. Recently a well known shaman from <ToPlanet> (the system of <ToStar>) came to us to read a series of lectures in cybermnemonics, telepathy and advanced curses. Then, he accidentally (please believe us) left behind his Challis. We have just found it, again accidentally (yes, it really WAS an accident), and now we would like to return it to it's owner. It is an ancient and extremely valuable object. If you fail to deliver it before <Date>, we will regard you as a thief; anyway prolonged contact with the thing will certainly be harmful to your bioenergetic substance. You certainly don't want a curse put on you, do you?
+            Status=Any
+            SysName=Usl_6
+            ToRace=Any
+        }
+        114 ^{
+            End=Representative of centre "Bacterius Groccus", responsible for fighting the virus, hopes that the contents of the container you've just delivered will help us stop the disease. But I wonder why would Pelengs start making medicines all of a sudden?
+            End=Anyway, many thanks to you, <Player>, and here is your <Money> cr.
+            FromRace=Peleng
+            GovernmentAward=Reward,Artefact
+            Start=A terrible disease is ravaging the planet <ToPlanet> in the system of <ToStar>. Our laboratories have designed a virus which will aggravate it even further! As a representative of the most progressive brotherhood in space you can complete this dirty business by delivering the germs to our human colleagues. You might think it's unethical, but then life's like that and what would it be without genetic experiments in survival? Besides, you can only get good money for doing evil things.
+            Start=The more days you need to complete the mission, the better container we need to deliver the germs. In this container, for instance, they will only live for <Day> days, and after that its contents won't be worth even a single poisonous Ragobamian toad. Taking into account the value of the container, your profit will be <Money> cr.
+            Status=Pirate
+            SysName=Usl_7
+            ToRace=People
+        }
+        115 ^{
+            End=Oh, that's you <Player>, a blackmailer and Pelengan agent? We are amazed that you have enough nerve to come here with this tape. Just give us one reason why we shouldn't execute you on the spot! Oh well, don't shake so much <Player>. We've heard a lot about your military deeds. And we can see you are not at all like the Pelengs since you've had enough courage to face us. Here, take <Money> cr for your cheek.
+            FromRace=Peleng
+            Start=We've collected some sensitive information concerning one of the Maloqi officials and now we feel the time is right to use it. You need to deliver this recording to the planet of <ToPlanet> in the system of <ToStar> and give it to a local government representative. Are you ready to help us, <Player>? If you like us and share our goals, you will certainly assist us with all your heart in what some would call blackmail, but we prefer the word "business" as it's more politically correct. Let's now discuss the timeframe, since we need to contact the authorities on that planet and inform them of our plans. Is <Date> all right with you? If so, we will call them with our demands straight away. And you can take off immediately. It is quite possible that the Maloqs won't kill you. As far as we can tell from their weird behaviour, they might even admire your courage.
+            Status=Warrior
+            SysName=Usl_8
+            ToRace=Maloc
+        }
+        116 ^{
+            End=Please take our compliments for the speedy delivery of the parcel. We are transferring <Money> cr to your account.
+            End=...
+            End=But what's this? Why, you've been sticking knives into it <Player>! An outrage!
+            FromRace=Peleng
+            Start=We represent a private courier company, "Mail without fail", specialising in delivering smuggled goods. This pistol "Ultra-gromix" must be delivered to the planet <ToPlanet> (the system of <ToStar>). The object is disguised as an automatic knife sharpener, but we don't recommend using it as such. If you deliver it on time, that is before <Date>, you will get <Money> cr.
+            Start=Advertising: "Mail without fail" delivers any goods to all Commonwealth planets! Payment to our agents upon delivery! We employ only the best hauliers! Guaranteed delivery and full insurance as standard!
+            Status=Pirate
+            SysName=Usl_9
+            ToRace=Fei
+        }
+        Count=117
+    }
+}
+UselessItems ~{
+    Usl_76 ^{
+        Cost=Mini
+        Name=Послание
+        Owner=Maloc
+        Size=1
+        Text=Секретный пакет, при взятии в плен - уничтожить!
+    }
+    Usl_77 ^{
+        Cost=Mini
+        Name=Захват-взрыватель
+        Owner=Maloc
+        Size=15
+        Text=Миниатюрный захват-взрыватель, предназначенный для минерных работ под землей.
+    }
+    Usl_78 ^{
+        Cost=Mini
+        Name=Послание
+        Owner=Maloc
+        Size=1
+        Text=Пакет наблюдений за последними перемещениями военных сил доминаторов.
+    }
+    Usl_79 ^{
+        Cost=Small
+        Name=Ящик
+        Owner=Maloc
+        Size=50
+        Text=Таинственный ящик. Не радиоактивен, не заразен, не токсичен.
+    }
+    Usl_80 ^{
+        Cost=Small
+        Name=Посылки
+        Owner=Maloc
+        Size=43
+        Text=Посылки, которые обычно доставляет контора "Экспресс-галактика".
+    }
+    Usl_81 ^{
+        Cost=Average
+        Name=Огнемет "Грон-ДоРМ"
+        Owner=Maloc
+        Size=10
+        Text=Уникальное оружие, сверхкомпактный инфракрасный огнемет.
+    }
+    Usl_82 ^{
+        Cost=Big
+        Name=Чхаша
+        Owner=Peleng
+        Size=1
+        Text=Очень древняя чхаша династии Цхин.
+    }
+    Usl_83 ^{
+        Cost=Mini
+        Name=Контейнер
+        Owner=Peleng
+        Size=25
+        Text=В контейнере находится вирус "Бактериус-Грокус".
+    }
+    Usl_84 ^{
+        Cost=Mini
+        Name=Кассета
+        Owner=Peleng
+        Size=1
+        Text=Запись с компроментирующим материалом.
+    }
+    Usl_85 ^{
+        Cost=Mini
+        Name=Точилка ножей
+        Owner=Peleng
+        Size=5
+        Text=Замаскированный под точилку пистолет "Ультра-громикс".
+    }
+    Usl_86 ^{
+        Cost=Mini
+        Name=Прибор
+        Owner=Peleng
+        Size=10
+        Text=Подарочный набор алкогольных напитков, замаскированный под прибор для перегонки азота.
+    }
+    Usl_87 ^{
+        Cost=Mini
+        Name=Кейс
+        Owner=Peleng
+        Size=1
+        Text=Кейс с секретными документами.
+    }
+    Usl_88 ^{
+        Cost=Small
+        Name=Жучки
+        Owner=People
+        Size=1
+        Text=Пакетик с жучками, для организации шпионской деятельности.
+    }
+    Usl_89 ^{
+        Cost=Mini
+        Name=Трубка мира
+        Owner=People
+        Size=1
+        Text=Трубка служит для заключения мира согласно людским традициям.
+    }
+    Usl_90 ^{
+        Cost=Small
+        Name=Меч
+        Owner=People
+        Size=2
+        Text=Самурайский меч, датированный XIV веком н. э., людской антиквариат.
+    }
+    Usl_91 ^{
+        Cost=Big
+        Name=Калкит
+        Owner=People
+        Size=10
+        Text=Ценная каменистая порода.
+    }
+    Usl_92 ^{
+        Cost=Average
+        Name=Маленький шар
+        Owner=People
+        Size=1
+        Text=Модель планеты, выполненная в виде микроскопического эластидного шара.
+    }
+    Usl_93 ^{
+        Cost=Small
+        Name=Посылки
+        Owner=Fei
+        Size=60
+        Text=Посылки, которые обычно доставляет контора "Экспресс-галактика".
+    }
+    Usl_94 ^{
+        Cost=Mini
+        Name=Чип
+        Owner=Fei
+        Size=1
+        Text=Чип, способный адаптироваться к любой компьютерной системе.
+    }
+    Usl_95 ^{
+        Cost=Mini
+        Name=Микродиски
+        Owner=Fei
+        Size=2
+        Text=Запись статичных планов для голофильма.
+    }
+    Usl_96 ^{
+        Cost=Mini
+        Name=Прах
+        Owner=People
+        Size=3
+        Text=Урна с прахом человеческого посла.
+    }
+    Usl_97 ^{
+        Cost=Mini
+        Name=Посылочка
+        Owner=Fei
+        Size=20
+        Text=Посылочка с разными фэянскими сувенирами.
+    }
+    Usl_98 ^{
+        Cost=Mini
+        Name=Посылки
+        Owner=Fei
+        Size=60
+        Text=Посылки, которые обычно перевозит контора "Экспресс-галактика".
+    }
+    Usl_99 ^{
+        Cost=Mini
+        Name=Канцероген
+        Owner=Gaal
+        Size=30
+        Text=Контейнер с канцерогенным веществом.
+    }
+    Usl_100 ^{
+        Cost=Small
+        Name=Прибор
+        Owner=Gaal
+        Size=36
+        Text=Прибор для очистки пеленгской крови от двуокиси углерода.
+    }
+    Usl_101 ^{
+        Cost=Small
+        Name=Бадуба
+        Owner=Maloc
+        Size=4
+        Text=Фамильная дубина-бадуба известного малокского рарта.
+    }
+    Usl_102 ^{
+        Cost=Huge
+        Name=Открытка
+        Owner=Gaal
+        Size=1
+        Text=Очень дорогая супермультимедийная открытка на солнечных батареях.
+    }
+    Usl_103 ^{
+        Cost=Mini
+        Name=Посылки
+        Owner=Gaal
+        Size=32
+        Text=Посылки, которые обычно доставляет контора "Экспресс-галактика".
+    }
+    Usl_104 ^{
+        Cost=Average
+        Name=Стимулятор
+        Owner=Gaal
+        Size=10
+        Text=Мозговой стимулятор для фэянского организма.
+    }
+}

@@ -1,0 +1,17 @@
+Data ^{
+    SE ^{
+        Weapon ^{
+            AuraEffect ^{
+                Palettes ^{
+                    3 ^{
+                        GAI=Bm.Weapon.MissileTarget
+                    }
+                    PalettesCount=4
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_EvoArtDominator=1,Script.Mod_EvoArtDominator
+    }
+}

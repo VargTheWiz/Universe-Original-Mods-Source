@@ -1,0 +1,116 @@
+PlanetName ^{
+    Fei ^{
+        33=Naega
+        34=Elida
+        71=Inteeliada
+        72=Ummaishe
+        73=Illum
+        74=Innaris
+        75=Ondery
+        76=Aglitean
+        77=Lateana
+        78=Erish
+        79=Ishindi
+        80=Eicaline
+    }
+    Gaal ^{
+        71=Nahali-fray
+        72=Io-aleer
+        73=Tahali-aya
+        74=Eanu-tian
+        75=Ontahal-moona
+        76=Eale-nue
+        77=Assonidae
+        78=Teesonia
+        79=Dayraae
+        80=Ooudne
+    }
+    Maloc ^{
+        71=Ruakaton
+        72=Coriand
+        73=Grack Arnagoodan
+        74=Gardakharon
+        75=Zgodaray
+        76=Kiren Madgari
+        77=Zutranow
+        78=Ravanbudg
+        79=Angreet
+        80=Daramaty
+    }
+    None ^{
+        301=Xseedia
+        302=Puntymea
+        303=Zeentalion
+        304=Cramatan
+        305=Acropoly
+        306=Ageakonia
+        307=Fobroll
+        308=Zahadoom
+        309=Hyperon
+        310=Claris
+        311=Dimeesys
+        312=Zavalon
+        313=Creenit
+        314=Darillium
+        315=Calistonia
+        316=Cantary
+        317=Gnoscis
+        318=Sevelgy
+        319=Daidaris
+        320=Jaydana
+        321=Grenaida
+        322=Pharnax
+        323=Letagrees
+        324=Kimmary
+        325=Carneras
+        326=Leevegeron
+        327=Orimeluck
+        328=Quaytis
+        329=Agolisy
+        330=Tessia
+        331=Dataris
+        332=Tau Ortis
+        333=Dol Aman
+        334=Aurendaal
+        335=Idus
+        336=Anydolay
+        337=Radgharos
+        338=Hesferat
+        339=Prickle
+        340=Leesandary
+        341=Askillian
+        342=Sibairany
+        343=Nahtrsasia
+        344=Liamisfay
+        345=Aelehna
+        346=Medanga
+        347=Tia
+        348=Zeetara
+        349=Gedros
+        350=Raleswaig
+    }
+    Peleng ^{
+        71=Lahong
+        72=Eeshrenh
+        73=Granah
+        74=Rcalieh
+        75=Sherakka
+        76=Zeemh
+        77=Ceelhasa
+        78=Leeckse
+        79=Aciatash
+        80=Ashia
+    }
+    People ^{
+        71=Terra Nova
+        72=Raptory
+        73=Galeomea
+        74=Prometiada
+        75=Undraxi Prime
+        76=Magna Argeada
+        77=Ackroom
+        78=Istrida
+        79=Astropolis
+        80=Tearos
+    }
+}

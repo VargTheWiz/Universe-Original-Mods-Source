@@ -1,0 +1,8 @@
+Bm ~{
+    ItemsUseless ~{
+        2LS_s=Mods\Revolution\RevJediQuest\DATA\ItemsUseless\2LS.gi
+    }
+}
+Script ~{
+    Mod_RevJediQuest=Mods\Revolution\RevJediQuest\DATA\Script\Mod_RevJediQuest.scr
+}

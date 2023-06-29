@@ -1,0 +1,12 @@
+BV ^{
+    OnStart ^{
+        Mod_AddUninhabitedPlanets ^{
+            01=ScriptRun(PlanetToStar(PlanetPirateClan()), PlanetPirateClan(), 'Mod_AddUninhabitedPlanets');
+        }
+    }
+}
+Data ^{
+    Script ^{
+        Mod_AddUninhabitedPlanets=1,Script.Mod_AddUninhabitedPlanets
+    }
+}

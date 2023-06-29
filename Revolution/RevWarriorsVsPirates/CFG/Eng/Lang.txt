@@ -1,0 +1,10 @@
+Script ^{
+    Mod_RevWarriorsVsPirates ~{
+        N1=According to unconfirmed reports, it became known about an impending sabotage in system #0#. An unnamed source reports that a group of pirates are planning to attack military base #1#. Despite the lack of direct evidence, the government of planet #2# has already ordered to strengthen the security of the base.
+        N3=An attack of pirates on military base #0# was repulsed today! The government of planet #1# expresses special gratitude to the representatives of Dzuhallag for providing timely intelligence, thanks to which it was possible to prepare for the defense. The pirate clan denies any involvement in the attack.
+        N2=As a result of a pirate attack, a military base in system #0# was destroyed. The representative of the galactic council issued an official statement on the strengthening of security measures at other strategically important facilities. An official check is being carried out against the authorities of planet #1#.
+        D1=Ranger! The base has been attacked! Instead of chilling here, help our fighters deal with the pirates!
+        D2=To the hangar
+        19=<0>
+    }
+}

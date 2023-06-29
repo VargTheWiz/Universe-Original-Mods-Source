@@ -1,0 +1,40 @@
+Bm ~{
+    Items ~{
+        2CargoHookTechnolitHooka=Mods\Revolution\RevAcryn\DATA\Items\TechnolitHook_a.gai
+        2CargoHookTechnolitHooki=Mods\Revolution\RevAcryn\DATA\Items\TechnolitHook_i.gi
+        2CargoHookTechnolitHooks=Mods\Revolution\RevAcryn\DATA\Items\TechnolitHook_s.gi
+        2DefGeneratorTechnolitDefGeneratora=Mods\Revolution\RevAcryn\DATA\Items\TechnolitDefGenerator_a.gai
+        2DefGeneratorTechnolitDefGeneratori=Mods\Revolution\RevAcryn\DATA\Items\TechnolitDefGenerator_i.gi
+        2DefGeneratorTechnolitDefGenerators=Mods\Revolution\RevAcryn\DATA\Items\TechnolitDefGenerator_s.gi
+        2EngineNOKMa=Mods\Revolution\RevAcryn\DATA\Items\NOKM_a.gai
+        2EngineNOKMi=Mods\Revolution\RevAcryn\DATA\Items\NOKM_i.gi
+        2EngineNOKMs=Mods\Revolution\RevAcryn\DATA\Items\NOKM_s.gi
+        2EngineTwinEnginea=Mods\Revolution\RevAcryn\DATA\Items\TwinEngine_a.gai
+        2EngineTwinEnginei=Mods\Revolution\RevAcryn\DATA\Items\TwinEngine_i.gi
+        2EngineTwinEngines=Mods\Revolution\RevAcryn\DATA\Items\TwinEngine_s.gi
+        2FuelTanksTwinFuelTanka=Mods\Revolution\RevAcryn\DATA\Items\TwinFuelTank_a.gai
+        2FuelTanksTwinFuelTanki=Mods\Revolution\RevAcryn\DATA\Items\TwinFuelTank_i.gi
+        2FuelTanksTwinFuelTanks=Mods\Revolution\RevAcryn\DATA\Items\TwinFuelTank_s.gi
+        2RadarTechnolitRadara=Mods\Revolution\RevAcryn\DATA\Items\TechnolitRadar_a.gai
+        2RadarTechnolitRadari=Mods\Revolution\RevAcryn\DATA\Items\TechnolitRadar_i.gi
+        2RadarTechnolitRadars=Mods\Revolution\RevAcryn\DATA\Items\TechnolitRadar_s.gi
+        2RadarUbivator2a=Mods\Revolution\RevAcryn\DATA\Items\Ubivator2_a.gai
+        2RadarUbivator2i=Mods\Revolution\RevAcryn\DATA\Items\Ubivator2_i.gi
+        2RadarUbivator2s=Mods\Revolution\RevAcryn\DATA\Items\Ubivator2_s.gi
+        2RadarUbivatora=Mods\Revolution\RevAcryn\DATA\Items\Ubivator_a.gai
+        2RadarUbivatori=Mods\Revolution\RevAcryn\DATA\Items\Ubivator_i.gi
+        2RadarUbivators=Mods\Revolution\RevAcryn\DATA\Items\Ubivator_s.gi
+        2RepairRobotAssemblyDroida=Mods\Revolution\RevAcryn\DATA\Items\AssemblyDroid_a.gai
+        2RepairRobotAssemblyDroidi=Mods\Revolution\RevAcryn\DATA\Items\AssemblyDroid_i.gi
+        2RepairRobotAssemblyDroids=Mods\Revolution\RevAcryn\DATA\Items\AssemblyDroid_s.gi
+        2RepairRobotBattleDroida=Mods\Revolution\RevAcryn\DATA\Items\BattleDroid_a.gai
+        2RepairRobotBattleDroidi=Mods\Revolution\RevAcryn\DATA\Items\BattleDroid_i.gi
+        2RepairRobotBattleDroids=Mods\Revolution\RevAcryn\DATA\Items\BattleDroid_s.gi
+        2ScanerTechnolitScanera=Mods\Revolution\RevAcryn\DATA\Items\TechnolitScaner_a.gai
+        2ScanerTechnolitScaneri=Mods\Revolution\RevAcryn\DATA\Items\TechnolitScaner_i.gi
+        2ScanerTechnolitScaners=Mods\Revolution\RevAcryn\DATA\Items\TechnolitScaner_s.gi
+    }
+}
+Script ~{
+    Mod_RevAcryn=Mods\Revolution\RevAcryn\DATA\Script\Mod_RevAcryn.scr
+}

@@ -1,0 +1,3921 @@
+MicroModuls ^{
+    ExpBlackMarket_SmugglerPeleng ^{
+        Cost=130
+        CustomTag=ExpBlackMarket_SmugglerPeleng
+        Equipments=Hull
+        Fragility=105
+        KindGraph=SmugglerPeleng
+        LockedAcryn=3
+        Name=</color><Type> hull smuggler
+        NonSearchable=1
+        OriginalHullType=Transport,Pirate
+        Owner=PirateClan
+        Priority=0
+        Size=110
+        Special=1
+        bonSlotArt=-2
+        bonSlotForsage=-1
+        bonSlotWeapon=-2
+    }
+}
+AssistantExclusions ^{
+    BM=NoSearch
+}
+BlackMarketShopList ~{
+    Version=16.07.2022
+    BlackMarketTurnDelays ^{
+        MaxClosingAfterBuyAccessDays=72
+        MaxClosingDays=128
+        MaxOpeningAfterStartEventDays=27
+        MaxOpeningDays=52
+        MaxRebuildingDays=447
+        MaxRepairingDays=59
+        MinClosingAfterBuyAccessDays=51
+        MinClosingDays=93
+        MinOpeningAfterStartEventDays=18
+        MinOpeningDays=31
+        MinRebuildingDays=381
+        MinRepairingDays=45
+    }
+    MinEquipmentsInStock=5
+    MaxEquipmentsInStock=9
+    MinWeaponsInStock=4
+    MaxWeaponsInStock=7
+    MinArtefactsInStock=2
+    MaxArtefactsInStock=5
+    MinModificationsInStock=3
+    MaxModificationsInStock=6
+    MinMicromodulsInStock=3
+    MaxMicromodulsInStock=6
+    MicroModuls ~{
+        ReadMe=Cost modifiers (CostCoef) can take fractional values (separate the fractional part with a dot). Before being added to the store, the cost of the micromodule will be multiplied by the specified coefficients depending on the MM level.
+        MMLevelOneCostCoef=12.0
+        MMLevelTwoCostCoef=7.0
+        MMLevelThreeCostCoef=3.0
+    }
+    Hulls ~{
+        ReadMe=The Race parameter is read by the game almost like Owner, except that in the case of a hull, an unknown race can be specified in the Race as None. The HullType parameter has the following possible values ??(only one value can be set without enums): Ranger, Warrior, Pirate, Transport, Liner, Diplomat, WarriorBig. The HullSerieChance parameter determines the chance with which one of the series listed in the HullSerie parameter will be applied to the hull (if the HullSerieChance parameter is not specified, then the chance to apply a series will be equal to 100%). The HullSerie parameter accepts the names of sections with hull series (it is possible to list several series separated by commas without spaces). If the value of OwnerPirateClan (optional) is greater than zero, then the corps will receive a pirate emblem, even if it has a coalition race (the emblem will have the color of the corresponding race). The CustomFactionChance and CustomFaction parameters (multiple factions can be listed separated by commas without spaces) are optional.
+        ReadMeMore=Parameters OneHullSellingChance, TwoHullsSellingChance, etc. means the chances at which 1, 2, 3, 4 or 5 hulls will appear on the sale of the black market at the same time. The optional parameter SubRace denotes a series of dominators (applies only to dominator hulls) and has 3 values Blazer, Keller, Terron or Any (it is allowed to add values without spaces separated by commas).
+        OneHullSellingChance=33
+        TwoHullsSellingChance=15
+        ThreeHullsSellingChance=10
+        FourHullsSellingChance=7
+        FiveHullsSellingChance=5
+        1 ~{
+            Name=Traitor hull
+            BonusNum=ExpTraitors_RangerPirateHull
+            HullType=Ranger
+            HullSerie=ExpBlackMarket_BlackHeart,2,4,21,32,36,38
+            Race=PirateClan
+            OwnerPirateClan=1
+            ChangePriorityOn=0
+            CustomFactionChance=0
+            CustomFaction=Klissan
+        }
+        2 ~{
+            Name=Maloq hull smuggler
+            HullType=Transport
+            HullSerie=ExpBlackMarket_Schwerzer,ExpBlackMarket_Solo,6,14,17,130
+            BonusNum=ShuSmugglers_SmugglerMaloc
+            Race=Maloc
+            OwnerPirateClan=1
+            ChangePriorityOn=0
+        }
+        3 ~{
+            Name=Peleng hull smuggler
+            HullType=Transport
+            HullSerie=ExpBlackMarket_Schwerzer,ExpBlackMarket_Solo,6,14,17,130
+            BonusNum=ShuSmugglers_SmugglerPeleng
+            Race=Peleng
+            OwnerPirateClan=1
+            ChangePriorityOn=0
+        }
+        4 ~{
+            Name=People hull smuggler
+            HullType=Transport
+            HullSerie=ExpBlackMarket_Schwerzer,ExpBlackMarket_Solo,6,14,17,130
+            BonusNum=ShuSmugglers_SmugglerPeople
+            Race=People
+            OwnerPirateClan=1
+            ChangePriorityOn=0
+        }
+        5 ~{
+            Name=Fei hull smuggler
+            HullType=Transport
+            HullSerie=ExpBlackMarket_Schwerzer,ExpBlackMarket_Solo,6,14,17,130
+            BonusNum=ShuSmugglers_SmugglerFei
+            Race=Fei
+            OwnerPirateClan=1
+            ChangePriorityOn=0
+        }
+        6 ~{
+            Name=Gaal hull smuggler
+            HullType=Transport
+            HullSerie=ExpBlackMarket_Schwerzer,ExpBlackMarket_Solo,6,14,17,130
+            BonusNum=ShuSmugglers_SmugglerGaal
+            Race=Gaal
+            OwnerPirateClan=1
+            ChangePriorityOn=0
+        }
+        7 ~{
+            Name="Gkvan" hull
+            HullType=Ranger
+            BonusNum=EvoGkvan_GkvanHull
+            Race=Maloc
+            OwnerPirateClan=0
+            ChangePriorityOn=0
+        }
+        Count=7
+    }
+    Equipment ~{
+        ReadMe=The ItemType parameter is strictly required and must contain one type of equipment without enums. Possible type names for the ItemType parameter can be found in the SellingWithoutAcrynChance section. The Owner parameter (it is possible to list races separated by commas without spaces, where the Coalition value is interpreted as 5 main playable races) is optional for filling and will replace the same parameter from the main akrin section (it is possible to list races separated by commas without spaces), and if it is absent there, it is taken default (all races except dominators and unknown). Any value is always interpreted in Owner as all races except unknown. The AverageSize parameter (meaning the average weight, where N/2 is the minimum weight, and N*2 is the maximum) is optional, and if it is absent, the weight will be calculated inside the script on a general basis. The CustomFactionChance and CustomFaction parameters (it is possible to list different factions separated by commas without spaces) are optional and not required to be added. All other parameters (including Count counters) are strictly required for any acrin.
+        ReadMeMore=Getting an unknown race for any item is possible only through the chance specified in the NoneRaceChance parameter, and getting the minimum weight is possible both through a random roll and through the chance specified in the MinSizeChance parameter. The DomRaceCostCoef and NoneRaceCostCoef modifiers (which can take fractional values) are used to increase the cost of items (right before they are added to the store) that have a dominator and an unknown race, respectively. The optional parameter SubRace denotes a series of dominators (applies only to dominator equipment) and has 3 values ??Blazer, Keller, Terron or Any (it is allowed to add values ??without spaces separated by commas). If BonusNum is set to None, this equipment will always appear in the store without acrine.
+        ReadMeMoreAgain=The parameters inside the SellingWithoutAcrynChance section determine the chance that the corresponding equipment type will appear in the shop without Acryn at all.
+        SellingWithoutAcrynChance ~{
+            Engine=7
+            FuelTank=7
+            Radar=7
+            Scaner=7
+            Droid=7
+            Hook=7
+            DefGenerator=7
+        }
+        DomRaceCostCoef=2.0
+        NoneRaceCostCoef=2.5
+        1 ~{
+            Name=Myoplasmic engine I
+            BonusNum=374
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        2 ~{
+            Name=Myoplasmic engine II
+            BonusNum=381
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        3 ~{
+            Name=Myoplasmic engine III
+            BonusNum=388
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        4 ~{
+            Name=Myoplasmic Fuel Tank I
+            BonusNum=373
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        5 ~{
+            Name=Myoplasmic Fuel Tank II
+            BonusNum=380
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        6 ~{
+            Name=Myoplasmic Fuel Tank III
+            BonusNum=387
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        7 ~{
+            Name=Myoplasmic Radar I
+            BonusNum=375
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        8 ~{
+            Name=Myoplasmic Radar II
+            BonusNum=382
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        9 ~{
+            Name=Myoplasmic Radar III
+            BonusNum=389
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        10 ~{
+            Name=Myoplasmic Scanner I
+            BonusNum=376
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        11 ~{
+            Name=Myoplasmic Scanner II
+            BonusNum=383
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        12 ~{
+            Name=Myoplasmic Scanner III
+            BonusNum=390
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        13 ~{
+            Name=Myoplasmic Droid I
+            BonusNum=377
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        14 ~{
+            Name=Myoplasmic Droid II
+            BonusNum=384
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        15 ~{
+            Name=Myoplasmic Droid III
+            BonusNum=391
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        16 ~{
+            Name=Myoplasmic Gripper I
+            BonusNum=378
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        17 ~{
+            Name=Myoplasmic Gripper II
+            BonusNum=385
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        18 ~{
+            Name=Myoplasmic Gripper III
+            BonusNum=392
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        19 ~{
+            Name=Myoplasmic Shield Generator I
+            BonusNum=379
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        20 ~{
+            Name=Myoplasmic Shield Generator II
+            BonusNum=386
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        21 ~{
+            Name=Myoplasmic Shield Generator III
+            BonusNum=393
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        22 ~{
+            Name=Pygamore Engine I
+            BonusNum=395
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        23 ~{
+            Name=Pygamore Engine II
+            BonusNum=402
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        24 ~{
+            Name=Pygamore Engine III
+            BonusNum=409
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        25 ~{
+            Name=Pygamore Fuel Tank I
+            BonusNum=394
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        26 ~{
+            Name=Pygamore Fuel Tank II
+            BonusNum=401
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        27 ~{
+            Name=Pygamore Fuel Tank III
+            BonusNum=408
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        28 ~{
+            Name=Pygamore Radar I
+            BonusNum=396
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        29 ~{
+            Name=Pygamore Radar II
+            BonusNum=403
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        30 ~{
+            Name=Pygamore Radar III
+            BonusNum=410
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        31 ~{
+            Name=Pygamore Scanner I
+            BonusNum=397
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        32 ~{
+            Name=Pygamore Scanner II
+            BonusNum=404
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        33 ~{
+            Name=Pygamore Scanner III
+            BonusNum=411
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        34 ~{
+            Name=Pygamore Droid I
+            BonusNum=398
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        35 ~{
+            Name=Pygamore Droid II
+            BonusNum=405
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        36 ~{
+            Name=Pygamore Droid III
+            BonusNum=412
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        37 ~{
+            Name=Pygamore Gripper I
+            BonusNum=399
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        38 ~{
+            Name=Pygamore Gripper II
+            BonusNum=406
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        39 ~{
+            Name=Pygamore Gripper III
+            BonusNum=413
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        40 ~{
+            Name=Pygamore Shield Generator I
+            BonusNum=400
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        41 ~{
+            Name=Pygamore Shield Generator II
+            BonusNum=407
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        42 ~{
+            Name=Pygamore Shield Generator III
+            BonusNum=414
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        43 ~{
+            Name=Nanobrolite Droid I
+            BonusNum=439
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        44 ~{
+            Name=Nanobrolite Droid II
+            BonusNum=442
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        45 ~{
+            Name=Nanobrolite Droid III
+            BonusNum=445
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        46 ~{
+            Name=Nanobrolite Engine I
+            BonusNum=440
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        47 ~{
+            Name=Nanobrolite Engine II
+            BonusNum=443
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        48 ~{
+            Name=Nanobrolite Engine III
+            BonusNum=446
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        49 ~{
+            Name=Nanobrolite Shield Generator I
+            BonusNum=441
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        50 ~{
+            Name=Nanobrolite Shield Generator II
+            BonusNum=444
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        51 ~{
+            Name=Nanobrolite Shield Generator III
+            BonusNum=447
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        52 ~{
+            Name=Transcendental Engine I
+            BonusNum=415
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        53 ~{
+            Name=Transcendental Engine II
+            BonusNum=416
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        54 ~{
+            Name=Transcendental Engine III
+            BonusNum=417
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        55 ~{
+            Name=Upgraded Gripper I
+            BonusNum=418
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        56 ~{
+            Name=Upgraded Gripper II
+            BonusNum=424
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        57 ~{
+            Name=Upgraded Gripper III
+            BonusNum=430
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        58 ~{
+            Name=Upgraded Shield Generator I
+            BonusNum=419
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        59 ~{
+            Name=Upgraded Shield Generator II
+            BonusNum=425
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        60 ~{
+            Name=Upgraded Shield Generator III
+            BonusNum=431
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        61 ~{
+            Name=Upgraded Engine I
+            BonusNum=420
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        62 ~{
+            Name=Upgraded Engine II
+            BonusNum=426
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        63 ~{
+            Name=Upgraded Engine III
+            BonusNum=432
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        64 ~{
+            Name=Upgraded Fuel Tank I
+            BonusNum=421
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        65 ~{
+            Name=Upgraded Fuel Tank II
+            BonusNum=427
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        66 ~{
+            Name=Upgraded Fuel Tank III
+            BonusNum=433
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        67 ~{
+            Name=Upgraded Radar I
+            BonusNum=422
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        68 ~{
+            Name=Upgraded Radar II
+            BonusNum=428
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        69 ~{
+            Name=Upgraded Radar III
+            BonusNum=434
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        70 ~{
+            Name=Upgraded Scanner I
+            BonusNum=423
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        71 ~{
+            Name=Upgraded Scanner II
+            BonusNum=429
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        72 ~{
+            Name=Upgraded Scanner III
+            BonusNum=435
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        73 ~{
+            Name=Ultraalloy Scanner I
+            BonusNum=448
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        74 ~{
+            Name=Ultraalloy Scanner II
+            BonusNum=452
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        75 ~{
+            Name=Ultraalloy Scanner III
+            BonusNum=459
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        76 ~{
+            Name=Ultraalloy Radar I
+            BonusNum=449
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        77 ~{
+            Name=Ultraalloy Radar II
+            BonusNum=453
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        78 ~{
+            Name=Ultraalloy Radar III
+            BonusNum=456
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        79 ~{
+            Name=Ultraalloy Fuel Tank I
+            BonusNum=450
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        80 ~{
+            Name=Ultraalloy Fuel Tank II
+            BonusNum=454
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        81 ~{
+            Name=Ultraalloy Fuel Tank III
+            BonusNum=457
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        82 ~{
+            Name=Ultraalloy Gripper I
+            BonusNum=451
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        83 ~{
+            Name=Ultraalloy Gripper II
+            BonusNum=455
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        84 ~{
+            Name=Ultraalloy Gripper III
+            BonusNum=458
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        85 ~{
+            Name=Twin Engine I
+            BonusNum=RevAcryn_TwinEngine1
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        86 ~{
+            Name=Twin Engine II
+            BonusNum=RevAcryn_TwinEngine2
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        87 ~{
+            Name=Twin Engine III
+            BonusNum=RevAcryn_TwinEngine3
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        88 ~{
+            Name=Twin Fuel Tank I
+            BonusNum=RevAcryn_TwinFuelTank1
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        89 ~{
+            Name=Twin Fuel Tank II
+            BonusNum=RevAcryn_TwinFuelTank2
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        90 ~{
+            Name=Twin Fuel Tank III
+            BonusNum=RevAcryn_TwinFuelTank3
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        91 ~{
+            Name=Technolytic Radar I
+            BonusNum=RevAcryn_TechnolitRadar1
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        92 ~{
+            Name=Technolytic Radar II
+            BonusNum=RevAcryn_TechnolitRadar2
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        93 ~{
+            Name=Technolytic Radar III
+            BonusNum=RevAcryn_TechnolitRadar3
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        94 ~{
+            Name=Technolytic Scanner I
+            BonusNum=RevAcryn_TechnolitScaner1
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        95 ~{
+            Name=Technolytic Scanner II
+            BonusNum=RevAcryn_TechnolitScaner2
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        96 ~{
+            Name=Technolytic Scanner III
+            BonusNum=RevAcryn_TechnolitScaner3
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        97 ~{
+            Name=Technolytic Gripper I
+            BonusNum=RevAcryn_TechnolitHook1
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        98 ~{
+            Name=Technolytic Gripper II
+            BonusNum=RevAcryn_TechnolitHook2
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        99 ~{
+            Name=Technolytic Gripper III
+            BonusNum=RevAcryn_TechnolitHook3
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        100 ~{
+            Name=Technolytic Shield Generator I
+            BonusNum=RevAcryn_TechnolitDefGenerator1
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        101 ~{
+            Name=Technolytic Shield Generator II
+            BonusNum=RevAcryn_TechnolitDefGenerator2
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        102 ~{
+            Name=Technolytic Shield Generator III
+            BonusNum=RevAcryn_TechnolitDefGenerator3
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        103 ~{
+            Name=Evaluation Scanner I
+            BonusNum=ShuMM_EvaluationScaner1
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        104 ~{
+            Name=Evaluation Scanner II
+            BonusNum=ShuMM_EvaluationScaner2
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        105 ~{
+            Name=Evaluation Scanner III
+            BonusNum=ShuMM_EvaluationScaner3
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        106 ~{
+            Name=Armorite Droid I
+            BonusNum=ShuMM_ArmoriteDroid1
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        107 ~{
+            Name=Armorite Droid II
+            BonusNum=ShuMM_ArmoriteDroid2
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        108 ~{
+            Name=Armorite Droid III
+            BonusNum=ShuMM_ArmoriteDroid3
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        109 ~{
+            Name=Bipolar Radar I
+            BonusNum=ShuMM_BipolarRadar1
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        110 ~{
+            Name=Bipolar Radar II
+            BonusNum=ShuMM_BipolarRadar2
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        111 ~{
+            Name=Bipolar Radar III
+            BonusNum=ShuMM_BipolarRadar3
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        112 ~{
+            Name=Cybernetic Gripper I
+            BonusNum=ShuMM_CyberneticHook1
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        113 ~{
+            Name=Cybernetic Gripper II
+            BonusNum=ShuMM_CyberneticHook2
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        114 ~{
+            Name=Cybernetic Gripper III
+            BonusNum=ShuMM_CyberneticHook3
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        115 ~{
+            Name=ScanBot R1
+            BonusNum=ShuMM_ScanBot1
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        116 ~{
+            Name=ScanBot R2
+            BonusNum=ShuMM_ScanBot2
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        117 ~{
+            Name=ScanBot R3
+            BonusNum=ShuMM_ScanBot3
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        118 ~{
+            Name=Energenic Engine I
+            BonusNum=ShuMM_EnergenicEngine1
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        119 ~{
+            Name=Energenic Engine II
+            BonusNum=ShuMM_EnergenicEngine2
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        120 ~{
+            Name=Energenic Engine III
+            BonusNum=ShuMM_EnergenicEngine3
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        121 ~{
+            Name=Cell Radar I
+            BonusNum=ShuMM_CellRadar1
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        122 ~{
+            Name=Cell Radar II
+            BonusNum=ShuMM_CellRadar2
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        123 ~{
+            Name=Cell Radar III
+            BonusNum=ShuMM_CellRadar3
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        124 ~{
+            Name=Duplex Scanner I
+            BonusNum=ShuMM_DuplexScaner1
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        125 ~{
+            Name=Duplex Scanner II
+            BonusNum=ShuMM_DuplexScaner2
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        126 ~{
+            Name=Duplex Scanner III
+            BonusNum=ShuMM_DuplexScaner3
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        127 ~{
+            Name=Biogenetic Droid I
+            BonusNum=ShuMM_BiogeneticDroid1
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        128 ~{
+            Name=Biogenetic Droid II
+            BonusNum=ShuMM_BiogeneticDroid2
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        129 ~{
+            Name=Biogenetic Droid III
+            BonusNum=ShuMM_BiogeneticDroid3
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        130 ~{
+            Name=Electrogenic Gripper I
+            BonusNum=ShuMM_ElectrogenicHook1
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        131 ~{
+            Name=Electrogenic Gripper II
+            BonusNum=ShuMM_ElectrogenicHook2
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        132 ~{
+            Name=Electrogenic Gripper III
+            BonusNum=ShuMM_ElectrogenicHook3
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        133 ~{
+            Name=Phase Engine I
+            BonusNum=ShuMM_PhaseEngine1
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        134 ~{
+            Name=Phase Engine II
+            BonusNum=ShuMM_PhaseEngine2
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        135 ~{
+            Name=Phase Engine III
+            BonusNum=ShuMM_PhaseEngine3
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        136 ~{
+            Name=Pneumatic Droid I
+            BonusNum=ShuMM_PneumaticDroid1
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        137 ~{
+            Name=Pneumatic Droid II
+            BonusNum=ShuMM_PneumaticDroid2
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        138 ~{
+            Name=Pneumatic Droid III
+            BonusNum=ShuMM_PneumaticDroid3
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        139 ~{
+            Name=Stationic Shield Generator I
+            BonusNum=ShuMM_StationyDefGenerator1
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        140 ~{
+            Name=Stationic Shield Generator II
+            BonusNum=ShuMM_StationyDefGenerator2
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        141 ~{
+            Name=Stationic Shield Generator III
+            BonusNum=ShuMM_StationyDefGenerator3
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        142 ~{
+            Name=Microgenic Engine I
+            BonusNum=ShuMM_MicrogenicEngine1
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        143 ~{
+            Name=Microgenic Engine II
+            BonusNum=ShuMM_MicrogenicEngine2
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        144 ~{
+            Name=Microgenic Engine III
+            BonusNum=ShuMM_MicrogenicEngine3
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        145 ~{
+            Name=Miicrogenic Radar I
+            BonusNum=ShuMM_MicrogenicRadar1
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        146 ~{
+            Name=Microgenic Radar II
+            BonusNum=ShuMM_MicrogenicRadar2
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        147 ~{
+            Name=Microgenic Radar III
+            BonusNum=ShuMM_MicrogenicRadar3
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        148 ~{
+            Name=Microgenic Scanner I
+            BonusNum=ShuMM_MicrogenicScaner1
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        149 ~{
+            Name=Microgenic Scanner II
+            BonusNum=ShuMM_MicrogenicScaner2
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        150 ~{
+            Name=Microgenic Scanner III
+            BonusNum=ShuMM_MicrogenicScaner3
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        151 ~{
+            Name=Microgenic Droid I
+            BonusNum=ShuMM_MicrogenicDroid1
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        152 ~{
+            Name=Microgenic Droid II
+            BonusNum=ShuMM_MicrogenicDroid2
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        153 ~{
+            Name=Microgenic Droid III
+            BonusNum=ShuMM_MicrogenicDroid3
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        154 ~{
+            Name=Microgenic Gripper I
+            BonusNum=ShuMM_MicrogenicHook1
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        155 ~{
+            Name=Microgenic Gripper II
+            BonusNum=ShuMM_MicrogenicHook2
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        156 ~{
+            Name=Microgenic Gripper III
+            BonusNum=ShuMM_MicrogenicHook3
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        157 ~{
+            Name=Microgenic Shield Generator I
+            BonusNum=ShuMM_MicrogenicDefGenerator1
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        158 ~{
+            Name=Microgenic Shield Generator II
+            BonusNum=ShuMM_MicrogenicDefGenerator2
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        159 ~{
+            Name=Microgenic Shield Generator III
+            BonusNum=ShuMM_MicrogenicDefGenerator3
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=30
+            ChangePriorityOn=0
+        }
+        160 ~{
+            Name=Torsion Reactor (without acryn)
+            BonusNum=None
+            ItemType=Engine
+            Owner=Kling
+            SubRace=Any
+            MinSizeChance=30
+        }
+        161 ~{
+            Name=Stackbarrel (without acryn)
+            BonusNum=None
+            ItemType=FuelTank
+            Owner=Kling
+            SubRace=Any
+            MinSizeChance=30
+        }
+        162 ~{
+            Name=Sensotron (without acryn)
+            BonusNum=None
+            ItemType=Radar
+            Owner=Kling
+            SubRace=Any
+            MinSizeChance=30
+        }
+        163 ~{
+            Name=Tech Detector (without acryn)
+            BonusNum=None
+            ItemType=Scaner
+            Owner=Kling
+            SubRace=Any
+            MinSizeChance=30
+        }
+        164 ~{
+            Name=Dianode (without acryn)
+            BonusNum=None
+            ItemType=Droid
+            Owner=Kling
+            SubRace=Any
+            MinSizeChance=30
+        }
+        165 ~{
+            Name=Menthoprobe (without acryn)
+            BonusNum=None
+            ItemType=Hook
+            Owner=Kling
+            SubRace=Any
+            MinSizeChance=30
+        }
+        166 ~{
+            Name=Pixelyte (without acryn)
+            BonusNum=None
+            ItemType=DefGenerator
+            Owner=Kling
+            SubRace=Any
+            MinSizeChance=30
+        }
+        167 ~{
+            Name=Gillnozzle (without acryn)
+            BonusNum=None
+            ItemType=Engine
+            NoneRaceChance=100
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        168 ~{
+            Name=Protovesicule (without acryn)
+            BonusNum=None
+            ItemType=FuelTank
+            NoneRaceChance=100
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        169 ~{
+            Name=Radiosensors  (without acryn)
+            BonusNum=None
+            ItemType=Radar
+            NoneRaceChance=100
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        170 ~{
+            Name=Neuroprobe (without acryn)
+            BonusNum=None
+            ItemType=Scaner
+            NoneRaceChance=100
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        171 ~{
+            Name=Bioregenerator  (without acryn)
+            BonusNum=None
+            ItemType=Droid
+            NoneRaceChance=100
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        172 ~{
+            Name=Plasmathread (without acryn)
+            BonusNum=None
+            ItemType=Hook
+            NoneRaceChance=100
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        173 ~{
+            Name=Plasmashield (without acryn)
+            BonusNum=None
+            ItemType=DefGenerator
+            NoneRaceChance=100
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        Count=173
+    }
+    Weapon ~{
+        ReadMe=The Owner parameter (it is possible to list races separated by commas without spaces, where the Coalition value is interpreted as 5 main playable races) is desirable for filling only for custom guns (by default, all races will be selected without it, except for dominators and unknown), and for original guns Owner by default will be taken from the main game (3 only dominators, 3 only pirates, the rest for everyone). Any value in Owner is always interpreted as all races except unknown. The AverageSize parameter (meaning the average weight, where N/2 is the minimum weight, and N*2 is the maximum) is purely optional, and if it is absent, the weight will be taken from the main parameters of the gun. The Owner parameter for modifications is optional, by default it will be taken from the akrin section of this modification, and if it is not there, it will be inherited from Owner of the main gun. If a custom weapon is added to the list, then the Origin parameter must contain the exact name of the script of the mod in which this weapon is declared. The CustomFactionChance and CustomFaction parameters (it is possible to list different factions separated by commas without breaks) are optional and not required to be added. All other parameters (including Count counters) are strictly required for any gun.
+        ReadMeMore=Getting an unknown race for any weapon is possible only through the chance specified in the NoneRaceChance parameter, and getting the minimum weight is possible both through a random roll and through the chance specified in the MinSizeChance parameter. The DomRaceCostCoef and NoneRaceCostCoef modifiers (which can take fractional values) are used to increase the cost of items (right before they are added to the store) that have a dominator and an unknown race, respectively. The optional parameter SubRace denotes a series of dominators (applies only to dominator weapons/modifications) and has 3 values ??Blazer, Keller, Terron or Any (values ??can be added without spaces separated by commas).
+        ReadMeMoreAgain=Separate optional parameters Owner, CustomFactionChance and CustomFaction can be set for weapon mods. At the same time, at the time of creating a weapon in the script, the race values ??will be taken from the modification if a weapon with a modification is created and from the main section of the weapon if an unmodified gun is created. Thus, you will be able to create, for example, weapon modifications belonging to a particular race/races, both original and custom/custom, despite the fact that the main unmodified weapon will be available for production by everyone else.
+        OriginalWeaponsRaceSet ~{
+            t_Weapon1=191
+            t_Weapon2=191
+            t_Weapon3=191
+            t_Weapon4=191
+            t_Weapon5=191
+            t_Weapon6=191
+            t_Weapon7=191
+            t_Weapon8=191
+            t_Weapon9=191
+            t_Weapon10=191
+            t_Weapon11=191
+            t_Weapon12=191
+            t_Weapon13=32
+            t_Weapon14=32
+            t_Weapon15=32
+            t_Weapon16=128
+            t_Weapon17=128
+            t_Weapon18=128
+        }
+        DomRaceCostCoef=2.0
+        NoneRaceCostCoef=3.0
+        1 ~{
+            Name=Industrial Laser
+            Origin=Original
+            WeaponType=t_Weapon1
+            GalaxyTechLevel=1
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name=Diphrode
+                    BonusNum=500
+                    ChangePriorityOn=0
+                }
+                5 ~{
+                    Name=Liphocarus
+                    BonusNum=501
+                    ChangePriorityOn=0
+                }
+                6 ~{
+                    Name=Adropter
+                    BonusNum=502
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=6
+            }
+        }
+        2 ~{
+            Name=Fragmentation Weapon
+            Origin=Original
+            WeaponType=t_Weapon2
+            GalaxyTechLevel=1
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotSplinter
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronSplinter
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumSplinter
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name=Stylermain
+                    BonusNum=503
+                    ChangePriorityOn=0
+                }
+                5 ~{
+                    Name=Javitor
+                    BonusNum=504
+                    ChangePriorityOn=0
+                }
+                6 ~{
+                    Name=Inveiter
+                    BonusNum=505
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=6
+            }
+        }
+        3 ~{
+            Name=Flux
+            Origin=Original
+            WeaponType=t_Weapon3
+            GalaxyTechLevel=2
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name=Diphrode
+                    BonusNum=506
+                    ChangePriorityOn=0
+                }
+                5 ~{
+                    Name=Liphocarus
+                    BonusNum=507
+                    ChangePriorityOn=0
+                }
+                6 ~{
+                    Name=Javitor
+                    BonusNum=508
+                    ChangePriorityOn=0
+                }
+                7 ~{
+                    Name=Armoloc
+                    BonusNum=509
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=7
+            }
+        }
+        4 ~{
+            Name=Missile Launcher
+            Origin=Original
+            WeaponType=t_Weapon4
+            GalaxyTechLevel=4
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Diphrode
+                    BonusNum=510
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Liphocarus
+                    BonusNum=511
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Adropter
+                    BonusNum=512
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name=Inveiter
+                    BonusNum=513
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=4
+            }
+        }
+        5 ~{
+            Name=Missile Launcher with Torpedo modification
+            Origin=Mod_ShuMM
+            WeaponType=MissileLauncherTorpedo
+            GalaxyTechLevel=4
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=0
+            Modifications ~{
+                1 ~{
+                    Name=Torpedo
+                    BonusNum=ShuMM_Torpedo
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=1
+            }
+        }
+        6 ~{
+            Name=Treton
+            Origin=Original
+            WeaponType=t_Weapon5
+            GalaxyTechLevel=4
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name=Armoloc
+                    BonusNum=514
+                    ChangePriorityOn=0
+                }
+                5 ~{
+                    Name=Adropter
+                    BonusNum=515
+                    ChangePriorityOn=0
+                }
+                6 ~{
+                    Name=Stylermain
+                    BonusNum=516
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=6
+            }
+        }
+        7 ~{
+            Name=Wave Phaser
+            Origin=Original
+            WeaponType=t_Weapon6
+            GalaxyTechLevel=4
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name=Armoloc
+                    BonusNum=517
+                    ChangePriorityOn=0
+                }
+                5 ~{
+                    Name=Javitor
+                    BonusNum=518
+                    ChangePriorityOn=0
+                }
+                6 ~{
+                    Name=Stylermain
+                    BonusNum=519
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=6
+            }
+        }
+        8 ~{
+            Name=Flow Blaster
+            Origin=Original
+            WeaponType=t_Weapon7
+            GalaxyTechLevel=5
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotSplinter
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronSplinter
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumSplinter
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name=Diphrode
+                    BonusNum=520
+                    ChangePriorityOn=0
+                }
+                5 ~{
+                    Name=Armoloc
+                    BonusNum=521
+                    ChangePriorityOn=0
+                }
+                6 ~{
+                    Name=Javitor
+                    BonusNum=522
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=6
+            }
+        }
+        9 ~{
+            Name=Electronic Cutter
+            Origin=Original
+            WeaponType=t_Weapon8
+            GalaxyTechLevel=5
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name=Armoloc
+                    BonusNum=523
+                    ChangePriorityOn=0
+                }
+                5 ~{
+                    Name=Javitor
+                    BonusNum=524
+                    ChangePriorityOn=0
+                }
+                6 ~{
+                    Name=Inveiter
+                    BonusNum=525
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=6
+            }
+        }
+        10 ~{
+            Name=Multiresonator
+            Origin=Original
+            WeaponType=t_Weapon9
+            GalaxyTechLevel=6
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotSplinter
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronSplinter
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumSplinter
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name=Liphocarus
+                    BonusNum=526
+                    ChangePriorityOn=0
+                }
+                5 ~{
+                    Name=Armoloc
+                    BonusNum=527
+                    ChangePriorityOn=0
+                }
+                6 ~{
+                    Name=Javitor
+                    BonusNum=528
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=6
+            }
+        }
+        11 ~{
+            Name=Atomic Vision
+            Origin=Original
+            WeaponType=t_Weapon10
+            GalaxyTechLevel=7
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name=Liphocarus
+                    BonusNum=529
+                    ChangePriorityOn=0
+                }
+                5 ~{
+                    Name=Javitor
+                    BonusNum=530
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=5
+            }
+        }
+        12 ~{
+            Name=Disintegrator
+            Origin=Original
+            WeaponType=t_Weapon11
+            GalaxyTechLevel=7
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name=Diphrode
+                    BonusNum=531
+                    ChangePriorityOn=0
+                }
+                5 ~{
+                    Name=Armoloc
+                    BonusNum=532
+                    ChangePriorityOn=0
+                }
+                6 ~{
+                    Name=Adropter
+                    BonusNum=533
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=6
+            }
+        }
+        13 ~{
+            Name=Turbogravitron
+            Origin=Original
+            WeaponType=t_Weapon12
+            GalaxyTechLevel=8
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name=Diphrode
+                    BonusNum=534
+                    ChangePriorityOn=0
+                }
+                5 ~{
+                    Name=Liphocarus
+                    BonusNum=535
+                    ChangePriorityOn=0
+                }
+                6 ~{
+                    Name=Inveiter
+                    BonusNum=536
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=6
+            }
+        }
+        14 ~{
+            Name=Esodapher
+            Origin=Original
+            WeaponType=t_Weapon16
+            GalaxyTechLevel=4
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotSplinter
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronSplinter
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Liphocarus
+                    BonusNum=537
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name=Javitor
+                    BonusNum=538
+                    ChangePriorityOn=0
+                }
+                5 ~{
+                    Name=Inveiter
+                    BonusNum=539
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=5
+            }
+        }
+        15 ~{
+            Name=Caphasitor
+            Origin=Original
+            WeaponType=t_Weapon17
+            GalaxyTechLevel=4
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name=Liphocarus
+                    BonusNum=540
+                    ChangePriorityOn=0
+                }
+                5 ~{
+                    Name=Javitor
+                    BonusNum=541
+                    ChangePriorityOn=0
+                }
+                6 ~{
+                    Name=Stylermain
+                    BonusNum=542
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=6
+            }
+        }
+        16 ~{
+            Name=Lirecron
+            Origin=Original
+            WeaponType=t_Weapon18
+            GalaxyTechLevel=4
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Liphocarus
+                    BonusNum=543
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Adropter
+                    BonusNum=544
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Inveiter
+                    BonusNum=545
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=4
+            }
+        }
+        17 ~{
+            Name=PlasmaGun
+            Origin=Mod_ExpPlasmaGun
+            WeaponType=PlasmaGun
+            GalaxyTechLevel=5
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Diphrode
+                    BonusNum=ExpPlasmaGun_Diphrode
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Liphocarus
+                    BonusNum=ExpPlasmaGun_Liphocarus
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Javitor
+                    BonusNum=ExpPlasmaGun_Javitor
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name=Armoloc
+                    BonusNum=ExpPlasmaGun_Armoloc
+                    ChangePriorityOn=0
+                }
+                5 ~{
+                    Name=Involute
+                    BonusNum=ExpPlasmaGun_Involute
+                    ChangePriorityOn=0
+                }
+                6 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=6
+            }
+        }
+        18 ~{
+            Name=MaBoKiT-79
+            Origin=Mod_EvoMabokit
+            WeaponType=Mabokit
+            GalaxyTechLevel=1
+            NoneRaceChance=5
+            MinSizeChance=30
+        }
+        19 ~{
+            Name=Field annihilator
+            Origin=Mod_ShuEmitter
+            WeaponType=gaal_vision
+            GalaxyTechLevel=8
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=3
+            }
+        }
+        20 ~{
+            Name=Zip Gun
+            Origin=Mod_ShuEmitter
+            WeaponType=frag_gun
+            GalaxyTechLevel=4
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotSplinter
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronSplinter
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumSplinter
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=3
+            }
+        }
+        21 ~{
+            Name=Graviton Beam
+            Origin=Mod_ShuEmitter
+            WeaponType=grav_beam
+            GalaxyTechLevel=4
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=3
+            }
+        }
+        22 ~{
+            Name=Combat Laser TB-47
+            Origin=Mod_ShuEmitter
+            WeaponType=maloc_laser
+            GalaxyTechLevel=3
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=3
+            }
+        }
+        23 ~{
+            Name=Combat Laser TB-42
+            Origin=Mod_ShuEmitter
+            WeaponType=maloc_laser2
+            GalaxyTechLevel=3
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=3
+            }
+        }
+        24 ~{
+            Name=Photon Gun M4
+            Origin=Mod_ShuEmitter
+            WeaponType=photon_gun
+            GalaxyTechLevel=1
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=3
+            }
+        }
+        25 ~{
+            Name=Photon Gun M3
+            Origin=Mod_ShuEmitter
+            WeaponType=photon_gun2
+            GalaxyTechLevel=1
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=3
+            }
+        }
+        26 ~{
+            Name=Photon Gun M2
+            Origin=Mod_ShuEmitter
+            WeaponType=photon_gun3
+            GalaxyTechLevel=1
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=3
+            }
+        }
+        27 ~{
+            Name=Pulse Gun R21
+            Origin=Mod_ShuEmitter
+            WeaponType=pulse_gun
+            GalaxyTechLevel=7
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=3
+            }
+        }
+        28 ~{
+            Name=Pulse Gun R20
+            Origin=Mod_ShuEmitter
+            WeaponType=pulse_gun2
+            GalaxyTechLevel=7
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=3
+            }
+        }
+        29 ~{
+            Name=Retractor
+            Origin=Mod_ShuEmitter
+            WeaponType=slow_gun
+            GalaxyTechLevel=5
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=3
+            }
+        }
+        30 ~{
+            Name=Vortex Projector
+            Origin=Mod_ShuEmitter
+            WeaponType=sphere_gun
+            GalaxyTechLevel=8
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=2
+            }
+        }
+        31 ~{
+            Name=Splash Phaser
+            Origin=Mod_ShuEmitter
+            WeaponType=splash_faser
+            GalaxyTechLevel=3
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Dyshot
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronEnergy
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumEnergy
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=3
+            }
+        }
+        32 ~{
+            Name=Blaster Р•-11
+            Origin=Mod_ShuEmitter
+            WeaponType=laser_gun
+            GalaxyTechLevel=6
+            NoneRaceChance=5
+            MinSizeChance=30
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name=Triplshot
+                    BonusNum=ExpTC_TryshotLaserGun
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name=Magnetron
+                    BonusNum=ExpTC_MagnetronSplinter
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name=Extremum
+                    BonusNum=ShuMM_ExtremumSplinter
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=No more than 15 modifications!
+                Count=3
+            }
+        }
+        33 ~{
+            Name=Magnetical Separator
+            Origin=ShuDomiksPlus
+            WeaponType=Dom_burst
+            GalaxyTechLevel=1
+            Owner=Kling
+            SubRace=Any
+            NoneRaceChance=5
+            MinSizeChance=30
+        }
+        34 ~{
+            Name=Dual Turbolaser
+            Origin=ShuDomiksPlus
+            WeaponType=Dom_dual_laser
+            GalaxyTechLevel=3
+            Owner=Kling
+            SubRace=Any
+            NoneRaceChance=5
+            MinSizeChance=30
+        }
+        35 ~{
+            Name=Pulse Blaster
+            Origin=ShuDomiksPlus
+            WeaponType=Dom_laser
+            GalaxyTechLevel=2
+            Owner=Kling
+            SubRace=Any
+            NoneRaceChance=5
+            MinSizeChance=30
+        }
+        36 ~{
+            Name=Energetic Discharger
+            Origin=ShuDomiksPlus
+            WeaponType=Dom_light
+            GalaxyTechLevel=8
+            Owner=Kling
+            SubRace=Any
+            NoneRaceChance=5
+            MinSizeChance=30
+        }
+        37 ~{
+            Name=Revolver Torpedo Tube
+            Origin=ShuDomiksPlus
+            WeaponType=Dom_rocket
+            GalaxyTechLevel=1
+            Owner=Kling
+            SubRace=Any
+            NoneRaceChance=5
+            MinSizeChance=30
+        }
+        38 ~{
+            Name=Splitter
+            Origin=Mod_ShuKlissan
+            WeaponType=klissan_splitter
+            GalaxyTechLevel=3
+            Owner=None
+            NoneRaceChance=100
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        39 ~{
+            Name=Indemite
+            Origin=Mod_ShuKlissan
+            WeaponType=klissan_emitter
+            GalaxyTechLevel=8
+            Owner=None
+            NoneRaceChance=100
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        40 ~{
+            Name=Nargun Blade
+            Origin=Mod_ShuKlissan
+            WeaponType=klissan_nargun
+            GalaxyTechLevel=8
+            Owner=None
+            NoneRaceChance=100
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        41 ~{
+            Name=Iconoclast
+            Origin=Mod_ShuKlissan
+            WeaponType=klissan_cluster
+            GalaxyTechLevel=8
+            Owner=None
+            NoneRaceChance=100
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        42 ~{
+            Name=Antimatter Multiplier
+            Origin=Mod_ShuKlissan
+            WeaponType=klissan_antimatter
+            GalaxyTechLevel=8
+            Owner=None
+            NoneRaceChance=5
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        43 ~{
+            Name=Nihilest
+            Origin=Mod_ShuKlissan
+            WeaponType=klissan_nihiler
+            GalaxyTechLevel=6
+            Owner=None
+            NoneRaceChance=100
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        44 ~{
+            Name=Quinkgan
+            Origin=Mod_ShuKlissan
+            WeaponType=klissan_moldikvink
+            GalaxyTechLevel=8
+            Owner=None
+            NoneRaceChance=100
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        45 ~{
+            Name=Dimorphic stunner
+            Origin=Mod_ShuKlissan
+            WeaponType=klissan_stunner
+            GalaxyTechLevel=6
+            Owner=None
+            NoneRaceChance=5
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        46 ~{
+            Name=Augerbar
+            Origin=Mod_ShuKlissan
+            WeaponType=klissan_burster
+            GalaxyTechLevel=5
+            Owner=None
+            NoneRaceChance=100
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        47 ~{
+            Name=Bolt matrix
+            Origin=Mod_ShuKlissan
+            WeaponType=klissan_protomissile
+            GalaxyTechLevel=7
+            Owner=None
+            NoneRaceChance=100
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        48 ~{
+            Name=Ionic deformer
+            Origin=Mod_ShuKlissan
+            WeaponType=klissan_laser
+            GalaxyTechLevel=3
+            Owner=None
+            NoneRaceChance=100
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        49 ~{
+            Name=Gravity Collector
+            Origin=Mod_ShuKlissan
+            WeaponType=klissan_capacer
+            GalaxyTechLevel=3
+            Owner=None
+            NoneRaceChance=100
+            MinSizeChance=30
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
+        }
+        Count=49
+    }
+    Artefacts ~{
+        ReadMe=The SpawnRateChance setting determines how often an artifact will spawn in the shop. The NoneRaceChance parameter is responsible for the chance of getting an artifact of an unknown race. The Onwer parameter (it is possible to list races separated by commas without spaces, where the Coalition value is interpreted as 5 main playable races) is optional and will be applied if the artifact does not receive an unknown race. By default, the Owner parameter is equal to all coalition races, otherwise it works the same as in the lists above. The Size parameter is required (if you are sure that the mod with this artifact has Size in the art section, then you can not write it here), but it only works for custom artifacts that are not user items. The weight of custom non-Uzles artifacts will be determined by an internal formula based on the value of the Size parameter. The situation is similar with the Cost parameter for custom artifacts. If it is in the main section of the artifact, then it is not necessary to specify it. The Cost parameter directly affects the calculation of the final cost of an artifact, while keeping in mind that an artifact with Cost=1000 is considered a cheap artifact, and an artifact with Cost=2500 is considered expensive. It is not recommended to set the Cost value much lower or much higher than the specified values. All other artifacts and items do not need to specify these parameters (they will not be taken into account by the code).
+        ReadMeMore=The CustomFactionChance and CustomFaction parameters are optional and can be set for any artifact you wish. The ArtAdditionalCostCoef parameter specifies a modifier by which the cost of the artifact will be multiplied after it is created (it can take fractional values, the fractional part should be separated by a dot). The optional parameter SubRace denotes a series of dominators (applies only to dominator artifacts) and has 3 values Blazer, Keller, Terron or Any (it is allowed to add values without spaces separated by commas).         ArtAdditionalCostCoef=6.0
+        1 ~{
+            Name=Iron Zoopie
+            TypeStr=t_ArtefactHull
+            ItemType=OriginalArt
+            SpawnRateChance=50
+            GalaxyTechLevel=4
+            NoneRaceChance=100
+        }
+        2 ~{
+            Name=Black Goo
+            TypeStr=t_ArtefactFuel
+            ItemType=OriginalArt
+            SpawnRateChance=40
+            GalaxyTechLevel=4
+            NoneRaceChance=100
+        }
+        3 ~{
+            Name=Matter Psi-Accelerator
+            TypeStr=t_ArtefactSpeed
+            ItemType=OriginalArt
+            SpawnRateChance=35
+            GalaxyTechLevel=5
+            NoneRaceChance=100
+        }
+        4 ~{
+            Name=Frostix
+            TypeStr=t_ArtefactPower
+            ItemType=OriginalArt
+            SpawnRateChance=65
+            GalaxyTechLevel=4
+            NoneRaceChance=100
+        }
+        5 ~{
+            Name=Prolonger
+            TypeStr=t_ArtefactRadar
+            ItemType=OriginalArt
+            SpawnRateChance=70
+            GalaxyTechLevel=4
+            NoneRaceChance=100
+        }
+        6 ~{
+            Name=Scanner Cache
+            TypeStr=t_ArtefactScaner
+            ItemType=OriginalArt
+            SpawnRateChance=60
+            GalaxyTechLevel=5
+            NoneRaceChance=100
+        }
+        7 ~{
+            Name=Junior Droid
+            TypeStr=t_ArtefactDroid
+            ItemType=OriginalArt
+            SpawnRateChance=25
+            GalaxyTechLevel=6
+            NoneRaceChance=100
+        }
+        8 ~{
+            Name=Nanitoids
+            TypeStr=t_ArtefactNano
+            ItemType=OriginalArt
+            SpawnRateChance=15
+            GalaxyTechLevel=6
+            NoneRaceChance=100
+        }
+        9 ~{
+            Name=Erimeter
+            TypeStr=t_ArtefactHook
+            ItemType=OriginalArt
+            SpawnRateChance=85
+            GalaxyTechLevel=4
+            NoneRaceChance=100
+        }
+        10 ~{
+            Name=Polarizer
+            TypeStr=t_ArtefactDef
+            ItemType=OriginalArt
+            SpawnRateChance=40
+            GalaxyTechLevel=4
+            NoneRaceChance=100
+        }
+        11 ~{
+            Name=Probability Analyzer
+            TypeStr=t_ArtefactAnalyzer
+            ItemType=OriginalArt
+            SpawnRateChance=65
+            GalaxyTechLevel=5
+            NoneRaceChance=100
+        }
+        12 ~{
+            Name=Blast Wave Localizer
+            TypeStr=t_ArtefactMiniExpl
+            ItemType=OriginalArt
+            SpawnRateChance=50
+            GalaxyTechLevel=4
+            NoneRaceChance=100
+        }
+        13 ~{
+            Name=Antigravitazer
+            TypeStr=t_ArtefactAntigrav
+            ItemType=OriginalArt
+            SpawnRateChance=25
+            GalaxyTechLevel=5
+            NoneRaceChance=100
+        }
+        14 ~{
+            Name=Transfactorial Beacon
+            TypeStr=t_ArtefactTransmitter
+            ItemType=OriginalArt
+            SpawnRateChance=10
+            GalaxyTechLevel=7
+            NoneRaceChance=100
+        }
+        15 ~{
+            Name=Quark bomb
+            TypeStr=t_ArtefactBomb
+            ItemType=OriginalArt
+            SpawnRateChance=20
+            GalaxyTechLevel=5
+            NoneRaceChance=50
+            Owner=PirateClan
+        }
+        16 ~{
+            Name=Tranclucator
+            TypeStr=t_ArtefactTranclucator
+            ItemType=OriginalArt
+            SpawnRateChance=7
+            GalaxyTechLevel=7
+            NoneRaceChance=100
+        }
+        17 ~{
+            Name=Proportionar
+            TypeStr=t_ArtDefToEnergy
+            ItemType=OriginalArt
+            SpawnRateChance=50
+            GalaxyTechLevel=4
+            NoneRaceChance=100
+        }
+        18 ~{
+            Name=Fiver
+            TypeStr=t_ArtEnergyPulse
+            ItemType=OriginalArt
+            SpawnRateChance=65
+            GalaxyTechLevel=4
+            NoneRaceChance=100
+        }
+        19 ~{
+            Name=Swallower
+            TypeStr=t_ArtEnergyDef
+            ItemType=OriginalArt
+            SpawnRateChance=60
+            GalaxyTechLevel=6
+            NoneRaceChance=100
+        }
+        20 ~{
+            Name=Screw-on
+            TypeStr=t_ArtSplinter
+            ItemType=OriginalArt
+            SpawnRateChance=55
+            GalaxyTechLevel=4
+            NoneRaceChance=100
+        }
+        21 ~{
+            Name=Zing
+            TypeStr=t_ArtDecelerate
+            ItemType=OriginalArt
+            SpawnRateChance=75
+            GalaxyTechLevel=4
+            NoneRaceChance=100
+        }
+        22 ~{
+            Name=Rocketang
+            TypeStr=t_ArtMissileDef
+            ItemType=OriginalArt
+            SpawnRateChance=35
+            GalaxyTechLevel=5
+            NoneRaceChance=100
+        }
+        23 ~{
+            Name=Oblivion Connector
+            TypeStr=t_ArtForsage
+            ItemType=OriginalArt
+            SpawnRateChance=40
+            GalaxyTechLevel=5
+            NoneRaceChance=100
+        }
+        24 ~{
+            Name=Nozzlenator
+            TypeStr=t_ArtWeaponToSpeed
+            ItemType=OriginalArt
+            SpawnRateChance=50
+            GalaxyTechLevel=5
+            NoneRaceChance=100
+        }
+        25 ~{
+            Name=Hypergenerator
+            TypeStr=t_ArtGiperJump
+            ItemType=OriginalArt
+            SpawnRateChance=50
+            GalaxyTechLevel=4
+            NoneRaceChance=100
+        }
+        26 ~{
+            Name=Subportal
+            TypeStr=t_ArtBlackHole
+            ItemType=OriginalArt
+            SpawnRateChance=30
+            GalaxyTechLevel=6
+            NoneRaceChance=100
+        }
+        27 ~{
+            Name=Proton
+            TypeStr=t_ArtDefToArms1
+            ItemType=OriginalArt
+            SpawnRateChance=80
+            GalaxyTechLevel=4
+            NoneRaceChance=100
+        }
+        28 ~{
+            Name=ARMS
+            TypeStr=t_ArtDefToArms2
+            ItemType=OriginalArt
+            SpawnRateChance=50
+            GalaxyTechLevel=4
+            NoneRaceChance=100
+        }
+        29 ~{
+            Name=Artifactor
+            TypeStr=t_ArtArtefactor
+            ItemType=OriginalArt
+            SpawnRateChance=25
+            GalaxyTechLevel=4
+            NoneRaceChance=100
+        }
+        30 ~{
+            Name=Bioworld
+            TypeStr=t_ArtBio
+            ItemType=OriginalArt
+            SpawnRateChance=65
+            GalaxyTechLevel=4
+            NoneRaceChance=100
+        }
+        31 ~{
+            Name=a'Egis
+            TypeStr=t_ArtPDTurret
+            ItemType=OriginalArt
+            SpawnRateChance=30
+            GalaxyTechLevel=6
+            NoneRaceChance=100
+        }
+        32 ~{
+            Name=Rals
+            TypeStr=t_ArtFastRacks
+            ItemType=OriginalArt
+            SpawnRateChance=30
+            GalaxyTechLevel=5
+            NoneRaceChance=100
+        }
+        33 ~{
+            Name=Techdisruptor
+            TypeStr=RNDart_01
+            ItemType=CustomArt
+            SpawnRateChance=35
+            GalaxyTechLevel=5
+            NoneRaceChance=100
+        }
+        34 ~{
+            Name=Reflector
+            TypeStr=RNDart_02
+            ItemType=CustomArt
+            SpawnRateChance=40
+            GalaxyTechLevel=4
+            NoneRaceChance=100
+        }
+        35 ~{
+            Name=Hasker_PROx64
+            TypeStr=RNDart_03
+            ItemType=CustomArt
+            SpawnRateChance=60
+            GalaxyTechLevel=4
+            NoneRaceChance=100
+        }
+        36 ~{
+            Name=Booster
+            TypeStr=RNDart_04
+            ItemType=CustomArt
+            SpawnRateChance=15
+            GalaxyTechLevel=6
+            NoneRaceChance=100
+        }
+        37 ~{
+            Name=Null-generator
+            TypeStr=Null-generator
+            ItemType=CustomArt
+            ReplaceOnSelling=UselessItems.RNDmoditem_2
+            SpawnRateChance=35
+            GalaxyTechLevel=5
+            NoneRaceChance=100
+        }
+        38 ~{
+            Name=Stun bomb
+            TypeStr=Stun_bomb
+            ItemType=CustomArt
+            ReplaceOnSelling=UselessItems.RNDbomb_2
+            SpawnRateChance=30
+            GalaxyTechLevel=5
+            NoneRaceChance=0
+            Owner=PirateClan
+        }
+        39 ~{
+            Name=EMF bomb
+            TypeStr=EMP_bomb
+            ItemType=CustomArt
+            ReplaceOnSelling=UselessItems.RNDbomb_3
+            SpawnRateChance=30
+            GalaxyTechLevel=5
+            NoneRaceChance=0
+            Owner=PirateClan
+        }
+        40 ~{
+            Name=Tech Director
+            TypeStr=TechDirector
+            ItemType=CustomArt
+            SpawnRateChance=25
+            GalaxyTechLevel=5
+            NoneRaceChance=0
+            Owner=Kling
+        }
+        Count=39
+    }
+    ModificationItems ~{
+        ReadMe=The SpawnRateChance setting determines how often spawns will appear in the store. The NoneRaceChance parameter is responsible for the chance that the set will receive an unknown race. The Onwer parameter (it is possible to list races separated by commas without spaces, where the Coalition value is interpreted as 5 main playable races) is optional and will be applied if the set does not receive an unknown race. By default, the Owner parameter will be taken from the main section of the given user, but otherwise works exactly the same as in the lists above.
+        ReadMeMore=The CustomFactionChance and CustomFaction parameters are optional and can be set for any set you wish. The optional parameter SubRace denotes a series of dominators (applies only to dominator sets) and has 3 values Blazer, Keller, Terron or Any (it is allowed to add values without spaces separated by commas). The TextReplacePath parameter is optional and can be used to replace the description of this set (when putting it up for sale in the black market) with another text located along the path specified in this parameter. Example: TextReplacePath=UselessItems.RNDmoditem_15.TextBlackMarket
+        1 ~{
+            Name=Decelerator
+            TypeStr=RNDmoditem_1
+            ItemType=UselessItem
+            SpawnRateChance=40
+            GalaxyTechLevel=1
+            NoneRaceChance=0
+            Owner=PirateClan
+            CustomFactionChance=0
+            CustomFaction=Klissan
+        }
+        2 ~{
+            Name=Acidius
+            TypeStr=RNDmoditem_3
+            ItemType=UselessItem
+            SpawnRateChance=45
+            GalaxyTechLevel=1
+            NoneRaceChance=0
+            Owner=PirateClan
+        }
+        3 ~{
+            Name=Till capacitors
+            TypeStr=RNDmoditem_4
+            ItemType=UselessItem
+            SpawnRateChance=50
+            GalaxyTechLevel=1
+            NoneRaceChance=0
+            Owner=PirateClan
+        }
+        4 ~{
+            Name=Weakened limiters
+            TypeStr=RNDmoditem_5
+            ItemType=UselessItem
+            SpawnRateChance=50
+            GalaxyTechLevel=1
+            NoneRaceChance=0
+            Owner=PirateClan
+        }
+        5 ~{
+            Name=Additional stowage
+            TypeStr=RNDmoditem_6
+            ItemType=UselessItem
+            SpawnRateChance=50
+            GalaxyTechLevel=1
+            NoneRaceChance=0
+            Owner=PirateClan
+        }
+        6 ~{
+            Name=Hacked injector
+            TypeStr=RNDmoditem_12
+            ItemType=UselessItem
+            SpawnRateChance=30
+            GalaxyTechLevel=1
+            NoneRaceChance=0
+            Owner=PirateClan
+        }
+        7 ~{
+            Name=Security systems replacement
+            TypeStr=RNDmoditem_11
+            ItemType=UselessItem
+            SpawnRateChance=35
+            GalaxyTechLevel=1
+            NoneRaceChance=0
+            Owner=PirateClan
+        }
+        8 ~{
+            Name=Meon Chips
+            TypeStr=RNDmoditem_8
+            ItemType=UselessItem
+            SpawnRateChance=50
+            GalaxyTechLevel=1
+            NoneRaceChance=0
+            Owner=PirateClan
+        }
+        9 ~{
+            Name=Circuit amplifier
+            TypeStr=RNDmoditem_9
+            ItemType=UselessItem
+            SpawnRateChance=65
+            GalaxyTechLevel=1
+            NoneRaceChance=0
+            Owner=PirateClan
+        }
+        10 ~{
+            Name=Processors "Extreme"
+            TypeStr=RNDmoditem_10
+            ItemType=UselessItem
+            SpawnRateChance=45
+            GalaxyTechLevel=1
+            NoneRaceChance=0
+            Owner=PirateClan
+        }
+        11 ~{
+            Name=Reinforced servo drives
+            TypeStr=RNDmoditem_13
+            ItemType=UselessItem
+            SpawnRateChance=65
+            GalaxyTechLevel=1
+            NoneRaceChance=0
+            Owner=PirateClan
+        }
+        12 ~{
+            Name=Field density amplifier
+            TypeStr=RNDmoditem_7
+            ItemType=UselessItem
+            SpawnRateChance=35
+            GalaxyTechLevel=1
+            NoneRaceChance=0
+            Owner=PirateClan
+        }
+        13 ~{
+            Name=Fragilium parts
+            TypeStr=RNDmoditem_14
+            ItemType=UselessItem
+            SpawnRateChance=25
+            GalaxyTechLevel=1
+            NoneRaceChance=0
+            Owner=PirateClan
+        }
+        14 ~{
+            Name=Smuggler's compartment
+            TypeStr=RNDmoditem_15
+            ItemType=UselessItem
+            SpawnRateChance=5
+            GalaxyTechLevel=1
+            NoneRaceChance=0
+            Owner=PirateClan
+            TextReplacePath=UselessItems.RNDmoditem_15.TextBlackMarket
+        }
+        15 ~{
+            Name=Bomb detonator with timer
+            TypeStr=RNDtimer
+            ItemType=UselessItem
+            SpawnRateChance=30
+            GalaxyTechLevel=1
+            NoneRaceChance=0
+            Owner=PirateClan
+        }
+        Count=15
+    }
+}
+ActCodeBlocksList ^{
+    SmugglersCompartmentQuestActCode ^{
+        01=if(ScriptItemActionType(t_OnItemHit))
+        02 ^{
+            01=dword cur_item = CurItem();
+            02=dword ship = ScriptItemActShip();
+            03=if(ScriptItemActionType(t_OnItemHit))
+            04 ^{
+                01=dword gun = ScriptItemActObject1();
+                02=if(ship != Player())
+                03 ^{
+                    01=if(ObjectType(gun) != 7)
+                    02 ^{
+                        01=WeaponTarget(gun, 0);
+                        02=ItemDestroy(cur_item, 0);
+                    }
+                    03=else
+                    04 ^{
+                        01=if(MissileTarget(gun) != cur_item)
+                        02 ^{
+                            01=MissileTarget(gun, 0);
+                            02=ItemDestroy(cur_item, -1);
+                        }
+                    }
+                }
+            }
+        }
+        03=else if(ScriptItemActionType(t_OnItemPickUp))
+        04 ^{
+            01=if(ship == Player())
+            02 ^{
+                01=ItemOnActCode(cur_item, '');
+            }
+        }
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            BlackMarketJumpControlInfo ^{
+                Description=Hidden information that helps to display notifications in a timely manner when the black market leaves the hyper.
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=if(ScriptItemActionType(t_OnStep))
+                    02 ^{
+                        01=dword cur_info=CurInfo();
+                        02=dword cur_ship=ScriptItemActShip();
+                        03=if(!ShipCustomShipInfoData(0,cur_info,1))
+                        04 ^{
+                            01=if(ShipInHyperSpace(cur_ship))
+                            02 ^{
+                                01=str msg_type=ShipCustomShipInfoTextData(0,cur_info,1);
+                                02=if(msg_type!='')
+                                03 ^{
+                                    01=if(msg_type=='BMClosedByTimeOut')CustomEther('NewsSpecial',0,'BMClosedByTimeOut',Format(CT('Script.Mod_ExpBlackMarket_2.BMClosedByTimeOut'),'<0>',ShipCustomShipInfoTextData(0,cur_info,2)));
+                                    02=else if(msg_type=='BMClosedByStarBattle')CustomEther('NewsSpecial',0,'BMClosedByStarBattle',Format(CT('Script.Mod_ExpBlackMarket_2.BMClosedByStarBattle'),'<0>',ShipCustomShipInfoTextData(0,cur_info,2)));
+                                    03=ShipCustomShipInfoTextData(0,cur_info,1,'');
+                                }
+                                04=TransferShip(cur_ship,StarPlanets(GalaxyStar(2),0));
+                                05=ShipCustomShipInfoData(0,cur_info,1,1);
+                            }
+                        }
+                        05=else
+                        06 ^{
+                            01=if(!GetShipPlanet(cur_ship))
+                            02 ^{
+                                01=msg_type=ShipCustomShipInfoTextData(0,cur_info,1);
+                                02=if(msg_type!='')
+                                03 ^{
+                                    01=if(msg_type=='BMOpened')CustomEther('NewsSpecial',7,'BMOpened',Format(CT('Script.Mod_ExpBlackMarket_2.BMOpened'),'<0>',ShipCustomShipInfoTextData(0,cur_info,2),'<1>',ShipName(cur_ship),'<2>',ShipCustomShipInfoTextData(0,cur_info,3)));
+                                    02=ShipCustomShipInfoTextData(0,cur_info,1,'');
+                                }
+                                04=ShipCustomShipInfoData(0,cur_info,1,0);
+                            }
+                        }
+                    }
+                    03=else
+                    04 ^{
+                        01=EtherDelete('BMOpened');
+                    }
+                }
+                OnActCodeTypes=t_OnStep,t_OnDeath
+                OnActStepTypes=11
+            }
+            BlackMarket_EquipmentShopBuysInfo ^{
+                Description=Hidden info box, adjusts prices and other parameters of equipment/artifacts after their purchase in the black market.
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=if(ScriptItemActionType(t_OnStep,0))
+                    02 ^{
+                        01=if(ShipOrder(Player())==5)
+                        02 ^{
+                            01=ShipDeleteCustomShipInfo(Player(),'BlackMarket_EquipmentShopBuysInfo');
+                            02=InterfaceState('RuinsTalk','PM_EndTurn',-1);
+                            03=InterfaceState('RuinsTalk','RT_EndTurn_Block',-1);
+                            04=InterfaceState('RuinsTalk','PanelTalk',-1);
+                            05=InterfaceState('RuinsTalk','PR_Gov',-1);
+                            06=InterfaceState('RuinsTalk','PR_BMGovBlock',-1);
+                            07=InterfaceState('RuinsTalk','PR_Shop',-1);
+                            08=InterfaceState('RuinsTalk','PR_BMShopBlock',-1);
+                            09=InterfaceState('RuinsTalk','AstAddRuins',-1);
+                            10=InterfaceState('Ship','SC_Storage_Panel',-1);
+                            11=InterfaceState('Ship','StorageLockImage',-1);
+                            12=InterfaceState('Ship','StorageLabel',-1);
+                            13=InterfaceState('Ship','ShipToStorage',-1);
+                            14=InterfaceState('Ship','StorageToShip',-1);
+                        }
+                    }
+                    03=else if(ScriptItemActionType(t_OnEnteringForm) || ScriptItemActionType(t_OnReEnteringForm))
+                    04 ^{
+                        01=if(CurrentForm()=='Ship')
+                        02 ^{
+                            01=InterfaceState('Ship','PM_EndTurn',0);
+                            02=InterfaceState('Ship','RT_EndTurn_Block',1);
+                            03=for(int i = GalaxyEvents() - 1; i >= 0; i = i - 1)
+                            04 ^{
+                                01=if(i <= ShipCustomShipInfoData(0, CurInfo(), 2)) break;
+                                02=if(GalaxyEventDate(i) < CurTurn()) break;
+                                03=if(GalaxyEventType(i) == 'PlayerBuysEquipment')
+                                04 ^{
+                                    01=if(GalaxyEventData(i, 5) == ShipCustomShipInfoData(0, CurInfo(), 1))
+                                    02 ^{
+                                        01=dword item;
+                                        02=int type = GalaxyEventData(i, 0);
+                                        03=float flt = 0;
+                                        04=if(type >= t_FuelTanks && type <= t_DefGenerator)
+                                        05 ^{
+                                            01=item=IdToItem(GalaxyEventData(i,3));
+                                            02=if(ItemOwner(item)==6)
+                                            03 ^{
+                                                01=flt=CT('BlackMarketShopList.Equipment.NoneRaceCostCoef');
+                                                02=if(flt<=0)flt=1.0;
+                                                03=ItemCost(item,round(1.0*ItemCost(item)/flt));
+                                            }
+                                            04=else if(ItemOwner(item)==5)
+                                            05 ^{
+                                                01=flt=CT('BlackMarketShopList.Equipment.DomRaceCostCoef');
+                                                02=if(flt<=0)flt=1.0;
+                                                03=ItemCost(item,round(1.0*ItemCost(item)/flt));
+                                            }
+                                        }
+                                        06=else if(type>=t_Weapon1 && type<=t_CustomWeapon)
+                                        07 ^{
+                                            01=item=IdToItem(GalaxyEventData(i,3));
+                                            02=if(ItemOwner(item)==6)
+                                            03 ^{
+                                                01=flt=CT('BlackMarketShopList.Weapon.NoneRaceCostCoef');
+                                                02=if(flt<=0)flt=1.0;
+                                                03=ItemCost(item,round(1.0*ItemCost(item)/flt));
+                                            }
+                                            04=else if(ItemOwner(item) == 5)
+                                            05 ^{
+                                                01=flt = CT('BlackMarketShopList.Weapon.DomRaceCostCoef');
+                                                02=if(flt <= 0) flt = 1.0;
+                                                03=ItemCost(item, round(1.0 * ItemCost(item) / flt));
+                                            }
+                                        }
+                                        08=else if(type >= t_Artefact && type <= t_ArtFastRacks)
+                                        09 ^{
+                                            01=item = IdToItem(GalaxyEventData(i, 3));
+                                            02=flt = CT('BlackMarketShopList.Artefacts.ArtAdditionalCostCoef');
+                                            03=if(flt <= 0) flt = 1.0;
+                                            04=ItemCost(item, round(1.0 * ItemCost(item) / flt));
+                                            05=if(type == t_Artefact || type == t_Artefact2)
+                                            06 ^{
+                                                01=if(!findsubstr(CustomArtTextData(item, 3), 'ReplaceTo: '))
+                                                02 ^{
+                                                    01=str path = substr(CustomArtTextData(item, 3), 11);
+                                                    02=if(BlockExist(path))
+                                                    03 ^{
+                                                        01=dword new_item = CreateQuestItem(substr(path, 13), ItemOwner(item));
+                                                        02=ItemCost(new_item, ItemCost(item));
+                                                        03=ItemSize(new_item, ItemSize(item));
+                                                        04=path = EqCustomFaction(item);
+                                                        05=if(path != '') EqCustomFaction(new_item, path);
+                                                        06=FreeItem(GetArtFromShip(Player(), FindItemInShip(Player(), item)));
+                                                        07=AddItemToShip(Player(), new_item);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        10=else if(type == t_MicroModule)
+                                        11 ^{
+                                            01=item = IdToItem(GalaxyEventData(i, 3));
+                                            02=new_item = CreateMM(EqModule(item));
+                                            03=FreeItem(GetItemFromShip(Player(), item));
+                                            04=AddItemToShip(Player(), new_item);
+                                        }
+                                        12=if(!ShopItems(GetShipRuins(Player())))
+                                        13 ^{
+                                            01=InterfaceState('RuinsTalk', 'PR_Shop', 0);
+                                            02=InterfaceState('RuinsTalk', 'PR_BMShopBlock', 1);
+                                        }
+                                    }
+                                }
+                            }
+                            05=ShipCustomShipInfoData(0, CurInfo(), 2, GalaxyEvents() - 1);
+                        }
+                        03=else if(CurrentForm() == 'EquipmentShop')
+                        04 ^{
+                            01=InterfaceState('EquipmentShop', 'PM_EndTurn', 0);
+                            02=InterfaceState('EquipmentShop', 'RT_EndTurn_Block', 1);
+                        }
+                        05=else if(CurrentForm() == 'GoodsShop')
+                        06 ^{
+                            01=InterfaceState('GoodsShop', 'PM_EndTurn', 0);
+                            02=InterfaceState('GoodsShop', 'RT_EndTurn_Block', 1);
+                        }
+                        07=else if(CurrentForm() == 'Info')
+                        08 ^{
+                            01=InterfaceState('Info', 'PM_EndTurn', 0);
+                            02=InterfaceState('Info', 'RT_EndTurn_Block', 1);
+                        }
+                        09=else if(CurrentForm() == 'Rating')
+                        10 ^{
+                            01=InterfaceState('Rating', 'PM_EndTurn', 0);
+                            02=InterfaceState('Rating', 'RT_EndTurn_Block', 1);
+                        }
+                        11=else if(CurrentForm() == 'Galaxy')
+                        12 ^{
+                            01=InterfaceState('Galaxy', 'PM_EndTurn', 0);
+                            02=InterfaceState('Galaxy', 'RT_EndTurn_Block', 1);
+                        }
+                        13=else if(CurrentForm() == 'Hangar')
+                        14 ^{
+                            01=InterfaceState('Hangar', 'PM_EndTurn', 0);
+                            02=InterfaceState('Hangar', 'RT_EndTurn_Block', 1);
+                        }
+                        15=else if(CurrentForm() == 'RuinsTalk')
+                        16 ^{
+                            01=InterfaceState('RuinsTalk', 'PM_EndTurn', 0);
+                            02=InterfaceState('RuinsTalk', 'RT_EndTurn_Block', 1);
+                            03=if(PlayerBridge()) InterfaceState('RuinsTalk', 'PanelTalk', -1);
+                        }
+                    }
+                    05=else if(ScriptItemActionType(t_OnLeavingForm))
+                    06 ^{
+                        01=if(CurrentForm() == 'EquipmentShop')
+                        02 ^{
+                            01=InterfaceState('EquipmentShop', 'PM_EndTurn', -1);
+                            02=InterfaceState('EquipmentShop', 'RT_EndTurn_Block', 0);
+                            03=InterfaceState('RuinsTalk', 'PM_EndTurn', 0);
+                            04=InterfaceState('RuinsTalk', 'RT_EndTurn_Block', 1);
+                            05=for(i = GalaxyEvents() - 1; i >= 0; i = i - 1)
+                            06 ^{
+                                01=if(i <= ShipCustomShipInfoData(0, CurInfo(), 2)) break;
+                                02=if(GalaxyEventDate(i) < CurTurn()) break;
+                                03=if(GalaxyEventType(i) == 'PlayerBuysEquipment')
+                                04 ^{
+                                    01=if(GalaxyEventData(i, 5) == ShipCustomShipInfoData(0, CurInfo(), 1))
+                                    02 ^{
+                                        01=type=GalaxyEventData(i,0);
+                                        02=flt=0;
+                                        03=if(type>=t_FuelTanks && type<=t_DefGenerator)
+                                        04 ^{
+                                            01=item=IdToItem(GalaxyEventData(i,3));
+                                            02=if(ItemOwner(item)==6)
+                                            03 ^{
+                                                01=flt=CT('BlackMarketShopList.Equipment.NoneRaceCostCoef');
+                                                02=if(flt<=0)flt=1.0;
+                                                03=ItemCost(item,round(1.0*ItemCost(item)/flt));
+                                            }
+                                            04=else if(ItemOwner(item)==5)
+                                            05 ^{
+                                                01=flt=CT('BlackMarketShopList.Equipment.DomRaceCostCoef');
+                                                02=if(flt<=0)flt=1.0;
+                                                03=ItemCost(item,round(1.0*ItemCost(item)/flt));
+                                            }
+                                        }
+                                        05=else if(type>=t_Weapon1 && type<=t_CustomWeapon)
+                                        06 ^{
+                                            01=item=IdToItem(GalaxyEventData(i,3));
+                                            02=if(ItemOwner(item)==6)
+                                            03 ^{
+                                                01=flt=CT('BlackMarketShopList.Weapon.NoneRaceCostCoef');
+                                                02=if(flt<=0)flt=1.0;
+                                                03=ItemCost(item,round(1.0*ItemCost(item)/flt));
+                                            }
+                                            04=else if(ItemOwner(item)==5)
+                                            05 ^{
+                                                01=flt=CT('BlackMarketShopList.Weapon.DomRaceCostCoef');
+                                                02=if(flt<=0)flt=1.0;
+                                                03=ItemCost(item,round(1.0*ItemCost(item)/flt));
+                                            }
+                                        }
+                                        07=else if(type>=t_Artefact && type<=t_ArtFastRacks)
+                                        08 ^{
+                                            01=item=IdToItem(GalaxyEventData(i,3));
+                                            02=flt=CT('BlackMarketShopList.Artefacts.ArtAdditionalCostCoef');
+                                            03=if(flt<=0)flt=1.0;
+                                            04=ItemCost(item,round(1.0*ItemCost(item)/flt));
+                                            05=if(type==t_Artefact || type==t_Artefact2)
+                                            06 ^{
+                                                01=if(findsubstr(CustomArtTextData(item,3),'ReplaceTo: ')==0)
+                                                02 ^{
+                                                    01=path=substr(CustomArtTextData(item,3),11);
+                                                    02=if(BlockExist(path))
+                                                    03 ^{
+                                                        01=new_item=CreateQuestItem(substr(path,13),ItemOwner(item));
+                                                        02=ItemCost(new_item,ItemCost(item));
+                                                        03=ItemSize(new_item,ItemSize(item));
+                                                        04=path=EqCustomFaction(item);
+                                                        05=if(path!='')EqCustomFaction(new_item,path);
+                                                        06=FreeItem(GetArtFromShip(Player(),FindItemInShip(Player(),item)));
+                                                        07=AddItemToShip(Player(),new_item);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        09=else if(type == t_MicroModule)
+                                        10 ^{
+                                            01=item = IdToItem(GalaxyEventData(i, 3));
+                                            02=new_item = CreateMM(EqModule(item));
+                                            03=FreeItem(GetItemFromShip(Player(), item));
+                                            04=AddItemToShip(Player(), new_item);
+                                        }
+                                        11=if(!ShopItems(GetShipRuins(Player())))
+                                        12 ^{
+                                            01=InterfaceState('RuinsTalk', 'PR_Shop', 0);
+                                            02=InterfaceState('RuinsTalk', 'PR_BMShopBlock', 1);
+                                        }
+                                    }
+                                }
+                            }
+                            07=ShipCustomShipInfoData(0, CurInfo(), 2, GalaxyEvents() - 1);
+                        }
+                        03=else if(CurrentForm() == 'Ship')
+                        04 ^{
+                            25=InterfaceState('Ship', 'PM_EndTurn', -1);
+                            26=InterfaceState('Ship', 'RT_EndTurn_Block', 0);
+                            27=InterfaceState('RuinsTalk', 'PM_EndTurn', 0);
+                            28=InterfaceState('RuinsTalk', 'RT_EndTurn_Block', 1);
+                        }
+                        05=else if(CurrentForm() == 'GoodsShop')
+                        06 ^{
+                            01=InterfaceState('GoodsShop', 'PM_EndTurn', -1);
+                            02=InterfaceState('GoodsShop', 'RT_EndTurn_Block', 0);
+                            03=InterfaceState('RuinsTalk', 'PM_EndTurn', 0);
+                            04=InterfaceState('RuinsTalk', 'RT_EndTurn_Block', 1);
+                        }
+                        07=else if(CurrentForm() == 'Info')
+                        08 ^{
+                            01=InterfaceState('Info', 'PM_EndTurn', -1);
+                            02=InterfaceState('Info', 'RT_EndTurn_Block', 0);
+                            03=InterfaceState('RuinsTalk', 'PM_EndTurn', 0);
+                            04=InterfaceState('RuinsTalk', 'RT_EndTurn_Block', 1);
+                        }
+                        09=else if(CurrentForm() == 'Rating')
+                        10 ^{
+                            01=InterfaceState('Rating', 'PM_EndTurn', -1);
+                            02=InterfaceState('Rating', 'RT_EndTurn_Block', 0);
+                            03=InterfaceState('RuinsTalk', 'PM_EndTurn', 0);
+                            04=InterfaceState('RuinsTalk', 'RT_EndTurn_Block', 1);
+                        }
+                        11=else if(CurrentForm() == 'Galaxy')
+                        12 ^{
+                            01=InterfaceState('Galaxy', 'PM_EndTurn', -1);
+                            02=InterfaceState('Galaxy', 'RT_EndTurn_Block', 0);
+                            03=InterfaceState('RuinsTalk', 'PM_EndTurn', 0);
+                            04=InterfaceState('RuinsTalk', 'RT_EndTurn_Block', 1);
+                        }
+                        13=else if(CurrentForm() == 'Hangar')
+                        14 ^{
+                            01=InterfaceState('Hangar', 'PM_EndTurn', -1);
+                            02=InterfaceState('Hangar', 'RT_EndTurn_Block', 0);
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnStep,t_OnEnteringForm,t_OnReEnteringForm,t_OnLeavingForm
+                OnActStepTypes=0
+            }
+            SmugglingCountInfo ^{
+                Description=Hidden info box, counts the number of contraband transactions (money for buying / selling contraband) made by the player.
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=dword cur_ship = ScriptItemActShip();
+                    02=if(ScriptItemActParam())
+                    03 ^{
+                        01=dword cur_info = CurInfo();
+                        02=dword obj1 = ScriptItemActObject1();
+                        03=int deal_summ = ItemCost(obj1);
+                        04=if(ScriptItemActionType(t_OnShipBuysGoods))
+                        05 ^{
+                            01=ShipCustomShipInfoData(0, cur_info, 1, ShipCustomShipInfoData(0, cur_info, 1) + deal_summ);
+                        }
+                        06=else
+                        07 ^{
+                            01=dword obj2 = ScriptItemActObject2();
+                            02=ShipCustomShipInfoData(0, cur_info, 2, ShipCustomShipInfoData(0, cur_info, 2) + deal_summ);
+                            03=int size2 = ItemSize(obj2);
+                            04=int profit = 0;
+                            05=if(size2)
+                            06 ^{
+                                01=int size1 = ItemSize(obj1);
+                                02=int diff_summ = ItemCost(obj2);
+                                03=if(size1 == size2)profit = deal_summ - diff_summ;
+                                04=else
+                                05 ^{
+                                    01=deal_summ = (deal_summ / size1) * size2;
+                                    02=profit = deal_summ - diff_summ;
+                                }
+                            }
+                            07=if(profit > 0)
+                            08 ^{
+                                01=int penalty = ShipStatistic(cur_ship, 9);
+                                02=if(!penalty) ShipCustomShipInfoData(0, cur_info, 3, ShipCustomShipInfoData(0, cur_info, 3) + profit);
+                                03=else
+                                04 ^{
+                                    01=if(profit > penalty)
+                                    02 ^{
+                                        01=profit = profit - penalty;
+                                        02=ShipCustomShipInfoData(0, cur_info, 3, ShipCustomShipInfoData(0, cur_info, 3) + profit);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnShipBuysGoods,t_OnShipSellsGoods
+            }
+            TalkMsgBMHideInfo ^{
+                Description=Hidden info for timely display of notification on the panel (turncode doesn't work)
+                Icon=0
+                Name=
+                OnActCode ^{
+                    01=if(ShipInNormalSpace(Player()))
+                    02 ^{
+                        01=dword cur_info = CurInfo();
+                        02=if(CurTurn() == ShipCustomShipInfoTextData(0, cur_info, 1))exit;
+                        03=dword warrior = IdToShip(ShipCustomShipInfoData(0, cur_info, 1));
+                        04=dword smuggler = IdToShip(ShipCustomShipInfoData(0, cur_info, 2));
+                        05=dword planet = IdToPlanet(ShipCustomShipInfoData(0, cur_info, 3));
+                        06=CustomEther('TalkSpecial', 0, 'BM_StartTalks', Format(CT("Script.Mod_ExpBlackMarket_1.SmugglerChaseTalk"), "<0>", Name(warrior), "<1>", Name(smuggler), "<2>", Name(smuggler), "<3>", Rnd(GalaxyMoney(1,1)/4,GalaxyMoney(4,1)/2), "<4>", Name(planet)), warrior, smuggler);
+                        07=Sound('Sound.NewMsg');
+                        08=ExpBlackMarketGlobal = 0;
+                        09=ShipDeleteCustomShipInfo(Player(), 'TalkMsgBMHideInfo');
+                    }
+                }
+                OnActCodeTypes=t_OnStep
+                OnActStepTypes=0
+            }
+        }
+    }
+}
+HullType ^{
+    ExpBlackMarket_BlackHeart ^{
+        Artefact=4
+        Cost=250
+        Def=1
+        Droid=1
+        Forsage=1
+        Hook=1
+        Name=Black Heart
+        Probability=10
+        Race=Any
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=100
+        Text=A rare series of hulls, produced by special order of the Great Lyakushas Council, as a direct response to the super-successful ranger Ideal series.
+        Weapon=4
+        Year=30
+    }
+    ExpBlackMarket_Schwerzer ^{
+        Artefact=2
+        Cost=125
+        Def=1
+        Droid=-1
+        Forsage=1
+        Hook=-1
+        Name=Schwerzer
+        Probability=10
+        Race=None
+        Radar=1
+        Scaner=-1
+        ShipType=None
+        Size=115
+        Text=A balanced series for those who like to trade on weaknesses of others. According to the manufacturer, it contains everything that a real smuggler might need.
+        Weapon=2
+        Year=0
+    }
+    ExpBlackMarket_Solo ^{
+        Artefact=4
+        Cost=350
+        Def=1
+        Droid=1
+        Forsage=1
+        Hook=1
+        Name=Solo
+        Probability=10
+        Race=None
+        Radar=1
+        Scaner=1
+        ShipType=None
+        Size=125
+        Text=A special and extremely rare series of smuggler hulls, rumored to be custom-built only by the most respected members of this risky profession.
+        Weapon=4
+        Year=0
+    }
+}
+BlackMarketNames ~{
+    1=Minted coin
+    2=Corellian
+    3=Darknet
+    4=Bitcredit
+    5=Forbidden fruit
+    6=Second kidney
+    Count=6
+}
+Script ^{
+    Mod_ExpBlackMarket_1 ^{
+        47=<0>
+        FirstDialogOnBM=Well, <Player>, here we are. What, never heard of black markets? Here, every smuggler will always find a buyer and a seller for his hold.<br>And by the way, I... I apologize for that incident with the blaster. It was just that the time of the appearance of the station was running out, so I had to improvise. As for the money, by the way, IвЂ™m also sorry, I didnвЂ™t plan to pay you anything yet, but more on that later.<br>In the meantime, we are here, I recommend that you look at the local assortment, in case you suddenly will like something useful.
+        IfFei=</color>big-headed
+        IfGaal=</color>many-eyed
+        IfMaloc=</color>red-faced
+        IfPeleng=</color>amphibian
+        IfPeople=</color>monkey
+        InSystem=</color>in the system
+        LastDialogOnBM=Don't jump to conclusions. The trash in the compartments that were not protected from scanning was a distraction, and the patrol would have to look for real "berries" with all passion. However, I'm talking a lot here with you, and I still have a lot of business selling goods here.<br>Better take this <clr>badge<clrEnd>. In such black markets, it works as a pass. I will give a call to my homies that your name is entered into the database of regular customers. So to speak, as a gratitude for the service and salvation. And as is clear from all your past dealings, the word "smuggling" for you is not quite an empty phrase.<br>That's it, I'm off. Bye, #0#!<br><br><color=45,105,45>You have received: Symbol of trust</color>
+        OnTheWayToSystem=</color>on the way to the system
+        PlayerAgreeToHelp=You just do not equal yourself with me so impudently! Let's get, so be it, to your place, and then we will part, like a ship in a vacuum and garbage dumped overboard
+        PlayerAnswerOnBM=Yes, I saw your assortment in a landfill! Non-alcoholic beer and perverted serials are not my thing!
+        PlayerAsksWhat=What?! Where are you going to sit, fool? Looks like you hit your head hard against the wall during the explosion, since you are talking such nonsense
+        PlayerDoubtAboutIt=Yeah, I didnвЂ™t expect to find you in this contraband compartment ... But by the way, answer me the question, why should I help you at all? Right now, IвЂ™ll hand it over to the military for a fee, and thatвЂ™s the end of it!
+        PlayerGivesControl=Okay, "friend". But if you scratch the hull of my ship even for a millimeter, then not a single blaster will help you later, keep in mind!
+        PlayerIsTryingToShot=Calm down, calm down. Just let's not make sudden movements... [Sharply draw your blaster and shoot the Peleng]
+        PlayerSaysWellSee=Hmm, perhaps I'll still think about what to do with you, and in the meantime you sit in your miracle compartment, but already under lock and key outside
+        ScanCompartment=#0#
+        ScanCompartment=<clr><clrEnd>
+        ScanCompartment=Well, well, and here, apparently, is his priceless contraband. Start scanning! Now let's see what these vultures are now ready to give their worthless lives for...<br>Hmm, <clr>6<clrEnd> cases of faruks, <clr>4<clrEnd> boxes of Makhpella Zero beer, <clr>1<clrEnd> a crate of maloq anime, all parts of the banned faeyan series <clr>"IT'S A TRAP!"<clrEnd>. And for the sake of such and such rubbish it was worth dying?
+        ScanCompartment=Patrol ships, new order - return to planet #1#.
+        SignalFromCompartment=You have received a faint signal from a space-drifting <clr>smuggler compartment<clrEnd>. Perhaps there is still something of value inside it?
+        SmugglerAsksForHelp=Hey ranger! Hey hey, just don't grab the blaster, right?! Let me explain first...
+        SmugglerAsksForHelp=Right before the bloody warriors smashed my ship to pieces, I managed to take shelter in advance in the same dumped <clr>smuggling compartment<clrEnd> that you so kindly decided to take aboard. The compartment is equipped with a simple life support system and, so to speak, a "double fold", thanks to which warriors could not to find me inside.
+        SmugglerAsksForHelp=I would truly thank you for my salvation, except that almost all of my possessions are now scattered across space along with the wreckage of my ship. However, if you agree to fulfill one small request of mine, I will gladly share with you my money, which, believe me, I have accumulated a lot during my long career.
+        SmugglerAsksForHelp=So, the deal is that I need to get to that <clr>point<clrEnd> in this system as soon as possible. And please don't ask me why - you'll find out all the details on the spot.
+        SmugglerChaseTalk=<color=255,240,100><0></color>--><color=255,240,100><1></color>
+        SmugglerChaseTalk=- <color=255,240,100><2></color>, turn off the engine and get ready for the inspection.
+        SmugglerChaseTalk=- This is a mistake, I was set up, I'm a legal trader! What am I accused of?
+        SmugglerChaseTalk=- We have received information that you have a large consignment of smuggled goods on board. I repeat, stop the ship and wait for the inspection team!
+        SmugglerChaseTalk=- I have an idea. I translate these <color=255,240,100><3></color> cr. to you, then you turn around and fly to the right, and I continue my law-abiding path to the left. Deal?
+        SmugglerChaseTalk=- I have reported this offer home to the planet <4>. The authorities do not consider the amount of payment satisfactory. All pursuit ships, I order you to open fire!
+        SmugglerExplains=Well, I could now begin to point out that I am ready to pay much more for my health than these coalition misers, and that my influential friends are unlikely to appreciate your rat act, but something tells me that you yourself with the coalition military is not on good terms, which means you will make the right choice without additional motivation.<br>The ultimate decision, of course, remains with you, but invoking the solidarity of a free trader, please just help me get to the indicated place on the map.
+        SmugglerExplainsAgain=And here it is, a question that I do not intend to answer at the moment, "friend"... **sound of blaster being loaded** ...get out of the pilot's seat quickly!!!
+        SmugglerLeaveOnPlanet=While you were doing your important business on planet #0#, Peleng #1# quietly left the ship, and took his <clr>contraband compartment<clrEnd> along the way.
+        SmugglerLeaveOnStation=While you were doing your important business aboard the station #0#, Peleng #1# quietly left the ship, and took his <clr>contraband compartment<clrEnd> along the way.
+        SmugglerSaysAlmostThere=Oh, I see, you finally decided to heed the voice of your greedy mind?<br>According to the map, we have almost arrived. Be a friend one more time, give me your pilot's seat so that I can land safely.
+        SmugglerShotsPlayer=You sharply pulled your hand to the holster, but the Peleng was ready for this scenario. A neat smoking hole between your eyes ended the great ranger's life forever.<br>Well, apparently, only in old westerns is the good guy always able to shoot first.
+        SmugglerStabbedPlayer=At some point, completely forgetting about your guest, you decided to take a nap in your favorite pilot's seat. Peleng #0#, deciding to take advantage of the chance, secretly sneaked onto the bridge and cut your throat without the slightest twinge of conscience.<br>The smuggler himself, who so successfully captured your ship, subsequently had an extremely exciting and adventurous life, but you will not see all this anymore, because #1# <color=255,240,100>years</color> #2# #3# the life of the great ranger is over forever.
+        TakeALookAtTheGoods=See the range of products
+    }
+    Mod_ExpBlackMarket_2 ^{
+        1=<0>
+        BMAccessAgreed=You charge a lot for a Sibolusovtus in the sack, buddy, but I donвЂ™t seem to be poor either. Here is #0#cr. - Give me my pass.
+        BMAccessAsYourWish=As you want. Although if I were you I wouldn't use such words here.<br>However, I'm not one of the touchy ones, so the offer still stands. Let me know if you decide to buy this pass.
+        BMAccessExplain=There is one interesting place where smugglers like you can get yourself a lot of useful goods. However, this place literally "does not stand still", and therefore it is extremely difficult to find it, and not everyone is allowed to go there.<br>But for you personally, <Player>, I agree to fit an indefinite pass to this place. Let's say for #0# cr. Are you interested?
+        BMAccessHereItIs=Here, take it. When you arrive at that place, put on this <clr>badge<clrEnd>. I added you to the Galanet database, and you don't need to know more.<br>In a couple of months you will receive a <clr>message<clrEnd> indicating the system. I highly recommend flying there.<br><br><color=45,105,45>You have received: Symbol of trust</color>
+        BMAccessNoWay=What?! Yes, for so many greens, itвЂ™s better to go to this place yourself, you understand!?
+        BMAccessThanks=I catch the word. Penchesplasher forbid I find out that you lied to me!
+        BMClosedByStarBattle=The battle actions that began in the <0> system frightened off the smugglers, and they turned the <color=255,240,100>black market</color> ahead of schedule. Information about the new location of the station will be sent shortly after it leaves hyperspace.
+        BMClosedByTimeOut=The smugglers have closed the <color=255,240,100>black market</color> in the <0> system. You will be informed about the new location of the station at a later date.
+        BMDestroyed=The mobile <color=255,240,100>black market</color> #1# deployed in system #0# was destroyed. It will take some time for the smugglers to equip a new station for their needs. You will be informed about the opening of a new black market at a later date.
+        BMDestroyedByPlayer=Your treacherous behavior has angered the entire smuggling community! There can be no talk of further doing business with you. You have been excluded from the list of trusted persons, and all access to the <color=255,240,100>black market</color> is now closed to you forever.
+        BMDestroyedInHyper=Mobile <color=255,240,100>black market</color> #0# was destroyed by an unknown person. It will take some time for the smugglers to equip a new station for their needs. You will be informed about the opening of a new black market at a later date.
+        BMOpened=All interested smugglers are invited to the system <0>, where the <color=255,240,100>black market</color> <1> has recently "anchored". The station will be in the system until <2> <color=255,240,100>year</color>, don't miss your chance!
+        GovBlock=Suspicious individuals are scurrying around, looking at your ranger badge with obvious malice. You decide that nothing now will attract too much attention to yourself.
+        OfferToBuyBMAccess=We heard you like smuggling? I have a personal offer that might interest you.
+        ShopBlock=Soz, bro, but you already bought everything here that we didnвЂ™t bolt to the floor. Fly in another time, maybe by that time we will update the assortment.
+        TellMeHowToBuyBMAccess=And what is this "smuggling" offer you have?
+    }
+}
+UselessItems ^{
+    ExpBlackMarket_SmugglersCompartment ^{
+        Cost=Huge
+        Name=Smuggler's compartment
+        Owner=Peleng
+        Size=45
+        Text=A tightly battened outer compartment for covert transportation of all kinds of illegal cargo.
+    }
+}
+Reward ^{
+    48 ^{
+        Name=Symbol of trust
+        Race=None
+        Status=None
+        Text=It is a kind of <clr>smuggler's mark<clrEnd>. the owners of this badge will be glad to see in any team involved in the illegal acquisition and sale of often even more illegal items and substances.
+        Type=ForAccomplishment
+    }
+}
+ShipType ^{
+    Peleng ^{
+        Smuggler=Chhasha
+    }
+    TypeName ^{
+        BM=Black Market
+        BMSmall=BM
+        Smuggler=Smuggler
+    }
+}

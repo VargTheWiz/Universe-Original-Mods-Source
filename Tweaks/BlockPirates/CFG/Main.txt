@@ -1,0 +1,12 @@
+BV ^{
+    OnStart ^{
+        Mod_BlockPirates ^{
+            01=ScriptRun(ShipStar(Player()), GetShipPlanet(Player()), 'Mod_BlockPirates');
+        }
+    }
+}
+Data ^{
+    Script ^{
+        Mod_BlockPirates=1,Script.Mod_BlockPirates
+    }
+}

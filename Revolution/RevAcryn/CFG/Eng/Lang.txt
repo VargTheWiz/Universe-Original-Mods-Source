@@ -1,0 +1,946 @@
+ActCodeBlocksList ^{
+    RevAcrynAssemblyDroidActCode ^{
+        00=[t_OnItemEquip,t_OnItemDeEquip,t_OnItemDestroy,t_OnStep|0]
+        01=if(ScriptItemActionType(t_OnStep, 0))
+        02 ^{
+            01=dword item = CurItem();
+            02=dword ship = ScriptItemActShip();
+            03=if(!ship) exit;
+            04=if(!item) exit;
+            05=if(!ItemIsInUse(item)) exit;
+            06=if(ItemIsBroken(item)) exit;
+            07=if(ObjectType(ship) != 4)
+            08 ^{
+                01=if(ShipType(ship) == 'DefPlatform') exit;
+                02=for(int i = 1; i <= ShipCntWeapon(ship); i = i + 1)
+                03 ^{
+                    01=WeaponTarget(ShipWeapon(ship, i), 0);
+                }
+            }
+        }
+        03=else if(ScriptItemActionType(t_OnItemEquip))
+        04 ^{
+            01=item = CurItem();
+            02=dword star = ShipStar(Player());
+            03=int check = 0;
+            04=for(int j = 0; j < ShipItems(Player()); j = j + 1)
+            05 ^{
+                01=dword temp_item = ShipItems(Player(), j);
+                02=if(temp_item == item)
+                03 ^{
+                    01=check = 1;
+                    02=break;
+                }
+            }
+            06=if(!check)
+            07 ^{
+                01=for(j = 0; j < StarRuins(star); j = j + 1)
+                02 ^{
+                    01=ship = StarRuins(star, j);
+                    02=for(int k = 0; k < ShipItems(ship); k = k + 1)
+                    03 ^{
+                        01=temp_item = ShipItems(ship, k);
+                        02=if(temp_item == item)
+                        03 ^{
+                            01=check = 2;
+                            02=break;
+                        }
+                    }
+                }
+            }
+            08=if(!check)
+            09 ^{
+                01=for(j = 0; j < StarShips(star); j = j + 1)
+                02 ^{
+                    01=ship = StarShips(star, j);
+                    02=for(k = 0; k < ShipItems(ship); k = k + 1)
+                    03 ^{
+                        01=temp_item = ShipItems(ship, k);
+                        02=if(temp_item == item)
+                        03 ^{
+                            01=if(ShipType(ship) == 'DefPlatform') check = 2;
+                            01=else check = 3;
+                            02=break;
+                        }
+                    }
+                }
+            }
+            10=if(check != 2)
+            11 ^{
+                01=if(EqModule(item))
+                02 ^{
+                    01=int mod = EqModule(item);
+                    02=EqModule(item, -1);
+                    03=str name = Name(item);
+                    04=EqModule(item, mod);
+                }
+                03=else name = Name(item);
+                04=EqSpecial(item, -1);
+                05=EqSpecial(item, FindBonusByCustomTag('AssemblyDroidNerfed'));
+                06=SetName(item, name);
+            }
+        }
+        05=else if(ScriptItemActionType(t_OnItemDeEquip))
+        06 ^{
+            01=item = CurItem();
+            02=if(EqModule(item))
+            03 ^{
+                01=mod = EqModule(item);
+                02=EqModule(item, -1);
+                03=name = Name(item);
+                04=EqModule(item, mod);
+            }
+            05=else name = Name(item);
+            06=EqSpecial(item, -1);
+            07=EqSpecial(item, FindBonusByCustomTag('AssemblyDroidNormal'));
+            08=SetName(item, name);
+        }
+        09=else if(ScriptItemActionType(t_OnItemDestroy))
+        10 ^{
+            01=toAddAssemblyDroids = toAddAssemblyDroids + 1;
+        }
+    }
+}
+Items ^{
+    RepairRobot ^{
+        AssemblyDroidType ^{
+            5=Nanocaniphilic
+            6=Argonoimpulsive
+            7=Rentgenhotronic
+            8=Ultrabosonic
+        }
+        AverageSize=40
+        Broken=(non-functional)
+        BrokenByForce=Unfortunately, close-up meeting with Bertor didn't go well. Droid is now broken.
+        BrokenInBattle=Warning! The droid is damaged! It can no longer mend the skin and requires repairs.
+        BrokenInUse=The droid overexerted itself, causing all its microchips to short-circuit. Repairs are required.
+        KlingName=Dianode
+        KlingText=Patches damaged areas with a rapidly solidifying substance, restoring <RecoverHitPoints> hit points to the ship's skin.
+        Name=<Type> droid
+        ShortName=Droid
+        Text=Restores <RecoverHitPoints> hit points to the ship's skin.
+        Type ^{
+            1=Biotic
+            2=Suspensory
+            3=Tracking
+            4=Tubular
+            5=Bolide
+            6=Tensor
+            7=Dowel
+            8=Duplex
+        }
+        mRepair=10,15,20,25,30,40,50,60
+    }
+}
+MicroModuls ^{
+    498 ^{
+        Cost=200
+        CustomTag=AkrinAmplifier
+        Equipments=FuelTank,Engine,Radar,Scaner,Droid,Hook,DefGenerator
+        Name=Acrynator
+        Priority=0
+        Size=200
+        Special=1
+        Text=A one-of-a-kind handmade level one micromodule. The only copy of the latest experimental model from the Coalition engineers in the field of acrynic technologies. More than twices all the special effects of <clr>acrynic<clrEnd> equipment and neutralizes all of its negative effects. Size and costs of the equipment are doubling. Cannot be installed on a hull due to a conflict with outdated connectors.
+        Text=<clr><clrEnd>
+        Text=Acryn bonuses: <clr>+150%<clrEnd>
+        Text=Acryn penalties: <clr>-100%<clrEnd>
+        Text=Size: <clr>+100%<clrEnd>
+        Text=Cost: <clr>+100%<clrEnd>
+        bonExtraAkrinEff=150
+        bonExtraAkrinPenalty=-99.99
+    }
+    RevAcryn_AssemblyDroidNerfed ^{
+        BlockImp=1
+        BlockMM=1
+        Cost=300
+        CustomTag=AssemblyDroidNerfed
+        Equipments=Droid
+        Fragility=400
+        KindGraph=AssemblyDroid
+        LockedAcryn=3
+        Name=<color=49,239,255> assembly droid</color>
+        NonSearchable=2
+        Owner=Peleng,People,Fei,Gaal
+        Priority=10
+        ScriptItemIgnore=1
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A specialized assembly droid often used in the construction of space stations. Contrary to its design and embedded program, it can <color=255,240,100>repair</color> even on normal spaceships, but few captain would want to have such a "friend".</color>
+        Text=<clr><clrEnd>
+        Text=<color=248,252,248>The greediness of the assembly droid in operation <color=255,240,100>depletes the ship power</color> almost completely, leaving all other systems with only a tiny fraction of it to maintain the most basic functionality. The worst thing is that the droid completelly <color=255,240,100>cuts off weapons</color> for diagnostic purposes. Extreme conditions of work in open space are not to droid's liking, so it fails much earlier than normally.</color>
+        Text=<clr><clrEnd>
+        Text=<color=248,252,248>However, the power systems of <color=255,240,100>large stations</color> with huge energy capacity can support assembly droid together with all the equipment and weapons without any problems.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <clr>-100%<clrEnd>
+        Text=Fragmentation weapons damage: <clr>-100%<clrEnd>
+        Text=Missile weapons damage: <clr>-100%<clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=Gripper power: <bonHook>
+        Text=Gripper range: <bonHookRadius>
+        Text=Shield generator: <bonDef>%
+        bonDef=-30
+        bonHook=-100
+        bonHookRadius=-50
+        bonJump=-30
+        bonRadar=-1500
+        bonScan=-30
+        bonSpeed=-1200
+        bonWEnergy=-500000000
+        bonWMissile=-500000000
+        bonWSplinter=-500000000
+    }
+    RevAcryn_AssemblyDroidNormal ^{
+        BlockImp=1
+        BlockMM=1
+        Cost=300
+        CustomTag=AssemblyDroidNormal
+        Equipments=Droid
+        Fragility=100
+        KindGraph=AssemblyDroid
+        LockedAcryn=3
+        Name=<color=49,239,255> assembly droid</color>
+        NonSearchable=2
+        Owner=Peleng,People,Fei,Gaal
+        Priority=10
+        ScriptItemIgnore=1
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A specialized assembly droid often used in the construction of space stations. Contrary to its design and embedded program, it can <color=255,240,100>repair</color> even on normal spaceships, but few captain would want to have such a "friend".</color>
+        Text=<clr><clrEnd>
+        Text=<color=248,252,248>The greediness of the assembly droid in operation <color=255,240,100>depletes the ship power</color> almost completely, leaving all other systems with only a tiny fraction of it to maintain the most basic functionality. The worst thing is that the droid completelly <color=255,240,100>cuts off weapons</color> for diagnostic purposes. Extreme conditions of work in open space are not to droid's liking, so it fails much earlier than normally.</color>
+        Text=<clr><clrEnd>
+        Text=<color=248,252,248>However, the power systems of <color=255,240,100>large stations</color> with huge energy capacity can support assembly droid together with all the equipment and weapons without any problems.</color>
+    }
+    RevAcryn_BattleDroid5 ^{
+        BlockImp=1
+        BlockMM=1
+        Cost=250
+        CustomTag=RevAcryn_BattleDroid5
+        Equipments=Droid
+        Fragility=50
+        KindGraph=BattleDroid
+        LockedAcryn=3
+        Name=</color>Kaznshutter battle droid
+        NonSearchable=2
+        Owner=Maloc,Peleng,People,PirateClan
+        Priority=10
+        Size=175
+        Special=1
+        Text=<color=248,252,248>The robot's sturdy and efficient components give it excellent durability, but the energy it consumes in combat has a negative impact on the performance of all other onboard equipment. The robot's hull is heavily armored and it is programmed to protect the ship from enemy fire with its own body.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Firing range: <bonWRadius>
+        Text=Hull armor: <bonHull>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=Gripper power: <bonHook>
+        Text=Gripper range: <bonHookRadius>
+        TextReplace=<color=248,252,248>Restored from the old schematics, a specialized model of the droid, which is not a repair device, but an external independent combat platform.</color>
+        bonDroid=-500000000
+        bonHook=-20
+        bonHookRadius=-10
+        bonHull=5
+        bonJump=-9
+        bonRadar=-700
+        bonScan=-7
+        bonSpeed=-150
+        bonWEnergy=6
+        bonWMissile=8
+        bonWRadius=30
+        bonWSplinter=8
+    }
+    RevAcryn_BattleDroid6 ^{
+        BlockImp=1
+        BlockMM=1
+        Cost=250
+        CustomTag=RevAcryn_BattleDroid6
+        Equipments=Droid
+        Fragility=50
+        KindGraph=BattleDroid
+        LockedAcryn=3
+        Name=</color>Hypnobarrel battle droid
+        NonSearchable=2
+        Owner=Maloc,Peleng,People,PirateClan
+        Priority=10
+        Size=175
+        Special=1
+        Text=<color=248,252,248>The robot's sturdy and efficient components give it excellent durability, but the energy it consumes in combat has a negative impact on the performance of all other onboard equipment. The robot's hull is heavily armored and it is programmed to protect the ship from enemy fire with its own body.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Firing range: <bonWRadius>
+        Text=Hull armor: <bonHull>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=Gripper power: <bonHook>
+        Text=Gripper range: <bonHookRadius>
+        TextReplace=<color=248,252,248>Restored from the old schematics, a specialized model of the droid, which is not a repair device, but an external independent combat platform.</color>
+        bonDroid=-500000000
+        bonHook=-30
+        bonHookRadius=-15
+        bonHull=6
+        bonJump=-9
+        bonRadar=-700
+        bonScan=-7
+        bonSpeed=-200
+        bonWEnergy=8
+        bonWMissile=11
+        bonWRadius=40
+        bonWSplinter=11
+    }
+    RevAcryn_BattleDroid7 ^{
+        BlockImp=1
+        BlockMM=1
+        Cost=250
+        CustomTag=RevAcryn_BattleDroid7
+        Equipments=Droid
+        Fragility=50
+        KindGraph=BattleDroid
+        LockedAcryn=3
+        Name=</color>Shimozabrizant battle droid
+        NonSearchable=2
+        Owner=Maloc,Peleng,People,PirateClan
+        Priority=10
+        Size=175
+        Special=1
+        Text=<color=248,252,248>The robot's sturdy and efficient components give it excellent durability, but the energy it consumes in combat has a negative impact on the performance of all other onboard equipment. The robot's hull is heavily armored and it is programmed to protect the ship from enemy fire with its own body.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Firing range: <bonWRadius>
+        Text=Hull armor: <bonHull>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=Gripper power: <bonHook>
+        Text=Gripper range: <bonHookRadius>
+        TextReplace=<color=248,252,248>Restored from the old schematics, a specialized model of the droid, which is not a repair device, but an external independent combat platform.</color>
+        bonDroid=-500000000
+        bonHook=-40
+        bonHookRadius=-20
+        bonHull=7
+        bonJump=-15
+        bonRadar=-750
+        bonScan=-7
+        bonSpeed=-300
+        bonWEnergy=12
+        bonWMissile=16
+        bonWRadius=50
+        bonWSplinter=16
+    }
+    RevAcryn_BattleDroid8 ^{
+        BlockImp=1
+        BlockMM=1
+        Cost=250
+        CustomTag=RevAcryn_BattleDroid8
+        Equipments=Droid
+        Fragility=50
+        KindGraph=BattleDroid
+        LockedAcryn=3
+        Name=</color>Spherovacuum battle droid
+        NonSearchable=2
+        Owner=Maloc,Peleng,People,PirateClan
+        Priority=10
+        Size=175
+        Special=1
+        Text=<color=248,252,248>The robot's sturdy and efficient components give it excellent durability, but the energy it consumes in combat has a negative impact on the performance of all other onboard equipment. The robot's hull is heavily armored and it is programmed to protect the ship from enemy fire with its own body.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Firing range: <bonWRadius>
+        Text=Hull armor: <bonHull>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=Gripper power: <bonHook>
+        Text=Gripper range: <bonHookRadius>
+        TextReplace=<color=248,252,248>Restored from the old schematics, a specialized model of the droid, which is not a repair device, but an external independent combat platform.</color>
+        bonDroid=-500000000
+        bonHook=-50
+        bonHookRadius=-25
+        bonHull=8
+        bonJump=-20
+        bonRadar=-1000
+        bonScan=-10
+        bonSpeed=-400
+        bonWEnergy=16
+        bonWMissile=22
+        bonWRadius=60
+        bonWSplinter=22
+    }
+    RevAcryn_NOKM ^{
+        BlockImp=1
+        BlockMM=1
+        Cost=350
+        CustomTag=RevAcryn_NOKM
+        Equipments=Engine
+        Fragility=100
+        KindGraph=NOKM
+        LockedAcryn=3
+        Name=</color>NOKM-3314М
+        NonSearchable=2
+        Owner=Maloc
+        Priority=10
+        Size=100
+        Special=1
+        Text=<color=248,252,248>The result of this project is a heavy and very expensive unit that automatically creates portable nuclear warheads from ordinary starship fuel and nanoclay from the droid's tanks, placing the resulting projectiles in the warheads of ordinary missiles and torpedoes. Since the <color=255,240,100>Constitution</color> states in red and yellow that there must be one and only ship's fuel conduit, the unit is designed so that it can only be installed <color=255,240,100>in place of an engine</color>, with all the resulting consequences.</color>
+        Text=<clr><clrEnd>
+        Text=Missile weapons damage: <bonWMissile>
+        TextReplace=<color=248,252,248>The reason for the creation of this strange unit was a diplomatic incident in which the <color=255,240,100>Earth</color> ambassador threatened <color=255,240,100>Ramgatrue</color> ambassador "to show him Kuzka's mother". So on <color=255,240,100>Ramgatrue</color> maloqs, without any thinking, decided, that "Kuzka's mother" is some sort of absolute weapon, in connection with which was urgently deployed project "No Kuzka's Mother".</color>
+        bonJump=-500000000
+        bonSpeed=-500000000
+        bonWMissile=140
+    }
+    RevAcryn_TechnolitDefGenerator1 ^{
+        AcrynLevel=1
+        AcrynSerie=Technolytic Shield Generator I-III
+        Cost=150
+        Equipments=DefGenerator
+        KindGraph=TechnolitDefGenerator
+        LevelsCount=3
+        Name=Technolytic Shield Generator I
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=10
+        Ruins=RC,TC,MC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=RevAcryn_TechnolitDefGenerator1
+        SerieLevel2=RevAcryn_TechnolitDefGenerator2
+        SerieLevel3=RevAcryn_TechnolitDefGenerator3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Technolytic equipment runs on an acrylic matter restructuring generator. The radiation affects the thickness of the armor, thereby increasing it in size. Equipment that uses such a generator works more efficiently and also becomes noticeably more resistant to breakage. Unfortunately, due to the restructuring of atomic bonds in the armor material, the force of the hull's gravitational field increases significantly.</color>
+        Text=<clr><clrEnd>
+        Text=Hull armor: <bonHull>
+        Text=Shield generator: <bonDef>%
+        Text=Ship mass: <bonMass>%
+        bonDef=1
+        bonHull=1
+        bonMass=7
+    }
+    RevAcryn_TechnolitDefGenerator2 ^{
+        AcrynLevel=2
+        AcrynSerie=Technolytic Shield Generator I-III
+        Cost=200
+        Equipments=DefGenerator
+        Fragility=85
+        KindGraph=TechnolitDefGenerator
+        LevelsCount=3
+        Name=Technolytic Shield Generator II
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=30
+        Ruins=RC,TC,MC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=RevAcryn_TechnolitDefGenerator1
+        SerieLevel2=RevAcryn_TechnolitDefGenerator2
+        SerieLevel3=RevAcryn_TechnolitDefGenerator3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Technolytic equipment runs on an acrylic matter restructuring generator. The radiation affects the thickness of the armor, thereby increasing it in size. Equipment that uses such a generator works more efficiently and also becomes noticeably more resistant to breakage. Unfortunately, due to the restructuring of atomic bonds in the armor material, the force of the hull's gravitational field increases significantly.</color>
+        Text=<clr><clrEnd>
+        Text=Hull armor: <bonHull>
+        Text=Shield generator: <bonDef>%
+        Text=Technology skill: <bonSkill3>
+        Text=Ship mass: <bonMass>%
+        Text=Reliability: <clr>+17%<clrEnd>
+        bonDef=2
+        bonHull=2
+        bonMass=12
+        bonSkill3=-1
+    }
+    RevAcryn_TechnolitDefGenerator3 ^{
+        AcrynLevel=3
+        AcrynSerie=Technolytic Shield Generator I-III
+        Cost=250
+        Equipments=DefGenerator
+        Fragility=75
+        KindGraph=TechnolitDefGenerator
+        LevelsCount=3
+        Name=Technolytic Shield Generator III
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=50
+        Ruins=RC,TC,MC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=RevAcryn_TechnolitDefGenerator1
+        SerieLevel2=RevAcryn_TechnolitDefGenerator2
+        SerieLevel3=RevAcryn_TechnolitDefGenerator3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Technolytic equipment runs on an acrylic matter restructuring generator. The radiation affects the thickness of the armor, thereby increasing it in size. Equipment that uses such a generator works more efficiently and also becomes noticeably more resistant to breakage. Unfortunately, due to the restructuring of atomic bonds in the armor material, the force of the hull's gravitational field increases significantly.</color>
+        Text=<clr><clrEnd>
+        Text=Hull armor: <bonHull>
+        Text=Shield generator: <bonDef>%
+        Text=Technology skill: <bonSkill3>
+        Text=Ship mass: <bonMass>%
+        Text=Realiability: <clr>+33%<clrEnd>
+        bonDef=2
+        bonHull=3
+        bonMass=17
+        bonSkill3=-1
+    }
+    RevAcryn_TechnolitHook1 ^{
+        AcrynLevel=1
+        AcrynSerie=Technolytic Gripper I-III
+        Cost=150
+        Equipments=Hook
+        Fragility=100
+        KindGraph=TechnolitHook
+        LevelsCount=3
+        Name=Technolytic Gripper I
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=10
+        Ruins=RC,TC,MC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=RevAcryn_TechnolitHook1
+        SerieLevel2=RevAcryn_TechnolitHook2
+        SerieLevel3=RevAcryn_TechnolitHook3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Technolytic equipment runs on an acrylic matter restructuring generator. The radiation affects the thickness of the armor, thereby increasing it in size. Equipment that uses such a generator works more efficiently and also becomes noticeably more resistant to breakage. Unfortunately, due to the restructuring of atomic bonds in the armor material, the force of the hull's gravitational field increases significantly.</color>
+        Text=<clr><clrEnd>
+        Text=Hull armor: <bonHull>
+        Text=Gripper power: <bonHook>
+        Text=Ship mass: <bonMass>%
+        bonHook=5
+        bonHull=1
+        bonMass=5
+    }
+    RevAcryn_TechnolitHook2 ^{
+        AcrynLevel=2
+        AcrynSerie=Technolytic Gripper I-III
+        Cost=200
+        Equipments=Hook
+        Fragility=85
+        KindGraph=TechnolitHook
+        LevelsCount=3
+        Name=Technolytic Gripper II
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=30
+        Ruins=RC,TC,MC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=RevAcryn_TechnolitHook1
+        SerieLevel2=RevAcryn_TechnolitHook2
+        SerieLevel3=RevAcryn_TechnolitHook3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Technolytic equipment runs on an acrylic matter restructuring generator. The radiation affects the thickness of the armor, thereby increasing it in size. Equipment that uses such a generator works more efficiently and also becomes noticeably more resistant to breakage. Unfortunately, due to the restructuring of atomic bonds in the armor material, the force of the hull's gravitational field increases significantly.</color>
+        Text=<clr><clrEnd>
+        Text=Hull armor: <bonHull>
+        Text=Gripper power: <bonHook>
+        Text=Ship mass: <bonMass>%
+        Text=Technology skill: <bonSkill3>
+        Text=Reliability: <clr>+17%<clrEnd>
+        bonHook=10
+        bonHull=2
+        bonMass=10
+        bonSkill3=-1
+    }
+    RevAcryn_TechnolitHook3 ^{
+        AcrynLevel=3
+        AcrynSerie=Technolytic Gripper I-III
+        Cost=250
+        Equipments=Hook
+        Fragility=75
+        KindGraph=TechnolitHook
+        LevelsCount=3
+        Name=Technolytic Gripper III
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=50
+        Ruins=RC,TC,MC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=RevAcryn_TechnolitHook1
+        SerieLevel2=RevAcryn_TechnolitHook2
+        SerieLevel3=RevAcryn_TechnolitHook3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Technolytic equipment runs on an acrylic matter restructuring generator. The radiation affects the thickness of the armor, thereby increasing it in size. Equipment that uses such a generator works more efficiently and also becomes noticeably more resistant to breakage. Unfortunately, due to the restructuring of atomic bonds in the armor material, the force of the hull's gravitational field increases significantly.</color>
+        Text=<clr><clrEnd>
+        Text=Hull armor: <bonHull>
+        Text=Gripper power: <bonHook>
+        Text=Ship mass: <bonMass>%
+        Text=Technology skill: <bonSkill3>
+        Text=Reliability: <clr>+33%<clrEnd>
+        bonHook=15
+        bonHull=3
+        bonMass=15
+        bonSkill3=-1
+    }
+    RevAcryn_TechnolitRadar1 ^{
+        AcrynLevel=1
+        AcrynSerie=Technolytic Radar I-III
+        Cost=150
+        Equipments=Radar
+        Fragility=100
+        KindGraph=TechnolitRadar
+        LevelsCount=3
+        Name=Technolytic Radar I
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=10
+        Ruins=RC,TC,MC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=RevAcryn_TechnolitRadar1
+        SerieLevel2=RevAcryn_TechnolitRadar2
+        SerieLevel3=RevAcryn_TechnolitRadar3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Technolytic equipment runs on an acrylic matter restructuring generator. The radiation affects the thickness of the armor, thereby increasing it in size. Equipment that uses such a generator works more efficiently and also becomes noticeably more resistant to breakage. Unfortunately, due to the restructuring of atomic bonds in the armor material, the force of the hull's gravitational field increases significantly.</color>
+        Text=<clr><clrEnd>
+        Text=Hull armor: <bonHull>
+        Text=Radar range: <bonRadar>
+        Text=Ship mass: <bonMass>%
+        bonHull=1
+        bonMass=5
+        bonRadar=100
+    }
+    RevAcryn_TechnolitRadar2 ^{
+        AcrynLevel=2
+        AcrynSerie=Technolytic Radar I-III
+        Cost=200
+        Equipments=Radar
+        Fragility=85
+        KindGraph=TechnolitRadar
+        LevelsCount=3
+        Name=Technolytic Radar II
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=30
+        Ruins=RC,TC,MC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=RevAcryn_TechnolitRadar1
+        SerieLevel2=RevAcryn_TechnolitRadar2
+        SerieLevel3=RevAcryn_TechnolitRadar3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Technolytic equipment runs on an acrylic matter restructuring generator. The radiation affects the thickness of the armor, thereby increasing it in size. Equipment that uses such a generator works more efficiently and also becomes noticeably more resistant to breakage. Unfortunately, due to the restructuring of atomic bonds in the armor material, the force of the hull's gravitational field increases significantly.</color>
+        Text=<clr><clrEnd>
+        Text=Hull armor: <bonHull>
+        Text=Radar range: <bonRadar>
+        Text=Ship mass: <bonMass>%
+        Text=Technology skill: <bonSkill3>
+        Text=Reliability: <clr>+17%<clrEnd>
+        bonHull=2
+        bonMass=10
+        bonRadar=200
+        bonSkill3=-1
+    }
+    RevAcryn_TechnolitRadar3 ^{
+        AcrynLevel=3
+        AcrynSerie=Technolytic Radar I-III
+        Cost=250
+        Equipments=Radar
+        Fragility=75
+        KindGraph=TechnolitRadar
+        LevelsCount=3
+        Name=Technolytic Radar III
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=50
+        Ruins=RC,TC,MC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=RevAcryn_TechnolitRadar1
+        SerieLevel2=RevAcryn_TechnolitRadar2
+        SerieLevel3=RevAcryn_TechnolitRadar3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Technolytic equipment runs on an acrylic matter restructuring generator. The radiation affects the thickness of the armor, thereby increasing it in size. Equipment that uses such a generator works more efficiently and also becomes noticeably more resistant to breakage. Unfortunately, due to the restructuring of atomic bonds in the armor material, the force of the hull's gravitational field increases significantly.</color>
+        Text=<clr><clrEnd>
+        Text=Hull armor: <bonHull>
+        Text=Radar range: <bonRadar>
+        Text=Ship mass: <bonMass>%
+        Text=Technology skill: <bonSkill3>
+        Text=Reliability: <clr>+33%<clrEnd>
+        bonHull=3
+        bonMass=15
+        bonRadar=300
+        bonSkill3=-1
+    }
+    RevAcryn_TechnolitScaner1 ^{
+        AcrynLevel=1
+        AcrynSerie=Technolytic Scanner I-III
+        Cost=150
+        Equipments=Scaner
+        Fragility=100
+        KindGraph=TechnolitScaner
+        LevelsCount=3
+        Name=Technolytic Scanner I
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=10
+        Ruins=RC,TC,MC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=RevAcryn_TechnolitScaner1
+        SerieLevel2=RevAcryn_TechnolitScaner2
+        SerieLevel3=RevAcryn_TechnolitScaner3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Technolytic equipment runs on an acrylic matter restructuring generator. The radiation affects the thickness of the armor, thereby increasing it in size. Equipment that uses such a generator works more efficiently and also becomes noticeably more resistant to breakage. Unfortunately, due to the restructuring of atomic bonds in the armor material, the force of the hull's gravitational field increases significantly.</color>
+        Text=<clr><clrEnd>
+        Text=Hull armor: <bonHull>
+        Text=Scanner power: <bonScan>%
+        Text=Ship mass: <bonMass>%
+        bonHull=1
+        bonMass=5
+        bonScan=1
+    }
+    RevAcryn_TechnolitScaner2 ^{
+        AcrynLevel=2
+        AcrynSerie=Technolytic Scanner I-III
+        Cost=200
+        Equipments=Scaner
+        Fragility=85
+        KindGraph=TechnolitScaner
+        LevelsCount=3
+        Name=Technolytic Scanner II
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=30
+        Ruins=RC,TC,MC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=RevAcryn_TechnolitScaner1
+        SerieLevel2=RevAcryn_TechnolitScaner2
+        SerieLevel3=RevAcryn_TechnolitScaner3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Technolytic equipment runs on an acrylic matter restructuring generator. The radiation affects the thickness of the armor, thereby increasing it in size. Equipment that uses such a generator works more efficiently and also becomes noticeably more resistant to breakage. Unfortunately, due to the restructuring of atomic bonds in the armor material, the force of the hull's gravitational field increases significantly.</color>
+        Text=<clr><clrEnd>
+        Text=Hull armor: <bonHull>
+        Text=Scanner power: <bonScan>%
+        Text=Ship mass: <bonMass>%
+        Text=Technology skill: <bonSkill3>
+        Text=Reliability: <clr>+17%<clrEnd>
+        bonHull=2
+        bonMass=10
+        bonScan=2
+        bonSkill3=-1
+    }
+    RevAcryn_TechnolitScaner3 ^{
+        AcrynLevel=3
+        AcrynSerie=Technolytic Scanner I-III
+        Cost=250
+        Equipments=Scaner
+        Fragility=75
+        KindGraph=TechnolitScaner
+        LevelsCount=3
+        Name=Technolytic Scanner III
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=50
+        Ruins=RC,TC,MC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=RevAcryn_TechnolitScaner1
+        SerieLevel2=RevAcryn_TechnolitScaner2
+        SerieLevel3=RevAcryn_TechnolitScaner3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Technolytic equipment runs on an acrylic matter restructuring generator. The radiation affects the thickness of the armor, thereby increasing it in size. Equipment that uses such a generator works more efficiently and also becomes noticeably more resistant to breakage. Unfortunately, due to the restructuring of atomic bonds in the armor material, the force of the hull's gravitational field increases significantly.</color>
+        Text=<clr><clrEnd>
+        Text=Hull armor: <bonHull>
+        Text=Scanner power: <bonScan>%
+        Text=Ship mass: <bonMass>%
+        Text=Technology skill: <bonSkill3>
+        Text=Reliability: <clr>+33%<clrEnd>
+        bonHull=3
+        bonMass=15
+        bonScan=3
+        bonSkill3=-1
+    }
+    RevAcryn_TwinEngine1 ^{
+        AcrynLevel=1
+        AcrynSerie=Twin Engine I-III
+        Cost=150
+        Equipments=Engine
+        Fragility=100
+        KindGraph=TwinEngine
+        LevelsCount=3
+        Name=Twin Engine I
+        Owner=Gaal,Fei
+        Priority=10
+        Ruins=RC,SB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=RevAcryn_TwinEngine1
+        SerieLevel2=RevAcryn_TwinEngine2
+        SerieLevel3=RevAcryn_TwinEngine3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A unique joint development by <color=255,240,100>Gaalian</color> and <color=255,240,100>Faeyan</color> scientists. It is built on the principle of precise synchronization of two separate engines. Separately from each other these power units are not of any interest, but working in a well-coordinated manner, they are capable of producing much more power than one would expect from engines of this class.</color>
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Mobility skill: <bonSkill2>
+        bonJump=4
+        bonSkill2=-2
+        bonSpeed=40
+    }
+    RevAcryn_TwinEngine2 ^{
+        AcrynLevel=2
+        AcrynSerie=Twin Engine I-III
+        Cost=200
+        Equipments=Engine
+        Fragility=125
+        KindGraph=TwinEngine
+        LevelsCount=3
+        Name=Twin Engine II
+        Owner=Gaal,Fei
+        Priority=30
+        Ruins=RC,SB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=RevAcryn_TwinEngine1
+        SerieLevel2=RevAcryn_TwinEngine2
+        SerieLevel3=RevAcryn_TwinEngine3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A unique joint development by <color=255,240,100>Gaalian</color> and <color=255,240,100>Faeyan</color> scientists. It is built on the principle of precise synchronization of two separate engines. Separately from each other these power units are not of any interest, but working in a well-coordinated manner, they are capable of producing much more power than one would expect from engines of this class.</color>
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Mobility skill: <bonSkill2>
+        bonJump=5
+        bonSkill2=-2
+        bonSpeed=50
+    }
+    RevAcryn_TwinEngine3 ^{
+        AcrynLevel=3
+        AcrynSerie=Twin Engine I-III
+        Cost=250
+        Equipments=Engine
+        Fragility=125
+        KindGraph=TwinEngine
+        LevelsCount=3
+        Name=Twin Engine III
+        Owner=Gaal,Fei
+        Priority=50
+        Ruins=RC,SB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=RevAcryn_TwinEngine1
+        SerieLevel2=RevAcryn_TwinEngine2
+        SerieLevel3=RevAcryn_TwinEngine3
+        Size=105
+        Special=1
+        Text=<color=248,252,248>A unique joint development by <color=255,240,100>Gaalian</color> and <color=255,240,100>Faeyan</color> scientists. It is built on the principle of precise synchronization of two separate engines. Separately from each other these power units are not of any interest, but working in a well-coordinated manner, they are capable of producing much more power than one would expect from engines of this class.</color>
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Mobility skill: <bonSkill2>
+        bonJump=6
+        bonSkill2=-2
+        bonSpeed=60
+    }
+    RevAcryn_TwinFuelTank1 ^{
+        AcrynLevel=1
+        AcrynSerie=Twin Fuel Tank I-III
+        Cost=150
+        Equipments=FuelTank
+        Fragility=100
+        KindGraph=TwinFuelTank
+        LevelsCount=3
+        Name=Twin Fuel Tank I
+        Owner=Gaal,Fei
+        Priority=10
+        Ruins=RC,SB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=RevAcryn_TwinFuelTank1
+        SerieLevel2=RevAcryn_TwinFuelTank2
+        SerieLevel3=RevAcryn_TwinFuelTank3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A unique joint development by <color=255,240,100>Gaalian</color> and <color=255,240,100>Faeyan</color> scientists. It is equipped with an advanced fuel delivery system. This tank's clever software controls the operation of four twin injectors, injecting fuel strictly at the boost phase of the engine's acceleration circuit, giving the ship a solid increase in speed and jumping range.</color>
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Mobility skill: <bonSkill2>
+        bonJump=4
+        bonSkill2=-2
+        bonSpeed=40
+    }
+    RevAcryn_TwinFuelTank2 ^{
+        AcrynLevel=2
+        AcrynSerie=Twin Fuel Tank I-III
+        Cost=200
+        Equipments=FuelTank
+        Fragility=125
+        KindGraph=TwinFuelTank
+        LevelsCount=3
+        Name=Twin Fuel Tank II
+        Owner=Gaal,Fei
+        Priority=30
+        Ruins=RC,SB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=RevAcryn_TwinFuelTank1
+        SerieLevel2=RevAcryn_TwinFuelTank2
+        SerieLevel3=RevAcryn_TwinFuelTank3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>A unique joint development by <color=255,240,100>Gaalian</color> and <color=255,240,100>Faeyan</color> scientists. It is equipped with an advanced fuel delivery system. This tank's clever software controls the operation of four twin injectors, injecting fuel strictly at the boost phase of the engine's acceleration circuit, giving the ship a solid increase in speed and jumping range.</color>
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Mobility skill: <bonSkill2>
+        bonJump=5
+        bonSkill2=-2
+        bonSpeed=50
+    }
+    RevAcryn_TwinFuelTank3 ^{
+        AcrynLevel=3
+        AcrynSerie=Twin Fuel Tank I-III
+        Cost=250
+        Equipments=FuelTank
+        Fragility=125
+        KindGraph=TwinFuelTank
+        LevelsCount=3
+        Name=Twin Fuel Tank III
+        Owner=Gaal,Fei
+        Priority=50
+        Ruins=RC,SB,TC,MB,Manaan,PlayerMB,PlayerMB_licensed
+        SerieLevel1=RevAcryn_TwinFuelTank1
+        SerieLevel2=RevAcryn_TwinFuelTank2
+        SerieLevel3=RevAcryn_TwinFuelTank3
+        Size=105
+        Special=1
+        Text=<color=248,252,248>A unique joint development by <color=255,240,100>Gaalian</color> and <color=255,240,100>Faeyan</color> scientists. It is equipped with an advanced fuel delivery system. This tank's clever software controls the operation of four twin injectors, injecting fuel strictly at the boost phase of the engine's acceleration circuit, giving the ship a solid increase in speed and jumping range.</color>
+        Text=<clr><clrEnd>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Mobility skill: <bonSkill2>
+        bonJump=6
+        bonSkill2=-2
+        bonSpeed=60
+    }
+    RevAcryn_Ubivator7 ^{
+        BlockImp=1
+        BlockMM=1
+        Cost=300
+        CustomTag=RevAcryn_Ubivator7
+        Equipments=Radar
+        Fragility=100
+        KindGraph=Ubivator
+        LockedAcryn=3
+        Name=</color>Uncontrollable Killer
+        NonSearchable=2
+        Priority=0
+        Size=75
+        Special=1
+        Text=<color=248,252,248>The five major galactic religions have anathematized the device, while seven have canonized it and made it the main object of their cult.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        TextReplace=<color=248,252,248>A product of the sick engineering fantasy of the mad Maloq genius <color=255,240,100>Bagorba Rgnaryk</color> - <color=255,240,100>"Uncontrollable Killer"</color>, containing a nearly unexplored most powerful device for universal energy conversion. When the <color=255,240,100>Killer</color> is placed in the <color=255,240,100>radar</color> compartment, all available energy in it is redirected to reinforce the gun subsystems. In this case it becomes impossible to use the radar, but the combat power of the ship increases dramatically.</color>
+        bonRadar=-500000000
+        bonWEnergy=20
+        bonWSplinter=30
+    }
+    RevAcryn_Ubivator8 ^{
+        BlockImp=1
+        BlockMM=1
+        Cost=400
+        CustomTag=RevAcryn_Ubivator8
+        Equipments=Radar
+        Fragility=100
+        KindGraph=Ubivator2
+        LockedAcryn=3
+        Name=</color>Unrestrained Killer
+        NonSearchable=2
+        Priority=0
+        Size=75
+        Special=1
+        Text=<color=248,252,248>In the glare of space explosions flames, on the front of the <color=255,240,100>Unrestrained Killer</color> hull, ominous inscription in the ancient Maloq dialect says: <color=255,240,100>"Do not tempt me, Hromdar, because I am unrestrained in my desires"</color>.</color>
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        TextReplace=<color=248,252,248>An even more deadly creation by <color=255,240,100>Bagorba Rgnaryk</color> - <color=255,240,100>"Unrestrained Killer"</color>. A truly insane device, claiming the secrecy level of hyperspace bubble technology. In wartime, however, forced onto the market despite an ever-increasing string of mysterious deaths associated with its manufacturing and transportation.</color>
+        bonRadar=-500000000
+        bonWEnergy=25
+        bonWSplinter=35
+    }
+}

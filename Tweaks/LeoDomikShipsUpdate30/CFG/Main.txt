@@ -1,0 +1,180 @@
+Data ^{
+    SE ^{
+        Ship ^{
+            Blazer ^{
+                B1 ^{
+                    Anim ^{
+                        0=1,[35,100-199]
+                        Normal=2,[35,0-99]
+                    }
+                    AnimS ^{
+                        Normal=2,[35,0-99]
+                    }
+                    SmeImage=64,64
+                    Tail1=51,108
+                    Tail2=78,108
+                }
+                B2 ^{
+                    Anim ^{
+                        0=1,[35,100-199]
+                        Normal=2,[35,0-99]
+                    }
+                    AnimS ^{
+                        Normal=2,[35,0-99]
+                    }
+                    SmeImage=64,64
+                    Tail1=58,112
+                    Tail2=69,112
+                }
+                B3 ^{
+                    Anim ^{
+                        0=1,[35,100-199]
+                        Normal=2,[35,0-99]
+                    }
+                    AnimS ^{
+                        Normal=2,[35,0-99]
+                    }
+                    SmeImage=64,64
+                }
+                B4 ^{
+                    Anim ^{
+                        0=1,[35,100-199]
+                        Normal=2,[35,0-99]
+                    }
+                    AnimS ^{
+                        Normal=2,[35,0-99]
+                    }
+                    SmeImage=64,64
+                    Tail1=63,95
+                }
+                B5 ^{
+                    Anim ^{
+                        0=1,[35,100-199]
+                        Normal=2,[35,0-99]
+                    }
+                    AnimS ^{
+                        Normal=2,[35,0-99]
+                    }
+                    SmeImage=64,64
+                    Tail1=63,94
+                }
+            }
+            Keller ^{
+                K1 ^{
+                    Anim ^{
+                        0=1,[35,100-199]
+                        Normal=2,[35,0-99]
+                    }
+                    AnimS ^{
+                        Normal=2,[35,0-99]
+                    }
+                    SmeImage=64,64
+                    Tail1=51,108
+                    Tail2=78,108
+                }
+                K2 ^{
+                    Anim ^{
+                        0=1,[35,100-199]
+                        Normal=2,[35,0-99]
+                    }
+                    AnimS ^{
+                        Normal=2,[35,0-99]
+                    }
+                    SmeImage=64,64
+                    Tail1=58,104
+                    Tail2=69,104
+                }
+                K3 ^{
+                    Anim ^{
+                        0=1,[35,100-199]
+                        Normal=2,[35,0-99]
+                    }
+                    AnimS ^{
+                        Normal=2,[35,0-99]
+                    }
+                    SmeImage=64,64
+                }
+                K4 ^{
+                    Anim ^{
+                        0=1,[35,100-199]
+                        Normal=2,[35,0-99]
+                    }
+                    AnimS ^{
+                        Normal=2,[35,0-99]
+                    }
+                    SmeImage=64,64
+                    Tail1=63,84
+                }
+                K5 ^{
+                    Anim ^{
+                        0=1,[35,100-199]
+                        Normal=2,[35,0-99]
+                    }
+                    AnimS ^{
+                        Normal=2,[35,0-99]
+                    }
+                    SmeImage=64,64
+                    Tail1=63,94
+                }
+            }
+            Terron ^{
+                T1 ^{
+                    Anim ^{
+                        0=1,[35,100-199]
+                        Normal=2,[35,0-99]
+                    }
+                    AnimS ^{
+                        Normal=2,[35,0-99]
+                    }
+                    SmeImage=64,64
+                    Tail1=51,108
+                    Tail2=78,108
+                }
+                T2 ^{
+                    Anim ^{
+                        0=1,[35,100-199]
+                        Normal=2,[35,0-99]
+                    }
+                    AnimS ^{
+                        Normal=2,[35,0-99]
+                    }
+                    SmeImage=64,64
+                    Tail1=58,115
+                    Tail2=69,115
+                }
+                T3 ^{
+                    Anim ^{
+                        0=1,[35,100-199]
+                        Normal=2,[35,0-99]
+                    }
+                    AnimS ^{
+                        Normal=2,[35,0-99]
+                    }
+                    SmeImage=64,64
+                }
+                T4 ^{
+                    Anim ^{
+                        0=1,[35,100-199]
+                        Normal=2,[35,0-99]
+                    }
+                    AnimS ^{
+                        Normal=2,[35,0-99]
+                    }
+                    SmeImage=64,64
+                    Tail1=63,82
+                }
+                T5 ^{
+                    Anim ^{
+                        0=1,[35,100-199]
+                        Normal=2,[35,0-99]
+                    }
+                    AnimS ^{
+                        Normal=2,[35,0-99]
+                    }
+                    SmeImage=64,64
+                    Tail1=63,92
+                }
+            }
+        }
+    }
+}

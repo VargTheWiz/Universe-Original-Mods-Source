@@ -1,0 +1,700 @@
+RankPirate ^{
+    Ataman ^{
+        Name=Capo
+        NameBig=Chief Capo
+        Text=Only truly distinguished persons with highly developed professional skills are capable of earning this rank. Careful, positions are limited!
+    }
+    Baron ^{
+        Name=Baron
+        NameBig=Supreme Baron
+        Text=The leader of the pirate movement. Only stars are cooler than him.
+    }
+    Khan ^{
+        Name=Khan
+        NameBig=Bloody Khan
+        Text=One of the leaders of the pirate movement, deadly and insanely charismatic. Every pirate dreams of obtaining this title someday.
+    }
+    Kid ^{
+        Name=Kid
+        NameBig=Raging Kid
+        Text=A regular Brotherhood fighter. Only good for destroying civilian ships and Ranger recruits.
+    }
+    NextRankGetText=A scoundrel was promoted to the rank of <NextRank>! It's time to hit the nearest pirate base.
+    NextRankText=<WarPoints> points required to earn the next rank.
+    Noobie ^{
+        Name=Noob
+        NameBig=Clueless Noob
+        Text=A novice pirate, capable of scamming transport ships while no one can see, but all the great achievements in the field of piracy are yet to come.
+    }
+    Rader ^{
+        Name=Raider
+        NameBig=Clever Raider
+        Text=A battle-hardened Brotherhood fighter capable of competing with Rangers and war fighters. That's the kind of guy who can take offense.
+    }
+    Rough ^{
+        Name=Cutthroat
+        NameBig=Militant Cutthroat
+        Text=A professional bandit who performs illegal tasks of any complexity. He's the kind of guy whose name you can't put in your mouth, 'cause he'll shoot and bury you if you do.
+    }
+    Skipper ^{
+        Name=Skipper
+        NameBig=Experienced Skipper
+        Text=An experienced pirate with a nose for gunpowder. Now it is he who hands out knuckle-sandwiches to aspiring bandits. Only goes for the big score.
+    }
+}
+RuinName ^{
+    BK ^{
+        52=Golden Antelope
+        53=Diamond Pickle
+        54=Bobby Kotick
+        55=Todd Howard
+        56=Sergei Mavrodi
+        57=Innovation and Investment
+        58=Discount
+        59=Speculator
+        60=Perspective
+    }
+    CB ^{
+        23=Heavy Metal
+        35=Beyond the Corner
+        36=Drunken Grinder
+        37=Defrocker
+        38=Spanking Card
+        39=Bad Feeling
+    }
+    MC ^{
+        52=Dangerous addiction
+        53=Open fracture
+        54=Inflammation of cunning
+        55=Euthanasia
+        56=Doctors' conspiracy
+        57=Amputations
+        58=Drunk doctor
+        59=Homeopaths
+        60=Free medicine
+        61=Eternal rest
+        62=Lobotomies
+        63=Asphyxia
+        64=Jatrophobia
+        65=Total isolation
+        66=Black surgeon
+        67=Foreign body
+        68=Homunculus
+        69=Laying on of hands
+        70=Antisanitary
+        71=Palliative care
+        72=An accident
+        73=Novocaine
+    }
+    PB ^{
+        43=Hard Rock
+        51=Torrent
+        52=Eye of the Storm
+    }
+    RC ^{
+        51=Mighty
+        52=Mohave
+        53=Texas
+        54=Serene
+        55=Flashing
+        56=The Last Hero
+    }
+    SB ^{
+        51=The Seven Wise Men
+        52=Renaissance
+        53=Antimatter
+        54=Dark Energy
+        55=Reionization
+        56=Quasiparticles
+        57=Event Horizon
+        58=Mesa
+        59=Empiricism
+    }
+    WB ^{
+        51=Napoleon
+        52=Gambit
+        53=Triumph
+        54=Paradise
+        55=Spartacus
+    }
+}
+ShipCharacter ^{
+    00=0,	100,	0,	Bandit
+    01=25,	75,	0,	Gangster
+    02=50,	50,	0,	Marauder
+    03=75,	25,	0,	Dealer
+    04=100,	0,	0,	Magnate
+    05=0,	75,	25,	Thug
+    06=25,	50,	25,	Raider
+    07=50,	25,	25,	Merchant
+    08=75,	0,	25,	Trader
+    09=0,	50,	50,	Corsair
+    10=20,	30,	50,	Mercenary
+    11=50,	0,	50,	Mercenary
+    12=0,	25,	75,	Warrior
+    13=25,	0,	75,	Defender
+    14=0,	0,	100,	Hero
+}
+ShipName ^{
+    Kling ^{
+        124=Samsung
+        125=Password
+        126=Aggregator
+        127=Setting
+        128=Debugger
+        129=Collector
+        130=Kilobyte
+        131=Blender
+        132=Dysasm
+        133=Delphi
+        134=Sharp
+        135=Unity
+        136=Kling
+        137=Megabyte
+        138=Mechanoid
+        139=Calculon
+        140=Nexus
+        141=Scout
+        142=Bishop
+        143=Gravitsap
+        144=Compiler
+        145=Desync
+        146=Unix
+        147=Fusion
+        148=Sorse
+        149=Discord
+        150=Daimon
+        151=Torrent
+        152=Gimper
+        153=Adblock
+        154=Codec
+        155=Avast
+        156=Winrar
+        157=Deblur
+        158=Nokia
+        159=Arduino
+        160=Skynet
+        161=Glados
+        162=Lenovo
+        163=Logitech
+        164=Intel
+        165=Swain
+        166=Kulpad
+        167=Ateros
+        168=Asus
+        169=Clicker
+        170=Matrox
+        171=Metacritic
+        172=Masthave
+        173=Anal
+        174=Ezer
+        175=Ocromer
+        176=Venom
+        177=Commie
+        178=Canon
+        179=Nikon
+        180=Lexmark
+        181=Emitter
+        182=Choke
+        183=Tiristor
+        184=Diode
+        185=Triode
+        186=Cathode
+        187=Resistor
+        188=Conductor
+        189=Rheostat
+        190=Pherite
+        191=Sennheiser
+        192=Texan
+        193=Panasonic
+        194=Sharp
+        195=Felix
+        196=Shindows
+        197=Spectrum
+        198=Perfocart
+        199=Kliner
+        200=Eset
+        201=Downloader
+        202=Bing
+        203=Walker
+        204=Shackaler
+        205=Jipeg
+        206=Herjay
+        207=Wolfram
+        208=Topatellor
+        209=Blackdudder
+        210=Camonore
+        211=Ddoser
+        212=Malbolger
+        213=Kafar
+        214=Imposible
+        215=Aironville
+        216=Merchant
+        217=Krafter
+        218=Genos
+        219=Kornilay
+        220=Batnik
+        221=Blockchain
+        222=Webinar
+        223=Designer
+        224=Junior
+        225=Manager
+        226=Frontrunner
+        227=Hackathon
+        228=Frameworks
+        229=Skycamer
+        230=Beholder
+        231=Kater
+        232=Ertix
+        233=Deskjet
+        234=Glass
+        235=Desfrey
+        236=Clutch
+        237=Cylon
+        238=Biomech
+        239=Macron
+        240=Mechanicus
+        241=Omnissium
+        242=Timer
+        243=Kloz
+        244=Energen
+        245=Zettabyte
+        246=Spotify
+        247=Lentach
+        248=Devkit
+        249=Querty
+        250=Rammstein
+        251=Missile
+        252=Technology Reaper
+        253=Cleaner
+        254=Nekron
+        255=Metal
+        256=Invis
+        257=Logout
+        258=Sabaton
+        259=Wizard
+        260=Ario
+        261=Hashtag
+        57=Linker
+    }
+    Pirate ^{
+        Fei ^{
+            100=Tafilex
+            101=None
+            102=Linippa
+            103=Egenia
+            104=Miliraki
+            105=Ammoniac
+            106=Lainia Ga
+            107=Gagliro
+            108=Allion
+            109=Kenia Ga
+            110=Lezairi
+            111=Elphaerco
+            112=Aleni
+            113=Jama'inu
+            114=Bayonet
+            115=Yakui
+            116=Ozoi
+            117=Soweno
+            118=Samurai
+            119=Luppa
+            89=Donati
+            90=Inoli Ga
+            91=Blum
+            92=Klisimayani
+            93=Lisinil
+            94=Flejanka-Ga
+            95=Litani
+            96=Ilon
+            97=Mentali-Ga
+            98=Lahinati
+            99=Ifilani-Ga
+        }
+        Gaal ^{
+            100=Coover
+            101=Strokaa
+            102=Sizoo
+            103=Bunin
+            104=Shakal
+            105=Ussama
+            106=Kapusta
+            107=Tuumba
+            108=Ko-o-ward
+            109=Riil-po
+            110=Herostraat
+            111=Portmoyado
+            112=Monteenegro
+            113=Buurbon
+            114=Elegiant
+            115=Authoraan
+            116=Aluucard
+            117=Librarian
+            118=Kel'back
+            119=Vansday
+            120=Gellion
+            90=Taarsa
+            91=Waa-vilon
+            92=Dy-nya
+            93=Glint-wain
+            94=Looners
+            95=Paanar
+            96=Tal-nu
+            97=Rosil
+            98=Boris
+            99=Vaarlo
+        }
+        Maloc ^{
+            100=Casketmaker
+            101=Troubadour
+            102=Grobon
+            103=Bundyn
+            104=Urbado
+            105=Tupanul
+            106=Bindral
+            107=Burullum
+            108=Gungal
+            109=Brangdrir
+            110=Bycha
+            111=Mrush
+            112=Zog
+            113=Gnaar
+            114=Zabivaca
+            115=Aquadrome
+            116=Cockpit
+            117=Zadira
+            118=Damb
+            119=Mannoroch
+            120=Kiddo
+            121=Hellbut
+            122=Kinder
+            123=Abyr
+            124=Strahopuka
+            125=Grumbumbes
+            90=Turbador
+            91=Karbenag
+            92=Bdynda
+            93=Barbas
+            94=Borkogragg
+            95=Ugryz
+            96=Dambam
+            97=Badumtyga
+            98=Badabzdum
+            99=Kedryk
+        }
+        Peleng ^{
+            100=Chui
+            101=Shalom
+            102=Shmattock
+            103=Spaler
+            104=Chest
+            105=Hush
+            106=Bite
+            107=Ushatai
+            108=Chakunai
+            109=Akhatsed
+            110=Harshen
+            111=Shakupats
+            112=Pkazai
+            113=Ekatya
+            114=Yeva
+            115=Shutz
+            116=Venancio
+            117=Shaumar
+            118=Sheidheda
+            119=Shizik
+            120=Shusha
+            94=Shekel
+            95=Peshkes
+            96=Goshan
+            97=Zelif
+            98=Shishka
+            99=Chocavo
+        }
+        People ^{
+            110=Ostap
+            111=Serg
+            112=Ivanich
+            113=Twist
+            114=Timokha
+            115=Kovboy
+            116=Molot
+            117=Shaman
+            118=Butterfly
+            119=Kastet
+            120=Pinochet
+            121=Sniper
+            122=Bullet
+            123=Machete
+            124=Heretic
+            125=Kazak
+            126=Mavrodi
+            127=Headman
+            128=The Cheeky
+            129=Levak
+            130=Suponev
+            131=Khovan
+            132=Chubais
+            133=Medved
+            134=Lared
+            135=Mikusik
+            136=Potap
+            137=Dyach
+            138=Zakhayev
+            139=Reynor
+            140=Taikus
+            141=Lindemann
+            142=Rounder
+            143=Dumbguy
+            144=Duskguy
+            145=XJet
+            146=Hadwig
+            147=Sonofagan
+            148=Griffith
+            149=Reaper
+            150=Stalker
+            151=Necromancer
+            152=Dowd
+            153=Whirlwind
+        }
+    }
+    Ranger ^{
+        Fei ^{
+            61=Fen
+            62=Fluid
+        }
+        Gaal ^{
+            60=Waaand
+            61=Snaapko
+            62=Zeleemon
+            63=Al'Jassan
+            64=Joataro
+        }
+        Maloc ^{
+            54=Butur
+            55=Durotan
+        }
+        Peleng ^{
+            56=Nazarik
+            57=Rinsweed
+            58=Sha
+            59=Hukutak
+        }
+        People ^{
+            70=Sedov
+            71=Syrtsov
+            72=Gedz
+            73=Tankist
+            74=Lukashevich
+            75=Valentin
+            76=Malt
+            77=Jeffrey
+            78=Stepanych
+            79=Dimon
+            80=Aizek
+            81=Nukeem
+            82=Booker
+            83=Snake
+            84=Allen
+            85=Arty
+            86=Kurcha
+            87=Wilverin
+            88=Wolf
+            89=Dante
+            90=Reynolds
+            91=Max
+            92=Gonzo
+            93=Letov
+            94=Corvo
+            95=Chuck
+            96=Anisim
+            97=Duke
+            98=Tsoi
+        }
+    }
+    Transport ^{
+        Fei ^{
+            151=Ober
+            152=Iris
+            153=Immit
+            154=Zerthiam
+            155=Duros
+            156=Fodel
+            157=Phenogram
+            158=Elis
+            159=Manil
+        }
+        Gaal ^{
+            153=Rteh
+            154=Gaap
+            155=Oisi
+            156=I'sharaj
+        }
+        Maloc ^{
+            152=Obrams
+            153=Baltar
+            154=Diamondback
+            155=Kil'Jeden
+        }
+        Peleng ^{
+            151=Raqs
+        }
+        People ^{
+            160=Atropos
+            161=Eden
+            162=Shaolin
+            163=Leviathan
+            164=Destination
+            165=Unicorn
+            166=Omen
+            167=Domino
+            168=Rapture
+            168=Desire
+            170=Cappadocia
+            171=Phanagoria
+            172=Ariadne
+            173=Camelot
+            174=Arcadia
+            175=Medusa
+            176=Herald
+            177=Crios
+            178=Hades
+            179=Morpheus
+            180=Arborea
+            181=Knoss
+            182=Triumvirate
+            183=Romulus
+            184=Asterisk
+        }
+    }
+    Warrior ^{
+        Fei ^{
+            32=Millenius
+            33=Feocari
+            34=Taimali
+            35=Laviani
+            36=Unaila
+            37=Teikila
+            38=Ollamia
+            39=Olitai
+            40=Lamaenni
+            41=Milikai
+            42=Dakanai
+            43=Elleni
+            44=Nalonium
+            45=Folaina
+            46=Melluni
+            47=Itami
+            48=Maltael
+            49=Libenthal
+        }
+        Gaal ^{
+            32=Mabia
+            33=Rool-Da
+            34=Tatuun
+            35=Balnoon
+            36=Roolite
+            37=Lazuur
+            38=Siinlab
+            39=Homoona
+            40=Bagat
+            41=Naarpik
+            42=Boonan
+            43=Mool-Da
+            44=Rool-Ta
+            45=Karbaa
+            46=Penal
+            47=Artaanis
+            48=Waarhound
+            49=Saytama
+            50=Welzevul
+            51=Saferon
+            52=DuGall
+        }
+        Maloc ^{
+            31=Haberron
+            32=Broomvelt
+            33=Drabanna
+            34=Borran
+            35=Haddar
+            36=Oggabor
+            37=Ugromer
+            38=Gawdadder
+            39=Arbon
+            40=Grondo
+            41=Tandira
+            42=Brundo
+            43=Dydon
+            44=Mormond
+            45=Godnodd
+            46=Nagiraptor
+            47=Loktar
+            48=Trall
+            49=Liberator
+            50=Tank
+            51=Ugragan
+            52=Kagyr
+            53=Emgyr
+        }
+        Peleng ^{
+            31=Rashkotsap
+            32=Jaboklatz
+            33=Kayshatz
+            34=Rahezal
+            35=Akats
+            36=Shichetsar
+            37=Shahirat
+            38=Kachezza
+            39=Kvakush
+            40=Laghver
+            41=Hashrash
+            42=Shrahon
+            43=Brechonz
+            44=Kloshetsa
+            45=Chalesca
+            46=Svordfish
+            47=Zilot
+        }
+        People ^{
+            32=Hannibal
+            33=Macedonian
+            34=Cyclone
+            35=Harpoon
+            36=Hepard
+            37=Eagle
+            38=Bear
+            39=Suvorov
+            40=Wanheda
+            41=Vityaz
+            42=Knight
+            43=Muromets
+            44=Perun
+            45=Samson
+            46=Bagrathion
+            47=Leopard
+            48=Naginata
+            49=Parabellum
+            50=Hunter
+            51=Hefest
+            52=Shepherd
+            53=Draigo
+            54=Ares
+            55=Tsunami
+            56=Hartman
+            57=Goplit
+            58=Cassandre
+            59=Ramirez
+            60=Tampler
+            61=Conung
+            62=Bloodreina
+            63=Terrorist
+            64=Thunderer
+            65=Kaiser
+            66=Valkyrie
+            67=Roland
+            68=Pompey
+            69=Fearless
+            70=Herald
+        }
+    }
+}

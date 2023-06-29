@@ -1,0 +1,64 @@
+FormLoadAB ^{
+    Group1=From mods
+}
+ABMap ^{
+    19 ^{
+        Access=1
+        Desc=There are ordinary hyperspatial bubbles, and there are such that you can’t really pick up a name for them. This particular one was repeatedly mentioned in the conversations of experienced pilots as one of the most incomprehensible and unpredictable places. For this, finally, it was nicknamed <color=0,69,231>"Nonsense"</color>.
+        Dif=1
+        Group=1
+        Image=Mods\Revolution\RevABMaps\DATA\ABMap\Nonsense.jpg
+        Map=ABMap.Nonsense
+        Name=Nonsense
+    }
+    20 ^{
+        Access=1
+        Desc=Battles in this stretch of hyperspatial have always been famous for their intensity and ruthlessness towards travelers from the explored arm of the galaxy. Not surprisingly, this bubble was nicknamed in honor of one of the most turbulent phenomena of endless cosmos.
+        Dif=3
+        Group=1
+        Image=Mods\Revolution\RevABMaps\DATA\ABMap\Pulsar.jpg
+        Map=ABMap.Pulsar
+        Name=Pulsar
+    }
+    21 ^{
+        Access=1
+        Desc=Being a pioneer is sometimes a thankless job. So the discoverer of <color=0,69,231>"Strolocobs"</color>, thinking the same way, named the newly opened bubble in honor of the timid Maloq animal, after which he immediately activated his subportal and left.
+        Desc=Perhaps you will be more courageous and be able to take a closer look at this curious place?
+        Dif=2
+        Group=1
+        Image=Mods\Revolution\RevABMaps\DATA\ABMap\Strolocobs.jpg
+        Map=ABMap.Strolocobs
+        Name=Strolocobs
+    }
+    22 ^{
+        Access=1
+        Desc=Brave explorers flew into this ill-fated bubble with fervent songs... They flew in and stayed in it forever.
+        Desc=Unsolved mysteries of <color=0,69,231>"Tachanka"</color> are still waiting for their hero, hiding either unseen treasures or ominous prophecies about the coming end of the world...
+        Dif=1
+        Group=1
+        Image=Mods\Revolution\RevABMaps\DATA\ABMap\Tachanka.jpg
+        Map=ABMap.Tachanka
+        Name=Tachanka
+    }
+    23 ^{
+        Access=1
+        Desc=Unnatural for any humanoid accustomed to classical space, a confusing place, the secret of the origin of which is still trying to comprehend the greatest Gaalic minds of the Galaxy. Perhaps you will be able to unravel it's ancient secrets?
+        Desc=One way or another, first you have to deal with the inhospitable inhabitants of the <color=0,69,231>fifth dimension</color>.
+        Dif=0
+        Group=1
+        Image=Mods\Revolution\RevABMaps\DATA\ABMap\Fifth_Dimension.jpg
+        Map=ABMap.Fifth_Dimension
+        Name=Fifth dimension
+    }
+    24 ^{
+        Access=1
+        Author=Mik
+        Desc=Although it seems to some orthodox scientists that the laws of evolution in parallel universes should be diametrically opposed to ours, some inexplicable hyperspatial phenomena simply reject this concept.
+        Desc=So this hyperspatial bubble at one time made a real sensation in the scientific community. What is this giant spider? Is he intelligent? Is this creature alive? Dead? Is this form just an artificial grotesque reflection of a creature from our reality? No convincing answers to all these questions have been found to this day...
+        Dif=3
+        Group=1
+        Image=Mods\Revolution\RevABMaps\DATA\ABMap\Spider's_Lair.jpg
+        Map=ABMap.Spider's_Lair
+        Name=Spider's lair
+    }
+}

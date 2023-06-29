@@ -1,0 +1,278 @@
+Data ^{
+    SE ^{
+        Item ^{
+            InhibitorPlaceBeacon ^{
+                2Image=Bm.ItemsUseless.2InhibitorPlaceBeacon_c
+                ImageMap=Bm.Container.Map0
+                PosZ=50
+            }
+        }
+        Ruins ^{
+            BlazerShipyard ^{
+                Image=Bm.Ruins.BlazerShipyard
+                ImageI=GI,Bm.Ruins.BlazerShipyardi
+                ImageMap=GI,Bm.Ruins.BlazerShipyard_map
+                PosZ=Ruins
+            }
+            Inhibitor ^{
+                Image=Bm.Ruins.InhibitorOffs
+                ImageI=GI,Bm.Ruins.Inhibitori
+                ImageMap=GI,Bm.Ruins.MapInhibitor
+                PosZ=Ruins
+            }
+            InhibitorOff ^{
+                Image=Bm.Ruins.InhibitorOffs
+                ImageI=GI,Bm.Ruins.Inhibitori
+                ImageMap=GI,Bm.Ruins.MapInhibitor
+                PosZ=Ruins
+            }
+            InhibitorOn ^{
+                Image=Bm.Ruins.InhibitorOns
+                ImageI=GI,Bm.Ruins.Inhibitori
+                ImageMap=GI,Bm.Ruins.MapInhibitor
+                PosZ=Ruins
+            }
+            KellerShipyard ^{
+                Image=Bm.Ruins.KellerShipyard
+                ImageI=GI,Bm.Ruins.KellerShipyardi
+                ImageMap=GI,Bm.Ruins.KellerShipyard_map
+                PosZ=Ruins
+            }
+            TerronShipyard ^{
+                Image=Bm.Ruins.TerronShipyard
+                ImageI=GI,Bm.Ruins.TerronShipyardi
+                ImageMap=GI,Bm.Ruins.TerronShipyard_map
+                PosZ=Ruins
+            }
+        }
+        Ship ^{
+            Akrin ^{
+                InhibitorOff ^{
+                    2ImageP=GI,Bm.Ship.Inhibitori
+                    Anim ^{
+                        Normal=4,[100,0-72]
+                    }
+                    AnimS ^{
+                        Normal=4,[100,0-72]
+                    }
+                    Image=Bm.Ship.InhibitorOffs
+                    ImageI=GI,Bm.Ruins.Inhibitori
+                    ImageMap=Bm.Ruins.MapInhibitor
+                    ImageS=Bm.Ship.Inhibitors
+                    PosZ=Ruins
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                }
+                InhibitorOn ^{
+                    2ImageP=GI,Bm.Ship.Inhibitori
+                    Anim ^{
+                        Normal=4,[100,0-72]
+                    }
+                    AnimS ^{
+                        Normal=4,[100,0-72]
+                    }
+                    Image=Bm.Ship.InhibitorOns
+                    ImageI=GI,Bm.Ruins.Inhibitori
+                    ImageMap=Bm.Ruins.MapInhibitor
+                    ImageS=Bm.Ship.Inhibitors
+                    PosZ=Ruins
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                }
+            }
+            TranclucatorBlue ^{
+                2ImageP=GI,Bm.ShipP.2TranclucatorBlue
+                Anim ^{
+                    0=1,[30,150-299]
+                    1=1,[30,300-449]
+                    Normal=2,[30,0-149]
+                }
+                AnimS ^{
+                    Normal=2,[30,0-149]
+                }
+                Image=Bm.Ship.TranclucatorBlue
+                ImageMap=Bm.Container.MapTranc
+                ImageS=Bm.Ship.TranclucatorBlues
+                PosZ=Tranclucator
+                SizeImage=128,128
+                SmeCenterImage=64,64
+                SmeImage=64,64
+                SmeImageMap=1,1
+                StateTime=2000
+            }
+            TranclucatorGreen ^{
+                2ImageP=GI,Bm.ShipP.2TranclucatorGreen
+                Anim ^{
+                    0=1,[30,150-299]
+                    1=1,[30,300-449]
+                    Normal=2,[30,0-149]
+                }
+                AnimS ^{
+                    Normal=2,[30,0-149]
+                }
+                Image=Bm.Ship.TranclucatorGreen
+                ImageMap=Bm.Container.MapTranc
+                ImageS=Bm.Ship.TranclucatorGreens
+                PosZ=Tranclucator
+                SizeImage=128,128
+                SmeCenterImage=64,64
+                SmeImage=64,64
+                SmeImageMap=1,1
+                StateTime=2000
+            }
+            TranclucatorRed ^{
+                2ImageP=GI,Bm.ShipP.2TranclucatorRed
+                Anim ^{
+                    0=1,[30,150-299]
+                    1=1,[30,300-449]
+                    Normal=2,[30,0-149]
+                }
+                AnimS ^{
+                    Normal=2,[30,0-149]
+                }
+                Image=Bm.Ship.TranclucatorRed
+                ImageMap=Bm.Container.MapTranc
+                ImageS=Bm.Ship.TranclucatorReds
+                PosZ=Tranclucator
+                SizeImage=128,128
+                SmeCenterImage=64,64
+                SmeImage=64,64
+                SmeImageMap=1,1
+                StateTime=2000
+            }
+        }
+        Sound ^{
+            Loop ^{
+                Ruins ^{
+                    BlazerShipyard ^{
+                        10=3000,Sound.LoopRuins03
+                    }
+                    InhibitorOffs ^{
+                    }
+                    InhibitorOns ^{
+                    }
+                    Inhibitors ^{
+                    }
+                    KellerShipyard ^{
+                        10=3000,Sound.LoopRuins03
+                    }
+                    TerronShipyard ^{
+                        10=3000,Sound.LoopRuins03
+                    }
+                    dom_ruins ^{
+                        10=3000,Sound.LoopRuins03
+                    }
+                }
+            }
+            Rnd ^{
+                Ruins ^{
+                    BlazerShipyard ^{
+                    }
+                    InhibitorOffs ^{
+                    }
+                    InhibitorOns ^{
+                    }
+                    Inhibitors ^{
+                    }
+                    KellerShipyard ^{
+                    }
+                    TerronShipyard ^{
+                    }
+                    dom_ruins ^{
+                    }
+                }
+            }
+        }
+        Weapon ^{
+            10 ^{
+                Palettes ^{
+                    50 ^{
+                        Color0=0.3,1.0,0.3
+                        Color1=0.2,0.8,0.2
+                        Color2=0.1,1.0,0.3
+                        Color3=0.1,1.0,0.2
+                        Color4=0.0,1.0,0.0
+                        Color5=0.3,1.0,0.0
+                        SoundShot=Sound.Railgun
+                    }
+                }
+            }
+            12 ^{
+                Palettes ^{
+                    1 ^{
+                        Color0=0.50,1.00,0.33
+                        Color1=0.47,0.93,0.31
+                        Color2=0.43,0.87,0.29
+                        Color3=0.40,0.80,0.27
+                        Color4=0.37,0.73,0.24
+                        Color5=0.33,0.67,0.22
+                        Color6=0.30,0.60,0.20
+                        Color7=0.27,0.53,0.18
+                        SoundShot=Sound.shot12
+                    }
+                    2 ^{
+                        Color0=0.50,0.33,1.00
+                        Color1=0.47,0.31,0.93
+                        Color2=0.43,0.29,0.87
+                        Color3=0.40,0.27,0.80
+                        Color4=0.37,0.24,0.73
+                        Color5=0.33,0.22,0.67
+                        Color6=0.30,0.20,0.60
+                        Color7=0.27,0.18,0.53
+                        SoundShot=Sound.shot12
+                    }
+                    3 ^{
+                        Color0=0.33,0.70,0.70
+                        Color1=0.31,0.66,0.66
+                        Color2=0.29,0.63,0.63
+                        Color3=0.27,0.60,0.60
+                        Color4=0.24,0.56,0.56
+                        Color5=0.22,0.53,0.53
+                        Color6=0.20,0.50,0.50
+                        Color7=0.18,0.46,0.46
+                        SoundShot=Sound.shot12
+                    }
+                }
+            }
+            13 ^{
+                Palettes ^{
+                    1 ^{
+                        GAI=Bm.Weapon.VertixGreenEffect
+                        SoundShot=Sound.shot13
+                    }
+                    2 ^{
+                        GAI=Bm.Weapon.VertixVioletEffect
+                        SoundShot=Sound.shot13
+                    }
+                    3 ^{
+                        GAI=Bm.Weapon.VertixTurquoiseEffect
+                        SoundShot=Sound.shot13
+                    }
+                }
+            }
+            9 ^{
+                Palettes ^{
+                    3 ^{
+                        Color0=0.2,1.0,0.2
+                        Color1=0.2,0.7,0.2
+                        Color2=0.4,0.4,0.4
+                        Color3=0.3,0.2,0.7
+                        GAI=Bm.Weapon.W10_green
+                    }
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_ShuDomiks=1,Script.Mod_ShuDomiks
+    }
+    ScriptLibs ^{
+        Mod_ShuDomiks=UtilityFunctions
+    }
+}

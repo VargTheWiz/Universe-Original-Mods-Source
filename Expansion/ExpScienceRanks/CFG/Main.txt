@@ -1,0 +1,559 @@
+Data ^{
+    SE ^{
+        Ship ^{
+            Akrin ^{
+                MA ^{
+                    2ImageP=GI,Bm.ShipP.2MA
+                    Anim ^{
+                        0=1,[70,50-99]
+                        1=2,[70,0-49]
+                        2=0,[70,100-149]
+                        3=0,[70,150-199]
+                        4=0,[70,200-249]
+                        5=0,[70,250-299]
+                        6=0,[1,300-300]
+                        Normal=0,[1,300-300]
+                    }
+                    AnimS ^{
+                        0=2,[70,0-49]
+                        1=0,[70,50-99]
+                        2=0,[70,100-149]
+                        3=0,[1,150-150]
+                        Normal=0,[1,150-150]
+                    }
+                    Image=Bm.Ship.MA
+                    ImageMap=Bm.Ship.SpecialMap
+                    ImageS=Bm.Ship.MAs
+                    PanelPartnerImage=MA
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=65,98
+                }
+                MD ^{
+                    2ImageP=GI,Bm.ShipP.2MD
+                    Anim ^{
+                        0=0,[70,50-99]
+                        1=0,[70,0-49]
+                        2=0,[70,100-149]
+                        3=0,[70,150-199]
+                        4=2,[70,200-249]
+                        5=1,[70,250-299]
+                        6=0,[1,300-300]
+                        Normal=0,[1,300-300]
+                    }
+                    AnimS ^{
+                        0=0,[70,0-49]
+                        1=0,[70,50-99]
+                        2=2,[70,100-149]
+                        3=0,[1,150-150]
+                        Normal=0,[1,150-150]
+                    }
+                    Image=Bm.Ship.MD
+                    ImageMap=Bm.Ship.SpecialMap
+                    ImageS=Bm.Ship.MDs
+                    PanelPartnerImage=MD
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=65,98
+                }
+                MG ^{
+                    2ImageP=GI,Bm.ShipP.2MG
+                    Anim ^{
+                        0=0,[70,50-99]
+                        1=0,[70,0-49]
+                        2=2,[70,100-149]
+                        3=1,[70,150-199]
+                        4=0,[70,200-249]
+                        5=0,[70,250-299]
+                        6=0,[1,300-300]
+                        Normal=0,[1,300-300]
+                    }
+                    AnimS ^{
+                        0=0,[70,0-49]
+                        1=2,[70,50-99]
+                        2=0,[70,100-149]
+                        3=0,[1,150-150]
+                        Normal=0,[1,150-150]
+                    }
+                    Image=Bm.Ship.MG
+                    ImageMap=Bm.Ship.SpecialMap
+                    ImageS=Bm.Ship.MGs
+                    PanelPartnerImage=MG
+                    PosZ=Ship
+                    SizeImage=128,128
+                    SmeCenterImage=64,64
+                    SmeImage=64,64
+                    SmeImageMap=2,2
+                    StateTime=2000
+                    Tail1=65,98
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_ExpScienceRanks=1,Script.Mod_ExpScienceRanks
+    }
+    ScriptLibs ^{
+        Mod_ExpScienceRanks=UtilityFunctions
+    }
+}
+ML ^{
+    Scaner ^{
+        Panel ^{
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                    Panel ^{
+                        Panel ^{
+                        }
+                        ScienceRankImage ^{
+                            Panel ^{
+                                Image ^{
+                                    Active=False
+                                    Image=GI,Bm.FormShip2.2PR_SR
+                                    Name=ScienceRankImage
+                                    OnMouseEnterCode ^{
+                                        01=dword cur_ship=FormCurShip();
+                                        02=int infos=ShipFindCustomShipInfoByType(cur_ship,'BraveExplorer');
+                                        03=int rank_pos=ShipCustomShipInfoTextData(cur_ship,infos,3);
+                                        04=if(rank_pos==5)rank_pos=5;
+                                        05=else if(rank_pos==0 || rank_pos==7)rank_pos=2;
+                                        06=else if(rank_pos==3 || rank_pos==8)rank_pos=4;
+                                        07=else rank_pos=3;
+                                        08=str holes_left=ShipCustomShipInfoTextData(cur_ship,infos,2);
+                                        09=InterfaceState('Scaner','CustomRank_'+rank_pos,1);
+                                        10=str text;
+                                        11=str decl;
+                                        12=if(holes_left!='NoRank')
+                                        13 ^{
+                                            01=text=' '+CT('RankScientific.ToPromo');
+                                            02=int tint=holes_left;
+                                            03=if(tint<=0)decl='';
+                                            04=else if(tint==1)decl='OneHole';
+                                            05=else if(tint>=2 && tint<=4)decl='FewHoles';
+                                            06=else if(tint>=5 && tint<=20)decl='SomeHoles';
+                                            07=else
+                                            08 ^{
+                                                01=tint=substr(holes_left,1);
+                                                02=if(tint==1)decl='OneHole';
+                                                03=else if(tint>=2 && tint<=4)decl='FewHoles';
+                                                04=else if((tint>=5 && tint<=9) || tint==0)decl='SomeHoles';
+                                            }
+                                        }
+                                        14=else text=' '+CT('RankScientific.NoPromo');
+                                        15=str rank_text=ShipCustomShipInfoTextData(cur_ship,infos,3);
+                                        16=InterfaceText('Scaner','CustomRankName_'+rank_pos,CT('RankScientific.'+rank_text+'.Name'));
+                                        17=rank_text=CT('RankScientific.'+rank_text+'.Text');
+                                        18=InterfaceText('Scaner','CustomRankText_'+rank_pos,rank_text+Format(text,'<Holes>',holes_left,'<HolesDeclension>','</color>'+CT('RankScientific.'+decl)));
+                                    }
+                                    OnMouseLeaveCode ^{
+                                        01=InterfaceState('Scaner','CustomRank_2',-1);
+                                        02=InterfaceState('Scaner','CustomRank_3',-1);
+                                        03=InterfaceState('Scaner','CustomRank_4',-1);
+                                        04=InterfaceState('Scaner','CustomRank_5',-1);
+                                    }
+                                    Pos=5,-2
+                                    Size=96,26
+                                }
+                                Pos=183,26
+                                Size=110,40
+                            }
+                        }
+                    }
+                }
+            }
+            Window ^{
+            }
+            Window ^{
+            }
+            Window ^{
+            }
+            Window ^{
+            }
+            Window ^{
+                Active=False
+                Image ^{
+                    Active=True
+                    Image=GI,Bm.FormShip2.2BH_img
+                    Name=CustomRankImageL_2
+                    Pos=17,14,0
+                    Size=35,35
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2SmallBold
+                    Name=CustomRankName_2
+                    Pos=70,10,8
+                    Size=150,43
+                    TextColor=57,239,255
+                    WordWrap=True
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=Top
+                    Font=Font.2Small
+                    Name=CustomRankText_2
+                    Pos=15,65,8
+                    Size=275,200
+                    TextColor=255,255,255
+                    WordWrap=True
+                }
+                Name=CustomRank_2
+                Pos=380,31,5
+                PosAutoCorrection=True
+                PosAutoCorrectionXCoef=0.5
+                PosAutoCorrectionYCoef=0.5
+                Size=300,210
+                Style=Style.Window.2Simple
+            }
+            Window ^{
+                Active=False
+                Image ^{
+                    Active=True
+                    Image=GI,Bm.FormShip2.2BH_img
+                    Name=CustomRankImageL_3
+                    Pos=17,14,0
+                    Size=35,35
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2SmallBold
+                    Name=CustomRankName_3
+                    Pos=70,10,8
+                    Size=150,43
+                    TextColor=57,239,255
+                    WordWrap=True
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=Top
+                    Font=Font.2Small
+                    Name=CustomRankText_3
+                    Pos=22,65,8
+                    Size=260,200
+                    TextColor=255,255,255
+                    WordWrap=True
+                }
+                Name=CustomRank_3
+                Pos=380,31,5
+                PosAutoCorrection=True
+                PosAutoCorrectionXCoef=0.5
+                PosAutoCorrectionYCoef=0.5
+                Size=300,209
+                Style=Style.Window.2Simple
+            }
+            Window ^{
+                Active=False
+                Image ^{
+                    Active=True
+                    Image=GI,Bm.FormShip2.2BH_img
+                    Name=CustomRankImageL_4
+                    Pos=17,14,0
+                    Size=35,35
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2SmallBold
+                    Name=CustomRankName_4
+                    Pos=70,10,8
+                    Size=150,43
+                    TextColor=57,239,255
+                    WordWrap=True
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=Top
+                    Font=Font.2Small
+                    Name=CustomRankText_4
+                    Pos=15,65,8
+                    Size=250,200
+                    TextColor=255,255,255
+                    WordWrap=True
+                }
+                Name=CustomRank_4
+                Pos=398,31,5
+                PosAutoCorrection=True
+                PosAutoCorrectionXCoef=0.5
+                PosAutoCorrectionYCoef=0.5
+                Size=280,187
+                Style=Style.Window.2Simple
+            }
+            Window ^{
+                Active=False
+                Image ^{
+                    Active=True
+                    Image=GI,Bm.FormShip2.2BH_img
+                    Name=CustomRankImageL_5
+                    Pos=17,14,0
+                    Size=35,35
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2SmallBold
+                    Name=CustomRankName_5
+                    Pos=120,10,8
+                    Size=150,43
+                    TextColor=57,239,255
+                    WordWrap=True
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=Top
+                    Font=Font.2Small
+                    Name=CustomRankText_5
+                    Pos=15,65,8
+                    Size=330,150
+                    TextColor=255,255,255
+                    WordWrap=True
+                }
+                Name=CustomRank_5
+                Pos=320,31,5
+                PosAutoCorrection=True
+                PosAutoCorrectionXCoef=0.5
+                PosAutoCorrectionYCoef=0.5
+                Size=360,198
+                Style=Style.Window.2Simple
+            }
+        }
+    }
+    Ship ^{
+        Panel ^{
+            Panel ^{
+            }
+            Panel ^{
+                Panel ^{
+                }
+                Panel ^{
+                }
+                Panel ^{
+                    Panel ^{
+                    }
+                    Panel ^{
+                        Panel ^{
+                        }
+                        Panel ^{
+                            Image ^{
+                                Active=False
+                                Image=GI,Bm.FormShip2.2PR_SR
+                                Name=CustomRankImage_2
+                                OnMouseEnterCode ^{
+                                    01=int infos=ShipFindCustomShipInfoByType(Player(),'Science_rank_infos');
+                                    02=int rank_pos=ShipCustomShipInfoData(Player(),infos,1);
+                                    03=int holes_left=ShipCustomShipInfoData(Player(),infos,2);
+                                    04=InterfaceState('Ship','CustomRank_'+rank_pos,1);
+                                    05=InterfaceText('Ship','CustomRankName_'+rank_pos,ShipCustomShipInfoTextData(Player(),infos,2));
+                                    06=str text;
+                                    07=if(holes_left)text=' '+CT('RankScientific.ToPromo');
+                                    08=else text=' '+CT('RankScientific.Promo');
+                                    09=if(holes_left==-10)text=' '+CT('RankScientific.NoPromo');
+                                    10=str decl;
+                                    11=int tint=holes_left;
+                                    12=if(tint<=0)decl='';
+                                    13=else if(tint==1)decl='OneHole';
+                                    14=else if(tint>=2 && tint<=4)decl='FewHoles';
+                                    15=else if(tint>=5 && tint<=20)decl='SomeHoles';
+                                    16=else
+                                    17 ^{
+                                        01=tint=substr(holes_left,1);
+                                        02=if(tint==1)decl='OneHole';
+                                        03=else if(tint>=2 && tint<=4)decl='FewHoles';
+                                        04=else if((tint>=5 && tint<=9) || tint==0)decl='SomeHoles';
+                                    }
+                                    18=InterfaceText('Ship','CustomRankText_'+rank_pos,ShipCustomShipInfoTextData(Player(),infos,1)+Format(text,'<Holes>',holes_left,'<HolesDeclension>','</color>'+CT('RankScientific.'+decl)));
+                                }
+                                OnMouseLeaveCode ^{
+                                    01=InterfaceState('Ship','CustomRank_2',-1);
+                                    02=InterfaceState('Ship','CustomRank_3',-1);
+                                    03=InterfaceState('Ship','CustomRank_4',-1);
+                                    04=InterfaceState('Ship','CustomRank_5',-1);
+                                }
+                                Pos=5,-2
+                                Size=96,26
+                            }
+                            Image ^{
+                                Active=False
+                                Image=GI,Bm.FormShip2.2NextRank
+                                Name=CustomRankImage_2_NR
+                                Pos=80,2,-1
+                                Size=20,20
+                            }
+                            Pos=183,26
+                            Size=110,40
+                        }
+                    }
+                }
+            }
+            Window ^{
+            }
+            Window ^{
+            }
+            Window ^{
+            }
+            Window ^{
+            }
+            Window ^{
+            }
+            Window ^{
+                Active=False
+                Image ^{
+                    Active=True
+                    Image=GI,Bm.FormShip2.2BH_img
+                    Name=CustomRankImageL_2
+                    Pos=17,14,0
+                    Size=35,35
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2SmallBold
+                    Name=CustomRankName_2
+                    Pos=70,10,8
+                    Size=150,43
+                    TextColor=57,239,255
+                    WordWrap=True
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=Top
+                    Font=Font.2Small
+                    Name=CustomRankText_2
+                    Pos=15,65,8
+                    Size=275,200
+                    TextColor=255,255,255
+                    WordWrap=True
+                }
+                Name=CustomRank_2
+                Pos=380,31,5
+                PosAutoCorrection=True
+                PosAutoCorrectionXCoef=0.5
+                PosAutoCorrectionYCoef=0.5
+                Size=300,210
+                Style=Style.Window.2Simple
+            }
+            Window ^{
+                Active=False
+                Image ^{
+                    Active=True
+                    Image=GI,Bm.FormShip2.2BH_img
+                    Name=CustomRankImageL_3
+                    Pos=17,14,0
+                    Size=35,35
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2SmallBold
+                    Name=CustomRankName_3
+                    Pos=70,10,8
+                    Size=150,43
+                    TextColor=57,239,255
+                    WordWrap=True
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=Top
+                    Font=Font.2Small
+                    Name=CustomRankText_3
+                    Pos=22,65,8
+                    Size=260,200
+                    TextColor=255,255,255
+                    WordWrap=True
+                }
+                Name=CustomRank_3
+                Pos=380,31,5
+                PosAutoCorrection=True
+                PosAutoCorrectionXCoef=0.5
+                PosAutoCorrectionYCoef=0.5
+                Size=300,209
+                Style=Style.Window.2Simple
+            }
+            Window ^{
+                Active=False
+                Image ^{
+                    Active=True
+                    Image=GI,Bm.FormShip2.2BH_img
+                    Name=CustomRankImageL_4
+                    Pos=17,14,0
+                    Size=35,35
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2SmallBold
+                    Name=CustomRankName_4
+                    Pos=70,10,8
+                    Size=150,43
+                    TextColor=57,239,255
+                    WordWrap=True
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=Top
+                    Font=Font.2Small
+                    Name=CustomRankText_4
+                    Pos=15,65,8
+                    Size=250,200
+                    TextColor=255,255,255
+                    WordWrap=True
+                }
+                Name=CustomRank_4
+                Pos=398,31,5
+                PosAutoCorrection=True
+                PosAutoCorrectionXCoef=0.5
+                PosAutoCorrectionYCoef=0.5
+                Size=280,187
+                Style=Style.Window.2Simple
+            }
+            Window ^{
+                Active=False
+                Image ^{
+                    Active=True
+                    Image=GI,Bm.FormShip2.2BH_img
+                    Name=CustomRankImageL_5
+                    Pos=17,14,0
+                    Size=35,35
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=CenterEx
+                    Font=Font.2SmallBold
+                    Name=CustomRankName_5
+                    Pos=120,10,8
+                    Size=150,43
+                    TextColor=57,239,255
+                    WordWrap=True
+                }
+                Label ^{
+                    AlignX=Center
+                    AlignY=Top
+                    Font=Font.2Small
+                    Name=CustomRankText_5
+                    Pos=15,65,8
+                    Size=330,150
+                    TextColor=255,255,255
+                    WordWrap=True
+                }
+                Name=CustomRank_5
+                Pos=320,31,5
+                PosAutoCorrection=True
+                PosAutoCorrectionXCoef=0.5
+                PosAutoCorrectionYCoef=0.5
+                Size=360,198
+                Style=Style.Window.2Simple
+            }
+        }
+    }
+}

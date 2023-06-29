@@ -1,0 +1,175 @@
+MicroModuls ^{
+    EvoMMUnique_Demplifier ^{
+        Color=0,150,0
+        Cost=125
+        CustomTag=UnMM_PB
+        Equipments=WEnergy,WSplinter
+        Fragility=70
+        KindGraph=Un
+        LockedAcryn=3
+        Name=Demplifier
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Unique micromodule. Represents a miniature cold fusion reactor that, when activated, translates the pressure from the dispersal chambers directly into the barrels of the <clr>fragmentation weapon<clrEnd>. Alternatively, fusion energy can also be used to directly amplify the firing power of <clr>energy weapon<clrEnd>.
+        Text=<clr><clrEnd>
+        Text=Additional effect: <clr>ionization of target<clrEnd>
+        Text=Energy weapons damage: <bonWEnergy>
+        Text=Fragmentation weapons damage: <bonWSplinter>
+        Text=Firing range: <bonWRadius>
+        Text=Reliability: <clr>+42%<clrEnd>
+        Text=Cost: <clr>+25%<clrEnd>
+        UniqueMM=1
+        WeaponMods=Shock
+        bonWEnergy=35
+        bonWRadius=50
+        bonWSplinter=45
+    }
+    EvoMMUnique_Droiser ^{
+        Color=0,150,0
+        Cost=135
+        CustomTag=UnMM_MC
+        Equipments=Droid,DefGenerator
+        Fragility=70
+        KindGraph=Un
+        LockedAcryn=3
+        Name=Droiser
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Unique micromodule. The study of the memory bank of the droid R2D2, found in the archives of the "Shadow of the Empire", at first was carried out out of banal curiosity, but very soon it turned out that with its help it was possible to significantly improve some modern technologies.
+        Text=<clr><clrEnd>
+        Text=Droid effectiveness: <bonDroid>
+        Text=Shield generator: <bonDef>%
+        Text=Reliability: <clr>+42%<clrEnd>
+        Text=Cost: <clr>+35%<clrEnd>
+        UniqueMM=1
+        bonDef=12
+        bonDroid=45
+    }
+    EvoMMUnique_Enricher ^{
+        Color=0,150,0
+        Cost=150
+        CustomTag=UnMM_BK
+        Equipments=Engine
+        Fragility=85
+        KindGraph=Un
+        LockedAcryn=3
+        Name=Enricher
+        NonSearchable=1
+        Owner=People,None,NonKling
+        Priority=0
+        Special=1
+        Text=Unique micromodule. Just made to get rich quick. Compatible with <clr>human<clrEnd> and <clr>unknown<clrEnd> equipment.
+        Text=<clr><clrEnd>
+        Text=Commerce skill: <bonSkill4>
+        Text=Engine speed: <bonSpeed>
+        Text=Jumping range: <bonJump>
+        Text=Reliability: <clr>+15%<clrEnd>
+        Text=Cost: <clr>+50%<clrEnd>
+        UniqueMM=1
+        bonJump=10
+        bonSkill4=1
+        bonSpeed=150
+    }
+    EvoMMUnique_Rediarcher ^{
+        Color=0,150,0
+        Cost=125
+        CustomTag=UnMM_SB
+        Equipments=FuelTank,Engine,Radar,Scaner
+        KindGraph=Un
+        LockedAcryn=3
+        Name=Rediarcher
+        NonSearchable=1
+        Owner=None,NonKling
+        Priority=0
+        Special=1
+        Text=Unique micromodule. An unfortunate experiment by the Coalition's brilliant microengineering minds. Initially, it was supposed to be universal and unparalleled solution to amplify all the types of onboard equipment needed by any scientist. The scientists succeeded in the latter, but missed the mark with the universality. The micromodule simply does not fit <clr>any Coalition equipment<clrEnd>.
+        Text=<clr><clrEnd>
+        Text=Jumping range: <bonJump>
+        Text=Fuel tank capacity: <bonFuel>
+        Text=Radar range: <bonRadar>
+        Text=Scanner power: <bonScan>%
+        Text=Cost: <clr>+25%<clrEnd>
+        UniqueMM=1
+        bonFuel=40
+        bonJump=20
+        bonRadar=2100
+        bonScan=20
+    }
+    EvoMMUnique_Relicter ^{
+        Color=0,150,0
+        Cost=125
+        CustomTag=UnMM_WB
+        Equipments=WMissile
+        KindGraph=Un
+        LockedAcryn=3
+        Name=Relicter
+        NonSearchable=1
+        Priority=0
+        Special=1
+        Text=Unique micromodule. Relict radiation, continuously produced in hyperspace, explains the physical processes occurring inside hyper-bubbles, the research of which made it possible to reduce the mass of missile warheads, thereby increasing the speed of missiles. Upon contact with a target, gravitational dispersion tears space in the impact area, causing additional damage, and because of the instability of gravity in this area - the matter tends to stay in place, which leads to a significant slowing of the target.
+        Text=<clr><clrEnd>
+        Text=Additional effect: <clr>slows target<clrEnd>
+        Text=Missile weapons damage: <bonWMissile>
+        Text=Missile speed: <bonMissileSpeed>
+        Text=Cost: <clr>+25%<clrEnd>
+        UniqueMM=1
+        WeaponMods=Decelerate,DecelerateA,DecelerateAEx
+        bonMissileSpeed=400
+        bonWMissile=40
+    }
+    EvoMMUnique_Structurizer ^{
+        Color=0,150,0
+        CustomTag=UnMM_RC
+        Equipments=Hull
+        KindGraph=Un
+        LockedAcryn=3
+        Name=Structurizer
+        NonSearchable=1
+        Owner=Maloc,Peleng,People,NonKling
+        Priority=0
+        Special=1
+        Text=Unique micromodule. Contains cryptofiber nanomaterials with embedded biophotons, emitting waves of the infrared range of the remote spectrum. When introduced into the <clr>hull<clrEnd> cladding, it induces a nuclear magnetic resonance that transforms the macromolecules of the hull into micromolecules and forms a hexagonal prismatic snowflake cluster structure, moving all heavy and coarse elements to the surface. This restructuring increases the internal capacity of the hull, allowing <clr>any possible equipment<clrEnd> to be fitted into it. For unknown reasons, it is only compatible with <clr>maloq<clrEnd>, <clr>peleng<clrEnd>, and <clr>human<clrEnd> hulls.
+        UniqueMM=1
+        bonSlotArt=4
+        bonSlotDef=1
+        bonSlotDroid=1
+        bonSlotHook=1
+        bonSlotRadar=1
+        bonSlotScaner=1
+        bonSlotWeapon=4
+    }
+}
+Script ^{
+    Mod_EvoMMUnique ~{
+        0=Get unique micromodule
+        17=As one of the best traders in the galaxy, we have a unique <0> micromodule for you
+        25=Enricher
+        1=Bro, today we have a super offer for you as a super cool pirate - a unique <0> micromodule!
+        26=Demplifier
+        18=Our best scientists have developed a unique <0> micromodule that positively affects unknown equipment.
+        27=Rediarcher
+        3=Thanks to your ranger merits you can buy a unique <0> micromodule from us.
+        28=Droiser
+        4=Your services, Ranger, are worthy of the highest praise. You are privileged to receive a unique <0> micromodule.
+        29=Structurizer
+        23=For your outstanding warrior services, we offer you the opportunity to buy our top-secret micromodule design <0>.
+        30=Relicter
+        6=Ranger <Player>, your service in destroying pirates and dominators deserves special praise. By decision of the Galactic Council you have been granted access to the secret micromodule section of the Ranger Center Network. We have developed a unique micromodule <0> specifically for you, which allows you to significantly increase the technical characteristics of any ship's hull. According to our pricing, this great micromodule will only cost you <1> cr.
+        7=Great, ranger! These <0> cr. will go to the Ranger Support Fund, and you will get our <1> micromodule in perfect condition!
+        8=Ranger <Player>, you are one of the bravest and most noble rangers in the history of the ranger organization, bravely freeing systems and saving innocent citizens from the iron grip of the Dominators. By decision of the Galactic Council, permission has been granted to give you access to a unique development of the Medical Center Network, the <0> micromodule. It will only cost you <1> cr.
+        24=Well done, ranger! Once again you've proven your valor and loyalty to the Coalition by transferring these <0> cr. to the Dominator War Relief Fund, and in return you get our <1> micromodule in excellent condition!
+        10=Brother <Player>, you have no idea what good news we have for you! The supreme members of the pirate clan decided to give you access to a unique development of our cool scientists - the <0> micromodule -  because of your awesome coolness and loyalty to your pirate career. But we can't give you that for free, so you'll have to give us <1> cr for it.<br>
+        11=Bravo, bro! You've proved your combat toughness and loyalty to pirates once again by transferring <0> cr. to our pirate base account! And in return, you get this powerful <1> micromodule!
+        12=Ranger <Player>, you are one of the finest warriors in the history of the Commonwealth, bravely fighting the pirate threat and protecting Coalition systems from the raids of criminals. By decision of the Galactic Council, you have been granted permission to access military's secret development of anti-dominator capabilities. We have developed a unique <0> micromodule to increase the effectiveness of the military fight against pirates and dominators, which allows you to significantly increase the power of any missile weapon. According to our pricing, it will cost you <1> cr. to buy this micromodule.
+        13=Thank you for your <0> cr. contribution to the war effort, Ranger <Player>! Thanks to you, the Interstellar Coalition now has more resources to fight its enemies, and you get this unique <1> micromodule!
+        19=Ranger <Player>, our scientists have developed a unique <0> micromodule based on their knowledge of unknown equipment from black holes. Thanks to your outstanding achievements against the dominators, we are ready to hand it over to you for only <1> cr.
+        20=Fine, ranger! Thank you for your contribution in support of science. The unique <0> micromodule has already been loaded into your cargo hold.
+        21=Ranger <Player>, you have been officially recognized by the Galactic Council as one of the best traders in the history of the ranger organization. You have been granted access to a secret development of the business center network, the <0> micromodule. You can purchase it now for <1> cr.
+        22=All right, ranger! Thank you for your contribution to our Business Center Network. This payment will be donated to the Last Refuge charity, and this <0> micromodule in excellent condition will be handed over to you!
+        14=I will buy it, nothing is too bad for such a price!
+        15=No thanks, some other time.
+        16=Thank you and see you soon!
+    }
+}

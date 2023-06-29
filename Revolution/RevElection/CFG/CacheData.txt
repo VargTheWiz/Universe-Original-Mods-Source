@@ -1,0 +1,9 @@
+Bm ~{
+    ItemsUseless ~{
+        2Capsule_c=Mods\Revolution\RevElection\DATA\ItemsUseless\Capsule.gai
+        2Capsule_s=Mods\Revolution\RevElection\DATA\ItemsUseless\Capsule.gi
+    }
+}
+Script ~{
+    Mod_RevElection=Mods\Revolution\RevElection\DATA\Script\Mod_RevElection.scr
+}

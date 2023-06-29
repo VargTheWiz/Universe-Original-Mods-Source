@@ -1,0 +1,5 @@
+Data ~{
+    Script ^{
+        Mod_RevBomber=1,Script.Mod_RevBomber
+    }
+}

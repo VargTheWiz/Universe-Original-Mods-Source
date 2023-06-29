@@ -1,0 +1,76 @@
+Bm ~{
+    Container ~{
+        2ExpPilotBridge_UselessProbe=data\ItemsUseless\2OperatedProbe.gai
+        2ExpPilotBridge_Wheatley=Mods\Expansion\ExpPilotBridge\DATA\Easter\2Wheatley.gai
+    }
+    FormCount2 ~{
+        2KindCredits=Mods\Expansion\ExpPilotBridge\DATA\NumberBox\2KindCredits.gi
+    }
+    FormRuins ~{
+        2CBRCAlphabg=Mods\Expansion\ExpPilotBridge\DATA\ShipPanels\ShipPanel.gi
+        2CBRHAlphabg=Mods\Expansion\ExpPilotBridge\DATA\ShipPanels\ShipPanelHangar.gi
+        2CBRUAlphabg=Mods\Expansion\ExpPilotBridge\DATA\ShipPanels\ScreenPanel.gi
+        2DBISAlphabg=Mods\Expansion\ExpPilotBridge\DATA\ShipPanels\DestroyerBridgeCustom.gi
+        2DestroyerBridgeAlphabg=Mods\Expansion\ExpPilotBridge\DATA\ShipPanels\DestroyerBridgeCustom.gi
+        NullBGImg=Mods\Expansion\ExpPilotBridge\DATA\ShipPanels\NullBGImg.gi
+    }
+    FormShip2 ~{
+        2LeftShort=Mods\Expansion\ExpPilotBridge\DATA\FormShipBGColorFix\2LeftShortColorFix.gi
+        2Right=Mods\Expansion\ExpPilotBridge\DATA\FormShipBGColorFix\2RightColorFix.gi
+        IntoA2=Mods\Expansion\ExpPilotBridge\DATA\FormShip2\IntoA2.gi
+        IntoD2=Mods\Expansion\ExpPilotBridge\DATA\FormShip2\IntoD2.gi
+        IntoN2=Mods\Expansion\ExpPilotBridge\DATA\FormShip2\IntoN2.gi
+    }
+    Items ~{
+        2ExpPilotBridge_Letters0_s=Mods\Expansion\ExpPilotBridge\DATA\ItemsUseless\Letters.gi
+        2ExpPilotBridge_Letters1_s=Mods\Expansion\ExpPilotBridge\DATA\ItemsUseless\Letters.gi
+        2ExpPilotBridge_Letters2_s=Mods\Expansion\ExpPilotBridge\DATA\ItemsUseless\Letters.gi
+        2ExpPilotBridge_Letters3_s=Mods\Expansion\ExpPilotBridge\DATA\ItemsUseless\Letters.gi
+        2ExpPilotBridge_Letters4_s=Mods\Expansion\ExpPilotBridge\DATA\ItemsUseless\Letters.gi
+    }
+    ItemsUseless ~{
+        2ExpPilotBridge_AcousticGuitar_s=Mods\Expansion\ExpPilotBridge\DATA\ItemsUseless\AcousticGuitar.gi
+        2ExpPilotBridge_Drum_s=Mods\Expansion\ExpPilotBridge\DATA\ItemsUseless\Drum.gi
+        2ExpPilotBridge_ElectricGuitar_s=data\ItemsUseless\guitar.gi
+        2ExpPilotBridge_Flute_s=Mods\Expansion\ExpPilotBridge\DATA\ItemsUseless\Flute.gi
+        2ExpPilotBridge_GrandPiano_s=Mods\Expansion\ExpPilotBridge\DATA\ItemsUseless\GrandPiano.gi
+        2ExpPilotBridge_Maracas_s=Mods\Expansion\ExpPilotBridge\DATA\ItemsUseless\Maracas.gi
+        2ExpPilotBridge_UselessProbe_s=data\ItemsUseless\2OperatedProbe.gi
+        2ExpPilotBridge_Wheatley_s=Mods\Expansion\ExpPilotBridge\DATA\Easter\2Wheatley.gi
+    }
+    Micromoduls ~{
+        2MMWheatley_Set=Mods\Expansion\ExpPilotBridge\DATA\Easter\2WheatleySet.gi
+        2MMWheatley_s=Mods\Expansion\ExpPilotBridge\DATA\Easter\2Wheatley.gi
+    }
+    PanelMain2 ~{
+        2TurnH=Mods\Expansion\ExpPilotBridge\DATA\ShipPanels\2TurnH.gi
+    }
+    Race ~{
+        Emblem ~{
+            2Aperture_Science_emblem=Mods\Expansion\ExpPilotBridge\DATA\Easter\AS_emblem.gi
+        }
+    }
+}
+Sound ~{
+    ExpPilotBridge_Drum_1=Mods\Expansion\ExpPilotBridge\DATA\Sounds\Drum_1.wav
+    ExpPilotBridge_Drum_2=Mods\Expansion\ExpPilotBridge\DATA\Sounds\Drum_2.wav
+    ExpPilotBridge_Drum_3=Mods\Expansion\ExpPilotBridge\DATA\Sounds\Drum_3.wav
+    ExpPilotBridge_E_Guitar_1=Mods\Expansion\ExpPilotBridge\DATA\Sounds\E_Guitar_1.wav
+    ExpPilotBridge_E_Guitar_2=Mods\Expansion\ExpPilotBridge\DATA\Sounds\E_Guitar_2.wav
+    ExpPilotBridge_E_Guitar_3=Mods\Expansion\ExpPilotBridge\DATA\Sounds\E_Guitar_3.wav
+    ExpPilotBridge_Flute_1=Mods\Expansion\ExpPilotBridge\DATA\Sounds\Flute_1.wav
+    ExpPilotBridge_Flute_2=Mods\Expansion\ExpPilotBridge\DATA\Sounds\Flute_2.wav
+    ExpPilotBridge_Flute_3=Mods\Expansion\ExpPilotBridge\DATA\Sounds\Flute_3.wav
+    ExpPilotBridge_Guitar_1=Mods\Expansion\ExpPilotBridge\DATA\Sounds\Guitar_1.wav
+    ExpPilotBridge_Guitar_2=Mods\Expansion\ExpPilotBridge\DATA\Sounds\Guitar_2.wav
+    ExpPilotBridge_Guitar_3=Mods\Expansion\ExpPilotBridge\DATA\Sounds\Guitar_3.wav
+    ExpPilotBridge_Maracas_1=Mods\Expansion\ExpPilotBridge\DATA\Sounds\Maracas_1.wav
+    ExpPilotBridge_Maracas_2=Mods\Expansion\ExpPilotBridge\DATA\Sounds\Maracas_2.wav
+    ExpPilotBridge_Maracas_3=Mods\Expansion\ExpPilotBridge\DATA\Sounds\Maracas_3.wav
+    ExpPilotBridge_Piano_1=Mods\Expansion\ExpPilotBridge\DATA\Sounds\Piano_1.wav
+    ExpPilotBridge_Piano_2=Mods\Expansion\ExpPilotBridge\DATA\Sounds\Piano_2.wav
+    ExpPilotBridge_Piano_3=Mods\Expansion\ExpPilotBridge\DATA\Sounds\Piano_3.wav
+}
+Script ~{
+    Mod_ExpPilotBridge=Mods\Expansion\ExpPilotBridge\DATA\Script\Mod_ExpPilotBridge.scr
+}

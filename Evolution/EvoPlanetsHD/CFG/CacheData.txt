@@ -1,0 +1,12 @@
+Bm ~{
+    PlanetBG ~{
+        ep01=Mods\Evolution\EvoPlanets\DATA\PlanetBG\1920-1080-ocean.gi
+        ep02=Mods\Evolution\EvoPlanets\DATA\PlanetBG\1920-1080-cloud.gi
+        ep03=Mods\Evolution\EvoPlanets\DATA\PlanetBG\1920-1080-nebula.gi
+        ep04=Mods\Evolution\EvoPlanets\DATA\PlanetBG\1920-1080-cliff.gi
+        ep05=Mods\Evolution\EvoPlanets\DATA\PlanetBG\1920-1080-red-planet.gi
+        ep06=Mods\Evolution\EvoPlanets\DATA\PlanetBG\1920-1080-violet-planet.gi
+        ep07=Mods\Evolution\EvoPlanets\DATA\PlanetBG\1920-1080-desert.gi
+        ep08=Mods\Evolution\EvoPlanets\DATA\PlanetBG\1920-1080-snow.gi
+    }
+}

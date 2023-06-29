@@ -1,0 +1,54 @@
+Script ^{
+    Mod_ShuWarriors ~{
+        NoWeAreUnderAttack=Negative, <Player>! Our system is under attack by enemy invaders, organizing an attack is not possible.
+        NoWeAreInCriticalShape=Negative, <Player>! Military base #0# is critically damaged, organizing an attack is not possible.
+        NoWeGotThisSector=Negative, <Player>! All systems within #0# parsecs of star #1# are under Coalition control. The cost of launching an attack on distant systems is too high, you must first relocate to a more convenient location.
+        NoWeAreAtTheMission=Negative, <Player>! At this moment, our military base is already involved in the preparation of a military operation. Organizing another attack is not possible.
+        RogerThat=Roger that
+        MilitaryOperationBegin=I order you to launch a military operation
+        AyeAyeCaptain=You, as Admiral of the Coalition, can give orders to organize military operations. Right now the priority target is the #0# system, and our #1# military base, led by a wing of elite combat pilots, is ready to move out. Shall we launch the attack?
+        IOrderYouToAttack=I order the attack to begin
+        AttackIsCanceled=Stand down
+        WeAreGoingOutSoon=The following ships will be involved in this operation:<br><br>#0#<br><br>After all the pilots are assembled at the station, we will begin the assault on system #1#. Now please leave the station as soon as possible.
+        ToHangar=To the hangar
+        40=<br>
+        41=<0>
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            EliteWarrior ^{
+                Description=NoShow
+                Icon=0
+                Name=Remove this infobox when updating mods with the obligatory beginning of the New Year
+            }
+        }
+    }
+}
+ShipType ^{
+    Fei ^{
+        Elite=Ecefar
+        EliteWarrior=Ecefar
+    }
+    Gaal ^{
+        Elite=Getereoga
+        EliteWarrior=Getereoga
+    }
+    Maloc ^{
+        Elite=Drakar
+        EliteWarrior=Drakar
+    }
+    Peleng ^{
+        Elite=Sharakesh
+        EliteWarrior=Sharakesh
+    }
+    People ^{
+        Elite=Fighter
+        EliteWarrior=Fighter
+    }
+    TypeName ^{
+        Elite=Military
+        EliteWarrior=Military
+    }
+}

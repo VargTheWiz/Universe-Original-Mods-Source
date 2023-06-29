@@ -1,0 +1,41 @@
+Script ~{
+    Mod_ShuHomeland ^{
+        12=Enabled
+        14=Disabled
+        15=Understood, I'll complete the mission!
+        17=Thank you!
+        18=Baron
+        19=Khan
+        20=Capo
+        21=Cutthroat
+        22=Skipper
+        23=Raider
+        24=Ship Boy
+        26=Oh, who's here! He've waited for you! I think, that you've already know, that your zeat didn't stay unnoticed. On behalf of the fellowship, we solemnly proclaims you <0>, and as a little gift, take <1>.<br>Keep it up, <Player>, the great Lyakushas are very pleased!
+        27=<0>
+        28=Thank you!
+        30=<color=0,50,200>Disable</color>
+        31=<color=0,50,200>Enable</color>
+        32=an. ab. attack
+        33=announcement about attack
+        34=Kraa
+        35=Atlas
+        36=Sol
+        37=Pkhedoc
+        38=Taron
+        39=Announcements about attacks on you native system: <0><br>
+        44=micromodule
+        48=Greetings, ranger <Player>! According to our data, you have already accumulated enough warrior points to get the rank <0>. As a reward for your services to the Coalition, we proudly present you <1>. Continue your fight against the invaders and, sooner or later, victory will be ours!<br>Also, on behalf of the local representative of the Ranger Center network, we hand over to you <2>. We hope that this modest gift will help you in your difficult task.<br><3>
+        49=And one more moment, <Player>. Men in black costumes ordered me to give you this secret case. They said, that you need to hand it over to the nearest flagship. I believe, that you've already understood importance of such a "request".
+        50=We're sorry, bro, but all our <color=255,240,100>pirate bases</color> have been destroyed. So you'll achieve new ranks on your native planet <0> in the system <1>.<br>But don't worry, we're working under building a new base.
+        51=Dear <Player>! We regret to inform, that all <color=255,240,100>military bases</color> in Galaxy have been destroyed. Before we'll build a new one, you can achieve new ranks on your native planet <0> in the system <1>.
+        55=Look out below!!! Your native system <0> is threatened by chance of occupation by counterrevolutionary elements. Hurry up and get in here before things get tough!
+        56=Look out below!!! Your native system <0> is under attack. Let's go help the brothers fight back, or else you homesystem will be lost!
+        57=Look out below!!! Enemies attacked your native system <0>. Go as fast as you can, or you'll lose your Motherland!
+        58=Attantion!!! Your native system <0> was attacked by enemies of Coalition! Go there as soon as possible and help warriors in their matter of defending system!
+        59=Attention!!! Your native system <0> is threaten by damn occupants! Help defenders, until your Motherland will fall under their attacks!
+        60=Attention!!! Your native system <0> was attacked by the enemy! We need your help in defending it!
+        8=Announcements about attacks on your native system
+        9=exit~End editing settings
+    }
+}

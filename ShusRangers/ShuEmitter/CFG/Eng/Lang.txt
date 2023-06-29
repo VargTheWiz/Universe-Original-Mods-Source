@@ -1,0 +1,643 @@
+ShuDomiks ^{
+    ShuEmitter=1
+}
+Items ^{
+    Weapon ^{
+        CustomWeapon ~{
+            StatsVersion ^{
+                ShuEmitter=07.06.20
+            }
+            ShuEmitter ~{
+                1=sub_gun
+                2=grav_beam
+                3=frag_gun
+                4=splash_faser
+                5=gaal_vision
+                6=slow_gun
+                7=sphere_gun
+                8=laser_gun
+                9=pulse_gun
+                10=pulse_gun2
+                11=maloc_laser
+                12=maloc_laser2
+                13=photon_gun
+                14=photon_gun2
+                15=photon_gun3
+                Count=15
+            }
+            sub_gun ~{
+                BaseGun=Atomic_Vision
+                MinDamage=8
+                MaxDamage=40
+                DamageSet=Energy,Destruct,BonusToDamaged
+                ShotType=Exploder
+                Speed=75
+                AverageRadius=345
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.15,1.20,1.25,1.30,1.35,1.40
+                ShotsPerTurn=3
+                ArcadeType=Caphasitor
+                MiningFactor=2
+                kCost=77
+                AverageSize=110
+                TechLevel=8
+                InventTechLevel=Turbogravitron
+                StoreAvailability=PeopleOnly
+                ShotEffectPath=Weapon.12
+                ShotEffectPalette=4
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            grav_beam ~{
+                BaseGun=Flux
+                MinDamage=22
+                MaxDamage=32
+                DamageSet=Energy,ScanBonus
+                ShotType=Normal
+                Speed=83
+                AverageRadius=365
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.15,1.20,1.25,1.30,1.50,2.00
+                ShotsPerTurn=1
+                ArcadeType=Flux
+                MiningFactor=2
+                kCost=11
+                AverageSize=60
+                TechLevel=4
+                InventTechLevel=Wave_Phaser
+                StoreAvailability=FeiOnly
+                ShotEffectPath=Weapon.2
+                ShotEffectPalette=5
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            frag_gun ~{
+                BaseGun=Fragmentation_Cannon
+                MinDamage=24
+                MaxDamage=40
+                DamageSet=Splinter,Decelerate,ReduceEngine
+                ShotType=Splash
+                Speed=61
+                AverageRadius=270
+                SecondaryDamageRadius=25
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.20,1.40,1.60,1.80,2.00,2.20,2.40
+                ShotsPerTurn=1
+                ArcadeType=Fragmentation_Cannon
+                MiningFactor=5
+                kCost=11
+                AverageSize=56
+                TechLevel=4
+                InventTechLevel=Flux
+                StoreAvailability=MalocOnly
+                ShotEffectPath=Weapon.1
+                ShotEffectPalette=5
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            splash_faser ~{
+                BaseGun=Fragmentation_Cannon
+                MinDamage=10
+                MaxDamage=18
+                DamageSet=Energy
+                ShotType=Splash
+                Speed=50
+                AverageRadius=300
+                SecondaryDamageRadius=130
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.20,1.40,1.60,1.80,2.00,2.20,2.40
+                ShotsPerTurn=1
+                ArcadeType=Multiresonator
+                MiningFactor=4
+                kCost=4.5
+                AverageSize=46
+                TechLevel=3
+                InventTechLevel=Wave_Phaser
+                StoreAvailability=Free
+                ShotEffectPath=Weapon.9
+                ShotEffectPalette=4
+                SplashEffectPath=Weapon.AuraEffect
+                MissileExplosionEffectPath=
+            }
+            gaal_vision ~{
+                BaseGun=Atomic_Vision
+                MinDamage=32
+                MaxDamage=48
+                DamageSet=Energy,BlockWeapon
+                ShotType=Splash
+                Speed=59
+                AverageRadius=330
+                SecondaryDamageRadius=115
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.15,1.20,1.25,1.30,1.35,1.40
+                ShotsPerTurn=1
+                ArcadeType=Atomic_Vision
+                MiningFactor=2
+                kCost=40
+                AverageSize=90
+                TechLevel=8
+                InventTechLevel=Disintegrator
+                StoreAvailability=GaalOnly
+                ShotEffectPath=Weapon.9
+                ShotEffectPalette=5
+                SplashEffectPath=Weapon.9
+                MissileExplosionEffectPath=
+            }
+            slow_gun ~{
+                BaseGun=Treton
+                MinDamage=17
+                MaxDamage=24
+                DamageSet=Energy,Decelerate,MoreDrop,DropCargo
+                ShotType=Normal
+                Speed=86
+                AverageRadius=380
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.15,1.20,1.25,1.30,1.40,1.50
+                ShotsPerTurn=1
+                ArcadeType=Treton
+                MiningFactor=1
+                kCost=13
+                AverageSize=40
+                TechLevel=5
+                InventTechLevel=Treton
+                StoreAvailability=PelengOnly
+                ShotEffectPath=Weapon.4
+                ShotEffectPalette=7
+                SplashEffectPath=Weapon.4
+                MissileExplosionEffectPath=
+            }
+            sphere_gun ~{
+                BaseGun=Turbogravitron
+                MinDamage=50
+                MaxDamage=75
+                DamageSet=Energy,Destruct,Magnetic
+                ShotType=Normal
+                Speed=74
+                AverageRadius=290
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.15,1.20,1.25,1.30,1.35,1.40
+                ShotsPerTurn=1
+                ArcadeType=Turbogravitron
+                MiningFactor=2
+                kCost=78
+                AverageSize=120
+                TechLevel=8
+                InventTechLevel=Turbogravitron
+                StoreAvailability=PirateOnly
+                ShotEffectPath=Weapon.16
+                ShotEffectPalette=15
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            laser_gun ~{
+                BaseGun=Atomic_Vision
+                MinDamage=12
+                MaxDamage=30
+                DamageSet=Splinter,BlockDroid
+                ShotType=Chain2
+                Speed=96
+                AverageRadius=285
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.15,1.20,1.25,1.30,1.35,1.40
+                ShotsPerTurn=2
+                ArcadeType=Atomic_Vision
+                MiningFactor=5
+                kCost=27
+                AverageSize=80
+                TechLevel=6
+                InventTechLevel=Multiresonator
+                StoreAvailability=PirateOnly
+                ShotEffectPath=Weapon.PDTurret
+                ShotEffectPalette=3
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            pulse_gun ~{
+                BaseGun=Disintegrator
+                MinDamage=50
+                MaxDamage=65
+                DamageSet=Energy,Destruct,Shock
+                ShotType=Normal
+                Speed=98
+                AverageRadius=325
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.15,1.20,1.25,1.30,1.35,1.40
+                ShotsPerTurn=1
+                ArcadeType=Fragmentation_Cannon
+                MiningFactor=3
+                kCost=38
+                AverageSize=100
+                TechLevel=7
+                InventTechLevel=Disintegrator
+                StoreAvailability=FeiOnly
+                ShotEffectPath=Weapon.8
+                ShotEffectPalette=5
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            pulse_gun2 ~{
+                BaseGun=Disintegrator
+                MinDamage=40
+                MaxDamage=70
+                DamageSet=Energy,Destruct,Shock
+                ShotType=Normal
+                Speed=97
+                AverageRadius=320
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.15,1.20,1.25,1.30,1.35,1.40
+                ShotsPerTurn=1
+                ArcadeType=Fragmentation_Cannon
+                MiningFactor=3
+                kCost=36
+                AverageSize=90
+                TechLevel=7
+                InventTechLevel=Disintegrator
+                StoreAvailability=PeopleOnly
+                ShotEffectPath=Weapon.8
+                ShotEffectPalette=5
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            maloc_laser ~{
+                BaseGun=Flux
+                MinDamage=25
+                MaxDamage=27
+                DamageSet=Energy,Acid,BonusToDamaged
+                ShotType=Normal
+                Speed=88
+                AverageRadius=290
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.15,1.20,1.25,1.30,1.50,2.00
+                ShotsPerTurn=1
+                ArcadeType=Flux
+                MiningFactor=2
+                kCost=4.6
+                AverageSize=60
+                TechLevel=3
+                InventTechLevel=Fragmentation_Cannon
+                StoreAvailability=MalocOnly
+                ShotEffectPath=Weapon.2
+                ShotEffectPalette=6
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            maloc_laser2 ~{
+                BaseGun=Flux
+                MinDamage=22
+                MaxDamage=25
+                DamageSet=Energy,Acid,BonusToDamaged
+                ShotType=Normal
+                Speed=87
+                AverageRadius=300
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.15,1.20,1.25,1.30,1.50,2.00
+                ShotsPerTurn=1
+                ArcadeType=Flux
+                MiningFactor=2
+                kCost=4.0
+                AverageSize=50
+                TechLevel=3
+                InventTechLevel=Fragmentation_Cannon
+                StoreAvailability=PelengOnly
+                ShotEffectPath=Weapon.2
+                ShotEffectPalette=6
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            photon_gun ~{
+                BaseGun=Industrial_Laser
+                MinDamage=8
+                MaxDamage=15
+                DamageSet=Energy,BlockWeapon
+                ShotType=Normal
+                Speed=68
+                AverageRadius=280
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.20,1.30,1.40,1.60,1.90,2.30
+                ShotsPerTurn=1
+                ArcadeType=Industrial_Laser
+                MiningFactor=2
+                kCost=1.1
+                AverageSize=20
+                TechLevel=1
+                InventTechLevel=Industrial_Laser
+                StoreAvailability=GaalOnly
+                ShotEffectPath=Weapon.0
+                ShotEffectPalette=52
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            photon_gun2 ~{
+                BaseGun=Industrial_Laser
+                MinDamage=8
+                MaxDamage=16
+                DamageSet=Energy,BlockDroid
+                ShotType=Normal
+                Speed=67
+                AverageRadius=260
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.20,1.30,1.40,1.60,1.90,2.30
+                ShotsPerTurn=1
+                ArcadeType=Industrial_Laser
+                MiningFactor=2
+                kCost=1.1
+                AverageSize=16
+                TechLevel=1
+                InventTechLevel=Industrial_Laser
+                StoreAvailability=PirateOnly
+                ShotEffectPath=Weapon.0
+                ShotEffectPalette=52
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+            photon_gun3 ~{
+                BaseGun=Industrial_Laser
+                MinDamage=9
+                MaxDamage=18
+                DamageSet=Energy,ReduceEngine
+                ShotType=Normal
+                Speed=66
+                AverageRadius=260
+                SecondaryDamageRadius=0
+                MissileRadius=0
+                MissileMinSpeed=0
+                MissileMaxSpeed=0
+                MissileChanceToBeHit=0
+                mWeaponDamage=1.00,1.10,1.20,1.30,1.40,1.60,1.90,2.30
+                ShotsPerTurn=1
+                ArcadeType=Industrial_Laser
+                MiningFactor=2
+                kCost=1.1
+                AverageSize=20
+                TechLevel=1
+                InventTechLevel=Industrial_Laser
+                StoreAvailability=MalocOnly
+                ShotEffectPath=Weapon.0
+                ShotEffectPalette=52
+                SplashEffectPath=Weapon.NoGraph
+                MissileExplosionEffectPath=
+            }
+        }
+        Name ^{
+            frag_gun=Zip Gun
+            gaal_vision=Field Annihilator
+            grav_beam=Graviton Beam
+            laser_gun=Blaster Е-11
+            maloc_laser=Combat Laser TB-47
+            maloc_laser2=Combat Laser TB-42
+            photon_gun=Photon Gun M4
+            photon_gun2=Photon Gun M3
+            photon_gun3=Photon Gun M2
+            pulse_gun=Pulse Gun R21
+            pulse_gun2=Pulse Gun R20
+            slow_gun=Retractor
+            sphere_gun=Vortex Projector
+            splash_faser=Splash Phaser
+            sub_gun=X-Defibrillator
+        }
+        OriginalWeaponType ~{
+            Industrial_Laser=1
+            Fragmentation_Cannon=2
+            Flux=3
+            Missile_Launcher=4
+            Treton=5
+            Wave_Phaser=6
+            Flow_Blaster=7
+            Electronic_Cutter=8
+            Multiresonator=9
+            Atomic_Vision=10
+            Disintegrator=11
+            Turbogravitron=12
+            IMHO-9000=13
+            Vertix=14
+            Torpedo_Tube=15
+            Esodapher=16
+            Caphasitor=17
+            Lirecron=18
+        }
+        Text ^{
+            frag_gun=Explosive projectiles deal <MinDamage>-<MaxDamage><Bonus> damage at the distance of <Radius>.<br>Also slows target and damages its engine.<br><color=255,240,100>Only produced by maloqs.</color>
+            gaal_vision=Hits the target and surrounding objects with an energy field, inflicting <MinDamage>-<MaxDamage><Bonus> damage at a distance not exceeding <Radius>.<br>Has a chance to block the target's weapon system. <br> <color=255,240,100>Only produced by gaalians.</color>
+            grav_beam=Produces tens of thousands graviton pulses per second, causing <MinDamage>-<MaxDamage><Bonus> damage at the distance up to <Radius>.<br>Deals extra damage when the scanner exceeds the target's defense.<br> <color=255,240,100>Only produced by faeyans.</color>
+            laser_gun=Performs two salvos, dealing <CntAttacks>x(<MinDamage>-<MaxDamage>)<Bonus> damage at the distance up to <Radius>.<br>Splits the damage between two targets if there are more present, otherwise deals additional damage to sole target.<br>Has a chance to block the droid's operation.
+            maloc_laser=Strikes the target with a powerful energy blast, dealing heavy damage from <MinDamage> up to <MaxDamage><Bonus> at the distance of <Radius>.<br>Deals extra damage to already damaged ships and weakens its armor, if the scanner exceeds target's defense.<br><color=255,240,100>Produced by maloqs and pelengs.</color>
+            maloc_laser2=Strikes the target with a powerful energy blast, dealing heavy damage from <MinDamage> up to <MaxDamage><Bonus> at the distance of <Radius>.<br>Deals extra damage to already damaged ships and weakens its armor, if the scanner exceeds target's defense.<br><color=255,240,100>Produced by maloqs and pelengs.</color>
+            photon_gun=Photon beam at a distance of up to <Radius> inflicting from <MinDamage> up to <MaxDamage><Bonus> damage. <br>Has a chance to block the target's weapon system. <br><color=255,240,100>Produced by maloqs, gaalians and pirates.</color>
+            photon_gun2=Photon beam at a distance of up to <Radius> inflicting from <MinDamage> up to <MaxDamage><Bonus> damage. <br>There is a chance of blocking the droid's operation. <br><color=255,240,100>Produced by maloqs, gaalians and pirates.</color>
+            photon_gun3=Photon beam at a distance of up to <Radius> inflicting from <MinDamage> up to <MaxDamage><Bonus> damage. <br>Damages the target's engine. <br><color=255,240,100>Produced by maloqs, gaalians and pirates.</color>
+            pulse_gun=Strikes the target with an ionized blob of energy, causing <MinDamage>-<MaxDamage><Bonus> damage at the range of <Radius>, affecting electronics of the taget ship.<br> <color=255,240,100>Produced by faeyans and humans.</color>
+            pulse_gun2=Strikes the target with an ionized blob of energy, causing <MinDamage>-<MaxDamage><Bonus> damage at the range of <Radius>, affecting electronics of the taget ship.<br> <color=255,240,100>Produced by faeyans and humans.</color>
+            slow_gun=Kinetic retraction generator slows target movement and deals <MinDamage>-<MaxDamage><Bonus> damage at the distance not exceeding <Radius>. It has a small chance to activate an emergency cargo dump command on the target's ship. Saves more valuable equipment when destroying the enemy.<br><color=255,240,100>Produced by pelengs only.</color>
+            sphere_gun=Destabilizes the atomic bonds of an object by means of a vortex flow, inflicting <MinDamage>-<MaxDamage><Bonus> damage, as well as destroying the target's equipment. Because of the unstable nature of the weapon, the kill radius is <Radius>.
+            splash_faser=An advanced combat phaser inflicts from <MinDamage> up to <MaxDamage><Bonus> damage to all ships in a small area not greater than <Radius>.
+            sub_gun=Generates defibrillation oscillations on the X-level, causing damage to the electronic equipment of the target. Deals <CntAttacks>x(<MinDamage>-<MaxDamage>)<Bonus> damage. Shots have range of <Radius>. Deals extra damage to damaged targets.<br><color=255,240,100>Produced only by humans.</color>
+        }
+    }
+}
+MicroModuls ^{
+    ShuEmitter_BallBeam ^{
+        Equipments=laser_gun
+        Name=Mor-beam
+        Owner=PirateClan
+        Priority=45
+        RacialRestriction=1
+        Text=Micromodule of the second level. Judging by its name, the developers of the <clr>pirate<clrEnd> clan were well aware of the principle: "More is better": it increases the rate of fire of <clr>Blaster E-11<clrEnd>, making it produce one more shot.
+        bonAttacks=1
+    }
+    ShuEmitter_ElephantGun ^{
+        Cost=200
+        Equipments=slow_gun
+        Name=Elephant gun
+        Priority=45
+        Size=120
+        Text=Level 2 micromodule. A set of <clrEnd>peleng<clrEnd> modifications that turn the <clr>Retractor<clrEnd> into a formidable ranged weapon designed to fight a heavily armored enemy.
+        Text=<clr><clrEnd>
+        Text=Additional effect: <clr>armor weakening<clrEnd>
+        Text=Energy weapons damage: <bonWEnergy> pt.
+        Text=Firing range: <bonWRadius> pt.
+        Text=Cost: <clr>+100%<clrEnd>
+        Text=Size: <clr>+20%<clrEnd>
+        WeaponMods=Acid
+        bonWEnergy=15
+        bonWRadius=40
+    }
+    ShuEmitter_Firehole ^{
+        Equipments=frag_gun
+        Name=Firehole
+        Priority=40
+        Text=Level two micromodule. Replaces the standard fragmentation shells of the <clr>Zip Gun<clrEnd> with incendiary ammunition which has a more significant armor piercing effect, resulting in the rapid destruction of all enemy equipment.
+        Text=<clr><clrEnd>
+        Text=Additional effect: <clr>equipment destruction<clrEnd>
+        Text=Framgentation weapons damage: <bonWSplinter> pt.
+        WeaponMods=Destruct
+        bonWSplinter=10
+    }
+    ShuEmitter_Gunbeam ^{
+        Cost=140
+        Equipments=maloc_laser,maloc_laser2
+        Name=Gunbeam
+        Priority=40
+        Size=85
+        Text=Level two micromodule. A major upgrade of the <clr>Combat Laser TB<clrEnd>, turning it into a lighter, more powerful, but also more expensive weapon, adapted for long-range combat. The project was rumored to have been stolen by a peleng from a Faeyan laboratory.
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy> pt.
+        Text=Firing range: <bonWRadius> pt.
+        Text=Size: <clr>-15%<clrEnd>
+        Text=Cost: <clr>+40%<clrEnd>
+        bonWEnergy=10
+        bonWRadius=30
+    }
+    ShuEmitter_LiPacific ^{
+        Cost=60
+        Equipments=gaal_vision
+        Name=Li-Pacific
+        Owner=Gaal
+        Priority=25
+        Size=65
+        Text=Level one micromodule. Removes some of the combat components of the <clr>Field Annihilator<clrEnd>, installing a more compact and inexpensive enemy deceleration module instead. Since all other races have found this approach to be ineffective, this module is only compatible with <clr>gaalian<clrEnd> guns.
+        Text=<clr><clrEnd>
+        Text=Additional effect: <clr>slows target<clrEnd>
+        Text=Energy weapons damage: <bonWEnergy> pt.
+        Text=Size: <clr>-35%<clrEnd>
+        Text=Cost: <clr>-40%<clrEnd>
+        WeaponMods=Decelerate,DecelerateA,DecelerateAEx
+        bonWEnergy=-7
+    }
+    ShuEmitter_Penny ^{
+        Cost=50
+        Equipments=photon_gun,photon_gun2,photon_gun3
+        Fragility=200
+        Name=Penny
+        Owner=Any
+        Priority=90
+        Size=60
+        Text=Level three micromodule. Transforms a <clr>Photon Gun<clrEnd> into a very flimsy, compact and cheap (by the standards of onboard guns), making it the analog of the powerful, but extremely short-range Malok hovercraft Penny gun.
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy> pt.
+        Text=Firing range: <bonWRadius> pt.
+        Text=Size: <clr>-40%<clrEnd>
+        Text=Cost: <clr>-50%<clrEnd>
+        Text=Reliability: <clr>-50%<clrEnd>
+        bonWEnergy=15
+        bonWRadius=-70
+    }
+    ShuEmitter_PulseBlockR2 ^{
+        Cost=150
+        Equipments=pulse_gun
+        Name=Pulse-Block R2
+        Owner=Fei
+        Priority=5
+        Text=Level one micromodule. Connects an experimental energy clot generation unit that generates a far more lethal charge than its base module to the <clr>Pulse Gun<clrEnd> produced by <clr>Faeyans<clrEnd>. A significant design flaw that kept it out of serial production is the difficulty in operation, multiplying the cost of repair.
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy> pt.
+        Text=Firing range: <bonWRadius> pt.
+        Text=Cost: <clr>+50%<clrEnd>
+        bonWEnergy=25
+        bonWRadius=30
+    }
+    ShuEmitter_Rebattler ^{
+        Equipments=splash_faser
+        Name=Rebattler
+        Owner=Peleng,Fei,Gaal,PirateClan
+        Priority=50
+        Text=Second level micro-module. Equips a <clr>Splash Phaser<clrEnd> with an inertial matter restructuring module of the inverse type. Prohibited for use on <clr>maloq<clrEnd> and <clr>faeyan<clrEnd> weapons due to frequent use in interracial conflicts.
+        Text=<clr><clrEnd>
+        Text=Additional Effect: <clr>vampirism<clrEnd>
+        WeaponMods=Drain
+    }
+    ShuEmitter_Sniper ^{
+        Equipments=grav_beam
+        Name=Sniper
+        Owner=Fei,NonKling
+        Priority=50
+        RacialRestriction=1
+        Text=Level two micromodule. Reconfigures the <clr>Graviton Beam<clrEnd>, made by <clr>faeyans<clrEnd>, causing it to make much more accurate shots. Unfortunately, the increased concentration of the pulse causes it to disperse much earlier, which seriously reduces the range of the shot.
+        Text=Energy weapons damage: <bonWEnergy> pt.
+        Text=Firing range: <bonWRadius> pt.
+        Text=<clr>Weapon does the maximum possible damage regardless of luck and pilot skills<clrEnd>
+        WeaponMods=NoDelta
+        bonWEnergy=7
+        bonWRadius=-40
+    }
+    ShuEmitter_Striker ^{
+        Equipments=sphere_gun
+        Name=Striker
+        Owner=PirateClan
+        Priority=30
+        Text=Level one micromodule. Inspired by the dominator weapon modification, the <clr>pirates<clrEnd> developed a module that improves one of their strongest weapons, the <clr>Vortex Projector<clrEnd>, on a similar principle, greatly increasing maximum damage based on target's hull damage.
+        Text=Bonus to damage: <clr>+15%<clrEnd>
+        Text=Bonus to damage: up to <clr>+33%<clrEnd>
+        Text=(scanner power must exceed target's defense)
+        WeaponMods=ScanBonus,BonusToDamaged
+    }
+    ShuEmitter_Unlocker3000 ^{
+        Cost=150
+        Equipments=W17
+        Fragility=125
+        Name=Unlocker-3000
+        Priority=40
+        Size=150
+        Text=Micromodule of the second level. Removes system restrictions from any <clr>Caphasitor<clrEnd>, resulting in a drastic increase in its damage and range, but also reduces its reliability. The cost of repairing such a Caphasitor increases.
+        Text=<clr><clrEnd>
+        Text=Energy weapons damage: <bonWEnergy> pt.
+        Text=Firing range: <bonWRadius> pt.
+        Text=Size: <clr>+50%<clrEnd>
+        Text=Cost: <clr>+50%<clrEnd>
+        Text=Reliability: <clr>-20%<clrEnd>
+        bonWEnergy=20
+        bonWRadius=35
+    }
+}

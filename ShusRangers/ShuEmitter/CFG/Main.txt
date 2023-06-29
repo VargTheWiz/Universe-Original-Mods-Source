@@ -1,0 +1,216 @@
+Data ^{
+    SE ^{
+        Weapon ^{
+            0 ^{
+                Palettes ^{
+                    52 ^{
+                        Color0=1.0,0.6,0.1
+                        Color1=0.7,0.6,0.1
+                        Color2=0.4,0.4,0.4
+                    }
+                }
+            }
+            1 ^{
+                Palettes ^{
+                    5 ^{
+                        Color0=1.0,0.7,0.1
+                        Color1=0.8,1.0,0.4
+                        SoundShot=Sound.FragGun
+                    }
+                    PalettesCount=6
+                }
+                PosZ=Weapon
+                SoundExpl=Sound.expl1
+                SoundShot=Sound.shot1
+            }
+            12 ^{
+                Palettes ^{
+                    4 ^{
+                        Color0=0.33,0.50,1.00
+                        Color1=0.31,0.47,0.93
+                        Color2=0.29,0.43,0.87
+                        Color3=0.27,0.40,0.80
+                        Color4=0.24,0.37,0.73
+                        Color5=0.22,0.33,0.67
+                        Color6=0.20,0.30,0.60
+                        Color7=0.18,0.27,0.53
+                        GAI=Bm.Weapon.W17
+                        SoundShot=Sound.SlowMo
+                    }
+                }
+            }
+            13 ^{
+                Palettes ^{
+                    0 ^{
+                        GAI=Bm.Weapon.W14
+                    }
+                }
+                PosZ=Weapon
+                SoundExpl=Sound.expl3
+                SoundShot=Sound.shot13
+            }
+            16 ^{
+                Palettes ^{
+                    15 ^{
+                        Color0=0.3,0.4,0.3
+                        Color1=0.2,0.3,0.2
+                        GAI=Bm.Weapon.W17
+                        SoundShot=Sound.Vikhr
+                    }
+                }
+            }
+            2 ^{
+                Palettes ^{
+                    0 ^{
+                        Color0=0.0,1.0,0.9
+                        Color1=0.0,0.6,0.5
+                        Color2=0.0,0.2,0.0
+                        Color3=0.0,0.2,1.0
+                        Color4=0.0,0.1,0.5
+                        Color5=0.0,0.0,0.2
+                    }
+                    1 ^{
+                        Color0=0.0,0.8,1.0
+                        Color1=0.0,0.5,0.7
+                        Color2=0.0,0.2,0.0
+                        Color3=0.0,0.2,1.0
+                        Color4=0.0,0.1,0.7
+                        Color5=0.0,0.0,0.3
+                    }
+                    2 ^{
+                        Color0=1.0,0.0,0.9
+                        Color1=0.6,0.0,0.5
+                        Color2=0.2,0.0,0.0
+                        Color3=0.2,0.0,1.0
+                        Color4=0.1,0.0,0.5
+                        Color5=0.0,0.0,0.2
+                    }
+                    3 ^{
+                        Color0=0.0,1.0,0.6
+                        Color1=0.0,0.6,0.2
+                        Color2=0.0,0.2,0.0
+                        Color3=0.0,1.0,0.2
+                        Color4=0.0,0.5,0.1
+                        Color5=0.0,0.2,0.0
+                    }
+                    4 ^{
+                        Color0=0.8,0.8,0.8
+                        Color1=0.4,0.6,0.5
+                        Color2=0.1,0.2,0.1
+                        Color3=0.4,0.4,0.7
+                        Color4=0.2,0.2,0.4
+                        Color5=0.1,0.1,0.1
+                    }
+                    5 ^{
+                        Color0=0.0,0.8,1.0
+                        Color1=0.0,0.5,0.7
+                        Color2=0.0,0.2,0.0
+                        Color3=0.0,0.2,1.0
+                        Color4=0.0,0.1,0.7
+                        Color5=0.0,0.0,0.3
+                        SoundShot=Sound.GravBeam
+                    }
+                    6 ^{
+                        Color0=1.0,0.1,0.1
+                        Color1=1.0,0.2,0.1
+                        Color2=1.0,0.2,0.1
+                        Color3=0.9,0.2,0.1
+                        Color4=0.9,0.3,0.1
+                        Color5=0.9,0.3,0.1
+                        SoundShot=Sound.MalocLaser
+                    }
+                }
+                PosZ=Weapon
+                SoundExpl=Sound.expl2
+                SoundShot=Sound.shot2
+            }
+            4 ^{
+                Palettes ^{
+                    7 ^{
+                        Color0=0.7,1.0,0.0
+                        Color1=0.7,1.0,0.0
+                    }
+                }
+            }
+            8 ^{
+                Palettes ^{
+                    5 ^{
+                        Color0=0.95,0.83,0.5
+                        GAI=Bm.Weapon.Pulse
+                        SoundShot=Sound.PulseGun
+                    }
+                }
+            }
+            9 ^{
+                Palettes ^{
+                    4 ^{
+                        Color0=0.2,0.2,1.0
+                        Color1=0.2,0.2,0.7
+                        Color2=0.4,0.4,0.4
+                        Color3=0.3,0.2,0.7
+                        GAI=Bm.Weapon.FX_blue
+                        SoundShot=Sound.Splash_Faser
+                    }
+                    5 ^{
+                        Color0=1.0,0.6,0.1
+                        Color1=0.7,0.6,0.1
+                        Color2=0.4,0.4,0.4
+                        Color3=0.7,0.3,0.2
+                        GAI=Bm.Weapon.GaalVision
+                        SoundShot=Sound.LondonIsTheCapitalOfGreatBritain
+                    }
+                    7 ^{
+                        Color0=0.2,1.0,0.2
+                        Color1=0.2,0.7,0.2
+                        Color2=0.4,0.4,0.4
+                        Color3=0.3,0.7,0.2
+                        GAI=Bm.Weapon.FX_green
+                        SoundShot=Sound.Splash_Faser
+                    }
+                    8 ^{
+                        Color0=1.0,0.2,0.2
+                        Color1=0.7,0.2,0.2
+                        Color2=0.4,0.4,0.4
+                        Color3=0.7,0.3,0.2
+                        GAI=Bm.Weapon.FX_red
+                        SoundShot=Sound.Splash_Faser
+                    }
+                    9 ^{
+                        Color0=0.7,0.2,1.0
+                        Color1=0.5,0.2,0.7
+                        Color2=0.4,0.4,0.4
+                        Color3=0.7,0.3,1.0
+                        GAI=Bm.Weapon.FX_purple
+                        SoundShot=Sound.Splash_Faser
+                    }
+                }
+            }
+            AuraEffect ^{
+                Palettes ^{
+                    4 ^{
+                        GAI=Bm.Weapon.Faserok
+                    }
+                    7 ^{
+                        GAI=Bm.Weapon.FX_green
+                    }
+                    8 ^{
+                        GAI=Bm.Weapon.FX_red
+                    }
+                    9 ^{
+                        GAI=Bm.Weapon.FX_purple
+                    }
+                }
+            }
+            PDTurret ^{
+                Palettes ^{
+                    3 ^{
+                        SoundShot=Sound.peow_peow
+                    }
+                }
+            }
+        }
+    }
+    Script ^{
+        Mod_ShuEmitter=1,Script.Mod_ShuEmitter
+    }
+}

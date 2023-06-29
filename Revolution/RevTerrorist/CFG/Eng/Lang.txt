@@ -1,0 +1,25 @@
+Script ^{
+    Mod_RevTerrorist ^{
+        6=<0>
+        AddPoints=<br><br>Experience gained: #0# points.
+        BKDestroyedAfterEvent=Business Center #0# in system #1# has been destroyed! For obvious reasons, it will no longer be possible to pick up the award.
+        BKDestroyedByTer=Tragedy in system #0#! A desperate ranger destroyed business center #1# with quark bombs. He explained his action by the inability to repay the loan. At an extraordinary meeting of the Galactic Council, it was decided to pay an allowance to the poor rangers in order to prevent such incidents from happening in the future.
+        BKGrantsReward=You are a true hero, #0#! Your decisive action has saved many innocent lives! In addition, the destruction of our station would deal a heavy blow to the economy of the entire sector! On behalf of the network of business centers, let me give you a special gift: micromodule #1#!<br>
+        BKSurvives=An egregious incident happened in system #0#. Desperate due to an unpaid loan, a ranger tried to blow up business center #1# with quark bombs. It can only be called a miracle that, as a result, the station was not completely destroyed, although it suffered greatly. At an extraordinary meeting of the Galactic Council, it was decided to pay an allowance to the poor Rangers in order to prevent such incidents from happening in the future.
+        Back=Back
+        Boom=#0#:<br>- Allah Akbar!
+        Close=End connection
+        NotEnoughMoney=Oh, I'd like to help you pay off your debt, but I don't have that kind of money...
+        PlayerAsksForDebt=How much do you owe them?
+        PlayerNotIntrested=Oh, yes, that's right, that's the way to beat these bourgeois!
+        PlayerPaysOffDebt=Listen here terrorist. Take #0# cr. and get away from the unfortunate station!
+        PlayerTakesReward=Glad to help!
+        RewardEther=#0#, visit our business center #1#. We want to thank you on behalf of all the staff!
+        TerAnswer1=#0#cr. Why are you asking?
+        TerAnswer2=Okay, so be it, persuaded me, I won't blow them up
+        TerDone=See #0# what they got me into? I don't regret what happened at all.
+        TerStartAnswer=#0#, don't bother me, I'm going to repay creditors, hehe.
+        TerThanks=Thank you #0# for helping out a fellow ranger in his hour of need. I will never forget!
+        WarToTer=#0#:--->#1#<br>- #1#, you should immediately turn your ship around and land on planet #2#, where justice awaits you!<br>- Not so fast, first, I need to pay off my debts.
+    }
+}

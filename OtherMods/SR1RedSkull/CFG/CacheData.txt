@@ -1,0 +1,5 @@
+Script ~{
+    Mod_SR1RedSkullPart1=Mods\OtherMods\SR1RedSkull\DATA\Script\Mod_SR1RedSkullPart1.scr
+    Mod_SR1RedSkullPart2=Mods\OtherMods\SR1RedSkull\DATA\Script\Mod_SR1RedSkullPart2.scr
+    Mod_SR1RedSkullPart3=Mods\OtherMods\SR1RedSkull\DATA\Script\Mod_SR1RedSkullPart3.scr
+}

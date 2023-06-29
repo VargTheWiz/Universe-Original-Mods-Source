@@ -1,0 +1,410 @@
+MicroModuls ~{
+    ShuRebellion_RebelMaloc1 ^{
+        Cost=90
+        CustomTag=RM1
+        Equipments=Hull
+        ImitatedHullType=Warrior,Pirate
+        KindGraph=RebelMaloc
+        LockedAcryn=3
+        Name=</color><Type> hull rebel
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-3
+        bonSlotDroid=-1
+        bonSlotHook=-1
+        bonWEnergy=4
+        bonWMissile=4
+        bonWSplinter=4
+    }
+    ShuRebellion_RebelMaloc2 ^{
+        Cost=90
+        CustomTag=RM2
+        Equipments=Hull
+        ImitatedHullType=Warrior,Pirate
+        KindGraph=RebelMaloc
+        LockedAcryn=3
+        Name=</color><Type> hull rebel
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-2
+        bonSlotDroid=-1
+        bonSlotWeapon=-1
+        bonWEnergy=4
+        bonWMissile=4
+        bonWSplinter=4
+    }
+    ShuRebellion_RebelMaloc3 ^{
+        Cost=90
+        CustomTag=RM3
+        Equipments=Hull
+        ImitatedHullType=Warrior,Pirate
+        KindGraph=RebelMaloc
+        LockedAcryn=3
+        Name=</color><Type> hull rebel
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-3
+        bonSlotForsage=-1
+        bonSlotHook=-1
+        bonWEnergy=4
+        bonWMissile=4
+        bonWSplinter=4
+    }
+    ShuRebellion_RebelPeleng1 ^{
+        Cost=90
+        CustomTag=RPE1
+        Equipments=Hull
+        ImitatedHullType=Warrior,Pirate
+        KindGraph=RebelPeleng
+        LockedAcryn=3
+        Name=</color><Type> hull rebel
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-3
+        bonSlotDroid=-1
+        bonSlotWeapon=-1
+        bonWEnergy=4
+        bonWMissile=4
+        bonWSplinter=4
+    }
+    ShuRebellion_RebelPeleng2 ^{
+        Cost=90
+        CustomTag=RPE2
+        Equipments=Hull
+        ImitatedHullType=Warrior,Pirate
+        KindGraph=RebelPeleng
+        LockedAcryn=3
+        Name=</color><Type> hull rebel
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-4
+        bonSlotDroid=-1
+        bonSlotScaner=-1
+        bonWEnergy=4
+        bonWMissile=4
+        bonWSplinter=4
+    }
+    ShuRebellion_RebelPeleng3 ^{
+        Cost=90
+        CustomTag=RPE3
+        Equipments=Hull
+        ImitatedHullType=Warrior,Pirate
+        KindGraph=RebelPeleng
+        LockedAcryn=3
+        Name=</color><Type> hull rebel
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-3
+        bonSlotDef=-1
+        bonSlotHook=-1
+        bonSlotWeapon=-1
+        bonWEnergy=4
+        bonWMissile=4
+        bonWSplinter=4
+    }
+    ShuRebellion_RebelPeople1 ^{
+        Cost=90
+        CustomTag=RPP1
+        Equipments=Hull
+        ImitatedHullType=Warrior,Pirate
+        KindGraph=RebelPeople
+        LockedAcryn=3
+        Name=</color><Type> hull rebel
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-3
+        bonSlotHook=-1
+        bonSlotWeapon=-1
+        bonWEnergy=4
+        bonWMissile=4
+        bonWSplinter=4
+    }
+    ShuRebellion_RebelPeople2 ^{
+        Cost=90
+        CustomTag=RPP2
+        Equipments=Hull
+        ImitatedHullType=Warrior,Pirate
+        KindGraph=RebelPeople
+        LockedAcryn=3
+        Name=</color><Type> hull rebel
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-2
+        bonSlotWeapon=-2
+        bonWEnergy=4
+        bonWMissile=4
+        bonWSplinter=4
+    }
+    ShuRebellion_RebelPeople3 ^{
+        Cost=90
+        CustomTag=RPP3
+        Equipments=Hull
+        ImitatedHullType=Warrior,Pirate
+        KindGraph=RebelPeople
+        LockedAcryn=3
+        Name=</color><Type> hull rebel
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-4
+        bonSlotDef=-1
+        bonSlotHook=-1
+        bonWEnergy=4
+        bonWMissile=4
+        bonWSplinter=4
+    }
+    ShuRebellion_RebelFei1 ^{
+        Cost=90
+        CustomTag=RF1
+        Equipments=Hull
+        ImitatedHullType=Warrior,Pirate
+        KindGraph=RebelFei
+        LockedAcryn=3
+        Name=</color><Type> hull rebel
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-4
+        bonSlotHook=-1
+        bonSlotWeapon=-1
+        bonWEnergy=4
+        bonWMissile=4
+        bonWSplinter=4
+    }
+    ShuRebellion_RebelFei2 ^{
+        Cost=90
+        CustomTag=RF2
+        Equipments=Hull
+        ImitatedHullType=Warrior,Pirate
+        KindGraph=RebelFei
+        LockedAcryn=3
+        Name=</color><Type> hull rebel
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-2
+        bonSlotWeapon=-2
+        bonWEnergy=4
+        bonWMissile=4
+        bonWSplinter=4
+    }
+    ShuRebellion_RebelFei3 ^{
+        Cost=90
+        CustomTag=RF3
+        Equipments=Hull
+        ImitatedHullType=Warrior,Pirate
+        KindGraph=RebelFei
+        LockedAcryn=3
+        Name=</color><Type> hull rebel
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-3
+        bonSlotDef=-1
+        bonSlotWeapon=-1
+        bonWEnergy=4
+        bonWMissile=4
+        bonWSplinter=4
+    }
+    ShuRebellion_RebelGaal1 ^{
+        Cost=90
+        CustomTag=RG1
+        Equipments=Hull
+        ImitatedHullType=Warrior,Pirate
+        KindGraph=RebelGaal
+        LockedAcryn=3
+        Name=</color><Type> hull rebel
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-3
+        bonSlotWeapon=-2
+        bonWEnergy=4
+        bonWMissile=4
+        bonWSplinter=4
+    }
+    ShuRebellion_RebelGaal2 ^{
+        Cost=90
+        CustomTag=RG2
+        Equipments=Hull
+        ImitatedHullType=Warrior,Pirate
+        KindGraph=RebelGaal
+        LockedAcryn=3
+        Name=</color><Type> hull rebel
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-2
+        bonSlotHook=-1
+        bonSlotWeapon=-2
+        bonWEnergy=4
+        bonWMissile=4
+        bonWSplinter=4
+    }
+    ShuRebellion_RebelGaal3 ^{
+        Cost=90
+        CustomTag=RG3
+        Equipments=Hull
+        ImitatedHullType=Warrior,Pirate
+        KindGraph=RebelGaal
+        LockedAcryn=3
+        Name=</color><Type> hull rebel
+        NonSearchable=2
+        Special=1
+        bonSlotArt=-2
+        bonSlotWeapon=-2
+        bonWEnergy=4
+        bonWMissile=4
+        bonWSplinter=4
+    }
+    ShuRebellion_Flagship ^{
+        CustomTag=flagship
+        Equipments=Hull
+        HullGraphSize=200
+        ImitatedHullType=Flagman
+        LockedAcryn=3
+        Name=</color><Type> hull
+        NonSearchable=2
+        Special=1
+    }
+}
+Reward ^{
+    13 ^{
+        Name=Order of Dignity
+        Race=Any
+        Status=Any
+        Text=An award established by the Galactic Council. Awarded to Rangers and other pilots for merit in combat.
+        Type=ForLiberationSystem
+    }
+    49 ^{
+        Name=Order of the Clan
+        Race=
+        Status=
+        Text=Pirate Clan Reward. Awarded for outstanding service to the Pirate Brotherhood.
+        Type=
+    }
+}
+Script ^{
+    Mod_ShuRebellion ~{
+        67=Breaking news from star system <0>! <br>Unfortunately, the attempt to land the military from the planet <1> in the shelter of the opposition turned out to be a failure. The rebels lured the soldiers into a trap and killed them. Now the entire territory near the star <2> is controlled by anarchists.
+        68=Today in system <0>, the fleet of planet <1> won a crushing victory over the revolutionaries from planet <2>. The landing party in a heavy ground battle defeated the oppositionists. This day will go down in history!
+        69=Breaking news! <br>At the star <0>, the oppositionists defeated the military in a space battle, but the rebels landing on the planet <1> were defeated by the brave defenders. Hooray!
+        70=The Coalition is in danger! <br>On this day, an anarchist detachment broke into the government of the planet <0> and shot down most of the state apparatus. The Rebels have officially handed over Star System <1> to the Pirate Syndicate. Eternal memory to the fallen heroes.
+        60=News from system <0>! <br>The authorities of the planet <1> organized a special operation to storm the planet <2>. Many details are kept in the strictest confidence, but, according to the local military, the ground battle should play a decisive role.
+        61=Unrest continues in star system <0>. The death toll during the massacre is constantly growing. Experts say that this is a good chance to make money for all dealers in technics and weapons.
+        62=The Galactic Security Committee reports armed conflict in system <0>. The rebels from the planet <1> staged a protest against the current authorities. The KGB calls for help in protecting the system from demonstrators with batches of technics and weapons.
+        63=The rebels from planet <0> have reasserted themselves by organizing an armed demonstration. Opposition leaders are demanding total obedience to the pirate clan, whose power, in their opinion, promotes the observance of all civil liberties.
+        64=In the system <0> there was another clash between the military and the opposition. We advise you to avoid this area of outer space.
+        65=At the star <0>, military and anarchist forces clashed. The government of planet <1> requests that temporary disturbances be ignored.
+        12=Greetings, brother <Player>! Glad for your visit. We're sorry, but due to the unrest on the planet, local attractions are currently closed.<br>However, I assure you, we will soon give the people the freedom they deserve.<br>What is the purpose of your arrival?
+        13=Greetings, Ranger <Player>! Unfortunately, our economy is now completely on a military footing, and therefore the hardware store, shopping center and information center should not open until these riots are over. We apologize for the inconvenience.<br>What did you want?
+        14=A commendable impulse, brother! The money will really help us to convince the population of the planet <0> that we are free from the shackles of the tyrannical power of the Coalition.<br>We set ourselves a plan in <1> cr. The more of this plan we put together, the better. At the moment we have <2> cr, left <3> cr.<br>How much are you willing to donate?
+        15=No, no. Should I ask security to take you to the hangar?
+        16=Thank you for your donation, brother. All the money will go to the announcement of the truth to the doubting people.<br>Should I ask the guards to take you to the ship?
+        17=Thank you so much for this gift, <Player>! Thanks to you, we finally raised the full amount. In honor of this event, we give you <0> <1>.<br>Should I ask the guards to escort you to the ship?
+        18=The Planetary Trade Center is now closed, but nevertheless, we desperately need weapons, and in the process of overthrowing the local government, we just got a lot of luxury items, in connection with which we decided to change luxury into weapons. <br>Course - <clr>one ton of luxury to two tons of weapons.<clrEnd> Under this barter we have <0> tons of luxury.<br>Well, are you interested?
+        19=Excellent, <Player>. You traded <0> tons of weapons for <1> tons of luxury. There are <2> tons of luxury goods left in the warehouse.<br>Have a nice day, brother.
+        20=Even though everything is closed now, we could use weapons at all. However, our budget does not allow us to spend a lot of money on the purchase, so for each ton of weapons we pay only <0> cr. - in order to somehow compensate for the losses. Think of this not as a trade deal, but as a donation for the sake of galactic peace.<br>We plan to recruit <1> tons of weapons for a major battle. So far, a total of <2> tons have been produced and received from independent sponsors.<br>Do you have weapons to give to us?
+        21=I'm sorry you changed your mind. Fly in if you suddenly fill with a desire to help us.
+        22=Thank you so much, ranger. Now there are <0> tons of weapons left before the plan is completed. Good luck.
+        23=Ranger, you have made a decisive contribution to the replenishment of our armories, and it is thanks to you that <clr>the whole plan is completed!<clrEnd> For responding to the call of the heart and helping, let me give you <0> <1>! Thanks!
+        24=Good day to you, <Player>! I see you've come for a reward. Let me present you with the <clr>Order of Dignity<clrEnd> for your valor, in order to motivate you to continue your deeds!<br>Of course, one order cannot fully reward you for your help. Now let's check the statistics...<br>So, during the mutiny you destroyed <0> rebel ships. We are still recovering from the battles, but we can still offer you one of two rewards to choose from: a cash reward of <1> cr. or <2> with the following characteristics:<br><3><br><br>Well, what do you choose?
+        25=Micromodule has been delivered to your ship. Good luck!
+        26=The money has already been transferred to your account, ranger. Good luck!
+        27=Bah, it's you, <Player>! Well, come in, come in... On what issue did you show up?<br>Ah, so you need to pick up an award for helping the opposition. Yes, there is such a thing, we have counted <0> dead. First things first, let me give you the <clr>Order of the Clan<clrEnd>, now I'll have a look at what we have left in our warehouses...<br>...<br>So, in addition to the order, we can give you <1> in in excellent condition or <2> size <3>, left over from the battle. The choice is yours.<br>
+        28=Excellent choice, brother! Find your brand new case in the warehouse.
+        29=Excellent choice, brother! <0> has already been loaded onto your ship.
+        30=I'm busy right now, <Player>, but trust me, once I've dealt with my current target, you'll meet Rachkhan in person!
+        31=Fly off somewhere else, flithy khryakoplukhЛети, or I'll blow up your engines!
+        32=<Player>, no time to speak, aiming the weapon at the target. Hang up.
+        33=Hi, Brother <Player>! Today a great deed is being done - we are overthrowing the power of tyrants sitting on bags of money! Join us, brother, let's destroy this system together!
+        34=Don't even try to beg me for mercy! You took the wrong side and now you will die a painful death for it, government mongrel!
+        35=You are a criminal on planet <0>. Please exit the system immediately and do not interfere with my mission or you will be terminated immediately.
+        36=Your ship is in bad reckoning with us, <Player>, but I'm currently busy with planet <0>'s first order, so clear the aether and don't get in my way.
+        37=<Player>, I am busy following the order of planet <0>. Release the air.
+        38=I'm sorry, <Player>, but I'm on a responsible mission at the moment, please check back later.
+        39=Hi, <Player>! Excuse me, but I'm busy fighting the rebels right now - check back later when I'm done with the assignment.
+        40=Are you brave enough to get in touch, nefarious pirate? Board computer, all guns on target!
+        41=How dare you get in touch, <Player>? Now I will cleanse the world of you, an impudent bastard who dishonors the honor of pirates, and scatter your ashes throughout the system!
+        42=I want to donate some money
+        43=I came to trade
+        44=Now enter the amount...
+        71=How much will you donate to the opposition?
+        45=Yes please
+        46=No thanks
+        47=I changed my mind
+        48=I have to go, take me to the hangar
+        49=I'm ready to trade
+        72=How many tons of weapons are you willing to trade for luxury?
+        50=I'm not interested
+        51=Thank you!
+        52=Are you buying something? Or are you selling?
+        53=I'm ready to share weapons
+        73=How many weapons are you willing to sell?
+        54=Goodbye
+        55=Glad to help
+        56=No, sorry
+        57=I choose <0> cr.
+        58=I choose <0>
+        59=I take <0>
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            Gatrix ^{
+                Icon=1
+                Name=
+            }
+        }
+    }
+}
+ShipType ^{
+    Fei ^{
+        Rebel=Оланиа
+    }
+    Gaal ^{
+        Rebel=Боолан
+    }
+    Maloc ^{
+        Rebel=Бадуба
+    }
+    Peleng ^{
+        Rebel=Шракан
+    }
+    People ^{
+        Rebel=Cobra
+    }
+    TypeName ^{
+        Rebel=Rebel
+    }
+}
+UselessItems ^{
+    Gatrix ^{
+        Cost=Huge
+        Description=
+        Name=Гатрикс-макрос
+        OnUseCode ^{
+            01=dword s=0;
+            02=if(MessageBoxYesNo('Run gatrix-macros? The nearest shipyard will be infected with the virus'))
+            03 ^{
+                01=for(int i=0;i<StarShips(ShipStar(Player()));i=i+1)
+                02 ^{
+                    01=s=StarShips(ShipStar(Player()),i);
+                    02=if(ShipType(s)=='DomRuins')break;
+                }
+                03=if(ShipType(s)!='DomRuins')
+                04 ^{
+                    01=MessageBox('No shipyard found in the system');
+                    02=exit;
+                }
+                05=if(ShipInNormalSpace(Player())<1 || Dist(Player(),s)>500)
+                06 ^{
+                    01=MessageBox('The shipyard is too far');
+                    02=exit;
+                }
+                07=if(FindItemInShip(Player(),CurItem())>-1)FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),CurItem())));
+                08=else FreeItem(GetItemFromStorage(FindItemInStorage(CurItem())));
+                09=ShipAddCustomShipInfo(s,'Gatrix','NoShow');
+                10=MessageBox('Virus successfully launched');
+            }
+        }
+        Owner=None
+        Size=1
+        Text=Personal development of the renegade captain, an experimental virus, which is an attempt at a global modernization developed by the "Gatrix Matrix" Coalition. Able to completely overwrite the dominator identification system with an operating system that did not have time to fully synchronize with the server. Direct download is possible only to the on-board systems of the dominator shipyard, since they lack additional relay systems capable of recognizing the virus before it is activated.
+    }
+}

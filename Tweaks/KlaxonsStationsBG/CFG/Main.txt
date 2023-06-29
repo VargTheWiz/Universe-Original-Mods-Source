@@ -1,0 +1,82 @@
+ML ^{
+    RuinsTalk ^{
+        Panel ^{
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+            }
+            Panel ^{
+                Active=False
+                GAI ^{
+                    Active=False
+                    AlignX=Center
+                    AlignY=Center
+                    Frame=[75,0-99]
+                    Image=Bm.Gov.2PelengAnim0a
+                    ImageFirst=Bm.Gov.2PelengAnim0i
+                    Name=Panel_Anim0
+                    PBuf=True
+                    Pos=598,183,-2
+                    Size=304,690
+                    SkipImageUpdateRect=True
+                }
+                GAI ^{
+                    Active=False
+                    AlignX=Center
+                    AlignY=Center
+                    Frame=[75,0-99]
+                    Image=Bm.Gov.2PelengAnim1a
+                    ImageFirst=Bm.Gov.2PelengAnim1i
+                    Name=Panel_Anim1
+                    PBuf=True
+                    Pos=545,150,-2
+                    Size=384,723
+                    SkipImageUpdateRect=True
+                }
+                GAI ^{
+                    Active=False
+                    AlignX=Center
+                    AlignY=Center
+                    Frame=[75,0-99]
+                    Image=Bm.GovHD.PelengAnim0a
+                    ImageFirst=Bm.GovHD.PelengAnim0i
+                    Name=PanelHD_Anim0
+                    PBuf=True
+                    Pos=0,-88,-2
+                    Size=480,903
+                    SkipImageUpdateRect=True
+                }
+                GAI ^{
+                    Active=False
+                    AlignX=Center
+                    AlignY=Center
+                    Frame=[75,0-99]
+                    Image=Bm.GovHD.PelengAnim1a
+                    ImageFirst=Bm.GovHD.PelengAnim1i
+                    Name=PanelHD_Anim1
+                    PBuf=True
+                    Pos=0,-88,-2
+                    Size=480,903
+                    SkipImageUpdateRect=True
+                }
+                Image ^{
+                    Image=GI,Bm.FormRuins.2PBtable
+                    Name=Table
+                    Pos=0,0,-3
+                    Size=1262,569
+                }
+                Name=PanelPeleng
+                Pos=0,0,800
+                Size=1024,768
+            }
+        }
+    }
+}

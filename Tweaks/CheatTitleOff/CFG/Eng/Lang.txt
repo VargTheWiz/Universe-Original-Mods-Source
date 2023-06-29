@@ -1,0 +1,13 @@
+Cheat ^{
+    Mod_Ammo=
+    Mod_Domik=
+    Mod_DomikExtremal=
+    Mod_DomikHellish=
+    Mod_DomikHorrible=
+    Mod_DomikNightmare=
+    Mod_God=
+    Mod_Stasis=
+    Mod_Technic=
+    Mod_Ultrascan=
+    Warning=
+}

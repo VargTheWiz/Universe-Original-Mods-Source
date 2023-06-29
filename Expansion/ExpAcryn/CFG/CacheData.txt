@@ -1,0 +1,56 @@
+Bm ~{
+    Container ~{
+        2Mod_ExpAcryn_zond=data\ItemsUseless\2OperatedProbe.gai
+    }
+    FormShip2 ~{
+        2AI_911=Mods\Expansion\ExpAcryn\Data\Info\WarningInfo.gi
+        2AI_911L=Mods\Expansion\ExpAcryn\Data\Info\WarningInfoL.gi
+    }
+    Items ~{
+        2CargoHookFakrin_HKa=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_HK.gai
+        2CargoHookFakrin_HKi=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_HK_i.gi
+        2CargoHookFakrin_HKs=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_HK_s.gi
+        2DefGeneratorFakrin_DEF1a=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_DEF1.gai
+        2DefGeneratorFakrin_DEF1i=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_DEF1_i.gi
+        2DefGeneratorFakrin_DEF1s=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_DEF1_s.gi
+        2DefGeneratorFakrin_DEF2a=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_DEF2.gai
+        2DefGeneratorFakrin_DEF2i=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_DEF2_i.gi
+        2DefGeneratorFakrin_DEF2s=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_DEF2_s.gi
+        2EngineFakrin_EGa=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_EG.gai
+        2EngineFakrin_EGi=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_EG_i.gi
+        2EngineFakrin_EGs=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_EG_s.gi
+        2ExpAcryn_RetunnedBlastWaveLocalizer_s=Mods\Expansion\ExpAcryn\Data\ItemsUseless\RetunnedArtMiniExpl.gi
+        2FuelTanksFakrin_FTa=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_FT.gai
+        2FuelTanksFakrin_FTi=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_FT_i.gi
+        2FuelTanksFakrin_FTs=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_FT_s.gi
+        2RadarFakrin_RADa=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_RAD.gai
+        2RadarFakrin_RADi=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_RAD_i.gi
+        2RadarFakrin_RADs=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_RAD_s.gi
+        2RepairRobotFakrin_DRDa=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_DRD.gai
+        2RepairRobotFakrin_DRDi=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_DRD_i.gi
+        2RepairRobotFakrin_DRDs=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_DRD_s.gi
+        2ScanerFakrin_SCa=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_SC.gai
+        2ScanerFakrin_SCi=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_SC_i.gi
+        2ScanerFakrin_SCs=Mods\Expansion\ExpAcryn\Data\Items\Fakrin_SC_s.gi
+    }
+    ItemsUseless ~{
+        2ExpAcryn_BertorMemoryBlock_0_s=Mods\Expansion\ExpAcryn\Data\ItemsUseless\BlazerMemory.gi
+        2ExpAcryn_BertorMemoryBlock_1_s=Mods\Expansion\ExpAcryn\Data\ItemsUseless\KellerMemory.gi
+        2ExpAcryn_BertorMemoryBlock_2_s=Mods\Expansion\ExpAcryn\Data\ItemsUseless\TerronMemory.gi
+        2Mod_ExpAcryn_case_s=Mods\Expansion\ExpAcryn\Data\ItemsUseless\Case.gi
+        2Mod_ExpAcryn_feiitem_s=Mods\Expansion\ExpAcryn\Data\ItemsUseless\Assembler.gi
+        2Mod_ExpAcryn_gaalitem_s=Mods\Expansion\ExpAcryn\Data\ItemsUseless\Convector.gi
+        2Mod_ExpAcryn_item_1_s=Mods\Expansion\ExpAcryn\Data\ItemsUseless\Kit.gi
+        2Mod_ExpAcryn_item_2_s=Mods\Expansion\ExpAcryn\Data\ItemsUseless\Kit.gi
+        2Mod_ExpAcryn_mimi_s=Mods\Expansion\ExpAcryn\Data\ItemsUseless\Core.gi
+        2Mod_ExpAcryn_zond_s=data\ItemsUseless\2OperatedProbe.gi
+        2Usl_DataArchive_s=Mods\Expansion\ExpAcryn\Data\ItemsUseless\Usl_PTQn60.gi
+        2Usl_PTQ67_s=Mods\Expansion\ExpAcryn\Data\ItemsUseless\Case.gi
+        2Usl_PTQn60_s=Mods\Expansion\ExpAcryn\Data\ItemsUseless\Usl_PTQn60.gi
+        2Usl_RandomItem_04_s=Mods\Expansion\ExpAcryn\Data\ItemsUseless\RedCase.gi
+    }
+}
+Script ~{
+    Mod_ExpAcryn=Mods\Expansion\ExpAcryn\DATA\Script\Mod_ExpAcryn.scr
+    PC_part0=Mods\Expansion\ExpAcryn\DATA\Script\PC_part0.scr
+}

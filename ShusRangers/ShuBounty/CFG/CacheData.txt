@@ -1,0 +1,12 @@
+Bm ~{
+    ItemsUseless ~{
+        2Crystal_s=Mods\ShusRangers\ShuBounty\DATA\ItemsUseless\Crystals.gi
+        2Dust_s=Mods\ShusRangers\ShuBounty\DATA\ItemsUseless\Dust.gi
+        2ShuBounty_Crystals_s=Mods\ShusRangers\ShuBounty\DATA\ItemsUseless\Crystals.gi
+        2Usl_EscapePod_c=Mods\ShusRangers\ShuBounty\DATA\ItemsUseless\Capsule.gai
+        2Usl_EscapePod_s=Mods\ShusRangers\ShuBounty\DATA\ItemsUseless\Capsule.gi
+    }
+}
+Script ~{
+    Mod_ShuBounty=Mods\ShusRangers\ShuBounty\DATA\Script\Mod_ShuBounty.scr
+}
