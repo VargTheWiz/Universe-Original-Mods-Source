@@ -1,0 +1,141 @@
+Script ^{
+    AssistantScript ^{
+        t001=Assistant OFF
+        t002=Assistant ON
+        t003=RC
+        t004=dom.
+        t005=Information for all (main.)
+        t006=Information for all (alternative.)
+        t007=Alternative chain
+        t008=Chain of stations:
+        t009=No matching stations found.
+        t010=<td=50>Micromodules in the main chain <color=255,240,100>RC
+        t011=<td=38>Micromodules in the main chain <color=255,240,100>dominion
+        t012=<td=30>Micromodules in an alternative chain on <color=255,240,100>RC
+        t013=<td=18>Micromodules in an alternative chain on <color=255,240,100>dominion
+        t014=There are military operations in the system, it is impossible to skip turns!
+        t015=How many turns to skip?
+        t016=Combat actions have begun in the system, further skipping is impossible!
+        t017=RC
+        t018=dom.
+        t019=Information for all (main.)
+        t020=Information for all (alternative.)
+        t021=Alternative chain
+        t022=Chain stations:
+        t023=No suitable station found.
+        t024=<td=50>Micromodules in the main chain on <color=255,240,100>RC
+        t025=<td=38>Micromodules in the main chain on <color=255,240,100>dominion
+        t026=<td=30>Micromodules in the alternative chain on <color=255,240,100>RC
+        t027=<td=18>Micromodules in the alternative chain on <color=255,240,100>dominion
+        t028=How many turns to skip?
+        t029=The system is in combat, it is impossible to skip a turn!
+        t030=How many turns to skip?
+        t031=Someone has attacked the system, further skipping is impossible!
+        t032=Micromodules in the chain on RC
+        t033=Micromodules in the chain on dominion
+        t034=Micromodules in the chain
+        t035=Series "
+        t036=Hull durability:
+        t036a= units, skin blocks up to
+        t036b= incoming damage.
+        t036c= Damage susceptibility:
+        t036d= E:
+        t036e=%  S:
+        t036f=%  M:
+        t037=Tank capacity:
+        t037a=. Fuel amount:
+        t038=Allows for a top speed of
+        t038a= units and a hyperjump range of
+        t038b= parsecs.
+        t039=Picks up data about objects within a radius of
+        t039a= mln. km.
+        t040=Scans for objects with a shield generator at less than
+        t041=Restores
+        t041a= hit points to the ship skin.
+        t042=Grips small objects up to
+        t042a= units in size within a radius of
+        t043=Blocks
+        t043a=% of incoming damage before armor.
+        t044=Series "
+        t045=Hull durability:
+        t045a= units, skin blocks up to
+        t045b= incoming damage.
+        t045c= Damage susceptibility:
+        t045d= E:
+        t045e=%  S:
+        t045f=%  M:
+        t046=Tank capacity:
+        t046a=. Fuel amount:
+        t047=Allows for a top speed of
+        t047a= units and a hyperjump range of
+        t047b= parsecs.
+        t048=Picks up data about objects within a radius of
+        t048a= million kilometers.
+        t049=Scans for objects with a shield generator at less than
+        t050=Restores
+        t050a= hit points to the ship skin.
+        t051=Grips small objects up to
+        t051a= units within a radius of
+        t052=Blocks
+        t052a=% of incoming damage.
+        t053=Ship Experience:
+        t054=- from dominator kills:
+        t055=- from pirate kills:
+        t056=- from other kills:
+        t057=- from trade:
+        t058=- other experience:
+        t059=Ships destroyed:
+        t060=- pirates:
+        t061=- dominators:
+        t062=- civilians:
+        t063=- militaries:
+        t064=- rangers:
+        t065=Quests completed:
+        t066=- cargo delivery:
+        t067=- ship killing:
+        t068=- text quests:
+        t069=- systems protection:
+        t070=- ship protection:
+        t071=- planetary battles:
+        t072=Ships destroyed in the system:
+        t073=- coalition ships:
+        t074=- dominator ships:
+        t075=- clan ships:
+        t076=Galaxy Tech Level:
+        t077=Enter ship name:
+        t078=Ship not found.
+        t079=planet
+        t080=in hyperspace
+        t081=outer space
+        t082=Enter Equipment name:
+        t083=Maximum weight:
+        t084=Tech. level no less than:
+        t085=, Tech. level: <color=255,240,100>
+        t086=, Tech. level: <color=255,240,100>
+        t087=<td=30>Weight: <color=255,240,100>
+        t088=, speed: <color=255,240,100>
+        t088a=, jump range: <color=255,240,100>
+        t089=, power: <color=255,240,100>
+        t089a=, range: <color=255,240,100>
+        t090=, armor: <color=255,240,100>
+        t091=, capacity: <color=255,240,100>
+        t092=, range: <color=255,240,100>
+        t093=, scanner: <color=255,240,100>
+        t094=, repairs: <color=255,240,100>
+        t095=, defense: <color=255,240,100>
+        t096=, damage: <color=255,240,100>
+        t096a=, radius: <color=255,240,100>
+        t097=Item not found.
+        t098=RC
+        t099=dom.
+        t100=Information for all (main.)
+        t101=Information for all (alternative.)
+        t102=Alternative chain
+        t103=Chain stations:
+        t104=No suitable station found.
+        t105=<td=50>Micromodules in the main chain on <color=255,240,100>RC
+        t106=<td=38>Micromodules in the main chain on <color=255,240,100>dominion
+        t107=<td=30>Micromodules in the alternative chain on <color=255,240,100>RC
+        t108=<td=18>Micromodules in the alternative chain on <color=255,240,100>dominion
+    }
+}
